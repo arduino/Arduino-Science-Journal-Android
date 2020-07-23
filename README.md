@@ -1,15 +1,15 @@
 [![Twitter: @Arduino](https://img.shields.io/badge/Contact-%40Arduino-orange)](https://twitter.com/arduino)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-[Science Journal][play-store] allows you to gather data from the world around you. It uses sensors to measure your environment, like light and sound, so you can graph your data, record your experiments, and organize your questions and ideas. It's the lab notebook you always have with you.
+[Science Journal for Android][play-store] allows you to gather data from the world around you. It uses sensors to measure your environment, like light and sound, so you can graph your data, record your experiments, and organize your questions and ideas. It's the lab notebook you always have with you.
 
 Open Science Journal is the core of the Science Journal app with the same UI and sensor code and can be compiled and run on its own.
 
 ## Features
 
-📈 Visualize and graph data from sensors.
-📲 Connect to external sensors over BLE .
-📷 Annotate with pictures and notes.
+* 📈 Visualize and graph data from a variety of sources including your device's built-in sensor
+* 📲 Connect to external sensors over BLE .
+* 📷 Annotate with pictures and 📝 notes.
 
 ## Building the app
 
@@ -44,7 +44,7 @@ Open Science Journal is licensed under the [Apache 2 license][license].
 
 ## More
 
-Science Journal formerly is brought to you by Making & Science, an initiative by Google. Arduino Science Journal is now an official [Arduino](https://arduino.cc) Education product.
+Science Journal formerly brought to you by Making & Science, an initiative by Google. Arduino Science Journal is now an official [Arduino Education] product.
 
 [play-store]: https://play.google.com/store/apps/details?id=com.google.android.apps.forscience.whistlepunk
 [contributing]: https://github.com/arduino/Arduino/blob/master/CONTRIBUTING.md
