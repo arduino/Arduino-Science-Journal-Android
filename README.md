@@ -1,15 +1,5 @@
-<h3 align="center">
-  <img src="GitHubAssets/sj_lockup.png?raw=true" alt="Science Journal Logo" width="700">
-</h3>
-
 [![Twitter: @GScienceJournal](https://img.shields.io/badge/contact-@GScienceJournal-673fb4.svg?style=flat)](https://twitter.com/GScienceJournal)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
-[Science Journal for iOS][appstore] allows you to gather data from the world around you. It uses sensors to
-measure your environment, like light and sound, so you can graph your data, record your experiments,
-and organize your questions and ideas. It's the lab notebook you always have with you.
-
-<img src="GitHubAssets/image1.png?raw=true" alt="iOS screenshot showing experiments list." width="175"><img src="GitHubAssets/image2.png?raw=true" alt="iOS screenshot showing `Iodine Clock` experiment." width="175"><img src="GitHubAssets/image3.png?raw=true" alt="iOS screenshot showing `Iodine Clock` recording showing brightness sensor with various values." width="175"><img src="GitHubAssets/image4.png?raw=true" alt="iOS screenshot showing `Iodine Clock` recording with notes alongside brightness sensor with various values." width="175">
 
 [Science Journal][play-store] allows you to gather data from the world around you. It uses sensors to measure your environment, like light and sound, so you can graph your data, record your experiments, and organize your questions and ideas. It's the lab notebook you always have with you.
 
