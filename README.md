@@ -7,9 +7,9 @@ Open Science Journal is the core of the Science Journal app with the same UI and
 
 ## Features
 
-* Visualize and graph data from sensors.
-* Connect to external sensors over BLE ([firmware code][firmware-github]).
-* Annotate with pictures and notes.
+📈 Visualize and graph data from sensors.
+📲 Connect to external sensors over BLE .
+📷 Annotate with pictures and notes.
 
 ## Building the app
 
@@ -33,9 +33,6 @@ In order to enable Google Drive Sync, you must first create a Google API project
 for your app. See instructions in the 
 [Google Drive API documentation](https://developers.google.com/drive/api/v2/enable-drive-api)
 
-## Release names
-
-We have fun choosing names for our releases.  Read the [stories][releasenames].
 
 ## Contributing
 
@@ -50,9 +47,7 @@ Open Science Journal is licensed under the [Apache 2 license][license].
 Science Journal formerly is brought to you by Making & Science, an initiative by Google. Arduino Science Journal is now an official [Arduino](https://arduino.cc) Education product.
 
 [play-store]: https://play.google.com/store/apps/details?id=com.google.android.apps.forscience.whistlepunk
-[firmware-github]:https://github.com/google/science-journal-arduino
-[contributing]: https://github.com/google/science-journal/blob/master/CONTRIBUTING.md
-[releasenames]: https://github.com/google/science-journal/blob/master/RELEASES.md
+[contributing]: https://github.com/arduino/Arduino/blob/master/CONTRIBUTING.md
 [license]: https://github.com/bcmi-labs/Science-Journal-Android/blob/master/LICENSE
 [Arduino]:https://arduino.cc
 [Arduino Education]: https://www.arduino.cc/education
