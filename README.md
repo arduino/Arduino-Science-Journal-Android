@@ -1,4 +1,4 @@
-[![Twitter: @Arduino](https://img.shields.io/badge/contact-@Arduino.svg?style=flat)](https://twitter.com/arduino)
+[![Twitter: @Arduino](https://img.shields.io/badge/Contact-%40Arduino-orange)](https://twitter.com/arduino)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 [Science Journal][play-store] allows you to gather data from the world around you. It uses sensors to measure your environment, like light and sound, so you can graph your data, record your experiments, and organize your questions and ideas. It's the lab notebook you always have with you.
@@ -47,11 +47,12 @@ Open Science Journal is licensed under the [Apache 2 license][license].
 
 ## More
 
-Science Journal is brought to you by [Making & Science][making-science], an initiative by Google. Open Science Journal is not an official Google product.
+Science Journal formerly is brought to you by Making & Science, an initiative by Google. Arduino Science Journal is now an official [Arduino](https://arduino.cc) Education product.
 
 [play-store]: https://play.google.com/store/apps/details?id=com.google.android.apps.forscience.whistlepunk
 [firmware-github]:https://github.com/google/science-journal-arduino
 [contributing]: https://github.com/google/science-journal/blob/master/CONTRIBUTING.md
 [releasenames]: https://github.com/google/science-journal/blob/master/RELEASES.md
-[license]: https://github.com/google/science-journal/blob/master/LICENSE
-[making-science]: https://makingscience.withgoogle.com
+[license]: https://github.com/bcmi-labs/Science-Journal-Android/blob/master/LICENSE
+[Arduino]:https://arduino.cc
+[Arduino Education]: https://www.arduino.cc/education
