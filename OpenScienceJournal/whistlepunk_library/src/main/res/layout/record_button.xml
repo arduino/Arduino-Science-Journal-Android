@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/record"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/action_area"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:contentDescription="@string/btn_stop_description"
+    android:text="@string/btn_stop_label"
+    android:textColor="@color/recording_button_text_color"
+    app:icon="@drawable/ic_stop_icon"
+    app:iconSize="24dp"
+    app:iconTint="@color/recording_icon_tint" />

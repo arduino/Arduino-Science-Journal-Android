@@ -1,0 +1,95 @@
+<!--
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="enable_ambient_temp_sensor"
+        android:defaultValue="false"
+        android:title="@string/enable_temperature_sensor_title"
+        android:summary="@string/enable_temperature_sensor_summary"
+        />
+
+    <CheckBoxPreference
+        android:key="enable_sine_wave_sensor"
+        android:defaultValue="false"
+        android:title="@string/enable_sine_wave_sensor_title"
+        android:summary="@string/enable_sine_wave_sensor_summary"
+    />
+
+    <CheckBoxPreference
+        android:key="dev_tools"
+        android:defaultValue="false"
+        android:title="@string/dev_tools_title"
+        android:summary="@string/dev_tools_summary"
+        />
+
+    <CheckBoxPreference
+        android:key="leak_canary"
+        android:title="@string/dev_tools_leak_detection_title"
+        android:summary="@string/dev_tools_leak_detection_summary"
+        />
+
+    <CheckBoxPreference
+        android:key="strict_mode"
+        android:defaultValue="false"
+        android:title="@string/dev_tools_strict_mode_title"
+        android:summary="@string/dev_tools_strict_mode_summary"
+        />
+
+    <CheckBoxPreference
+        android:key="enable_dev_sonification_types"
+        android:title="@string/dev_sonification_types_title"
+        android:summary="@string/dev_sonification_types_summary"
+        android:defaultValue="false"
+        />
+
+    <CheckBoxPreference
+        android:key="enable_third_party_sensors"
+        android:defaultValue="false"
+        android:title="@string/third_party_sensors_option_title"
+        android:summary="@string/third_party_sensors_option_summary"
+    />
+
+    <CheckBoxPreference
+        android:key="use_new_manage_devices_ux"
+        android:defaultValue="false"
+        android:title="@string/use_new_manage_devices_ux_option_title"
+        android:summary="@string/use_new_manage_devices_ux_option_summary"
+    />
+
+    <CheckBoxPreference
+        android:key="enable_smooth_scrolling_to_bottom"
+        android:defaultValue="true"
+        android:title="@string/enable_smooth_scrolling_on_refresh"
+        android:summary="@string/enable_smooth_scrolling_on_refresh_summary"
+        />
+
+    <Preference
+        android:key="require_google_account"
+        android:persistent="true"
+        android:defaultValue="false"
+        android:shouldDisableView="true"
+        android:title="@string/require_google_account"
+        android:summary="@string/require_google_account_summary"
+        />
+
+    <Preference
+        android:key="show_perf_tracker_debug"
+        android:title="@string/perf_tracker_debug_pref_title"
+        />
+
+</PreferenceScreen>

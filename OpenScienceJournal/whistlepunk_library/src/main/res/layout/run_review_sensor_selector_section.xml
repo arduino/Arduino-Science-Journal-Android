@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:layout_width="@dimen/accessibility_touch_target_min_size"
+        android:layout_height="@dimen/accessibility_touch_target_min_size"
+        android:id="@+id/run_review_switch_sensor_btn_prev"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/run_review_switch_sensor_btn_prev"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/btn_switch_sensor"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+    />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_toEndOf="@id/run_review_switch_sensor_btn_prev"
+        android:layout_toStartOf="@+id/run_review_switch_sensor_btn_next"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/sensor_icon"
+            android:layout_marginEnd="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/run_review_sensor_name"
+            android:textSize="@dimen/run_review_sensor_name_text_size"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/text_color_black"
+            android:ellipsize="end"
+            android:singleLine="true"
+        />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="@dimen/accessibility_touch_target_min_size"
+        android:layout_height="@dimen/accessibility_touch_target_min_size"
+        android:id="@id/run_review_switch_sensor_btn_next"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/run_review_switch_sensor_btn_next"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/btn_switch_sensor"
+        android:layout_centerVertical="true"
+        android:scaleType="center"
+        android:rotation="180"
+    />
+
+</merge>

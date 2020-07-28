@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/content"
+        >
+
+        <include layout="@layout/exp_card_item_heading"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/heading"
+            />
+
+        <TextView
+            android:id="@+id/run_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/accessibility_touch_target_min_size"
+            android:layout_below="@id/heading"
+            android:layout_marginTop="-1dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:background="@color/color_accent"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/text_color_white"
+            android:textSize="18sp"
+            android:ellipsize="middle"
+            android:textStyle="bold"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/run_title_text"
+            android:id="@+id/sensor_name_section"
+            >
+
+            <include layout="@layout/run_review_sensor_selector_section"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/chart_section"
+            android:layout_below="@id/sensor_name_section"
+            >
+
+            <com.google.android.apps.forscience.whistlepunk.scalarchart.ChartView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:id="@+id/chart_view"
+                android:layout_marginRight="12dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/chart_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:contentDescription="@string/graph_loading"
+                />
+
+        </FrameLayout>
+
+        <com.google.android.apps.forscience.whistlepunk.StatsList
+            app:statsLayout="@layout/stats_view_run_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chart_section"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:id="@+id/stats_view"
+            />
+
+        <include layout="@layout/archived_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="@dimen/archive_badge_margin"
+            android:layout_alignParentTop="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_holder"
+            android:orientation="vertical"
+            android:layout_below="@id/stats_view"
+            >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/caption_section"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/notes_holder"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/run_review_divider_color"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:background="@color/caption_background_color"
+                android:textColor="@color/text_color_light_grey"
+                android:id="@+id/caption"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</merge>

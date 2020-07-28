@@ -1,0 +1,161 @@
+<!--
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<resources>
+
+    <!-- For activities without toolbar or implementing their own toolbar. e.g. MainActivity. -->
+    <style name="NoBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorAccent">@color/color_accent_dark</item>
+
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+    </style>
+
+    <style name="NoBarTheme.MainActivity" parent="NoBarTheme">
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorAccent">@color/color_accent_dark</item>
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+    <!-- Metadata update activities for triggers have a different primary color. -->
+    <style name="AppTheme.Triggers">
+        <item name="colorPrimaryDark">@color/color_accent_dark</item>
+        <item name="colorPrimary">@color/color_accent</item>
+    </style>
+
+    <style name="lightCheckBoxStyle" parent="Base.Theme.MaterialComponents">
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="android:textColorSecondary">@color/text_color_light_grey</item>
+    </style>
+
+    <style name="AppTheme.RunReview">
+        <item name="colorPrimaryDark">@color/color_accent_dark</item>
+        <item name="colorPrimary">@color/color_accent</item>
+        <item name="android:actionModeCloseDrawable">@drawable/ic_close_white_24dp</item>
+        <item name="android:actionModeBackground">@color/color_accent</item>
+        <item name="actionModeBackground">@color/color_accent</item>
+
+        <item name="icon_color">@color/action_area_blue_dark</item>
+        <item name="icon_background">@color/action_area_blue_light</item>
+    </style>
+
+    <style name="AppTheme.Experiment">
+        <item name="android:windowActionBar">false</item>
+
+        <item name="icon_color">@color/action_area_purple_dark</item>
+        <item name="icon_background">@color/action_area_purple_light</item>
+        <item name="colorSecondary">@color/text_color_white</item>
+    </style>
+
+    <style name="AppTheme.GetStarted">
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="android:statusBarColor">@color/status_bar_background_gray</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.SignIn">
+        <item name="colorButtonNormal">@color/color_accent</item>
+        <item name="android:statusBarColor">@color/status_bar_background_gray</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.OldUserOptionPrompt">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Subtitle style -->
+    <style name="NoBarTheme.ActionBar.SubtitleTextStyle"
+        parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">@dimen/appbar_subtitle_text_size</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+
+    <!-- Sensor selector tab layout. -->
+    <style name="Widget.Design.TabLayout.SensorSelector" parent="Widget.Design.TabLayout">
+        <item name="tabPaddingStart">@dimen/sensor_tab_padding</item>
+        <item name="tabPaddingEnd">@dimen/sensor_tab_padding</item>
+        <item name="tabPaddingTop">@dimen/sensor_tab_padding</item>
+        <item name="tabPaddingBottom">@dimen/sensor_tab_padding_bottom</item>
+        <item name="tabMaxWidth">@dimen/sensor_tab_width</item>
+        <item name="tabMinWidth">@dimen/sensor_tab_width</item>
+    </style>
+
+    <style name="NavigationView" parent="NoBarTheme">
+        <item name="colorControlHighlight">@color/nav_item_background_color</item>
+        <item name="colorPrimary">@color/color_primary</item>
+    </style>
+
+    <style name="RecordingProgressBarColor" parent="AppTheme">
+        <item name="colorAccent">@color/recording_axis_bar_color</item>
+        <item name="colorPrimary">@color/recording_axis_bar_color</item>
+
+        <item name="icon_color">@color/action_area_red_dark</item>
+        <item name="icon_background">@color/action_area_red_light</item>
+    </style>
+
+    <style name="RecordingProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <!-- Scale up the drawable so we can shrink the margin down to just the drawable and still
+             have a 4dp sized throbber -->
+        <item name="android:minHeight">26dip</item>
+        <item name="android:maxHeight">26dip</item>
+    </style>
+
+    <style name="AppTheme.ClaimExperiments" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimaryDark">@color/claim_experiments_status_bar</item>
+        <item name="colorPrimary">@color/claim_experiments_action_bar</item>
+        <item name="titleTextColor">@color/claim_experiments_action_bar_text</item>
+        <item name="subtitleTextColor">@color/claim_experiments_action_bar_text</item>
+    </style>
+
+    <style name="preview_experiment_details" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimaryDark">@color/preview_experiment_details_status_bar</item>
+        <item name="colorPrimary">@color/preview_experiment_details_action_bar</item>
+        <item name="titleTextColor">@color/preview_experiment_details_action_bar_text</item>
+
+        <item name="icon_color">@color/grey_600</item>
+        <item name="icon_background">@color/grey_100</item>
+    </style>
+
+    <style name="DisabledActionAreaIcon">
+        <item name="icon_color">@color/grey_600</item>
+        <item name="icon_background">@color/grey_100</item>
+    </style>
+
+    <style name="DefaultActionArea">
+        <item name="android:layout_marginStart">@dimen/action_area_side_margin</item>
+        <item name="android:layout_marginEnd">@dimen/action_area_side_margin</item>
+        <item name="android:layout_marginBottom">@dimen/action_area_bottom_margin</item>
+        <item name="android:stateListAnimator">@animator/action_area_elevation</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/action_area_height</item>
+    </style>
+</resources>

@@ -1,0 +1,78 @@
+<!--
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.apps.forscience.whistlepunk.opensource">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- Necessary to connect to BLE devices -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- Necessary to do audio sensors -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- Necessary to do camera source -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <!-- Necessary to download files pre-O and show our own notification -->
+    <uses-permission
+        android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!-- Necessary to use foreground services in Android 9 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <!-- Necessary to write out data -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- Necessary to read some files shared from other apps -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Vibrate option available for triggers -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- Primes permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Analytics permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Accounts permissions -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" android:maxSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".OpenScienceJournalApplication">
+
+        <service
+            android:name="com.google.android.apps.forscience.whistlepunk.cloudsync.DriveSyncAndroidService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <activity
+            android:name=".licenses.LicenseActivity"
+            android:exported="false"
+            android:label="@string/settings_open_source_title"
+            android:theme="@style/AppTheme"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.google.android.apps.forscience.whistlepunk.SettingsActivity"/>
+        </activity>
+    </application>
+
+
+</manifest>
