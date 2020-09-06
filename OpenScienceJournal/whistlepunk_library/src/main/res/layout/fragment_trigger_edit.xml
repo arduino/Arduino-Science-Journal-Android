@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color_white"
+    tools:context="com.google.android.apps.forscience.whistlepunk.metadata.EditTriggerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/update_metadata_vertical_padding"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_light_grey"
+            android:textSize="14sp"
+            android:text="@string/trigger_type_label"
+            android:labelFor="@+id/trigger_type_spinner"
+            android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+            android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="216dp"
+            android:minHeight="@dimen/accessibility_touch_target_min_size"
+            android:id="@id/trigger_type_spinner"
+            android:layout_marginBottom="24dp"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:popupBackground="@android:color/white"
+            android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+            android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_light_grey"
+            android:textSize="14sp"
+            android:text="@string/trigger_when_label"
+            android:labelFor="@+id/trigger_when_spinner"
+            android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+            android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+            />
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="216dp"
+            android:minHeight="@dimen/accessibility_touch_target_min_size"
+            android:id="@id/trigger_when_spinner"
+            android:layout_marginBottom="24dp"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:popupBackground="@android:color/white"
+            android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+            android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_light_grey"
+            android:textSize="14sp"
+            android:text="@string/trigger_value_label"
+            android:labelFor="@+id/value_input"
+            android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+            android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:minWidth="144dp"
+                android:layout_height="@dimen/accessibility_touch_target_min_size"
+                android:id="@id/value_input"
+                android:singleLine="true"
+                android:lines="1"
+                android:textSize="16sp"
+                android:hint="@string/trigger_value_hint"
+                android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_dark_grey"
+                android:id="@+id/units"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/only_when_recording_section"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/run_review_divider_thickness"
+                android:background="@color/run_review_divider_color"
+                android:layout_marginBottom="8dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+                android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trigger_only_when_recording"
+                    android:labelFor="@+id/trigger_only_when_recording"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color_dark_grey"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="@dimen/accessibility_touch_target_min_size"
+                    android:layout_height="@dimen/accessibility_touch_target_min_size"
+                    android:id="@id/trigger_only_when_recording"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/note_type_trigger_section"
+            android:visibility="gone"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/run_review_divider_thickness"
+                android:background="@color/run_review_divider_color"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trigger_note_text_label"
+                android:textSize="16sp"
+                android:textColor="@color/color_accent_dark"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+                android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+                android:labelFor="@+id/trigger_note_text"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/accessibility_touch_target_min_size"
+                android:id="@id/trigger_note_text"
+                android:hint="@string/trigger_note_text_hint"
+                android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+                android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+                android:inputType="textCapSentences|textAutoCorrect"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/alert_type_trigger_section"
+            android:visibility="gone"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/run_review_divider_thickness"
+                android:background="@color/run_review_divider_color"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/trigger_alert_prompt"
+                android:textSize="16sp"
+                android:textColor="@color/color_accent_dark"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+                android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+                android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trigger_audio_alert"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color_dark_grey"
+                    android:labelFor="@+id/alert_type_audio_selector"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/accessibility_touch_target_min_size"
+                    android:id="@id/alert_type_audio_selector"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+                android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trigger_haptic_alert"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color_dark_grey"
+                    android:labelFor="@+id/alert_type_haptic_selector"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/accessibility_touch_target_min_size"
+                    android:id="@id/alert_type_haptic_selector"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/edit_trigger_horizontal_margin"
+                android:layout_marginEnd="@dimen/edit_trigger_horizontal_margin"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trigger_visual_alert"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_color_dark_grey"
+                    android:labelFor="@+id/alert_type_visual_selector"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/accessibility_touch_target_min_size"
+                    android:id="@+id/alert_type_visual_selector"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

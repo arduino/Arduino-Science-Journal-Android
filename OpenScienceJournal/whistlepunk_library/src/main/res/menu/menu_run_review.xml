@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_run_review_edit"
+        android:icon="@drawable/ic_edit_white_24dp"
+        android:title="@string/title_edit_trial_activity"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/run_review_overflow_menu"
+        android:icon="@drawable/ic_menu_moreoverflow_mtrl_alpha"
+        android:title="@string/run_review_overflow_menu_content_description"
+        app:showAsAction="always"
+        >
+        <menu>
+            <item
+                android:id="@+id/action_run_review_crop"
+                android:icon="@drawable/ic_crop_black_24dp"
+                android:title="@string/crop_run"
+                app:showAsAction="ifRoom"
+                android:orderInCategory="101"
+                />
+            <item
+                android:id="@+id/action_export"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="@string/export_action"
+                app:showAsAction="never"
+                android:orderInCategory="102"
+                />
+            <item
+                android:id="@+id/action_download"
+                android:icon="@drawable/ic_file_download_black_24dp"
+                android:title="@string/download_copy_action"
+                app:showAsAction="never"
+                android:orderInCategory="103"
+                />
+            <item
+                android:id="@+id/action_run_review_audio_settings"
+                android:icon="@drawable/ic_settings_audio_24dp"
+                android:title="@string/menu_item_audio_settings"
+                app:showAsAction="never"
+                android:orderInCategory="104"
+                />
+            <item
+                android:id="@+id/action_enable_auto_zoom"
+                android:icon="@drawable/ic_enable_auto_scale_24dp"
+                android:title="@string/enable_auto_zoom"
+                app:showAsAction="never"
+                android:orderInCategory="104"
+                />
+            <item
+                android:id="@+id/action_disable_auto_zoom"
+                android:icon="@drawable/ic_disable_auto_scale_24dp"
+                android:title="@string/disable_auto_zoom"
+                app:showAsAction="never"
+                android:orderInCategory="104"
+                />
+            <item
+                android:id="@+id/action_graph_options"
+                android:title="@string/graph_options"
+                app:showAsAction="never"
+                android:orderInCategory="104"
+                />
+            <item
+                android:id="@+id/action_run_review_archive"
+                android:icon="@drawable/ic_archive_black_24dp"
+                android:title="@string/action_archive_run"
+                app:showAsAction="never"
+                android:orderInCategory="105"
+                />
+            <item
+                android:id="@+id/action_run_review_unarchive"
+                android:icon="@drawable/ic_unarchive_black_24dp"
+                android:title="@string/action_unarchive_run"
+                app:showAsAction="never"
+                android:orderInCategory="105"
+                />
+            <item
+                android:id="@+id/action_run_review_delete"
+                android:icon="@drawable/menu_delete"
+                android:title="@string/delete_run"
+                app:showAsAction="never"
+                android:orderInCategory="106"
+                />
+        </menu>
+    </item>
+</menu>

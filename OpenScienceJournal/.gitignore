@@ -1,0 +1,19 @@
+.gradle
+local.properties
+app/*.iml
+third_party/*.iml
+whistlepunk_library/*.iml
+*.iml
+.DS_Store
+build
+captures
+whistlepunk.keystore
+
+# ignore most of .idea, but not the lint inspection profile
+.idea/*
+!.idea/inspectionProfiles
+
+.idea/inspectionProfiles/*
+!.idea/inspectionProfiles/Lint.xml
+
+.orig

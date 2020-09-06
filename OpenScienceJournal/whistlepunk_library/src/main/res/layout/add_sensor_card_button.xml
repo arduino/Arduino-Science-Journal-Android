@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<!-- This RelativeLayout allows the ImageButton to be centered in the view it is
+     added to, without needing to expand to fill that view. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageButton
+        android:id="@+id/btn_add_sensor_card"
+        android:layout_width="@dimen/accessibility_touch_target_min_size"
+        android:layout_height="@dimen/accessibility_touch_target_min_size"
+        android:scaleType="center"
+        android:src="@drawable/ic_add_card_black_36dp"
+        android:alpha="@dimen/btn_add_sensor_card_alpha"
+        android:contentDescription="@string/btn_add_sensor_card_description"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        style="?attr/borderlessButtonStyle"
+        android:layout_marginTop="@dimen/cardview_margin"
+        android:layout_marginBottom="@dimen/cardview_margin"
+        />
+
+</RelativeLayout>

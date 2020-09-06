@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+
+apply from: project(':whistlepunk_library').projectDir.absolutePath + '/dependencyVersions.gradle'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "cc.arduino.sciencejournal"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        debug {
+            // For debug builds, include the job name and the string "debug"
+            pseudoLocalesEnabled true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+
+        // Due to b/36261865, don't try to check icon shape when linting.
+        disable 'IconLauncherShape'
+
+        // b/64679950
+        warning "InvalidPackage"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+}
+
+dependencies {
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    implementation 'androidx.core:core:1.5.0-alpha02'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.3'
+    implementation("com.google.guava:guava:$guavaVersion") {
+        // Avoid error "Program type already present: javax.annotation.CheckForNull"
+        exclude group: 'com.google.code.findbugs'
+        // Avoid error "Program type already present: org.checkerframework.checker.nullness.compatqual.NullableType"
+        exclude group: 'org.checkerframework'
+        // Avoid error "Program type already present: com.google.j2objc.annotations.AutoreleasePool"
+        exclude group: 'com.google.j2objc'
+        // Avoid error "Program type already present: org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement"
+        exclude group: 'org.codehaus.mojo'
+    }
+    implementation('com.google.android.gms:play-services-auth:17.0.0') {
+        // Avoid error "Program type already present: com.google.common.annotations.Beta".
+        exclude group: 'com.google.guava'
+        // Avoid error "Program type already present: javax.annotation.CheckForNull"
+        exclude group: 'com.google.code.findbugs'
+        // Avoid error "Program type already present: com.google.j2objc.annotations.AutoreleasePool"
+        exclude group: 'com.google.j2objc'
+    }
+    implementation('com.google.api-client:google-api-client-android:1.25.0') {
+        // Avoid error "Program type already present: com.google.common.annotations.Beta".
+        exclude group: 'com.google.guava'
+        // Avoid error "Program type already present: javax.annotation.CheckForNull"
+        exclude group: 'com.google.code.findbugs'
+        // Avoid error "Program type already present: com.google.j2objc.annotations.AutoreleasePool"
+        exclude group: 'com.google.j2objc'
+    }
+    implementation('com.google.apis:google-api-services-drive:v2-rev362-1.25.0') {
+        // Avoid error "Program type already present: com.google.common.annotations.Beta".
+        exclude group: 'com.google.guava'
+        // Avoid error "Program type already present: javax.annotation.CheckForNull"
+        exclude group: 'com.google.code.findbugs'
+        // Avoid error "Program type already present: com.google.j2objc.annotations.AutoreleasePool"
+        exclude group: 'com.google.j2objc'
+    }
+    implementation "com.google.dagger:dagger:$daggerVersion"
+    implementation 'com.google.protobuf:protobuf-lite:3.0.0'
+
+    implementation project(':whistlepunk_library')
+
+    testImplementation "junit:junit:$junitVersion"
+}

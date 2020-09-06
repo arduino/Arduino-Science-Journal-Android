@@ -1,0 +1,99 @@
+<!--
+  Copyright 2016 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/update_metadata_horizontal_padding"
+    android:paddingRight="@dimen/update_metadata_horizontal_padding"
+    android:paddingTop="@dimen/update_metadata_vertical_padding"
+    tools:context="com.google.android.apps.forscience.whistlepunk.project.experiment.UpdateExperimentFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/experiment_title_hint"
+        >
+        <EditText
+            android:id="@+id/experiment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/accessibility_touch_target_min_size"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences|textAutoCorrect"
+            android:contentDescription="@string/experiment_title_hint"
+            >
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/experiment_cover"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="0dp"
+            android:src="@drawable/add_experiment_image"
+            android:contentDescription="@string/experiment_cover_description"
+            android:background="#D8D8D8"
+            android:scaleType="center"
+            />
+
+        <Button
+            android:id="@+id/btn_choose_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/accessibility_touch_target_min_size"
+            android:text="@string/choose_photo_button_text"
+            android:layout_marginBottom="12dp"
+            android:clickable="false"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/color_accent_dark"
+            android:background="#CCD8D8D8"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_take_photo"
+            android:layout_width="@dimen/accessibility_touch_target_min_size"
+            android:layout_height="@dimen/accessibility_touch_target_min_size"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="12dp"
+            android:clickable="false"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:tint="@color/color_accent_dark"
+            android:background="#CCD8D8D8"
+            android:contentDescription="@string/btn_take_picture_content_description"
+            android:src="@drawable/ic_camera_white_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
