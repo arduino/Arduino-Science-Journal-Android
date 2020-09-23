@@ -13,16 +13,16 @@ If you built the app yourself, somebody else, or any other distribution channel 
 Before submitting a new GitHub issue, please make sure to
 
 - Check out our forums [Science Journal forum](https://forum.arduino.cc/index.php?board=131.0)
-- Check out the README in [this repo](https://github.com/bcmi-labs/Science-Journal-Android/blob/master/README.md)
-- Search for [existing GitHub issues](https://github.com/bcmi-labs/Science-Journal-Android/issues)
+- Check out the README in [this repo](https://github.com/arduino/Arduino-Science-Journal-Android/blob/main/README.md)
+- Search for [existing GitHub issues](https://github.com/arduino/Arduino-Science-Journal-Android/issues)
 
-If the above doesn't help, please [submit an issue](https://github.com/bcmi-labs/Science-Journal-Android/issues) on GitHub and provide information about your setup.
+If the above doesn't help, please [submit an issue](https://github.com/arduino/Arduino-Science-Journal-Android/issues) on GitHub and provide information about your setup.
 
 **Note**: If you want to report a regression in Arduino Science Journal Android (something that has worked before, but broke with a new release), please mark your issue title as such using `[Regression] Your title here`. This enables us to quickly detect and fix regressions.
 
 ## I want to contribute to Science Journal Android
 
-- To start working on Arduino Science Journal Android, check out [Your First PR](https://github.com/bcmi-labs/Science-Journal-Android/blob/master/YOUR_FIRST_PR.md).
+- To start working on Arduino Science Journal Android, check out [Your First PR](https://github.com/arduino/Arduino-Science-Journal-Android/blob/main/YOUR_FIRST_PR.md).
 
 ## Contributor License Agreement (CLA)
 
@@ -40,8 +40,8 @@ One of the best ways we can keep Science Journal Android an approachable, stable
 
 ## Code of Conduct
 
-Help us keep Science Journal iOS open and inclusive. Please read and follow our [Code of Conduct](https://github.com/bcmi-labs/Science-Journal-Android/blob/master/CODE_OF_CONDUCT.md).
+Help us keep Science Journal iOS open and inclusive. Please read and follow our [Code of Conduct](https://github.com/arduino/Arduino-Science-Journal-Android/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
-This project is licensed under the terms of the Apache 2.0 license. See the [LICENSE](https://github.com/bcmi-labs/Science-Journal-Android/blob/master/LICENSE) file.
+This project is licensed under the terms of the Apache 2.0 license. See the [LICENSE](https://github.com/arduino/Arduino-Science-Journal-Android/blob/main/LICENSE) file.
