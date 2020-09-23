@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Before you start working on Science Journal Android, make sure you've read [CONTRIBUTING.md](https://github.com/bcmi-labs/Science-Journal-Android/blob/master/CONTRIBUTING.md).
+Before you start working on Science Journal Android, make sure you've read [CONTRIBUTING.md](https://github.com/arduino/Arduino-Science-Journal-Android/blob/main/CONTRIBUTING.md).
 
 ## Finding things to work on
 
@@ -10,7 +10,7 @@ If you want to work on something else, e.g. new functionality or fixing a bug, i
 
 ## Checking out the Science Journal Android repo
 
-- Click the “Fork” button in the upper right corner of the [main Science Journal Android repo](https://github.com/bcmi-labs/Science-Journal-Android)
+- Click the “Fork” button in the upper right corner of the [main Science Journal Android repo](https://github.com/arduino/Arduino-Science-Journal-Android)
 - Clone your fork:
   - `git clone git@github.com:<YOUR_GITHUB_USER>/Science-Journal-Android.git`
   - Learn more about how to manage your fork: [https://help.github.com/articles/working-with-forks/](https://help.github.com/articles/working-with-forks/)
@@ -26,7 +26,7 @@ Test on device! We ask you test your change on Android.
 
 ## Submitting a PR
 
-When the coding is done and you’ve finished testing your changes, you're ready to submit a PR to the [Arduino Science Journal Android main repo](https://github.com/bcmi-labs/Science-Journal-Android). Everything you need to know about submitting the PR itself is inside our [Pull Request Template](https://github.com/bcmi-labs/Science-Journal-Android/blob/master/PULL_REQUEST_TEMPLATE.md). Some best practices are:
+When the coding is done and you’ve finished testing your changes, you're ready to submit a PR to the [Arduino Science Journal Android main repo](https://github.com/arduino/Arduino-Science-Journal-Android). Everything you need to know about submitting the PR itself is inside our [Pull Request Template](https://github.com/arduino/Arduino-Science-Journal-Android/blob/main/PULL_REQUEST_TEMPLATE.md). Some best practices are:
 
 - Use a descriptive title
 - Link the issues related to your PR in the body
