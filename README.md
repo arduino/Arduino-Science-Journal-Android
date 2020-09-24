@@ -28,7 +28,7 @@ Note: You'll need Android SDK version 27, build tools 23.0.3, and the Android Su
 compile the project. If you're unsure about this, use Android Studio and tick the appropriate boxes
 in the SDK Manager.
 
-The [Arduino Science Journal README](https://github.com/arduino/Arduino-Science-Journal-Android/blob/main/README.md)
+The [Arduino Science Journal README](https://github.com/arduino/Arduino-Science-Journal-Android/blob/main/OpenScienceJournal/README.md)
 contains details about the organization of the source code, and the relationship of this published source
 to the [published app][play-store].
 
