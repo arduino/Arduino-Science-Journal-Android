@@ -2,7 +2,7 @@
 
 ### Checklist
 - [ ] All new and existing tests pass
-- [ ] I've read the [Contribution Guidelines](https://github.com/bcmi-labs/Science-Journal-Android/blob/master/CONTRIBUTING.md)
+- [ ] I've read the [Contribution Guidelines](https://github.com/arduino/Arduino-Science-Journal-Android/blob/main/CONTRIBUTING.md)
 
 ### Motivation and Context
 <!-- Why is this change required? What problem does it solve? -->
