@@ -1,14 +1,44 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Arduino Science Journal</string>
-  <string name="action_feedback">Feedback</string>
-  <string name="action_about">Om</string>
-  <string name="action_save">Gem</string>
-  <string name="action_edit">Rediger</string>
-  <string name="action_archive_experiment">Arkivér eksperiment</string>
-  <string name="action_unarchive_experiment">Fjern eksperiment fra arkiv</string>
-  <string name="action_archive_run">Arkivér</string>
-  <string name="action_unarchive_run">Fjern fra arkiv</string>
-  <string name="action_delete">Slet</string>
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="sonification_types_dev">
+        <item>@string/amplitude</item>
+    </string-array>
+    <string-array name="sonification_types_prod">
+        <item>@string/default_sonification</item>
+        <item>@string/scale</item>
+        <item>@string/notes</item>
+        <item>@string/conductor</item>
+    </string-array>
+    <string-array name="trigger_type_list">
+        <item>@string/trigger_type_start_recording</item>
+        <item>@string/trigger_type_stop_recording</item>
+        <item>@string/trigger_type_note</item>
+        <item>@string/trigger_type_alert</item>
+    </string-array>
+    <string-array name="trigger_when_list">
+        <item>@string/trigger_when_at</item>
+        <item>@string/trigger_when_rises_above</item>
+        <item>@string/trigger_when_drops_below</item>
+        <item>@string/trigger_when_is_above</item>
+        <item>@string/trigger_when_is_below</item>
+    </string-array>
+    <string-array name="trigger_when_list_note_text">
+        <item>i</item>
+        <item>steg til over</item>
+        <item>faldt til under</item>
+        <item>ligger over</item>
+        <item>ligger under</item>
+    </string-array>
+    <string name="app_name">Arduino Science Journal</string>
+    <string name="action_feedback">Feedback</string>
+    <string name="action_about">Om</string>
+    <string name="action_save">Gem</string>
+    <string name="action_edit">Rediger</string>
+    <string name="action_archive_experiment">Arkivér eksperiment</string>
+    <string name="action_unarchive_experiment">Fjern eksperiment fra arkiv</string>
+    <string name="action_archive_run">Arkivér</string>
+    <string name="action_unarchive_run">Fjern fra arkiv</string>
+    <string name="action_delete">Slet</string>
   <string name="sine_wave">Sinusbølge</string>
   <string name="vel">Hastighed</string>
   <string name="acc_x">Accelerometer, X-akse</string>
@@ -34,8 +64,6 @@
   <string name="action_retry">Prøv igen</string>
   <string name="decibel">Lydintensitet</string>
   <string name="pitch">Tonehøjde</string>
-  <string name="btn_add_experiment_note_description">Føj note til eksperiment</string>
-  <string name="btn_add_run_note_description">Føj note til forsøg</string>
   <string name="btn_record_description">Start registrering</string>
   <string name="btn_stop_description">Stop registrering</string>
   <string name="btn_record_label">Registrer</string>
@@ -143,15 +171,6 @@
   <string name="notes">Noter</string>
   <string name="scale">Skala</string>
   <string name="conductor">Leder</string>
-  <string-array name="sonification_types_prod">
-    <item>@string/default_sonification</item>
-    <item>@string/scale</item>
-    <item>@string/notes</item>
-    <item>@string/conductor</item>
-  </string-array>
-  <string-array name="sonification_types_dev">
-    <item>@string/amplitude</item>
-  </string-array>
   <string name="empty_experiment">Du har endnu ingen observationer</string>
   <string name="device_options_sensor_label_text">Sensor</string>
   <string name="external_sensor_appearance_name">%1$s – %2$s</string>
@@ -162,55 +181,107 @@
   <string name="device_options_custom_sensor_frequency_checkbox_text">Frekvens</string>
   <string name="feedback_error_message">Feedback kunne ikke sendes.</string>
   <string name="sensor_desc_short_acc_x">Telefonens acceleration mod højre og venstre, i m/s²</string>
-  <string name="sensor_desc_short_acc_y">Telefonens acceleration frem og tilbage, i m/s²</string>
-  <string name="sensor_desc_short_acc_z">Telefonens acceleration op og ned, i m/s²</string>
-  <string name="sensor_desc_short_decibel">Intensiteten af lyden, målt i decibel (dB), der når frem til lydsensoren eller mikrofonen.</string>
-  <string name="sensor_desc_short_pitch">Lydens tonehøjde, målt i Hertz (Hz), der når frem til lydsensoren eller mikrofonen.</string>
-  <string name="sensor_desc_short_light">Mængden af lys, målt i lux, der når frem til sensoren for omgivende lys.</string>
-  <string name="sensor_desc_short_magnetic_strength">Styrken på jordens magnetfelt i omgivelserne angivet i mikrotesla.</string>
-  <string name="sensor_desc_short_bluetooth">En ekstern sensor viser sine data her, baseret på tilpassede indstillinger.</string>
-  <string name="sensor_desc_short_rotation">Antallet af rotationer pr. minut</string>
-  <string name="sensor_desc_short_raw">Procentangivelsen fra den ubehandlede aflæsning fra en ekstern sensor.</string>
-  <string name="sensor_desc_short_barometer">Det atmosfæriske tryk målt i hektopascal (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Sensoren for omgivende lys måler lys i lux, der er et mål for lys, som afhænger af mængden af indfaldende lys og området, som lyset spredes over. \n\nEn fuldmåne giver en belysning på ca. 1 lux; en normal stue, der er oplyst vha. lamper, er på ca. 50 lux; belysningen i et klasselokale eller en solopgang eller solnedgang er på ca. 400 lux. Dagslys (indirekte lys) er på over 10.000 lux, og direkte sol er på over 30.000 lux. \n\nDe fleste af os er ikke fortrolige med betegnelsen lux. Når vi køber lyspærer, ser vi ofte på antallet af watt. Men wattangivelsen på en lyspære fortæller ikke noget om, hvor lysstærk pæren er, men derimod hvor meget energi, den bruger. Lumen er et bedre mål, når du er på indkøb efter lyspærer. Det fortæller, hvor meget lys, en pære udsender. Antallet af lux fortæller derimod, hvor meget af lyset, der når frem til et bestemt område.</string>
-  <string name="sensor_desc_second_paragraph_light">Lys spredes over afstand, og antallet af lux bliver derfor mindre, når du bevæger dig væk fra en lyskilde, selvom kilden stadig udsender den samme mængde lys målt i lumen. Et område, der drejes i forhold til en lyskilde, modtager også mindre lys. Dette er årsagen til, at områderne ved ækvator her på jorden er så meget varmere end de kolde poler. \n\nForresten bruges lyssensoren i din telefon til at styre skærmens lysniveau, så det justeres i forhold til svagt eller kraftigt lys i omgivelserne. Lyssensoren indeholder en lille halvleder, der reagerer på indfaldende lys ved at skabe en lille, men målbar elektrisk strøm, der opstår via et fænomen, der kaldes den fotoelektriske effekt. I nogle gadelamper bruges tilsvarende sensorer til at tænde lyset, når mørket falder på.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Din telefon indeholder en enhed til at registrere magnetfelter: Et magnetometer. Denne lillebitte sensor med tre akser bruger elektrisk strøm til at registrere magnetfeltets styrke i de tre rumlige dimensioner. Ved at kombinere data fra alle tre akser kan vi skabe en sensor, der registrerer magnetfeltets samlede styrke. \n\nNogle magnetometre registrerer magnetfelter ved hjælp af Hall-effekten, som er magnetfelters tendens til at afbøje en ladning i bevægelse. Nyere magnetometre benytter sig af magnetoresistorer, som er metalblandinger, hvis modstand ændres som respons på magnetfelter. \n\nHvorfor har en telefon brug for et magnetometer? Det kan være nyttigt for indbyggede kompas- og navigationsapps at kende din rumlige position, især for dem, der giver dig en detaljeret rutevejledning.</string>
-  <string name="sensor_desc_second_paragraph_magnetic_strength">Magneter, elektrisk strøm og metalgenstande vil nemt lede din telefons magnetometer i den ene eller anden retning. Men selv midt på en åben plads vil magnetometeret i din telefon altid vise en lav måling, der ikke er lig med nul: Det er jordens magnetfelt!</string>
-  <string name="sensor_desc_first_paragraph_acc">Objekter har en tendens til at blive, hvor de er, eller fortsætte en eventuel igangværende bevægelse. Denne tendens kaldes for interti. Newtons første lov udtrykker denne ide formelt: Et objekt fortsætter sin bevægelsestilstand, medmindre det påvirkes af en ubalanceret kraft. \n\nNår en ubalanceret kraft får et objekt til at bevæge sig, siger man, at objektet accelererer: Objektets hastighed eller fart ændres, enten ved forøgelse eller reduktion af hastigheden, eller ved at bevægelsesretningen ændres. Acceleration måles som ændring af hastighed (meter pr. sekund) over tid, eller som meter pr. sekund i anden (m/s²). \n\nDin telefon har en enhed, der kan måle disse ændringer af bevægelse. Enheden hedder et accelerometer. Et accelerometer indeholder små masser, der kan bevæge sig frit. En ændring af bevægelsen får disse masser til at bevæge sig, lidt på samme måde som dit hoved har en tendens til at bevæge sig fremefter, når du sidder i en bil, der pludselig stopper. Ved at måle næsten umærkelige ændringer i intertien kan accelerometeret i en telefon registrere ændringer i bevægelse og retning. Dette er nyttigt, når skærmen skal skifte mellem liggende og stående tilstand, eller når du spiller spil på telefonen og meget mere.</string>
-  <string name="sensor_desc_second_paragraph_acc">Du har sikkert bemærket en konstant acceleration langs Z-aksen, selv når telefonen ligger helt stille på et bord. Dette er den acceleration, vi oplever her på jordens overflade, der skyldes tyngdekraftens virkning (tyngdeaccelerationen), som er på ca. 9,8 m/s².</string>
-  <string name="sensor_desc_first_paragraph_decibel">Lyd skabes af svingninger. For eksempel opstår lyden af din stemme på grund af svingninger i stemmebåndene i din hals. Svingningerne skaber områder med skiftevist lavt og højt lufttryk, der bevæger sig udefter, lidt på samme måde som ringe i vandet, når du kaster en sten i en sø.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Alle lyde kan beskrives ved hjælp af deres frekvens og deres intensitet. \n\nDet er intensiteten, du måler med Science Journal, og det foregår i enheden decibel (dB). Intensiteten, eller lydstyrken, afhænger af den afstand, som et vibrerende objekt bevæger sig, hver gang det vibrerer. Vi oplever større intensitet som øget lydstyrke. \n\nFrekvensen (også kaldet pitch eller tonehøjde) af en lydbølge svarer til dens vibrationshastighed. Jo hurtigere et objekt vibrerer, desto højere er tonehøjden af den resulterende lyd. Science Journal måler ikke frekvens – kun lydstyrke. \n\nDet er vigtigt at vide, at mikrofonen i din enhed er designet til at være meget følsom over for forskelle i lydbølger over tid, men ikke den enkelte lydbølges absolutte størrelse. Vi har forsøgt at udvælge kode, der med stor sandsynlighed kan producere tal, der ligger tæt på referencenumrene nedenfor, men hver enkelt enhed kan give tal, der konsekvent er højere eller lavere. Forskere vil normalt kalibrere en sensor som denne til en kendt måling. Indtil videre kan Science Journal fortælle dig, om lydstyrken på din næste togtur er højere end til din næste rockkoncert, men kun hvis du medbringer den samme telefon begge steder. \n\nDet er også værd at vide, at der er væsentlige forskelle mellem \"lydintensitet\", \"lydintensitetsniveau\" og \"lydtryk\". Her behandler vi dem som det samme, men hvis du vil dykke længere ned i det, findes der mange onlineressourcer om forskellene. \n\nDen mindste lyd, der kan opfattes af det menneskelige øre, er defineret som 0 dB. Almindelig samtale svarer til ca. 60 dB, og lyd over 140 dB giver smerter i det menneskelige øre. Lyd behøver imidlertid ikke at forårsage smerte for at være skadelig. Konstant udsættelse for lyd på 90 dB (svarer omtrent til lydstyrken af en støvsuger) kan med tiden medføre høretab. \n\nDecibelskalaen er logaritmisk og kan derfor være svær at gå til: En lydkilde på 40 dB er ikke dobbelt så intens som en lydkilde på 20 dB – den er 100 gange så intens! På samme skala har du et vækkeur, der ringer med 70 dB, men to vækkeure ringer ikke med 140 dB, de ringer med 73 dB. Som allerede nævnt er det en underlig skala. \n\n10 dB raslende blade \n20 dB hvisken over 1,5 meter \n30 dB stille hvisken \n50 dB regnvejr \n60 dB almindelig samtale \n90 dB blender \n100 dB bil uden lydpotte \n110 dB råben direkte ind i øret \n120 dB torden \n130 dB trykluftsbor \n140 dB et fly, der letter</string>
-  <string name="sensor_desc_first_paragraph_pitch">Lyd skabes af svingninger. For eksempel opstår lyden af din stemme på grund af svingninger i stemmebåndene i din hals. Svingningerne skaber områder med skiftevist lavt og højt lufttryk, der bevæger sig udefter, lidt på samme måde som ringe i vandet, når du kaster en sten i en sø.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Alle lyde kan beskrives ved hjælp af deres frekvens og intensitet. Frekvensen (også kaldet pitch eller tonehøjde) af en lydbølge svarer til dens vibrationsrate. Jo hurtigere et objekt vibrerer, desto højere er tonehøjden for den resulterende lyd. Vi måler disse vibrationer i Hertz (Hz), hvor 1 Hertz = 1 vibration/sekund. \n\nMennesket kan høre lyde i frekvensområdet 20 til 20.000 Hz. Den laveste tangent på et flygel producerer en lyd med frekvensen 27,5 Hz, og den højeste tangent producerer en lyd med frekvensen 4.186,01 Hz. \n\nDen røde prik indikerer, hvor tæt den registrerede tonehøjde er på den nærmeste skalatone. Hvis tonehøjden er lavere, vises prikken til venstre. Hvis tonehøjden er lavere, vises prikken til højre.</string>
-  <string name="pitch_low_content_description">lavt toneleje</string>
-  <string name="pitch_flatter_than_natural_note_content_description">%3$s halvtonetrin lavere end %1$s, oktav %2$s</string>
-  <string name="pitch_flatter_than_flat_note_content_description">%3$s halvtonetrin lavere end %1$ses, oktav %2$s</string>
-  <string name="pitch_flatter_than_sharp_note_content_description">%3$s halvtonetrin lavere end %1$sis, oktav %2$s</string>
-  <string name="pitch_natural_note_content_description">%1$s, oktav %2$s</string>
-  <string name="pitch_flat_note_content_description">%1$ses, oktav %2$s</string>
-  <string name="pitch_sharp_note_content_description">%1$sis, oktav %2$s</string>
-  <string name="pitch_sharper_than_natural_note_content_description">%3$s halvtonetrin højere end %1$s, oktav %2$s</string>
-  <string name="pitch_sharper_than_flat_note_content_description">%3$s halvtonetrin højere end %1$ses, oktav %2$s</string>
-  <string name="pitch_sharper_than_sharp_note_content_description">%3$s halvtonetrin højere end %1$sis, oktav %2$s</string>
-  <string name="pitch_high_content_description">højt toneleje</string>
-  <string name="sensor_desc_first_paragraph_rotation">Rotationer pr. minut (RPM, rotations per minute) er et mål for antal omdrejninger pr. minut rundt om en fast akse. \n\nNår vindmøllen drejer, får den konverteringsskiven til at dreje rundt:</string>
-  <string name="sensor_desc_second_paragraph_rotation">Dette skaber perioder med lys og mørke på sensoren, og dette registreres i Science Journal som rotation.</string>
-  <string name="sensor_desc_first_paragraph_raw">Dataene, der vises her, kommer fra kommunikation mellem en ekstern sensor og din telefon via Bluetooth. \n\nVærdien viser procentdelen for den ubehandlede aflæsning direkte fra mikrocontrolleren. Dette er normalt det procentvise spændingsfald i en sensor.</string>
-  <string name="sensor_desc_second_paragraph_raw">Bluetooth er en industristandard for teknologi til trådløs kommunikation, der bruger radiobølger til udveksling af data fra fastmonterede og mobilenheder over korte afstande.</string>
-  <string name="sensor_desc_first_paragraph_unknown_bluetooth">Dataene, der vises her, kommer fra kommunikation mellem en ekstern sensor og din telefon via Bluetooth.</string>
-  <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth er en industristandard for teknologi til trådløs kommunikation, der bruger radiobølger til udveksling af data fra fastmonterede og mobilenheder over korte afstande.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Selvom vi ikke lægger mærke til det, bor vi allesammen på bunden af et dybt hav med luft: Jordens atmosfære, som strækker sig op til 40 kilometers højde. Vægten af al den luft, der presses ned over os ovenfra, kaldes for atmosfærisk tryk. \n\nVed havets overflade udøver det atmosfæriske tryk en kraft på 7 kg på hver kvadrattomme – det svarer til ca. 600 kg på et område med samme størrelse som et stykke papir i standardformat.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Vi bemærker ikke dette hårde tryk, fordi vi er vant til det – dvs. indtil det ændrer sig bare det mindste, ligesom det gør, når vi befinder os i store højder eller i fly. Det atmosfæriske tryk varierer også i henhold til vejrforholdene. Det falder, hvis der er stormfuldt og ustabilt vejr, mens det stiger, når luften stabiliseres, og der er skyfrit. \n\nDet digitale barometer i din telefon måler atmosfærisk tryk i hektopascal (en hektopascal er 100 pascal, hvor en pascal er, når der udøves 1 newton kraft på et område på en kvadratmeter). Du har sikker hørt metrologer omtale atmosfærisk tryk i millibar – denne enhed, som lyder mindre kompliceret, svarer til hektopascal. \n\nDu tænker måske: Hvorfor måler en telefon tryk? Det atmosfæriske tryk ændrer sig målbart ved selv de mindste ændringer i højde, f.eks. når du går op ad en trappe. Så et digitalt barometer i en telefon kan hjælpe med at registrere placeringsændringer ved f.eks. at oplyse dig om, hvilken etage du befinder dig på, eller om du kører på den øverste eller nederste del af en bro.</string>
-  <string name="run_review_activity_label">Gennemgang</string>
-  <string name="service_notification_content_title">Science Journal</string>
-  <string name="service_notification_content_text">Registrerer…</string>
-  <string name="live_graph_content_description">Livevisning af sensorgraf. Træk for at panorere X-aksen, knib sammen for at zoome ind på Y-aksen.</string>
-  <string name="static_graph_content_description">Sensorgraf. Knib sammen for at zoome ind, træk for at panorere, og dobbelttryk for at zoome ud.</string>
-  <string name="sensor_card_overflow_menu_content_description">Kortindstillinger</string>
-  <string name="sensor_tab_layout_content_description">tilgængelige sensorer</string>
-  <string name="title_activity_sensor_info">Sensoroplysninger</string>
-  <string name="title_activity_sensor_info_format">%s-sensor</string>
-  <string name="heading_info_section">Hvad sker der?</string>
+    <string name="sensor_desc_short_acc_y">Telefonens acceleration frem og tilbage, i m/s²</string>
+    <string name="sensor_desc_short_acc_z">Telefonens acceleration op og ned, i m/s²</string>
+    <string name="sensor_desc_short_decibel">Intensiteten af lyden, målt i decibel (dB), der når frem til lydsensoren eller mikrofonen.</string>
+    <string name="sensor_desc_short_pitch">Lydens tonehøjde, målt i Hertz (Hz), der når frem til lydsensoren eller mikrofonen.</string>
+    <string name="sensor_desc_short_light">Mængden af lys, målt i lux, der når frem til sensoren for omgivende lys.</string>
+    <string name="sensor_desc_short_magnetic_strength">Styrken på jordens magnetfelt i omgivelserne angivet i mikrotesla.</string>
+    <string name="sensor_desc_short_bluetooth">En ekstern sensor viser sine data her, baseret på tilpassede indstillinger.</string>
+    <string name="sensor_desc_short_rotation">Antallet af rotationer pr. minut</string>
+    <string name="sensor_desc_short_raw">Procentangivelsen fra den ubehandlede aflæsning fra en ekstern sensor.</string>
+    <string name="sensor_desc_short_barometer">Det atmosfæriske tryk målt i hektopascal (hPa).</string>
+    <string name="sensor_desc_first_paragraph_light">Sensoren for omgivende lys måler lys i lux, der er et mål for lys, som afhænger af mængden af indfaldende lys og området, som lyset spredes over.
+
+En fuldmåne giver en belysning på ca. 1 lux; en normal stue, der er oplyst vha. lamper, er på ca. 50 lux; belysningen i et klasselokale eller en solopgang eller solnedgang er på ca. 400 lux. Dagslys (indirekte lys) er på over 10.000 lux, og direkte sol er på over 30.000 lux. 
+
+De fleste af os er ikke fortrolige med betegnelsen lux. Når vi køber lyspærer, ser vi ofte på antallet af watt. Men wattangivelsen på en lyspære fortæller ikke noget om, hvor lysstærk pæren er, men derimod hvor meget energi, den bruger. Lumen er et bedre mål, når du er på indkøb efter lyspærer. Det fortæller, hvor meget lys, en pære udsender. Antallet af lux fortæller derimod, hvor meget af lyset, der når frem til et bestemt område.</string>
+    <string name="sensor_desc_second_paragraph_light">Lys spredes over afstand, og antallet af lux bliver derfor mindre, når du bevæger dig væk fra en lyskilde, selvom kilden stadig udsender den samme mængde lys målt i lumen. Et område, der drejes i forhold til en lyskilde, modtager også mindre lys. Dette er årsagen til, at områderne ved ækvator her på jorden er så meget varmere end de kolde poler.
+
+Forresten bruges lyssensoren i din telefon til at styre skærmens lysniveau, så det justeres i forhold til svagt eller kraftigt lys i omgivelserne. Lyssensoren indeholder en lille halvleder, der reagerer på indfaldende lys ved at skabe en lille, men målbar elektrisk strøm, der opstår via et fænomen, der kaldes den fotoelektriske effekt. I nogle gadelamper bruges tilsvarende sensorer til at tænde lyset, når mørket falder på.</string>
+    <string name="sensor_desc_first_paragraph_magnetic_strength">Din telefon indeholder en enhed til at registrere magnetfelter: Et magnetometer. Denne lillebitte sensor med tre akser bruger elektrisk strøm til at registrere magnetfeltets styrke i de tre rumlige dimensioner. Ved at kombinere data fra alle tre akser kan vi skabe en sensor, der registrerer magnetfeltets samlede styrke.
+
+Nogle magnetometre registrerer magnetfelter ved hjælp af Hall-effekten, som er magnetfelters tendens til at afbøje en ladning i bevægelse. Nyere magnetometre benytter sig af magnetoresistorer, som er metalblandinger, hvis modstand ændres som respons på magnetfelter. 
+
+Hvorfor har en telefon brug for et magnetometer? Det kan være nyttigt for indbyggede kompas- og navigationsapps at kende din rumlige position, især for dem, der giver dig en detaljeret rutevejledning.</string>
+    <string name="sensor_desc_second_paragraph_magnetic_strength">Magneter, elektrisk strøm og metalgenstande vil nemt lede din telefons magnetometer i den ene eller anden retning. Men selv midt på en åben plads vil magnetometeret i din telefon altid vise en lav måling, der ikke er lig med nul: Det er jordens magnetfelt!</string>
+    <string name="sensor_desc_first_paragraph_acc">Objekter har en tendens til at blive, hvor de er, eller fortsætte en eventuel igangværende bevægelse. Denne tendens kaldes for interti. Newtons første lov udtrykker denne ide formelt: Et objekt fortsætter sin bevægelsestilstand, medmindre det påvirkes af en ubalanceret kraft.
+
+Når en ubalanceret kraft får et objekt til at bevæge sig, siger man, at objektet accelererer: Objektets hastighed eller fart ændres, enten ved forøgelse eller reduktion af hastigheden, eller ved at bevægelsesretningen ændres. Acceleration måles som ændring af hastighed (meter pr. sekund) over tid, eller som meter pr. sekund i anden (m/s²). 
+
+Din telefon har en enhed, der kan måle disse ændringer af bevægelse. Enheden hedder et accelerometer. Et accelerometer indeholder små masser, der kan bevæge sig frit. En ændring af bevægelsen får disse masser til at bevæge sig, lidt på samme måde som dit hoved har en tendens til at bevæge sig fremefter, når du sidder i en bil, der pludselig stopper. Ved at måle næsten umærkelige ændringer i intertien kan accelerometeret i en telefon registrere ændringer i bevægelse og retning. Dette er nyttigt, når skærmen skal skifte mellem liggende og stående tilstand, eller når du spiller spil på telefonen og meget mere.</string>
+    <string name="sensor_desc_second_paragraph_acc">Du har sikkert bemærket en konstant acceleration langs Z-aksen, selv når telefonen ligger helt stille på et bord. Dette er den acceleration, vi oplever her på jordens overflade, der skyldes tyngdekraftens virkning (tyngdeaccelerationen), som er på ca. 9,8 m/s².</string>
+    <string name="sensor_desc_first_paragraph_decibel">Lyd skabes af svingninger. For eksempel opstår lyden af din stemme på grund af svingninger i stemmebåndene i din hals. Svingningerne skaber områder med skiftevist lavt og højt lufttryk, der bevæger sig udefter, lidt på samme måde som ringe i vandet, når du kaster en sten i en sø.</string>
+    <string name="sensor_desc_second_paragraph_decibel">Alle lyde kan beskrives ved hjælp af deres frekvens og deres intensitet.
+
+Det er intensiteten, du måler med Science Journal, og det foregår i enheden decibel (dB). Intensiteten, eller lydstyrken, afhænger af den afstand, som et vibrerende objekt bevæger sig, hver gang det vibrerer. Vi oplever større intensitet som øget lydstyrke. 
+
+Frekvensen (også kaldet pitch eller tonehøjde) af en lydbølge svarer til dens vibrationshastighed. Jo hurtigere et objekt vibrerer, desto højere er tonehøjden af den resulterende lyd. Science Journal måler ikke frekvens – kun lydstyrke. 
+
+Det er vigtigt at vide, at mikrofonen i din enhed er designet til at være meget følsom over for forskelle i lydbølger over tid, men ikke den enkelte lydbølges absolutte størrelse. Vi har forsøgt at udvælge kode, der med stor sandsynlighed kan producere tal, der ligger tæt på referencenumrene nedenfor, men hver enkelt enhed kan give tal, der konsekvent er højere eller lavere. Forskere vil normalt kalibrere en sensor som denne til en kendt måling. Indtil videre kan Science Journal fortælle dig, om lydstyrken på din næste togtur er højere end til din næste rockkoncert, men kun hvis du medbringer den samme telefon begge steder. 
+
+Det er også værd at vide, at der er væsentlige forskelle mellem \"lydintensitet\", \"lydintensitetsniveau\" og \"lydtryk\". Her behandler vi dem som det samme, men hvis du vil dykke længere ned i det, findes der mange onlineressourcer om forskellene. 
+
+Den mindste lyd, der kan opfattes af det menneskelige øre, er defineret som 0 dB. Almindelig samtale svarer til ca. 60 dB, og lyd over 140 dB giver smerter i det menneskelige øre. Lyd behøver imidlertid ikke at forårsage smerte for at være skadelig. Konstant udsættelse for lyd på 90 dB (svarer omtrent til lydstyrken af en støvsuger) kan med tiden medføre høretab. 
+
+Decibelskalaen er logaritmisk og kan derfor være svær at gå til: En lydkilde på 40 dB er ikke dobbelt så intens som en lydkilde på 20 dB – den er 100 gange så intens! På samme skala har du et vækkeur, der ringer med 70 dB, men to vækkeure ringer ikke med 140 dB, de ringer med 73 dB. Som allerede nævnt er det en underlig skala. 
+
+10 dB raslende blade 
+20 dB hvisken over 1,5 meter 
+30 dB stille hvisken 
+50 dB regnvejr 
+60 dB almindelig samtale 
+90 dB blender 
+100 dB bil uden lydpotte 
+110 dB råben direkte ind i øret 
+120 dB torden 
+130 dB trykluftsbor 
+140 dB et fly, der letter</string>
+    <string name="sensor_desc_first_paragraph_pitch">Lyd skabes af svingninger. For eksempel opstår lyden af din stemme på grund af svingninger i stemmebåndene i din hals. Svingningerne skaber områder med skiftevist lavt og højt lufttryk, der bevæger sig udefter, lidt på samme måde som ringe i vandet, når du kaster en sten i en sø.</string>
+    <string name="sensor_desc_second_paragraph_pitch">Alle lyde kan beskrives ved hjælp af deres frekvens og intensitet. Frekvensen (også kaldet pitch eller tonehøjde) af en lydbølge svarer til dens vibrationsrate. Jo hurtigere et objekt vibrerer, desto højere er tonehøjden for den resulterende lyd. Vi måler disse vibrationer i Hertz (Hz), hvor 1 Hertz = 1 vibration/sekund.
+
+Mennesket kan høre lyde i frekvensområdet 20 til 20.000 Hz. Den laveste tangent på et flygel producerer en lyd med frekvensen 27,5 Hz, og den højeste tangent producerer en lyd med frekvensen 4.186,01 Hz. 
+
+Den røde prik indikerer, hvor tæt den registrerede tonehøjde er på den nærmeste skalatone. Hvis tonehøjden er lavere, vises prikken til venstre. Hvis tonehøjden er lavere, vises prikken til højre.</string>
+    <string name="pitch_low_content_description">lavt toneleje</string>
+    <string name="pitch_flatter_than_natural_note_content_description">%3$s halvtonetrin lavere end %1$s, oktav %2$s</string>
+    <string name="pitch_flatter_than_flat_note_content_description">%3$s halvtonetrin lavere end %1$ses, oktav %2$s</string>
+    <string name="pitch_flatter_than_sharp_note_content_description">%3$s halvtonetrin lavere end %1$sis, oktav %2$s</string>
+    <string name="pitch_natural_note_content_description">%1$s, oktav %2$s</string>
+    <string name="pitch_flat_note_content_description">%1$ses, oktav %2$s</string>
+    <string name="pitch_sharp_note_content_description">%1$sis, oktav %2$s</string>
+    <string name="pitch_sharper_than_natural_note_content_description">%3$s halvtonetrin højere end %1$s, oktav %2$s</string>
+    <string name="pitch_sharper_than_flat_note_content_description">%3$s halvtonetrin højere end %1$ses, oktav %2$s</string>
+    <string name="pitch_sharper_than_sharp_note_content_description">%3$s halvtonetrin højere end %1$sis, oktav %2$s</string>
+    <string name="pitch_high_content_description">højt toneleje</string>
+    <string name="sensor_desc_first_paragraph_rotation">Rotationer pr. minut (RPM, rotations per minute) er et mål for antal omdrejninger pr. minut rundt om en fast akse.
+
+Når vindmøllen drejer, får den konverteringsskiven til at dreje rundt:</string>
+    <string name="sensor_desc_second_paragraph_rotation">Dette skaber perioder med lys og mørke på sensoren, og dette registreres i Science Journal som rotation.</string>
+    <string name="sensor_desc_first_paragraph_raw">Dataene, der vises her, kommer fra kommunikation mellem en ekstern sensor og din telefon via Bluetooth.
+
+Værdien viser procentdelen for den ubehandlede aflæsning direkte fra mikrocontrolleren. Dette er normalt det procentvise spændingsfald i en sensor.</string>
+    <string name="sensor_desc_second_paragraph_raw">Bluetooth er en industristandard for teknologi til trådløs kommunikation, der bruger radiobølger til udveksling af data fra fastmonterede og mobilenheder over korte afstande.</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">Dataene, der vises her, kommer fra kommunikation mellem en ekstern sensor og din telefon via Bluetooth.</string>
+    <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth er en industristandard for teknologi til trådløs kommunikation, der bruger radiobølger til udveksling af data fra fastmonterede og mobilenheder over korte afstande.</string>
+    <string name="sensor_desc_first_paragraph_barometer">Selvom vi ikke lægger mærke til det, bor vi allesammen på bunden af et dybt hav med luft: Jordens atmosfære, som strækker sig op til 40 kilometers højde. Vægten af al den luft, der presses ned over os ovenfra, kaldes for atmosfærisk tryk.
+
+Ved havets overflade udøver det atmosfæriske tryk en kraft på 7 kg på hver kvadrattomme – det svarer til ca. 600 kg på et område med samme størrelse som et stykke papir i standardformat.</string>
+    <string name="sensor_desc_second_paragraph_barometer">Vi bemærker ikke dette hårde tryk, fordi vi er vant til det – dvs. indtil det ændrer sig bare det mindste, ligesom det gør, når vi befinder os i store højder eller i fly. Det atmosfæriske tryk varierer også i henhold til vejrforholdene. Det falder, hvis der er stormfuldt og ustabilt vejr, mens det stiger, når luften stabiliseres, og der er skyfrit.
+
+Det digitale barometer i din telefon måler atmosfærisk tryk i hektopascal (en hektopascal er 100 pascal, hvor en pascal er, når der udøves 1 newton kraft på et område på en kvadratmeter). Du har sikker hørt metrologer omtale atmosfærisk tryk i millibar – denne enhed, som lyder mindre kompliceret, svarer til hektopascal. 
+
+Du tænker måske: Hvorfor måler en telefon tryk? Det atmosfæriske tryk ændrer sig målbart ved selv de mindste ændringer i højde, f.eks. når du går op ad en trappe. Så et digitalt barometer i en telefon kan hjælpe med at registrere placeringsændringer ved f.eks. at oplyse dig om, hvilken etage du befinder dig på, eller om du kører på den øverste eller nederste del af en bro.</string>
+    <string name="run_review_activity_label">Gennemgang</string>
+    <string name="service_notification_content_title">Science Journal</string>
+    <string name="service_notification_content_text">Registrerer…</string>
+    <string name="live_graph_content_description">Livevisning af sensorgraf. Træk for at panorere X-aksen, knib sammen for at zoome ind på Y-aksen.</string>
+    <string name="static_graph_content_description">Sensorgraf. Knib sammen for at zoome ind, træk for at panorere, og dobbelttryk for at zoome ud.</string>
+    <string name="sensor_card_overflow_menu_content_description">Kortindstillinger</string>
+    <string name="sensor_tab_layout_content_description">tilgængelige sensorer</string>
+    <string name="title_activity_sensor_info">Sensoroplysninger</string>
+    <string name="title_activity_sensor_info_format">%s-sensor</string>
+    <string name="heading_info_section">Hvad sker der?</string>
   <string name="edit_note_time">Rediger tid i note</string>
   <string name="delete_note_menu_item">Slet</string>
   <string name="delete_run">Slet</string>
@@ -220,11 +291,8 @@
   <string name="default_trial_title">Registrering %1$d</string>
   <string name="run_review_switch_sensor_btn_prev">forrige sensor: %s</string>
   <string name="run_review_switch_sensor_btn_next">næste sensor: %s</string>
-  <string name="add_note_hint_text">Tilføj en ny note</string>
   <string name="snackbar_note_deleted">Noten er slettet</string>
   <string name="snackbar_undo">Fortryd</string>
-  <string name="add_run_note_placeholder_text">Føj note til denne registrering</string>
-  <string name="add_note_image_button_content_description">Tag et billede, og tilføj det som note</string>
   <string name="pinned_note_placeholder_text">Tilføj note</string>
   <string name="indeterminate_value">--</string>
   <string name="archived_badge">Arkiverede samtaler</string>
@@ -246,41 +314,70 @@
   <string name="edit_trial_title_hint">Registreringens titel</string>
   <string name="include_archived_trials">Se arkiverede registreringer</string>
   <string name="export_error">Eksporten mislykkedes.</string>
-  <string name="no_app_found_for_csv">Der er ikke installeret en app til CSV-eksport.</string>
-  <string name="listing_title">Science Journal</string>
-  <string name="listing_tagline">Udfør forsøg på verden omkring dig.</string>
-  <string name="listing_changelog">Nye funktioner og forbedringer:
-\n\u2022 Download eksperimenter, fotos og sensorregistreringer på din enhed.
-\n\u2022 Understøttelse af Arduino MKR WiFi 1010-printplader.</string>
-  <string name="listing_changelog_features">Nye funktioner:</string>
-  <string name="listing_changelog_bug_fixes">Effektivitetsforbedringer og fejlrettelser.</string>
-  <string name="listing_changelog_separator">\n\n﻿</string>
-  <string name="listing_h_feature_1">\n• Tonehøjdesensor.</string>
-  <string name="listing_h_feature_2">\n• Eksportér eksperimenter til en fil, og importér dem til andre enheder.</string>
-  <string name="listing_h_feature_3">\n• Eksportér fotos fra et eksperiment.</string>
-  <string name="listing__description">Science Journal er den gratis digitale videnskabsnotesbog fra Google.
-\n
-\nUanset om du underviser i naturvidenskab eller blot beskæftiger dig med det på hobbyplan, kan du samle dine noter, fotos og observationer på ét praktisk sted. Brug sensorerne i din telefon til at måle og illustrere fænomener som lys, lyd og bevægelse, eller opret forbindelse til eksterne sensorer via Bluetooth for at udføre eksperimenter på verden omkring dig.
-\n
-\nMed appen Science Journal kan du:
-\n\u2022 Måle lys, lyd, acceleration, lufttryk og meget mere med telefonens indbyggede sensorer.
-\n\u2022 Tage noter og fotos til dokumentation af dine videnskabelige eksperimenter. Der kommer snart flere notetyper.
-\n\u2022 Oprette forbindelse til eksterne sensorer ved hjælp af udvalgte Bluetooth-aktiverede Arduino- og Vernier-enheder.
-\n\u2022 Eksportere registrerede sensordata som CSV-filer.
-\n\u2022 Oprette automatiske triggers til optagelse af data og notetagning.
-\n\u2022 Bruge sonificering til at høre bevægelserne i dine grafer.
-\n
-\nScience Journal er gratis til Android, iPhone, iPad og kompatible Chromebook-enheder.
-\n
-\nUddannelsesmæssige aktiviteter fra vores partnere: https://makingscience.withgoogle.com/science-journal/activities
-\nSupport: https://productforums.google.com/forum/#!forum/sciencejournal
-\nTilgængelig open source-kode: https://github.com/google/science-journal
-\n\n
+    <string name="no_app_found_for_csv">Der er ikke installeret en app til CSV-eksport.</string>
+    <string name="listing_title">Science Journal</string>
+    <string name="listing_tagline">Udfør forsøg på verden omkring dig.</string>
+    <string name="listing_changelog">Nye funktioner og forbedringer:
+
+\u2022 Download eksperimenter, fotos og sensorregistreringer på din enhed.
+
+\u2022 Understøttelse af Arduino MKR WiFi 1010-printplader.</string>
+    <string name="listing_changelog_features">Nye funktioner:</string>
+    <string name="listing_changelog_bug_fixes">Effektivitetsforbedringer og fejlrettelser.</string>
+    <string name="listing_changelog_separator">
+
+﻿</string>
+    <string name="listing_h_feature_1">
+• Tonehøjdesensor.</string>
+    <string name="listing_h_feature_2">
+• Eksportér eksperimenter til en fil, og importér dem til andre enheder.</string>
+    <string name="listing_h_feature_3">
+• Eksportér fotos fra et eksperiment.</string>
+    <string name="listing__description">Science Journal er den gratis digitale videnskabsnotesbog fra Google.
+
+
+
+Uanset om du underviser i naturvidenskab eller blot beskæftiger dig med det på hobbyplan, kan du samle dine noter, fotos og observationer på ét praktisk sted. Brug sensorerne i din telefon til at måle og illustrere fænomener som lys, lyd og bevægelse, eller opret forbindelse til eksterne sensorer via Bluetooth for at udføre eksperimenter på verden omkring dig.
+
+
+
+Med appen Science Journal kan du:
+
+\u2022 Måle lys, lyd, acceleration, lufttryk og meget mere med telefonens indbyggede sensorer.
+
+\u2022 Tage noter og fotos til dokumentation af dine videnskabelige eksperimenter. Der kommer snart flere notetyper.
+
+\u2022 Oprette forbindelse til eksterne sensorer ved hjælp af udvalgte Bluetooth-aktiverede Arduino- og Vernier-enheder.
+
+\u2022 Eksportere registrerede sensordata som CSV-filer.
+
+\u2022 Oprette automatiske triggers til optagelse af data og notetagning.
+
+\u2022 Bruge sonificering til at høre bevægelserne i dine grafer.
+
+
+
+Science Journal er gratis til Android, iPhone, iPad og kompatible Chromebook-enheder.
+
+
+
+Uddannelsesmæssige aktiviteter fra vores partnere: https://makingscience.withgoogle.com/science-journal/activities
+
+Support: https://productforums.google.com/forum/#!forum/sciencejournal
+
+Tilgængelig open source-kode: https://github.com/google/science-journal
+
+
+
 Meddelelse om tilladelser:
-\n\u2022 Placering: Påkrævet for at kunne scanne efter sensorenheder med Bluetooth.
-\n\u2022 Kamera: Påkrævet for at tage billeder til dokumentation af eksperimenter.
-\n\u2022 Mikrofon: Påkrævet for at kunne bruge sensor til registrering af lydstyrke.
-\n\u2022 Lager: Påkrævet for at få adgang til fotos til indsættelse i eksperimenter.</string>
+
+\u2022 Placering: Påkrævet for at kunne scanne efter sensorenheder med Bluetooth.
+
+\u2022 Kamera: Påkrævet for at tage billeder til dokumentation af eksperimenter.
+
+\u2022 Mikrofon: Påkrævet for at kunne bruge sensor til registrering af lydstyrke.
+
+\u2022 Lager: Påkrævet for at få adgang til fotos til indsættelse i eksperimenter.</string>
   <string name="third_party_sensors_option_title">Scan efter tredjepartssensorer</string>
   <string name="third_party_sensors_option_summary">Se efter apps, der understøtter tredjepartssensorens API, og aktivér tilføjelse af de pågældende sensorer til eksperimenter.</string>
   <string name="enable_temperature_sensor_title">Aktivér omgivende temperatur</string>
@@ -330,26 +427,6 @@ Meddelelse om tilladelser:
   <string name="trigger_when_above_description">%1$s, når sensorens værdi ligger over %2$s %3$s</string>
   <string name="trigger_when_below_description">%1$s, når sensorens værdi ligger under %2$s %3$s</string>
   <string name="sensor_trigger_deleted">Udløseren er slettet</string>
-  <string-array name="trigger_type_list">
-    <item>@string/trigger_type_start_recording</item>
-    <item>@string/trigger_type_stop_recording</item>
-    <item>@string/trigger_type_note</item>
-    <item>@string/trigger_type_alert</item>
-  </string-array>
-  <string-array name="trigger_when_list">
-    <item>@string/trigger_when_at</item>
-    <item>@string/trigger_when_rises_above</item>
-    <item>@string/trigger_when_drops_below</item>
-    <item>@string/trigger_when_is_above</item>
-    <item>@string/trigger_when_is_below</item>
-  </string-array>
-  <string-array name="trigger_when_list_note_text">
-    <item>i</item>
-    <item>steg til over</item>
-    <item>faldt til under</item>
-    <item>ligger over</item>
-    <item>ligger under</item>
-  </string-array>
   <string name="trigger_only_when_recording">Aktivér kun under registrering</string>
   <string name="trigger_snackbar_auto_text">%1$s %2$s %3$.2f %4$s</string>
   <string name="scroll_to_card">vis</string>
@@ -392,90 +469,90 @@ Meddelelse om tilladelser:
   <string name="timestamp_picker_range_error">Tidspunktet skal ligge inden for forsøgets varighed</string>
   <string name="timestamp_picker_crop_range_error">Registreringer kan ikke vare mindre end et sekund</string>
   <string name="timestamp_picker_prompt">Nyt tidspunkt (t.mm.ss.SSS)</string>
-  <string name="crop_failed_range_too_large">Forsøget kan ikke afkortes uden for det område, der blev registreret først</string>
-  <string name="crop_failed_range_too_small">Forsøget kan ikke afkortes til at vare mindre end et sekund</string>
-  <string name="project_experiment_title">%1$s: %2$s</string>
-  <string name="export_options_title">Eksportér…</string>
-  <string name="export_options_relative_time">Relativ tid</string>
-  <string name="old_trigger_note_format">Aktiveret note: %1s</string>
-  <string name="old_trigger_note_format_custom">Aktiveret note: %1$s; %2$s</string>
-  <string name="compass">Kompas</string>
-  <string name="compass_units">grader</string>
-  <string name="sensor_desc_short_compass">Telefonens placering i forhold til jordens magnetfelt.</string>
-  <string name="sensor_desc_first_paragraph_compass">Du ved sikkert allerede, at jorden har et magnetfelt. Men du er muligvis ikke klar over, at din telefon indeholder en enhed, der kan måle magnetfelter: Et magnetometer. Ved at kombinere data fra din telefons magnetometer med telefonens rumlige position kan vi skabe et digitalt kompas. \n\nEt gammeldags kompas er et lavteknologisk magnetometer med en magnetiseret nål, der drejer i overensstemmelse med det omgivende magnetfelt. Der er ikke et lillebitte kompas i din telefon, men i stedet er der en meget lille sensor med tre akser, der bruger elektrisk strøm til at registrere magnetfeltets styrke i de tre rumlige dimensioner. Men dette alene er ikke nok til at skabe et kompas! \n\nHvorfor skal et kompas kombinere data fra magnetometeret med telefonens position? Når vi kender telefonens position, kan vi beregne magnetfeltets rotation, selv når telefonen ikke holdes plant på samme niveau som jordens magnetfelt. Vi ved, at tyngdekraften ligger lodret på jordens magnetfelt, og derfor kan vi bruge tyngdekraftens retning fra accelerometerets sensorer til at bestemme, hvor meget af magnetfeltet der er på samme niveau som jordens magnetfelt.</string>
-  <string name="sensor_desc_second_paragraph_compass">Du har måske bemærket, at kompasset ikke kun reagerer på jordens magnetfelt, men også på alle andre magnetfelter, der måtte være i nærheden. Magneter, elektrisk strøm og metalgenstande kan nemt lede dit magnetometer i den ene eller anden retning, hvilket ændrer kompasvisningen. Prøv at stille dig på en åben plads – helst udenfor og på lang afstand af strømførende kabler – hvis du vil være sikker på, at kompassets røde spids følger jordens magnetfelt. Det kan hjælpe at bevæge din telefon i et ottetalsmønster for at kalibrere magnetometeret i din telefon.</string>
-  <string name="text_label_details_title">Rediger tekstnote</string>
-  <string name="empty_text_note_error">Tekstnoter må ikke være tomme</string>
-  <string name="navigation_item_experiments">Eksperimenter</string>
-  <string name="note_caption_hint">Tilføj en beskrivelse</string>
-  <string name="month_year_format">MMMM åååå</string>
-  <string name="linear_accelerometer">Lineært accelerometer</string>
-  <string name="sensor_desc_short_linear_acc">Telefonens samlede acceleration med undtagelse af tyngdekraften, i m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Objekter har en tendens til at blive, hvor de er, eller fortsætte en eventuel igangværende bevægelse. Denne tendens kaldes for interti. Newtons første lov udtrykker denne idé formelt: Et objekt fortsætter sin bevægelsestilstand, medmindre det påvirkes af en ubalanceret kraft. \n\nNår en ubalanceret kraft får et objekt til at bevæge sig, siger man, at objektet accelererer: Objektets hastighed eller fart ændres, enten ved forøgelse eller reduktion af hastigheden, eller ved at bevægelsesretningen ændres. Acceleration måles som ændring af hastighed (meter pr. sekund) over tid, eller som meter pr. sekund i anden (m/s²). \n\nDin telefon har en enhed, der kan måle disse ændringer af bevægelse. Enheden hedder et accelerometer. Et accelerometer indeholder små masser, der kan bevæge sig frit. En ændring af bevægelsen får disse masser til at bevæge sig, lidt på samme måde som dit hoved har en tendens til at bevæge sig fremefter, når du sidder i en bil, der pludselig stopper. Ved at måle næsten umærkelige ændringer i intertien kan accelerometeret i en telefon registrere ændringer i bevægelse og retning. Dette er nyttigt, når skærmen skal skifte mellem liggende og stående format, eller når du spiller spil på telefonen og meget mere.</string>
-  <string name="sensor_desc_second_paragraph_linear_acc">Den kombinerede sensor med lineært accelerometer registrerer den samlede acceleration på telefonens tre akser med undtagelse af tyngdekraften.</string>
-  <string name="data_with_units">%1$s %2$s</string>
-  <string name="edit_note_time_menu_item">Rediger tid</string>
-  <string name="add_note_button_text">Føj note til tidslinje</string>
-  <string name="add_note_to_time_text">Føj note til %1$s</string>
-  <string name="trial_caption_hint_text">Tilføj en beskrivelse af registreringen her</string>
-  <string name="snapshot_label_details_title">Fotooplysninger</string>
-  <string name="trigger_label_details_title">Info om aktiveret note</string>
-  <string name="tool_picker_tab_layout_description">Tilgængelige værktøjer</string>
-  <string name="tab_description_add_note">Skriv tekst</string>
-  <string name="tab_description_observe">Observer sensorer</string>
-  <string name="tab_description_camera">Tag foto</string>
-  <string name="load_more_notes_btn">Se flere noter</string>
-  <string name="name_experiment_dialog_title">Giv dette eksperiment et navn</string>
-  <string name="empty_experiment_title_error">Navn må ikke være tomt</string>
-  <string name="card_recording_title">%1$s…</string>
-  <string name="throbber_content_description">Registreringen er i gang</string>
-  <string name="trigger_label_name_header">%1$s %2$s</string>
-  <string name="description_hint">Beskrivelse</string>
-  <string name="details_header">Info</string>
-  <string name="text_label_hint">Tilføj en observation</string>
-  <string name="first_experiment_title">Velkommen til Science Journal</string>
-  <string name="first_experiment_text_note">Prøv at tage noter og registrere data ved hjælp af værktøjslinjen nedenfor.</string>
-  <string name="first_experiment_picture_note_caption">Velkommen til Science Journal!</string>
-  <string name="first_experiment_second_text_note">Find aktiviteter på \ng.co/sciencejournalactivities</string>
-  <string name="experiment_cover_description">Vælg et billede til eksperimentet</string>
-  <string name="btn_take_picture_content_description">Tag et billede</string>
-  <string name="tab_description_gallery">Vælg et billede</string>
-  <string name="gallery_image_content_description">Billede taget %s</string>
-  <string name="gallery_image_content_description_selected">Valgt billednummer %1$d. Billede taget %2$s</string>
-  <string name="content_description_selected">valgt</string>
-  <string name="gallery_selected_title">%1$d er valgt</string>
-  <string name="photo_editor_dialog_title">Rediger billede med…</string>
-  <string name="btn_show_tools">Vis værktøjsskuffe</string>
-  <string name="btn_expand_tools">Udvid værktøjsskuffe</string>
-  <string name="btn_hide_tools">Skjul værktøjsskuffe</string>
-  <string name="action_edit_photo">Rediger foto</string>
-  <string name="add_text_note">Tilføj tekstnote</string>
-  <string name="camera_preview_content_description">Livevisning for kamera</string>
-  <string name="input_camera_permission_denied">Kameraet kan ikke bruges, da Science Journal ikke har tilladelse til at åbne det.</string>
-  <string name="input_photo_library_permission_denied">Dit fotogalleri kan ikke bruges, da Science Journal ikke har adgang til det.</string>
-  <string name="action_show_archived_experiments">Vis arkiverede eksperimenter</string>
-  <string name="action_hide_archived_experiments">Skjul arkiverede eksperimenter</string>
-  <string name="action_hide_archived_trials">Skjul arkiv. registreringer</string>
-  <string name="snapshot_button_description">Øjebliksbillede fra sensor</string>
-  <string name="notification_channel_name">Registreringer</string>
-  <string name="notification_channel_description">Registreringsstatus</string>
-  <string name="import_failed_recording">Science Journal er i brug i øjeblikket. Stop registreringen, og prøv igen.</string>
-  <string name="import_failed_file">Importen mislykkedes. Der er noget galt med dette eksperiment.</string>
-  <string name="import_failed">Der opstod desværre en ukendt fejl.</string>
-  <string name="explore_your_world">Udforsk din verden</string>
-  <string name="use_science_journal">Brug Science Journal til at udføre\neksperimenter på verden omkring dig</string>
-  <string name="get_started">Kom godt i gang</string>
-  <string name="sign_in_text">Eksperimentdata for Science Journal er gemt og gjort tilgængelige på alle enheder ved hjælp af Google Drev med obligatorisk login med en Google-konto.\n\nHvis du har eksisterende data på denne enhed, kan du, når du er logget ind, gemme dine eksisterende eksperimenter i Google Drev. Dine eksperimenter gemmes i en \u201CScience Journal\u201D-mappe i Google Drev.</string>
-  <string name="device_settings_applied">De eksisterende enhedsindstillinger er blevet anvendt på denne konto</string>
-  <string name="sign_in_button">Log ind</string>
-  <string name="sign_in_learn_more_button">Få flere oplysninger</string>
-  <string name="sign_in_continue_without_signing_in_button">Fortsæt uden at logge ind</string>
-  <string name="science_journal_disabled_title">Science Journal er deaktiveret</string>
-  <string name="science_journal_disabled_message">Science Journal skal aktiveres i Google Administrationskonsol af din domæneadministrator.</string>
-  <string name="science_journal_disabled_yes">Skift konto</string>
-  <string name="old_user_option_prompt_headline">Sikkerhedskopiér på Google Drev</string>
-  <plurals name="old_user_option_prompt_text">
-    <item quantity="one">Velkommen tilbage, du har i øjeblikket %1$d eksperimenter gemt på denne enhed.\n\nVælg en mulighed for at fortsætte:</item>
+    <string name="crop_failed_range_too_large">Forsøget kan ikke afkortes uden for det område, der blev registreret først</string>
+    <string name="crop_failed_range_too_small">Forsøget kan ikke afkortes til at vare mindre end et sekund</string>
+    <string name="project_experiment_title">%1$s: %2$s</string>
+    <string name="export_options_title">Eksportér…</string>
+    <string name="export_options_relative_time">Relativ tid</string>
+    <string name="old_trigger_note_format">Aktiveret note: %1s</string>
+    <string name="old_trigger_note_format_custom">Aktiveret note: %1$s; %2$s</string>
+    <string name="compass">Kompas</string>
+    <string name="compass_units">grader</string>
+    <string name="sensor_desc_short_compass">Telefonens placering i forhold til jordens magnetfelt.</string>
+    <string name="sensor_desc_first_paragraph_compass">Du ved sikkert allerede, at jorden har et magnetfelt. Men du er muligvis ikke klar over, at din telefon indeholder en enhed, der kan måle magnetfelter: Et magnetometer. Ved at kombinere data fra din telefons magnetometer med telefonens rumlige position kan vi skabe et digitalt kompas.
+
+Et gammeldags kompas er et lavteknologisk magnetometer med en magnetiseret nål, der drejer i overensstemmelse med det omgivende magnetfelt. Der er ikke et lillebitte kompas i din telefon, men i stedet er der en meget lille sensor med tre akser, der bruger elektrisk strøm til at registrere magnetfeltets styrke i de tre rumlige dimensioner. Men dette alene er ikke nok til at skabe et kompas! 
+
+Hvorfor skal et kompas kombinere data fra magnetometeret med telefonens position? Når vi kender telefonens position, kan vi beregne magnetfeltets rotation, selv når telefonen ikke holdes plant på samme niveau som jordens magnetfelt. Vi ved, at tyngdekraften ligger lodret på jordens magnetfelt, og derfor kan vi bruge tyngdekraftens retning fra accelerometerets sensorer til at bestemme, hvor meget af magnetfeltet der er på samme niveau som jordens magnetfelt.</string>
+    <string name="sensor_desc_second_paragraph_compass">Du har måske bemærket, at kompasset ikke kun reagerer på jordens magnetfelt, men også på alle andre magnetfelter, der måtte være i nærheden. Magneter, elektrisk strøm og metalgenstande kan nemt lede dit magnetometer i den ene eller anden retning, hvilket ændrer kompasvisningen. Prøv at stille dig på en åben plads – helst udenfor og på lang afstand af strømførende kabler – hvis du vil være sikker på, at kompassets røde spids følger jordens magnetfelt. Det kan hjælpe at bevæge din telefon i et ottetalsmønster for at kalibrere magnetometeret i din telefon.</string>
+    <string name="text_label_details_title">Rediger tekstnote</string>
+    <string name="empty_text_note_error">Tekstnoter må ikke være tomme</string>
+    <string name="navigation_item_experiments">Eksperimenter</string>
+    <string name="note_caption_hint">Tilføj en beskrivelse</string>
+    <string name="month_year_format">MMMM åååå</string>
+    <string name="linear_accelerometer">Lineært accelerometer</string>
+    <string name="sensor_desc_short_linear_acc">Telefonens samlede acceleration med undtagelse af tyngdekraften, i m/s²</string>
+    <string name="sensor_desc_first_paragraph_linear_acc">Objekter har en tendens til at blive, hvor de er, eller fortsætte en eventuel igangværende bevægelse. Denne tendens kaldes for interti. Newtons første lov udtrykker denne idé formelt: Et objekt fortsætter sin bevægelsestilstand, medmindre det påvirkes af en ubalanceret kraft.
+
+Når en ubalanceret kraft får et objekt til at bevæge sig, siger man, at objektet accelererer: Objektets hastighed eller fart ændres, enten ved forøgelse eller reduktion af hastigheden, eller ved at bevægelsesretningen ændres. Acceleration måles som ændring af hastighed (meter pr. sekund) over tid, eller som meter pr. sekund i anden (m/s²). 
+
+Din telefon har en enhed, der kan måle disse ændringer af bevægelse. Enheden hedder et accelerometer. Et accelerometer indeholder små masser, der kan bevæge sig frit. En ændring af bevægelsen får disse masser til at bevæge sig, lidt på samme måde som dit hoved har en tendens til at bevæge sig fremefter, når du sidder i en bil, der pludselig stopper. Ved at måle næsten umærkelige ændringer i intertien kan accelerometeret i en telefon registrere ændringer i bevægelse og retning. Dette er nyttigt, når skærmen skal skifte mellem liggende og stående format, eller når du spiller spil på telefonen og meget mere.</string>
+    <string name="sensor_desc_second_paragraph_linear_acc">Den kombinerede sensor med lineært accelerometer registrerer den samlede acceleration på telefonens tre akser med undtagelse af tyngdekraften.</string>
+    <string name="data_with_units">%1$s %2$s</string>
+    <string name="edit_note_time_menu_item">Rediger tid</string>
+    <string name="add_note_to_time_text">Føj note til %1$s</string>
+    <string name="snapshot_label_details_title">Fotooplysninger</string>
+    <string name="trigger_label_details_title">Info om aktiveret note</string>
+    <string name="load_more_notes_btn">Se flere noter</string>
+    <string name="name_experiment_dialog_title">Giv dette eksperiment et navn</string>
+    <string name="empty_experiment_title_error">Navn må ikke være tomt</string>
+    <string name="card_recording_title">%1$s…</string>
+    <string name="throbber_content_description">Registreringen er i gang</string>
+    <string name="trigger_label_name_header">%1$s %2$s</string>
+    <string name="description_hint">Beskrivelse</string>
+    <string name="details_header">Info</string>
+    <string name="text_label_hint">Tilføj en observation</string>
+    <string name="first_experiment_title">Velkommen til Science Journal</string>
+    <string name="first_experiment_text_note">Prøv at tage noter og registrere data ved hjælp af værktøjslinjen nedenfor.</string>
+    <string name="first_experiment_picture_note_caption">Velkommen til Science Journal!</string>
+    <string name="first_experiment_second_text_note">Find aktiviteter på
+g.co/sciencejournalactivities</string>
+    <string name="experiment_cover_description">Vælg et billede til eksperimentet</string>
+    <string name="btn_take_picture_content_description">Tag et billede</string>
+    <string name="gallery_image_content_description">Billede taget %s</string>
+    <string name="gallery_image_content_description_selected">Valgt billednummer %1$d. Billede taget %2$s</string>
+    <string name="content_description_selected">valgt</string>
+    <string name="gallery_selected_title">%1$d er valgt</string>
+    <string name="photo_editor_dialog_title">Rediger billede med…</string>
+    <string name="action_edit_photo">Rediger foto</string>
+    <string name="input_camera_permission_denied">Kameraet kan ikke bruges, da Science Journal ikke har tilladelse til at åbne det.</string>
+    <string name="input_photo_library_permission_denied">Dit fotogalleri kan ikke bruges, da Science Journal ikke har adgang til det.</string>
+    <string name="action_show_archived_experiments">Vis arkiverede eksperimenter</string>
+    <string name="action_hide_archived_experiments">Skjul arkiverede eksperimenter</string>
+    <string name="action_hide_archived_trials">Skjul arkiv. registreringer</string>
+    <string name="snapshot_button_description">Øjebliksbillede fra sensor</string>
+    <string name="notification_channel_name">Registreringer</string>
+    <string name="notification_channel_description">Registreringsstatus</string>
+    <string name="import_failed_recording">Science Journal er i brug i øjeblikket. Stop registreringen, og prøv igen.</string>
+    <string name="import_failed_file">Importen mislykkedes. Der er noget galt med dette eksperiment.</string>
+    <string name="import_failed">Der opstod desværre en ukendt fejl.</string>
+    <string name="explore_your_world">Udforsk din verden</string>
+    <string name="use_science_journal">Brug Science Journal til at udføre
+eksperimenter på verden omkring dig</string>
+    <string name="get_started">Kom godt i gang</string>
+    <string name="sign_in_text">Eksperimentdata for Science Journal er gemt og gjort tilgængelige på alle enheder ved hjælp af Google Drev med obligatorisk login med en Google-konto.
+
+Hvis du har eksisterende data på denne enhed, kan du, når du er logget ind, gemme dine eksisterende eksperimenter i Google Drev. Dine eksperimenter gemmes i en \u201CScience Journal\u201D-mappe i Google Drev.</string>
+    <string name="device_settings_applied">De eksisterende enhedsindstillinger er blevet anvendt på denne konto</string>
+    <string name="sign_in_button">Log ind</string>
+    <string name="sign_in_learn_more_button">Få flere oplysninger</string>
+    <string name="sign_in_continue_without_signing_in_button">Fortsæt uden at logge ind</string>
+    <string name="science_journal_disabled_title">Science Journal er deaktiveret</string>
+    <string name="science_journal_disabled_message">Science Journal skal aktiveres i Google Administrationskonsol af din domæneadministrator.</string>
+    <string name="science_journal_disabled_yes">Skift konto</string>
+    <string name="old_user_option_prompt_headline">Sikkerhedskopiér på Google Drev</string>
+    <plurals name="old_user_option_prompt_text">
+        <item quantity="one">Velkommen tilbage, du har i øjeblikket %1$d eksperimenter gemt på denne enhed.\n\nVælg en mulighed for at fortsætte:</item>
     <item quantity="other">Velkommen tilbage, du har i øjeblikket %1$d eksperimenter gemt på denne enhed.\n\nVælg en mulighed for at fortsætte:</item>
   </plurals>
   <string name="drive_choice_headline">Gem alle dine eksperimenter</string>
@@ -521,8 +598,6 @@ Meddelelse om tilladelser:
   <string name="remove_cover_image_confirm">Er du sikker på, at du vil fjerne forsidebilledet? Denne handling kan ikke fortrydes.</string>
   <string name="drive_sync_cannot_reach_google_drive">Der er ikke forbindelse til Google Drev. Tjek internetforbindelsen.</string>
   <string name="experiment_title_concatenator">%1$s / %2$s</string>
-  <string name="create_experiment_feature_discovery_title">Opret et nyt eksperiment</string>
-  <string name="create_experiment_feature_discovery_body">Organiser dine tanker og observationer ved at tage noter, registrere data eller tage billeder</string>
   <string name="download_copy_action">Download</string>
   <string name="saved_to_device_text">Gemt i mappen Downloads.</string>
   <string name="download_options_title">Downloader…</string>
@@ -544,16 +619,35 @@ Meddelelse om tilladelser:
   <string name="more_observations_draw_title">Tegn</string>
   <string name="more_observations_draw_description">Tilføj tegnede noter</string>
   <string name="more_observations_velocity_tracker_title">Hastighedssporing</string>
-  <string name="more_observations_velocity_tracker_description">Brug augmented reality til at spore og måle objekter</string>
-  <string name="fit_image_to_scan">Tilpas billede til scan</string>
-  <string name="ar_detecting_image">Billedet er registreret</string>
-  <string name="ar_not_tracking">Billedet spores ikke</string>
-  <string name="action_bar_text_note">Opret tekstnote</string>
-  <string name="action_bar_sensor_note">Opret sensorregistrering</string>
-  <string name="action_bar_gallery">Vælg billeder</string>
-  <string name="action_bar_more">Flere observationer</string>
-  <string name="note_saved">Din note er blevet gemt</string>
-  <string name="note_saved_action">Se</string>
-  <string name="announcement_card_button_text">Få flere oplysninger</string>
-  <string name="dismiss_button_text">Afvis</string>
+    <string name="more_observations_velocity_tracker_description">Brug augmented reality til at spore og måle objekter</string>
+    <string name="fit_image_to_scan">Tilpas billede til scan</string>
+    <string name="ar_detecting_image">Billedet er registreret</string>
+    <string name="ar_not_tracking">Billedet spores ikke</string>
+    <string name="action_bar_text_note">Opret tekstnote</string>
+    <string name="action_bar_sensor_note">Opret sensorregistrering</string>
+    <string name="action_bar_gallery">Vælg billeder</string>
+    <string name="action_bar_more">Flere observationer</string>
+    <string name="note_saved">Din note er blevet gemt</string>
+    <string name="note_saved_action">Se</string>
+    <string name="btn_add_experiment_note_description">Føj note til eksperiment</string>
+    <string name="btn_add_run_note_description">Føj note til forsøg</string>
+    <string name="add_note_hint_text">Tilføj en ny note</string>
+    <string name="add_run_note_placeholder_text">Føj note til denne registrering</string>
+    <string name="add_note_image_button_content_description">Tag et billede, og tilføj det som note</string>
+    <string name="add_note_button_text">Føj note til tidslinje</string>
+    <string name="trial_caption_hint_text">Tilføj en beskrivelse af registreringen her</string>
+    <string name="tool_picker_tab_layout_description">Tilgængelige værktøjer</string>
+    <string name="tab_description_add_note">Skriv tekst</string>
+    <string name="tab_description_observe">Observer sensorer</string>
+    <string name="tab_description_camera">Tag foto</string>
+    <string name="tab_description_gallery">Vælg et billede</string>
+    <string name="btn_show_tools">Vis værktøjsskuffe</string>
+    <string name="btn_expand_tools">Udvid værktøjsskuffe</string>
+    <string name="btn_hide_tools">Skjul værktøjsskuffe</string>
+    <string name="add_text_note">Tilføj tekstnote</string>
+    <string name="camera_preview_content_description">Livevisning for kamera</string>
+    <string name="create_experiment_feature_discovery_title">Opret et nyt eksperiment</string>
+    <string name="create_experiment_feature_discovery_body">Organiser dine tanker og observationer ved at tage noter, registrere data eller tage billeder</string>
+    <string name="announcement_card_button_text">Få flere oplysninger</string>
+    <string name="dismiss_button_text">Afvis</string>
 </resources>

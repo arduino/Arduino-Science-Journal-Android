@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Arduino Science Journal</string>
+    <string name="action_feedback">Feedback</string>
+    <string name="action_about">Tungkol Sa</string>
+    <string name="action_save">I-save</string>
+    <string name="action_edit">I-edit</string>
+    <string name="action_delete">I-delete</string>
+    <string name="sine_wave">Sine wave</string>
+    <string name="acc_x">Accelerometer X</string>
+    <string name="acc_y">Accelerometer Y</string>
+    <string name="acc_z">Accelerometer Z</string>
+    <string name="ambient_light">Liwanag sa paligid</string>
+    <string name="magnetic_field_strength">Magnetometer</string>
+    <string name="barometer">Barometer</string>
+    <string name="ambient_temperature">Temperatura sa paligid</string>
+    <string name="acc_units">m/s²</string>
+    <string name="ambient_light_units">lux</string>
+    <string name="magnetic_strength_units">μT</string>
+    <string name="decibel_units">dB</string>
+    <string name="hertz_units">Hz</string>
+    <string name="rpm_units">RPM</string>
+    <string name="voltage_units">V</string>
+    <string name="raw_units">%</string>
+    <string name="barometer_units">hPa</string>
+    <string name="temperature_units">°C</string>
+    <string name="action_retry">Subukang muli</string>
+    <string name="decibel">Tindi ng tunog</string>
+    <string name="pitch">Pitch</string>
+    <string name="btn_record_description">Simulan ang pag-record</string>
+    <string name="btn_stop_description">Itigil ang pag-record</string>
+    <string name="unknown_sensor">Hindi malamang sensor</string>
+    <string name="recording_start_failed">Hindi masimulan ang pag-record</string>
+    <string name="recording_stop_failed_no_data_title">Hindi naire-record ang data</string>
+    <string name="recording_stop_failed_no_data">May isa o higit pa sa iyong mga sensor na hindi nag-record ng anumang data. Gusto mo bang kanselahin ang pagre-record na ito?</string>
+    <string name="recording_stop_failed_continue">Magpatuloy</string>
+    <string name="recording_stop_failed_cancel">Kanselahin ang pagre-record</string>
+    <string name="navigation_item_activities">Mga Aktibidad</string>
+    <string name="navigation_item_settings">Mga Setting</string>
+    <string name="title_activity_sensor_settings">Mga setting ng sensor</string>
+    <string name="graph_options_audio_feedback_enable">I-enable ang audio</string>
+    <string name="graph_options_audio_feedback_disable">I-disable ang audio</string>
+    <string name="stat_min">Minimum</string>
+    <string name="stat_max">Maximum</string>
+    <string name="stat_average">Average</string>
+    <string name="btn_reset_description">Tumalon sa ngayon</string>
+    <string name="export_action">Ibahagi</string>
+    <string name="send_copy_action">Magpadala ng kopya</string>
+    <string name="export_experiment_chooser_title">Ipadala ang Eksperimento</string>
+    <string name="export_photo_chooser_title">Ibahagi ang litrato sa...</string>
+    <string name="experiment_not_finished_downloading_confirm_button">Ibahagi eksperimento</string>
+    <string name="experiment_not_finished_downloading_message">Hindi pa tapos i-download ang eksperimentong ito. Kung magbabahagi ka ng kopya, maaaring kulang ng ilang data</string>
+    <string name="experiment_not_finished_downloading_title">Kasalukuyang dina-download</string>
+    <string name="settings_version_title">Bersyon</string>
+    <string name="settings_open_source_title">Mga open source na lisensya</string>
+    <string name="action_undo">I-undo</string>
+    <string name="choose_photo_button_text">Pumili ng larawan</string>
+    <string name="btn_new_experiment_content_description">Bagong eksperimento</string>
+    <string name="archived_experiment_message">Nai-archive ang eksperimento.</string>
+    <string name="unarchived_experiment_message">Inalis sa archive ang eksperimento.</string>
+    <string name="archived_run_message">Na-archive ang recording.</string>
+    <string name="unarchived_run_message">Nailabas sa archive ang recording.</string>
+    <string name="archived_content_description">Hindi mababago ang mga na-archive na eksperimento, pero maaaring ma-delete</string>
+    <string name="experiment_title_hint">Pamagat ng eksperimento</string>
+    <string name="btn_add_sensor_card_description">Magdagdag ng bagong sensor card</string>
+    <string name="btn_sensor_card_close">Isara ang card</string>
+    <string name="default_experiment_name">Eksperimentong Walang Pamagat</string>
+    <string name="empty_project">Wala kang mga eksperimento</string>
+    <string name="default_sonification">Default</string>
+    <string name="amplitude">Amplitude</string>
+    <string name="notes">Mga Nota</string>
+    <string name="scale">Scale</string>
+    <string name="conductor">Conductor</string>
+    <string name="empty_experiment">Wala ka pang obserbasyon</string>
+    <string name="device_options_sensor_label_text">Sensor</string>
+    <string name="sensor_rotation_rpm">Pag-ikot</string>
+    <string name="sensor_raw">Raw</string>
+    <string name="sensor_custom">Custom</string>
+    <string name="device_options_custom_sensor_pin_label_text">Pin</string>
+    <string name="device_options_custom_sensor_frequency_checkbox_text">Dalas</string>
+    <string name="sensor_desc_short_acc_x">Ang acceleration ng telepono sa kaliwa at kanan, sa m/s²</string>
+    <string name="sensor_desc_short_acc_y">Ang acceleration ng telepono pasulong at pabalik, sa m/s²</string>
+    <string name="sensor_desc_short_acc_z">Ang acceleration ng telepono pataas at pababa, sa m/s²</string>
+    <string name="sensor_desc_short_decibel">Ang tindi ng tunog, sinusukat sa decibels (DB), na umaabot sa sensor ng tunog o mikropono.</string>
+    <string name="sensor_desc_short_pitch">Ang pag-abot ng pitch ng tunog, na sinukat sa hertz (Hz), sa sensor ng tunog o mikropono.</string>
+    <string name="sensor_desc_short_magnetic_strength">Ang lakas ng ambient geomagnetic field sa Microtesla.</string>
+    <string name="sensor_desc_short_bluetooth">May external sensor na nagpapakita ng data nito rito, batay sa mga custom na setting.</string>
+    <string name="sensor_desc_short_rotation">Ang bilang ng mga pag-ikot kada minuto</string>
+    <string name="sensor_desc_short_raw">Ang porsyento ng raw reading mula sa isang external sensor.</string>
+    <string name="sensor_desc_short_barometer">Ang presyon ng atmosphere na sinusukat sa hectopascals (hPa).</string>
+    <string name="sensor_desc_first_paragraph_magnetic_strength">Naglalaman ng device ang iyong telepono na dinisenyo upang makadetekta ng mga magnetic field: isang magnetometer. Ang maliit na tatlong axis na sensor na ito na gumagamit ng kuryente upang madetekta ang lakas ng magnetic field sa tatlong dimensiyon ng kalawakan. Sa pamamagitan ng pagsasama-sama ng data mula sa lahat ng tatlong axis ay makakagawa tayo ng sensor ng kabuuang lakas ng magnetic field.
+
+May ilang magnetometer na nagdedetekta ng mga magnetic field gamit ang Hall effect—ang likas na katangian ng mga magnetic field na mag-deflect ng kumikilos na charge habang dumadaloy ito. Gumagamit ng mga magnetoresistor ang mga mas bagong magnetometer, mga metal na alloy na nagbabago ng kanilang resistance bilang tugon sa mga magnetic field.
+
+Bakit kailangan ng telepono ang magnetometer? Kapaki-pakinabang ang pag-alam ng iyong orientation sa kalawakan para sa mga built-in na compass at mga navigation app, lalo na ang mga naghahangad na makapagbigay ng mga direksyon sa bawat pagliko.</string>
+    <string name="sensor_desc_second_paragraph_magnetic_strength">Mas madaling maililiko na paganito at paganoon ng mga magnet, kuryente, at mga metal na bagay ang magnetometer ng iyong telepono. Pero kahit sa gitna ng isang bakanteng field, laging nagpapakita ng mababa, hindi zero na reading ang magnetometer sa iyong telepono: ito ang magnetic field ng Mundo!</string>
+    <string name="sensor_desc_first_paragraph_acc">Likas sa mga bagay ang manatili sa lugar, o magpatuloy sa paggalaw kung gumagalaw ang mga ito—tinatawag nating inertia ang likas na katangiang ito. Pormal na inihahayag ng First Law ni Newton ang ideyang ito: Patuloy na kikilos o mananatili sa lugar ang isang bagay maliban kung magkakaroon ng hindi balanseng pwersa.
+
+Kapag may hindi balanseng pwersa na nakapagpagalaw sa isang bagay, sinasabi nating nag-a-accelerate ang bagay: nagbabago ang velocity, o bilis nito—maaaring sa pamamagitan ng pagbilis, pagbagal, o pagbabago ng direksyon. Sinusukat ang acceleration bilang pagbabago ng velocity (metro bawat segundo) sa oras, o metro bawat segundo kuwadrado (m/s²).
+
+May device ang iyong telepono upang masukat itong mga pagbabago sa paggalaw—isang accelerometer. Sa loob ng isang accelerometer, malayang gumalaw ang maliliit na nakalutang na bagay. Ang mga pagbabago sa paggalaw ang nagiging sanhi ng pagkilos ng mga bagay na ito, tulad ng iyong likas na pagsubsob kapag nakasakay ka sa kotse na biglang huminto. Sa pagsukat ng mga hindi kapansin-pansing pagkilos na ito na dulot ng inertia, nadedetekta ng accelerometer sa isang telepono ang mga pagbabago sa galaw at orientation, kapaki-pakinabang para sa paglipat ng screen mula sa landscape tungo sa portrait mode, para sa paglalaro sa iyong telepono, at marami pang iba.</string>
+    <string name="sensor_desc_second_paragraph_acc">Marahil ay may napansin kang patuloy na acceleration sa Z axis, kahit pa nakapirmi ang telepono sa ibabaw ng isang mesa. Ito ang acceleration na nararanasan natin dito sa ibabaw ng Daigdig dahil sa paghila ng gravity, humigit-kumulang ay 9.8 m/s².</string>
+    <string name="sensor_desc_first_paragraph_decibel">Mula sa vibration ang mga tunog. Ang iyong boses, halimbawa, ay mula sa mga vibration ng mga vocal chord sa iyong lalamunan. Ang mga vibration na ito ay gumagawa ng mga nagsasalitang sona ng mataas at mababang presyon ng hangin na naglalakbay palabas—tulad ng maliliit na along ginawa ng isang maliit na batong inihagis sa tubig.</string>
+    <string name="sensor_desc_second_paragraph_decibel">Lahat ng tunog ay mailalarawan ayon sa kanilang dalas (frequency) at katindihan (intensity).
+
+Katindihan ang sinusukat mo rito sa Science Journal, sa mga unit na decibels (dB). Ang katindihan, o lakas ng tunog, ay nakasalalay sa layo ng ikinikilos ng isang nagba-vibrate na bagay sa bawat pag-vibrate nito; mas matindi ang nadidinig natin bilang malakas na ingay.
+
+Ang dalas o frequency (tining (pitch) o tono (tone) rin) ng isang sound wave ay katumbas ng bilis ng vibration nito. Mas mabilis mag-vibrate ang isang bagay, mas matining ang nabubuong tunog. Hindi sinusukat ng sensor ng tindi ng tunog ng Science Journal ang dalas o frequency—lakas ng tunog lang.
+
+Isang mahalagang bagay na dapat malaman ay dinisenyo ang mikropono sa iyong device para maging napakasensitibo sa mga kaibahan sa mga sound wave sa kalaunan, pero hindi ang ganap na laki ng bawat wave.  Sinubukan naming pumili ng code na malamang na gumawa ng mga numerong katulad ng mga reference na numerong ipinapakita sa ibaba, pero maaaring magbigay ng patuloy na mas mataas o mas mababang numero ang bawat device.  Karaniwang ika-calibrate ng mga scientist ang isang sensor na tulad nito sa isang kilalang sukatan.  Sa ngayon, masasabi sa iyo ng Science Journal kung ang susunod mong pagsakay sa tren ay mas maingay kaysa susunod na rock concert mo, pero kung dadalhin mo lang ang mismong telepono sa parehong event.
+
+Isa pang dapat malaman ay may mahahalagang kaibahan sa pagitan ng “sound intensity” (tindi ng tunog), “sound intensity level” (antas ng tindi ng tunog), at “sound pressure” (pressure ng tunog).  Itinuturing namin na pare-pareho lang ang mga ito rito, pero kung gusto mo pang mag-usisa, maraming online resource tungkol sa mga kaibahan.
+
+Ang pinakatahimik na tunog na nadedetekta ng karaniwang tainga ng tao ay tinukoy bilang 0 dB. Ang ordinaryong pag-uusap ay katumbas ng humigit-kumulang 60 dB, at ang mga tunog na higit pa sa 140 dB ay masakit sa tainga ng tao. Ngunit hindi kailangang maging masakit ang mga tunog upang makapaminsala. Ang patuloy na pagkakalantad sa mga tunog na 90 dB—mga kasinglakas ng vacuum cleaner—ay maaaring humantong sa pagkabingi.
+
+Logarithmic ang decibel scale, na kung minsan ay nakakalito: Ang isang pinagmumulan ng tunog na 40 dB ay hindi doble ng tindi ng isang 20 dB—100 beses na mas matindi ito. Samantala, kung ang isang tumutunog na alarm clock ay gumagawa ng 70 dB, ang dalawang tumutunog na alarm clock ay hindi gumagawa ng 140 dB, sa halip ay 73 dB. Tulad ng sinabi namin, kakaibang sukatan ito.
+
+10 dB kumakaluskos na dahon
+20 dB pagbulong sa layong 5 talampakan
+30 dB mahinang pagbulong
+50 dB ulan
+60 dB normal na pag-uusap
+90 dB blender
+100 dB kotseng walang muffler
+110 dB pagsigaw sa tainga
+120 dB kulog
+130 dB jackhammer
+140 dB palipad na eroplano</string>
+    <string name="sensor_desc_first_paragraph_pitch">Mula sa vibration ang mga tunog. Ang iyong boses, halimbawa, ay mula sa mga vibration ng mga vocal chord sa iyong lalamunan. Ang mga vibration na ito ay gumagawa ng mga nagsasalitang sona ng mataas at mababang presyon ng hangin na naglalakbay palabas—tulad ng maliliit na along ginawa ng isang maliit na batong inihagis sa tubig.</string>
+    <string name="sensor_desc_second_paragraph_pitch">Lahat ng tunog ay mailalarawan ayon sa kanilang dalas (frequency) at katindihan (intensity). Lahat ng tunog ay mailalarawan ayon sa kanilang dalas (frequency) at katindihan (intensity). Mas mabilis mag-vibrate ang isang bagay, mas matining ang nabubuong tunog. Sinusukat natin ang mga vibration na ito sa Hertz (Hz) kung saan ang 1 Hertz = 1 vibration/segundo.
+
+Nakakarinig ang mga tao ng mga tunog na mula 20 hanggang 20,000 Hz. Ang pinakamababang key sa piano ay bumubuo ng tunog na may frequency na 27.5 Hz at ang pinakamataas na key ay bumubuo ng tunog na may frequency na 4186.01 Hz.
+
+Ipinababatid ng pulang tuldok kung gaano kalapit ang nadetektang pitch sa pinakamalapit na notang musikal. Kung mas mababa o “mas-flat” ang pitch, lalabas ang tuldok sa kaliwa. Kung mas mataas ang o “mas-sharp” ang pitch, lalabas ang pulang tuldok sa kanan.</string>
+    <string name="pitch_low_content_description">mababang pitch</string>
+    <string name="pitch_flatter_than_natural_note_content_description">%1$s (na) kalahating hakbang na mas flat kaysa %2$s, octave %3$s</string>
+    <string name="pitch_flatter_than_flat_note_content_description">%1$s (na) kalahating hakbang na mas flat kaysa %2$s flat, octave %3$s</string>
+    <string name="pitch_flatter_than_sharp_note_content_description">%1$s (na) kalahating hakbang na mas flat kaysa %2$s sharp, octave %3$s</string>
+    <string name="pitch_natural_note_content_description">%1$s, octave %2$s</string>
+    <string name="pitch_flat_note_content_description">%1$s flat, octave %2$s</string>
+    <string name="pitch_sharp_note_content_description">%1$s sharp, octave %2$s</string>
+    <string name="pitch_sharper_than_natural_note_content_description">%1$s (na) kalahating hakbang na mas sharp kaysa %2$s, octave %3$s</string>
+    <string name="pitch_sharper_than_flat_note_content_description">%1$s (na) kalahating hakbang na mas sharp kaysa %2$s flat, octave %3$s</string>
+    <string name="pitch_sharper_than_sharp_note_content_description">%1$s (na) kalahating hakbang na mas sharp kaysa %2$s sharp, octave %3$s</string>
+    <string name="pitch_high_content_description">mataas na pitch</string>
+    <string name="sensor_desc_first_paragraph_rotation">Ang Rotations per minute (RPM) ay isang sukat sa dalas ng pag-ikot sa paligid ng isang nakapirming axis sa loob ng isang minuto.
+
+Habang umiikot ang iyong wind spinner, pinaiikot nito ang encoder disc:</string>
+    <string name="sensor_desc_second_paragraph_rotation">Gumagawa ito ng mga panahon ng liwanag at dilim sa sensor na nagrerehistro sa Science Journal bilang pag-ikot.</string>
+    <string name="sensor_desc_first_paragraph_raw">Ang data na ipinapakita rito ay nagmumula sa komunikasyon ng isang external sensor sa iyong telepono sa pamamagitan ng Bluetooth.
+
+Ipinapakita ng value ang porsyento ng raw reading na direkta mula sa iyong microcontroller. Karaniwang porsyento ito ng isang pagbagsak ng boltahe sa kabuuan ng isang sensor.</string>
+    <string name="sensor_desc_second_paragraph_raw">Isang pamantayan sa wireless na teknolohiya ang Bluetooth na gumagamit ng radio waves upang makipagpalitan ng data sa malalapit na lugar mula sa mga nakapirmi at mobile device.</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">Nagmumula sa isang komunikasyon ng external sensor sa iyong telepono ang data na ipinapakita rito sa pamamagitan ng Bluetooth.</string>
+    <string name="sensor_desc_second_paragraph_unknown_bluetooth">Isang pamantayan sa wireless na teknolohiya ang Bluetooth na gumagamit ng radio waves upang makipagpalitan ng data sa malalapit na lugar mula sa mga nakapirmi at mobile device.</string>
+    <string name="sensor_desc_first_paragraph_barometer">Bagaman bihira nating mapansin ito, lahat tayo ay nakatira sa ilalim ng isang malalim na karagatan ng hangin: Ang atmosphere ng Mundo, na umaabot paitaas nang 40 kilometro (130,000 talampakan) ang taas. Ang bigat ng lahat ng hangin na iyon na dumadagan sa atin ay gumagawa ng tinatawag na atmospheric pressure.
+
+Sa dagat, nagbibigay ng 14 pounds na puwersa sa bawat square inch—katumbas iyon ng 1,300 pounds sa isang lugar na sinlaki ng karaniwang papel.</string>
+    <string name="sensor_desc_second_paragraph_barometer">Hindi natin napapansin ang nakakapigang pressure na ito dahil sanay na tayo rito—iyon ay, hanggang sa magbago ito, kahit kaunti lang, gaya ng nangyayari kapag bumibisita tayo sa matataas na lugar o sumasakay ng mga eroplano. Nagbabago rin ang atmospheric pressure sa mga lagay ng panahon, bumababa kapag may mabagyo, hindi panatag na hangin, at tumataas kapag naging panatag ang hangin at umaliwalas ang kalangitan.
+
+Sinusukat ng digital barometer sa iyong telepono sa hectopascals ang atmospheric pressure. (Ang isang hectopascal ay 100 pascals, kung saan ang pascal ay isang newton ng pwersa na inilapat sa isang metro kuwadradong area.) Malamang ay nadinig mo na ang mga forecaster ng panahon na nagbibigay ng atmospheric pressure sa millibars—katumbas ng hectopascals ang mas madaling pakinggan na unit na ito.
+
+Marahil ay nagtatanong ka: Bakit magsusukat ng pressure ang telepono? Nasusukat ang mga pagbabago sa atmospheric pressure kahit pa sa maliliit na pagbabago sa elevation, halimbawa, kapag umaakyat ka sa hagdanan. Kung kaya ang digital barometer sa isang telepono ay nakatutulong sa pagdetekta ng mga pagbabago sa lokasyon, halimbawa, pagsasabi sa iyo kung saang palapag ka na ng gusali, o kung nagmamaneho ka sa itaas o ibabang deck ng isang tulay.</string>
+    <string name="run_review_activity_label">Suriin</string>
+    <string name="heading_info_section">Ano Ang Nangyayari?</string>
+    <string name="edit_note_time">I-edit ang oras ng tala</string>
+    <string name="delete_note_menu_item">I-delete</string>
+    <string name="crop_run">I-crop</string>
+    <string name="snackbar_note_deleted">Na-delete ang tala</string>
+    <string name="snackbar_undo">I-undo</string>
+    <string name="archived_badge">Na-archive</string>
+    <string name="delete_experiment_dialog_title">I-delete ang eksperimentong ito?</string>
+    <string name="delete_experiment_dialog_message">Sigurado ka bang gusto mong i-delete ang eksperimentong ito? Made-delete ang lahat ng recording at tala nito.</string>
+    <string name="delete_run_dialog_title">I-delete ang recording na ito?</string>
+    <string name="run_review_delete_confirm">Sigurado ka bang gusto mong i-delete ang recording na ito? Made-delete ang na-record na data at mga tala.</string>
+    <string name="menu_btn_content_description">Menu</string>
+    <string name="sensor_card_error_text">Hindi na-load ang sensor data</string>
+    <string name="sensor_card_loading_text">Nilo-load ang sensor data...</string>
+    <string name="edit_trial_title_hint">Pamagat ng recording</string>
+    <string name="include_archived_trials">Ipakita ang mga na-archive na recording</string>
+    <string name="export_error">Hindi na-export.</string>
+    <string name="listing_changelog_features">Mga bagong feature:</string>
+    <string name="listing_changelog_bug_fixes">Mga pagpapabuti sa performance at mga pag-aayos ng bug</string>
+    <string name="listing_changelog_separator">
+
+</string>
+    <string name="listing_h_feature_1">
+• Sensor ng pitch ng tunog.</string>
+    <string name="listing_h_feature_2">
+• I-export ang mga eksperimento sa isang file, at i-import ang mga ito sa iba pang device.</string>
+    <string name="listing_h_feature_3">
+• I-export ang mga litrato sa isang eksperimento.</string>
+    <string name="menu_item_audio_settings">Mga setting ng audio</string>
+    <string name="enable_auto_zoom">I-enable ang auto scale</string>
+    <string name="disable_auto_zoom">I-disable ang auto scale</string>
+    <string name="menu_item_set_triggers">Itakda ang mga trigger</string>
+    <string name="menu_item_edit_triggers">I-edit ang mga trigger</string>
+    <string name="btn_add_new_trigger">Gumawa ng trigger</string>
+    <string name="empty_trigger_list">Walang nakatakdang trigger</string>
+    <string name="trigger_type_label">Uri ng trigger</string>
+    <string name="trigger_when_label">I-trigger kapag</string>
+    <string name="trigger_value_label">Value ng trigger</string>
+    <string name="trigger_type_start_recording">Simulan ang pagre-record</string>
+    <string name="trigger_type_stop_recording">Itigil ang pagre-record</string>
+    <string name="trigger_type_note">Gumawa ng tala</string>
+    <string name="trigger_type_alert">Alertuhan ako</string>
+    <string name="trigger_when_at">Nasa</string>
+    <string name="trigger_when_drops_below">Bumaba sa</string>
+    <string name="trigger_when_rises_above">Tumaas sa</string>
+    <string name="trigger_when_is_below">Ay wala pang</string>
+    <string name="trigger_when_is_above">Ay higit pa sa</string>
+    <string name="trigger_note_text_label">Default na tekstong tala</string>
+    <string name="trigger_note_text_hint">Ano ang dapat sabihin ng iyong tala?</string>
+    <string name="trigger_audio_alert">Tunog</string>
+    <string name="trigger_haptic_alert">Pag-vibrate</string>
+    <string name="trigger_visual_alert">Visual na notification</string>
+    <string name="cannot_save_invalid_value">Kailangan mong magpasok ng numero kung saan magti-trigger ang trigger na ito.</string>
+    <string name="sensor_trigger_deleted">Na-delete ang trigger</string>
+    <string name="trigger_only_when_recording">Mag-trigger lang kapag nagre-record</string>
+    <string name="trigger_fired_text">Na-activate ang trigger</string>
+    <string name="crop_start_seekbar_content_description">simula ng crop:</string>
+    <string name="crop_end_seekbar_content_description">i-crop ang dulo:</string>
+    <string name="crop_failed_message">Hindi mai-save ang crop:</string>
+    <string name="trigger_alert_prompt">Alertuhan ako gamit ang</string>
+    <string name="my_devices">Mga Device Ko</string>
+    <string name="available_devices">Mga Available na Device</string>
+    <string name="phone_sensors">Mga internal sensor</string>
+    <string name="forget_device">Kalimutan ang device na ito</string>
+    <string name="crop_overflow_menu_content_description">Mas marami pang opsyon</string>
+    <string name="edit_crop_start_time">I-edit ang oras ng pagsisimula</string>
+    <string name="edit_crop_end_time">I-edit ang oras ng pagtatapos</string>
+    <string name="timestamp_picker_format_error">Gumamit ng valid na format, h:mm:ss.SSS</string>
+    <string name="timestamp_picker_crop_range_error">Hindi maka-crop ang mga recording sa mas mababa sa isang segundo</string>
+    <string name="timestamp_picker_prompt">Bagong oras (h:mm:ss.SSS)</string>
+    <string name="export_options_title">I-export…</string>
+    <string name="export_options_relative_time">Kaukulang oras</string>
+    <string name="compass">Compass</string>
+    <string name="compass_units">degrees</string>
+    <string name="sensor_desc_short_compass">Ang orientation ng telepono kaugnay ng magnetic field ng Mundo.</string>
+    <string name="sensor_desc_first_paragraph_compass">Malamang ay alam mo na na may magnetic field ang Mundo. Marahil ay hindi mo alam na may lamang device ang iyong telepono na dinisenyo upang makadetekta ng mga magnetic field: isang magnetometer. Sa pamamagitan ng pagsasama ng data mula sa magnetometer ng telepono mo sa posisyon ng telepono sa kalawakan, makakagawa tayo ng digital compass.
+
+Ang isang makalumang compass ay isang low-tech na magnetometer, na may magnetized na karayom na pumipihit upang humanay ito sa nakapaligid na magnetic field. Walang maliit na compass sa loob ng telepono mo, pero sa halip ay may mallit na tatlong axis na sensor na gumagamit ng kuryente para madetekta ang lakas ng magnetic field sa tatlong dimensyon ng kalawakan. Pero kulang pa rin ito para makagawa ng compass!
+
+Bakit kailangang pagsamahin ng compass ang data mula sa magnetometer sa orientation ng telepono? Ang pag-alam sa orientation ng telepono ay nagbibigay-daan sa amin para makwenta ang magnetic rotation kahit pa hindi nakalapat sa parehong plane ang telepono na tulad ng sa magnetic field ng Mundo. Alam natin na perpendicular ang gravity sa magnetic field ng Mundo, kung kaya magagamit natin ang direksyon ng gravity mula sa mga sensor ng accelerometer para matukoy kung gaano kalakas ang magnetic field na nasa parehong plane na tulad ng magnetic field ng Mundo.</string>
+    <string name="sensor_desc_second_paragraph_compass">Marahil ay napansin mo na, tumutugon ang compass hindi lamang sa magnetic field ng Mundo, ngunit gayon din sa anuman at bawat magnetic field na maaaring nasa paligid. Mas madaling maililiko na paganito at paganoon ng mga magnet, kuryente, at mga metal na bagay ang magnetometer ng iyong telepono, na nagiging sanhi ng pagbabago ng reading ng compass. Tumayo sa isang bukas na lugar—mas mainam sa labas at malayo sa mga linya ng kuryente— kung gusto mong matiyak na humahanay sa magnetic field ng Mundo ang pulang dulo ng iyong compass. Nakatutulong ito na maigalaw ang iyong telepono sa hugis 8 na pattern upang ma-calibrate ang magnetometer sa iyong telepono.</string>
+    <string name="text_label_details_title">I-edit ang text na tala</string>
+    <string name="navigation_item_experiments">Mga eksperimento</string>
+    <string name="note_caption_hint">Magdagdag ng paglalarawan</string>
+    <string name="linear_accelerometer">Linear accelerometer</string>
+    <string name="sensor_desc_short_linear_acc">Ang kabuuang acceleration ng telepono, hindi kasama ang pwersa ng gravity, sa m/s²</string>
+    <string name="sensor_desc_first_paragraph_linear_acc">Likas sa mga bagay ang manatili sa lugar, o magpatuloy sa paggalaw kung gumagalaw ang mga ito—tinatawag nating inertia ang likas na katangiang ito. Pormal na inihahayag ng First Law ni Newton ang ideyang ito: Patuloy na kikilos o mananatili sa lugar ang isang bagay maliban kung magkakaroon ng hindi balanseng pwersa.
+
+Kapag may hindi balanseng pwersa na nakapagpagalaw sa isang bagay, sinasabi nating nag-a-accelerate ang bagay: nagbabago ang velocity, o bilis nito—maaaring sa pamamagitan ng pagbilis, pagbagal, o pagbabago ng direksyon. Sinusukat ang acceleration bilang pagbabago ng velocity (metro bawat segundo) sa oras, o metro bawat segundo kuwadrado (m/s²).
+
+May device ang iyong telepono upang masukat itong mga pagbabago sa paggalaw—isang accelerometer. Sa loob ng isang accelerometer, malayang gumalaw ang maliliit na nakalutang na bagay. Ang mga pagbabago sa paggalaw ang nagiging sanhi ng pagkilos ng mga bagay na ito, tulad ng iyong likas na pagsubsob kapag nakasakay ka sa kotse na biglang huminto. Sa pagsukat ng mga hindi kapansin-pansing pagkilos na ito na dulot ng inertia, nadedetekta ng accelerometer sa isang telepono ang mga pagbabago sa galaw at orientation, kapaki-pakinabang para sa paglipat ng screen mula sa landscape tungo sa portrait mode, para sa paglalaro sa iyong telepono, at marami pang iba.</string>
+    <string name="sensor_desc_second_paragraph_linear_acc">Ang pinagsamang sensor ng linear accelerometer ay nagtatala ng kabuuang acceleration sa lahat ng tatlong axis ng telepono, hindi kasama ang gravity.</string>
+    <string name="edit_note_time_menu_item">I-edit ang oras</string>
+    <string name="snapshot_label_details_title">Mga detalye ng snapshot</string>
+    <string name="load_more_notes_btn">Tumingin pa ng mga tala</string>
+    <string name="name_experiment_dialog_title">Pangalanan ang eksperimentong ito</string>
+    <string name="throbber_content_description">Kasalukuyang nagre-record</string>
+    <string name="details_header">Mga Detalye</string>
+    <string name="text_label_hint">Maglagay ng obserbasyon</string>
+    <string name="first_experiment_title">Welcome sa Science Journal</string>
+    <string name="first_experiment_text_note">Subukang kumuha ng mga tala at data ng recording gamit ang toolbar sa ibaba!</string>
+    <string name="first_experiment_picture_note_caption">Welcome sa Science Journal!</string>
+    <string name="first_experiment_second_text_note">Maghanap ng mga susubukang aktibidad sa
+g.co/sciencejournalactivities</string>
+    <string name="btn_take_picture_content_description">Kumuha ng litrato</string>
+    <string name="input_camera_permission_denied">Hindi magagamit ang camera dahil walang pahintulot ang Science Journal na ma-access ito.</string>
+    <string name="input_photo_library_permission_denied">Hindi magagamit ang iyong photo library dahil walang pahintulot ang Science Journal na ma-access ito.</string>
+    <string name="import_failed_recording">Kasalukuyang ginagamit ng Science Journal. Pakitigil ang pag-record at subukan ulit.</string>
+    <string name="import_failed_file">Bigo ang pag-import. May problema ang eksperimentong ito.</string>
+    <string name="import_failed">Sa kasamaang palad, nagkaroon ng hindi alam na error.</string>
+    <string name="explore_your_world">I-explore ang iyong mundo</string>
+    <string name="use_science_journal">Gamitin ang Science Journal upang magsagawa ng mga eksperimento sa mundong nakapaligid sa iyo</string>
+    <string name="get_started">Magsimula</string>
+    <string name="drive_sync_cannot_reach_google_drive">Hindi maabot ang Google Drive. Tingnan ang iyong koneksyon.</string>
+    <string name="add_note_hint_text">Lagyan ng bagong tala</string>
+    <string name="add_note_button_text">Maglagay ng tala sa timeline</string>
+</resources>

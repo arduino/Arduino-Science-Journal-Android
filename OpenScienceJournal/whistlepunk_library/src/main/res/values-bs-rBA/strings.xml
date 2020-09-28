@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="app_name">Arduino Science Journal</string>
+  <string name="action_feedback">Povratne informacije</string>
+  <string name="action_about">O projektu</string>
+  <string name="action_save">Spremi</string>
+  <string name="action_edit">Uredi</string>
+  <string name="action_delete">Izbriši</string>
+  <string name="sine_wave">Sinusni val</string>
+  <string name="acc_x">Akcelerometar X</string>
+  <string name="acc_y">Akcelerometar Y</string>
+  <string name="acc_z">Akcelerometar Z</string>
+  <string name="ambient_light">Ambijentalno svjetlo</string>
+  <string name="magnetic_field_strength">Magnetometar</string>
+  <string name="barometer">Barometar</string>
+  <string name="ambient_temperature">Ambijentalna temperatura</string>
+  <string name="acc_units">m/s²</string>
+  <string name="ambient_light_units">luks</string>
+  <string name="magnetic_strength_units">μT</string>
+  <string name="decibel_units">dB</string>
+  <string name="hertz_units">Hz</string>
+  <string name="rpm_units">o/min</string>
+  <string name="voltage_units">V</string>
+  <string name="raw_units">%</string>
+  <string name="barometer_units">hPa</string>
+  <string name="temperature_units">°C</string>
+  <string name="action_retry">Pokušaj ponovo</string>
+  <string name="decibel">Intenzitet zvuka</string>
+  <string name="pitch">Visina tona</string>
+  <string name="btn_record_description">Započni snimanje</string>
+  <string name="btn_stop_description">Zaustavi snimanje</string>
+  <string name="unknown_sensor">Nepoznati senzor</string>
+  <string name="recording_start_failed">Snimanje se ne može pokrenuti</string>
+  <string name="recording_stop_failed_no_data_title">Podaci se ne snimaju</string>
+  <string name="recording_stop_failed_no_data">Jedan ili više senzora nije snimilo podatke. Želite li otkazati snimanje?</string>
+  <string name="recording_stop_failed_continue">Nastavi</string>
+  <string name="recording_stop_failed_cancel">Otkaži snimanje</string>
+  <string name="navigation_item_activities">Aktivnosti</string>
+  <string name="navigation_item_settings">Postavke</string>
+  <string name="title_activity_sensor_settings">Postavke senzora</string>
+  <string name="graph_options_audio_feedback_enable">Omogući zvuk</string>
+  <string name="graph_options_audio_feedback_disable">Onemogući zvuk</string>
+  <string name="stat_min">Minimalno</string>
+  <string name="stat_max">Maksimalno</string>
+  <string name="stat_average">Prosjek</string>
+  <string name="btn_reset_description">Skok na trenutačno vrijeme</string>
+  <string name="export_action">Dijeli</string>
+  <string name="send_copy_action">Pošalji kopiju</string>
+  <string name="export_experiment_chooser_title">Slanje eksperimenta</string>
+  <string name="export_photo_chooser_title">Dijeljenje fotografije na…</string>
+  <string name="experiment_not_finished_downloading_confirm_button">Podijeli eksperiment</string>
+  <string name="experiment_not_finished_downloading_message">Nije dovršeno preuzimanje tog eksperimenta. Ako podijelite kopiju, neki će podaci možda nedostajati</string>
+  <string name="experiment_not_finished_downloading_title">Preuzimanje u tijeku</string>
+  <string name="settings_version_title">Verzija</string>
+  <string name="settings_open_source_title">Licence otvorenog koda</string>
+  <string name="action_undo">Poništi</string>
+  <string name="choose_photo_button_text">Odabir fotografije</string>
+  <string name="btn_new_experiment_content_description">Novi eksperiment</string>
+  <string name="archived_experiment_message">Eksperiment je arhiviran.</string>
+  <string name="unarchived_experiment_message">Eksperiment premješten iz arhive.</string>
+  <string name="archived_run_message">Snimka je arhivirana.</string>
+  <string name="unarchived_run_message">Snimka je premještena iz arhive.</string>
+  <string name="archived_content_description">Arhivirani eksperimenti ne mogu se mijenjati, no mogu se brisati</string>
+  <string name="experiment_title_hint">Naslov eksperimenta</string>
+  <string name="btn_add_sensor_card_description">Dodavanje nove kartice senzora</string>
+  <string name="btn_sensor_card_close">Zatvori karticu</string>
+  <string name="default_experiment_name">Eksperiment bez naslova</string>
+  <string name="empty_project">Nemate nijedan eksperiment</string>
+  <string name="default_sonification">Zadano</string>
+  <string name="amplitude">Amplituda</string>
+  <string name="notes">Bilješke</string>
+  <string name="scale">Ljestvica</string>
+  <string name="conductor">Vodič</string>
+  <string name="empty_experiment">Nemate još nijedno opažanje</string>
+  <string name="device_options_sensor_label_text">Senzor</string>
+  <string name="sensor_rotation_rpm">Okretaj</string>
+  <string name="sensor_raw">Neobrađeno</string>
+  <string name="sensor_custom">Prilagođeno</string>
+  <string name="device_options_custom_sensor_pin_label_text">Prikvačivanje</string>
+  <string name="device_options_custom_sensor_frequency_checkbox_text">Frekvencija</string>
+  <string name="sensor_desc_short_acc_x">Ubrzanje telefona lijevo-desno, u m/s²</string>
+  <string name="sensor_desc_short_acc_y">Ubrzanje telefona naprijed-natrag, u m/s²</string>
+  <string name="sensor_desc_short_acc_z">Ubrzanje telefona gore-dolje, u m/s²</string>
+  <string name="sensor_desc_short_decibel">Intenzitet zvuka izmjeren u decibelima (dB) koji dopire do senzora zvuka ili mikrofona.</string>
+  <string name="sensor_desc_short_pitch">Visina tona u hercima (Hz) koja dolazi do senzora ili mikrofona.</string>
+  <string name="sensor_desc_short_magnetic_strength">Jakost prostornog geomagnetskog polja u mikroteslama</string>
+  <string name="sensor_desc_short_bluetooth">Vanjski senzor ovdje prikazuje podatke na temelju prilagođenih postavki.</string>
+  <string name="sensor_desc_short_rotation">Broj okretaja u minuti</string>
+  <string name="sensor_desc_short_raw">Postotak izravnog neobrađenog očitanja s vanjskog senzora.</string>
+  <string name="sensor_desc_short_barometer">Atmosferski tlak mjeri se u hektopaskalima (hPa).</string>
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Vaš telefon sadrži uređaj koji otkriva magnetska polja: magnetometar. Taj sićušan senzor s tri osi pomoću električne struje otkriva snagu magnetskog polja u tri prostorne dimenzije. Kombiniranjem podataka s tih triju osi možemo izraditi senzor jačine cjelokupnog magnetskog polja.
+
+Neki magnetometri otkrivaju magnetska polja pomoću Hallova efekta – sklonosti magnetskog polja da odbija naboj u pokretu. Noviji magnetometri imaju magnetske otpornike, metalne legure koje mijenjaju otpor s promjenom magnetskog polja.
+
+Zašto telefoni imaju magnetometar? Orijentacija u prostoru korisna je za aplikacije s ugrađenim kompasom i za navigaciju, prvenstveno one koje pokazuju detaljne navigacijske upute.</string>
+  <string name="sensor_desc_second_paragraph_magnetic_strength">Magneti, električne struje i metalni predmeti mogu isto tako utjecati na magnetometar u telefonu. No čak i usred praznog polja magnetometar u telefonu uvijek prikazuje nisku vrijednost koja nije nula: to je Zemljino magnetsko polje!</string>
+  <string name="sensor_desc_first_paragraph_acc">Tijela imaju tendenciju mirovanja, odnosno gibanja ako su u pokretu – tu tendenciju nazivamo inercijom. Prvi Newtonov zakon tu ideju formalizira na sljedeći način: tijelo ostaje u stanju mirovanja ili gibanja sve dok neka sila ne dovede do promjene tog stanja.
+
+Kad sila uzrokuje pomicanje tijela, kažemo da ono ubrzava: njegova se brzina mijenja, bilo da se radilo o ubrzavanju, usporavanju ili promjeni smjera. Ubrzanje se mjeri kao promjena brzine u jedinici vremena (metri u sekundi), odnosno u metrima u sekundi na kvadrat (m/s²).
+
+Vaš telefon ima uređaj koji mjeri te promjene kretanja – akcelerometar. U akcelerometru se nalaze male mase koje se slobodno kreću. Uslijed promjena u gibanju te se mase pomiču, slično kao što se vaša glava pomiče unaprijed ako se nađete u automobilu koji naglo zakoči. Mjereći te suptilne inercijske pomake, akcelerometar u telefonu prepoznaje promjene u pokretima i smjeru, što je korisna značajka prilikom okretanja zaslona iz pejzažnog u portretni način rada, igranja igara na telefonu i prilikom drugih radnji.</string>
+  <string name="sensor_desc_second_paragraph_acc">Vjerojatno ste primijetili neprekidno ubrzanje po osi Z, čak i kad telefon leži na stolu. To je ubrzanje kojem smo izloženi zbog Zemljine gravitacije koja nas privlači brzinom od približno 9,8 m/s².</string>
+  <string name="sensor_desc_first_paragraph_decibel">Zvukove proizvode vibracije. Primjerice, vaš glas nastaje vibriranjem vaših glasnica. Te vibracije stvaraju različite zone visokog i niskog zračnog tlaka koje se šire prema van – slično kružnom širenju valova koji nastaju kada u jezero bacite kamenčić.</string>
+  <string name="sensor_desc_second_paragraph_decibel">Svi se zvukovi mogu opisati kroz svoju frekvenciju i intenzitet.
+
+Pomoću senzora intenziteta zvuka u Science Journalu mjerite intenzitet u decibelima (dB). Intenzitet, odnosno glasnoća, ovisi o udaljenosti koju tijelo koje vibrira prijeđe prilikom svake vibracije; veći intenzitet doživljavamo kao veću glasnoću.
+
+Frekvencija (ili visina tona) zvučnog vala ekvivalent je brzine vibracije. Što brže tijelo vibrira, to je nastali zvuk viši. Senzor intenziteta zvuka u Science Journalu ne mjeri frekvenciju, već samo glasnoću. Senzor intenziteta zvuka u Science Journalu ne mjeri frekvenciju, već samo glasnoću.
+
+Važno je napomenuti da je mikrofon u vašem uređaju dizajniran tako da bude vrlo osjetljiv na razlike u zvučnim valovima tijekom vremena, ali ne i na apsolutnu veličinu svakog vala. Pokušali smo odabrati kôd koji će vjerojatno generirati brojeve slične referentnim brojevima koji su navedeni ispod, no svaki uređaj može dati konzistentno veće ili manje brojeve. Znanstvenici takve senzore obično kalibriraju prema poznatim mjerenjima. Science Journal vam zasad može reći je li vaše sljedeće putovanje vlakom glasnije od sljedećeg rock koncerta, no samo ako ponesete telefon na ta mjesta.
+
+Još jedna bitna napomena: postoje važne razlike između \"intenziteta zvuka\", \"razine intenziteta zvuka\" i \"tlaka zvuka\". Ovdje ih tretiramo kao istu stvar, no ako želite produbiti svoja znanja, dostupni su brojni online resursi o njihovim razlikama.
+
+Najtiši zvuk koji prosječno ljudsko uho može čuti definira se kao 0 dB. Uobičajeni razgovor odgovara vrijednosti od približno 60 dB, a zvukovi iznad 140 dB bolni su za ljudsko uho. Međutim, zvukovi ne moraju biti bolni da bi bili štetni. Neprekidna izloženost zvukovima od 90 dB, što otprilike odgovara buci koju proizvodi usisavač, može naposljetku dovesti do gubitka sluha.
+
+Ljestvica decibela je logaritamska, zbog čega izvor zvuka od 40 dB nije dvostruko intenzivniji od 20 dB, već 100 puta intenzivniji. Osim toga, ako jedna budilica daje 70 dB, dvije budilice ne daju 140 dB, već 73 dB. Kao što smo rekli, to je osebujna ljestvica.
+
+10 dB: šuštanje lišća
+20 dB: šapat na 1,5 m
+30 dB: tihi šapat
+50 dB: kiša
+60 dB: normalan razgovor
+90 dB: mikser
+100 dB: automobil bez ispušnog prigušivača
+110 dB: vikanje u uho
+120 dB: grmljavina
+130 dB: pneumatska bušilica
+140: uzlijetanje zrakoplova</string>
+  <string name="sensor_desc_first_paragraph_pitch">Zvukove proizvode vibracije. Primjerice, vaš glas nastaje vibriranjem vaših glasnica. Te vibracije stvaraju različite zone visokog i niskog zračnog tlaka koje se šire prema van – slično kružnom širenju valova koji nastaju kada u jezero bacite kamenčić.</string>
+  <string name="sensor_desc_second_paragraph_pitch">Svi se zvukovi mogu opisati kroz svoju frekvenciju i intenzitet. Frekvencija (ili visina tona) zvučnog vala ekvivalent je brzine vibracije. Što brže tijelo vibrira, to je nastali zvuk viši. Te vibracije mjerimo u hercima (Hz), pri čemu je 1 herc jednak 1 vibraciji u sekundi.
+
+Ljudi mogu čuti zvukove u rasponu od 20 do 20.000 Hz. Tipka za najdublji ton na klaviru stvara zvuk čija frekvencija iznosi 27,5 Hz, a tipka za najviši ton stvara zvuk frekvencije 4186,01 Hz.
+
+Crvena točka označava koliko se prepoznata visina tona nalazi blizu najbliže note. Ako je visina tona niža (snižen ton), točka se nalazi na lijevoj strani. Ako je visina tona viša (povišen ton), crvena točka nalazi se na desnoj strani.</string>
+  <string name="pitch_low_content_description">nizak ton</string>
+  <string name="pitch_flatter_than_natural_note_content_description">%1$s polutona niže od %2$s, %3$s. oktava</string>
+  <string name="pitch_flatter_than_flat_note_content_description">%1$s polutona niže od sniženog %2$s, %3$s. oktava</string>
+  <string name="pitch_flatter_than_sharp_note_content_description">%1$s polutona niže od povišenog %2$s, %3$s. oktava</string>
+  <string name="pitch_natural_note_content_description">%1$s, %2$s. oktava</string>
+  <string name="pitch_flat_note_content_description">Sniženi %1$s, %2$s. oktava</string>
+  <string name="pitch_sharp_note_content_description">Povišeni %1$s, %2$s. oktava</string>
+  <string name="pitch_sharper_than_natural_note_content_description">%1$s polutona više od %2$s, %3$s. oktava</string>
+  <string name="pitch_sharper_than_flat_note_content_description">%1$s polutona više od sniženog %2$s, %3$s. oktava</string>
+  <string name="pitch_sharper_than_sharp_note_content_description">%1$s polutona više od povišenog %2$s, %3$s. oktava</string>
+  <string name="pitch_high_content_description">visok ton</string>
+  <string name="sensor_desc_first_paragraph_rotation">Broj okretaja u minuti (o/min) mjera je frekvencije okretanja oko fiksne osi u jednoj minuti.
+
+Kako se okreće, vjetromjer okreće disk kodera:</string>
+  <string name="sensor_desc_second_paragraph_rotation">Tako nastaju razdoblja osvijetljenosti i zatamnjenja na senzoru, što Science Journal registrira kao okretaj.</string>
+  <string name="sensor_desc_first_paragraph_raw">Ovdje prikazani podaci rezultat su komunikacije vanjskog senzora s vašim telefonom putem Bluetooth veze.
+
+Vrijednost prikazuje postotak izravnog neobrađenog očitanja s mikrokontrolera. To je obično vrijednost pada napona na senzoru.</string>
+  <string name="sensor_desc_second_paragraph_raw">Bluetooth je standard za bežični prijenos podataka koji koristi radiovalove za razmjenu podataka između fiksnih i mobilnih uređaja na malim udaljenostima.</string>
+  <string name="sensor_desc_first_paragraph_unknown_bluetooth">Ovdje prikazani podaci rezultat su komunikacije vanjskog senzora s vašim telefonom putem Bluetooth veze.</string>
+  <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth je standard za bežični prijenos podataka koji koristi radiovalove za razmjenu podataka između fiksnih i mobilnih uređaja na malim udaljenostima.</string>
+  <string name="sensor_desc_first_paragraph_barometer">Iako to možda tako ne doživljavamo, svi mi zapravo živimo na dnu dubokog oceana zraka: Zemljine atmosfere visine od 40 km. Masa čitavog tog zraka koji nas pritišće stvara atmosferski tlak.
+
+Na morskoj razini atmosferski tlak iznosi 96 kPa, odnosno 96 njutna po kvadratnom metru. Za usporedbu, na području standardne veličine lista papira, ekvivalentna vrijednost tog pritiska iznosila bi približno 8900 kPa.</string>
+  <string name="sensor_desc_second_paragraph_barometer">Taj tlak ne osjećamo jer smo na njega navikli, no primjećujemo čak i njegove neznatne promjene, primjerice kad smo na većim nadmorskim visinama ili u zrakoplovu. Atmosferski tlak ovisi i o vremenskim uvjetima: niži je u području olujnog, nestabilnog zraka, a viši kad je zrak stabilniji i nebo bez oblaka.
+
+Digitalni barometar u telefonu mjeri atmosferski tlak u hektopaskalima. (Jedan hektopaskal iznosi 100 paskala, a paskal je jedan njutn sile po kvadratnom metru.) Vjerojatno ste čuli da prognostičari iskazuju atmosferski tlak u milibarima. Ta jedinica možda zvuči poznatije, ali istovjetna je hektopaskalu.
+
+Možda se pitate sljedeće: zašto se telefonom može mjeriti atmosferski tlak? Atmosferski tlak mijenja se čak i uslijed sitnih promjena nadmorske visine, na primjer kad hodate uz stepenice. Dakle, digitalni barometar u vašem telefonu može vam pomoći u otkrivanju promjene lokacije. Primjerice, može vam reći na kojem se katu zgrade nalazite ili vozite li se nadvožnjakom ili podvožnjakom.</string>
+  <string name="run_review_activity_label">Pregled</string>
+  <string name="heading_info_section">Što se događa?</string>
+  <string name="edit_note_time">Uredite vrijeme bilješke</string>
+  <string name="delete_note_menu_item">Izbriši</string>
+  <string name="crop_run">Obrezivanje</string>
+  <string name="snackbar_note_deleted">Napomena izbrisana</string>
+  <string name="snackbar_undo">Poništi</string>
+  <string name="archived_badge">Arhivirano</string>
+  <string name="delete_experiment_dialog_title">Izbrisati taj eksperiment?</string>
+  <string name="delete_experiment_dialog_message">Jeste li sigurni da želite izbrisati taj eksperiment? Sve će se njegove snimke i bilješke izbrisati.</string>
+  <string name="delete_run_dialog_title">Izbrisati tu snimku?</string>
+  <string name="run_review_delete_confirm">Jeste li sigurni da želite izbrisati tu snimku? Snimljeni podaci i bilješke izbrisat će se.</string>
+  <string name="menu_btn_content_description">Izbornik</string>
+  <string name="sensor_card_error_text">Učitavanje podataka senzora nije uspjelo</string>
+  <string name="sensor_card_loading_text">Učitavanje podataka senzora…</string>
+  <string name="edit_trial_title_hint">Naslov snimke</string>
+  <string name="include_archived_trials">Prikaži arhivirane snimke</string>
+  <string name="export_error">Izvoz nije uspio</string>
+  <string name="listing_changelog_features">Nove značajke:</string>
+  <string name="listing_changelog_bug_fixes">Poboljšanja izvedbe i ispravljene programske pogreške.</string>
+  <string name="listing_changelog_separator">
+
+</string>
+  <string name="listing_h_feature_1">
+• Senzor visine tona.</string>
+  <string name="listing_h_feature_2">
+• Izvoz eksperimenata u datoteku i njihov uvoz na drugim uređajima.</string>
+  <string name="listing_h_feature_3">
+• Izvoz fotografija iz eksperimenta.</string>
+  <string name="menu_item_audio_settings">Postavke zvuka</string>
+  <string name="enable_auto_zoom">Omogući automatsku ljestvicu</string>
+  <string name="disable_auto_zoom">Onemogući automatsku ljestvicu</string>
+  <string name="menu_item_set_triggers">Postavi okidače</string>
+  <string name="menu_item_edit_triggers">Uredi okidače</string>
+  <string name="btn_add_new_trigger">Izrada okidača</string>
+  <string name="empty_trigger_list">Nema postavljenih okidača</string>
+  <string name="trigger_type_label">Vrsta okidača</string>
+  <string name="trigger_when_label">Aktiviraj kad vrijednost</string>
+  <string name="trigger_value_label">Vrijednost okidača</string>
+  <string name="trigger_type_start_recording">Započni snimanje</string>
+  <string name="trigger_type_stop_recording">Zaustavi snimanje</string>
+  <string name="trigger_type_note">Napravi bilješku</string>
+  <string name="trigger_type_alert">Obavijesti me</string>
+  <string name="trigger_when_at">Iznosi točno</string>
+  <string name="trigger_when_drops_below">Spušta se ispod</string>
+  <string name="trigger_when_rises_above">Raste iznad</string>
+  <string name="trigger_when_is_below">Nalazi se ispod</string>
+  <string name="trigger_when_is_above">Nalazi se iznad</string>
+  <string name="trigger_note_text_label">Zadani tekst bilješke</string>
+  <string name="trigger_note_text_hint">Što želite da piše u bilješci?</string>
+  <string name="trigger_audio_alert">Zvuk</string>
+  <string name="trigger_haptic_alert">Vibracija</string>
+  <string name="trigger_visual_alert">Vizualna obavijest</string>
+  <string name="cannot_save_invalid_value">Morate unijeti brojčanu vrijednost koja će aktivirati taj okidač.</string>
+  <string name="sensor_trigger_deleted">Okidač je izbrisan</string>
+  <string name="trigger_only_when_recording">Aktiviraj samo pri snimanju</string>
+  <string name="trigger_fired_text">Okidač je aktiviran</string>
+  <string name="crop_start_seekbar_content_description">početak obrezivanja:</string>
+  <string name="crop_end_seekbar_content_description">završetak obrezivanja:</string>
+  <string name="crop_failed_message">Obrezivanje se ne može spremiti:</string>
+  <string name="trigger_alert_prompt">Način obavijesti</string>
+  <string name="my_devices">Moji uređaji</string>
+  <string name="available_devices">Dostupni uređaji</string>
+  <string name="phone_sensors">Interni senzori</string>
+  <string name="forget_device">Zaboravi ovaj uređaj</string>
+  <string name="crop_overflow_menu_content_description">Više opcija</string>
+  <string name="edit_crop_start_time">Uređivanje vremena početka</string>
+  <string name="edit_crop_end_time">Uređivanje vremena završetka</string>
+  <string name="timestamp_picker_format_error">Upotrijebite važeći format, h:mm:ss.SSS</string>
+  <string name="timestamp_picker_crop_range_error">Snimke se ne mogu obrezati na manje od jedne sekunde</string>
+  <string name="timestamp_picker_prompt">Novo vrijeme (h:mm:ss.SSS)</string>
+  <string name="export_options_title">Izvoz…</string>
+  <string name="export_options_relative_time">Relativno vrijeme</string>
+  <string name="compass">Kompas</string>
+  <string name="compass_units">stupnjevi</string>
+  <string name="sensor_desc_short_compass">Orijentacija telefona u odnosu na Zemljino magnetsko polje.</string>
+  <string name="sensor_desc_first_paragraph_compass">Vjerojatno već znate da Zemlja ima magnetsko polje. No možda ne znate da vaš telefon sadrži uređaj koji otkriva magnetska polja: magnetometar. Ako podatke s magnetometra telefona povežemo s orijentacijom telefona u prostoru, možemo izraditi digitalni kompas.
+
+Običan kompas vrsta je magnetometra \"stare tehnologije\", čija se igla pomiče uslijed djelovanja magnetskog polja. Telefoni u sebi nemaju sićušan kompas, već senzor s tri osi koji pomoću električne struje otkriva snagu magnetskog polja u tri prostorne dimenzije. No to nije dovoljno za izradu kompasa!
+
+Zašto je za kompas potrebno povezati podatke s magnetometra i orijentaciju telefona? Orijentacija telefona omogućuje nam da izračunamo magnetsku rotaciju čak i kad telefon nije postavljen ravno, u istoj ravnini kao Zemljino magnetsko polje. Budući da znamo da gravitacija djeluje okomito na Zemljino magnetsko polje, možemo upotrijebiti smjer gravitacije iz senzora akcelerometra da bismo utvrdili koliko je magnetskog polja u istoj ravnini kao Zemljino magnetsko polje.</string>
+  <string name="sensor_desc_second_paragraph_compass">Možda ste primijetili da kompas ne reagira samo na Zemljino magnetsko polje, već i na svako drugo magnetsko polje u njegovoj blizini. Magneti, električne struje i metalni predmeti mogu isto tako utjecati na magnetometar u telefonu i uzrokovati promjene u očitavanju kompasa. Iziđite na otvoreni prostor, po mogućnosti van i podalje od električnih vodova, da biste bili sigurni da se crveni vršak magnetometra poravnao sa Zemljinim magnetskim poljem. Ako trebate kalibrirati magnetometar u telefonu, izvodite telefonom kretnje u obliku brojke 8.</string>
+  <string name="text_label_details_title">Uređivanje tekstualne bilješke</string>
+  <string name="navigation_item_experiments">Eksperimenti</string>
+  <string name="note_caption_hint">Dodajte opis</string>
+  <string name="linear_accelerometer">Linearni akcelerometar</string>
+  <string name="sensor_desc_short_linear_acc">Ukupno ubrzanje telefona u m/s², isključujući silu gravitacije</string>
+  <string name="sensor_desc_first_paragraph_linear_acc">Tijela imaju tendenciju mirovanja, odnosno gibanja ako su u pokretu – tu tendenciju nazivamo inercijom. Prvi Newtonov zakon tu ideju formalizira na sljedeći način: svako tijelo ostaje u stanju mirovanja ili gibanja sve dok neka sila ne dovede do promjene tog stanja.
+
+Kad sila uzrokuje pomicanje tijela, kažemo da ono ubrzava: njegova se brzina mijenja, bilo da se radilo o ubrzavanju, usporavanju ili promjeni smjera. Ubrzanje se mjeri kao promjena brzine u jedinici vremena (metri u sekundi), odnosno u metrima u sekundi na kvadrat (m/s²).
+
+Vaš telefon ima uređaj koji mjeri te promjene kretanja – akcelerometar. U akcelerometru se nalaze male mase koje se slobodno kreću. Uslijed promjena u gibanju te se mase pomiču, slično kao što se vaša glava pomiče unaprijed ako se nađete u automobilu koji naglo zakoči. Mjereći te suptilne inercijske pomake, akcelerometar u telefonu prepoznaje promjene u pokretima i smjeru, što je korisna značajka prilikom okretanja zaslona iz pejzažnog u portretni način rada, igranja igara na telefonu i prilikom drugih radnji.</string>
+  <string name="sensor_desc_second_paragraph_linear_acc">Senzor kombiniranog linearnog akcelerometra bilježi ukupno ubrzanje za sve tri osi telefona, osim gravitacije.</string>
+  <string name="edit_note_time_menu_item">Uredi vrijeme</string>
+  <string name="snapshot_label_details_title">Pojedinosti snimke</string>
+  <string name="load_more_notes_btn">Prikaži više bilješki</string>
+  <string name="name_experiment_dialog_title">Dodijelite naziv eksperimentu</string>
+  <string name="throbber_content_description">Snimanje je u tijeku</string>
+  <string name="details_header">Pojedinosti</string>
+  <string name="text_label_hint">Dodajte opažanje</string>
+  <string name="first_experiment_title">Dobro došli u Science Journal</string>
+  <string name="first_experiment_text_note">Pokušajte sastaviti bilješke i bilježiti podatke putem alatne trake u nastavku!</string>
+  <string name="first_experiment_picture_note_caption">Dobro došli u Science Journal!</string>
+  <string name="first_experiment_second_text_note">Pronađite aktivnosti u kojima se možete okušati na adresi
+g.co/sciencejournalactivities</string>
+  <string name="btn_take_picture_content_description">Snimi fotografiju</string>
+  <string name="input_camera_permission_denied">Fotoaparat se ne može upotrijebiti jer Science Journal nema dopuštenje da mu pristupi.</string>
+  <string name="input_photo_library_permission_denied">Zbirka fotografija ne može se upotrijebiti jer Science Journal nema dopuštenje da joj pristupi.</string>
+  <string name="import_failed_recording">Science Journal trenutačno je u upotrebi. Zaustavite snimanje i pokušajte ponovo.</string>
+  <string name="import_failed_file">Uvoz nije uspio. Nešto nije u redu s tim eksperimentom.</string>
+  <string name="import_failed">Nažalost, došlo je do nepoznate pogreške.</string>
+  <string name="explore_your_world">Istražujte svijet oko sebe</string>
+  <string name="use_science_journal">Upotrebljavajte Science Journal za provođenje eksperimenata sa svijetom oko sebe</string>
+  <string name="get_started">Početak</string>
+  <string name="drive_sync_cannot_reach_google_drive">Ne možemo pristupiti Google disku. Provjerite vezu.</string>
+  <string name="add_note_hint_text">Dodajte novu bilješku</string>
+  <string name="add_note_button_text">Dodaj bilješku na vremensku traku</string>
+</resources>

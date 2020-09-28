@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Arduino Science Journal</string>
+    <string name="action_feedback">Feedback</string>
+    <string name="action_about">About</string>
+    <string name="action_save">Save</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="sine_wave">Sine wave</string>
+    <string name="acc_x">Accelerometer X</string>
+    <string name="acc_y">Accelerometer Y</string>
+    <string name="acc_z">Accelerometer Z</string>
+    <string name="ambient_light">Ambient light</string>
+    <string name="magnetic_field_strength">Magnetometer</string>
+    <string name="barometer">Barometer</string>
+    <string name="ambient_temperature">Ambient temperature</string>
+    <string name="acc_units">m/s²</string>
+    <string name="ambient_light_units">lux</string>
+    <string name="magnetic_strength_units">μT</string>
+    <string name="decibel_units">dB</string>
+    <string name="hertz_units">Hz</string>
+    <string name="rpm_units">RPM</string>
+    <string name="voltage_units">V</string>
+    <string name="raw_units">%</string>
+    <string name="barometer_units">hPa</string>
+    <string name="temperature_units">°C</string>
+    <string name="action_retry">Retry</string>
+    <string name="decibel">Sound intensity</string>
+    <string name="pitch">Pitch</string>
+    <string name="btn_record_description">Start recording</string>
+    <string name="btn_stop_description">Stop recording</string>
+    <string name="unknown_sensor">Unknown sensor</string>
+    <string name="recording_start_failed">Cannot start recording</string>
+    <string name="recording_stop_failed_no_data_title">Data is not being recorded</string>
+    <string name="recording_stop_failed_no_data">One or more of your sensors did not record any data. Would you like to cancel this recording?</string>
+    <string name="recording_stop_failed_continue">Continue</string>
+    <string name="recording_stop_failed_cancel">Cancel recording</string>
+    <string name="navigation_item_activities">Activities</string>
+    <string name="navigation_item_settings">Settings</string>
+    <string name="title_activity_sensor_settings">Sensor settings</string>
+    <string name="graph_options_audio_feedback_enable">Enable audio</string>
+    <string name="graph_options_audio_feedback_disable">Disable audio</string>
+    <string name="stat_min">Minimum</string>
+    <string name="stat_max">Maximum</string>
+    <string name="stat_average">Average</string>
+    <string name="btn_reset_description">Jump to now</string>
+    <string name="export_action">Share</string>
+    <string name="send_copy_action">Send a copy</string>
+    <string name="export_experiment_chooser_title">Send Experiment</string>
+    <string name="export_photo_chooser_title">Share photo to…</string>
+    <string name="experiment_not_finished_downloading_confirm_button">Share experiment</string>
+    <string name="experiment_not_finished_downloading_message">This experiment has not finished downloading. If you share a copy, some data may be missing</string>
+    <string name="experiment_not_finished_downloading_title">Download in progress</string>
+    <string name="settings_version_title">Version</string>
+    <string name="settings_open_source_title">Open-source licences</string>
+    <string name="action_undo">Undo</string>
+    <string name="choose_photo_button_text">Choose a photo</string>
+    <string name="btn_new_experiment_content_description">New experiment</string>
+    <string name="archived_experiment_message">Experiment archived.</string>
+    <string name="unarchived_experiment_message">Experiment moved out of archive.</string>
+    <string name="archived_run_message">Recording archived.</string>
+    <string name="unarchived_run_message">Recording moved out of archive.</string>
+    <string name="archived_content_description">Archived experiments cannot be modified, but can be deleted</string>
+    <string name="experiment_title_hint">Experiment title</string>
+    <string name="btn_add_sensor_card_description">Add new sensor card</string>
+    <string name="btn_sensor_card_close">Close card</string>
+    <string name="default_experiment_name">Untitled Experiment</string>
+    <string name="empty_project">You have no experiments</string>
+    <string name="default_sonification">Default</string>
+    <string name="amplitude">Amplitude</string>
+    <string name="notes">Notes</string>
+    <string name="scale">Scale</string>
+    <string name="conductor">Conductor</string>
+    <string name="empty_experiment">You have no observations yet</string>
+    <string name="device_options_sensor_label_text">Sensor</string>
+    <string name="sensor_rotation_rpm">Rotation</string>
+    <string name="sensor_raw">Raw</string>
+    <string name="sensor_custom">Custom</string>
+    <string name="device_options_custom_sensor_pin_label_text">Pin</string>
+    <string name="device_options_custom_sensor_frequency_checkbox_text">Frequency</string>
+    <string name="sensor_desc_short_acc_x">The acceleration of the phone to the left and right, in m/s²</string>
+    <string name="sensor_desc_short_acc_y">The acceleration of the phone forwards and back, in m/s²</string>
+    <string name="sensor_desc_short_acc_z">The acceleration of the phone up and down, in m/s²</string>
+    <string name="sensor_desc_short_decibel">The intensity of the sound, measured in decibels (dB), reaching the sound sensor or microphone.</string>
+    <string name="sensor_desc_short_pitch">The pitch of the sound, measured in hertz (Hz), reaching the sound sensor or microphone.</string>
+    <string name="sensor_desc_short_magnetic_strength">The strength of the ambient geomagnetic field in Microtesla.</string>
+    <string name="sensor_desc_short_bluetooth">An external sensor is displaying its data here, based on custom settings.</string>
+    <string name="sensor_desc_short_rotation">The number of rotations per minute</string>
+    <string name="sensor_desc_short_raw">The percentage of the raw reading from an external sensor.</string>
+    <string name="sensor_desc_short_barometer">The atmospheric pressure measured in hectopascals (hPa).</string>
+    <string name="sensor_desc_first_paragraph_magnetic_strength">Your phone contains a device designed to detect magnetic fields: a magnetometer. This tiny, three-axis sensor that uses electric currents to detect the magnetic field strength in the three dimensions of space. By combining data from all three axes we can create a total magnetic field strength sensor.
+
+Some magnetometers detect magnetic fields using the Hall effect – the tendency of magnetic fields to deflect moving charge as it flows. Newer magnetometers rely on magnetoresistors, metal alloys that change their resistance in response to magnetic fields.
+
+Why does a phone need a magnetometer? Knowing your orientation in space is useful for built-in compass and navigation apps, especially those that seek to give turn-by-turn directions.</string>
+    <string name="sensor_desc_second_paragraph_magnetic_strength">Magnets, electric currents and metal objects will easily steer your phone\'s magnetometer this way and that. But even in the middle of an empty field, the magnetometer in your phone always shows a low, non-zero reading: this is the Earth\'s magnetic field!</string>
+    <string name="sensor_desc_first_paragraph_acc">Objects have a tendency to stay put, or to keep moving if they\'re moving – we call this tendency inertia. Newton\'s First Law expresses this idea formally: an object continues in its state of motion or rest unless acted on by an unbalanced force.
+
+When an unbalanced force does cause an object to budge, we say the object accelerates: its velocity, or speed, changes – either by speeding up, slowing down or changing direction. Acceleration is measured as a change of velocity (metres per second) in time, or metres per second squared (m/s²).
+
+Your phone has a device to measure these changes in motion: an accelerometer. Inside an accelerometer, small suspended masses are free to move. Changes in motion cause these masses to shift, much like your own head tends to flop forward when you\'re in a car that stops suddenly. Measuring these subtle inertial shifts, an accelerometer in a phone can detect changes in motion and orientation, useful for switching the screen from landscape to portrait mode, for playing games on your phone, and more.</string>
+    <string name="sensor_desc_second_paragraph_acc">You probably noticed a persistent acceleration in the Z axis, even with the phone sitting still on a table. This is the acceleration we experience here at the Earth\'s surface due to the pull of gravity, approximately 9.8 m/s².</string>
+    <string name="sensor_desc_first_paragraph_decibel">Sounds are made by vibration. Your voice, for example, comes from vibrations in your throat\'s vocal cords. These vibrations create alternating zones of high and low air pressure that travel outward – much like the expanding circular ripple made by a pebble thrown into a pond.</string>
+    <string name="sensor_desc_second_paragraph_decibel">All sounds can be described in terms of their frequency and intensity.
+
+Intensity is what you measure here with the Science Journal sound intensity sensor, in units of decibels (dB). Intensity, or loudness, depends on the distance that a vibrating object moves each time it vibrates; we hear greater intensity as increased loudness.
+
+The frequency (also, pitch or tone) of a sound wave is equivalent to its rate of vibration. The faster an object vibrates, the higher the pitch of the resulting sound. The Science Journal sound intensity sensor does not measure frequency, only loudness.
+
+One important thing to know is that the microphone in your device is designed to be very sensitive to differences in sound waves over time, but not the absolute size of each wave. We have tried to choose code that is likely to produce numbers similar to the reference numbers shown below, but each device may give consistently higher or lower numbers. Scientists will usually calibrate a sensor like this to a known measurement. For now, Science Journal can tell you whether your next train ride is louder than your next rock concert, but only if you bring the same phone to both events.
+
+Another thing to know is that there are important differences between \'sound intensity\', \'sound intensity level\' and \'sound pressure\'. We are treating them here as the same thing, but if you want to dig deeper, there are many online resources about the differences.
+
+The quietest sound that the average human ear can detect is defined as 0 dB. Ordinary conversation corresponds to about 60 dB, and sounds above about 140 dB are painful to the human ear. But sounds don\'t have to be painful to be harmful. Continued exposure to sounds of 90 dB – about the loudness of a vacuum cleaner – can eventually cause hearing loss.
+
+The decibel scale is logarithmic, which makes for some trickiness: A sound source of 40 dB isn\'t twice as intense as one with 20 dB, it\'s 100 times more intense. Meanwhile, if one ringing alarm clock produces 70 dB, two ringing alarm clocks produce not 140 dB, but 73 dB. Like we said, it\'s a strange scale.
+
+10 dB rustling leaves
+20 dB whispering at 1.5 metres
+30 dB soft whisper
+50 dB rainfall
+60 dB normal conversation
+90 dB blender
+100 dB car without silencer
+110 dB shouting in ear
+120 dB thunder
+130 dB pneumatic drill
+140 dB aeroplane taking off</string>
+    <string name="sensor_desc_first_paragraph_pitch">Sounds are made by vibration. Your voice, for example, comes from vibrations in your throat\'s vocal cords. These vibrations create alternating zones of high and low air pressure that travel outwards – much like the expanding circular ripple made by a pebble thrown into a pond.</string>
+    <string name="sensor_desc_second_paragraph_pitch">All sounds can be described in terms of their frequency and intensity. The frequency (also, pitch or tone) of a sound wave is equivalent to its rate of vibration. The faster an object vibrates, the higher the pitch of the resulting sound. We measure these vibrations in Hertz (Hz) where 1 Hertz = 1 vibration/second.
+
+Humans can hear sounds in the range of 20 to 20,000 Hz. The lowest key on a piano produces a sound with a frequency of 27.5 Hz and the highest key produces a sound with a frequency of 4186.01 Hz.
+
+The red dot indicates how close the detected pitch is to the nearest musical note. If the pitch is lower or \'flatter\', the dot will appear to the left. If the pitch is higher or \'sharper\', then the red dot will appear to the right.</string>
+    <string name="pitch_low_content_description">low pitch</string>
+    <string name="pitch_flatter_than_natural_note_content_description">%1$s half steps flatter than %2$s, octave %3$s</string>
+    <string name="pitch_flatter_than_flat_note_content_description">%1$s half steps flatter than %2$s flat, octave %3$s</string>
+    <string name="pitch_flatter_than_sharp_note_content_description">%1$s half steps flatter than %2$s sharp, octave %3$s</string>
+    <string name="pitch_natural_note_content_description">%1$s, octave %2$s</string>
+    <string name="pitch_flat_note_content_description">%1$s flat, octave %2$s</string>
+    <string name="pitch_sharp_note_content_description">%1$s sharp, octave %2$s</string>
+    <string name="pitch_sharper_than_natural_note_content_description">%1$s half steps sharper than %2$s, octave %3$s</string>
+    <string name="pitch_sharper_than_flat_note_content_description">%1$s half steps sharper than %2$s flat, octave %3$s</string>
+    <string name="pitch_sharper_than_sharp_note_content_description">%1$s half steps sharper than %2$s sharp, octave %3$s</string>
+    <string name="pitch_high_content_description">high pitch</string>
+    <string name="sensor_desc_first_paragraph_rotation">Rotations per minute (RPM) is a measure of the frequency of rotation around a fixed axis in one minute.
+
+As your wind spinner turns, it rotates the encoder disc:</string>
+    <string name="sensor_desc_second_paragraph_rotation">This creates periods of light and dark on the sensor that register in the Science Journal as a rotation.</string>
+    <string name="sensor_desc_first_paragraph_raw">The data displayed here is coming from an external sensor communication with your phone via Bluetooth.
+
+The value shows the percentage of the raw reading directly from your microcontroller. This is usually the percentage of a voltage drop across a sensor.</string>
+    <string name="sensor_desc_second_paragraph_raw">Bluetooth is a wireless technology standard using radio waves to exchange data over short distances from fixed and mobile devices.</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">The data displayed here is coming from an external sensor communication with your phone via Bluetooth.</string>
+    <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth is a wireless technology standard using radio waves to exchange data over short distances from fixed and mobile devices.</string>
+    <string name="sensor_desc_first_paragraph_barometer">Though we rarely notice it, all of us live at the bottom of a deep ocean of air: Earth\'s atmosphere, which extends upwards of 40 kilometres (130,000 feet) high. The weight of all that air pushing down on us from above us creates what\'s called atmospheric pressure.
+
+At sea level, atmospheric pressure applies 10 newtons of force on every square centimetre – that\'s the equivalent of about 6300 newtons on an area the size of a standard A4 sheet of paper.</string>
+    <string name="sensor_desc_second_paragraph_barometer">We don\'t notice this crushing pressure because we\'re used to it – that is, until it changes, even slightly, as it does when we visit high altitudes or fly in aeroplanes. Atmospheric pressure also varies with weather conditions, dropping in the presence of stormy, unstable air, and rising when air stabilises and skies clear.
+
+The digital barometer in your phone measures atmospheric pressure in hectopascals. (A hectopascal is 100 pascals, where a pascal is one newton of force applied over a square metre of area.) You\'ve probably heard weather forecasters give atmospheric pressure in millibars – this friendlier-sounding unit is equivalent to hectopascals.
+
+You might be wondering: Why would a phone measure pressure? Atmospheric pressure changes measurably with even slight changes in elevation, say, when you climb a flight of stairs. So a digital barometer in a phone can help detect location changes, for example, telling you what floor of a building you are on, or whether you are driving on the upper or lower deck of a bridge.</string>
+    <string name="run_review_activity_label">Review</string>
+    <string name="heading_info_section">What\'s Going On?</string>
+    <string name="edit_note_time">Edit note time</string>
+    <string name="delete_note_menu_item">Delete</string>
+    <string name="crop_run">Crop</string>
+    <string name="snackbar_note_deleted">Note deleted</string>
+    <string name="snackbar_undo">Undo</string>
+    <string name="archived_badge">Archived</string>
+    <string name="delete_experiment_dialog_title">Delete this experiment?</string>
+    <string name="delete_experiment_dialog_message">Are you sure that you want to delete this experiment? All its recordings and notes will be deleted.</string>
+    <string name="delete_run_dialog_title">Delete this recording?</string>
+    <string name="run_review_delete_confirm">Are you sure that you want to delete this recording? The recorded data and notes will be deleted.</string>
+    <string name="menu_btn_content_description">Menu</string>
+    <string name="sensor_card_error_text">Failed to load sensor data</string>
+    <string name="sensor_card_loading_text">Loading sensor data…</string>
+    <string name="edit_trial_title_hint">Recording title</string>
+    <string name="include_archived_trials">Show archived recordings</string>
+    <string name="export_error">Export failed.</string>
+    <string name="listing_changelog_features">New features:</string>
+    <string name="listing_changelog_bug_fixes">Performance improvements and bug fixes.</string>
+    <string name="listing_changelog_separator">
+
+</string>
+    <string name="listing_h_feature_1">
+• Sound pitch sensor.</string>
+    <string name="listing_h_feature_2">
+• Export experiments to a file, and import them to other devices.</string>
+    <string name="listing_h_feature_3">
+• Export photos from an experiment.</string>
+    <string name="menu_item_audio_settings">Audio settings</string>
+    <string name="enable_auto_zoom">Enable auto scale</string>
+    <string name="disable_auto_zoom">Disable auto scale</string>
+    <string name="menu_item_set_triggers">Set triggers</string>
+    <string name="menu_item_edit_triggers">Edit triggers</string>
+    <string name="btn_add_new_trigger">Create trigger</string>
+    <string name="empty_trigger_list">No triggers set</string>
+    <string name="trigger_type_label">Trigger type</string>
+    <string name="trigger_when_label">Trigger when</string>
+    <string name="trigger_value_label">Trigger value</string>
+    <string name="trigger_type_start_recording">Start recording</string>
+    <string name="trigger_type_stop_recording">Stop recording</string>
+    <string name="trigger_type_note">Make a note</string>
+    <string name="trigger_type_alert">Alert me</string>
+    <string name="trigger_when_at">At</string>
+    <string name="trigger_when_drops_below">Drops below</string>
+    <string name="trigger_when_rises_above">Rises above</string>
+    <string name="trigger_when_is_below">Is below</string>
+    <string name="trigger_when_is_above">Is above</string>
+    <string name="trigger_note_text_label">Default note text</string>
+    <string name="trigger_note_text_hint">What should your note say?</string>
+    <string name="trigger_audio_alert">Sound</string>
+    <string name="trigger_haptic_alert">Vibration</string>
+    <string name="trigger_visual_alert">Visual notification</string>
+    <string name="cannot_save_invalid_value">You must enter a numeric value at which this trigger will fire.</string>
+    <string name="sensor_trigger_deleted">Trigger deleted</string>
+    <string name="trigger_only_when_recording">Trigger only when recording</string>
+    <string name="trigger_fired_text">Trigger activated</string>
+    <string name="crop_start_seekbar_content_description">crop start:</string>
+    <string name="crop_end_seekbar_content_description">crop end:</string>
+    <string name="crop_failed_message">Could not save crop:</string>
+    <string name="trigger_alert_prompt">Alert me using</string>
+    <string name="my_devices">My Devices</string>
+    <string name="available_devices">Available Devices</string>
+    <string name="phone_sensors">Internal sensors</string>
+    <string name="forget_device">Forget this device</string>
+    <string name="crop_overflow_menu_content_description">More options</string>
+    <string name="edit_crop_start_time">Edit start time</string>
+    <string name="edit_crop_end_time">Edit end time</string>
+    <string name="timestamp_picker_format_error">Use a valid format (h:mm:ss.SSS)</string>
+    <string name="timestamp_picker_crop_range_error">Recordings cannot be cropped to less than one second long</string>
+    <string name="timestamp_picker_prompt">New time (h:mm:ss.SSS)</string>
+    <string name="export_options_title">Export…</string>
+    <string name="export_options_relative_time">Relative time</string>
+    <string name="compass">Compass</string>
+    <string name="compass_units">degrees</string>
+    <string name="sensor_desc_short_compass">The orientation of the phone with respect to Earth\'s magnetic field.</string>
+    <string name="sensor_desc_first_paragraph_compass">You probably already knew that the Earth has a magnetic field. What you may not have realised is that your phone contains a device designed to detect magnetic fields: a magnetometer. By combining data from your phone\'s magnetometer with the phone\'s orientation in space, we can create a digital compass.
+
+An old-fashioned compass is a low-tech magnetometer, with a magnetised needle that turns to align itself with the surrounding magnetic field. There\'s no tiny compass inside your phone, but instead a tiny three-axis sensor that uses electric currents to detect the magnetic field strength in the three dimensions of space. But this alone is not enough to create a compass!
+
+Why does a compass need to combine the data from the magnetometer with the phone\'s orientation? Knowing the phone\'s orientation allows us to compute the magnetic rotation even when the phone is not held flat in the same plane as the Earth\'s magnetic field. We know that gravity is perpendicular to Earth\'s magnetic field, so we can use the direction of gravity from the accelerometer sensors to determine how much of the magnetic field is in the same plane as the Earth\'s magnetic field.</string>
+    <string name="sensor_desc_second_paragraph_compass">As you may have noticed, the compass responds not just to the Earth\'s magnetic field, but also to any and every magnetic field that happens to be around. Magnets, electric currents and metal objects will easily steer your phone\'s magnetometer this way and that, causing the compass reading to change. Stand in an open area – preferably outdoors and far from power lines – if you want to be sure that your compass\'s red tip is aligning with the Earth\'s magnetic field. It helps to move your phone in a figure-eight pattern to calibrate the magnetometer in your phone.</string>
+    <string name="text_label_details_title">Edit text note</string>
+    <string name="navigation_item_experiments">Experiments</string>
+    <string name="note_caption_hint">Add a description</string>
+    <string name="linear_accelerometer">Linear accelerometer</string>
+    <string name="sensor_desc_short_linear_acc">The total acceleration of the phone, excluding the force of gravity, in m/s²</string>
+    <string name="sensor_desc_first_paragraph_linear_acc">Objects have a tendency to stay put, or to keep moving if they\'re moving – we call this tendency inertia. Newton\'s First Law expresses this idea formally: an object continues in its state of motion or rest unless acted on by an unbalanced force.
+
+When an unbalanced force does cause an object to budge, we say the object accelerates: its velocity, or speed, changes – either by speeding up, slowing down or changing direction. Acceleration is measured as a change of velocity (metres per second) in time, or metres per second squared (m/s²).
+
+Your phone has a device to measure these changes in motion: an accelerometer. Inside an accelerometer, small suspended masses are free to move. Changes in motion cause these masses to shift, much like your own head tends to flop forward when you\'re in a car that stops suddenly. Measuring these subtle inertial shifts, an accelerometer in a phone can detect changes in motion and orientation, useful for switching the screen from landscape to portrait mode, for playing games on your phone, and more.</string>
+    <string name="sensor_desc_second_paragraph_linear_acc">The combined linear accelerometer sensor records the total acceleration in all three axis of the phone, excluding gravity.</string>
+    <string name="edit_note_time_menu_item">Edit time</string>
+    <string name="snapshot_label_details_title">Snapshot details</string>
+    <string name="load_more_notes_btn">View more notes</string>
+    <string name="name_experiment_dialog_title">Name this experiment</string>
+    <string name="throbber_content_description">Recording in progress</string>
+    <string name="details_header">Details</string>
+    <string name="text_label_hint">Add an observation</string>
+    <string name="first_experiment_title">Welcome to Science Journal</string>
+    <string name="first_experiment_text_note">Try taking notes and recording data using the toolbar below!</string>
+    <string name="first_experiment_picture_note_caption">Welcome to Science Journal!</string>
+    <string name="first_experiment_second_text_note">Find activities to try at
+g.co/sciencejournalactivities</string>
+    <string name="btn_take_picture_content_description">Take picture</string>
+    <string name="input_camera_permission_denied">The camera cannot be used because Science Journal does not have permission to access it.</string>
+    <string name="input_photo_library_permission_denied">Your photo library cannot be used because Science Journal does not have permission to access it.</string>
+    <string name="import_failed_recording">Science Journal is currently in use. Stop recording and try again.</string>
+    <string name="import_failed_file">Import failed. Something\'s wrong with this experiment.</string>
+    <string name="import_failed">Unfortunately, an unknown error has occurred.</string>
+    <string name="explore_your_world">Explore your world</string>
+    <string name="use_science_journal">Use Science Journal to conduct experiments on the world around you</string>
+    <string name="get_started">Get started</string>
+    <string name="drive_sync_cannot_reach_google_drive">Can\'t reach Google Drive. Check your connection.</string>
+    <string name="add_note_hint_text">Add a new note</string>
+    <string name="add_note_button_text">Add note to timeline</string>
+</resources>

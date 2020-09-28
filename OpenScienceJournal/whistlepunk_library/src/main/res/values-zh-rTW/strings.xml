@@ -1,15 +1,45 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">科學日誌</string>
-  <string name="action_feedback">意見回饋</string>
-  <string name="action_about">關於</string>
-  <string name="action_save">儲存</string>
-  <string name="action_edit">編輯</string>
-  <string name="action_archive_experiment">封存實驗</string>
-  <string name="action_unarchive_experiment">取消封存實驗</string>
-  <string name="action_archive_run">封存</string>
-  <string name="action_unarchive_run">取消封存</string>
-  <string name="action_delete">刪除</string>
-  <string name="sine_wave">正弦波</string>
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="sonification_types_dev">
+        <item>@string/amplitude</item>
+    </string-array>
+    <string-array name="sonification_types_prod">
+        <item>@string/default_sonification</item>
+        <item>@string/scale</item>
+        <item>@string/notes</item>
+        <item>@string/conductor</item>
+    </string-array>
+    <string-array name="trigger_type_list">
+        <item>@string/trigger_type_start_recording</item>
+        <item>@string/trigger_type_stop_recording</item>
+        <item>@string/trigger_type_note</item>
+        <item>@string/trigger_type_alert</item>
+    </string-array>
+    <string-array name="trigger_when_list">
+        <item>@string/trigger_when_at</item>
+        <item>@string/trigger_when_rises_above</item>
+        <item>@string/trigger_when_drops_below</item>
+        <item>@string/trigger_when_is_above</item>
+        <item>@string/trigger_when_is_below</item>
+    </string-array>
+    <string-array name="trigger_when_list_note_text">
+        <item>等於特定值</item>
+        <item>上升到特定值以上</item>
+        <item>下降到特定值以下</item>
+        <item>超過</item>
+        <item>低於</item>
+    </string-array>
+    <string name="app_name">Arduino Science Journal</string>
+    <string name="action_feedback">意見回饋</string>
+    <string name="action_about">關於</string>
+    <string name="action_save">儲存</string>
+    <string name="action_edit">編輯</string>
+    <string name="action_archive_experiment">封存實驗</string>
+    <string name="action_unarchive_experiment">取消封存實驗</string>
+    <string name="action_archive_run">封存</string>
+    <string name="action_unarchive_run">取消封存</string>
+    <string name="action_delete">刪除</string>
+    <string name="sine_wave">正弦波</string>
   <string name="vel">速率</string>
   <string name="acc_x">加速計 X</string>
   <string name="acc_y">加速計 Y</string>
@@ -34,8 +64,6 @@
   <string name="action_retry">重試</string>
   <string name="decibel">聲音強度</string>
   <string name="pitch">音高</string>
-  <string name="btn_add_experiment_note_description">新增實驗附註</string>
-  <string name="btn_add_run_note_description">新增試驗附註</string>
   <string name="btn_record_description">開始記錄</string>
   <string name="btn_stop_description">停止記錄</string>
   <string name="btn_record_label">錄製</string>
@@ -143,15 +171,6 @@
   <string name="notes">音符</string>
   <string name="scale">音階</string>
   <string name="conductor">導體</string>
-  <string-array name="sonification_types_prod">
-    <item>@string/default_sonification</item>
-    <item>@string/scale</item>
-    <item>@string/notes</item>
-    <item>@string/conductor</item>
-  </string-array>
-  <string-array name="sonification_types_dev">
-    <item>@string/amplitude</item>
-  </string-array>
   <string name="empty_experiment">目前沒有任何觀察結果</string>
   <string name="device_options_sensor_label_text">感應器</string>
   <string name="external_sensor_appearance_name">%1$s - %2$s</string>
@@ -162,55 +181,107 @@
   <string name="device_options_custom_sensor_frequency_checkbox_text">頻率</string>
   <string name="feedback_error_message">無法傳送意見。</string>
   <string name="sensor_desc_short_acc_x">手機往左及往右移動的加速度 (以 m/s² 為單位)</string>
-  <string name="sensor_desc_short_acc_y">手機往前及往後移動的加速度 (以 m/s² 為單位)</string>
-  <string name="sensor_desc_short_acc_z">手機往上及往下移動的加速度 (以 m/s² 為單位)</string>
-  <string name="sensor_desc_short_decibel">音訊感測器或麥克風接收到的聲音強度 (以分貝為測量單位)。</string>
-  <string name="sensor_desc_short_pitch">音訊感測器或麥克風接收到的音高，以赫茲 (Hz) 為測量單位。</string>
-  <string name="sensor_desc_short_light">環境光感測器接收到的受光量 (以勒克斯為測量單位)。</string>
-  <string name="sensor_desc_short_magnetic_strength">周圍地磁場的強度 (以微特斯拉為單位)</string>
-  <string name="sensor_desc_short_bluetooth">外部感測器的資料會根據自訂設定顯示在這裡。</string>
-  <string name="sensor_desc_short_rotation">每分鐘旋轉次數</string>
-  <string name="sensor_desc_short_raw">來自外部感測器的原始讀數百分比。</string>
-  <string name="sensor_desc_short_barometer">以百帕 (hPa) 為單位測量到的大氣壓力。</string>
-  <string name="sensor_desc_first_paragraph_light">環境光感測器在測量光線亮度時會以勒克斯為單位；勒克斯是照度的測量單位，根據受光量和光線散佈的區域面積計算而得。\n\n常見的環境照度如下：滿月約 1 勒克斯，以一般電燈為光源的客廳約 50 勒克斯，教室電燈、日出和日落的照度約為 400 勒克斯，白天 (非直射日光) 超過 10,000 勒克斯，直射日光則超過 30,000 勒克斯。\n\n對多數人來說，勒克斯並非常用的測量單位。我們通常會根據瓦數選購燈泡，但瓦特代表的是用電量，而非燈泡的亮度。流明是更適合選購燈泡時使用的測量單位，代表燈泡實際產生的亮度，勒克斯則是照射在特定區域範圍上的光線量。</string>
-  <string name="sensor_desc_second_paragraph_light">由於光線會在移動過程中向外擴散，因此即使光源的流明數不變，勒克斯數也會在您背向光源時減少。如果受光面與光源之間相互傾斜，接收到的照明度也會較低，這也是地球赤道地區比極地更溫暖的原因。\n\n另外，手機中配備光感測器的用意，就是為了根據環境明暗程度自動調整螢幕的亮度。光感測器內的微型半導體受到光線照射時，會產生微弱但可測量的電流予以回應，這種現象稱為光電效應。類似的感測器也運用在部分街燈上，天黑時就會自動亮燈。</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">我們的手機中內建了一種專門用來偵測磁場的裝置，稱為「磁力儀」。這種微小的三軸感測器利用電流來偵測周遭三維空間中的磁場強度，只要結合這三軸的資料，我們就能製作出磁場總強度的感測器。\n\n部分磁力儀根據「霍爾效應」(意即當電流通過時，磁場受到干擾的現象) 來偵測磁場。新一代的磁力儀則是使用磁電阻，這是一種微小的金屬合金，會隨著磁場變化而改變電阻。\n\n手機之所以需要磁力儀，是為了讓內建的指南針和導航應用程式在空間中定位出你的方向，因此必須借助磁力儀，尤其對那些需要提供精確路線指引的應用程式來說，更為重要。</string>
-  <string name="sensor_desc_second_paragraph_magnetic_strength">磁鐵、電流和金屬物都很容易對手機中的磁力儀造成干擾。然而即使是在遠離電磁干擾的空曠區域中，手機中的磁力儀仍會顯示極低且不為零的讀數，而這正是地球本身的磁場！</string>
-  <string name="sensor_desc_first_paragraph_acc">物體在原地保持不動、或在移動過程中持續移動的趨勢，稱為慣性。牛頓第一定律正式闡述了這個概念：除非施加不平衡力，否則物體的移動或靜止狀態不會改變。\n\n如果不平衡力造成物件輕微移動，就稱為物體「加速」，表示物體的速度或速率有變化 (無論是因速度增加、減緩或改變方向所造成)。加速度是指速度 (單位為 m/s) 之於時間的變化率，單位為 m/s²。\n\n手機裡的加速計可用於測量移動中的加速度變化。加速計內含有可任意移動的細小懸浮物質，運動產生變化時，這些物質就會隨之移動，就像人的頭部會在緊急煞車時往前傾一樣。只要測量這些物質的慣性移動，手機裡的加速計就能偵測運動與定向的變化，方便您將螢幕從橫向切換成縱向模式、在手機上玩遊戲或進行其他操作。</string>
-  <string name="sensor_desc_second_paragraph_acc">您可能會發現，即使將手機靜置在桌面上，Z 軸的加速度仍然持續存在。這是地球表面上因重力牽引產生的加速度，大約為 9.8 m/s²。</string>
-  <string name="sensor_desc_first_paragraph_decibel">我們聽到的聲音是由空氣振動所產生。舉例來說，喉嚨的聲帶振動就會發出聲音。這些振動會產生向外移動的高氣壓和低氣壓，形成多個彼此交會的區域，原理類似把石子扔進池塘後形成的擴散漣漪。</string>
-  <string name="sensor_desc_second_paragraph_decibel">所有聲音都能以頻率和強度來表示。\n\n科學日誌的聲音強度感測器就是使用強度做為測量基準，以分貝 (dB) 為單位。強度 (又稱響度) 取決於物體振動時移動的距離。強度越高，人耳聽到的聲音也就越響亮。\n\n聲波的頻率 (亦即音高或音調) 相當於物體的振動速率。物體振動得越快，產生的音高也越高。科學日誌的聲音強度感測器無法測量頻率，只能測量聲音的響度。\n\n雖然行動裝置的麥克風非常靈敏，能夠偵測聲波在一段時間內產生的變化，但無法測量每段音波的絕對大小。我們試著從程式設計上著手，讓各種裝置產生的數值盡可能接近下方的參考數值，但不同裝置得出的數值仍可能有高有低 (同一部裝置測出的數值高低則是一致的)。科學家通常會藉由調校感測器，讓得出的結果符合已知的數值。現階段來說，科學日誌能讓你知道某一班火車的音量是否超越某一場搖滾音樂會，但前提是你必須使用同一支手機來測量這兩種情境中的數據。\n\n另外，也請留意「聲音強度」、「聲強級別」和「聲壓」三者之間的差異。雖然我們在這裡將這三者一視同仁，但如要深入探究箇中的差異，網路上有許多相關資料可供參考。\n\n人耳勉強能聽見的聲音強度定義為 0 分貝，一般談話約為 60 分貝，超過 140 分貝的聲音則會令人耳感到疼痛。但即使是不會引發耳朵疼痛的聲音，也可能對人有害。持續暴露在 90 分貝 (約等於吸塵器的響度) 的環境中，最終可能會導致聽力衰退。\n\n分貝的大小屬於對數性質，因此不太容易計算：40 分貝的聲源強度並不是 20 分貝聲源的 2 倍，而是 100 倍。同理，假設鬧鐘的聲音強度是 70 分貝，兩個鬧鐘產生的聲音強度並不是 140 分貝，而是 73 分貝。分貝強弱的計算方式難以一言以蔽之。\n\n微風吹動樹葉的沙沙聲約為 10 分貝\n5 呎外的低語聲約為 20 分貝\n輕聲說話約為 30 分貝\n下雨聲約為 50 分貝\n一般談話約為 60 分貝\n果汁機的聲音約為 90 分貝\n未裝消音器的汽車聲約為 100 分貝\n在耳邊尖叫的聲音約為 110 分貝\n雷聲約為 120 分貝\n電鑽聲約為 130 分貝\n飛機起飛的聲音約為 140 分貝</string>
-  <string name="sensor_desc_first_paragraph_pitch">我們聽到的聲音是由空氣振動所產生。舉例來說，喉嚨的聲帶振動就會發出聲音。這些振動會產生向外移動的高氣壓和低氣壓，形成多個彼此交會的區域，原理類似把石子扔進池塘後形成的擴散漣漪。</string>
-  <string name="sensor_desc_second_paragraph_pitch">所有聲音都能以頻率和強度來表示。聲波的頻率 (亦即音高或音調) 相當於物體的振動速率。物體振動得越快，產生的音高也越高。這類振動的測量單位為赫茲 (Hz)，而 1 赫茲表示每秒有 1 次振動。\n\n人耳可以聽到 20 Hz 到 20,000 Hz 之間的聲音。以鋼琴為例，最低音的琴鍵發出的聲音頻率為 27.5 Hz，而最高音的琴鍵發出的聲音頻率則為 4186.01 Hz。\n\n紅點表示偵測到的音高與最接近的音符之間的差距。如果音高較低 (聲音較沉)，紅點就會出現在左側；反之，如果音高較高 (聲音較尖)，紅點則會出現在右側。</string>
-  <string name="pitch_low_content_description">低音</string>
-  <string name="pitch_flatter_than_natural_note_content_description">第 %2$s 個八度 %1$s 降 %3$s 個半音</string>
-  <string name="pitch_flatter_than_flat_note_content_description">第 %2$s 個八度降 %1$s 降 %3$s 個半音</string>
-  <string name="pitch_flatter_than_sharp_note_content_description">第 %2$s 個八度升 %1$s 降 %3$s 個半音</string>
-  <string name="pitch_natural_note_content_description">第 %2$s 個八度 %1$s</string>
-  <string name="pitch_flat_note_content_description">第 %2$s 個八度降 %1$s</string>
-  <string name="pitch_sharp_note_content_description">第 %2$s 個八度升 %1$s</string>
-  <string name="pitch_sharper_than_natural_note_content_description">第 %2$s 個八度 %1$s 升 %3$s 個半音</string>
-  <string name="pitch_sharper_than_flat_note_content_description">第 %2$s 個八度降 %1$s 升 %3$s 個半音</string>
-  <string name="pitch_sharper_than_sharp_note_content_description">第 %2$s 個八度升 %1$s 升 %3$s 個半音</string>
-  <string name="pitch_high_content_description">高音</string>
-  <string name="sensor_desc_first_paragraph_rotation">每分鐘旋轉次數 (RPM) 可測量定軸在 1 分鐘內的旋轉頻率。\n\n風動裝置開始旋轉時，編碼器碟片也會一併轉動 (如下圖)：</string>
-  <string name="sensor_desc_second_paragraph_rotation">這會在感測器上產生斷斷續續的光影，科學日誌則會根據光影的規律來判讀旋轉的次數。</string>
-  <string name="sensor_desc_first_paragraph_raw">這個畫面會顯示外部感測器透過藍牙傳送到手機的資料。\n\n資料中顯示的值是微控器傳送的原始讀數百分比 (通常是電流通過感測器時的電壓百分比)。</string>
-  <string name="sensor_desc_second_paragraph_raw">藍牙是一項無線技術標準，可在短距離內利用無線電波在固定裝置或行動裝置間傳輸資料。</string>
-  <string name="sensor_desc_first_paragraph_unknown_bluetooth">這個畫面會顯示外部感測器透過藍牙傳送到手機的資料。</string>
-  <string name="sensor_desc_second_paragraph_unknown_bluetooth">藍牙是一項無線技術標準，可在短距離內利用無線電波在固定裝置或行動裝置間傳輸資料。</string>
-  <string name="sensor_desc_first_paragraph_barometer">我們生活的地方就在地球大氣層底部 (雖然我們很少注意到這件事)，大氣層底部往上延伸高度有 40 公里 (130,000 呎)。覆蓋在地球表面的所有空氣重量會形成大氣壓力。\n\n在海平面上，每平方英吋會有 14 磅的大氣壓力，這等於在一張標準紙張大小的面積上施加約 1,300 磅的力量。</string>
-  <string name="sensor_desc_second_paragraph_barometer">我們之所以沒注意到這股龐大的壓力，是因為早已習慣它的存在；只要這股壓力有變動，就算只是輕微的變動 (例如到高海拔地區或搭乘飛機時)，我們就能感受到它的存在。大氣壓力也會隨著天氣狀況改變，如果出現猛烈的不穩定氣流，大氣壓力就會下降，如果在氣流穩定、晴空萬里的情況下，大氣壓力則會上升。\n\n手機內的數位氣壓計可用於測量大氣壓力，測量單位為百帕 (1 百帕等於 100 帕斯卡，1 帕斯卡等於在 1 平方公尺的面積上施加 1 牛頓的力量)。你或許聽過天氣預報員以毫巴為單位播報大氣壓力，其實毫巴就等同於百帕。\n\n你可能想知道：為什麼手機可用來測量壓力？只要高度稍有變動 (例如，爬了一段樓梯後)，大氣壓力就會出現可輕易測量到的變動，因此手機的數位計壓器能協助偵測位置的改變，例如，讓你知道自己身在建築物中的哪一層樓，或車輛是行駛在橋上或橋下。</string>
-  <string name="run_review_activity_label">觀測</string>
-  <string name="service_notification_content_title">科學日誌</string>
-  <string name="service_notification_content_text">記錄中…</string>
-  <string name="live_graph_content_description">即時感測器圖表。你可以透過拖曳的方式平移 X 軸，撥動雙指即可縮放 Y 軸。</string>
-  <string name="static_graph_content_description">感測器圖表。撥動雙指可以縮放畫面，拖曳可以平移畫面，輕觸兩下則可縮小。</string>
-  <string name="sensor_card_overflow_menu_content_description">感測器卡片選項</string>
-  <string name="sensor_tab_layout_content_description">可用的感測器</string>
-  <string name="title_activity_sensor_info">感測器資訊</string>
-  <string name="title_activity_sensor_info_format">%s感應器</string>
-  <string name="heading_info_section">最新動態</string>
+    <string name="sensor_desc_short_acc_y">手機往前及往後移動的加速度 (以 m/s² 為單位)</string>
+    <string name="sensor_desc_short_acc_z">手機往上及往下移動的加速度 (以 m/s² 為單位)</string>
+    <string name="sensor_desc_short_decibel">音訊感測器或麥克風接收到的聲音強度 (以分貝為測量單位)。</string>
+    <string name="sensor_desc_short_pitch">音訊感測器或麥克風接收到的音高，以赫茲 (Hz) 為測量單位。</string>
+    <string name="sensor_desc_short_light">環境光感測器接收到的受光量 (以勒克斯為測量單位)。</string>
+    <string name="sensor_desc_short_magnetic_strength">周圍地磁場的強度 (以微特斯拉為單位)</string>
+    <string name="sensor_desc_short_bluetooth">外部感測器的資料會根據自訂設定顯示在這裡。</string>
+    <string name="sensor_desc_short_rotation">每分鐘旋轉次數</string>
+    <string name="sensor_desc_short_raw">來自外部感測器的原始讀數百分比。</string>
+    <string name="sensor_desc_short_barometer">以百帕 (hPa) 為單位測量到的大氣壓力。</string>
+    <string name="sensor_desc_first_paragraph_light">環境光感測器在測量光線亮度時會以勒克斯為單位；勒克斯是照度的測量單位，根據受光量和光線散佈的區域面積計算而得。
+
+常見的環境照度如下：滿月約 1 勒克斯，以一般電燈為光源的客廳約 50 勒克斯，教室電燈、日出和日落的照度約為 400 勒克斯，白天 (非直射日光) 超過 10,000 勒克斯，直射日光則超過 30,000 勒克斯。
+
+對多數人來說，勒克斯並非常用的測量單位。我們通常會根據瓦數選購燈泡，但瓦特代表的是用電量，而非燈泡的亮度。流明是更適合選購燈泡時使用的測量單位，代表燈泡實際產生的亮度，勒克斯則是照射在特定區域範圍上的光線量。</string>
+    <string name="sensor_desc_second_paragraph_light">由於光線會在移動過程中向外擴散，因此即使光源的流明數不變，勒克斯數也會在您背向光源時減少。如果受光面與光源之間相互傾斜，接收到的照明度也會較低，這也是地球赤道地區比極地更溫暖的原因。
+
+另外，手機中配備光感測器的用意，就是為了根據環境明暗程度自動調整螢幕的亮度。光感測器內的微型半導體受到光線照射時，會產生微弱但可測量的電流予以回應，這種現象稱為光電效應。類似的感測器也運用在部分街燈上，天黑時就會自動亮燈。</string>
+    <string name="sensor_desc_first_paragraph_magnetic_strength">我們的手機中內建了一種專門用來偵測磁場的裝置，稱為「磁力儀」。這種微小的三軸感測器利用電流來偵測周遭三維空間中的磁場強度，只要結合這三軸的資料，我們就能製作出磁場總強度的感測器。
+
+部分磁力儀根據「霍爾效應」(意即當電流通過時，磁場受到干擾的現象) 來偵測磁場。新一代的磁力儀則是使用磁電阻，這是一種微小的金屬合金，會隨著磁場變化而改變電阻。
+
+手機之所以需要磁力儀，是為了讓內建的指南針和導航應用程式在空間中定位出你的方向，因此必須借助磁力儀，尤其對那些需要提供精確路線指引的應用程式來說，更為重要。</string>
+    <string name="sensor_desc_second_paragraph_magnetic_strength">磁鐵、電流和金屬物都很容易對手機中的磁力儀造成干擾。然而即使是在遠離電磁干擾的空曠區域中，手機中的磁力儀仍會顯示極低且不為零的讀數，而這正是地球本身的磁場！</string>
+    <string name="sensor_desc_first_paragraph_acc">物體在原地保持不動、或在移動過程中持續移動的趨勢，稱為慣性。牛頓第一定律正式闡述了這個概念：除非施加不平衡力，否則物體的移動或靜止狀態不會改變。
+
+如果不平衡力造成物件輕微移動，就稱為物體「加速」，表示物體的速度或速率有變化 (無論是因速度增加、減緩或改變方向所造成)。加速度是指速度 (單位為 m/s) 之於時間的變化率，單位為 m/s²。
+
+手機裡的加速計可用於測量移動中的加速度變化。加速計內含有可任意移動的細小懸浮物質，運動產生變化時，這些物質就會隨之移動，就像人的頭部會在緊急煞車時往前傾一樣。只要測量這些物質的慣性移動，手機裡的加速計就能偵測運動與定向的變化，方便您將螢幕從橫向切換成縱向模式、在手機上玩遊戲或進行其他操作。</string>
+    <string name="sensor_desc_second_paragraph_acc">您可能會發現，即使將手機靜置在桌面上，Z 軸的加速度仍然持續存在。這是地球表面上因重力牽引產生的加速度，大約為 9.8 m/s²。</string>
+    <string name="sensor_desc_first_paragraph_decibel">我們聽到的聲音是由空氣振動所產生。舉例來說，喉嚨的聲帶振動就會發出聲音。這些振動會產生向外移動的高氣壓和低氣壓，形成多個彼此交會的區域，原理類似把石子扔進池塘後形成的擴散漣漪。</string>
+    <string name="sensor_desc_second_paragraph_decibel">所有聲音都能以頻率和強度來表示。
+
+科學日誌的聲音強度感測器就是使用強度做為測量基準，以分貝 (dB) 為單位。強度 (又稱響度) 取決於物體振動時移動的距離。強度越高，人耳聽到的聲音也就越響亮。
+
+聲波的頻率 (亦即音高或音調) 相當於物體的振動速率。物體振動得越快，產生的音高也越高。科學日誌的聲音強度感測器無法測量頻率，只能測量聲音的響度。
+
+雖然行動裝置的麥克風非常靈敏，能夠偵測聲波在一段時間內產生的變化，但無法測量每段音波的絕對大小。我們試著從程式設計上著手，讓各種裝置產生的數值盡可能接近下方的參考數值，但不同裝置得出的數值仍可能有高有低 (同一部裝置測出的數值高低則是一致的)。科學家通常會藉由調校感測器，讓得出的結果符合已知的數值。現階段來說，科學日誌能讓你知道某一班火車的音量是否超越某一場搖滾音樂會，但前提是你必須使用同一支手機來測量這兩種情境中的數據。
+
+另外，也請留意「聲音強度」、「聲強級別」和「聲壓」三者之間的差異。雖然我們在這裡將這三者一視同仁，但如要深入探究箇中的差異，網路上有許多相關資料可供參考。
+
+人耳勉強能聽見的聲音強度定義為 0 分貝，一般談話約為 60 分貝，超過 140 分貝的聲音則會令人耳感到疼痛。但即使是不會引發耳朵疼痛的聲音，也可能對人有害。持續暴露在 90 分貝 (約等於吸塵器的響度) 的環境中，最終可能會導致聽力衰退。
+
+分貝的大小屬於對數性質，因此不太容易計算：40 分貝的聲源強度並不是 20 分貝聲源的 2 倍，而是 100 倍。同理，假設鬧鐘的聲音強度是 70 分貝，兩個鬧鐘產生的聲音強度並不是 140 分貝，而是 73 分貝。分貝強弱的計算方式難以一言以蔽之。
+
+微風吹動樹葉的沙沙聲約為 10 分貝
+5 呎外的低語聲約為 20 分貝
+輕聲說話約為 30 分貝
+下雨聲約為 50 分貝
+一般談話約為 60 分貝
+果汁機的聲音約為 90 分貝
+未裝消音器的汽車聲約為 100 分貝
+在耳邊尖叫的聲音約為 110 分貝
+雷聲約為 120 分貝
+電鑽聲約為 130 分貝
+飛機起飛的聲音約為 140 分貝</string>
+    <string name="sensor_desc_first_paragraph_pitch">我們聽到的聲音是由空氣振動所產生。舉例來說，喉嚨的聲帶振動就會發出聲音。這些振動會產生向外移動的高氣壓和低氣壓，形成多個彼此交會的區域，原理類似把石子扔進池塘後形成的擴散漣漪。</string>
+    <string name="sensor_desc_second_paragraph_pitch">所有聲音都能以頻率和強度來表示。聲波的頻率 (亦即音高或音調) 相當於物體的振動速率。物體振動得越快，產生的音高也越高。這類振動的測量單位為赫茲 (Hz)，而 1 赫茲表示每秒有 1 次振動。
+
+人耳可以聽到 20 Hz 到 20,000 Hz 之間的聲音。以鋼琴為例，最低音的琴鍵發出的聲音頻率為 27.5 Hz，而最高音的琴鍵發出的聲音頻率則為 4186.01 Hz。
+
+紅點表示偵測到的音高與最接近的音符之間的差距。如果音高較低 (聲音較沉)，紅點就會出現在左側；反之，如果音高較高 (聲音較尖)，紅點則會出現在右側。</string>
+    <string name="pitch_low_content_description">低音</string>
+    <string name="pitch_flatter_than_natural_note_content_description">第 %2$s 個八度 %1$s 降 %3$s 個半音</string>
+    <string name="pitch_flatter_than_flat_note_content_description">第 %2$s 個八度降 %1$s 降 %3$s 個半音</string>
+    <string name="pitch_flatter_than_sharp_note_content_description">第 %2$s 個八度升 %1$s 降 %3$s 個半音</string>
+    <string name="pitch_natural_note_content_description">第 %2$s 個八度 %1$s</string>
+    <string name="pitch_flat_note_content_description">第 %2$s 個八度降 %1$s</string>
+    <string name="pitch_sharp_note_content_description">第 %2$s 個八度升 %1$s</string>
+    <string name="pitch_sharper_than_natural_note_content_description">第 %2$s 個八度 %1$s 升 %3$s 個半音</string>
+    <string name="pitch_sharper_than_flat_note_content_description">第 %2$s 個八度降 %1$s 升 %3$s 個半音</string>
+    <string name="pitch_sharper_than_sharp_note_content_description">第 %2$s 個八度升 %1$s 升 %3$s 個半音</string>
+    <string name="pitch_high_content_description">高音</string>
+    <string name="sensor_desc_first_paragraph_rotation">每分鐘旋轉次數 (RPM) 可測量定軸在 1 分鐘內的旋轉頻率。
+
+風動裝置開始旋轉時，編碼器碟片也會一併轉動 (如下圖)：</string>
+    <string name="sensor_desc_second_paragraph_rotation">這會在感測器上產生斷斷續續的光影，科學日誌則會根據光影的規律來判讀旋轉的次數。</string>
+    <string name="sensor_desc_first_paragraph_raw">這個畫面會顯示外部感測器透過藍牙傳送到手機的資料。
+
+資料中顯示的值是微控器傳送的原始讀數百分比 (通常是電流通過感測器時的電壓百分比)。</string>
+    <string name="sensor_desc_second_paragraph_raw">藍牙是一項無線技術標準，可在短距離內利用無線電波在固定裝置或行動裝置間傳輸資料。</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">這個畫面會顯示外部感測器透過藍牙傳送到手機的資料。</string>
+    <string name="sensor_desc_second_paragraph_unknown_bluetooth">藍牙是一項無線技術標準，可在短距離內利用無線電波在固定裝置或行動裝置間傳輸資料。</string>
+    <string name="sensor_desc_first_paragraph_barometer">我們生活的地方就在地球大氣層底部 (雖然我們很少注意到這件事)，大氣層底部往上延伸高度有 40 公里 (130,000 呎)。覆蓋在地球表面的所有空氣重量會形成大氣壓力。
+
+在海平面上，每平方英吋會有 14 磅的大氣壓力，這等於在一張標準紙張大小的面積上施加約 1,300 磅的力量。</string>
+    <string name="sensor_desc_second_paragraph_barometer">我們之所以沒注意到這股龐大的壓力，是因為早已習慣它的存在；只要這股壓力有變動，就算只是輕微的變動 (例如到高海拔地區或搭乘飛機時)，我們就能感受到它的存在。大氣壓力也會隨著天氣狀況改變，如果出現猛烈的不穩定氣流，大氣壓力就會下降，如果在氣流穩定、晴空萬里的情況下，大氣壓力則會上升。
+
+手機內的數位氣壓計可用於測量大氣壓力，測量單位為百帕 (1 百帕等於 100 帕斯卡，1 帕斯卡等於在 1 平方公尺的面積上施加 1 牛頓的力量)。你或許聽過天氣預報員以毫巴為單位播報大氣壓力，其實毫巴就等同於百帕。
+
+你可能想知道：為什麼手機可用來測量壓力？只要高度稍有變動 (例如，爬了一段樓梯後)，大氣壓力就會出現可輕易測量到的變動，因此手機的數位計壓器能協助偵測位置的改變，例如，讓你知道自己身在建築物中的哪一層樓，或車輛是行駛在橋上或橋下。</string>
+    <string name="run_review_activity_label">觀測</string>
+    <string name="service_notification_content_title">科學日誌</string>
+    <string name="service_notification_content_text">記錄中…</string>
+    <string name="live_graph_content_description">即時感測器圖表。你可以透過拖曳的方式平移 X 軸，撥動雙指即可縮放 Y 軸。</string>
+    <string name="static_graph_content_description">感測器圖表。撥動雙指可以縮放畫面，拖曳可以平移畫面，輕觸兩下則可縮小。</string>
+    <string name="sensor_card_overflow_menu_content_description">感測器卡片選項</string>
+    <string name="sensor_tab_layout_content_description">可用的感測器</string>
+    <string name="title_activity_sensor_info">感測器資訊</string>
+    <string name="title_activity_sensor_info_format">%s感應器</string>
+    <string name="heading_info_section">最新動態</string>
   <string name="edit_note_time">編輯附註時間</string>
   <string name="delete_note_menu_item">刪除</string>
   <string name="delete_run">刪除</string>
@@ -220,11 +291,8 @@
   <string name="default_trial_title">記錄 %1$d</string>
   <string name="run_review_switch_sensor_btn_prev">上一個感測器：%s</string>
   <string name="run_review_switch_sensor_btn_next">下一個感測器：%s</string>
-  <string name="add_note_hint_text">加入新的附註</string>
   <string name="snackbar_note_deleted">已刪除附註</string>
   <string name="snackbar_undo">復原</string>
-  <string name="add_run_note_placeholder_text">為這項記錄新增附註</string>
-  <string name="add_note_image_button_content_description">拍攝附註圖片</string>
   <string name="pinned_note_placeholder_text">新增附註</string>
   <string name="indeterminate_value">--</string>
   <string name="archived_badge">已封存</string>
@@ -239,43 +307,73 @@
   <string name="bluetooth_not_on_ok">開啟藍牙</string>
   <string name="sensor_card_loading_text">正在載入感測器資料…</string>
   <string name="graph_loading">正在載入圖表…</string>
-  <string name="playback_button_pause">暫停播放音訊</string>
-  <string name="playback_button_play">開始播放音訊</string>
-  <string name="dev_sonification_types_title">啟用開發人員聲波處理類型</string>
-  <string name="title_edit_trial_activity">編輯記錄</string>
-  <string name="edit_trial_title_hint">記錄標題</string>
-  <string name="include_archived_trials">顯示已封存的記錄</string>
-  <string name="export_error">匯出失敗。</string>
-  <string name="no_app_found_for_csv">沒有可開啟 CSV 匯出檔案的應用程式。</string>
-  <string name="listing_title">科學日誌</string>
-  <string name="listing_tagline">盡情探索周圍的世界。</string>
-  <string name="listing_changelog">新功能與改善項目：\n\u2022 可將實驗資料、相片和感應器記錄下載至裝置。\n\u2022 可支援連結至 Arduino MKR WiFi 1010 主機板。</string>
-  <string name="listing_changelog_features">新功能：</string>
-  <string name="listing_changelog_bug_fixes">改善效能及修正錯誤。</string>
-  <string name="listing_changelog_separator">\n\n﻿</string>
-  <string name="listing_h_feature_1">\n• 新增音高感測器。</string>
-  <string name="listing_h_feature_2">\n• 將實驗匯出為檔案，然後再匯入到其他裝置。</string>
-  <string name="listing_h_feature_3">\n• 從實驗中匯出相片。</string>
-  <string name="listing__description">「科學日誌」是一款 Google 推出的免費應用程式，也是專為你設計的數位科學筆記本。
-\n\n無論你是從事科學教育的人員，或是熱衷於在家中動手玩科學的人士，都可以將你所有的筆記、相片和觀察結果集中儲存在這裡。你可以利用手機內建的感應器來測量生活中的各種自然現象，例如光線、聲音和物體的運動，並將收集到的數據繪製成圖表。另外，你也可以透過藍牙功能與外部感應器建立連線，並在周遭環境中進行實驗。
-\n\n「科學日誌」應用程式可以讓你：
-\n\u2022 使用手機內建的感應器來測量光線、聲音、加速度和氣壓等自然現象。
-\n\u2022 以文字筆記和相片的形式，將科學實驗的過程和結果記錄下來。我們日後還會提供更多種筆記類型，請拭目以待！
-\n\u2022 讓手機連結至特定具備藍牙功能的 Arduino 和 Vernier 外部感應器裝置。
-\n\u2022 透過 Google 雲端硬碟存取不同裝置中的實驗資料。
-\n\u2022 將收集到的感應器資料匯出為 CSV 檔案。
-\n\u2022 建立自動化的觸發條件，讓「科學日誌」自動幫你記錄資料和做筆記。
-\n\u2022 透過超音波處理機制聽見圖表的變化趨勢。
-\n\n現在起，你可以在各種 Android、iPhone、iPad，以及相容的 Chromebook 裝置上免費下載「科學日誌」。
-\n\n歡迎瀏覽我們合作夥伴提供的教育活動：https://makingscience.withgoogle.com/science-journal/activities
-\n歡迎造訪支援論壇：https://productforums.google.com/forum/#!forum/sciencejournal
-\n如需開放原始碼，請造訪：https://github.com/google/science-journal
-\n\n
+    <string name="playback_button_pause">暫停播放音訊</string>
+    <string name="playback_button_play">開始播放音訊</string>
+    <string name="dev_sonification_types_title">啟用開發人員聲波處理類型</string>
+    <string name="title_edit_trial_activity">編輯記錄</string>
+    <string name="edit_trial_title_hint">記錄標題</string>
+    <string name="include_archived_trials">顯示已封存的記錄</string>
+    <string name="export_error">匯出失敗。</string>
+    <string name="no_app_found_for_csv">沒有可開啟 CSV 匯出檔案的應用程式。</string>
+    <string name="listing_title">科學日誌</string>
+    <string name="listing_tagline">盡情探索周圍的世界。</string>
+    <string name="listing_changelog">新功能與改善項目：
+\u2022 可將實驗資料、相片和感應器記錄下載至裝置。
+\u2022 可支援連結至 Arduino MKR WiFi 1010 主機板。</string>
+    <string name="listing_changelog_features">新功能：</string>
+    <string name="listing_changelog_bug_fixes">改善效能及修正錯誤。</string>
+    <string name="listing_changelog_separator">
+
+﻿</string>
+    <string name="listing_h_feature_1">
+• 新增音高感測器。</string>
+    <string name="listing_h_feature_2">
+• 將實驗匯出為檔案，然後再匯入到其他裝置。</string>
+    <string name="listing_h_feature_3">
+• 從實驗中匯出相片。</string>
+    <string name="listing__description">「科學日誌」是一款 Google 推出的免費應用程式，也是專為你設計的數位科學筆記本。
+
+
+無論你是從事科學教育的人員，或是熱衷於在家中動手玩科學的人士，都可以將你所有的筆記、相片和觀察結果集中儲存在這裡。你可以利用手機內建的感應器來測量生活中的各種自然現象，例如光線、聲音和物體的運動，並將收集到的數據繪製成圖表。另外，你也可以透過藍牙功能與外部感應器建立連線，並在周遭環境中進行實驗。
+
+
+「科學日誌」應用程式可以讓你：
+
+\u2022 使用手機內建的感應器來測量光線、聲音、加速度和氣壓等自然現象。
+
+\u2022 以文字筆記和相片的形式，將科學實驗的過程和結果記錄下來。我們日後還會提供更多種筆記類型，請拭目以待！
+
+\u2022 讓手機連結至特定具備藍牙功能的 Arduino 和 Vernier 外部感應器裝置。
+
+\u2022 透過 Google 雲端硬碟存取不同裝置中的實驗資料。
+
+\u2022 將收集到的感應器資料匯出為 CSV 檔案。
+
+\u2022 建立自動化的觸發條件，讓「科學日誌」自動幫你記錄資料和做筆記。
+
+\u2022 透過超音波處理機制聽見圖表的變化趨勢。
+
+
+現在起，你可以在各種 Android、iPhone、iPad，以及相容的 Chromebook 裝置上免費下載「科學日誌」。
+
+
+歡迎瀏覽我們合作夥伴提供的教育活動：https://makingscience.withgoogle.com/science-journal/activities
+
+歡迎造訪支援論壇：https://productforums.google.com/forum/#!forum/sciencejournal
+
+如需開放原始碼，請造訪：https://github.com/google/science-journal
+
+
+
 權限聲明：
-\n\u2022 位置：你必須提供這項權限，才能掃描藍牙感應器裝置。
-\n\u2022 相機：你必須提供這項權限，才能拍攝相片來記錄實驗。
-\n\u2022 麥克風：你必須提供這項權限，才能使用聲音強度感應器。
-\n\u2022 儲存空間：你必須提供這項權限，才能將相片插入實驗。</string>
+
+\u2022 位置：你必須提供這項權限，才能掃描藍牙感應器裝置。
+
+\u2022 相機：你必須提供這項權限，才能拍攝相片來記錄實驗。
+
+\u2022 麥克風：你必須提供這項權限，才能使用聲音強度感應器。
+
+\u2022 儲存空間：你必須提供這項權限，才能將相片插入實驗。</string>
   <string name="third_party_sensors_option_title">掃描是否有第三方感測器</string>
   <string name="third_party_sensors_option_summary">請尋找支援第三方感測器 API 的應用程式，並啟用將這類感測器新增至實驗的相關功能。</string>
   <string name="enable_temperature_sensor_title">啟用環境溫度</string>
@@ -325,26 +423,6 @@
   <string name="trigger_when_above_description">當感測器讀數超過 %2$s %3$s 時%1$s</string>
   <string name="trigger_when_below_description">當感測器讀數低於 %2$s %3$s 時%1$s</string>
   <string name="sensor_trigger_deleted">已刪除觸發條件</string>
-  <string-array name="trigger_type_list">
-    <item>@string/trigger_type_start_recording</item>
-    <item>@string/trigger_type_stop_recording</item>
-    <item>@string/trigger_type_note</item>
-    <item>@string/trigger_type_alert</item>
-  </string-array>
-  <string-array name="trigger_when_list">
-    <item>@string/trigger_when_at</item>
-    <item>@string/trigger_when_rises_above</item>
-    <item>@string/trigger_when_drops_below</item>
-    <item>@string/trigger_when_is_above</item>
-    <item>@string/trigger_when_is_below</item>
-  </string-array>
-  <string-array name="trigger_when_list_note_text">
-    <item>等於特定值</item>
-    <item>上升到特定值以上</item>
-    <item>下降到特定值以下</item>
-    <item>超過</item>
-    <item>低於</item>
-  </string-array>
   <string name="trigger_only_when_recording">僅限在記錄時觸發</string>
   <string name="trigger_snackbar_auto_text">%1$s %2$s %3$.2f %4$s</string>
   <string name="scroll_to_card">顯示</string>
@@ -387,91 +465,89 @@
   <string name="timestamp_picker_range_error">時間必須落在試驗範圍內</string>
   <string name="timestamp_picker_crop_range_error">裁剪完的記錄時間長度不能小於一秒</string>
   <string name="timestamp_picker_prompt">新時間 (小時:分:秒.毫秒)</string>
-  <string name="crop_failed_range_too_large">裁剪的試驗內容不能超出原先的記錄範圍</string>
-  <string name="crop_failed_range_too_small">裁剪後的試驗時間長度不能小於一秒</string>
-  <string name="project_experiment_title">%1$s：%2$s</string>
-  <string name="export_options_title">匯出…</string>
-  <string name="export_options_relative_time">相對時間</string>
-  <string name="old_trigger_note_format">觸發條件附註：%1s</string>
-  <string name="old_trigger_note_format_custom">觸發條件附註：%1$s；%2$s</string>
-  <string name="compass">指南針</string>
-  <string name="compass_units">度</string>
-  <string name="sensor_desc_short_compass">手機相對於地球磁場的定向。</string>
-  <string name="sensor_desc_first_paragraph_compass">我們都知道，地球具有磁場。不過你知道嗎？我們的手機中內建了一項專門用來偵測磁場的裝置，稱為「磁力儀」。只要讓磁力儀在空間中定位出手機的方向，並結合這些資料，我們就能製作出數位化的指南針。\n\n傳統的指南針就是簡單的磁力儀，其中的磁針會隨著周遭磁場而轉向。你的手機裡沒有指南針，取而代之的是一個微小的三軸感測器，利用電流來偵測周遭三維空間中的磁場強度。但光是這樣，還不能達到指南針的作用。\n\n指南針之所以需要結合磁力儀的手機方向資料，是為了讓系統即使在手機所在的平面並未與地球磁場保持水平的情況下，也能計算出磁力旋轉的情況。重力與地球的磁場相互垂直，因此我們可以利用加速計偵測到的重力方向，來判斷與地球磁場位於同一平面上的磁場強度。</string>
-  <string name="sensor_desc_second_paragraph_compass">或許你已經發現，指南針不僅會隨著地球磁場而變動，也會被周遭任何的磁場影響，例如磁鐵、電流和金屬物都很容易對手機中的磁力儀造成干擾，導致指南針的讀數改變。如要確認指南針的紅色指針是否正確反映地球磁場，你可以站在一個開放區域，尤其以戶外和遠離電纜的地方為佳。此外，你也可以手持手機在空中畫數字 8，這有助於校正手機中的磁力儀。</string>
-  <string name="text_label_details_title">編輯文字附註</string>
-  <string name="empty_text_note_error">文字附註不得留空</string>
-  <string name="navigation_item_experiments">實驗</string>
-  <string name="note_caption_hint">輸入說明內容</string>
-  <string name="month_year_format">yyyy 年 MMMM 月</string>
-  <string name="linear_accelerometer">線性加速計</string>
-  <string name="sensor_desc_short_linear_acc">手機的總加速度 (排除重力的影響，以 m/s² 為單位)</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">物體在原地保持不動、或在移動過程中持續移動的趨勢，稱為慣性。牛頓第一定律正式闡述了這個概念：除非施加不平衡力，否則物體的移動或靜止狀態不會改變。\n\n如果不平衡力造成物件輕微移動，就稱為物體「加速」，表示物體的速度或速率有變化 (無論是因速度增加、減緩或改變方向所造成)。加速度是指速度 (單位為 m/s) 之於時間的變化率，單位為 m/s²。\n\n手機裡的加速計可用於測量移動中的加速度變化。加速計內含有可任意移動的細小懸浮物質，運動產生變化時，這些物質就會隨之移動，就像人的頭部會在緊急煞車時往前傾一樣。只要測量這些物質的慣性移動，手機裡的加速計就能偵測運動與定向的變化，方便你將螢幕從水平模式切換成垂直模式、在手機上玩遊戲或進行其他操作。</string>
-  <string name="sensor_desc_second_paragraph_linear_acc">合併式線性加速計會記錄手機共三軸的總加速度，但會排除重力的影響。</string>
-  <string name="data_with_units">%1$s %2$s</string>
-  <string name="edit_note_time_menu_item">編輯時間</string>
-  <string name="add_note_button_text">為時間軸新增附註</string>
-  <string name="add_note_to_time_text">將附註新增至 %1$s</string>
-  <string name="trial_caption_hint_text">在這裡為記錄新增說明</string>
-  <string name="snapshot_label_details_title">數據匯報詳細資訊</string>
-  <string name="trigger_label_details_title">觸發條件附註詳細資訊</string>
-  <string name="tool_picker_tab_layout_description">可用工具</string>
-  <string name="tab_description_add_note">輸入文字</string>
-  <string name="tab_description_observe">觀察感測器</string>
-  <string name="tab_description_camera">拍攝相片</string>
-  <string name="load_more_notes_btn">查看其他附註</string>
-  <string name="name_experiment_dialog_title">為這項實驗命名</string>
-  <string name="empty_experiment_title_error">名稱不得留空</string>
-  <string name="card_recording_title">%1$s…</string>
-  <string name="throbber_content_description">記錄中</string>
-  <string name="trigger_label_name_header">%1$s %2$s</string>
-  <string name="description_hint">說明</string>
-  <string name="details_header">詳細資料</string>
-  <string name="text_label_hint">新增觀察項目</string>
-  <string name="first_experiment_title">歡迎使用科學日誌</string>
-  <string name="first_experiment_text_note">你可以利用下方的工具列來新增附註及記錄資料！</string>
-  <string name="first_experiment_picture_note_caption">歡迎使用科學日誌！</string>
-  <string name="first_experiment_second_text_note">想嘗試一些活動嗎？歡迎前往 \ng.co/sciencejournalactivities</string>
-  <string name="experiment_cover_description">請選擇實驗相片</string>
-  <string name="btn_take_picture_content_description">拍攝相片</string>
-  <string name="tab_description_gallery">選擇相片</string>
-  <string name="gallery_image_content_description">拍攝於 %s</string>
-  <string name="gallery_image_content_description_selected">已選取的圖片數量：%1$d 張。拍攝日期：%2$s</string>
-  <string name="content_description_selected">已選取</string>
-  <string name="gallery_selected_title">已選取 %1$d 張相片</string>
-  <string name="photo_editor_dialog_title">選擇相片編輯程式…</string>
-  <string name="btn_show_tools">顯示工具導覽匣</string>
-  <string name="btn_expand_tools">展開工具導覽匣</string>
-  <string name="btn_hide_tools">收合工具導覽匣</string>
-  <string name="action_edit_photo">編輯相片</string>
-  <string name="add_text_note">新增文字附註</string>
-  <string name="camera_preview_content_description">相機即時預覽功能</string>
-  <string name="input_camera_permission_denied">由於「科學日誌」沒有相機的存取權，因此無法使用相機。</string>
-  <string name="input_photo_library_permission_denied">由於「科學日誌」沒有圖片庫的存取權，因此無法使用你的圖片庫。</string>
+    <string name="crop_failed_range_too_large">裁剪的試驗內容不能超出原先的記錄範圍</string>
+    <string name="crop_failed_range_too_small">裁剪後的試驗時間長度不能小於一秒</string>
+    <string name="project_experiment_title">%1$s：%2$s</string>
+    <string name="export_options_title">匯出…</string>
+    <string name="export_options_relative_time">相對時間</string>
+    <string name="old_trigger_note_format">觸發條件附註：%1s</string>
+    <string name="old_trigger_note_format_custom">觸發條件附註：%1$s；%2$s</string>
+    <string name="compass">指南針</string>
+    <string name="compass_units">度</string>
+    <string name="sensor_desc_short_compass">手機相對於地球磁場的定向。</string>
+    <string name="sensor_desc_first_paragraph_compass">我們都知道，地球具有磁場。不過你知道嗎？我們的手機中內建了一項專門用來偵測磁場的裝置，稱為「磁力儀」。只要讓磁力儀在空間中定位出手機的方向，並結合這些資料，我們就能製作出數位化的指南針。
+
+傳統的指南針就是簡單的磁力儀，其中的磁針會隨著周遭磁場而轉向。你的手機裡沒有指南針，取而代之的是一個微小的三軸感測器，利用電流來偵測周遭三維空間中的磁場強度。但光是這樣，還不能達到指南針的作用。
+
+指南針之所以需要結合磁力儀的手機方向資料，是為了讓系統即使在手機所在的平面並未與地球磁場保持水平的情況下，也能計算出磁力旋轉的情況。重力與地球的磁場相互垂直，因此我們可以利用加速計偵測到的重力方向，來判斷與地球磁場位於同一平面上的磁場強度。</string>
+    <string name="sensor_desc_second_paragraph_compass">或許你已經發現，指南針不僅會隨著地球磁場而變動，也會被周遭任何的磁場影響，例如磁鐵、電流和金屬物都很容易對手機中的磁力儀造成干擾，導致指南針的讀數改變。如要確認指南針的紅色指針是否正確反映地球磁場，你可以站在一個開放區域，尤其以戶外和遠離電纜的地方為佳。此外，你也可以手持手機在空中畫數字 8，這有助於校正手機中的磁力儀。</string>
+    <string name="text_label_details_title">編輯文字附註</string>
+    <string name="empty_text_note_error">文字附註不得留空</string>
+    <string name="navigation_item_experiments">實驗</string>
+    <string name="note_caption_hint">輸入說明內容</string>
+    <string name="month_year_format">yyyy 年 MMMM 月</string>
+    <string name="linear_accelerometer">線性加速計</string>
+    <string name="sensor_desc_short_linear_acc">手機的總加速度 (排除重力的影響，以 m/s² 為單位)</string>
+    <string name="sensor_desc_first_paragraph_linear_acc">物體在原地保持不動、或在移動過程中持續移動的趨勢，稱為慣性。牛頓第一定律正式闡述了這個概念：除非施加不平衡力，否則物體的移動或靜止狀態不會改變。
+
+如果不平衡力造成物件輕微移動，就稱為物體「加速」，表示物體的速度或速率有變化 (無論是因速度增加、減緩或改變方向所造成)。加速度是指速度 (單位為 m/s) 之於時間的變化率，單位為 m/s²。
+
+手機裡的加速計可用於測量移動中的加速度變化。加速計內含有可任意移動的細小懸浮物質，運動產生變化時，這些物質就會隨之移動，就像人的頭部會在緊急煞車時往前傾一樣。只要測量這些物質的慣性移動，手機裡的加速計就能偵測運動與定向的變化，方便你將螢幕從水平模式切換成垂直模式、在手機上玩遊戲或進行其他操作。</string>
+    <string name="sensor_desc_second_paragraph_linear_acc">合併式線性加速計會記錄手機共三軸的總加速度，但會排除重力的影響。</string>
+    <string name="data_with_units">%1$s %2$s</string>
+    <string name="edit_note_time_menu_item">編輯時間</string>
+    <string name="add_note_to_time_text">將附註新增至 %1$s</string>
+    <string name="snapshot_label_details_title">數據匯報詳細資訊</string>
+    <string name="trigger_label_details_title">觸發條件附註詳細資訊</string>
+    <string name="load_more_notes_btn">查看其他附註</string>
+    <string name="name_experiment_dialog_title">為這項實驗命名</string>
+    <string name="empty_experiment_title_error">名稱不得留空</string>
+    <string name="card_recording_title">%1$s…</string>
+    <string name="throbber_content_description">記錄中</string>
+    <string name="trigger_label_name_header">%1$s %2$s</string>
+    <string name="description_hint">說明</string>
+    <string name="details_header">詳細資料</string>
+    <string name="text_label_hint">新增觀察項目</string>
+    <string name="first_experiment_title">歡迎使用科學日誌</string>
+    <string name="first_experiment_text_note">你可以利用下方的工具列來新增附註及記錄資料！</string>
+    <string name="first_experiment_picture_note_caption">歡迎使用科學日誌！</string>
+    <string name="first_experiment_second_text_note">想嘗試一些活動嗎？歡迎前往
+g.co/sciencejournalactivities</string>
+    <string name="experiment_cover_description">請選擇實驗相片</string>
+    <string name="btn_take_picture_content_description">拍攝相片</string>
+    <string name="gallery_image_content_description">拍攝於 %s</string>
+    <string name="gallery_image_content_description_selected">已選取的圖片數量：%1$d 張。拍攝日期：%2$s</string>
+    <string name="content_description_selected">已選取</string>
+    <string name="gallery_selected_title">已選取 %1$d 張相片</string>
+    <string name="photo_editor_dialog_title">選擇相片編輯程式…</string>
+    <string name="action_edit_photo">編輯相片</string>
+    <string name="input_camera_permission_denied">由於「科學日誌」沒有相機的存取權，因此無法使用相機。</string>
+    <string name="input_photo_library_permission_denied">由於「科學日誌」沒有圖片庫的存取權，因此無法使用你的圖片庫。</string>
   <string name="action_show_archived_experiments">顯示已封存的實驗</string>
   <string name="action_hide_archived_experiments">隱藏已封存的實驗</string>
-  <string name="action_hide_archived_trials">隱藏已封存的記錄</string>
-  <string name="snapshot_button_description">感測器數據匯報</string>
-  <string name="notification_channel_name">記錄</string>
-  <string name="notification_channel_description">記錄狀態</string>
-  <string name="import_failed_recording">科學日誌目前正在使用中。請停止錄製，然後再試一次。</string>
-  <string name="import_failed_file">這項實驗發生問題，因此無法匯入。</string>
-  <string name="import_failed">很抱歉，發生不明錯誤。</string>
-  <string name="explore_your_world">盡情探索周遭事物</string>
-  <string name="use_science_journal">運用科學日誌對周遭事物進行各種實驗</string>
-  <string name="get_started">開始使用</string>
-  <string name="sign_in_text">你必須登入 Google 帳戶，才能將科學日誌中的實驗資料儲存至 Google 雲端硬碟，並在不同的裝置上使用這些內容。\n\n如果這部裝置上已有資料，你可以在登入帳戶後將現有的實驗儲存至 Google 雲端硬碟。系統會將你的實驗資料儲存在 Google 雲端硬碟的「科學日誌」資料夾中。</string>
-  <string name="device_settings_applied">目前的裝置設定已套用至這個帳戶</string>
-  <string name="sign_in_button">登入</string>
-  <string name="sign_in_learn_more_button">瞭解詳情</string>
-  <string name="sign_in_continue_without_signing_in_button">在不登入的情況下繼續使用</string>
-  <string name="science_journal_disabled_title">科學日誌已停用</string>
-  <string name="science_journal_disabled_message">你的網域管理員必須在 Google 管理控制台中啟用科學日誌。</string>
-  <string name="science_journal_disabled_yes">切換帳戶</string>
-  <string name="old_user_option_prompt_headline">備份到 Google 雲端硬碟</string>
-  <plurals name="old_user_option_prompt_text">
-    <item quantity="one">歡迎回來！這部裝置上目前儲存了 %1$d 項實驗。\n\n如要繼續操作，請選取所需選項：</item>
-    <item quantity="other">歡迎回來！這部裝置上目前儲存了 %1$d 項實驗。\n\n如要繼續操作，請選取所需選項：</item>
+    <string name="action_hide_archived_trials">隱藏已封存的記錄</string>
+    <string name="snapshot_button_description">感測器數據匯報</string>
+    <string name="notification_channel_name">記錄</string>
+    <string name="notification_channel_description">記錄狀態</string>
+    <string name="import_failed_recording">科學日誌目前正在使用中。請停止錄製，然後再試一次。</string>
+    <string name="import_failed_file">這項實驗發生問題，因此無法匯入。</string>
+    <string name="import_failed">很抱歉，發生不明錯誤。</string>
+    <string name="explore_your_world">盡情探索周遭事物</string>
+    <string name="use_science_journal">運用科學日誌對周遭事物進行各種實驗</string>
+    <string name="get_started">開始使用</string>
+    <string name="sign_in_text">你必須登入 Google 帳戶，才能將科學日誌中的實驗資料儲存至 Google 雲端硬碟，並在不同的裝置上使用這些內容。
+
+如果這部裝置上已有資料，你可以在登入帳戶後將現有的實驗儲存至 Google 雲端硬碟。系統會將你的實驗資料儲存在 Google 雲端硬碟的「科學日誌」資料夾中。</string>
+    <string name="device_settings_applied">目前的裝置設定已套用至這個帳戶</string>
+    <string name="sign_in_button">登入</string>
+    <string name="sign_in_learn_more_button">瞭解詳情</string>
+    <string name="sign_in_continue_without_signing_in_button">在不登入的情況下繼續使用</string>
+    <string name="science_journal_disabled_title">科學日誌已停用</string>
+    <string name="science_journal_disabled_message">你的網域管理員必須在 Google 管理控制台中啟用科學日誌。</string>
+    <string name="science_journal_disabled_yes">切換帳戶</string>
+    <string name="old_user_option_prompt_headline">備份到 Google 雲端硬碟</string>
+    <plurals name="old_user_option_prompt_text">
+        <item quantity="other">歡迎回來！這部裝置上目前儲存了 %1$d 項實驗。\n\n如要繼續操作，請選取所需選項：</item>
   </plurals>
   <string name="drive_choice_headline">儲存所有實驗</string>
   <string name="drive_choice_text">所有實驗都會新增至 Google 雲端硬碟</string>
@@ -484,7 +560,6 @@
   <string name="delete_all_prompt_yes">全部刪除</string>
   <string name="claim_experiments_card_headline">認領先前的實驗</string>
   <plurals name="claim_experiments_card_text">
-    <item quantity="one">這部裝置上有 %1$d 項尚未認領的實驗。</item>
     <item quantity="other">這部裝置上有 %1$d 項尚未認領的實驗。</item>
   </plurals>
   <string name="claim_experiments_card_button_text">認領實驗</string>
@@ -504,7 +579,6 @@
   <string name="delete_btn_content_description">刪除實驗</string>
   <string name="action_claim_unclaimed_experiments">認領所有實驗</string>
   <plurals name="claim_all_confirmation_text">
-    <item quantity="one">你的實驗將會新增至 Google 雲端硬碟</item>
     <item quantity="other">這 %1$d 項實驗都會新增至 Google 雲端硬碟</item>
   </plurals>
   <string name="claim_all_confirmation_yes">認領</string>
@@ -516,8 +590,6 @@
   <string name="remove_cover_image_confirm">確定要移除封面圖片嗎？這項操作無法復原。</string>
   <string name="drive_sync_cannot_reach_google_drive">無法連上 Google 雲端硬碟，請檢查連線狀態。</string>
   <string name="experiment_title_concatenator">%1$s/%2$s</string>
-  <string name="create_experiment_feature_discovery_title">建立新實驗</string>
-  <string name="create_experiment_feature_discovery_body">你可以透過新增附註、記錄資料或拍攝相片等方式，整理及歸納自己的想法與觀察結果</string>
   <string name="download_copy_action">下載</string>
   <string name="saved_to_device_text">已儲存至「下載內容」資料夾。</string>
   <string name="download_options_title">下載中…</string>
@@ -539,16 +611,35 @@
   <string name="more_observations_draw_title">繪圖</string>
   <string name="more_observations_draw_description">新增繪圖筆記</string>
   <string name="more_observations_velocity_tracker_title">速度追蹤工具</string>
-  <string name="more_observations_velocity_tracker_description">使用擴增實境功能追蹤及測量物件</string>
-  <string name="fit_image_to_scan">調整要掃描的圖片</string>
-  <string name="ar_detecting_image">正在偵測圖片</string>
-  <string name="ar_not_tracking">已停止追蹤圖片</string>
-  <string name="action_bar_text_note">建立文字附註</string>
-  <string name="action_bar_sensor_note">建立感測器記錄</string>
-  <string name="action_bar_gallery">選取相片</string>
-  <string name="action_bar_more">更多觀察結果</string>
-  <string name="note_saved">附註已儲存</string>
-  <string name="note_saved_action">查看</string>
-  <string name="announcement_card_button_text">瞭解詳情</string>
-  <string name="dismiss_button_text">關閉</string>
+    <string name="more_observations_velocity_tracker_description">使用擴增實境功能追蹤及測量物件</string>
+    <string name="fit_image_to_scan">調整要掃描的圖片</string>
+    <string name="ar_detecting_image">正在偵測圖片</string>
+    <string name="ar_not_tracking">已停止追蹤圖片</string>
+    <string name="action_bar_text_note">建立文字附註</string>
+    <string name="action_bar_sensor_note">建立感測器記錄</string>
+    <string name="action_bar_gallery">選取相片</string>
+    <string name="action_bar_more">更多觀察結果</string>
+    <string name="note_saved">附註已儲存</string>
+    <string name="note_saved_action">查看</string>
+    <string name="btn_add_experiment_note_description">新增實驗附註</string>
+    <string name="btn_add_run_note_description">新增試驗附註</string>
+    <string name="add_note_hint_text">加入新的附註</string>
+    <string name="add_run_note_placeholder_text">為這項記錄新增附註</string>
+    <string name="add_note_image_button_content_description">拍攝附註圖片</string>
+    <string name="add_note_button_text">為時間軸新增附註</string>
+    <string name="trial_caption_hint_text">在這裡為記錄新增說明</string>
+    <string name="tool_picker_tab_layout_description">可用工具</string>
+    <string name="tab_description_add_note">輸入文字</string>
+    <string name="tab_description_observe">觀察感測器</string>
+    <string name="tab_description_camera">拍攝相片</string>
+    <string name="tab_description_gallery">選擇相片</string>
+    <string name="btn_show_tools">顯示工具導覽匣</string>
+    <string name="btn_expand_tools">展開工具導覽匣</string>
+    <string name="btn_hide_tools">收合工具導覽匣</string>
+    <string name="add_text_note">新增文字附註</string>
+    <string name="camera_preview_content_description">相機即時預覽功能</string>
+    <string name="create_experiment_feature_discovery_title">建立新實驗</string>
+    <string name="create_experiment_feature_discovery_body">你可以透過新增附註、記錄資料或拍攝相片等方式，整理及歸納自己的想法與觀察結果</string>
+    <string name="announcement_card_button_text">瞭解詳情</string>
+    <string name="dismiss_button_text">關閉</string>
 </resources>

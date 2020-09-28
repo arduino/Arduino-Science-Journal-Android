@@ -1,14 +1,44 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Arduino Science Journal</string>
-  <string name="action_feedback">Palaute</string>
-  <string name="action_about">Tietoja</string>
-  <string name="action_save">Tallenna</string>
-  <string name="action_edit">Muokkaa</string>
-  <string name="action_archive_experiment">Arkistoi koe</string>
-  <string name="action_unarchive_experiment">Palauta koe arkistosta</string>
-  <string name="action_archive_run">Arkistoi</string>
-  <string name="action_unarchive_run">Palauta arkistosta</string>
-  <string name="action_delete">Poista</string>
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="sonification_types_dev">
+        <item>@string/amplitude</item>
+    </string-array>
+    <string-array name="sonification_types_prod">
+        <item>@string/default_sonification</item>
+        <item>@string/scale</item>
+        <item>@string/notes</item>
+        <item>@string/conductor</item>
+    </string-array>
+    <string-array name="trigger_type_list">
+        <item>@string/trigger_type_start_recording</item>
+        <item>@string/trigger_type_stop_recording</item>
+        <item>@string/trigger_type_note</item>
+        <item>@string/trigger_type_alert</item>
+    </string-array>
+    <string-array name="trigger_when_list">
+        <item>@string/trigger_when_at</item>
+        <item>@string/trigger_when_rises_above</item>
+        <item>@string/trigger_when_drops_below</item>
+        <item>@string/trigger_when_is_above</item>
+        <item>@string/trigger_when_is_below</item>
+    </string-array>
+    <string-array name="trigger_when_list_note_text">
+        <item>nopeudella</item>
+        <item>nousi korkeammalle kuin</item>
+        <item>laski matalammalle kuin</item>
+        <item>on yli</item>
+        <item>on alle</item>
+    </string-array>
+    <string name="app_name">Arduino Science Journal</string>
+    <string name="action_feedback">Palaute</string>
+    <string name="action_about">Tietoja</string>
+    <string name="action_save">Tallenna</string>
+    <string name="action_edit">Muokkaa</string>
+    <string name="action_archive_experiment">Arkistoi koe</string>
+    <string name="action_unarchive_experiment">Palauta koe arkistosta</string>
+    <string name="action_archive_run">Arkistoi</string>
+    <string name="action_unarchive_run">Palauta arkistosta</string>
+    <string name="action_delete">Poista</string>
   <string name="sine_wave">Siniaalto</string>
   <string name="vel">Nopeus</string>
   <string name="acc_x">Kiihtyvyysmittari X</string>
@@ -34,8 +64,6 @@
   <string name="action_retry">Yritä uudelleen</string>
   <string name="decibel">Äänen intensiteetti</string>
   <string name="pitch">Äänenkorkeus</string>
-  <string name="btn_add_experiment_note_description">Lisää kokeeseen muistiinpano</string>
-  <string name="btn_add_run_note_description">Lisää mittaukseen muistiinpano</string>
   <string name="btn_record_description">Aloita tallennus</string>
   <string name="btn_stop_description">Lopeta tallennus</string>
   <string name="btn_record_label">Tallenna</string>
@@ -143,15 +171,6 @@
   <string name="notes">Sävelet</string>
   <string name="scale">Skaala</string>
   <string name="conductor">Johdin</string>
-  <string-array name="sonification_types_prod">
-    <item>@string/default_sonification</item>
-    <item>@string/scale</item>
-    <item>@string/notes</item>
-    <item>@string/conductor</item>
-  </string-array>
-  <string-array name="sonification_types_dev">
-    <item>@string/amplitude</item>
-  </string-array>
   <string name="empty_experiment">Sinulla ei ole havaintoja.</string>
   <string name="device_options_sensor_label_text">Anturi</string>
   <string name="external_sensor_appearance_name">%1$s – %2$s</string>
@@ -162,55 +181,107 @@
   <string name="device_options_custom_sensor_frequency_checkbox_text">Taajuus</string>
   <string name="feedback_error_message">Palautteen lähettäminen ei onnistunut.</string>
   <string name="sensor_desc_short_acc_x">Puhelimen kiihtyvyys vasemmalle ja oikealle, m/s²</string>
-  <string name="sensor_desc_short_acc_y">Puhelimen kiihtyvyys eteen- ja taaksepäin, m/s²</string>
-  <string name="sensor_desc_short_acc_z">Puhelimen kiihtyvyys ylös- ja alaspäin, m/s²</string>
-  <string name="sensor_desc_short_decibel">Äänianturin tai mikrofonin rekisteröimän äänen intensiteetti desibeleinä (dB)</string>
-  <string name="sensor_desc_short_pitch">Äänianturin tai mikrofonin rekisteröimän äänen korkeus hertseinä (Hz).</string>
-  <string name="sensor_desc_short_light">Ympäristön valoa mittaavan anturin rekisteröimä valo lukseina</string>
-  <string name="sensor_desc_short_magnetic_strength">Ympäröivän magneettikentän voimakkuus mikrotesloina.</string>
-  <string name="sensor_desc_short_bluetooth">Tässä näkyvät tiedot ovat peräisin ulkoisesta anturista määrittämiesi asetusten perusteella.</string>
-  <string name="sensor_desc_short_rotation">Kierroksia minuutissa</string>
-  <string name="sensor_desc_short_raw">Ulkoisen anturin raakalukeman prosentti</string>
-  <string name="sensor_desc_short_barometer">Ilmanpaine hectopascaleina (hPa)</string>
-  <string name="sensor_desc_first_paragraph_light">Ympäristön valoa mittaava anturi mittaa valoa lukseissa (lx). Luksi on mittayksikkö, joka kuvaa valolähteen voimakkuutta valaistavalla pinnalla. \n\nTäysikuun valo on noin 1 lx, tyypillinen olohuoneen valaistus noin 50 lx, auringon nousu ja lasku ja luokkavalaistus noin 400 lx, epäsuora auringonvalo yli 10 000 lx ja suora auringonvalo yli 30 000 lx. \n\nLuksi on useimmille meistä vieraampi mittayksikkö kuin esimerkiksi watti, jota käytetään usein lamppujen valinnassa. Watti ei kuitenkaan kerro lampun valaisutehosta vaan sen kuluttamasta energiasta. Luumenit ovat watteja parempi apu lamppukaupassa, sillä luumenit kertovat, kuinka paljon valoa lamppu tuottaa. Luksit puolestaan kertovat, kuinka paljon tästä valosta yltää tietylle alueelle.</string>
-  <string name="sensor_desc_second_paragraph_light">Koska valo hajaantuu kulkiessaan eteenpäin, luksien määrä pienenee sitä mukaa, mitä kauemmas valonlähteestä mennään. Valonlähteen luumenien määrä ei kuitenkaan muutu. Suoraan kohti valonlähdettä olevat alueet saavat enemmän valoa kuin siihen nähden vinossa olevat – tästä syystä esimerkiksi päiväntasaajalla on paljon lämpimämpää kuin napa-alueilla. \n\nPuhelimesi valoanturin tarkoituksena on säätää näytön kirkkautta ympäristön mukaan. Anturin sisällä on pienenpieni puolijohde, joka reagoi siihen osuvaan valoon tuottamalla pienen, mitattavissa olevan sähkövirran – tätä kutsutaan valosähköilmiöksi. Vastaavia antureita käytetään esimerkiksi katuvaloissa, jotka syttyvät itsestään pimeän tullen.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Puhelimessasi on laite nimeltä magnetometri, jolla voi havaita magneettikenttiä. Tämä pikkuruinen kolmeakselinen anturi mittaa magneettikenttien vahvuuksia kolmiulotteisesti sähkövirtojen avulla. Yhdistämällä kaikkien kolmen akselin tiedot saadaan aikaan magneettikenttien kokonaisvoimakkuutta mittaava anturi. \n\nJotkin magnetometrit havaitsevat magneettikenttiä niin kutsutun Hall-ilmiön avulla, joka perustuu magneettikenttien taipumukseen muuttaa elektronien kulkusuuntaa sähkövirrassa. Uudemmissa magnetometreissä hyödynnetään magnetovastuksia eli metalliseoksia, joiden resistanssi muuttuu magneettikenttien mukaan. \n\nMiksi puhelimissa sitten on magnetometri? Se kertoo kompassi- ja navigointisovelluksille, miten päin käyttäjä on tilassa. Tästä on hyötyä etenkin sovelluksille, jotka antavat yksityiskohtaisia reittiohjeita.</string>
-  <string name="sensor_desc_second_paragraph_magnetic_strength">Magneetit, sähkövirrat ja metalliesineet pyörittävät helposti magnetometriä edestakaisin. Puhelimesi magnetometri näyttää kuitenkin aina alhaista lukemaa, joka ei ole nolla, vaikka olisit ulkona keskellä aukeaa aluetta. Se on Maapallon magneettikenttä!</string>
-  <string name="sensor_desc_first_paragraph_acc">Paikallaan olevalla kappaleella on taipumus pysyä paikallaan ja liikkuvalla kappaleella taipumus jatkaa liikettään tasaisesti. Tätä kutsutaan jatkavuudeksi, ja se on määritelty virallisesti Newtonin I laissa eli mekaniikan I peruslaissa: Kappale säilyttää liiketilansa, ellei mikään ulkoinen voima muuta sitä. \n\nKun jokin ulkoinen voima vaikuttaa kappaleen liiketilaan, sanotaan, että kappaleen vauhti kiihtyy eli sen nopeus muuttuu: kappaleen vauhti joko nopeutuu tai hidastuu tai kappale vaihtaa suuntaa. Kiihtyvyyttä mitataan nopeuden muutoksena tietyssä ajassa (metriä sekunnissa) tai metreinä neliösekunnissa (m/s²). \n\nPuhelimessasi on kiihtyvyysmittari, jolla voi mitata nopeuden muutoksia. Kiihtyvyysmittarin sisällä on pieniä painoja, jotka liikkuvat vapaasti nopeuden muutosten mukaan – vähän samaan tapaan kuin matkustajan pää heilahtaa eteenpäin, kun auto jarruttaa äkillisesti. Puhelimen kiihtyvyysmittari tunnistaa pienetkin liikkeet ja puhelimen asennon, mitä hyödynnetään esimerkiksi ruudun kääntämisessä vaakasuunnasta pystysuuntaan ja takaisin sekä mobiilipelien pelaamisessa.</string>
-  <string name="sensor_desc_second_paragraph_acc">Huomasit varmaankin, että anturi rekisteröi kiihtyvyyttä Z-akselilla, vaikka puhelin olisi liikkumatta pöydällä. Kyseessä on Maapallon painovoiman aiheuttama vetokiihtyvyys, joka on noin 9,8 m/s².</string>
-  <string name="sensor_desc_first_paragraph_decibel">Ääni muodostuu värähdysliikkeistä. Esimerkiksi oma puheesi syntyy kurkussa sijaitsevien äänihuulien värähtelystä, joka synnyttää vuorotellen korkeita ja matalia paineaaltoja. Nämä paineaallot leviävät ympäristöön kuin järveen heitetyn kiven aiheuttamat renkaat.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Kaikilla äänillä on taajuus ja intensiteetti. \n\nScience Journalin tunnistimella voidaan mitata äänen intensiteettiä desibeleinä (dB). Äänen intensiteetti eli voimakkuus riippuu etäisyydestä, jonka värisevä kappale liikkuu väristessään; mitä suurempi intensiteetti, sitä kovempi ääni. \n\nÄäniaallon taajuus (eli sävelkorkeus tai nuotti) vastaa sen synnyttävän värinän tiheyttä. Mitä nopeammin kappale värisee, sitä korkeampi ääni siitä syntyy. Science Journalin äänen intensiteettitunnistin ei mittaa äänen taajuutta vaan vain sen voimakkuutta. \n\nOn tärkeää huomata, että laitteesi mikrofoni tunnistaa erittäin herkästi ääniaaltojen muutokset ajassa mutta ei kunkin aallon absoluuttista kokoa. Olemme pyrkineet valitsemaan koodin, joka todennäköisesti tuottaa alla olevien viitelukemien kaltaisia lukemia, mutta eri laitteet voivat antaa suurempia tai pienempiä lukemia. Yleensä tutkijat kalibroivat tällaisen tunnistimen jonkin tunnetun mitan mukaan. Tällä hetkellä Science Journal pystyy kertomaan, onko äänenvoimakkuus suurempi junamatkalla vai rock-konsertissa, mutta vain jos käytät mittaamiseen samaa puhelinta. \n\nOn myös hyvä tietää, että äänen intensiteetillä, äänen intensiteettitasolla ja äänenpaineella on merkittäviä eroja. Tässä käsittelemme niitä samana asiana, mutta netistä löytyy paljon tietoa eroista. \n\nHiljaisimman tavallisen ihmiskorvan kuuleman äänen voimakkuudeksi on määritetty 0 dB. Normaalin keskustelun äänenvoimakkuus on noin 60 dB, ja voimakkuudeltaan yli noin 140 desibelin äänet sattuvat ihmiskorvaan. Haitalliset äänet eivät kuitenkaan aina aiheuta kipua. Jatkuva altistuminen 90 desibelin äänille – eli voimakkuudeltaan suurin piirtein imurin äänille – voi aiheuttaa kuulon heikkenemistä pitkällä aikavälillä. \n\nDesibeliasteikko on logaritminen, mikä hankaloittaa asioita hieman. Jos äänilähteen intensiteetti on 40 dB, sen äänenvoimakkuus ei ole kaksinkertainen 20 desibelin äänilähteeseen verrattuna vaan satakertainen. Yhtä lailla yksi herätyskello tuottaa 70 desibelin äänen, mutta kaksi herätyskelloa tuottaa 140 desibelin sijaan 73 desibelin äänen. Kuten sanottu, asteikko on siis erikoinen. \n\n10 dB – lehtien havina \n20 dB – kuiskaus 1,5 metrin etäisyydeltä \n30 dB – hiljainen kuiskaus \n50 dB – sateen ropina \n60 dB – normaali keskustelu \n90 dB – tehosekoitin \n100 dB – auto ilman äänenvaimenninta \n110 dB – korvaan huutaminen \n120 dB – ukkonen \n130 dB – porakone \n140 dB – lentokoneen nousukiito</string>
-  <string name="sensor_desc_first_paragraph_pitch">Ääni muodostuu värähdysliikkeistä. Esimerkiksi oma puheesi syntyy kurkussa sijaitsevien äänihuulien värähtelystä, joka synnyttää vuorotellen korkeita ja matalia paineaaltoja. Nämä paineaallot leviävät ympäristöön kuin järveen heitetyn kiven aiheuttamat renkaat.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Kaikilla äänillä on taajuus ja intensiteetti. Ääniaallon taajuus (eli sävelkorkeus tai nuotti) vastaa sen synnyttävän värinän tiheyttä. Mitä nopeammin kappale värisee, sitä korkeampi ääni siitä syntyy. Tätä värinää mitataan hertseinä (Hz): 1 hertsi = 1 värähdys sekunnissa. \n\nIhmiskorva kuulee äänet, joiden taajuus on 20–20 000 Hz. Pianon matalimman sävelen taajuus on 27,5 Hz ja korkeimman 4 186,01 Hz. \n\nPunainen piste osoittaa, miten lähellä lähintä säveltä havaittu ääni on. Jos ääni on matalampi, se näkyy sävelen vasemmalla puolella. Jos ääni on korkeampi, se näkyy sävelen oikealla puolella.</string>
-  <string name="pitch_low_content_description">matala ääni</string>
-  <string name="pitch_flatter_than_natural_note_content_description">%3$s puolisävelaskelta matalampi kuin %1$s, oktaavi %2$s</string>
-  <string name="pitch_flatter_than_flat_note_content_description">%3$s puolisävelaskelta matalampi kuin alennettu %1$s, oktaavi %2$s</string>
-  <string name="pitch_flatter_than_sharp_note_content_description">%3$s puolisävelaskelta matalampi kuin korotettu %1$s, oktaavi %2$s</string>
-  <string name="pitch_natural_note_content_description">%1$s, oktaavi %2$s</string>
-  <string name="pitch_flat_note_content_description">Alennettu %1$s, oktaavi %2$s</string>
-  <string name="pitch_sharp_note_content_description">Ylennetty %1$s, oktaavi %2$s</string>
-  <string name="pitch_sharper_than_natural_note_content_description">%3$s puolisävelaskelta korkeampi kuin %1$s, oktaavi %2$s</string>
-  <string name="pitch_sharper_than_flat_note_content_description">%3$s puolisävelaskelta korkeampi kuin alennettu %1$s, oktaavi %2$s</string>
-  <string name="pitch_sharper_than_sharp_note_content_description">%3$s puolisävelaskelta korkeampi kuin korotettu %1$s, oktaavi %2$s</string>
-  <string name="pitch_high_content_description">korkea ääni</string>
-  <string name="sensor_desc_first_paragraph_rotation">Kierr./min on pyörimisnopeuden yksikkö, joka kertoo, kuinka monta kierrosta kappale pyörähtää akselinsa ympäri minuutissa \n\nKun hyrrä pyörii, se pyörittää enkooderilevyä:</string>
-  <string name="sensor_desc_second_paragraph_rotation">Näin valo ja varjo vuorottelevat joka kierroksella, ja anturi muuttaa tämän tiedon kierr./min-arvoksi Science Journalissa.</string>
-  <string name="sensor_desc_first_paragraph_raw">Tässä näkyvät tiedot ovat peräisin ulkoisesta anturista, joka on yhteydessä puhelimeen Bluetoothin kautta. \n\nArvo kertoo suoraan mikro-ohjaimesta saadun raakalukeman prosenttiluvun. Tämä on yleensä anturin jännitehäviön prosenttiosuus.</string>
-  <string name="sensor_desc_second_paragraph_raw">Bluetooth on radioaaltoja käyttävä langaton yhteysstandardi lähietäisyyden tiedonsiirtoon johdollisten laitteiden ja mobiililaitteiden välillä.</string>
-  <string name="sensor_desc_first_paragraph_unknown_bluetooth">Tässä näkyvät tiedot ovat peräisin ulkoisesta anturista, joka on yhteydessä puhelimeen Bluetoothin kautta.</string>
-  <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth on radioaaltoja käyttävä langaton yhteysstandardi lähietäisyyden tiedonsiirtoon johdollisten laitteiden ja mobiililaitteiden välillä.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Vaikka emme usein tule ajatelleeksi sitä, elämme valtavan ilmamassan alla. Maapallon ilmakehä ulottuu 40 kilometrin päähän maan pinnasta. Tuon ilmamassan paino saa aikaan Maan ilmanpaineen. \n\nMerenpinnan tasolla ilmanpaine tuottaa noin 1 kilogramman paineen neliösenttimetriä kohden – tämä vastaa noin 600 kilogrammaa tavallisen paperiarkin kokoisella alueella.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Emme huomaa tätä valtavaa painoa, koska olemme tottuneet siihen. Huomaamme kuitenkin helposti pienetkin muutokset ilmanpaineessa – kuten noustessamme vuorelle tai matkustaessamme lentokoneessa. Ilmanpaine vaihtelee myös säätilojen mukaan: epävakaalla säällä ilmanpaine on matala ja selkeällä korkea. \n\nPuhelimesi digitaalinen barometri eli ilmapuntari mittaa ilmanpainetta hehtopascaleissa. (Yksi hehtopascal on 100 pascalia. Yksi pascal vastaa painetta, jonka yhden newtonin voima aiheuttaa kohdistuessaan neliömetrin alueelle.) Säätiedotuksissa ilmanpaine kerrotaan usein millibaareina – tämä tutumman kuuloinen yksikkö tarkoittaa samaa kuin hehtopascal. \n\nIhmettelet ehkä, mitä hyötyä ilmanpaineen mittaamisesta on puhelimelle. Koska pienikin korkeusero – kuten portaiden kiipeäminen – muuttaa havaittavasti ilmanpainetta, puhelin käyttää sitä hyväkseen sijaintisi määrittämisessä. Digitaalisen barometrin avulla se pystyy esimerkiksi kertomaan, missä rakennuksen kerroksessa tai millä moottoritien liittymän tasolla olet.</string>
-  <string name="run_review_activity_label">Tiedot</string>
-  <string name="service_notification_content_title">Science Journal</string>
-  <string name="service_notification_content_text">Tallennetaan…</string>
-  <string name="live_graph_content_description">Anturin live-kuvaaja: Liiku X-akselilla vetämällä näkymää. Zoomaa Y-akselilla nipistämällä.</string>
-  <string name="static_graph_content_description">Anturin kuvaaja: Zoomaa nipistämällä ja liiku vetämällä. Loitonna kaksoisnapauttamalla.</string>
-  <string name="sensor_card_overflow_menu_content_description">Kortin asetukset</string>
-  <string name="sensor_tab_layout_content_description">Käytettävissä olevat anturit</string>
-  <string name="title_activity_sensor_info">Anturin tiedot</string>
-  <string name="title_activity_sensor_info_format">Anturi: %s</string>
-  <string name="heading_info_section">Lisätietoja</string>
+    <string name="sensor_desc_short_acc_y">Puhelimen kiihtyvyys eteen- ja taaksepäin, m/s²</string>
+    <string name="sensor_desc_short_acc_z">Puhelimen kiihtyvyys ylös- ja alaspäin, m/s²</string>
+    <string name="sensor_desc_short_decibel">Äänianturin tai mikrofonin rekisteröimän äänen intensiteetti desibeleinä (dB)</string>
+    <string name="sensor_desc_short_pitch">Äänianturin tai mikrofonin rekisteröimän äänen korkeus hertseinä (Hz).</string>
+    <string name="sensor_desc_short_light">Ympäristön valoa mittaavan anturin rekisteröimä valo lukseina</string>
+    <string name="sensor_desc_short_magnetic_strength">Ympäröivän magneettikentän voimakkuus mikrotesloina.</string>
+    <string name="sensor_desc_short_bluetooth">Tässä näkyvät tiedot ovat peräisin ulkoisesta anturista määrittämiesi asetusten perusteella.</string>
+    <string name="sensor_desc_short_rotation">Kierroksia minuutissa</string>
+    <string name="sensor_desc_short_raw">Ulkoisen anturin raakalukeman prosentti</string>
+    <string name="sensor_desc_short_barometer">Ilmanpaine hectopascaleina (hPa)</string>
+    <string name="sensor_desc_first_paragraph_light">Ympäristön valoa mittaava anturi mittaa valoa lukseissa (lx). Luksi on mittayksikkö, joka kuvaa valolähteen voimakkuutta valaistavalla pinnalla.
+
+Täysikuun valo on noin 1 lx, tyypillinen olohuoneen valaistus noin 50 lx, auringon nousu ja lasku ja luokkavalaistus noin 400 lx, epäsuora auringonvalo yli 10 000 lx ja suora auringonvalo yli 30 000 lx. 
+
+Luksi on useimmille meistä vieraampi mittayksikkö kuin esimerkiksi watti, jota käytetään usein lamppujen valinnassa. Watti ei kuitenkaan kerro lampun valaisutehosta vaan sen kuluttamasta energiasta. Luumenit ovat watteja parempi apu lamppukaupassa, sillä luumenit kertovat, kuinka paljon valoa lamppu tuottaa. Luksit puolestaan kertovat, kuinka paljon tästä valosta yltää tietylle alueelle.</string>
+    <string name="sensor_desc_second_paragraph_light">Koska valo hajaantuu kulkiessaan eteenpäin, luksien määrä pienenee sitä mukaa, mitä kauemmas valonlähteestä mennään. Valonlähteen luumenien määrä ei kuitenkaan muutu. Suoraan kohti valonlähdettä olevat alueet saavat enemmän valoa kuin siihen nähden vinossa olevat – tästä syystä esimerkiksi päiväntasaajalla on paljon lämpimämpää kuin napa-alueilla.
+
+Puhelimesi valoanturin tarkoituksena on säätää näytön kirkkautta ympäristön mukaan. Anturin sisällä on pienenpieni puolijohde, joka reagoi siihen osuvaan valoon tuottamalla pienen, mitattavissa olevan sähkövirran – tätä kutsutaan valosähköilmiöksi. Vastaavia antureita käytetään esimerkiksi katuvaloissa, jotka syttyvät itsestään pimeän tullen.</string>
+    <string name="sensor_desc_first_paragraph_magnetic_strength">Puhelimessasi on laite nimeltä magnetometri, jolla voi havaita magneettikenttiä. Tämä pikkuruinen kolmeakselinen anturi mittaa magneettikenttien vahvuuksia kolmiulotteisesti sähkövirtojen avulla. Yhdistämällä kaikkien kolmen akselin tiedot saadaan aikaan magneettikenttien kokonaisvoimakkuutta mittaava anturi.
+
+Jotkin magnetometrit havaitsevat magneettikenttiä niin kutsutun Hall-ilmiön avulla, joka perustuu magneettikenttien taipumukseen muuttaa elektronien kulkusuuntaa sähkövirrassa. Uudemmissa magnetometreissä hyödynnetään magnetovastuksia eli metalliseoksia, joiden resistanssi muuttuu magneettikenttien mukaan. 
+
+Miksi puhelimissa sitten on magnetometri? Se kertoo kompassi- ja navigointisovelluksille, miten päin käyttäjä on tilassa. Tästä on hyötyä etenkin sovelluksille, jotka antavat yksityiskohtaisia reittiohjeita.</string>
+    <string name="sensor_desc_second_paragraph_magnetic_strength">Magneetit, sähkövirrat ja metalliesineet pyörittävät helposti magnetometriä edestakaisin. Puhelimesi magnetometri näyttää kuitenkin aina alhaista lukemaa, joka ei ole nolla, vaikka olisit ulkona keskellä aukeaa aluetta. Se on Maapallon magneettikenttä!</string>
+    <string name="sensor_desc_first_paragraph_acc">Paikallaan olevalla kappaleella on taipumus pysyä paikallaan ja liikkuvalla kappaleella taipumus jatkaa liikettään tasaisesti. Tätä kutsutaan jatkavuudeksi, ja se on määritelty virallisesti Newtonin I laissa eli mekaniikan I peruslaissa: Kappale säilyttää liiketilansa, ellei mikään ulkoinen voima muuta sitä.
+
+Kun jokin ulkoinen voima vaikuttaa kappaleen liiketilaan, sanotaan, että kappaleen vauhti kiihtyy eli sen nopeus muuttuu: kappaleen vauhti joko nopeutuu tai hidastuu tai kappale vaihtaa suuntaa. Kiihtyvyyttä mitataan nopeuden muutoksena tietyssä ajassa (metriä sekunnissa) tai metreinä neliösekunnissa (m/s²). 
+
+Puhelimessasi on kiihtyvyysmittari, jolla voi mitata nopeuden muutoksia. Kiihtyvyysmittarin sisällä on pieniä painoja, jotka liikkuvat vapaasti nopeuden muutosten mukaan – vähän samaan tapaan kuin matkustajan pää heilahtaa eteenpäin, kun auto jarruttaa äkillisesti. Puhelimen kiihtyvyysmittari tunnistaa pienetkin liikkeet ja puhelimen asennon, mitä hyödynnetään esimerkiksi ruudun kääntämisessä vaakasuunnasta pystysuuntaan ja takaisin sekä mobiilipelien pelaamisessa.</string>
+    <string name="sensor_desc_second_paragraph_acc">Huomasit varmaankin, että anturi rekisteröi kiihtyvyyttä Z-akselilla, vaikka puhelin olisi liikkumatta pöydällä. Kyseessä on Maapallon painovoiman aiheuttama vetokiihtyvyys, joka on noin 9,8 m/s².</string>
+    <string name="sensor_desc_first_paragraph_decibel">Ääni muodostuu värähdysliikkeistä. Esimerkiksi oma puheesi syntyy kurkussa sijaitsevien äänihuulien värähtelystä, joka synnyttää vuorotellen korkeita ja matalia paineaaltoja. Nämä paineaallot leviävät ympäristöön kuin järveen heitetyn kiven aiheuttamat renkaat.</string>
+    <string name="sensor_desc_second_paragraph_decibel">Kaikilla äänillä on taajuus ja intensiteetti.
+
+Science Journalin tunnistimella voidaan mitata äänen intensiteettiä desibeleinä (dB). Äänen intensiteetti eli voimakkuus riippuu etäisyydestä, jonka värisevä kappale liikkuu väristessään; mitä suurempi intensiteetti, sitä kovempi ääni. 
+
+Ääniaallon taajuus (eli sävelkorkeus tai nuotti) vastaa sen synnyttävän värinän tiheyttä. Mitä nopeammin kappale värisee, sitä korkeampi ääni siitä syntyy. Science Journalin äänen intensiteettitunnistin ei mittaa äänen taajuutta vaan vain sen voimakkuutta. 
+
+On tärkeää huomata, että laitteesi mikrofoni tunnistaa erittäin herkästi ääniaaltojen muutokset ajassa mutta ei kunkin aallon absoluuttista kokoa. Olemme pyrkineet valitsemaan koodin, joka todennäköisesti tuottaa alla olevien viitelukemien kaltaisia lukemia, mutta eri laitteet voivat antaa suurempia tai pienempiä lukemia. Yleensä tutkijat kalibroivat tällaisen tunnistimen jonkin tunnetun mitan mukaan. Tällä hetkellä Science Journal pystyy kertomaan, onko äänenvoimakkuus suurempi junamatkalla vai rock-konsertissa, mutta vain jos käytät mittaamiseen samaa puhelinta. 
+
+On myös hyvä tietää, että äänen intensiteetillä, äänen intensiteettitasolla ja äänenpaineella on merkittäviä eroja. Tässä käsittelemme niitä samana asiana, mutta netistä löytyy paljon tietoa eroista. 
+
+Hiljaisimman tavallisen ihmiskorvan kuuleman äänen voimakkuudeksi on määritetty 0 dB. Normaalin keskustelun äänenvoimakkuus on noin 60 dB, ja voimakkuudeltaan yli noin 140 desibelin äänet sattuvat ihmiskorvaan. Haitalliset äänet eivät kuitenkaan aina aiheuta kipua. Jatkuva altistuminen 90 desibelin äänille – eli voimakkuudeltaan suurin piirtein imurin äänille – voi aiheuttaa kuulon heikkenemistä pitkällä aikavälillä. 
+
+Desibeliasteikko on logaritminen, mikä hankaloittaa asioita hieman. Jos äänilähteen intensiteetti on 40 dB, sen äänenvoimakkuus ei ole kaksinkertainen 20 desibelin äänilähteeseen verrattuna vaan satakertainen. Yhtä lailla yksi herätyskello tuottaa 70 desibelin äänen, mutta kaksi herätyskelloa tuottaa 140 desibelin sijaan 73 desibelin äänen. Kuten sanottu, asteikko on siis erikoinen. 
+
+10 dB – lehtien havina 
+20 dB – kuiskaus 1,5 metrin etäisyydeltä 
+30 dB – hiljainen kuiskaus 
+50 dB – sateen ropina 
+60 dB – normaali keskustelu 
+90 dB – tehosekoitin 
+100 dB – auto ilman äänenvaimenninta 
+110 dB – korvaan huutaminen 
+120 dB – ukkonen 
+130 dB – porakone 
+140 dB – lentokoneen nousukiito</string>
+    <string name="sensor_desc_first_paragraph_pitch">Ääni muodostuu värähdysliikkeistä. Esimerkiksi oma puheesi syntyy kurkussa sijaitsevien äänihuulien värähtelystä, joka synnyttää vuorotellen korkeita ja matalia paineaaltoja. Nämä paineaallot leviävät ympäristöön kuin järveen heitetyn kiven aiheuttamat renkaat.</string>
+    <string name="sensor_desc_second_paragraph_pitch">Kaikilla äänillä on taajuus ja intensiteetti. Ääniaallon taajuus (eli sävelkorkeus tai nuotti) vastaa sen synnyttävän värinän tiheyttä. Mitä nopeammin kappale värisee, sitä korkeampi ääni siitä syntyy. Tätä värinää mitataan hertseinä (Hz): 1 hertsi = 1 värähdys sekunnissa.
+
+Ihmiskorva kuulee äänet, joiden taajuus on 20–20 000 Hz. Pianon matalimman sävelen taajuus on 27,5 Hz ja korkeimman 4 186,01 Hz. 
+
+Punainen piste osoittaa, miten lähellä lähintä säveltä havaittu ääni on. Jos ääni on matalampi, se näkyy sävelen vasemmalla puolella. Jos ääni on korkeampi, se näkyy sävelen oikealla puolella.</string>
+    <string name="pitch_low_content_description">matala ääni</string>
+    <string name="pitch_flatter_than_natural_note_content_description">%3$s puolisävelaskelta matalampi kuin %1$s, oktaavi %2$s</string>
+    <string name="pitch_flatter_than_flat_note_content_description">%3$s puolisävelaskelta matalampi kuin alennettu %1$s, oktaavi %2$s</string>
+    <string name="pitch_flatter_than_sharp_note_content_description">%3$s puolisävelaskelta matalampi kuin korotettu %1$s, oktaavi %2$s</string>
+    <string name="pitch_natural_note_content_description">%1$s, oktaavi %2$s</string>
+    <string name="pitch_flat_note_content_description">Alennettu %1$s, oktaavi %2$s</string>
+    <string name="pitch_sharp_note_content_description">Ylennetty %1$s, oktaavi %2$s</string>
+    <string name="pitch_sharper_than_natural_note_content_description">%3$s puolisävelaskelta korkeampi kuin %1$s, oktaavi %2$s</string>
+    <string name="pitch_sharper_than_flat_note_content_description">%3$s puolisävelaskelta korkeampi kuin alennettu %1$s, oktaavi %2$s</string>
+    <string name="pitch_sharper_than_sharp_note_content_description">%3$s puolisävelaskelta korkeampi kuin korotettu %1$s, oktaavi %2$s</string>
+    <string name="pitch_high_content_description">korkea ääni</string>
+    <string name="sensor_desc_first_paragraph_rotation">Kierr./min on pyörimisnopeuden yksikkö, joka kertoo, kuinka monta kierrosta kappale pyörähtää akselinsa ympäri minuutissa
+
+Kun hyrrä pyörii, se pyörittää enkooderilevyä:</string>
+    <string name="sensor_desc_second_paragraph_rotation">Näin valo ja varjo vuorottelevat joka kierroksella, ja anturi muuttaa tämän tiedon kierr./min-arvoksi Science Journalissa.</string>
+    <string name="sensor_desc_first_paragraph_raw">Tässä näkyvät tiedot ovat peräisin ulkoisesta anturista, joka on yhteydessä puhelimeen Bluetoothin kautta.
+
+Arvo kertoo suoraan mikro-ohjaimesta saadun raakalukeman prosenttiluvun. Tämä on yleensä anturin jännitehäviön prosenttiosuus.</string>
+    <string name="sensor_desc_second_paragraph_raw">Bluetooth on radioaaltoja käyttävä langaton yhteysstandardi lähietäisyyden tiedonsiirtoon johdollisten laitteiden ja mobiililaitteiden välillä.</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">Tässä näkyvät tiedot ovat peräisin ulkoisesta anturista, joka on yhteydessä puhelimeen Bluetoothin kautta.</string>
+    <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth on radioaaltoja käyttävä langaton yhteysstandardi lähietäisyyden tiedonsiirtoon johdollisten laitteiden ja mobiililaitteiden välillä.</string>
+    <string name="sensor_desc_first_paragraph_barometer">Vaikka emme usein tule ajatelleeksi sitä, elämme valtavan ilmamassan alla. Maapallon ilmakehä ulottuu 40 kilometrin päähän maan pinnasta. Tuon ilmamassan paino saa aikaan Maan ilmanpaineen.
+
+Merenpinnan tasolla ilmanpaine tuottaa noin 1 kilogramman paineen neliösenttimetriä kohden – tämä vastaa noin 600 kilogrammaa tavallisen paperiarkin kokoisella alueella.</string>
+    <string name="sensor_desc_second_paragraph_barometer">Emme huomaa tätä valtavaa painoa, koska olemme tottuneet siihen. Huomaamme kuitenkin helposti pienetkin muutokset ilmanpaineessa – kuten noustessamme vuorelle tai matkustaessamme lentokoneessa. Ilmanpaine vaihtelee myös säätilojen mukaan: epävakaalla säällä ilmanpaine on matala ja selkeällä korkea.
+
+Puhelimesi digitaalinen barometri eli ilmapuntari mittaa ilmanpainetta hehtopascaleissa. (Yksi hehtopascal on 100 pascalia. Yksi pascal vastaa painetta, jonka yhden newtonin voima aiheuttaa kohdistuessaan neliömetrin alueelle.) Säätiedotuksissa ilmanpaine kerrotaan usein millibaareina – tämä tutumman kuuloinen yksikkö tarkoittaa samaa kuin hehtopascal. 
+
+Ihmettelet ehkä, mitä hyötyä ilmanpaineen mittaamisesta on puhelimelle. Koska pienikin korkeusero – kuten portaiden kiipeäminen – muuttaa havaittavasti ilmanpainetta, puhelin käyttää sitä hyväkseen sijaintisi määrittämisessä. Digitaalisen barometrin avulla se pystyy esimerkiksi kertomaan, missä rakennuksen kerroksessa tai millä moottoritien liittymän tasolla olet.</string>
+    <string name="run_review_activity_label">Tiedot</string>
+    <string name="service_notification_content_title">Science Journal</string>
+    <string name="service_notification_content_text">Tallennetaan…</string>
+    <string name="live_graph_content_description">Anturin live-kuvaaja: Liiku X-akselilla vetämällä näkymää. Zoomaa Y-akselilla nipistämällä.</string>
+    <string name="static_graph_content_description">Anturin kuvaaja: Zoomaa nipistämällä ja liiku vetämällä. Loitonna kaksoisnapauttamalla.</string>
+    <string name="sensor_card_overflow_menu_content_description">Kortin asetukset</string>
+    <string name="sensor_tab_layout_content_description">Käytettävissä olevat anturit</string>
+    <string name="title_activity_sensor_info">Anturin tiedot</string>
+    <string name="title_activity_sensor_info_format">Anturi: %s</string>
+    <string name="heading_info_section">Lisätietoja</string>
   <string name="edit_note_time">Muokkaa muistiinpanoaikaa</string>
   <string name="delete_note_menu_item">Poista</string>
   <string name="delete_run">Poista</string>
@@ -220,11 +291,8 @@
   <string name="default_trial_title">Tallenne %1$d</string>
   <string name="run_review_switch_sensor_btn_prev">Edellinen anturi: %s</string>
   <string name="run_review_switch_sensor_btn_next">Seuraava anturi: %s</string>
-  <string name="add_note_hint_text">Lisää uusi muistiinpano</string>
   <string name="snackbar_note_deleted">Muistiinpano poistettu</string>
   <string name="snackbar_undo">Kumoa</string>
-  <string name="add_run_note_placeholder_text">Lisää muistiinpano tähän tallenteeseen</string>
-  <string name="add_note_image_button_content_description">Luo kuvamuistiinpano</string>
   <string name="pinned_note_placeholder_text">Lisää muistiinpano</string>
   <string name="indeterminate_value">--</string>
   <string name="archived_badge">Arkistoitu</string>
@@ -246,42 +314,72 @@
   <string name="edit_trial_title_hint">Tallenteen nimi</string>
   <string name="include_archived_trials">Näytä arkistoidut tallenteet</string>
   <string name="export_error">Vienti epäonnistui.</string>
-  <string name="no_app_found_for_csv">CSV-tiedostojen vientiä varten ei ole asennettu sovellusta.</string>
-  <string name="listing_title">Science Journal</string>
-  <string name="listing_tagline">Tutki ympäröivää maailmaa.</string>
-  <string name="listing_changelog">Uusia ominaisuuksia ja parannuksia:
-\n\u2022 Lataa kokeita, kuvia ja antureiden tallentamaa dataa laitteellesi.
-\n\u2022 Lisätty tuki Arduino MKR WiFi 1010 ‑levyihin yhdistämistä varten.</string>
-  <string name="listing_changelog_features">Uudet ominaisuudet:</string>
-  <string name="listing_changelog_bug_fixes">Parempi suorituskyky ja virheenkorjauksia</string>
-  <string name="listing_changelog_separator">\n\n﻿</string>
-  <string name="listing_h_feature_1">\n• Äänenkorkeustunnistin</string>
-  <string name="listing_h_feature_2">\n• Kokeilujen vienti tiedostoon ja tuonti muihin laitteisiin</string>
-  <string name="listing_h_feature_3">\n• Kokeiluun liittyvien valokuvien vienti</string>
-  <string name="listing__description">Science Journal on Googlen tarjoama ilmainen digitaalinen tutkimusapulainen.
-\n
-\nVoit tallentaa muistiinpanot, kuvat ja havainnot yhteen kätevään paikkaan niin opetus- kuin harrastuskäytössä. Voit mitata esimerkiksi valoa, ääntä ja liikettä puhelimesi antureilla ja esittää tulokset kaaviomuodossa. Voit myös liittää puhelimeen ulkoisia antureita Bluetooth-yhteydellä ja tutkia maailman ihmeitä.
-\n
-\nScience Journal ‑sovelluksen avulla voit
-\nu2022 mitata valoa, ääntä, kiihtyvyyttä, ilmanpainetta ja monia muita ominaisuuksia puhelimen sisäänrakennetuilla antureilla
-\nu2022 kirjata muistiinpanoja ja ottaa kuvia tutkimuksistasi (lisää muistiinpanotapoja tulossa pian!)
-\nu2022 liittää puhelimeen ulkoisia antureita tiettyjen Bluetooth-yhteydellä toimivien Arduino and Vernier ‑laitteiden avulla
-\nu2022 käyttää kokeita eri laitteilla Google Driven kautta
-\nu2022 viedä tallennettua anturidataa CSV-muotoon
-\nu2022 luoda automaattisia laukaisimia datan ja muistiinpanojen tallentamiselle
-\nu2022 kuunnella kaavioidesi muutoksia sonifikaation avulla.
-\n
-\nScience Journalin voi ladata maksutta Android- ja iPhone-puhelimiin, iPadiin ja yhteensopiviin Chromebook-laitteisiin.
-\n
-\nOpetusmateriaalia kumppaneiltamme: https://makingscience.withgoogle.com/science-journal/activities
-\nTuki: https://productforums.google.com/forum/#!forum/sciencejournal
-\nAvoin lähdekoodi: https://github.com/google/science-journal
-\n\n
+    <string name="no_app_found_for_csv">CSV-tiedostojen vientiä varten ei ole asennettu sovellusta.</string>
+    <string name="listing_title">Science Journal</string>
+    <string name="listing_tagline">Tutki ympäröivää maailmaa.</string>
+    <string name="listing_changelog">Uusia ominaisuuksia ja parannuksia:
+
+\u2022 Lataa kokeita, kuvia ja antureiden tallentamaa dataa laitteellesi.
+
+\u2022 Lisätty tuki Arduino MKR WiFi 1010 ‑levyihin yhdistämistä varten.</string>
+    <string name="listing_changelog_features">Uudet ominaisuudet:</string>
+    <string name="listing_changelog_bug_fixes">Parempi suorituskyky ja virheenkorjauksia</string>
+    <string name="listing_changelog_separator">
+
+﻿</string>
+    <string name="listing_h_feature_1">
+• Äänenkorkeustunnistin</string>
+    <string name="listing_h_feature_2">
+• Kokeilujen vienti tiedostoon ja tuonti muihin laitteisiin</string>
+    <string name="listing_h_feature_3">
+• Kokeiluun liittyvien valokuvien vienti</string>
+    <string name="listing__description">Science Journal on Googlen tarjoama ilmainen digitaalinen tutkimusapulainen.
+
+
+
+Voit tallentaa muistiinpanot, kuvat ja havainnot yhteen kätevään paikkaan niin opetus- kuin harrastuskäytössä. Voit mitata esimerkiksi valoa, ääntä ja liikettä puhelimesi antureilla ja esittää tulokset kaaviomuodossa. Voit myös liittää puhelimeen ulkoisia antureita Bluetooth-yhteydellä ja tutkia maailman ihmeitä.
+
+
+
+Science Journal ‑sovelluksen avulla voit
+
+u2022 mitata valoa, ääntä, kiihtyvyyttä, ilmanpainetta ja monia muita ominaisuuksia puhelimen sisäänrakennetuilla antureilla
+
+u2022 kirjata muistiinpanoja ja ottaa kuvia tutkimuksistasi (lisää muistiinpanotapoja tulossa pian!)
+
+u2022 liittää puhelimeen ulkoisia antureita tiettyjen Bluetooth-yhteydellä toimivien Arduino and Vernier ‑laitteiden avulla
+
+u2022 käyttää kokeita eri laitteilla Google Driven kautta
+
+u2022 viedä tallennettua anturidataa CSV-muotoon
+
+u2022 luoda automaattisia laukaisimia datan ja muistiinpanojen tallentamiselle
+
+u2022 kuunnella kaavioidesi muutoksia sonifikaation avulla.
+
+
+
+Science Journalin voi ladata maksutta Android- ja iPhone-puhelimiin, iPadiin ja yhteensopiviin Chromebook-laitteisiin.
+
+
+
+Opetusmateriaalia kumppaneiltamme: https://makingscience.withgoogle.com/science-journal/activities
+
+Tuki: https://productforums.google.com/forum/#!forum/sciencejournal
+
+Avoin lähdekoodi: https://github.com/google/science-journal
+
+
+
 Käyttöoikeusilmoitus:
-\nu2022 Sijainti: Tarvitaan Bluetooth-laitteiden etsimiseen.
-\nu2022 Kamera: Tarvitaan kokeiden kuvaamiseen.
-\nu2022 Mikrofoni: Tarvitaan äänen intensiteetin mittaamiseen.
-\nu2022 Tallennustila: Tarvitaan kokeisiin lisättävien kuvien käyttöön.</string>
+
+u2022 Sijainti: Tarvitaan Bluetooth-laitteiden etsimiseen.
+
+u2022 Kamera: Tarvitaan kokeiden kuvaamiseen.
+
+u2022 Mikrofoni: Tarvitaan äänen intensiteetin mittaamiseen.
+
+u2022 Tallennustila: Tarvitaan kokeisiin lisättävien kuvien käyttöön.</string>
   <string name="third_party_sensors_option_title">Etsi kolmannen osapuolen antureita</string>
   <string name="third_party_sensors_option_summary">Etsi sovelluksia, jotka tukevat kolmannen osapuolen anturirajapintaa, ja salli tällaisten antureiden käyttö kokeissa.</string>
   <string name="enable_temperature_sensor_title">Ota lämpötila-anturi käyttöön</string>
@@ -331,26 +429,6 @@ Käyttöoikeusilmoitus:
   <string name="trigger_when_above_description">%1$s, kun anturin arvo on yli %2$s %3$s</string>
   <string name="trigger_when_below_description">%1$s, kun anturin arvo on alle %2$s %3$s</string>
   <string name="sensor_trigger_deleted">Laukaisin poistettu</string>
-  <string-array name="trigger_type_list">
-    <item>@string/trigger_type_start_recording</item>
-    <item>@string/trigger_type_stop_recording</item>
-    <item>@string/trigger_type_note</item>
-    <item>@string/trigger_type_alert</item>
-  </string-array>
-  <string-array name="trigger_when_list">
-    <item>@string/trigger_when_at</item>
-    <item>@string/trigger_when_rises_above</item>
-    <item>@string/trigger_when_drops_below</item>
-    <item>@string/trigger_when_is_above</item>
-    <item>@string/trigger_when_is_below</item>
-  </string-array>
-  <string-array name="trigger_when_list_note_text">
-    <item>nopeudella</item>
-    <item>nousi korkeammalle kuin</item>
-    <item>laski matalammalle kuin</item>
-    <item>on yli</item>
-    <item>on alle</item>
-  </string-array>
   <string name="trigger_only_when_recording">Laukeaa vain tallennettaessa</string>
   <string name="trigger_snackbar_auto_text">%1$s %2$s %3$.2f %4$s</string>
   <string name="scroll_to_card">näytä</string>
@@ -393,90 +471,90 @@ Käyttöoikeusilmoitus:
   <string name="timestamp_picker_range_error">Ajan on oltava mittausjakson sisällä.</string>
   <string name="timestamp_picker_crop_range_error">Tallenteita ei voi rajata alle sekuntiin.</string>
   <string name="timestamp_picker_prompt">Uusi aika (h:mm:ss.SSS)</string>
-  <string name="crop_failed_range_too_large">Mittausta ei voi rajata alun perin tallennetun jakson ulkopuolelle.</string>
-  <string name="crop_failed_range_too_small">Mittausta ei voi rajata alle sekunnin pituiseksi.</string>
-  <string name="project_experiment_title">%1$s: %2$s</string>
-  <string name="export_options_title">Vie…</string>
-  <string name="export_options_relative_time">Suhteellinen aika</string>
-  <string name="old_trigger_note_format">Käynnistetty muistiinpano: %1s</string>
-  <string name="old_trigger_note_format_custom">Käynnistetty muistiinpano: %1$s, %2$s</string>
-  <string name="compass">Kompassi</string>
-  <string name="compass_units">astetta</string>
-  <string name="sensor_desc_short_compass">Puhelimen asento suhteessa Maapallon magneettikenttään.</string>
-  <string name="sensor_desc_first_paragraph_compass">Olet varmaankin kuullut, että Maapallolla on magneettikenttä. Et kuitenkaan ehkä tiennyt, että puhelimessasi on laite nimeltä magnetometri, jolla voi havaita magneettikenttiä. Yhdistämällä puhelimesi magnetometrin tiedot tietoihin puhelimen asennosta saadaan aikaan digitaalinen kompassi. \n\nPerinteinen kompassi on yksi ensimmäisistä magnetometreistä: siinä on magneettinen neula, joka kääntyy aina ympäröivän magneettikentän suuntaiseksi. Puhelimesi sisällä ei ole pientä kompassia vaan pikkuruinen kolmeakselinen anturi, joka mittaa magneettikenttien vahvuuksia kolmiulotteisesti sähkövirtojen avulla. Kompassiin tarvitaan kuitenkin muutakin. \n\nMiksi kompassia varten tarvitaan magnetometrin tiedot ja tiedot puhelimen asennosta? Puhelimen asentotietojen perusteella voidaan laskea magneettinen pyöriminen, vaikka puhelinta ei pidettäisi samassa tasossa Maapallon magneettikentän kanssa. Painovoima suuntautuu kohtisuoraan Maapallon magneettikenttään nähden, joten kiihtyvyysmittarin avulla voidaan määrittää painovoiman suunta ja selvittää, kuinka suurelta osin magneettikenttä on samassa tasossa Maapallon magneettikentän kanssa.</string>
-  <string name="sensor_desc_second_paragraph_compass">Kuten olet ehkä huomannut, puhelimesi kompassi reagoi Maan magneettikentän lisäksi myös kaikkiin muihin lähellä oleviin magneettikenttiin. Magneetit, sähkövirrat ja metalliesineet pyörittävät helposti magnetometriä edestakaisin ja saavat kompassin näyttämään omiaan. Jos haluat varmistaa, että kompassin punainen kärki asettuu juuri Maan magneettikentän mukaisesti, mene seisomaan keskelle avointa aluetta kauas sähkölinjoista. Voit myös kalibroida puhelimen magnetometrin liikuttamalla puhelinta kahdeksikon muotoisesti.</string>
-  <string name="text_label_details_title">Muokkaa tekstimuistiinpanoa</string>
-  <string name="empty_text_note_error">Tekstimuistiinpanoissa on oltava tekstiä.</string>
-  <string name="navigation_item_experiments">Kokeet</string>
-  <string name="note_caption_hint">Lisää kuvaus.</string>
-  <string name="month_year_format">KKKK vvvv</string>
-  <string name="linear_accelerometer">Lineaarinen kiihtyvyysmittari</string>
-  <string name="sensor_desc_short_linear_acc">Puhelimen kokonaiskiihtyvyys painovoima pois luettuna, m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Paikallaan olevalla kappaleella on taipumus pysyä paikallaan ja liikkuvalla kappaleella taipumus jatkaa liikettään tasaisesti. Tätä kutsutaan jatkavuudeksi, ja se on määritelty virallisesti Newtonin I laissa eli mekaniikan I peruslaissa: Kappale säilyttää liiketilansa, ellei mikään ulkoinen voima muuta sitä. \n\nKun jokin ulkoinen voima vaikuttaa kappaleen liiketilaan, sanotaan, että kappaleen vauhti kiihtyy eli sen nopeus muuttuu: kappaleen vauhti joko nopeutuu tai hidastuu tai kappale vaihtaa suuntaa. Kiihtyvyyttä mitataan nopeuden muutoksena tietyssä ajassa (metriä sekunnissa) tai metreinä neliösekunnissa (m/s²). \n\nPuhelimessasi on kiihtyvyysmittari, jolla voi mitata nopeuden muutoksia. Kiihtyvyysmittarin sisällä on pieniä painoja, jotka liikkuvat vapaasti nopeuden muutosten mukaan – vähän samaan tapaan kuin matkustajan pää heilahtaa eteenpäin, kun auto jarruttaa äkillisesti. Puhelimen kiihtyvyysmittari tunnistaa pienetkin liikkeet ja puhelimen asennon, mitä hyödynnetään esimerkiksi ruudun kääntämisessä vaakasuunnasta pystysuuntaan ja takaisin sekä mobiilipelien pelaamisessa.</string>
-  <string name="sensor_desc_second_paragraph_linear_acc">Yhdistetty lineaarinen kiihtyvyysmittari mittaa kokonaiskiihtyvyyden puhelimen kaikilta kolmelta akselilta painovoima pois lukien.</string>
-  <string name="data_with_units">%1$s %2$s</string>
-  <string name="edit_note_time_menu_item">Muokkaa aikaa</string>
-  <string name="add_note_button_text">Lisää muistiinpano aikajanalle</string>
-  <string name="add_note_to_time_text">Lisää muistiinpano kohtaan %1$s</string>
-  <string name="trial_caption_hint_text">Lisää tallenteen kuvaus tähän.</string>
-  <string name="snapshot_label_details_title">Esittelyn tiedot</string>
-  <string name="trigger_label_details_title">Käynnistetyn muistiinpanon tiedot</string>
-  <string name="tool_picker_tab_layout_description">Käytettävissä olevat työkalut</string>
-  <string name="tab_description_add_note">Kirjoita tekstiä</string>
-  <string name="tab_description_observe">Näytä antureiden tiedot</string>
-  <string name="tab_description_camera">Ota kuva</string>
-  <string name="load_more_notes_btn">Näytä enemmän muistiinpanoja</string>
-  <string name="name_experiment_dialog_title">Anna kokeelle nimi</string>
-  <string name="empty_experiment_title_error">Nimi on annettava.</string>
-  <string name="card_recording_title">%1$s…</string>
-  <string name="throbber_content_description">Tallennus käynnissä</string>
-  <string name="trigger_label_name_header">%1$s %2$s</string>
-  <string name="description_hint">Kuvaus</string>
-  <string name="details_header">Tiedot</string>
-  <string name="text_label_hint">Lisää havainto</string>
-  <string name="first_experiment_title">Tervetuloa Science Journaliin</string>
-  <string name="first_experiment_text_note">Tee muistiinpanoja ja tallenna tietoja käyttämällä alla olevaa työkalupalkkia.</string>
-  <string name="first_experiment_picture_note_caption">Tervetuloa Science Journaliin!</string>
-  <string name="first_experiment_second_text_note">Osoitteessa \ng.co/sciencejournalactivities on valmiita kokeita.</string>
-  <string name="experiment_cover_description">Valitse kokeelle kuva.</string>
-  <string name="btn_take_picture_content_description">Ota kuva</string>
-  <string name="tab_description_gallery">Valitse kuva</string>
-  <string name="gallery_image_content_description">Kuva otettu %s</string>
-  <string name="gallery_image_content_description_selected">Valittu kuva numero %1$d. Kuva otettu %2$s</string>
-  <string name="content_description_selected">valittu</string>
-  <string name="gallery_selected_title">%1$d valittu</string>
-  <string name="photo_editor_dialog_title">Muokkaa kuvaa sovelluksella…</string>
-  <string name="btn_show_tools">Näytä työkaluvetopaneeli</string>
-  <string name="btn_expand_tools">Laajenna työkaluvetopaneeli</string>
-  <string name="btn_hide_tools">Tiivistä työkaluvetopaneeli</string>
-  <string name="action_edit_photo">Muokkaa kuvaa</string>
-  <string name="add_text_note">Lisää tekstimuistiinpano</string>
-  <string name="camera_preview_content_description">Kameran näkymä</string>
-  <string name="input_camera_permission_denied">Kameraa ei voi käyttää, koska Science Journalilla ei ole lupaa käyttää sitä.</string>
-  <string name="input_photo_library_permission_denied">Kuvagalleriaa ei voi käyttää, koska Science Journalilla ei ole lupaa käyttää sitä.</string>
-  <string name="action_show_archived_experiments">Näytä arkistoidut kokeet</string>
-  <string name="action_hide_archived_experiments">Piilota arkistoidut kokeet</string>
-  <string name="action_hide_archived_trials">Piilota arkistoidut tallenteet</string>
-  <string name="snapshot_button_description">Anturiotos</string>
-  <string name="notification_channel_name">Tallenteet</string>
-  <string name="notification_channel_description">Tallenteen tila</string>
-  <string name="import_failed_recording">Science Journal on tällä hetkellä käytössä. Lopeta tallennus ja yritä uudelleen.</string>
-  <string name="import_failed_file">Tuonti epäonnistui. Jokin on vialla tässä kokeilussa.</string>
-  <string name="import_failed">Tapahtui tuntematon virhe.</string>
-  <string name="explore_your_world">Tutki maailmaa uudella tavalla</string>
-  <string name="use_science_journal">Tee kokeita omassa ympäristössäsi\nScience Journalin avulla</string>
-  <string name="get_started">Aloita</string>
-  <string name="sign_in_text">Science Journalin kokeiden data tallennetaan Google Driveen, josta se on saatavilla eri laitteille. Sen käyttö edellyttää kirjautumista Google-tilille.\n\nJos tällä laitteella on aiemmin tekemiesi kokeiden dataa, voit tallentaa kokeet Google Driveen, kun olet kirjautunut sisään. Kokeesi tallennetaan Google Driveen Science Journal ‑kansioon.</string>
-  <string name="device_settings_applied">Nykyiset laiteasetukset on otettu käyttöön tällä tilillä</string>
-  <string name="sign_in_button">Kirjaudu sisään</string>
-  <string name="sign_in_learn_more_button">Lue lisää</string>
-  <string name="sign_in_continue_without_signing_in_button">Jatka ilman kirjautumista</string>
-  <string name="science_journal_disabled_title">Science Journal on poissa käytöstä</string>
-  <string name="science_journal_disabled_message">Verkkotunnuksen järjestelmänvalvojan on otettava Science Journal käyttöön Google-hallintakonsolissa.</string>
-  <string name="science_journal_disabled_yes">Vaihda tiliä</string>
-  <string name="old_user_option_prompt_headline">Varmuuskopioi Google Driveen</string>
-  <plurals name="old_user_option_prompt_text">
-    <item quantity="one">Tervetuloa takaisin, sinulla on tällä hetkellä %1$d koe tallennettuna tälle laitteelle.\n\nValitse vaihtoehto jatkaaksesi:</item>
+    <string name="crop_failed_range_too_large">Mittausta ei voi rajata alun perin tallennetun jakson ulkopuolelle.</string>
+    <string name="crop_failed_range_too_small">Mittausta ei voi rajata alle sekunnin pituiseksi.</string>
+    <string name="project_experiment_title">%1$s: %2$s</string>
+    <string name="export_options_title">Vie…</string>
+    <string name="export_options_relative_time">Suhteellinen aika</string>
+    <string name="old_trigger_note_format">Käynnistetty muistiinpano: %1s</string>
+    <string name="old_trigger_note_format_custom">Käynnistetty muistiinpano: %1$s, %2$s</string>
+    <string name="compass">Kompassi</string>
+    <string name="compass_units">astetta</string>
+    <string name="sensor_desc_short_compass">Puhelimen asento suhteessa Maapallon magneettikenttään.</string>
+    <string name="sensor_desc_first_paragraph_compass">Olet varmaankin kuullut, että Maapallolla on magneettikenttä. Et kuitenkaan ehkä tiennyt, että puhelimessasi on laite nimeltä magnetometri, jolla voi havaita magneettikenttiä. Yhdistämällä puhelimesi magnetometrin tiedot tietoihin puhelimen asennosta saadaan aikaan digitaalinen kompassi.
+
+Perinteinen kompassi on yksi ensimmäisistä magnetometreistä: siinä on magneettinen neula, joka kääntyy aina ympäröivän magneettikentän suuntaiseksi. Puhelimesi sisällä ei ole pientä kompassia vaan pikkuruinen kolmeakselinen anturi, joka mittaa magneettikenttien vahvuuksia kolmiulotteisesti sähkövirtojen avulla. Kompassiin tarvitaan kuitenkin muutakin. 
+
+Miksi kompassia varten tarvitaan magnetometrin tiedot ja tiedot puhelimen asennosta? Puhelimen asentotietojen perusteella voidaan laskea magneettinen pyöriminen, vaikka puhelinta ei pidettäisi samassa tasossa Maapallon magneettikentän kanssa. Painovoima suuntautuu kohtisuoraan Maapallon magneettikenttään nähden, joten kiihtyvyysmittarin avulla voidaan määrittää painovoiman suunta ja selvittää, kuinka suurelta osin magneettikenttä on samassa tasossa Maapallon magneettikentän kanssa.</string>
+    <string name="sensor_desc_second_paragraph_compass">Kuten olet ehkä huomannut, puhelimesi kompassi reagoi Maan magneettikentän lisäksi myös kaikkiin muihin lähellä oleviin magneettikenttiin. Magneetit, sähkövirrat ja metalliesineet pyörittävät helposti magnetometriä edestakaisin ja saavat kompassin näyttämään omiaan. Jos haluat varmistaa, että kompassin punainen kärki asettuu juuri Maan magneettikentän mukaisesti, mene seisomaan keskelle avointa aluetta kauas sähkölinjoista. Voit myös kalibroida puhelimen magnetometrin liikuttamalla puhelinta kahdeksikon muotoisesti.</string>
+    <string name="text_label_details_title">Muokkaa tekstimuistiinpanoa</string>
+    <string name="empty_text_note_error">Tekstimuistiinpanoissa on oltava tekstiä.</string>
+    <string name="navigation_item_experiments">Kokeet</string>
+    <string name="note_caption_hint">Lisää kuvaus.</string>
+    <string name="month_year_format">KKKK vvvv</string>
+    <string name="linear_accelerometer">Lineaarinen kiihtyvyysmittari</string>
+    <string name="sensor_desc_short_linear_acc">Puhelimen kokonaiskiihtyvyys painovoima pois luettuna, m/s²</string>
+    <string name="sensor_desc_first_paragraph_linear_acc">Paikallaan olevalla kappaleella on taipumus pysyä paikallaan ja liikkuvalla kappaleella taipumus jatkaa liikettään tasaisesti. Tätä kutsutaan jatkavuudeksi, ja se on määritelty virallisesti Newtonin I laissa eli mekaniikan I peruslaissa: Kappale säilyttää liiketilansa, ellei mikään ulkoinen voima muuta sitä.
+
+Kun jokin ulkoinen voima vaikuttaa kappaleen liiketilaan, sanotaan, että kappaleen vauhti kiihtyy eli sen nopeus muuttuu: kappaleen vauhti joko nopeutuu tai hidastuu tai kappale vaihtaa suuntaa. Kiihtyvyyttä mitataan nopeuden muutoksena tietyssä ajassa (metriä sekunnissa) tai metreinä neliösekunnissa (m/s²). 
+
+Puhelimessasi on kiihtyvyysmittari, jolla voi mitata nopeuden muutoksia. Kiihtyvyysmittarin sisällä on pieniä painoja, jotka liikkuvat vapaasti nopeuden muutosten mukaan – vähän samaan tapaan kuin matkustajan pää heilahtaa eteenpäin, kun auto jarruttaa äkillisesti. Puhelimen kiihtyvyysmittari tunnistaa pienetkin liikkeet ja puhelimen asennon, mitä hyödynnetään esimerkiksi ruudun kääntämisessä vaakasuunnasta pystysuuntaan ja takaisin sekä mobiilipelien pelaamisessa.</string>
+    <string name="sensor_desc_second_paragraph_linear_acc">Yhdistetty lineaarinen kiihtyvyysmittari mittaa kokonaiskiihtyvyyden puhelimen kaikilta kolmelta akselilta painovoima pois lukien.</string>
+    <string name="data_with_units">%1$s %2$s</string>
+    <string name="edit_note_time_menu_item">Muokkaa aikaa</string>
+    <string name="add_note_to_time_text">Lisää muistiinpano kohtaan %1$s</string>
+    <string name="snapshot_label_details_title">Esittelyn tiedot</string>
+    <string name="trigger_label_details_title">Käynnistetyn muistiinpanon tiedot</string>
+    <string name="load_more_notes_btn">Näytä enemmän muistiinpanoja</string>
+    <string name="name_experiment_dialog_title">Anna kokeelle nimi</string>
+    <string name="empty_experiment_title_error">Nimi on annettava.</string>
+    <string name="card_recording_title">%1$s…</string>
+    <string name="throbber_content_description">Tallennus käynnissä</string>
+    <string name="trigger_label_name_header">%1$s %2$s</string>
+    <string name="description_hint">Kuvaus</string>
+    <string name="details_header">Tiedot</string>
+    <string name="text_label_hint">Lisää havainto</string>
+    <string name="first_experiment_title">Tervetuloa Science Journaliin</string>
+    <string name="first_experiment_text_note">Tee muistiinpanoja ja tallenna tietoja käyttämällä alla olevaa työkalupalkkia.</string>
+    <string name="first_experiment_picture_note_caption">Tervetuloa Science Journaliin!</string>
+    <string name="first_experiment_second_text_note">Osoitteessa
+g.co/sciencejournalactivities on valmiita kokeita.</string>
+    <string name="experiment_cover_description">Valitse kokeelle kuva.</string>
+    <string name="btn_take_picture_content_description">Ota kuva</string>
+    <string name="gallery_image_content_description">Kuva otettu %s</string>
+    <string name="gallery_image_content_description_selected">Valittu kuva numero %1$d. Kuva otettu %2$s</string>
+    <string name="content_description_selected">valittu</string>
+    <string name="gallery_selected_title">%1$d valittu</string>
+    <string name="photo_editor_dialog_title">Muokkaa kuvaa sovelluksella…</string>
+    <string name="action_edit_photo">Muokkaa kuvaa</string>
+    <string name="input_camera_permission_denied">Kameraa ei voi käyttää, koska Science Journalilla ei ole lupaa käyttää sitä.</string>
+    <string name="input_photo_library_permission_denied">Kuvagalleriaa ei voi käyttää, koska Science Journalilla ei ole lupaa käyttää sitä.</string>
+    <string name="action_show_archived_experiments">Näytä arkistoidut kokeet</string>
+    <string name="action_hide_archived_experiments">Piilota arkistoidut kokeet</string>
+    <string name="action_hide_archived_trials">Piilota arkistoidut tallenteet</string>
+    <string name="snapshot_button_description">Anturiotos</string>
+    <string name="notification_channel_name">Tallenteet</string>
+    <string name="notification_channel_description">Tallenteen tila</string>
+    <string name="import_failed_recording">Science Journal on tällä hetkellä käytössä. Lopeta tallennus ja yritä uudelleen.</string>
+    <string name="import_failed_file">Tuonti epäonnistui. Jokin on vialla tässä kokeilussa.</string>
+    <string name="import_failed">Tapahtui tuntematon virhe.</string>
+    <string name="explore_your_world">Tutki maailmaa uudella tavalla</string>
+    <string name="use_science_journal">Tee kokeita omassa ympäristössäsi
+Science Journalin avulla</string>
+    <string name="get_started">Aloita</string>
+    <string name="sign_in_text">Science Journalin kokeiden data tallennetaan Google Driveen, josta se on saatavilla eri laitteille. Sen käyttö edellyttää kirjautumista Google-tilille.
+
+Jos tällä laitteella on aiemmin tekemiesi kokeiden dataa, voit tallentaa kokeet Google Driveen, kun olet kirjautunut sisään. Kokeesi tallennetaan Google Driveen Science Journal ‑kansioon.</string>
+    <string name="device_settings_applied">Nykyiset laiteasetukset on otettu käyttöön tällä tilillä</string>
+    <string name="sign_in_button">Kirjaudu sisään</string>
+    <string name="sign_in_learn_more_button">Lue lisää</string>
+    <string name="sign_in_continue_without_signing_in_button">Jatka ilman kirjautumista</string>
+    <string name="science_journal_disabled_title">Science Journal on poissa käytöstä</string>
+    <string name="science_journal_disabled_message">Verkkotunnuksen järjestelmänvalvojan on otettava Science Journal käyttöön Google-hallintakonsolissa.</string>
+    <string name="science_journal_disabled_yes">Vaihda tiliä</string>
+    <string name="old_user_option_prompt_headline">Varmuuskopioi Google Driveen</string>
+    <plurals name="old_user_option_prompt_text">
+        <item quantity="one">Tervetuloa takaisin, sinulla on tällä hetkellä %1$d koe tallennettuna tälle laitteelle.\n\nValitse vaihtoehto jatkaaksesi:</item>
     <item quantity="other">Tervetuloa takaisin, sinulla on tällä hetkellä %1$d koetta tallennettuna tälle laitteelle.\n\nValitse vaihtoehto jatkaaksesi:</item>
   </plurals>
   <string name="drive_choice_headline">Tallenna kaikki kokeesi</string>
@@ -522,8 +600,6 @@ Käyttöoikeusilmoitus:
   <string name="remove_cover_image_confirm">Haluatko varmasti poistaa kansikuvan? Tätä ei voi peruuttaa.</string>
   <string name="drive_sync_cannot_reach_google_drive">Yhteyttä Google Driveen ei saada. Tarkista yhteys.</string>
   <string name="experiment_title_concatenator">%1$s / %2$s</string>
-  <string name="create_experiment_feature_discovery_title">Luo uusi koe</string>
-  <string name="create_experiment_feature_discovery_body">Järjestä ajatuksesi ja havaintosi kirjoittamalla muistiinpanoja, tallentamalla dataa tai ottamalla kuvia.</string>
   <string name="download_copy_action">Lataa</string>
   <string name="saved_to_device_text">Tallennettu latauksiin.</string>
   <string name="download_options_title">Lataa…</string>
@@ -545,16 +621,35 @@ Käyttöoikeusilmoitus:
   <string name="more_observations_draw_title">Piirrä</string>
   <string name="more_observations_draw_description">Lisää piirustusmuistiinpanoja</string>
   <string name="more_observations_velocity_tracker_title">Nopeusmittari</string>
-  <string name="more_observations_velocity_tracker_description">Seuraa ja mittaa esineitä lisätyn todellisuuden avulla</string>
-  <string name="fit_image_to_scan">Sovita skannattava kuva</string>
-  <string name="ar_detecting_image">Tunnistetaan kuvaa</string>
-  <string name="ar_not_tracking">Seuranta päättyi</string>
-  <string name="action_bar_text_note">Luo tekstimuistiinpano</string>
-  <string name="action_bar_sensor_note">Luo anturitallenne</string>
-  <string name="action_bar_gallery">Valitse kuvat</string>
-  <string name="action_bar_more">Lisää havaintoja</string>
-  <string name="note_saved">Muistiinpano on tallennettu</string>
-  <string name="note_saved_action">Näytä</string>
-  <string name="announcement_card_button_text">Katso lisätietoja</string>
-  <string name="dismiss_button_text">Hylkää</string>
+    <string name="more_observations_velocity_tracker_description">Seuraa ja mittaa esineitä lisätyn todellisuuden avulla</string>
+    <string name="fit_image_to_scan">Sovita skannattava kuva</string>
+    <string name="ar_detecting_image">Tunnistetaan kuvaa</string>
+    <string name="ar_not_tracking">Seuranta päättyi</string>
+    <string name="action_bar_text_note">Luo tekstimuistiinpano</string>
+    <string name="action_bar_sensor_note">Luo anturitallenne</string>
+    <string name="action_bar_gallery">Valitse kuvat</string>
+    <string name="action_bar_more">Lisää havaintoja</string>
+    <string name="note_saved">Muistiinpano on tallennettu</string>
+    <string name="note_saved_action">Näytä</string>
+    <string name="btn_add_experiment_note_description">Lisää kokeeseen muistiinpano</string>
+    <string name="btn_add_run_note_description">Lisää mittaukseen muistiinpano</string>
+    <string name="add_note_hint_text">Lisää uusi muistiinpano</string>
+    <string name="add_run_note_placeholder_text">Lisää muistiinpano tähän tallenteeseen</string>
+    <string name="add_note_image_button_content_description">Luo kuvamuistiinpano</string>
+    <string name="add_note_button_text">Lisää muistiinpano aikajanalle</string>
+    <string name="trial_caption_hint_text">Lisää tallenteen kuvaus tähän.</string>
+    <string name="tool_picker_tab_layout_description">Käytettävissä olevat työkalut</string>
+    <string name="tab_description_add_note">Kirjoita tekstiä</string>
+    <string name="tab_description_observe">Näytä antureiden tiedot</string>
+    <string name="tab_description_camera">Ota kuva</string>
+    <string name="tab_description_gallery">Valitse kuva</string>
+    <string name="btn_show_tools">Näytä työkaluvetopaneeli</string>
+    <string name="btn_expand_tools">Laajenna työkaluvetopaneeli</string>
+    <string name="btn_hide_tools">Tiivistä työkaluvetopaneeli</string>
+    <string name="add_text_note">Lisää tekstimuistiinpano</string>
+    <string name="camera_preview_content_description">Kameran näkymä</string>
+    <string name="create_experiment_feature_discovery_title">Luo uusi koe</string>
+    <string name="create_experiment_feature_discovery_body">Järjestä ajatuksesi ja havaintosi kirjoittamalla muistiinpanoja, tallentamalla dataa tai ottamalla kuvia.</string>
+    <string name="announcement_card_button_text">Katso lisätietoja</string>
+    <string name="dismiss_button_text">Hylkää</string>
 </resources>

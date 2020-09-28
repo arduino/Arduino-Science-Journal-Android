@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Arduino Science Journal</string>
+    <string name="action_feedback">Feedback</string>
+    <string name="action_about">Sobre</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="sine_wave">Onda sinusoidal</string>
+    <string name="acc_x">Acelerômetro X</string>
+    <string name="acc_y">Acelerômetro Y</string>
+    <string name="acc_z">Acelerômetro Z</string>
+    <string name="ambient_light">Luz ambiente</string>
+    <string name="magnetic_field_strength">Magnetômetro</string>
+    <string name="barometer">Barômetro</string>
+    <string name="ambient_temperature">Temperatura ambiente</string>
+    <string name="acc_units">m/s²</string>
+    <string name="ambient_light_units">lux</string>
+    <string name="magnetic_strength_units">μT</string>
+    <string name="decibel_units">dB</string>
+    <string name="hertz_units">Hz</string>
+    <string name="rpm_units">RPM</string>
+    <string name="voltage_units">V</string>
+    <string name="raw_units">%</string>
+    <string name="barometer_units">hPa</string>
+    <string name="temperature_units">°C</string>
+    <string name="action_retry">Tentar novamente</string>
+    <string name="decibel">Intensidade do som</string>
+    <string name="pitch">Frequência sonora</string>
+    <string name="btn_record_description">Iniciar gravação</string>
+    <string name="btn_stop_description">Parar gravação</string>
+    <string name="unknown_sensor">Sensor desconhecido</string>
+    <string name="recording_start_failed">Não é possível começar a gravação</string>
+    <string name="recording_stop_failed_no_data_title">Os dados não estão sendo gravados</string>
+    <string name="recording_stop_failed_no_data">Um ou mais sensores não gravaram nenhum dado. Quer cancelar esta gravação?</string>
+    <string name="recording_stop_failed_continue">Continuar</string>
+    <string name="recording_stop_failed_cancel">Cancelar gravação</string>
+    <string name="navigation_item_activities">Atividades</string>
+    <string name="navigation_item_settings">Configurações</string>
+    <string name="title_activity_sensor_settings">Configurações do sensor</string>
+    <string name="graph_options_audio_feedback_enable">Ativar áudio</string>
+    <string name="graph_options_audio_feedback_disable">Desativar áudio</string>
+    <string name="stat_min">Mínimo</string>
+    <string name="stat_max">Máximo</string>
+    <string name="stat_average">Média</string>
+    <string name="btn_reset_description">Ir para o presente</string>
+    <string name="export_action">Compartilhar</string>
+    <string name="send_copy_action">Enviar uma cópia</string>
+    <string name="export_experiment_chooser_title">Enviar experimento</string>
+    <string name="export_photo_chooser_title">Compartilhar foto com…</string>
+    <string name="experiment_not_finished_downloading_confirm_button">Compartilhar</string>
+    <string name="experiment_not_finished_downloading_message">O download do experimento não foi concluído. Pode ser que faltem alguns dados caso você compartilhe uma cópia</string>
+    <string name="experiment_not_finished_downloading_title">Download em andamento</string>
+    <string name="settings_version_title">Versão</string>
+    <string name="settings_open_source_title">Licenças de código aberto</string>
+    <string name="action_undo">Desfazer</string>
+    <string name="choose_photo_button_text">Escolher uma foto</string>
+    <string name="btn_new_experiment_content_description">Novo experimento</string>
+    <string name="archived_experiment_message">Experimento arquivado.</string>
+    <string name="unarchived_experiment_message">Experimento movido para fora do arquivo.</string>
+    <string name="archived_run_message">Gravação arquivada.</string>
+    <string name="unarchived_run_message">A gravação foi removida do arquivo.</string>
+    <string name="archived_content_description">Os experimentos arquivados não podem ser modificados, mas é possível excluí-los</string>
+    <string name="experiment_title_hint">Título do experimento</string>
+    <string name="btn_add_sensor_card_description">Adicionar novo cartão do sensor</string>
+    <string name="btn_sensor_card_close">Fechar cartão</string>
+    <string name="default_experiment_name">Experimento sem título</string>
+    <string name="empty_project">Você não tem experimentos</string>
+    <string name="default_sonification">Padrão</string>
+    <string name="amplitude">Amplitude</string>
+    <string name="notes">Notas</string>
+    <string name="scale">Escala</string>
+    <string name="conductor">Condutor</string>
+    <string name="empty_experiment">Você ainda não tem observações</string>
+    <string name="device_options_sensor_label_text">Sensor</string>
+    <string name="sensor_rotation_rpm">Rotação</string>
+    <string name="sensor_raw">Bruto</string>
+    <string name="sensor_custom">Personalizado</string>
+    <string name="device_options_custom_sensor_pin_label_text">Alfinete</string>
+    <string name="device_options_custom_sensor_frequency_checkbox_text">Frequência</string>
+    <string name="sensor_desc_short_acc_x">A aceleração do smartphone para a direita e para a esquerda, em m/s²</string>
+    <string name="sensor_desc_short_acc_y">A aceleração do smartphone para frente e para trás, em m/s²</string>
+    <string name="sensor_desc_short_acc_z">A aceleração do smartphone para cima e para baixo, em m/s²</string>
+    <string name="sensor_desc_short_decibel">A intensidade do som, medida em decibéis (dB), que alcança o sensor de som ou microfone.</string>
+    <string name="sensor_desc_short_pitch">A frequência do som, medida em hertz (Hz), que alcança o sensor de som ou microfone.</string>
+    <string name="sensor_desc_short_magnetic_strength">A força do campo geomagnético do ambiente em Microtesla.</string>
+    <string name="sensor_desc_short_bluetooth">Um sensor externo está exibindo os dados dele aqui, com base em configurações personalizadas.</string>
+    <string name="sensor_desc_short_rotation">O número de rotações por minuto</string>
+    <string name="sensor_desc_short_raw">A porcentagem da leitura bruta de um sensor externo.</string>
+    <string name="sensor_desc_short_barometer">A pressão atmosférica medida em hectopascais (hPa).</string>
+    <string name="sensor_desc_first_paragraph_magnetic_strength">Seu smartphone contém um dispositivo capaz de detectar os campos magnéticos: o magnetômetro. Esse pequeno sensor de três eixos usa correntes elétricas para detectar a força do campo magnético nas três dimensões do espaço. Ao combinar dados dos três eixos, é possível criar um sensor da força de todo o campo magnético.
+
+Alguns magnetômetros detectam campos magnéticos usando o efeito Hall, ou seja, a tendência que os campos têm de desviar uma carga móvel à medida que ela flui. Os magnetômetros mais modernos usam somente magnetorresistores, ligas de metal que alteram a própria resistência como resposta aos campos magnéticos.
+
+Mas por que smartphones precisam de magnetômetros? Saber sua orientação no espaço é útil para apps de bússola integrada e de navegação, principalmente os que indicam trajetos passo a passo.</string>
+    <string name="sensor_desc_second_paragraph_magnetic_strength">Ímãs, correntes elétricas e objetos de metal também influenciam o magnetômetro do seu smartphone, mas, mesmo em uma área aberta e longe de linhas de energia, ele mostra uma leitura de valor baixo e diferente de zero que representa o campo magnético da Terra.</string>
+    <string name="sensor_desc_first_paragraph_acc">Os objetos tendem a permanecer inertes ou a continuar a se mover se já estiverem em movimento. Isso é chamado de inércia. A primeira lei de Newton expressa formalmente essa ideia: um objeto continua em repouso ou em movimento a menos que uma força seja aplicada sobre ele.
+
+Quando uma força causa o movimento de um objeto, dizemos que ele acelera, ou seja, a velocidade dele muda ao aumentar, diminuir ou mudar de direção. A aceleração é medida como uma mudança na velocidade em metros por segundo (m/s) de acordo com o eixo de tempo ou metros por segundo ao quadrado (m/s²) de acordo com o eixo de espaço.
+
+No seu smartphone, existe um dispositivo para medir essas alterações de movimento: um acelerômetro. Dentro desse dispositivo, pequenas massas suspensas se movem. Mudanças no movimento causam uma variação nessas massas, da mesma forma que sua cabeça se move para a frente quando você está em um carro que freia inesperadamente. Ao medir essas variações sutis de inércia, o acelerômetro de um smartphone pode detectar alterações no movimento e na orientação. Isso é útil para alternar entre os modos retrato e paisagem da tela, para jogar no seu smartphone e muito mais.</string>
+    <string name="sensor_desc_second_paragraph_acc">Você provavelmente notou uma aceleração permanente no eixo Z, mesmo com o smartphone parado sobre uma mesa. Essa é a aceleração que nós sentimos aqui na superfície da Terra por causa da tração da gravidade, que é de aproximadamente 9,8 m/s².</string>
+    <string name="sensor_desc_first_paragraph_decibel">Sons são gerados por vibrações. Sua voz, por exemplo, vem de vibrações nas suas cordas vocais. Essas vibrações criam zonas de variação de pressão alta e baixa do ar que é expelido, da mesma forma que ocorre com as ondas circulares geradas quando uma pedra é jogada em um lago.</string>
+    <string name="sensor_desc_second_paragraph_decibel">Todos os sons podem ser descritos de acordo com a frequência e a intensidade.
+
+Intensidade é o que você mede com o sensor de intensidade sonora do Science Journal, usando a unidade decibéis (dB). A intensidade, ou volume, depende da distância percorrida por um objeto cada vez que ele vibra. Uma intensidade maior é ouvida como um volume maior.
+
+A frequência (também conhecida como altura ou tom) de uma onda sonora equivale à taxa de vibração dela. Quanto mais rápido um objeto vibra, maior será a frequência do som resultante. O sensor de intensidade sonora do Science Journal não mede a frequência, apenas o volume.
+
+Um fator importante é que o microfone do seu dispositivo foi desenvolvido para ser sensível às diferenças nas ondas sonoras durante um período de tempo, mas não ao tamanho absoluto de cada onda. Tentamos escolher um código que pudesse produzir números similares aos de referência mostrados abaixo, mas cada dispositivo pode fornecer números maiores ou menores, de maneira consistente. Geralmente, os cientistas calibram um sensor como este de acordo com uma medição conhecida. No momento, o Science Journal pode dizer se o volume da sua próxima viagem de trem é mais alta do que seu próximo show de rock, mas isso só pode ser medido se você levar o mesmo dispositivo aos dois eventos.
+
+Outro ponto importante é que existem diferenças relevantes entre “intensidade sonora”, “nível de intensidade sonora” e “pressão sonora”. Para simplificar, estamos tratando todos esses conceitos da mesma forma aqui. No entanto, se você quiser se aprofundar, basta pesquisar as diferenças on-line.
+
+O som mais baixo que o ouvido humano comum pode detectar é definido como 0 dB. Uma conversa normal corresponde a cerca de 60 dB, e sons acima de cerca de 140 dB são insuportáveis para o ouvido humano. No entanto, os sons não precisam causar dor para serem nocivos. A exposição contínua a sons de 90 dB (o volume de um aspirador de pó) pode causar perda de audição a longo prazo.
+
+A escala de decibéis é logarítmica, o que pode ser um pouco complicado: um som de 40 dB não é duas vezes mais intenso que um de 20 dB, e sim 100 vezes mais intenso. Se um alarme tocando produz 70 dB, dois alarmes não produzem 140 dB, e sim 73 dB. Como já dissemos, é uma escala estranha.
+
+Folhas ao vento - 10 dB
+Sussurros a 1,5 m de distância - 20 dB
+Sussurros suaves - 30 dB
+Chuva - 50 dB
+Conversa normal - 60 dB
+Liquidificador - 90 dB
+Carro sem silenciador - 100 dB
+Gritos diretamente no ouvido - 110 dB
+Trovão - 120 dB
+Britadeira - 130 dB
+Avião decolando - 140 dB</string>
+    <string name="sensor_desc_first_paragraph_pitch">Sons são gerados por vibrações. Sua voz, por exemplo, é gerada por vibrações nas suas cordas vocais. Essas vibrações criam zonas de variação de alta e baixa pressão do ar que é expelido, da mesma forma que ocorre com as ondas circulares geradas quando uma pedra é jogada em um lago.</string>
+    <string name="sensor_desc_second_paragraph_pitch">Todos os sons podem ser descritos de acordo com a frequência e a intensidade. A frequência (também conhecida como altura ou tom) de uma onda sonora equivale à taxa de vibração dela. Quanto mais rápido um objeto vibra, maior será a frequência do som resultante. Essas vibrações são medidas em Hertz (Hz), sendo que 1 Hertz equivale a 1 vibração/segundo.
+
+Os seres humanos podem ouvir sons de 20 a 20.000 Hz. A nota mais grave de um piano produz uma frequência de 27,5 Hz, e a mais aguda produz um som com uma frequência de 4.186,01 Hz.
+
+O ponto vermelho indica o quanto a frequência detectada está perto da nota musical mais próxima. Se a frequência for baixa ou um “bemol”, o ponto aparecerá à esquerda. Se a frequência for alta ou um “sustenido”, o ponto vermelho aparecerá à direita.</string>
+    <string name="pitch_low_content_description">baixa frequência</string>
+    <string name="pitch_flatter_than_natural_note_content_description">%1$s semitons abaixo de %2$s, %3$sª oitava</string>
+    <string name="pitch_flatter_than_flat_note_content_description">%1$s semitons abaixo de %2$s bemol, %3$sª oitava</string>
+    <string name="pitch_flatter_than_sharp_note_content_description">%1$s semitons abaixo de %2$s sustenido, %3$sª oitava</string>
+    <string name="pitch_natural_note_content_description">%1$s, %2$sª oitava</string>
+    <string name="pitch_flat_note_content_description">%1$s bemol, %2$sª oitava</string>
+    <string name="pitch_sharp_note_content_description">%1$s sustenido, %2$sª oitava</string>
+    <string name="pitch_sharper_than_natural_note_content_description">%1$s semitons acima de %2$s, %3$sª oitava</string>
+    <string name="pitch_sharper_than_flat_note_content_description">%1$s semitons acima de %2$s bemol, %3$sª oitava</string>
+    <string name="pitch_sharper_than_sharp_note_content_description">%1$s semitons acima de %2$s sustenido, %3$sª oitava</string>
+    <string name="pitch_high_content_description">alta frequência</string>
+    <string name="sensor_desc_first_paragraph_rotation">As rotações por minuto (RPM) são uma medida da frequência de rotação ao redor de um eixo fixo durante um minuto.
+
+Conforme o cata-vento gira, ele também faz o disco do codificador girar:</string>
+    <string name="sensor_desc_second_paragraph_rotation">Isso cria períodos de luz e de sombra no sensor que aparecem no Science Journal como uma rotação.</string>
+    <string name="sensor_desc_first_paragraph_raw">Os dados exibidos aqui vêm da comunicação de um sensor externo com seu smartphone pelo Bluetooth.
+
+O valor mostra a porcentagem de leitura bruta diretamente do seu microcontrolador. Em geral, essa é a porcentagem de uma queda de tensão elétrica em um sensor.</string>
+    <string name="sensor_desc_second_paragraph_raw">O Bluetooth é uma tecnologia sem fio padrão que usa ondas de rádio para transferir dados por distâncias curtas a partir de dispositivos fixos e móveis.</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">Os dados exibidos aqui vêm da comunicação de um sensor externo com seu smartphone pelo Bluetooth</string>
+    <string name="sensor_desc_second_paragraph_unknown_bluetooth">O Bluetooth é uma tecnologia sem fio padrão que usa ondas de rádio para transferir dados por distâncias curtas a partir de dispositivos fixos e móveis.</string>
+    <string name="sensor_desc_first_paragraph_barometer">Apesar de não notarmos, todos nós vivemos no fundo de um oceano profundo de ar: a atmosfera da Terra, que se estende por 40 quilômetros de altura. O peso de todo esse ar que nos empurra para baixo cria o que é chamado de pressão atmosférica.
+
+No nível do mar, a pressão atmosférica é de quase 1 kg de força sobre cada centímetro quadrado, ou seja, o equivalente a cerca de 590 kg em uma área do tamanho de uma folha de papel comum.</string>
+    <string name="sensor_desc_second_paragraph_barometer">Não percebemos esse peso esmagador porque estamos acostumados a ele, pelo menos até que ele sofra alterações, por menores que sejam. É isso que acontece quando visitamos lugares com grande altitude ou quando viajamos de avião. A pressão atmosférica também varia de acordo com as condições climáticas. Ela diminui quando o tempo está chuvoso e com ar instável e aumenta quando o ar se estabiliza e o céu fica sem nuvens.
+
+O barômetro digital do seu smartphone mede a pressão atmosférica em hectopascais. Um hectopascal equivale a 100 pascais, e cada pascal equivale a um newton de força aplicada sobre uma área de um metro quadrado. É provável que você já tenha ouvido jornalistas usarem a palavra milibares para falar sobre a pressão atmosférica. Essa unidade de pronúncia mais fácil equivale aos hectopascais.
+
+Talvez você esteja se perguntando: por que um smartphone mediria a pressão atmosférica? Basta você subir um lance de escadas para que seja possível detectar uma mudança na pressão. Por isso, um barômetro digital em um smartphone pode detectar alterações de localização para informar, por exemplo, em qual andar de um edifício você está ou se você está na parte mais alta ou mais baixa de uma ponte.</string>
+    <string name="run_review_activity_label">Analisar</string>
+    <string name="heading_info_section">O que está acontecendo?</string>
+    <string name="edit_note_time">Editar hora da observação</string>
+    <string name="delete_note_menu_item">Excluir</string>
+    <string name="crop_run">Cortar</string>
+    <string name="snackbar_note_deleted">Observação excluída</string>
+    <string name="snackbar_undo">Desfazer</string>
+    <string name="archived_badge">Arquivado</string>
+    <string name="delete_experiment_dialog_title">Excluir este experimento?</string>
+    <string name="delete_experiment_dialog_message">Você quer mesmo excluir este experimento? Todas as observações e gravações serão excluídas.</string>
+    <string name="delete_run_dialog_title">Excluir esta gravação?</string>
+    <string name="run_review_delete_confirm">Você quer mesmo excluir esta gravação? As observações e os dados gravados serão excluídos.</string>
+    <string name="menu_btn_content_description">Menu</string>
+    <string name="sensor_card_error_text">Não foi possível carregar os dados do sensor</string>
+    <string name="sensor_card_loading_text">Carregando dados do sensor…</string>
+    <string name="edit_trial_title_hint">Título da gravação</string>
+    <string name="include_archived_trials">Mostrar gravações arquivadas</string>
+    <string name="export_error">Falha na exportação.</string>
+    <string name="listing_changelog_features">Novos recursos:</string>
+    <string name="listing_changelog_bug_fixes">Melhorias no desempenho e correções de bugs</string>
+    <string name="listing_changelog_separator">
+
+</string>
+    <string name="listing_h_feature_1">
+• Sensor de frequência sonora.</string>
+    <string name="listing_h_feature_2">
+• Exportar experimentos para um arquivo e importá-los para outros dispositivos.</string>
+    <string name="listing_h_feature_3">
+• Exportar fotos de um experimento.</string>
+    <string name="menu_item_audio_settings">Configurações de áudio</string>
+    <string name="enable_auto_zoom">Ativar escala automática</string>
+    <string name="disable_auto_zoom">Desativar escala automática</string>
+    <string name="menu_item_set_triggers">Definir acionadores</string>
+    <string name="menu_item_edit_triggers">Editar acionadores</string>
+    <string name="btn_add_new_trigger">Criar acionador</string>
+    <string name="empty_trigger_list">Nenhum acionador definido</string>
+    <string name="trigger_type_label">Tipo de acionador</string>
+    <string name="trigger_when_label">Acionar quando</string>
+    <string name="trigger_value_label">Valor do acionador</string>
+    <string name="trigger_type_start_recording">Começar gravação</string>
+    <string name="trigger_type_stop_recording">Parar gravação</string>
+    <string name="trigger_type_note">Fazer uma observação</string>
+    <string name="trigger_type_alert">Receber alerta</string>
+    <string name="trigger_when_at">Em</string>
+    <string name="trigger_when_drops_below">Diminui abaixo de</string>
+    <string name="trigger_when_rises_above">Subir acima de</string>
+    <string name="trigger_when_is_below">Estiver abaixo de</string>
+    <string name="trigger_when_is_above">Estiver acima de</string>
+    <string name="trigger_note_text_label">Texto padrão da observação</string>
+    <string name="trigger_note_text_hint">O que você quer incluir na observação?</string>
+    <string name="trigger_audio_alert">Som</string>
+    <string name="trigger_haptic_alert">Vibração</string>
+    <string name="trigger_visual_alert">Notificação visual</string>
+    <string name="cannot_save_invalid_value">É necessário informar um valor numérico no qual este acionador será ativado.</string>
+    <string name="sensor_trigger_deleted">Acionador excluído</string>
+    <string name="trigger_only_when_recording">Acionar somente ao gravar</string>
+    <string name="trigger_fired_text">Acionador ativado</string>
+    <string name="crop_start_seekbar_content_description">início do corte:</string>
+    <string name="crop_end_seekbar_content_description">fim do corte:</string>
+    <string name="crop_failed_message">Não foi possível salvar o corte:</string>
+    <string name="trigger_alert_prompt">Receber alerta usando</string>
+    <string name="my_devices">Meus dispositivos</string>
+    <string name="available_devices">Dispositivos disponíveis</string>
+    <string name="phone_sensors">Sensores internos</string>
+    <string name="forget_device">Esquecer este dispositivo</string>
+    <string name="crop_overflow_menu_content_description">Mais opções</string>
+    <string name="edit_crop_start_time">Editar horário de início</string>
+    <string name="edit_crop_end_time">Editar horário de término</string>
+    <string name="timestamp_picker_format_error">Use um formato válido: h:mm:ss.SSS</string>
+    <string name="timestamp_picker_crop_range_error">As gravações não podem ser cortadas para menos de 1 segundo</string>
+    <string name="timestamp_picker_prompt">Novo horário (h:mm:ss.SSS)</string>
+    <string name="export_options_title">Exportar…</string>
+    <string name="export_options_relative_time">Tempo relativo</string>
+    <string name="compass">Bússola</string>
+    <string name="compass_units">graus</string>
+    <string name="sensor_desc_short_compass">A orientação do smartphone em relação ao campo magnético da Terra.</string>
+    <string name="sensor_desc_first_paragraph_compass">Você já deve saber que a Terra tem um campo magnético. Mas você sabia que seu smartphone contém um dispositivo capaz de detectar os campos magnéticos? O nome dele é magnetômetro. Ao combinar os dados do magnetômetro com a orientação do smartphone no espaço, criamos uma bússola digital.
+
+Uma bússola é um magnetômetro de baixa tecnologia com uma agulha imantada que gira para se alinhar ao campo magnético circundante. Seu smartphone não tem uma bússola, mas sim um sensor de três eixos que usa correntes elétricas para detectar a força do campo magnético nas três dimensões do espaço. Porém, isso não basta para criar uma bússola.
+
+Por que uma bússola precisa combinar os dados do magnetômetro com a orientação do smartphone? Saber a orientação do dispositivo permite calcular a rotação magnética mesmo quando ele não está paralelo ao campo magnético da Terra. Sabemos que a gravidade é perpendicular ao campo magnético do planeta, então podemos usar a direção da gravidade registrada pelos sensores do acelerômetro para determinar se o campo magnético está no mesmo plano que o campo magnético da Terra.</string>
+    <string name="sensor_desc_second_paragraph_compass">Como você deve ter notado, a bússola responde não apenas ao campo magnético da Terra, mas também a qualquer campo magnético ao redor. Ímãs, correntes elétricas e objetos de metal também influenciam o magnetômetro do seu smartphone, o que altera a leitura da bússola. Se você quiser ter certeza de que a ponta vermelha da bússola se alinha ao campo magnético da Terra, vá para uma área aberta, de preferência ao ar livre e longe de linhas de energia, e mova seu dispositivo no formato do número 8 para calibrar o magnetômetro.</string>
+    <string name="text_label_details_title">Editar observação de texto</string>
+    <string name="navigation_item_experiments">Experimentos</string>
+    <string name="note_caption_hint">Adicione uma descrição</string>
+    <string name="linear_accelerometer">Acelerômetro linear</string>
+    <string name="sensor_desc_short_linear_acc">A aceleração total do smartphone em m/s², excluindo a força da gravidade</string>
+    <string name="sensor_desc_first_paragraph_linear_acc">Os objetos tendem a permanecer inertes ou a continuar a se mover se já estiverem em movimento. Isso é chamado de inércia. A primeira lei de Newton expressa formalmente essa ideia: um objeto continua em repouso ou em movimento a menos que uma força seja aplicada sobre ele.
+
+Quando uma força causa o movimento de um objeto, dizemos que ele acelera, ou seja, a velocidade dele muda ao aumentar, diminuir ou mudar de direção. A aceleração é medida como uma mudança na velocidade em metros por segundo (m/s) de acordo com o eixo de tempo ou metros por segundo ao quadrado (m/s²) de acordo com o eixo de espaço..
+
+No seu smartphone, existe um dispositivo para medir essas alterações de movimento: um acelerômetro. Dentro desse dispositivo, pequenas massas suspensas se movem. Mudanças no movimento causam uma variação nessas massas, da mesma forma que sua cabeça se move para a frente quando você está em um carro que freia inesperadamente.Ao medir essas variações sutis de inércia, o acelerômetro de um smartphone pode detectar alterações no movimento e na orientação. Isso é útil para alternar entre os modos retrato e paisagem da tela, para jogar no seu smartphone e muito mais.</string>
+    <string name="sensor_desc_second_paragraph_linear_acc">O sensor de acelerômetro linear combinado registra a aceleração total nos três eixos do smartphone, excluindo a gravidade.</string>
+    <string name="edit_note_time_menu_item">Editar horário</string>
+    <string name="snapshot_label_details_title">Detalhes do instantâneo</string>
+    <string name="load_more_notes_btn">Ver mais observações</string>
+    <string name="name_experiment_dialog_title">Dê um nome a este experimento</string>
+    <string name="throbber_content_description">Gravação em andamento</string>
+    <string name="details_header">Detalhes</string>
+    <string name="text_label_hint">Adicione uma observação</string>
+    <string name="first_experiment_title">Olá! Este é o Science Journal.</string>
+    <string name="first_experiment_text_note">Faça observações e grave dados usando a barra de ferramentas abaixo.</string>
+    <string name="first_experiment_picture_note_caption">Olá! Este é o Science Journal!</string>
+    <string name="first_experiment_second_text_note">Encontre atividades para testar em
+g.co/sciencejournalactivities</string>
+    <string name="btn_take_picture_content_description">Tirar foto</string>
+    <string name="input_camera_permission_denied">Não é possível usar a câmera porque o Science Journal não tem permissão para acessá-la.</string>
+    <string name="input_photo_library_permission_denied">Não é possível usar sua galeria de fotos porque o Science Journal não tem permissão para acessá-la.</string>
+    <string name="import_failed_recording">O Science Journal está sendo usado no momento. Interrompa a gravação e tente novamente.</string>
+    <string name="import_failed_file">Falha na importação. Há algo errado com este experimento.</string>
+    <string name="import_failed">Ocorreu um erro desconhecido.</string>
+    <string name="explore_your_world">Explore seu mundo</string>
+    <string name="use_science_journal">Use o Science Journal para fazer experimentos no mundo ao seu redor</string>
+    <string name="get_started">Primeiros passos</string>
+    <string name="drive_sync_cannot_reach_google_drive">Não é possível acessar o Google Drive. Verifique sua conexão.</string>
+    <string name="add_note_hint_text">Adicionar uma nova observação</string>
+    <string name="add_note_button_text">Adicionar observação ao cronograma</string>
+</resources>

@@ -1,14 +1,44 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Arduino Science Journal</string>
-  <string name="action_feedback">Atsiliepimas</string>
-  <string name="action_about">Apie</string>
-  <string name="action_save">Išsaugoti</string>
-  <string name="action_edit">Redaguoti</string>
-  <string name="action_archive_experiment">Archyvuoti eksperimentą</string>
-  <string name="action_unarchive_experiment">Išarchyvuoti eksperimentą</string>
-  <string name="action_archive_run">Archyvuoti</string>
-  <string name="action_unarchive_run">Išarchyvuoti</string>
-  <string name="action_delete">Ištrinti</string>
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="sonification_types_dev">
+        <item>@string/amplitude</item>
+    </string-array>
+    <string-array name="sonification_types_prod">
+        <item>@string/default_sonification</item>
+        <item>@string/scale</item>
+        <item>@string/notes</item>
+        <item>@string/conductor</item>
+    </string-array>
+    <string-array name="trigger_type_list">
+        <item>@string/trigger_type_start_recording</item>
+        <item>@string/trigger_type_stop_recording</item>
+        <item>@string/trigger_type_note</item>
+        <item>@string/trigger_type_alert</item>
+    </string-array>
+    <string-array name="trigger_when_list">
+        <item>@string/trigger_when_at</item>
+        <item>@string/trigger_when_rises_above</item>
+        <item>@string/trigger_when_drops_below</item>
+        <item>@string/trigger_when_is_above</item>
+        <item>@string/trigger_when_is_below</item>
+    </string-array>
+    <string-array name="trigger_when_list_note_text">
+        <item>vertė –</item>
+        <item>vertė viršijo</item>
+        <item>vertė nukrito žemiau</item>
+        <item>vertė didesnė nei</item>
+        <item>vertė mažesnė nei</item>
+    </string-array>
+    <string name="app_name">Arduino Science Journal</string>
+    <string name="action_feedback">Atsiliepimas</string>
+    <string name="action_about">Apie</string>
+    <string name="action_save">Išsaugoti</string>
+    <string name="action_edit">Redaguoti</string>
+    <string name="action_archive_experiment">Archyvuoti eksperimentą</string>
+    <string name="action_unarchive_experiment">Išarchyvuoti eksperimentą</string>
+    <string name="action_archive_run">Archyvuoti</string>
+    <string name="action_unarchive_run">Išarchyvuoti</string>
+    <string name="action_delete">Ištrinti</string>
   <string name="sine_wave">Sinusinė banga</string>
   <string name="vel">Greitis</string>
   <string name="acc_x">X ašies akselerometras</string>
@@ -34,8 +64,6 @@
   <string name="action_retry">Bandyti dar kartą</string>
   <string name="decibel">Garso stipris</string>
   <string name="pitch">Tonas</string>
-  <string name="btn_add_experiment_note_description">Pridėti pastabą prie eksperimento</string>
-  <string name="btn_add_run_note_description">Pridėti pastabą prie bandymo etapo</string>
   <string name="btn_record_description">Pradėti įrašymą</string>
   <string name="btn_stop_description">Stabdyti įrašymą</string>
   <string name="btn_record_label">Įrašyti</string>
@@ -143,15 +171,6 @@
   <string name="notes">Pastabos</string>
   <string name="scale">Skalė</string>
   <string name="conductor">Laidininkas</string>
-  <string-array name="sonification_types_prod">
-    <item>@string/default_sonification</item>
-    <item>@string/scale</item>
-    <item>@string/notes</item>
-    <item>@string/conductor</item>
-  </string-array>
-  <string-array name="sonification_types_dev">
-    <item>@string/amplitude</item>
-  </string-array>
   <string name="empty_experiment">Stebėjimų nėra</string>
   <string name="device_options_sensor_label_text">Jutiklis</string>
   <string name="external_sensor_appearance_name">„%1$s“ – „%2$s“</string>
@@ -162,55 +181,107 @@
   <string name="device_options_custom_sensor_frequency_checkbox_text">Dažnis</string>
   <string name="feedback_error_message">Atsiliepimo išsiųsti nepavyko.</string>
   <string name="sensor_desc_short_acc_x">Telefono pagreitis judant į kairę ir į dešinę, m/s²</string>
-  <string name="sensor_desc_short_acc_y">Telefono pagreitis judant pirmyn ir atgal, m/s²</string>
-  <string name="sensor_desc_short_acc_z">Telefono pagreitis jam greitėjant ir lėtėjant, m/s²</string>
-  <string name="sensor_desc_short_decibel">Garso, pasiekusio garso jutiklį arba mikrofoną, stipris decibelais (dB).</string>
-  <string name="sensor_desc_short_pitch">Garso, pasiekusio garso jutiklį arba mikrofoną, aukštis hercais (Hz).</string>
-  <string name="sensor_desc_short_light">Šviesos, pasiekusios aplinkos šviesos jutiklį, kiekis liuksais (lx).</string>
-  <string name="sensor_desc_short_magnetic_strength">Aplinkos Žemės magnetinio lauko stiprumas mikroteslomis.</string>
-  <string name="sensor_desc_short_bluetooth">Čia pagal tinkintus nustatymus rodomi išorinio jutiklio duomenys.</string>
-  <string name="sensor_desc_short_rotation">Apsisukimų skaičius per minutę</string>
-  <string name="sensor_desc_short_raw">Pirminių duomenų nuskaitymas iš išorinio jutiklio procentais.</string>
-  <string name="sensor_desc_short_barometer">Atmosferos slėgis matuojamas hektopaskaliais (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Aplinkos šviesos jutiklis matuoja šviesą liuksais (lx) – tai apšvietimo, kuris priklauso nuo gaunamo šviesos kiekio ir srities, virš kurios jie paskleidžiami, matavimas. \n\nPilnaties skleidžiamas apšvietimas yra maždaug 1 lx vertės, įprasto svetainės šviestuvo – apie 50 lx, klasėje naudojamų lempų šviesos ir saulėtekio bei saulėlydžio – apie 400 lx, dienos šviesos (netiesioginės saulės) – daugiau nei 10 000 lx, o tiesioginės saulės šviesos – daugiau nei 30 000 lx. \n\nLiuksas daugeliui iš mūsų nežinomas matavimo vienetas. Kai perkame lemputes, jas dažnai renkamės pagal vatus, bet lemputės galia vatais nenusako lemputės šviesumo, tik tai, kiek energijos ji naudoja. Kur kas geriau perkant apšvietimo prekes atkreipti dėmesį į liumenus – jais nusakoma, kiek šviesos lemputė iš tiesų pagamins. Liuksais nurodoma, kiek tos šviesos pateks į konkrečią vietą.</string>
-  <string name="sensor_desc_second_paragraph_light">Šviesai pasklidus ir jai keliaujant tolyn, liuksų sumažėja, tarsi būtumėte atsitraukę nuo šviesos šaltinio, net jei šaltinis vis dar spinduliuoja tą patį kiekį šviesos, matuojant liumenais. Nuo šviesos šaltinių nukreipta sritis taip pat apšviečiama mažiau. Būtent dėl to Žemės pusiaujo regionuose yra daug šilčiau, nei vėsiuose poliuose. \n\nBe to, šviesos jutiklio jūsų telefone paskirtis yra valdyti ekrano apšvietimo lygį, jį koreguojant pagal pritemdytą ir šviesią aplinką. Šviesos jutiklyje į ateinančią šviesą reaguoja mažytis puslaidininkis, gamindamas nedidelę, bet vertingą elektros srovę. Šis fenomenas žinomas kaip fotoefektas. Panašūs jutikliai naudojami kai kuriuose gatvių žibintuose – taip žibintai įjungiami lauke pradėjus temti.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Telefone yra įrenginys, skirtas magnetiniams laukams aptikti – magnetometras. Tai mažas trijų ašių jutiklis, kuris naudodamas elektros sroves nustato magnetinio lauko stiprumą trimatėje erdvėje. Derindami visų trijų ašių duomenis galime sukurti viso magnetinio lauko stiprumo jutiklį. \n\nKai kurie magnetometrai magnetinius laukus aptinka pagal Hallo efektą – magnetinių laukų polinkį nuo savęs nukreipti judantį krūvį. Naujesnių magnetometrų veikimas pagrįstas magnetovaržais – metalo lydiniais, kurių varža keičiasi priklausomai nuo magnetinių laukų. \n\nKam telefone reikalingas magnetometras? Padėties erdvėje duomenys reikalingi integruotoms kompaso ir navigacijos programoms, ypač toms, kurios teikia „posūkis po posūkio“ tipo nurodymus.</string>
-  <string name="sensor_desc_second_paragraph_magnetic_strength">Magnetai, elektros srovės ir metaliniai objektai telefono magnetometrą lengvai nukreipia įvairiomis kryptimis.Tačiau netgi tuščio lauko viduryje telefono magnetometras rodys nedidelės vertės rodmenį (ne nulį) – tai Žemės magnetinis laukas!</string>
-  <string name="sensor_desc_first_paragraph_acc">Objektai turi polinkį likti vietoje arba judėti toliau, jei juda, – tai vadiname inercija. Pirmasis Niutono dėsnis nusako šią idėją pagal tokią formulę: jei objekto nepaveikia išorinė jėga, jis toliau tolygiai juda arba išlaiko rimties būseną. \n\nKai išorinė jėga išjudina objektą, sakome, kad objektas įgyja pagreitį: pasikeičia jo greitis ar tempas – objekto judėjimas pagreitėja, sulėtėja ar pakeičia kryptį. Pagreitis matuojamas įvertinant greičio pokytį per laiką (metrais per sekundę) arba metrais per sekundę kvadratu (m/s²). \n\nJūsų telefone yra įrenginys, matuojantis šiuos judėjimo pokyčius – akselerometras. Jame pakabinti nedideli laisvai judantys svoriai. Pasikeitus judėjimui pajudinami ir šie svoriai, panašiai kaip jūsų galva, krestelėjusi pirmyn, jums sėdint automobilyje, kuris staiga sustoja. Matuodamas šiuos vos pastebimus inertinius judesius telefono akselerometras gali aptikti judėjimo ir orientacijos pokyčius. Tai naudinga perjungiant ekrano padėtį iš gulsčio režimo į stačią, žaidžiant žaidimus ir pan.</string>
-  <string name="sensor_desc_second_paragraph_acc">Tikriausiai pastebėjote nuolatinį pagreitį Z ašyje, net kai telefonas padėtas ant stalo. Tai vidutiniškai 9,8 m/s² pagreitis, kurį patiriame Žemės paviršiuje dėl gravitacijos.</string>
-  <string name="sensor_desc_first_paragraph_decibel">Garsus sukelia vibracija. Pavyzdžiui, jūsų balsas randasi dėl gerklėje esančių balso stygų vibracijos. Šios vibracijos sukelia besikeičiančias aukšto ir žemo oro slėgio sritis, kurios plinta išorėn panašiai kaip besiplečiantys raibuliuojantys ratilai vandens paviršiuje įmetus akmenuką į tvenkinį.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Visi garsai gali būti aprašomi pagal jų dažnį ir stiprį. \n\nStiprį matuojate naudodamiesi „Science Journal“, jis matuojamas decibelais (dB). Garso stipris, arba garsumas, priklauso nuo atstumo, kurį nukeliauja vibruojantis objektas kas kartą, kai jis vibruoja, – didesnio stiprio garsą girdime kaip garsesnį. \n\nGarso bangos dažnis (taip pat aukštis ar tonas) yra lygus jos vibracijos dažniui. Kuo greičiau vibruoja objektas, tuo aukštesnis garsas išgaunamas. „Science Journal“ nematuoja dažnio, tik garsumą. \n\nVienas svarbūs dalykas, kurį turėtumėte žinoti, yra tai, kad įrenginyje esantis mikrofonas sukurtas taip, kad jautriai fiksuotų garso bangų skirtumus per laiką, bet ne pagal absoliutų kiekvienos bangos dydį. Bandėme pasirinkti kodą, kurį naudojant gaunamos vertės, panašios į toliau parodytas normines vertes, bet kiekvienas įrenginys gali pateikti nuosekliai didesnes ar mažesnes vertes. Mokslininkai tokius jutiklius paprastai kalibruoja pagal žinomus matavimus. Kol kas „Science Journal“ gali nustatyti, ar kitas jūsų pasivažinėjimas traukiniu bus garsesnis už kitą roko koncertą, į kurį eisite, bet tik tokiu atveju, jei abu kartus turėsite tą patį telefoną. \n\nKitas svarbūs dalykas, kurį turėtumėte žinoti, yra tai, kad egzistuoja svarbūs skirtumai tarp „garso stiprio“, „garso stiprio lygio“ ir „garso slėgio“. Šiuose eksperimentuose juos vertiname kaip tą patį dalyką, bet jei norite sužinoti daugiau, paieškokite internete – yra daug išteklių apie šių matavimo vienetų skirtumus. \n\nTyliausias vidutinio žmogaus ausiai girdimas garsas yra 0 dB. Eilinis pokalbis atitinka apie 60 dB, o garsai, viršijantys apie 140 dB, yra skausmingi žmogaus ausiai. Bet garsas nebūtinai turi kelti skausmą, kad būtų žalingas. Nuolatinis 90 dB garso poveikis (maždaug dulkių siurblio skleidžiamo garsumo) gali ilgainiui sukelti klausos sutrikimų. \n\nDecibelų skalė yra logaritminė ir turi tam tikrų subtilybių: 40 dB garso šaltinis nėra dvigubai stipresnis nei 20 dB šaltinis – jis stipresnis 100 kartų. Taip pat vienam skambančiam žadintuvui skleidžiant 70 dB garsą, dviejų skambančių žadintuvų garsas sudarys ne 140 dB, o 73 dB. Kaip sakėme, ši skalė keista. \n\n10 dB garsą sukelia lapų čežėjimas \n20 dB – šnabždėjimas maždaug už pusantro metro \n30 dB – tylus šnabždesys \n50 dB – liūtis \n60 dB – įprastas pokalbis \n90 dB – plaktuvas \n100 dB – automobilis be duslintuvo \n110 dB – rėkimas į ausį \n120 dB – griaustinis \n130 dB – pneumatinis kūjis \n140 dB – kylanti lėktuvas</string>
-  <string name="sensor_desc_first_paragraph_pitch">Garsus sukelia vibracija. Pavyzdžiui, jūsų balsas randasi dėl gerklėje esančių balso stygų vibracijos. Šios vibracijos sukelia besikeičiančias aukšto ir žemo oro slėgio sritis, kurios plinta išorėn panašiai kaip besiplečiantys raibuliuojantys ratilai vandens paviršiuje įmetus akmenuką į tvenkinį.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Visi garsai gali būti aprašomi pagal jų dažnį ir stiprį. Garso bangos dažnis (taip pat aukštis ar tonas) yra lygus jos vibracijos dažniui. Kuo greičiau vibruoja objektas, tuo aukštesnis garsas išgaunamas. Šią vibraciją matuojame herzais (Hz), kai 1 hercas = 1 vibracija per sekundę. \n\nŽmonės gali girdėti garsus, kurie patenka į 20–20 000 Hz intervalą. Žemiausias pianino klavišas skleidžia 27,5 Hz dažnio garsą, o aukščiausias pianino klavišas – 4186,01 Hz dažnio garsą. \n\nRaudonas taškas rodo, kokiu atstumu užfiksuotas tonas yra nuo artimiausios muzikinės natos. Jei tonas yra žemesnis arba „duslesnis“, taškas rodomas kairėje. Jei tonas yra aukštesnis arba „aštresnis“, taškas rodomas dešinėje.</string>
-  <string name="pitch_low_content_description">žemas tonas</string>
-  <string name="pitch_flatter_than_natural_note_content_description">%3$s puston. žemesnis nei %1$s, %2$s oktava</string>
-  <string name="pitch_flatter_than_flat_note_content_description">%3$s puston. žemesnis nei %1$s bemolis, %2$s oktava</string>
-  <string name="pitch_flatter_than_sharp_note_content_description">%3$s puston. žemesnis ne %1$s diezas, %2$s oktava</string>
-  <string name="pitch_natural_note_content_description">%1$s, %2$s oktava</string>
-  <string name="pitch_flat_note_content_description">%1$s bemolis, %2$s oktava</string>
-  <string name="pitch_sharp_note_content_description">%1$s diezas, %2$s oktava</string>
-  <string name="pitch_sharper_than_natural_note_content_description">%3$s puston. aukštesnis nei %1$s, %2$s oktava</string>
-  <string name="pitch_sharper_than_flat_note_content_description">%3$s puston. aukštesnis nei %1$s bemolis, %2$s oktava</string>
-  <string name="pitch_sharper_than_sharp_note_content_description">%3$s puston. aukštesnis nei %1$s diezas, %2$s oktava</string>
-  <string name="pitch_high_content_description">aukštas tonas</string>
-  <string name="sensor_desc_first_paragraph_rotation">Apsisukimai per minutę (APM) – tai apsisukimo apie fiksuotą ašį dažnio per vieną minutę matavimas. \n\nSukdamasis vėjo malūnėlis sukioja kodavimo diską:</string>
-  <string name="sensor_desc_second_paragraph_rotation">Jutiklis fiksuoja šviesos ir tamsos tarpsnius, kurie „Science Journal“ registruojami kaip apsisukimai.</string>
-  <string name="sensor_desc_first_paragraph_raw">Čia rodomi duomenys gaunami iš išorinio jutiklio, susieto su jūsų telefonu „Bluetooth“ ryšiu. \n\nVertė nurodo pirminių duomenų nuskaitymą tiesiai iš jūsų mikrovaldiklio procentais. Paprastai tai yra procentais išreikštas įtampos kritimas, kurį aptinka jutiklis.</string>
-  <string name="sensor_desc_second_paragraph_raw">„Bluetooth“ – tai belaidė technologija, įprastai radijo bangomis nedideliais atstumais perduodanti duomenis iš fiksuotojo ir mobiliojo ryšio įrenginių.</string>
-  <string name="sensor_desc_first_paragraph_unknown_bluetooth">Čia rodomi duomenys gaunami iš išorinio jutiklio, susieto su jūsų telefonu „Bluetooth“ ryšiu.</string>
-  <string name="sensor_desc_second_paragraph_unknown_bluetooth">„Bluetooth“ – tai belaidė technologija, įprastai radijo bangomis nedideliais atstumais perduodanti duomenis iš fiksuotojo ir mobiliojo ryšio įrenginių.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Nors tai retai pastebime, visi gyvename gilaus oro telkinio dugne: Žemės atmosferoje, kuri tęsiasi į viršų 40 kilometrų (130 000 pėdų). Viso šio mus slegiančio oro svoris vadinamas atmosferos slėgiu. \n\nJūros lygyje atmosferos slėgis kiekvieną kvadratinį centimetrą veikia 1033 g jėga – tai tas pats, lyg maždaug 589,67 kg jėga slėgtų standartinio dydžio popieriaus lapą.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Šio didelio slėgio nejuntame, nes esame prie jo pripratę. Tai yra, pajuntame tik tada, kai jis pasikeičia, kad ir nedaug, pavyzdžiui, kai esame gerokai aukščiau virš jūros lygio ar skrendame lėktuvu. Atmosferos slėgis taip pat kinta priklausomai nuo oro sąlygų: krenta, kai oras audringas ir nepastovus, ir kyla, kai oras tampa pastovus ir dangus išsigiedrija. \n\nTelefone esantis skaitmeninis barometras atmosferos slėgį matuoja hektopaskaliais (hektopaskalis yra 100 paskalių, o paskalis yra vieno niutono jėga, kuria veikiamas vienas kvadratinis metras). Tikriausiai girdėjote orų pranešėjus atmosferos slėgį nurodant milibarais – tai labiau įprasti matavimo vienetai, lygiaverčiai hektopaskaliams. \n\nGali kilti klausimas: kodėl telefonu reikėtų matuoti slėgį? Atmosferos slėgis pastebimai keičiasi, kai nors šiek tiek pasikeičia aukštis virš jūros lygio, pavyzdžiui, kai užlipate laiptų pakopa. Taigi telefone įtaisytas skaitmeninis barometras gali padėti nustatyti vietos pokyčius, pavyzdžiui, galite sužinoti, kokiame aukšte ar pastate esate, arba tai, ar važiuojate apatine ar viršutine tilto eile.</string>
-  <string name="run_review_activity_label">Peržiūra</string>
-  <string name="service_notification_content_title">Science Journal</string>
-  <string name="service_notification_content_text">Įrašoma…</string>
-  <string name="live_graph_content_description">Tiesioginė jutiklio diagrama. Vilkite, kad matytumėte X ašies vaizdą, suimkite, kad priartintumėte Y ašį.</string>
-  <string name="static_graph_content_description">Jutiklio diagrama. Suimkite, kad priartintumėte; vilkite, kad matytumėte vaizdą; du kartu palieskite, kad nutolintumėte.</string>
-  <string name="sensor_card_overflow_menu_content_description">Kortelės parinktys</string>
-  <string name="sensor_tab_layout_content_description">Pasiekiami jutikliai</string>
-  <string name="title_activity_sensor_info">Jutiklio informacija</string>
-  <string name="title_activity_sensor_info_format">Jutiklis „%s“</string>
-  <string name="heading_info_section">Kaip tai vyksta?</string>
+    <string name="sensor_desc_short_acc_y">Telefono pagreitis judant pirmyn ir atgal, m/s²</string>
+    <string name="sensor_desc_short_acc_z">Telefono pagreitis jam greitėjant ir lėtėjant, m/s²</string>
+    <string name="sensor_desc_short_decibel">Garso, pasiekusio garso jutiklį arba mikrofoną, stipris decibelais (dB).</string>
+    <string name="sensor_desc_short_pitch">Garso, pasiekusio garso jutiklį arba mikrofoną, aukštis hercais (Hz).</string>
+    <string name="sensor_desc_short_light">Šviesos, pasiekusios aplinkos šviesos jutiklį, kiekis liuksais (lx).</string>
+    <string name="sensor_desc_short_magnetic_strength">Aplinkos Žemės magnetinio lauko stiprumas mikroteslomis.</string>
+    <string name="sensor_desc_short_bluetooth">Čia pagal tinkintus nustatymus rodomi išorinio jutiklio duomenys.</string>
+    <string name="sensor_desc_short_rotation">Apsisukimų skaičius per minutę</string>
+    <string name="sensor_desc_short_raw">Pirminių duomenų nuskaitymas iš išorinio jutiklio procentais.</string>
+    <string name="sensor_desc_short_barometer">Atmosferos slėgis matuojamas hektopaskaliais (hPa).</string>
+    <string name="sensor_desc_first_paragraph_light">Aplinkos šviesos jutiklis matuoja šviesą liuksais (lx) – tai apšvietimo, kuris priklauso nuo gaunamo šviesos kiekio ir srities, virš kurios jie paskleidžiami, matavimas.
+
+Pilnaties skleidžiamas apšvietimas yra maždaug 1 lx vertės, įprasto svetainės šviestuvo – apie 50 lx, klasėje naudojamų lempų šviesos ir saulėtekio bei saulėlydžio – apie 400 lx, dienos šviesos (netiesioginės saulės) – daugiau nei 10 000 lx, o tiesioginės saulės šviesos – daugiau nei 30 000 lx. 
+
+Liuksas daugeliui iš mūsų nežinomas matavimo vienetas. Kai perkame lemputes, jas dažnai renkamės pagal vatus, bet lemputės galia vatais nenusako lemputės šviesumo, tik tai, kiek energijos ji naudoja. Kur kas geriau perkant apšvietimo prekes atkreipti dėmesį į liumenus – jais nusakoma, kiek šviesos lemputė iš tiesų pagamins. Liuksais nurodoma, kiek tos šviesos pateks į konkrečią vietą.</string>
+    <string name="sensor_desc_second_paragraph_light">Šviesai pasklidus ir jai keliaujant tolyn, liuksų sumažėja, tarsi būtumėte atsitraukę nuo šviesos šaltinio, net jei šaltinis vis dar spinduliuoja tą patį kiekį šviesos, matuojant liumenais. Nuo šviesos šaltinių nukreipta sritis taip pat apšviečiama mažiau. Būtent dėl to Žemės pusiaujo regionuose yra daug šilčiau, nei vėsiuose poliuose.
+
+Be to, šviesos jutiklio jūsų telefone paskirtis yra valdyti ekrano apšvietimo lygį, jį koreguojant pagal pritemdytą ir šviesią aplinką. Šviesos jutiklyje į ateinančią šviesą reaguoja mažytis puslaidininkis, gamindamas nedidelę, bet vertingą elektros srovę. Šis fenomenas žinomas kaip fotoefektas. Panašūs jutikliai naudojami kai kuriuose gatvių žibintuose – taip žibintai įjungiami lauke pradėjus temti.</string>
+    <string name="sensor_desc_first_paragraph_magnetic_strength">Telefone yra įrenginys, skirtas magnetiniams laukams aptikti – magnetometras. Tai mažas trijų ašių jutiklis, kuris naudodamas elektros sroves nustato magnetinio lauko stiprumą trimatėje erdvėje. Derindami visų trijų ašių duomenis galime sukurti viso magnetinio lauko stiprumo jutiklį.
+
+Kai kurie magnetometrai magnetinius laukus aptinka pagal Hallo efektą – magnetinių laukų polinkį nuo savęs nukreipti judantį krūvį. Naujesnių magnetometrų veikimas pagrįstas magnetovaržais – metalo lydiniais, kurių varža keičiasi priklausomai nuo magnetinių laukų. 
+
+Kam telefone reikalingas magnetometras? Padėties erdvėje duomenys reikalingi integruotoms kompaso ir navigacijos programoms, ypač toms, kurios teikia „posūkis po posūkio“ tipo nurodymus.</string>
+    <string name="sensor_desc_second_paragraph_magnetic_strength">Magnetai, elektros srovės ir metaliniai objektai telefono magnetometrą lengvai nukreipia įvairiomis kryptimis.Tačiau netgi tuščio lauko viduryje telefono magnetometras rodys nedidelės vertės rodmenį (ne nulį) – tai Žemės magnetinis laukas!</string>
+    <string name="sensor_desc_first_paragraph_acc">Objektai turi polinkį likti vietoje arba judėti toliau, jei juda, – tai vadiname inercija. Pirmasis Niutono dėsnis nusako šią idėją pagal tokią formulę: jei objekto nepaveikia išorinė jėga, jis toliau tolygiai juda arba išlaiko rimties būseną.
+
+Kai išorinė jėga išjudina objektą, sakome, kad objektas įgyja pagreitį: pasikeičia jo greitis ar tempas – objekto judėjimas pagreitėja, sulėtėja ar pakeičia kryptį. Pagreitis matuojamas įvertinant greičio pokytį per laiką (metrais per sekundę) arba metrais per sekundę kvadratu (m/s²). 
+
+Jūsų telefone yra įrenginys, matuojantis šiuos judėjimo pokyčius – akselerometras. Jame pakabinti nedideli laisvai judantys svoriai. Pasikeitus judėjimui pajudinami ir šie svoriai, panašiai kaip jūsų galva, krestelėjusi pirmyn, jums sėdint automobilyje, kuris staiga sustoja. Matuodamas šiuos vos pastebimus inertinius judesius telefono akselerometras gali aptikti judėjimo ir orientacijos pokyčius. Tai naudinga perjungiant ekrano padėtį iš gulsčio režimo į stačią, žaidžiant žaidimus ir pan.</string>
+    <string name="sensor_desc_second_paragraph_acc">Tikriausiai pastebėjote nuolatinį pagreitį Z ašyje, net kai telefonas padėtas ant stalo. Tai vidutiniškai 9,8 m/s² pagreitis, kurį patiriame Žemės paviršiuje dėl gravitacijos.</string>
+    <string name="sensor_desc_first_paragraph_decibel">Garsus sukelia vibracija. Pavyzdžiui, jūsų balsas randasi dėl gerklėje esančių balso stygų vibracijos. Šios vibracijos sukelia besikeičiančias aukšto ir žemo oro slėgio sritis, kurios plinta išorėn panašiai kaip besiplečiantys raibuliuojantys ratilai vandens paviršiuje įmetus akmenuką į tvenkinį.</string>
+    <string name="sensor_desc_second_paragraph_decibel">Visi garsai gali būti aprašomi pagal jų dažnį ir stiprį.
+
+Stiprį matuojate naudodamiesi „Science Journal“, jis matuojamas decibelais (dB). Garso stipris, arba garsumas, priklauso nuo atstumo, kurį nukeliauja vibruojantis objektas kas kartą, kai jis vibruoja, – didesnio stiprio garsą girdime kaip garsesnį. 
+
+Garso bangos dažnis (taip pat aukštis ar tonas) yra lygus jos vibracijos dažniui. Kuo greičiau vibruoja objektas, tuo aukštesnis garsas išgaunamas. „Science Journal“ nematuoja dažnio, tik garsumą. 
+
+Vienas svarbūs dalykas, kurį turėtumėte žinoti, yra tai, kad įrenginyje esantis mikrofonas sukurtas taip, kad jautriai fiksuotų garso bangų skirtumus per laiką, bet ne pagal absoliutų kiekvienos bangos dydį. Bandėme pasirinkti kodą, kurį naudojant gaunamos vertės, panašios į toliau parodytas normines vertes, bet kiekvienas įrenginys gali pateikti nuosekliai didesnes ar mažesnes vertes. Mokslininkai tokius jutiklius paprastai kalibruoja pagal žinomus matavimus. Kol kas „Science Journal“ gali nustatyti, ar kitas jūsų pasivažinėjimas traukiniu bus garsesnis už kitą roko koncertą, į kurį eisite, bet tik tokiu atveju, jei abu kartus turėsite tą patį telefoną. 
+
+Kitas svarbūs dalykas, kurį turėtumėte žinoti, yra tai, kad egzistuoja svarbūs skirtumai tarp „garso stiprio“, „garso stiprio lygio“ ir „garso slėgio“. Šiuose eksperimentuose juos vertiname kaip tą patį dalyką, bet jei norite sužinoti daugiau, paieškokite internete – yra daug išteklių apie šių matavimo vienetų skirtumus. 
+
+Tyliausias vidutinio žmogaus ausiai girdimas garsas yra 0 dB. Eilinis pokalbis atitinka apie 60 dB, o garsai, viršijantys apie 140 dB, yra skausmingi žmogaus ausiai. Bet garsas nebūtinai turi kelti skausmą, kad būtų žalingas. Nuolatinis 90 dB garso poveikis (maždaug dulkių siurblio skleidžiamo garsumo) gali ilgainiui sukelti klausos sutrikimų. 
+
+Decibelų skalė yra logaritminė ir turi tam tikrų subtilybių: 40 dB garso šaltinis nėra dvigubai stipresnis nei 20 dB šaltinis – jis stipresnis 100 kartų. Taip pat vienam skambančiam žadintuvui skleidžiant 70 dB garsą, dviejų skambančių žadintuvų garsas sudarys ne 140 dB, o 73 dB. Kaip sakėme, ši skalė keista. 
+
+10 dB garsą sukelia lapų čežėjimas 
+20 dB – šnabždėjimas maždaug už pusantro metro 
+30 dB – tylus šnabždesys 
+50 dB – liūtis 
+60 dB – įprastas pokalbis 
+90 dB – plaktuvas 
+100 dB – automobilis be duslintuvo 
+110 dB – rėkimas į ausį 
+120 dB – griaustinis 
+130 dB – pneumatinis kūjis 
+140 dB – kylanti lėktuvas</string>
+    <string name="sensor_desc_first_paragraph_pitch">Garsus sukelia vibracija. Pavyzdžiui, jūsų balsas randasi dėl gerklėje esančių balso stygų vibracijos. Šios vibracijos sukelia besikeičiančias aukšto ir žemo oro slėgio sritis, kurios plinta išorėn panašiai kaip besiplečiantys raibuliuojantys ratilai vandens paviršiuje įmetus akmenuką į tvenkinį.</string>
+    <string name="sensor_desc_second_paragraph_pitch">Visi garsai gali būti aprašomi pagal jų dažnį ir stiprį. Garso bangos dažnis (taip pat aukštis ar tonas) yra lygus jos vibracijos dažniui. Kuo greičiau vibruoja objektas, tuo aukštesnis garsas išgaunamas. Šią vibraciją matuojame herzais (Hz), kai 1 hercas = 1 vibracija per sekundę.
+
+Žmonės gali girdėti garsus, kurie patenka į 20–20 000 Hz intervalą. Žemiausias pianino klavišas skleidžia 27,5 Hz dažnio garsą, o aukščiausias pianino klavišas – 4186,01 Hz dažnio garsą. 
+
+Raudonas taškas rodo, kokiu atstumu užfiksuotas tonas yra nuo artimiausios muzikinės natos. Jei tonas yra žemesnis arba „duslesnis“, taškas rodomas kairėje. Jei tonas yra aukštesnis arba „aštresnis“, taškas rodomas dešinėje.</string>
+    <string name="pitch_low_content_description">žemas tonas</string>
+    <string name="pitch_flatter_than_natural_note_content_description">%3$s puston. žemesnis nei %1$s, %2$s oktava</string>
+    <string name="pitch_flatter_than_flat_note_content_description">%3$s puston. žemesnis nei %1$s bemolis, %2$s oktava</string>
+    <string name="pitch_flatter_than_sharp_note_content_description">%3$s puston. žemesnis ne %1$s diezas, %2$s oktava</string>
+    <string name="pitch_natural_note_content_description">%1$s, %2$s oktava</string>
+    <string name="pitch_flat_note_content_description">%1$s bemolis, %2$s oktava</string>
+    <string name="pitch_sharp_note_content_description">%1$s diezas, %2$s oktava</string>
+    <string name="pitch_sharper_than_natural_note_content_description">%3$s puston. aukštesnis nei %1$s, %2$s oktava</string>
+    <string name="pitch_sharper_than_flat_note_content_description">%3$s puston. aukštesnis nei %1$s bemolis, %2$s oktava</string>
+    <string name="pitch_sharper_than_sharp_note_content_description">%3$s puston. aukštesnis nei %1$s diezas, %2$s oktava</string>
+    <string name="pitch_high_content_description">aukštas tonas</string>
+    <string name="sensor_desc_first_paragraph_rotation">Apsisukimai per minutę (APM) – tai apsisukimo apie fiksuotą ašį dažnio per vieną minutę matavimas.
+
+Sukdamasis vėjo malūnėlis sukioja kodavimo diską:</string>
+    <string name="sensor_desc_second_paragraph_rotation">Jutiklis fiksuoja šviesos ir tamsos tarpsnius, kurie „Science Journal“ registruojami kaip apsisukimai.</string>
+    <string name="sensor_desc_first_paragraph_raw">Čia rodomi duomenys gaunami iš išorinio jutiklio, susieto su jūsų telefonu „Bluetooth“ ryšiu.
+
+Vertė nurodo pirminių duomenų nuskaitymą tiesiai iš jūsų mikrovaldiklio procentais. Paprastai tai yra procentais išreikštas įtampos kritimas, kurį aptinka jutiklis.</string>
+    <string name="sensor_desc_second_paragraph_raw">„Bluetooth“ – tai belaidė technologija, įprastai radijo bangomis nedideliais atstumais perduodanti duomenis iš fiksuotojo ir mobiliojo ryšio įrenginių.</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">Čia rodomi duomenys gaunami iš išorinio jutiklio, susieto su jūsų telefonu „Bluetooth“ ryšiu.</string>
+    <string name="sensor_desc_second_paragraph_unknown_bluetooth">„Bluetooth“ – tai belaidė technologija, įprastai radijo bangomis nedideliais atstumais perduodanti duomenis iš fiksuotojo ir mobiliojo ryšio įrenginių.</string>
+    <string name="sensor_desc_first_paragraph_barometer">Nors tai retai pastebime, visi gyvename gilaus oro telkinio dugne: Žemės atmosferoje, kuri tęsiasi į viršų 40 kilometrų (130 000 pėdų). Viso šio mus slegiančio oro svoris vadinamas atmosferos slėgiu.
+
+Jūros lygyje atmosferos slėgis kiekvieną kvadratinį centimetrą veikia 1033 g jėga – tai tas pats, lyg maždaug 589,67 kg jėga slėgtų standartinio dydžio popieriaus lapą.</string>
+    <string name="sensor_desc_second_paragraph_barometer">Šio didelio slėgio nejuntame, nes esame prie jo pripratę. Tai yra, pajuntame tik tada, kai jis pasikeičia, kad ir nedaug, pavyzdžiui, kai esame gerokai aukščiau virš jūros lygio ar skrendame lėktuvu. Atmosferos slėgis taip pat kinta priklausomai nuo oro sąlygų: krenta, kai oras audringas ir nepastovus, ir kyla, kai oras tampa pastovus ir dangus išsigiedrija.
+
+Telefone esantis skaitmeninis barometras atmosferos slėgį matuoja hektopaskaliais (hektopaskalis yra 100 paskalių, o paskalis yra vieno niutono jėga, kuria veikiamas vienas kvadratinis metras). Tikriausiai girdėjote orų pranešėjus atmosferos slėgį nurodant milibarais – tai labiau įprasti matavimo vienetai, lygiaverčiai hektopaskaliams. 
+
+Gali kilti klausimas: kodėl telefonu reikėtų matuoti slėgį? Atmosferos slėgis pastebimai keičiasi, kai nors šiek tiek pasikeičia aukštis virš jūros lygio, pavyzdžiui, kai užlipate laiptų pakopa. Taigi telefone įtaisytas skaitmeninis barometras gali padėti nustatyti vietos pokyčius, pavyzdžiui, galite sužinoti, kokiame aukšte ar pastate esate, arba tai, ar važiuojate apatine ar viršutine tilto eile.</string>
+    <string name="run_review_activity_label">Peržiūra</string>
+    <string name="service_notification_content_title">Science Journal</string>
+    <string name="service_notification_content_text">Įrašoma…</string>
+    <string name="live_graph_content_description">Tiesioginė jutiklio diagrama. Vilkite, kad matytumėte X ašies vaizdą, suimkite, kad priartintumėte Y ašį.</string>
+    <string name="static_graph_content_description">Jutiklio diagrama. Suimkite, kad priartintumėte; vilkite, kad matytumėte vaizdą; du kartu palieskite, kad nutolintumėte.</string>
+    <string name="sensor_card_overflow_menu_content_description">Kortelės parinktys</string>
+    <string name="sensor_tab_layout_content_description">Pasiekiami jutikliai</string>
+    <string name="title_activity_sensor_info">Jutiklio informacija</string>
+    <string name="title_activity_sensor_info_format">Jutiklis „%s“</string>
+    <string name="heading_info_section">Kaip tai vyksta?</string>
   <string name="edit_note_time">Pastabos redagav. laikas</string>
   <string name="delete_note_menu_item">Ištrinti</string>
   <string name="delete_run">Ištrinti</string>
@@ -220,11 +291,8 @@
   <string name="default_trial_title">Įrašas %1$d</string>
   <string name="run_review_switch_sensor_btn_prev">Ankstesnis jutiklis: „%s“</string>
   <string name="run_review_switch_sensor_btn_next">Kitas jutiklis: „%s“</string>
-  <string name="add_note_hint_text">Pridėti naują pastabą</string>
   <string name="snackbar_note_deleted">Pastaba ištrinta</string>
   <string name="snackbar_undo">Anuliuoti</string>
-  <string name="add_run_note_placeholder_text">Pridėti pastabą prie šio įrašo</string>
-  <string name="add_note_image_button_content_description">Nufotografuoti ir pridėti pastabą</string>
   <string name="pinned_note_placeholder_text">Pridėti pastabą</string>
   <string name="indeterminate_value">--</string>
   <string name="archived_badge">Suarchyvuotas</string>
@@ -246,42 +314,72 @@
   <string name="edit_trial_title_hint">Įrašo pavadinimas</string>
   <string name="include_archived_trials">Rodyti suarchyvuotus įrašus</string>
   <string name="export_error">Eksportuoti nepavyko.</string>
-  <string name="no_app_found_for_csv">Neįdiegta jokia programa, kurią naudojant būtų galima atlikti CSV eksportą.</string>
-  <string name="listing_title">Science Journal</string>
-  <string name="listing_tagline">Eksperimentuokite su pasauliu.</string>
-  <string name="listing_changelog">Naujos funkcijos ir patobulinimai.
-\n\u2022 Atsisiųskite eksperimentus, nuotraukas ir jutiklio įrašus į įrenginį.
-\n\u2022 Pridėtas palaikymas prisijungimui prie „Arduino MKR WiFi 1010“ skydų.</string>
-  <string name="listing_changelog_features">Naujos funkcijos:</string>
-  <string name="listing_changelog_bug_fixes">Našumo patobulinimai ir riktų pataisymai.</string>
-  <string name="listing_changelog_separator">\n\n﻿</string>
-  <string name="listing_h_feature_1">\n• Garso aukščio jutiklis.</string>
-  <string name="listing_h_feature_2">\n• Eksportuoti eksperimentus į failą ir importuoti juos į kitus įrenginius.</string>
-  <string name="listing_h_feature_3">\n• Eksportuoti nuotraukas iš eksperimento.</string>
-  <string name="listing__description">„Science Journal“ yra „Google“ sukurta nemokama skaitmeninė mokslo užrašinė.
-\n
-\nNesvarbu, kas esate – mokslo pedagogas ar mėgėjas, užsiimantis moksline veikla namuose, – galite išsaugoti užrašus, nuotraukas ir stebėjimus vienoje patogioje vietoje. Naudodami telefono jutiklius matuokite ir grafiškai atvaizduokite reiškinius, pvz., šviesą, garsą ir judėjimą, arba prisijunkite prie išorinių jutiklių „Bluetooth“ ryšiu, kad atliktumėte eksperimentus jus supančiame pasaulyje.
-\n
-\nNaudodamiesi „Science Journal“ programa galite atlikti toliau išvardytus veiksmus.
-\n\u2022 Naudodami telefono įtaisytuosius jutiklius išmatuoti šviesą, garsą, pagreitį, oro slėgį ir daugiau.
-\n\u2022 Išsaugoti užrašus ir nuotraukas, kad dokumentuotumėte mokslinius eksperimentus. Greitai bus pristatyta daugiau užrašų tipų!
-\n\u2022 Prisijungti prie išorinių jutiklių, naudodami „Arduino“ ir „Vernier“ įrenginius, kuriuose įgalintas „Bluetooth“ ryšys.
-\n\u2022 Pasiekti eksperimentus savo įrenginiuose naudodami „Google“ diską.
-\n\u2022 Eksportuoti įrašytus jutiklių duomenis kaip CSV failus.
-\n\u2022 Sukurti automatinius duomenų įrašymo ir užrašų išsaugojimo suaktyvinimo veiksmus.
-\n\u2022 Naudodami sonifikaciją įgarsinti diagramų judėjimą.
-\n
-\nGalimos nemokamos „Science Journal“ versijos „Android“, „iPhone“, „iPad“ ir suderinamiems „Chromebook“ įrenginiams
-\n
-\nMūsų partnerių šviečiamoji veikla: https://makingscience.withgoogle.com/science-journal/activities
-\nFor support: https://productforums.google.com/forum/#!forum/sciencejournal
-\nOpen-source code available: https://github.com/google/science-journal
-\n\n
+    <string name="no_app_found_for_csv">Neįdiegta jokia programa, kurią naudojant būtų galima atlikti CSV eksportą.</string>
+    <string name="listing_title">Science Journal</string>
+    <string name="listing_tagline">Eksperimentuokite su pasauliu.</string>
+    <string name="listing_changelog">Naujos funkcijos ir patobulinimai.
+
+\u2022 Atsisiųskite eksperimentus, nuotraukas ir jutiklio įrašus į įrenginį.
+
+\u2022 Pridėtas palaikymas prisijungimui prie „Arduino MKR WiFi 1010“ skydų.</string>
+    <string name="listing_changelog_features">Naujos funkcijos:</string>
+    <string name="listing_changelog_bug_fixes">Našumo patobulinimai ir riktų pataisymai.</string>
+    <string name="listing_changelog_separator">
+
+﻿</string>
+    <string name="listing_h_feature_1">
+• Garso aukščio jutiklis.</string>
+    <string name="listing_h_feature_2">
+• Eksportuoti eksperimentus į failą ir importuoti juos į kitus įrenginius.</string>
+    <string name="listing_h_feature_3">
+• Eksportuoti nuotraukas iš eksperimento.</string>
+    <string name="listing__description">„Science Journal“ yra „Google“ sukurta nemokama skaitmeninė mokslo užrašinė.
+
+
+
+Nesvarbu, kas esate – mokslo pedagogas ar mėgėjas, užsiimantis moksline veikla namuose, – galite išsaugoti užrašus, nuotraukas ir stebėjimus vienoje patogioje vietoje. Naudodami telefono jutiklius matuokite ir grafiškai atvaizduokite reiškinius, pvz., šviesą, garsą ir judėjimą, arba prisijunkite prie išorinių jutiklių „Bluetooth“ ryšiu, kad atliktumėte eksperimentus jus supančiame pasaulyje.
+
+
+
+Naudodamiesi „Science Journal“ programa galite atlikti toliau išvardytus veiksmus.
+
+\u2022 Naudodami telefono įtaisytuosius jutiklius išmatuoti šviesą, garsą, pagreitį, oro slėgį ir daugiau.
+
+\u2022 Išsaugoti užrašus ir nuotraukas, kad dokumentuotumėte mokslinius eksperimentus. Greitai bus pristatyta daugiau užrašų tipų!
+
+\u2022 Prisijungti prie išorinių jutiklių, naudodami „Arduino“ ir „Vernier“ įrenginius, kuriuose įgalintas „Bluetooth“ ryšys.
+
+\u2022 Pasiekti eksperimentus savo įrenginiuose naudodami „Google“ diską.
+
+\u2022 Eksportuoti įrašytus jutiklių duomenis kaip CSV failus.
+
+\u2022 Sukurti automatinius duomenų įrašymo ir užrašų išsaugojimo suaktyvinimo veiksmus.
+
+\u2022 Naudodami sonifikaciją įgarsinti diagramų judėjimą.
+
+
+
+Galimos nemokamos „Science Journal“ versijos „Android“, „iPhone“, „iPad“ ir suderinamiems „Chromebook“ įrenginiams
+
+
+
+Mūsų partnerių šviečiamoji veikla: https://makingscience.withgoogle.com/science-journal/activities
+
+For support: https://productforums.google.com/forum/#!forum/sciencejournal
+
+Open-source code available: https://github.com/google/science-journal
+
+
+
 Toliau pateiktas pranešimas apie leidimus.
-\n\u2022 Vietovė: reikalinga, kad būtų galima nuskaityti „Bluetooth“ jutiklių įrenginius.
-\n\u2022 Fotoaparatas: reikalinga, kad būtų galima fotografuoti, siekiant dokumentuoti eksperimentus.
-\n\u2022 Mikrofonas: reikalinga dėl garso stiprumo jutiklio.
-\n\u2022 Saugykla: reikalinga, kad būtų galima pasiekti į eksperimentus įterpiamas nuotraukas.</string>
+
+\u2022 Vietovė: reikalinga, kad būtų galima nuskaityti „Bluetooth“ jutiklių įrenginius.
+
+\u2022 Fotoaparatas: reikalinga, kad būtų galima fotografuoti, siekiant dokumentuoti eksperimentus.
+
+\u2022 Mikrofonas: reikalinga dėl garso stiprumo jutiklio.
+
+\u2022 Saugykla: reikalinga, kad būtų galima pasiekti į eksperimentus įterpiamas nuotraukas.</string>
   <string name="third_party_sensors_option_title">Ieškoti trečiosios šalies jutiklių</string>
   <string name="third_party_sensors_option_summary">Ieškokite programų, kurios palaiko trečiosios šalies jutiklių API ir leidžia šiuos jutiklius pridėti prie eksperimentų.</string>
   <string name="enable_temperature_sensor_title">Įgalinti aplinkos temperat. jutiklį</string>
@@ -331,26 +429,6 @@ Toliau pateiktas pranešimas apie leidimus.
   <string name="trigger_when_above_description">%1$s, kai jutiklio užfiksuota vertė viršija %2$s %3$s</string>
   <string name="trigger_when_below_description">%1$s, kai jutiklio užfiksuota vertė yra mažesnė nei %2$s %3$s</string>
   <string name="sensor_trigger_deleted">Aktyviklis ištrintas</string>
-  <string-array name="trigger_type_list">
-    <item>@string/trigger_type_start_recording</item>
-    <item>@string/trigger_type_stop_recording</item>
-    <item>@string/trigger_type_note</item>
-    <item>@string/trigger_type_alert</item>
-  </string-array>
-  <string-array name="trigger_when_list">
-    <item>@string/trigger_when_at</item>
-    <item>@string/trigger_when_rises_above</item>
-    <item>@string/trigger_when_drops_below</item>
-    <item>@string/trigger_when_is_above</item>
-    <item>@string/trigger_when_is_below</item>
-  </string-array>
-  <string-array name="trigger_when_list_note_text">
-    <item>vertė –</item>
-    <item>vertė viršijo</item>
-    <item>vertė nukrito žemiau</item>
-    <item>vertė didesnė nei</item>
-    <item>vertė mažesnė nei</item>
-  </string-array>
   <string name="trigger_only_when_recording">Aktyviklį naudoti tik įrašant</string>
   <string name="trigger_snackbar_auto_text">%1$s %2$s %3$.2f %4$s</string>
   <string name="scroll_to_card">rodyti</string>
@@ -393,90 +471,90 @@ Toliau pateiktas pranešimas apie leidimus.
   <string name="timestamp_picker_range_error">Laikas turi patekti į band. laiko ribas</string>
   <string name="timestamp_picker_crop_range_error">Negalima įrašyti trumpesnių nei viena sekundė atkarpų</string>
   <string name="timestamp_picker_prompt">Nauj. laik. (h:mm:ss.SSS)</string>
-  <string name="crop_failed_range_too_large">Bandymo atkarpos, kuri nepatenka į įrašyto bandymo laiko ribas, įrašyti negalima</string>
-  <string name="crop_failed_range_too_small">Negalima įrašyti trumpesnės nei viena sekundė bandymo atkarpos</string>
-  <string name="project_experiment_title">„%1$s“ – „%2$s“</string>
-  <string name="export_options_title">Eksportuojama…</string>
-  <string name="export_options_relative_time">Santykinis laikas</string>
-  <string name="old_trigger_note_format">Suaktyvinta pastaba: %1s</string>
-  <string name="old_trigger_note_format_custom">Suaktyvinta pastaba: %1$s; %2$s</string>
-  <string name="compass">Kompasas</string>
-  <string name="compass_units">laipsniai</string>
-  <string name="sensor_desc_short_compass">Telefono padėtis atsižvelgiant į Žemės magnetinį lauką.</string>
-  <string name="sensor_desc_first_paragraph_compass">Tikriausiai žinote, kad Žemė turi magnetinį lauką. Tačiau galbūt nežinote, kad telefone yra įrenginys, skirtas magnetiniams laukams aptikti – magnetometras. Derindami telefono magnetometro duomenis su telefono padėtimi erdvėje galime sukurti skaitmeninį kompasą. \n\nPaprasčiausias magnetometras yra senamadiškas kompasas su įmagnetinta rodykle, kuri sukasi pagal aplink esantį magnetinį lauką. Telefone jokio mažyčio kompaso nėra – jame įmontuotas mažas trijų ašių jutiklis, kuris naudodamas elektros sroves nustato magnetinio lauko stiprumą trimatėje erdvėje. Tačiau vien to nepakanka kompasui sukurti! \n\nKodėl, siekiant sukurti kompasą, magnetometro duomenis reikia derinti su telefono padėtimi? Žinodami telefono padėtį galime apskaičiuoti magnetinį sukimąsi, net jei telefonas nelaikomas gulsčiai, toje pačioje plokštumoje kaip Žemės magnetinis laukas. Žinome, kad sunkis Žemės magnetinį lauką veikia statmenai, todėl, pasinaudoję akcelerometro jutiklių nurodyta sunkio kryptimi, galime nustatyti, kokia dalis magnetinio lauko yra toje pačioje plokštumoje kaip Žemės magnetinis laukas.</string>
-  <string name="sensor_desc_second_paragraph_compass">Galbūt pastebėjote, kad kompasas reaguoja ne tik į Žemės magnetinį lauką, bet ir į visus aplink esančius magnetinius laukus. Magnetai, elektros srovės ir metaliniai objektai telefono magnetometrą lengvai nukreipia visomis kryptimis. Jei norite būti tikri, kad raudona magnetometro rodyklė sukasi pagal Žemės magnetinį lauką, atsistokite atviroje vietoje – geriausiai lauke ir toli nuo elektros linijų. Jei norite kalibruoti telefono magnetometrą, judinkite telefoną pagal 8 pav. pateiktą pavyzdį.</string>
-  <string name="text_label_details_title">Redaguoti teksto pastabą</string>
-  <string name="empty_text_note_error">Teksto pastabų laukai negali būti tušti</string>
-  <string name="navigation_item_experiments">Eksperimentai</string>
-  <string name="note_caption_hint">Pridėti aprašą</string>
-  <string name="month_year_format">yyyy-MM</string>
-  <string name="linear_accelerometer">Linijinis akcelerometras</string>
-  <string name="sensor_desc_short_linear_acc">Visas telefono pagreitis, išskyrus sunkio jėgą, m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Objektai turi polinkį likti vietoje arba judėti toliau, jei juda, – tai vadiname inercija. Pirmasis Niutono dėsnis nusako šią idėją pagal tokią formulę: jei objekto nepaveikia išorinė jėga, jis toliau tolygiai juda arba išlaiko rimties būseną. \n\nKai išorinė jėga išjudina objektą, sakome, kad objektas įgyja pagreitį: pasikeičia jo greitis ar tempas – objekto judėjimas pagreitėja, sulėtėja ar pakeičia kryptį. Pagreitis matuojamas įvertinant greičio pokytį per laiką (metrais per sekundę) arba metrais per sekundę kvadratu (m/s²). \n\nJūsų telefone yra įrenginys, matuojantis šiuos judėjimo pokyčius – akcelerometras. Jame pakabinti nedideli laisvai judantys svoriai. Pasikeitus judėjimui pajudinami ir šie svoriai, panašiai kaip jūsų galva, krestelėjusi pirmyn, jums sėdint automobilyje, kuris staiga sustoja. Matuodamas šiuos vos pastebimus inertinius judesius telefono akcelerometras gali aptikti judėjimo ir orientacijos pokyčius. Tai naudinga perjungiant ekrano padėtį iš gulsčio režimo į stačią, žaidžiant žaidimus ir pan.</string>
-  <string name="sensor_desc_second_paragraph_linear_acc">Šis suderintas linijinio akcelerometro jutiklis įrašo visą pagreitį naudodamas visas tris telefono ašis, išskyrus sunkį.</string>
-  <string name="data_with_units">%1$s %2$s</string>
-  <string name="edit_note_time_menu_item">Redaguoti laiką</string>
-  <string name="add_note_button_text">Pridėti pastabą prie laiko juostos</string>
-  <string name="add_note_to_time_text">Pridėkite pastabą prie %1$s</string>
-  <string name="trial_caption_hint_text">Čia pridėkite įrašo aprašą</string>
-  <string name="snapshot_label_details_title">Moment. nuotraukos išsami inf.</string>
-  <string name="trigger_label_details_title">Suaktyv. pastabos išsami inf.</string>
-  <string name="tool_picker_tab_layout_description">Galimi įrankiai</string>
-  <string name="tab_description_add_note">Rašyti tekstą</string>
-  <string name="tab_description_observe">Stebėti jutiklius</string>
-  <string name="tab_description_camera">Fotografuoti</string>
-  <string name="load_more_notes_btn">Peržiūrėti daugiau pastabų</string>
-  <string name="name_experiment_dialog_title">Šiam eksperimentui suteikite pavadinimą</string>
-  <string name="empty_experiment_title_error">Pavadinimo laukas negali būti tuščias</string>
-  <string name="card_recording_title">%1$s…</string>
-  <string name="throbber_content_description">Vyksta įrašymas</string>
-  <string name="trigger_label_name_header">%1$s %2$s</string>
-  <string name="description_hint">Aprašas</string>
-  <string name="details_header">Išsami informacija</string>
-  <string name="text_label_hint">Pridėti stebėjimą</string>
-  <string name="first_experiment_title">Sveiki, tai – „Science Journal“!</string>
-  <string name="first_experiment_text_note">Pabandykite rašyti pastabas ir įrašyti duomenis naudodami toliau pateiktą įrankių juostą!</string>
-  <string name="first_experiment_picture_note_caption">Sveiki, tai – „Science Journal“!</string>
-  <string name="first_experiment_second_text_note">Eksperimentų, kuriuos galėtumėte atlikti, rasite adresu \ng.co/sciencejournalactivities</string>
-  <string name="experiment_cover_description">Pasirinkite eksperimento nuotrauką</string>
-  <string name="btn_take_picture_content_description">Fotografuoti</string>
-  <string name="tab_description_gallery">Pasirinkti nuotrauką</string>
-  <string name="gallery_image_content_description">Vaizdas nufotografuotas %s</string>
-  <string name="gallery_image_content_description_selected">Pasirinkto vaizdo numeris – %1$d. Vaizdas nufotografuotas %2$s.</string>
-  <string name="content_description_selected">pasirinkta</string>
-  <string name="gallery_selected_title">Pasirinkta %1$d</string>
-  <string name="photo_editor_dialog_title">Redaguokite nuotrauką naudodami...</string>
-  <string name="btn_show_tools">Rodyti įrankio skydelį</string>
-  <string name="btn_expand_tools">Išskleisti įrankio skydelį</string>
-  <string name="btn_hide_tools">Sutraukti įrankio skydelį</string>
-  <string name="action_edit_photo">Redaguoti nuotrauką</string>
-  <string name="add_text_note">Pridėti užrašą</string>
-  <string name="camera_preview_content_description">Tiesioginis fotoaparato rodinys</string>
-  <string name="input_camera_permission_denied">Fotoaparato naudoti negalima, nes „Science Journal“ neturi leidimo pasiekti jį.</string>
-  <string name="input_photo_library_permission_denied">Nuotraukų galerijos naudoti negalite, nes „Science Journal“ neturi leidimo jos pasiekti.</string>
-  <string name="action_show_archived_experiments">Rodyti suarchyvuotus eksperimentus</string>
-  <string name="action_hide_archived_experiments">Slėpti suarchyvuotus eksperimentus</string>
-  <string name="action_hide_archived_trials">Slėpti suarchyvuotus įrašus</string>
-  <string name="snapshot_button_description">Jutiklio duomenų įrašas</string>
-  <string name="notification_channel_name">Įrašai</string>
-  <string name="notification_channel_description">Įrašymo būsena</string>
-  <string name="import_failed_recording">„Science Journal“ šiuo metu naudojama. Sustabdykite įrašymą ir bandykite dar kartą.</string>
-  <string name="import_failed_file">Importuoti nepavyko. Dėl šio eksperimento kilo problemų.</string>
-  <string name="import_failed">Apgailestaujame, įvyko nežinoma klaida.</string>
-  <string name="explore_your_world">Tirkite jus supantį pasaulį</string>
-  <string name="use_science_journal">Naudodami „Science Journal“ atlikite\neksperimentus ir tirkite jus supantį pasaulį</string>
-  <string name="get_started">Pradžia</string>
-  <string name="sign_in_text">„Science Journal“ eksperimentų duomenys išsaugomi ir pasiekiami įvairiais įrenginiais naudojant „Google“ diską; norint juos pasiekti, reikia prisijungti prie „Google“ paskyros.\n\nJei šiame įrenginyje saugote duomenų, prisijungę galite išsaugoti esamus eksperimentus „Google“ diske. Eksperimentai saugomi „Google“ disko aplanke „Science Journal“.</string>
-  <string name="device_settings_applied">Esami įrenginio nustatymai pritaikyti šiai paskyrai</string>
-  <string name="sign_in_button">Prisijungti</string>
-  <string name="sign_in_learn_more_button">Sužinoti daugiau</string>
-  <string name="sign_in_continue_without_signing_in_button">Tęsti neprisijungus</string>
-  <string name="science_journal_disabled_title">„Science Journal“ išjungta</string>
-  <string name="science_journal_disabled_message">Domeno administratorius turi įjungti „Science Journal“ naudodamas „Google Admin Console“.</string>
-  <string name="science_journal_disabled_yes">Perjungti paskyras</string>
-  <string name="old_user_option_prompt_headline">Kopiją išsaugok. Google diske</string>
-  <plurals name="old_user_option_prompt_text">
-    <item quantity="one">Sveiki sugrįžę, šiame įrenginyje šiuo metu saugomas %1$d eksperimentas.\n\nJei norite tęsti, pasirinkite parinktį:</item>
+    <string name="crop_failed_range_too_large">Bandymo atkarpos, kuri nepatenka į įrašyto bandymo laiko ribas, įrašyti negalima</string>
+    <string name="crop_failed_range_too_small">Negalima įrašyti trumpesnės nei viena sekundė bandymo atkarpos</string>
+    <string name="project_experiment_title">„%1$s“ – „%2$s“</string>
+    <string name="export_options_title">Eksportuojama…</string>
+    <string name="export_options_relative_time">Santykinis laikas</string>
+    <string name="old_trigger_note_format">Suaktyvinta pastaba: %1s</string>
+    <string name="old_trigger_note_format_custom">Suaktyvinta pastaba: %1$s; %2$s</string>
+    <string name="compass">Kompasas</string>
+    <string name="compass_units">laipsniai</string>
+    <string name="sensor_desc_short_compass">Telefono padėtis atsižvelgiant į Žemės magnetinį lauką.</string>
+    <string name="sensor_desc_first_paragraph_compass">Tikriausiai žinote, kad Žemė turi magnetinį lauką. Tačiau galbūt nežinote, kad telefone yra įrenginys, skirtas magnetiniams laukams aptikti – magnetometras. Derindami telefono magnetometro duomenis su telefono padėtimi erdvėje galime sukurti skaitmeninį kompasą.
+
+Paprasčiausias magnetometras yra senamadiškas kompasas su įmagnetinta rodykle, kuri sukasi pagal aplink esantį magnetinį lauką. Telefone jokio mažyčio kompaso nėra – jame įmontuotas mažas trijų ašių jutiklis, kuris naudodamas elektros sroves nustato magnetinio lauko stiprumą trimatėje erdvėje. Tačiau vien to nepakanka kompasui sukurti! 
+
+Kodėl, siekiant sukurti kompasą, magnetometro duomenis reikia derinti su telefono padėtimi? Žinodami telefono padėtį galime apskaičiuoti magnetinį sukimąsi, net jei telefonas nelaikomas gulsčiai, toje pačioje plokštumoje kaip Žemės magnetinis laukas. Žinome, kad sunkis Žemės magnetinį lauką veikia statmenai, todėl, pasinaudoję akcelerometro jutiklių nurodyta sunkio kryptimi, galime nustatyti, kokia dalis magnetinio lauko yra toje pačioje plokštumoje kaip Žemės magnetinis laukas.</string>
+    <string name="sensor_desc_second_paragraph_compass">Galbūt pastebėjote, kad kompasas reaguoja ne tik į Žemės magnetinį lauką, bet ir į visus aplink esančius magnetinius laukus. Magnetai, elektros srovės ir metaliniai objektai telefono magnetometrą lengvai nukreipia visomis kryptimis. Jei norite būti tikri, kad raudona magnetometro rodyklė sukasi pagal Žemės magnetinį lauką, atsistokite atviroje vietoje – geriausiai lauke ir toli nuo elektros linijų. Jei norite kalibruoti telefono magnetometrą, judinkite telefoną pagal 8 pav. pateiktą pavyzdį.</string>
+    <string name="text_label_details_title">Redaguoti teksto pastabą</string>
+    <string name="empty_text_note_error">Teksto pastabų laukai negali būti tušti</string>
+    <string name="navigation_item_experiments">Eksperimentai</string>
+    <string name="note_caption_hint">Pridėti aprašą</string>
+    <string name="month_year_format">yyyy-MM</string>
+    <string name="linear_accelerometer">Linijinis akcelerometras</string>
+    <string name="sensor_desc_short_linear_acc">Visas telefono pagreitis, išskyrus sunkio jėgą, m/s²</string>
+    <string name="sensor_desc_first_paragraph_linear_acc">Objektai turi polinkį likti vietoje arba judėti toliau, jei juda, – tai vadiname inercija. Pirmasis Niutono dėsnis nusako šią idėją pagal tokią formulę: jei objekto nepaveikia išorinė jėga, jis toliau tolygiai juda arba išlaiko rimties būseną.
+
+Kai išorinė jėga išjudina objektą, sakome, kad objektas įgyja pagreitį: pasikeičia jo greitis ar tempas – objekto judėjimas pagreitėja, sulėtėja ar pakeičia kryptį. Pagreitis matuojamas įvertinant greičio pokytį per laiką (metrais per sekundę) arba metrais per sekundę kvadratu (m/s²). 
+
+Jūsų telefone yra įrenginys, matuojantis šiuos judėjimo pokyčius – akcelerometras. Jame pakabinti nedideli laisvai judantys svoriai. Pasikeitus judėjimui pajudinami ir šie svoriai, panašiai kaip jūsų galva, krestelėjusi pirmyn, jums sėdint automobilyje, kuris staiga sustoja. Matuodamas šiuos vos pastebimus inertinius judesius telefono akcelerometras gali aptikti judėjimo ir orientacijos pokyčius. Tai naudinga perjungiant ekrano padėtį iš gulsčio režimo į stačią, žaidžiant žaidimus ir pan.</string>
+    <string name="sensor_desc_second_paragraph_linear_acc">Šis suderintas linijinio akcelerometro jutiklis įrašo visą pagreitį naudodamas visas tris telefono ašis, išskyrus sunkį.</string>
+    <string name="data_with_units">%1$s %2$s</string>
+    <string name="edit_note_time_menu_item">Redaguoti laiką</string>
+    <string name="add_note_to_time_text">Pridėkite pastabą prie %1$s</string>
+    <string name="snapshot_label_details_title">Moment. nuotraukos išsami inf.</string>
+    <string name="trigger_label_details_title">Suaktyv. pastabos išsami inf.</string>
+    <string name="load_more_notes_btn">Peržiūrėti daugiau pastabų</string>
+    <string name="name_experiment_dialog_title">Šiam eksperimentui suteikite pavadinimą</string>
+    <string name="empty_experiment_title_error">Pavadinimo laukas negali būti tuščias</string>
+    <string name="card_recording_title">%1$s…</string>
+    <string name="throbber_content_description">Vyksta įrašymas</string>
+    <string name="trigger_label_name_header">%1$s %2$s</string>
+    <string name="description_hint">Aprašas</string>
+    <string name="details_header">Išsami informacija</string>
+    <string name="text_label_hint">Pridėti stebėjimą</string>
+    <string name="first_experiment_title">Sveiki, tai – „Science Journal“!</string>
+    <string name="first_experiment_text_note">Pabandykite rašyti pastabas ir įrašyti duomenis naudodami toliau pateiktą įrankių juostą!</string>
+    <string name="first_experiment_picture_note_caption">Sveiki, tai – „Science Journal“!</string>
+    <string name="first_experiment_second_text_note">Eksperimentų, kuriuos galėtumėte atlikti, rasite adresu
+g.co/sciencejournalactivities</string>
+    <string name="experiment_cover_description">Pasirinkite eksperimento nuotrauką</string>
+    <string name="btn_take_picture_content_description">Fotografuoti</string>
+    <string name="gallery_image_content_description">Vaizdas nufotografuotas %s</string>
+    <string name="gallery_image_content_description_selected">Pasirinkto vaizdo numeris – %1$d. Vaizdas nufotografuotas %2$s.</string>
+    <string name="content_description_selected">pasirinkta</string>
+    <string name="gallery_selected_title">Pasirinkta %1$d</string>
+    <string name="photo_editor_dialog_title">Redaguokite nuotrauką naudodami...</string>
+    <string name="action_edit_photo">Redaguoti nuotrauką</string>
+    <string name="input_camera_permission_denied">Fotoaparato naudoti negalima, nes „Science Journal“ neturi leidimo pasiekti jį.</string>
+    <string name="input_photo_library_permission_denied">Nuotraukų galerijos naudoti negalite, nes „Science Journal“ neturi leidimo jos pasiekti.</string>
+    <string name="action_show_archived_experiments">Rodyti suarchyvuotus eksperimentus</string>
+    <string name="action_hide_archived_experiments">Slėpti suarchyvuotus eksperimentus</string>
+    <string name="action_hide_archived_trials">Slėpti suarchyvuotus įrašus</string>
+    <string name="snapshot_button_description">Jutiklio duomenų įrašas</string>
+    <string name="notification_channel_name">Įrašai</string>
+    <string name="notification_channel_description">Įrašymo būsena</string>
+    <string name="import_failed_recording">„Science Journal“ šiuo metu naudojama. Sustabdykite įrašymą ir bandykite dar kartą.</string>
+    <string name="import_failed_file">Importuoti nepavyko. Dėl šio eksperimento kilo problemų.</string>
+    <string name="import_failed">Apgailestaujame, įvyko nežinoma klaida.</string>
+    <string name="explore_your_world">Tirkite jus supantį pasaulį</string>
+    <string name="use_science_journal">Naudodami „Science Journal“ atlikite
+eksperimentus ir tirkite jus supantį pasaulį</string>
+    <string name="get_started">Pradžia</string>
+    <string name="sign_in_text">„Science Journal“ eksperimentų duomenys išsaugomi ir pasiekiami įvairiais įrenginiais naudojant „Google“ diską; norint juos pasiekti, reikia prisijungti prie „Google“ paskyros.
+
+Jei šiame įrenginyje saugote duomenų, prisijungę galite išsaugoti esamus eksperimentus „Google“ diske. Eksperimentai saugomi „Google“ disko aplanke „Science Journal“.</string>
+    <string name="device_settings_applied">Esami įrenginio nustatymai pritaikyti šiai paskyrai</string>
+    <string name="sign_in_button">Prisijungti</string>
+    <string name="sign_in_learn_more_button">Sužinoti daugiau</string>
+    <string name="sign_in_continue_without_signing_in_button">Tęsti neprisijungus</string>
+    <string name="science_journal_disabled_title">„Science Journal“ išjungta</string>
+    <string name="science_journal_disabled_message">Domeno administratorius turi įjungti „Science Journal“ naudodamas „Google Admin Console“.</string>
+    <string name="science_journal_disabled_yes">Perjungti paskyras</string>
+    <string name="old_user_option_prompt_headline">Kopiją išsaugok. Google diske</string>
+    <plurals name="old_user_option_prompt_text">
+        <item quantity="one">Sveiki sugrįžę, šiame įrenginyje šiuo metu saugomas %1$d eksperimentas.\n\nJei norite tęsti, pasirinkite parinktį:</item>
     <item quantity="few">Sveiki sugrįžę, šiame įrenginyje šiuo metu saugomi %1$d eksperimentai.\n\nJei norite tęsti, pasirinkite parinktį:</item>
     <item quantity="many">Sveiki sugrįžę, šiame įrenginyje šiuo metu saugoma %1$d eksperimento.\n\nJei norite tęsti, pasirinkite parinktį:</item>
     <item quantity="other">Sveiki sugrįžę, šiame įrenginyje šiuo metu saugoma %1$d eksperimentų.\n\nJei norite tęsti, pasirinkite parinktį:</item>
@@ -528,8 +606,6 @@ Toliau pateiktas pranešimas apie leidimus.
   <string name="remove_cover_image_confirm">Ar tikrai norite pašalinti viršelio vaizdą? Šio veiksmo anuliuoti negalima.</string>
   <string name="drive_sync_cannot_reach_google_drive">Nepavyksta pasiekti „Google“ disko. Patikrinkite ryšį.</string>
   <string name="experiment_title_concatenator">„%1$s“ / „%2$s“</string>
-  <string name="create_experiment_feature_discovery_title">Sukurkite naują eksperimentą</string>
-  <string name="create_experiment_feature_discovery_body">Savo mintis ir stebėjimus fiksuokite užsirašydami pastabas, įrašydami duomenis ar darydami nuotraukas</string>
   <string name="download_copy_action">Atsisiųsti</string>
   <string name="saved_to_device_text">Išsaug. atsisiuntimų apl.</string>
   <string name="download_options_title">Atsisiunčiama…</string>
@@ -551,16 +627,35 @@ Toliau pateiktas pranešimas apie leidimus.
   <string name="more_observations_draw_title">Brėžti</string>
   <string name="more_observations_draw_description">Pridėti brėžinių</string>
   <string name="more_observations_velocity_tracker_title">Greičio stebėj. priemonė</string>
-  <string name="more_observations_velocity_tracker_description">Išplėstosios realybės naudojimas, objektų stebėjimas ir matavimas</string>
-  <string name="fit_image_to_scan">TInk. vaizdą ir nuskait.</string>
-  <string name="ar_detecting_image">Aptinkamas vaizdas</string>
-  <string name="ar_not_tracking">Nestebima</string>
-  <string name="action_bar_text_note">Sukurti pastabą</string>
-  <string name="action_bar_sensor_note">Sukurti jutiklio įrašą</string>
-  <string name="action_bar_gallery">Pasirinkite vaizdus</string>
-  <string name="action_bar_more">Daugiau duomenų</string>
-  <string name="note_saved">Pastaba išsaugota</string>
-  <string name="note_saved_action">Peržiūrėti</string>
-  <string name="announcement_card_button_text">Sužinoti daugiau</string>
-  <string name="dismiss_button_text">Atsisakyti</string>
+    <string name="more_observations_velocity_tracker_description">Išplėstosios realybės naudojimas, objektų stebėjimas ir matavimas</string>
+    <string name="fit_image_to_scan">TInk. vaizdą ir nuskait.</string>
+    <string name="ar_detecting_image">Aptinkamas vaizdas</string>
+    <string name="ar_not_tracking">Nestebima</string>
+    <string name="action_bar_text_note">Sukurti pastabą</string>
+    <string name="action_bar_sensor_note">Sukurti jutiklio įrašą</string>
+    <string name="action_bar_gallery">Pasirinkite vaizdus</string>
+    <string name="action_bar_more">Daugiau duomenų</string>
+    <string name="note_saved">Pastaba išsaugota</string>
+    <string name="note_saved_action">Peržiūrėti</string>
+    <string name="btn_add_experiment_note_description">Pridėti pastabą prie eksperimento</string>
+    <string name="btn_add_run_note_description">Pridėti pastabą prie bandymo etapo</string>
+    <string name="add_note_hint_text">Pridėti naują pastabą</string>
+    <string name="add_run_note_placeholder_text">Pridėti pastabą prie šio įrašo</string>
+    <string name="add_note_image_button_content_description">Nufotografuoti ir pridėti pastabą</string>
+    <string name="add_note_button_text">Pridėti pastabą prie laiko juostos</string>
+    <string name="trial_caption_hint_text">Čia pridėkite įrašo aprašą</string>
+    <string name="tool_picker_tab_layout_description">Galimi įrankiai</string>
+    <string name="tab_description_add_note">Rašyti tekstą</string>
+    <string name="tab_description_observe">Stebėti jutiklius</string>
+    <string name="tab_description_camera">Fotografuoti</string>
+    <string name="tab_description_gallery">Pasirinkti nuotrauką</string>
+    <string name="btn_show_tools">Rodyti įrankio skydelį</string>
+    <string name="btn_expand_tools">Išskleisti įrankio skydelį</string>
+    <string name="btn_hide_tools">Sutraukti įrankio skydelį</string>
+    <string name="add_text_note">Pridėti užrašą</string>
+    <string name="camera_preview_content_description">Tiesioginis fotoaparato rodinys</string>
+    <string name="create_experiment_feature_discovery_title">Sukurkite naują eksperimentą</string>
+    <string name="create_experiment_feature_discovery_body">Savo mintis ir stebėjimus fiksuokite užsirašydami pastabas, įrašydami duomenis ar darydami nuotraukas</string>
+    <string name="announcement_card_button_text">Sužinoti daugiau</string>
+    <string name="dismiss_button_text">Atsisakyti</string>
 </resources>

@@ -1,14 +1,44 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Arduino Science Journal</string>
-  <string name="action_feedback">Atsauksmes</string>
-  <string name="action_about">Par</string>
-  <string name="action_save">Saglabāt</string>
-  <string name="action_edit">Rediģēt</string>
-  <string name="action_archive_experiment">Arhivēt eksperimentu</string>
-  <string name="action_unarchive_experiment">Atarhivēt eksperimentu</string>
-  <string name="action_archive_run">Arhivēt</string>
-  <string name="action_unarchive_run">Atarhivēt</string>
-  <string name="action_delete">Dzēst</string>
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="sonification_types_dev">
+        <item>@string/amplitude</item>
+    </string-array>
+    <string-array name="sonification_types_prod">
+        <item>@string/default_sonification</item>
+        <item>@string/scale</item>
+        <item>@string/notes</item>
+        <item>@string/conductor</item>
+    </string-array>
+    <string-array name="trigger_type_list">
+        <item>@string/trigger_type_start_recording</item>
+        <item>@string/trigger_type_stop_recording</item>
+        <item>@string/trigger_type_note</item>
+        <item>@string/trigger_type_alert</item>
+    </string-array>
+    <string-array name="trigger_when_list">
+        <item>@string/trigger_when_at</item>
+        <item>@string/trigger_when_rises_above</item>
+        <item>@string/trigger_when_drops_below</item>
+        <item>@string/trigger_when_is_above</item>
+        <item>@string/trigger_when_is_below</item>
+    </string-array>
+    <string-array name="trigger_when_list_note_text">
+        <item>bija ar šādu paātrinājumu:</item>
+        <item>pārsniedza šādu paātrinājumu:</item>
+        <item>nokrita zem šāda paātrinājuma:</item>
+        <item>ir virs šāda paātrinājuma:</item>
+        <item>ir zem šāda paātrinājuma:</item>
+    </string-array>
+    <string name="app_name">Arduino Science Journal</string>
+    <string name="action_feedback">Atsauksmes</string>
+    <string name="action_about">Par</string>
+    <string name="action_save">Saglabāt</string>
+    <string name="action_edit">Rediģēt</string>
+    <string name="action_archive_experiment">Arhivēt eksperimentu</string>
+    <string name="action_unarchive_experiment">Atarhivēt eksperimentu</string>
+    <string name="action_archive_run">Arhivēt</string>
+    <string name="action_unarchive_run">Atarhivēt</string>
+    <string name="action_delete">Dzēst</string>
   <string name="sine_wave">Sinusa viļņi</string>
   <string name="vel">Ātrums</string>
   <string name="acc_x">X ass akselerometrs</string>
@@ -34,8 +64,6 @@
   <string name="action_retry">Mēģināt vēlreiz</string>
   <string name="decibel">Skaņas intensitāte</string>
   <string name="pitch">Tonis</string>
-  <string name="btn_add_experiment_note_description">Pievienot eksperimenta piezīmi</string>
-  <string name="btn_add_run_note_description">Pievienot izmēģinājuma piezīmi</string>
   <string name="btn_record_description">Sākt ierakstīšanu</string>
   <string name="btn_stop_description">Apturēt ierakstīšanu</string>
   <string name="btn_record_label">Ierakstīt</string>
@@ -143,15 +171,6 @@
   <string name="notes">Piezīmes</string>
   <string name="scale">Skala</string>
   <string name="conductor">Vadītājs</string>
-  <string-array name="sonification_types_prod">
-    <item>@string/default_sonification</item>
-    <item>@string/scale</item>
-    <item>@string/notes</item>
-    <item>@string/conductor</item>
-  </string-array>
-  <string-array name="sonification_types_dev">
-    <item>@string/amplitude</item>
-  </string-array>
   <string name="empty_experiment">Vēl nav neviena novērojuma</string>
   <string name="device_options_sensor_label_text">Sensors</string>
   <string name="external_sensor_appearance_name">%1$s — %2$s</string>
@@ -162,55 +181,107 @@
   <string name="device_options_custom_sensor_frequency_checkbox_text">Biežums</string>
   <string name="feedback_error_message">Nevarēja nosūtīt atsauksmi.</string>
   <string name="sensor_desc_short_acc_x">Tālruņa paātrinājums uz kreiso un labo pusi, m/s²</string>
-  <string name="sensor_desc_short_acc_y">Tālruņa paātrinājums uz priekšu un atpakaļ, m/s²</string>
-  <string name="sensor_desc_short_acc_z">Tālruņa paātrinājums uz augšu un uz leju, m/s²</string>
-  <string name="sensor_desc_short_decibel">Skaņas intensitāte, mērāma decibelos (dB), sasniedzot skaņas sensoru vai mikrofonu.</string>
-  <string name="sensor_desc_short_pitch">Skaņas tonis, mērāms hercos (Hz), sasniedzot skaņas sensoru vai mikrofonu.</string>
-  <string name="sensor_desc_short_light">Gaismas daudzums, mērāms luksos, sasniedzot apkārtējās gaismas sensoru.</string>
-  <string name="sensor_desc_short_magnetic_strength">Apkārtējās vides ģeomagnētiskā lauka stiprums mikroteslās.</string>
-  <string name="sensor_desc_short_bluetooth">Ārējā sensora dati redzami šeit, pamatojoties uz pielāgotajiem iestatījumiem.</string>
-  <string name="sensor_desc_short_rotation">Apgriezienu skaits minūtē</string>
-  <string name="sensor_desc_short_raw">Neapstrādātā lasījuma procenti no ārēja sensora.</string>
-  <string name="sensor_desc_short_barometer">Atmosfēras spiediens tiek mērīts hektopaskālos (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Apkārtējās gaismas sensors mēra gaismu luksos, apgaismojuma mērvienībā, kas ir atkarīga no krītošās gaismas plūsmas pret apgaismojamo laukumu. \n\nPilnmēness rada 1 luksu apgaismojuma, parasti apgaismota dzīvojamā istaba apmēram 50 luksus, mācību telpa, saullēkts un saulriets apmēram 400 luksus, dienasgaisma (netieša saule) vairāk nekā 10 000 luksu un tieša saule vairāk nekā 30 000 luksu. \n\nVairumam cilvēku lukss ir nepazīstama mērvienība. Iegādājoties gaismas spuldzes, bieži izvēlamies tās pēc vatiem, bet spuldzes vatu daudzums nenosaka spuldzes spožumu, tikai patērējamo elektroenerģiju. Lūmeni ir labāks rādītājs, pēc kura vadīties, kad iepērkamies; tas parāda spuldzes reālo gaismas atdevi. Turpretim luksi parāda, cik daudz gaismas sasniedz konkrēto teritoriju.</string>
-  <string name="sensor_desc_second_paragraph_light">Tā kā gaisma izplatās pārvietojoties, luksu skaits samazinās, atvirzoties no gaismas avota, lai gan tas izstaro tādu pašu lūmenu daudzumu. Teritorija, kas atrodas slīpi pret gaismas virsmām, arī saņem mazāk apgaismojuma, kas izskaidro to, kāpēc ekvatoriālie apgabali šeit uz Zemes ir daudz siltāki nekā vēsie poli. \n\nStarp citu, gaismas sensora nolūks jūsu tālrunī ir kontrolēt ekrāna gaismas līmeni, atbilstoši pielāgojoties tumšākai vai gaišākai videi. Gaismas sensorā esošais pusvadītājs reaģē uz ienākošo gaismu, radot nelielu, taču izmērāmu elektrisko strāvu — parādību, kas zināma kā fotoelektriskais efekts. Līdzīgus sensorus izmanto ielas apgaismojumam, lai tas ieslēgtos, iestājoties tumsai.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Jūsu tālrunī ir ierīce, kas ir paredzēta magnētisko lauku noteikšanai: magnetometrs. Tas ir neliels trīs asu sensors, kas izmanto elektriskās strāvas, lai noteiktu magnētiskā lauka stiprumu telpā trīs dimensijās. Apvienojot datus no visām trim asīm, var izveidot kopējā magnētiskā lauka stipruma sensoru. \n\nDaži magnetometri nosaka magnētiskos laukus, izmantojot Holla efektu — magnētisko lauku īpašību novirzīt elektrisko lādiņu plūsmu. Jaunāki magnetometri paļaujas uz magnetorezistoriem, metāla sakausējumiem, kas maina pretestību, reaģējot uz magnētiskajiem laukiem. \n\nKādēļ tālrunim ir nepieciešams magnetometrs? Iebūvētajām kompasu un navigācijas lietotnēm ir noderīgi zināt jūsu orientāciju telpā, jo īpaši tām lietotnēm, kuras piedāvā detalizētas navigācijas norādes.</string>
-  <string name="sensor_desc_second_paragraph_magnetic_strength">Magnēti, elektriskā strāva un metāla objekti liek tālruņa magnetometra bultiņai kustēties dažādos virzienos. Pat atrodoties atklātā laukā, tālruņa magnetometrs vienmēr rāda kādu nelielu vērtību, kas nav nulle: tas ir Zemes magnētiskais lauks.</string>
-  <string name="sensor_desc_first_paragraph_acc">Objektiem ir tendence palikt uz vietas vai turpināt kustēties, ja tie kustas, — mēs šo tendenci saucam par inerci. Ņūtona pirmais likums izsaka šo ideju formāli: katrs ķermenis paliek mierā vai turpina vienmērīgu taisnlīnijas kustību tikmēr, kamēr tam pieliktie spēki to neizmaina. \n\nKad mierā esošam ķermenim tiek pielikts ārējs spēks, apgalvojam, ka objekts paātrinās: tā ātrums vai attālums mainās — palielinoties, samazinoties vai mainot virzienu. Paātrinājumu mēra kā ātruma izmaiņas laikā (metri sekundē) vai metrus kvadrātsekundē (m/s²). \n\nJūsu tālrunī ir iekārta, lai izmērītu šīs kustību izmaiņas, — akselerometrs. Akselerometrā mazās noteiktās masas var brīvi pārvietoties. Masas objekta novirze no sākotnējā stāvokļa liek šīm masām pārvietoties, tāpat kā jūsu galva smagi sasveras uz priekšu, mašīnai strauji apstājoties. Mērot šīs pēkšņās inerces svārstības, akselerometrs tālrunī var noteikt izmaiņas kustībā un orientācijā, kas noder, pārslēdzoties no ainavas režīma uz portreta režīmu vai spēlējot spēles tālrunī, kā arī citām funkcijām.</string>
-  <string name="sensor_desc_second_paragraph_acc">Iespējams, esat ievērojis paātrinājumu Z asij pat tad, kad tālrunis atrodas uz galda. Tas ir paātrinājums, ko izjūtam uz Zemes virsmas tās gravitācijas dēļ, un tas ir apmēram 9,8 m/s².</string>
-  <string name="sensor_desc_first_paragraph_decibel">Skaņas veido vibrācija. Piemēram, jūsu balss veidojas no rīkles balss saišu vibrācijām. Šīs vibrācijas rada augsta un zema gaisa spiediena zonu mainību, kas virzās uz āru — ļoti līdzīgi apļveida kustībai, ko rada dīķī iemests olis.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Visas skaņas var raksturot ar to frekvenci un intensitāti. \n\nIntensitāte ir vērtība, ko nosakāt, izmantojot Science Journal skaņas intensitātes sensoru, tās mērvienība ir decibels (dB). Intensitāte jeb skaļums ir atkarīgs no attāluma, kādā atrodas vibrācijas objekts. Lielāku intensitāti mūsu ausis uztver kā lielāku skaļumu. \n\nSkaņas viļņa frekvence (jeb tonis) izsaka tā vibrēšanas biežumu. Jo ātrāk objekts vibrē, jo augstāks ir skaņas tonis. Science Journal skaņas intensitātes sensors nevar izmērīt frekvenci, var izmērīt tikai skaļumu. \n\nSvarīgi zināt, ka jūsu ierīces mikrofons ir izveidots tā, lai tas būtu ļoti jutīgs pret skaņas viļņu atšķirībām noteiktā laika posmā, bet ne pret katra viļņa absolūto lielumu. Mēs mēģinājām izvēlēties kodu, kas, visticamāk, sniegs rādītājus, kuri ir līdzīgi tālāk minētajiem atsauces rādītājiem, bet katra ierīce var sniegt konsekventi augstākus vai zemākus rādītājus. Zinātnieki parasti kalibrē šādu sensoru, izmantojot zināmu mērījumu. Pagaidām lietotnē Science Journal var noteikt, vai brauciens ar vilcienu ir skaļāks par rokmūzikas koncertu, bet tikai tad, ja abās situācijas tiek izmantots viens un tas pats tālrunis. \n\nVērts iegaumēt arī to, ka pastāv nozīmīgas atšķirības starp “skaņas intensitāti”, “skaņas intensitātes līmeni” un “skaņas spiedienu”. Šeit mēs pieņemam, ka šīs vērtības ir viena un tā pati lieta, bet, ja vēlaties uzzināt detalizētāku informāciju, pieejami daudzi tiešsaistes resursi par šīm atšķirībām. \n\nKlusākā skaņa, ko var uztvert vidusmēra cilvēka auss, tiek pielīdzināta 0 dB vērtībai. Parastas sarunas skaļums atbilst aptuveni 60 dB, savukārt skaņas virs aptuveni 140 dB izraisa cilvēka ausī sāpju sajūtas. Kaitīga ietekme var būt ne tikai tām skaņām, kas izraisa sāpes. Ilgstoša atrašanās pat 90 dB skaņas ietekmē — strādājoša putekļsūcēja troksnis — var izraisīt paliekošu dzirdes zudumu. \n\nDecibelu skala ir logaritmiska — tas nozīmē, ka 40 dB skaņas avots ir nevis divreiz intensīvāks par 20 dB skaņu, bet gan 100 reizes lielāks. Ja modinātājpulkstenis zvana, radot 70 dB troksni, divi modinātājpulksteņi radīs nevis 140 dB, bet gan 73 dB troksni. Dīvaina skala, vai ne? \n\n10 dB lapu šalkoņa \n20 dB čukstēšana no 1,5 metru attāluma \n30 dB kluss čuksts \n50 dB lietus\n60 dB normāla saruna \n90 dB blenderis \n100 dB automašīna bez trokšņu slāpētāja \n110 dB kliegšana ausī \n120 dB pērkons \n130 dB elektriskais urbis \n140 dB lidmašīnas pacelšanās</string>
-  <string name="sensor_desc_first_paragraph_pitch">Skaņas veido vibrācija. Piemēram, jūsu balss veidojas no rīkles balss saišu vibrācijām. Šīs vibrācijas rada augsta un zema gaisa spiediena zonu mainību, kas virzās uz āru — ļoti līdzīgi apļveida kustībai, ko rada dīķī iemests olis.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Visas skaņas var raksturot ar to frekvenci un intensitāti. Skaņas viļņa frekvence (jeb tonis) izsaka tā vibrēšanas biežumu. Jo ātrāk objekts vibrē, jo augstāks ir skaņas tonis. Šīs vibrācijas tiek mērītas hercos (Hz), kur viens hercs ir viens vibrācija sekundē. \n\nCilvēki spēj dzirdēt skaņas diapazonā no 20 līdz 20 000 Hz. Klusākais klavieru taustiņš rada skaņu ar frekvenci 27,5 Hz, un skaļākais klavieru taustiņš rada skaņu ar frekvenci 4186,01 Hz. \n\nSarkanais punktiņš norāda uz to, cik tuvu reģistrētais tonis ir tuvākajai mūzikas notij. Ja tonis ir zemāks, punktiņš tiks rādīts pa kreisi. Ja tonis ir augstāks, sarkanais punktiņš tiks rādīts pa labi.</string>
-  <string name="pitch_low_content_description">zems tonis</string>
-  <string name="pitch_flatter_than_natural_note_content_description">Par %3$s pustoņiem zemāks nekā %1$s, %2$s. oktāva</string>
-  <string name="pitch_flatter_than_flat_note_content_description">Par %3$s pustoņiem zemāks nekā %1$s bemols, %2$s. oktāva</string>
-  <string name="pitch_flatter_than_sharp_note_content_description">Par %3$s pustoņiem zemāks nekā %1$s diēzs, %2$s. oktāva</string>
-  <string name="pitch_natural_note_content_description">%1$s, %2$s. oktāva</string>
-  <string name="pitch_flat_note_content_description">%1$s bemols, %2$s. oktāva</string>
-  <string name="pitch_sharp_note_content_description">%1$s diēzs, %2$s. oktāva</string>
-  <string name="pitch_sharper_than_natural_note_content_description">Par %3$s pustoņiem augstāks nekā %1$s, %2$s. oktāva</string>
-  <string name="pitch_sharper_than_flat_note_content_description">Par %3$s pustoņiem augstāks nekā %1$s bemols, %2$s. oktāva</string>
-  <string name="pitch_sharper_than_sharp_note_content_description">Par %3$s pustoņiem augstāks nekā %1$s diēzs, %2$s. oktāva</string>
-  <string name="pitch_high_content_description">augsts tonis</string>
-  <string name="sensor_desc_first_paragraph_rotation">Apgriezieni minūtē (RPM) ir biežuma rādītājs rotācijai ap fiksētu asi vienā minūtē. \n\nKad vēja rādītājs pagriežas, tas pagriež arī kodēšanas disku:</string>
-  <string name="sensor_desc_second_paragraph_rotation">Tas rada gaismas un tumsas periodus sensorā, kuri lietotnē Science Journal tiek reģistrēti kā rotācija.</string>
-  <string name="sensor_desc_first_paragraph_raw">Šeit redzamie dati nāk no ārējā sensora saziņas ar jūsu tālruni, izmantojot Bluetooth savienojumu. \n\nVērtība rāda neapstrādātā lasījuma procentus no mikrokontrolera. Parasti tie ir procenti no sprieguma krituma visā sensorā.</string>
-  <string name="sensor_desc_second_paragraph_raw">Bluetooth ir bezvadu tehnoloģija, kas standarta datu apmaiņai izmanto radioviļņus īsos attālumos no fiksētajām un mobilajām ierīcēm.</string>
-  <string name="sensor_desc_first_paragraph_unknown_bluetooth">Šeit redzamie dati nāk no ārējā sensora saziņas ar jūsu tālruni, izmantojot Bluetooth savienojumu.</string>
-  <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth ir bezvadu tehnoloģija, kas standarta datu apmaiņai izmanto radioviļņus īsos attālumos no fiksētajām un mobilajām ierīcēm.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Lai gan ikdienā to neievērojam, mēs dzīvojam dziļa gaisa okeāna dibenā: Zemes atmosfērā, kuras augstums ir 40 kilometru (130 000 pēdu). Svaru, ar kuru šī gaisa masa iedarbojas uz mums no augšas, dēvē par atmosfēras spiedienu. \n\nJūras līmenī atmosfēras spiediens ir aptuveni 1 kg uz kvadrātcentimetru jeb aptuveni 590 kg uz parastu A4 formāta lapu.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Mēs šo milzīgo spiedienu neievērojam, jo esam pie tā pieraduši, taču tikko tas kaut nedaudz izmainās, piemēram, kāpjot kalnos vai lidojot lidmašīnā, mēs uzreiz to sajūtam. Atmosfēras spiediens arī svārstās, mainoties laika apstākļiem — samazinās vētrainā laikā un pie nestabilām gaisa plūsmām, bet pieaug, kad gaisa masas stabilizējas un debesis ir skaidras. \n\nDigitālais barometrs jūsu tālrunī mēra atmosfēras spiedienu hektopaskālos. (Hektopaskālā ir 100 paskāli, un paskāls ir vienu ņūtonu liels spēks, kas darbojas uz vienu kvadrātmetru lielu laukumu.) Iespējams, esat dzirdējis, ka laika prognozēs izmanto arī atmosfēras spiediena mērvienību milibārus — šī mērvienība ir līdzvērtīga hektopaskāliem. \n\nJums droši vien rodas jautājums: kā tālrunis var noteikt spiedienu? Atmosfēras spiediena izmaiņas ir izmērāmas pat pie nelielām augstuma izmaiņām, piemēram, kāpjot pa kāpnēm. Līdz ar to digitālais barometrs tālrunī var noteikt jūsu atrašanās vietas izmaiņas, piemēram, kurā ēkas stāvā atrodaties, vai arī parādīt, vai braucat pa tilta augšējo vai apakšējo klāju.</string>
-  <string name="run_review_activity_label">Pārskatīt</string>
-  <string name="service_notification_content_title">Science Journal</string>
-  <string name="service_notification_content_text">Notiek ierakstīšana...</string>
-  <string name="live_graph_content_description">Sensora diagramma tiešsaistē. Velciet, lai pārvietotu X asi. Savelciet, lai pietuvinātu Y asi.</string>
-  <string name="static_graph_content_description">Sensora diagramma. Savelciet, lai pietuvinātu, un velciet, lai pārvietotu. Veiciet dubultskārienu, lai tālinātu.</string>
-  <string name="sensor_card_overflow_menu_content_description">Kartītes opcijas</string>
-  <string name="sensor_tab_layout_content_description">pieejamie sensori</string>
-  <string name="title_activity_sensor_info">Sensora informācija</string>
-  <string name="title_activity_sensor_info_format">Sensors: %s</string>
-  <string name="heading_info_section">Informācija par sensoru.</string>
+    <string name="sensor_desc_short_acc_y">Tālruņa paātrinājums uz priekšu un atpakaļ, m/s²</string>
+    <string name="sensor_desc_short_acc_z">Tālruņa paātrinājums uz augšu un uz leju, m/s²</string>
+    <string name="sensor_desc_short_decibel">Skaņas intensitāte, mērāma decibelos (dB), sasniedzot skaņas sensoru vai mikrofonu.</string>
+    <string name="sensor_desc_short_pitch">Skaņas tonis, mērāms hercos (Hz), sasniedzot skaņas sensoru vai mikrofonu.</string>
+    <string name="sensor_desc_short_light">Gaismas daudzums, mērāms luksos, sasniedzot apkārtējās gaismas sensoru.</string>
+    <string name="sensor_desc_short_magnetic_strength">Apkārtējās vides ģeomagnētiskā lauka stiprums mikroteslās.</string>
+    <string name="sensor_desc_short_bluetooth">Ārējā sensora dati redzami šeit, pamatojoties uz pielāgotajiem iestatījumiem.</string>
+    <string name="sensor_desc_short_rotation">Apgriezienu skaits minūtē</string>
+    <string name="sensor_desc_short_raw">Neapstrādātā lasījuma procenti no ārēja sensora.</string>
+    <string name="sensor_desc_short_barometer">Atmosfēras spiediens tiek mērīts hektopaskālos (hPa).</string>
+    <string name="sensor_desc_first_paragraph_light">Apkārtējās gaismas sensors mēra gaismu luksos, apgaismojuma mērvienībā, kas ir atkarīga no krītošās gaismas plūsmas pret apgaismojamo laukumu.
+
+Pilnmēness rada 1 luksu apgaismojuma, parasti apgaismota dzīvojamā istaba apmēram 50 luksus, mācību telpa, saullēkts un saulriets apmēram 400 luksus, dienasgaisma (netieša saule) vairāk nekā 10 000 luksu un tieša saule vairāk nekā 30 000 luksu. 
+
+Vairumam cilvēku lukss ir nepazīstama mērvienība. Iegādājoties gaismas spuldzes, bieži izvēlamies tās pēc vatiem, bet spuldzes vatu daudzums nenosaka spuldzes spožumu, tikai patērējamo elektroenerģiju. Lūmeni ir labāks rādītājs, pēc kura vadīties, kad iepērkamies; tas parāda spuldzes reālo gaismas atdevi. Turpretim luksi parāda, cik daudz gaismas sasniedz konkrēto teritoriju.</string>
+    <string name="sensor_desc_second_paragraph_light">Tā kā gaisma izplatās pārvietojoties, luksu skaits samazinās, atvirzoties no gaismas avota, lai gan tas izstaro tādu pašu lūmenu daudzumu. Teritorija, kas atrodas slīpi pret gaismas virsmām, arī saņem mazāk apgaismojuma, kas izskaidro to, kāpēc ekvatoriālie apgabali šeit uz Zemes ir daudz siltāki nekā vēsie poli.
+
+Starp citu, gaismas sensora nolūks jūsu tālrunī ir kontrolēt ekrāna gaismas līmeni, atbilstoši pielāgojoties tumšākai vai gaišākai videi. Gaismas sensorā esošais pusvadītājs reaģē uz ienākošo gaismu, radot nelielu, taču izmērāmu elektrisko strāvu — parādību, kas zināma kā fotoelektriskais efekts. Līdzīgus sensorus izmanto ielas apgaismojumam, lai tas ieslēgtos, iestājoties tumsai.</string>
+    <string name="sensor_desc_first_paragraph_magnetic_strength">Jūsu tālrunī ir ierīce, kas ir paredzēta magnētisko lauku noteikšanai: magnetometrs. Tas ir neliels trīs asu sensors, kas izmanto elektriskās strāvas, lai noteiktu magnētiskā lauka stiprumu telpā trīs dimensijās. Apvienojot datus no visām trim asīm, var izveidot kopējā magnētiskā lauka stipruma sensoru.
+
+Daži magnetometri nosaka magnētiskos laukus, izmantojot Holla efektu — magnētisko lauku īpašību novirzīt elektrisko lādiņu plūsmu. Jaunāki magnetometri paļaujas uz magnetorezistoriem, metāla sakausējumiem, kas maina pretestību, reaģējot uz magnētiskajiem laukiem. 
+
+Kādēļ tālrunim ir nepieciešams magnetometrs? Iebūvētajām kompasu un navigācijas lietotnēm ir noderīgi zināt jūsu orientāciju telpā, jo īpaši tām lietotnēm, kuras piedāvā detalizētas navigācijas norādes.</string>
+    <string name="sensor_desc_second_paragraph_magnetic_strength">Magnēti, elektriskā strāva un metāla objekti liek tālruņa magnetometra bultiņai kustēties dažādos virzienos. Pat atrodoties atklātā laukā, tālruņa magnetometrs vienmēr rāda kādu nelielu vērtību, kas nav nulle: tas ir Zemes magnētiskais lauks.</string>
+    <string name="sensor_desc_first_paragraph_acc">Objektiem ir tendence palikt uz vietas vai turpināt kustēties, ja tie kustas, — mēs šo tendenci saucam par inerci. Ņūtona pirmais likums izsaka šo ideju formāli: katrs ķermenis paliek mierā vai turpina vienmērīgu taisnlīnijas kustību tikmēr, kamēr tam pieliktie spēki to neizmaina.
+
+Kad mierā esošam ķermenim tiek pielikts ārējs spēks, apgalvojam, ka objekts paātrinās: tā ātrums vai attālums mainās — palielinoties, samazinoties vai mainot virzienu. Paātrinājumu mēra kā ātruma izmaiņas laikā (metri sekundē) vai metrus kvadrātsekundē (m/s²). 
+
+Jūsu tālrunī ir iekārta, lai izmērītu šīs kustību izmaiņas, — akselerometrs. Akselerometrā mazās noteiktās masas var brīvi pārvietoties. Masas objekta novirze no sākotnējā stāvokļa liek šīm masām pārvietoties, tāpat kā jūsu galva smagi sasveras uz priekšu, mašīnai strauji apstājoties. Mērot šīs pēkšņās inerces svārstības, akselerometrs tālrunī var noteikt izmaiņas kustībā un orientācijā, kas noder, pārslēdzoties no ainavas režīma uz portreta režīmu vai spēlējot spēles tālrunī, kā arī citām funkcijām.</string>
+    <string name="sensor_desc_second_paragraph_acc">Iespējams, esat ievērojis paātrinājumu Z asij pat tad, kad tālrunis atrodas uz galda. Tas ir paātrinājums, ko izjūtam uz Zemes virsmas tās gravitācijas dēļ, un tas ir apmēram 9,8 m/s².</string>
+    <string name="sensor_desc_first_paragraph_decibel">Skaņas veido vibrācija. Piemēram, jūsu balss veidojas no rīkles balss saišu vibrācijām. Šīs vibrācijas rada augsta un zema gaisa spiediena zonu mainību, kas virzās uz āru — ļoti līdzīgi apļveida kustībai, ko rada dīķī iemests olis.</string>
+    <string name="sensor_desc_second_paragraph_decibel">Visas skaņas var raksturot ar to frekvenci un intensitāti.
+
+Intensitāte ir vērtība, ko nosakāt, izmantojot Science Journal skaņas intensitātes sensoru, tās mērvienība ir decibels (dB). Intensitāte jeb skaļums ir atkarīgs no attāluma, kādā atrodas vibrācijas objekts. Lielāku intensitāti mūsu ausis uztver kā lielāku skaļumu. 
+
+Skaņas viļņa frekvence (jeb tonis) izsaka tā vibrēšanas biežumu. Jo ātrāk objekts vibrē, jo augstāks ir skaņas tonis. Science Journal skaņas intensitātes sensors nevar izmērīt frekvenci, var izmērīt tikai skaļumu. 
+
+Svarīgi zināt, ka jūsu ierīces mikrofons ir izveidots tā, lai tas būtu ļoti jutīgs pret skaņas viļņu atšķirībām noteiktā laika posmā, bet ne pret katra viļņa absolūto lielumu. Mēs mēģinājām izvēlēties kodu, kas, visticamāk, sniegs rādītājus, kuri ir līdzīgi tālāk minētajiem atsauces rādītājiem, bet katra ierīce var sniegt konsekventi augstākus vai zemākus rādītājus. Zinātnieki parasti kalibrē šādu sensoru, izmantojot zināmu mērījumu. Pagaidām lietotnē Science Journal var noteikt, vai brauciens ar vilcienu ir skaļāks par rokmūzikas koncertu, bet tikai tad, ja abās situācijas tiek izmantots viens un tas pats tālrunis. 
+
+Vērts iegaumēt arī to, ka pastāv nozīmīgas atšķirības starp “skaņas intensitāti”, “skaņas intensitātes līmeni” un “skaņas spiedienu”. Šeit mēs pieņemam, ka šīs vērtības ir viena un tā pati lieta, bet, ja vēlaties uzzināt detalizētāku informāciju, pieejami daudzi tiešsaistes resursi par šīm atšķirībām. 
+
+Klusākā skaņa, ko var uztvert vidusmēra cilvēka auss, tiek pielīdzināta 0 dB vērtībai. Parastas sarunas skaļums atbilst aptuveni 60 dB, savukārt skaņas virs aptuveni 140 dB izraisa cilvēka ausī sāpju sajūtas. Kaitīga ietekme var būt ne tikai tām skaņām, kas izraisa sāpes. Ilgstoša atrašanās pat 90 dB skaņas ietekmē — strādājoša putekļsūcēja troksnis — var izraisīt paliekošu dzirdes zudumu. 
+
+Decibelu skala ir logaritmiska — tas nozīmē, ka 40 dB skaņas avots ir nevis divreiz intensīvāks par 20 dB skaņu, bet gan 100 reizes lielāks. Ja modinātājpulkstenis zvana, radot 70 dB troksni, divi modinātājpulksteņi radīs nevis 140 dB, bet gan 73 dB troksni. Dīvaina skala, vai ne? 
+
+10 dB lapu šalkoņa 
+20 dB čukstēšana no 1,5 metru attāluma 
+30 dB kluss čuksts 
+50 dB lietus
+60 dB normāla saruna 
+90 dB blenderis 
+100 dB automašīna bez trokšņu slāpētāja 
+110 dB kliegšana ausī 
+120 dB pērkons 
+130 dB elektriskais urbis 
+140 dB lidmašīnas pacelšanās</string>
+    <string name="sensor_desc_first_paragraph_pitch">Skaņas veido vibrācija. Piemēram, jūsu balss veidojas no rīkles balss saišu vibrācijām. Šīs vibrācijas rada augsta un zema gaisa spiediena zonu mainību, kas virzās uz āru — ļoti līdzīgi apļveida kustībai, ko rada dīķī iemests olis.</string>
+    <string name="sensor_desc_second_paragraph_pitch">Visas skaņas var raksturot ar to frekvenci un intensitāti. Skaņas viļņa frekvence (jeb tonis) izsaka tā vibrēšanas biežumu. Jo ātrāk objekts vibrē, jo augstāks ir skaņas tonis. Šīs vibrācijas tiek mērītas hercos (Hz), kur viens hercs ir viens vibrācija sekundē.
+
+Cilvēki spēj dzirdēt skaņas diapazonā no 20 līdz 20 000 Hz. Klusākais klavieru taustiņš rada skaņu ar frekvenci 27,5 Hz, un skaļākais klavieru taustiņš rada skaņu ar frekvenci 4186,01 Hz. 
+
+Sarkanais punktiņš norāda uz to, cik tuvu reģistrētais tonis ir tuvākajai mūzikas notij. Ja tonis ir zemāks, punktiņš tiks rādīts pa kreisi. Ja tonis ir augstāks, sarkanais punktiņš tiks rādīts pa labi.</string>
+    <string name="pitch_low_content_description">zems tonis</string>
+    <string name="pitch_flatter_than_natural_note_content_description">Par %3$s pustoņiem zemāks nekā %1$s, %2$s. oktāva</string>
+    <string name="pitch_flatter_than_flat_note_content_description">Par %3$s pustoņiem zemāks nekā %1$s bemols, %2$s. oktāva</string>
+    <string name="pitch_flatter_than_sharp_note_content_description">Par %3$s pustoņiem zemāks nekā %1$s diēzs, %2$s. oktāva</string>
+    <string name="pitch_natural_note_content_description">%1$s, %2$s. oktāva</string>
+    <string name="pitch_flat_note_content_description">%1$s bemols, %2$s. oktāva</string>
+    <string name="pitch_sharp_note_content_description">%1$s diēzs, %2$s. oktāva</string>
+    <string name="pitch_sharper_than_natural_note_content_description">Par %3$s pustoņiem augstāks nekā %1$s, %2$s. oktāva</string>
+    <string name="pitch_sharper_than_flat_note_content_description">Par %3$s pustoņiem augstāks nekā %1$s bemols, %2$s. oktāva</string>
+    <string name="pitch_sharper_than_sharp_note_content_description">Par %3$s pustoņiem augstāks nekā %1$s diēzs, %2$s. oktāva</string>
+    <string name="pitch_high_content_description">augsts tonis</string>
+    <string name="sensor_desc_first_paragraph_rotation">Apgriezieni minūtē (RPM) ir biežuma rādītājs rotācijai ap fiksētu asi vienā minūtē.
+
+Kad vēja rādītājs pagriežas, tas pagriež arī kodēšanas disku:</string>
+    <string name="sensor_desc_second_paragraph_rotation">Tas rada gaismas un tumsas periodus sensorā, kuri lietotnē Science Journal tiek reģistrēti kā rotācija.</string>
+    <string name="sensor_desc_first_paragraph_raw">Šeit redzamie dati nāk no ārējā sensora saziņas ar jūsu tālruni, izmantojot Bluetooth savienojumu.
+
+Vērtība rāda neapstrādātā lasījuma procentus no mikrokontrolera. Parasti tie ir procenti no sprieguma krituma visā sensorā.</string>
+    <string name="sensor_desc_second_paragraph_raw">Bluetooth ir bezvadu tehnoloģija, kas standarta datu apmaiņai izmanto radioviļņus īsos attālumos no fiksētajām un mobilajām ierīcēm.</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">Šeit redzamie dati nāk no ārējā sensora saziņas ar jūsu tālruni, izmantojot Bluetooth savienojumu.</string>
+    <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth ir bezvadu tehnoloģija, kas standarta datu apmaiņai izmanto radioviļņus īsos attālumos no fiksētajām un mobilajām ierīcēm.</string>
+    <string name="sensor_desc_first_paragraph_barometer">Lai gan ikdienā to neievērojam, mēs dzīvojam dziļa gaisa okeāna dibenā: Zemes atmosfērā, kuras augstums ir 40 kilometru (130 000 pēdu). Svaru, ar kuru šī gaisa masa iedarbojas uz mums no augšas, dēvē par atmosfēras spiedienu.
+
+Jūras līmenī atmosfēras spiediens ir aptuveni 1 kg uz kvadrātcentimetru jeb aptuveni 590 kg uz parastu A4 formāta lapu.</string>
+    <string name="sensor_desc_second_paragraph_barometer">Mēs šo milzīgo spiedienu neievērojam, jo esam pie tā pieraduši, taču tikko tas kaut nedaudz izmainās, piemēram, kāpjot kalnos vai lidojot lidmašīnā, mēs uzreiz to sajūtam. Atmosfēras spiediens arī svārstās, mainoties laika apstākļiem — samazinās vētrainā laikā un pie nestabilām gaisa plūsmām, bet pieaug, kad gaisa masas stabilizējas un debesis ir skaidras.
+
+Digitālais barometrs jūsu tālrunī mēra atmosfēras spiedienu hektopaskālos. (Hektopaskālā ir 100 paskāli, un paskāls ir vienu ņūtonu liels spēks, kas darbojas uz vienu kvadrātmetru lielu laukumu.) Iespējams, esat dzirdējis, ka laika prognozēs izmanto arī atmosfēras spiediena mērvienību milibārus — šī mērvienība ir līdzvērtīga hektopaskāliem. 
+
+Jums droši vien rodas jautājums: kā tālrunis var noteikt spiedienu? Atmosfēras spiediena izmaiņas ir izmērāmas pat pie nelielām augstuma izmaiņām, piemēram, kāpjot pa kāpnēm. Līdz ar to digitālais barometrs tālrunī var noteikt jūsu atrašanās vietas izmaiņas, piemēram, kurā ēkas stāvā atrodaties, vai arī parādīt, vai braucat pa tilta augšējo vai apakšējo klāju.</string>
+    <string name="run_review_activity_label">Pārskatīt</string>
+    <string name="service_notification_content_title">Science Journal</string>
+    <string name="service_notification_content_text">Notiek ierakstīšana...</string>
+    <string name="live_graph_content_description">Sensora diagramma tiešsaistē. Velciet, lai pārvietotu X asi. Savelciet, lai pietuvinātu Y asi.</string>
+    <string name="static_graph_content_description">Sensora diagramma. Savelciet, lai pietuvinātu, un velciet, lai pārvietotu. Veiciet dubultskārienu, lai tālinātu.</string>
+    <string name="sensor_card_overflow_menu_content_description">Kartītes opcijas</string>
+    <string name="sensor_tab_layout_content_description">pieejamie sensori</string>
+    <string name="title_activity_sensor_info">Sensora informācija</string>
+    <string name="title_activity_sensor_info_format">Sensors: %s</string>
+    <string name="heading_info_section">Informācija par sensoru.</string>
   <string name="edit_note_time">Rediģēt piezīmes laiku</string>
   <string name="delete_note_menu_item">Dzēst</string>
   <string name="delete_run">Dzēst</string>
@@ -220,11 +291,8 @@
   <string name="default_trial_title">%1$d. ieraksts</string>
   <string name="run_review_switch_sensor_btn_prev">iepriekšējais sensors: %s</string>
   <string name="run_review_switch_sensor_btn_next">nākamais sensors: %s</string>
-  <string name="add_note_hint_text">Pievienojiet jaunu piezīmi</string>
   <string name="snackbar_note_deleted">Piezīme ir izdzēsta</string>
   <string name="snackbar_undo">Atsaukt</string>
-  <string name="add_run_note_placeholder_text">Pievienojiet piezīmi šim ierakstam</string>
-  <string name="add_note_image_button_content_description">Uzņemt attēlu kā piezīmi</string>
   <string name="pinned_note_placeholder_text">Pievienot piezīmi</string>
   <string name="indeterminate_value">--</string>
   <string name="archived_badge">Arhivēts</string>
@@ -246,29 +314,59 @@
   <string name="edit_trial_title_hint">Ieraksta nosaukums</string>
   <string name="include_archived_trials">Rādīt arhivētos ierakstus</string>
   <string name="export_error">Neizdevās eksportēt.</string>
-  <string name="no_app_found_for_csv">Nav instalēta neviena lietotne, lai veiktu CSV eksportu.</string>
-  <string name="listing_title">Science Journal</string>
-  <string name="listing_tagline">Eksperimentējiet ar pasauli.</string>
-  <string name="listing_changelog">Jaunas funkcijas un uzlabojumi.
-\n\u2022 Lejupielādēt eksperimentus, fotoattēlus un sensoru ierakstus ierīcē.
-\n\u2022 Papildu atbalsts savienojuma izveidei ar Arduino MKR WiFi 1010 platēm.</string>
-  <string name="listing_changelog_features">Jaunas funkcijas.</string>
-  <string name="listing_changelog_bug_fixes">Veiktspējas uzlabojumi un kļūdu labojumi.</string>
-  <string name="listing_changelog_separator">\n\n﻿</string>
-  <string name="listing_h_feature_1">\n• Skaņas toņa sensors.</string>
-  <string name="listing_h_feature_2">\n• Eksperimentu eksportēšana uz failu un importēšana uz citām ierīcēm.</string>
-  <string name="listing_h_feature_3">\n• Fotoattēlu eksportēšana no eksperimenta.</string>
-  <string name="listing__description">Lietotne Science Journal ir bezmaksas digitālais zinātnisko darbu bloknots, ko piedāvā Google. \n \nNeatkarīgi no tā, vai esat dabaszinātņu skolotājs vai veicat eksperimentus mājās hobija līmenī, šeit varat vienuviet uzglabāt piezīmes, fotoattēlus un novērojumus. Izmantojiet sava tālruņa sensorus, lai mērītu dažādas parādības, piemēram, gaismu, skaņu un kustību, un veidotu diagrammas, vai pievienojiet ārējos sensorus, izmantojot Bluetooth savienojumu, lai veiktu eksperimentus apkārtējā pasaulē. \n \nAr lietotni Science Journal varat veikt tālāk norādītās darbības. \n• Mērīt gaismu, skaņu, paātrinājumu, gaisa spiedienu un vēl citus lielumus, izmantojot tālrunī iebūvētos sensorus. \n• Veikt piezīmes un uzņemt fotoattēlus, lai dokumentētu savus zinātniskos eksperimentus. Drīzumā būs pieejami jauni piezīmju veidi! \n• Veidot savienojumu ar ārējiem sensoriem, izmantojot atsevišķas Arduino un Vernier ierīces, kurās ir iespējota Bluetooth funkcija. \n• Piekļūt eksperimentiem ierīcēs, izmantojot Google disku. \n• Eksportēt ierakstītos sensoru datus kā CSV failus. \n• Izveidot automatizētus aktivizētājus, lai ierakstītu datus un veiktu piezīmes. \n• Izmantot skaņas signālus, lai dzirdētu, kad diagrammā notiek izmaiņas. \n \nLietotne Science Journal bez maksas ir pieejama šādās ierīcēs: Android, iPhone, iPad, kā arī saderīgās Chromebook ierīcēs. \n \nIzglītojošas aktivitātes no mūsu partneriem: https://makingscience.withgoogle.com/science-journal/activities \nAtbalsts: https://productforums.google.com/forum/#!forum/sciencejournal \nPieejams atvērtais pirmkods: https://github.com/google/science-journal \n\n Paziņojums par atļaujām. \n\u2022 Atrašanās vieta: nepieciešama, lai meklētu sensoru ierīces, izmantojot Bluetooth. \n\u2022 Kamera: nepieciešama, lai uzņemtu fotoattēlus eksperimentu dokumentēšanai. \n\u2022 Mikrofons: nepieciešams skaņas intensitātes sensoram. \n\u2022 Krātuve: nepieciešama, lai piekļūtu fotoattēliem, ko pievienot eksperimentiem.</string>
-  <string name="third_party_sensors_option_title">Atrodiet ārējos sensorus</string>
-  <string name="third_party_sensors_option_summary">Atrodiet lietotnes, kas atbalsta ārējo sensoru API un ļauj pievienot šos sensorus eksperimentiem.</string>
-  <string name="enable_temperature_sensor_title">Iespējot apkārt. vides temp. sens.</string>
-  <string name="enable_temperature_sensor_summary">Iespējot eksperimentālo apkārtējās vides temperatūras sensoru</string>
-  <string name="enable_sine_wave_sensor_title">Iespējot sinusa viļņus</string>
-  <string name="enable_sine_wave_sensor_summary">Iespējot eksperimentālo sintētisko sinusa viļņu sensoru</string>
-  <string name="menu_item_audio_settings">Audio iestatījumi</string>
-  <string name="dev_sonification_types_summary">Vai iespējot papildu sonifikācijas opcijas</string>
-  <string name="audio_settings_sensor_prompt">Atlasiet sensora audio iestatījumus:</string>
-  <string name="enable_auto_zoom">Iespējot automātisko skalu</string>
+    <string name="no_app_found_for_csv">Nav instalēta neviena lietotne, lai veiktu CSV eksportu.</string>
+    <string name="listing_title">Science Journal</string>
+    <string name="listing_tagline">Eksperimentējiet ar pasauli.</string>
+    <string name="listing_changelog">Jaunas funkcijas un uzlabojumi.
+
+\u2022 Lejupielādēt eksperimentus, fotoattēlus un sensoru ierakstus ierīcē.
+
+\u2022 Papildu atbalsts savienojuma izveidei ar Arduino MKR WiFi 1010 platēm.</string>
+    <string name="listing_changelog_features">Jaunas funkcijas.</string>
+    <string name="listing_changelog_bug_fixes">Veiktspējas uzlabojumi un kļūdu labojumi.</string>
+    <string name="listing_changelog_separator">
+
+﻿</string>
+    <string name="listing_h_feature_1">
+• Skaņas toņa sensors.</string>
+    <string name="listing_h_feature_2">
+• Eksperimentu eksportēšana uz failu un importēšana uz citām ierīcēm.</string>
+    <string name="listing_h_feature_3">
+• Fotoattēlu eksportēšana no eksperimenta.</string>
+    <string name="listing__description">Lietotne Science Journal ir bezmaksas digitālais zinātnisko darbu bloknots, ko piedāvā Google.
+ 
+Neatkarīgi no tā, vai esat dabaszinātņu skolotājs vai veicat eksperimentus mājās hobija līmenī, šeit varat vienuviet uzglabāt piezīmes, fotoattēlus un novērojumus. Izmantojiet sava tālruņa sensorus, lai mērītu dažādas parādības, piemēram, gaismu, skaņu un kustību, un veidotu diagrammas, vai pievienojiet ārējos sensorus, izmantojot Bluetooth savienojumu, lai veiktu eksperimentus apkārtējā pasaulē. 
+ 
+Ar lietotni Science Journal varat veikt tālāk norādītās darbības. 
+• Mērīt gaismu, skaņu, paātrinājumu, gaisa spiedienu un vēl citus lielumus, izmantojot tālrunī iebūvētos sensorus. 
+• Veikt piezīmes un uzņemt fotoattēlus, lai dokumentētu savus zinātniskos eksperimentus. Drīzumā būs pieejami jauni piezīmju veidi! 
+• Veidot savienojumu ar ārējiem sensoriem, izmantojot atsevišķas Arduino un Vernier ierīces, kurās ir iespējota Bluetooth funkcija. 
+• Piekļūt eksperimentiem ierīcēs, izmantojot Google disku. 
+• Eksportēt ierakstītos sensoru datus kā CSV failus. 
+• Izveidot automatizētus aktivizētājus, lai ierakstītu datus un veiktu piezīmes. 
+• Izmantot skaņas signālus, lai dzirdētu, kad diagrammā notiek izmaiņas. 
+ 
+Lietotne Science Journal bez maksas ir pieejama šādās ierīcēs: Android, iPhone, iPad, kā arī saderīgās Chromebook ierīcēs. 
+ 
+Izglītojošas aktivitātes no mūsu partneriem: https://makingscience.withgoogle.com/science-journal/activities 
+Atbalsts: https://productforums.google.com/forum/#!forum/sciencejournal 
+Pieejams atvērtais pirmkods: https://github.com/google/science-journal 
+
+ Paziņojums par atļaujām. 
+\u2022 Atrašanās vieta: nepieciešama, lai meklētu sensoru ierīces, izmantojot Bluetooth. 
+\u2022 Kamera: nepieciešama, lai uzņemtu fotoattēlus eksperimentu dokumentēšanai. 
+\u2022 Mikrofons: nepieciešams skaņas intensitātes sensoram. 
+\u2022 Krātuve: nepieciešama, lai piekļūtu fotoattēliem, ko pievienot eksperimentiem.</string>
+    <string name="third_party_sensors_option_title">Atrodiet ārējos sensorus</string>
+    <string name="third_party_sensors_option_summary">Atrodiet lietotnes, kas atbalsta ārējo sensoru API un ļauj pievienot šos sensorus eksperimentiem.</string>
+    <string name="enable_temperature_sensor_title">Iespējot apkārt. vides temp. sens.</string>
+    <string name="enable_temperature_sensor_summary">Iespējot eksperimentālo apkārtējās vides temperatūras sensoru</string>
+    <string name="enable_sine_wave_sensor_title">Iespējot sinusa viļņus</string>
+    <string name="enable_sine_wave_sensor_summary">Iespējot eksperimentālo sintētisko sinusa viļņu sensoru</string>
+    <string name="menu_item_audio_settings">Audio iestatījumi</string>
+    <string name="dev_sonification_types_summary">Vai iespējot papildu sonifikācijas opcijas</string>
+    <string name="audio_settings_sensor_prompt">Atlasiet sensora audio iestatījumus:</string>
+    <string name="enable_auto_zoom">Iespējot automātisko skalu</string>
   <string name="disable_auto_zoom">Atspējot automātisko skalu</string>
   <string name="autozoom_failed">Neizdevās pielāgot automātisko skalu.</string>
   <string name="run_review_overflow_menu_content_description">Citas opcijas</string>
@@ -308,26 +406,6 @@
   <string name="trigger_when_above_description">%1$s, kad sensora rādījums ir lielāks par %2$s %3$s</string>
   <string name="trigger_when_below_description">%1$s, kad sensora rādījums ir mazāks par %2$s %3$s</string>
   <string name="sensor_trigger_deleted">Aktivizētājs ir dzēsts</string>
-  <string-array name="trigger_type_list">
-    <item>@string/trigger_type_start_recording</item>
-    <item>@string/trigger_type_stop_recording</item>
-    <item>@string/trigger_type_note</item>
-    <item>@string/trigger_type_alert</item>
-  </string-array>
-  <string-array name="trigger_when_list">
-    <item>@string/trigger_when_at</item>
-    <item>@string/trigger_when_rises_above</item>
-    <item>@string/trigger_when_drops_below</item>
-    <item>@string/trigger_when_is_above</item>
-    <item>@string/trigger_when_is_below</item>
-  </string-array>
-  <string-array name="trigger_when_list_note_text">
-    <item>bija ar šādu paātrinājumu:</item>
-    <item>pārsniedza šādu paātrinājumu:</item>
-    <item>nokrita zem šāda paātrinājuma:</item>
-    <item>ir virs šāda paātrinājuma:</item>
-    <item>ir zem šāda paātrinājuma:</item>
-  </string-array>
   <string name="trigger_only_when_recording">Aktivizēt tikai ieraksta laikā</string>
   <string name="trigger_snackbar_auto_text">%1$s %2$s %3$.2f %4$s</string>
   <string name="scroll_to_card">rādīt</string>
@@ -370,90 +448,90 @@
   <string name="timestamp_picker_range_error">Laikam jāietilpst izmēģinājuma diapazonā</string>
   <string name="timestamp_picker_crop_range_error">Ierakstu ilgumu nevar ierobežot mazāku par vienu sekundi</string>
   <string name="timestamp_picker_prompt">Jauns laiks (h:mm:ss.SSS)</string>
-  <string name="crop_failed_range_too_large">Izmēģinājuma datus nevar ierobežot ārpus sākotnēji reģistrētā diapazona</string>
-  <string name="crop_failed_range_too_small">Izmēģinājuma ilgumu nevar ierobežot līdz mazāk nekā vienai sekundei</string>
-  <string name="project_experiment_title">%1$s: %2$s</string>
-  <string name="export_options_title">Eksportēšana...</string>
-  <string name="export_options_relative_time">Relatīvais laiks</string>
-  <string name="old_trigger_note_format">Aktivizētā piezīme: %1s</string>
-  <string name="old_trigger_note_format_custom">Aktivizētā piezīme: %1$s; %2$s</string>
-  <string name="compass">Kompass</string>
-  <string name="compass_units">grādi</string>
-  <string name="sensor_desc_short_compass">Tālruņa orientācija, ņemot vērā Zemes magnētisko lauku.</string>
-  <string name="sensor_desc_first_paragraph_compass">Iespējams, jau zinājāt, ka Zemei ir magnētiskais lauks. Bet varbūt nezinājāt, ka jūsu tālrunī ir ierīce, kas ir paredzēta magnētisko lauku noteikšanai: magnetometrs. Apvienojot datus no tālruņa magnetometra ar tālruņa orientāciju telpā, var izveidot digitālo kompasu. \n\nVecmodīgais kompass ir primitīvs magnetometrs ar magnetizētu adatu, kas griežas, lai pielāgotos apkārtējam magnētiskajam laukam. Jūsu tālrunī nav kompasa, bet ir neliels trīs asu sensors, kas izmanto elektriskās strāvas, lai noteiktu magnētiskā lauka stiprumu telpā trīs dimensijās. Bet ar to vien nepietiek, lai izveidotu kompasu. \n\nKādēļ kompasam ir jāapvieno dati no magnetometra ar tālruņa orientāciju? Zinot tālruņa orientāciju, var aprēķināt magnētisko rotāciju, pat ja tālrunis netiek turēts līdzeni vienā plaknē ar Zemes magnētisko lauku. Mēs zinām, ka gravitācija ir perpendikulāra Zemes magnētiskajam laukam, tādēļ varam izmantot gravitācijas virzienu no akselerometra sensoriem, lai noteiktu magnētiskā lauka lielumu, kas ir vienā plaknē ar Zemes magnētisko lauku.</string>
-  <string name="sensor_desc_second_paragraph_compass">Iespējams, esat pamanījis, ka kompass reaģē ne tikai uz Zemes magnētisko lauku, bet arī uz visiem pārējiem apkārt esošajiem magnētiskajiem laukiem. Magnēti, elektriskā strāva un metāla objekti liek tālruņa magnetometra bultiņai kustēties dažādos virzienos, mainot kompasa rādījumu. Nostājieties atklātā vietā (vēlams brīvā dabā un tālu no elektrolīnijām), ja vēlaties pārliecināties, ka kompasa sarkanā bultiņa pielāgojas Zemes magnētiskajam laukam. Lai kalibrētu tālruņa magnetometru, tālruni var kustināt pa iedomātu astoņnieka trajektoriju.</string>
-  <string name="text_label_details_title">Teksta piezīmes rediģēšana</string>
-  <string name="empty_text_note_error">Teksta piezīmes nedrīkst būt tukšas</string>
-  <string name="navigation_item_experiments">Eksperimenti</string>
-  <string name="note_caption_hint">Pievienojiet aprakstu</string>
-  <string name="month_year_format">MMMM gggg</string>
-  <string name="linear_accelerometer">Lineārais akselerometrs</string>
-  <string name="sensor_desc_short_linear_acc">Tālruņa kopējais paātrinājums, izslēdzot gravitācijas spēku (m/s²)</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Objektiem ir tendence palikt uz vietas vai turpināt kustību, ja tie kustas, — mēs šo tendenci saucam par inerci. Ņūtona pirmais likums formulē šo ideju: katrs ķermenis paliek miera stāvoklī vai turpina vienmērīgu taisnvirziena kustību tikmēr, kamēr citu spēku iedarbība to neizmaina. \n\nKad uz ķermeni miera stāvoklī iedarbojas ārējs spēks, mēs sakām, ka objekts tiek paātrināts: tā ātrums mainās — palielinoties, samazinoties vai mainot virzienu. Paātrinājumu mēra kā ātruma izmaiņas laikā (metri sekundē) vai metrus kvadrātsekundē (m/s²). \n\nJūsu tālrunī ir ierīce kustības izmaiņu mērīšanai — akselerometrs. Akselerometrā mazas atsperotas masas var brīvi pārvietoties. Kustības izmaiņas liek šīm masām novirzīties, tāpat kā jūsu galva smagi sasveras uz priekšu, mašīnai strauji apstājoties. Mērot šīs mazās inerces novirzes, akselerometrs tālrunī var noteikt kustības un orientācijas izmaiņas, kas noder, lai ekrānā mainītu ainavas un portreta režīmu, tālrunī spēlētu spēles, kā arī citām funkcijām.</string>
-  <string name="sensor_desc_second_paragraph_linear_acc">Apvienotā lineārā akselerometra sensors reģistrē kopējo paātrinājumu visās trīs tālruņa asīs, izslēdzot gravitāciju.</string>
-  <string name="data_with_units">%1$s %2$s</string>
-  <string name="edit_note_time_menu_item">Rediģēt laiku</string>
-  <string name="add_note_button_text">Pievienot piezīmi laika skalai</string>
-  <string name="add_note_to_time_text">Pievienojiet piezīmi: %1$s</string>
-  <string name="trial_caption_hint_text">Šeit pievienojiet ieraksta aprakstu</string>
-  <string name="snapshot_label_details_title">Informācija par momentuzņēmumu</string>
-  <string name="trigger_label_details_title">Info par aktivizēto piezīmi</string>
-  <string name="tool_picker_tab_layout_description">Pieejamie rīki</string>
-  <string name="tab_description_add_note">Pievienot tekstu</string>
-  <string name="tab_description_observe">Novērojiet sensorus</string>
-  <string name="tab_description_camera">Uzņemt fotoattēlu</string>
-  <string name="load_more_notes_btn">Skatīt vairāk piezīmju</string>
-  <string name="name_experiment_dialog_title">Nosaukuma piešķiršana šim eksperimentam</string>
-  <string name="empty_experiment_title_error">Nosaukums nedrīkst būt tukšs</string>
-  <string name="card_recording_title">%1$s…</string>
-  <string name="throbber_content_description">Notiek ierakstīšana</string>
-  <string name="trigger_label_name_header">%1$s %2$s</string>
-  <string name="description_hint">Apraksts</string>
-  <string name="details_header">Sīkāka informācija</string>
-  <string name="text_label_hint">Pievienojiet novērojumu</string>
-  <string name="first_experiment_title">Laipni lūdzam lietotnē Science Journal</string>
-  <string name="first_experiment_text_note">Pievienojiet piezīmes un reģistrējiet datus, izmantojot tālāk pieejamo rīkjoslu.</string>
-  <string name="first_experiment_picture_note_caption">Laipni lūdzam lietotnē Science Journal!</string>
-  <string name="first_experiment_second_text_note">Šeit varat atrast aktivitātes, ko izmēģināt: \ng.co/sciencejournalactivities</string>
-  <string name="experiment_cover_description">Izvēlieties eksperimenta fotoattēlu</string>
-  <string name="btn_take_picture_content_description">Uzņemt fotoattēlu</string>
-  <string name="tab_description_gallery">Izvēlieties fotoattēlu</string>
-  <string name="gallery_image_content_description">Attēla uzņemšanas datums: %s</string>
-  <string name="gallery_image_content_description_selected">Atlasītā attēla numurs: %1$d. Attēla uzņemšanas datums: %2$s</string>
-  <string name="content_description_selected">atlasīts</string>
-  <string name="gallery_selected_title">Atlasīto attēlu skaits: %1$d</string>
-  <string name="photo_editor_dialog_title">Fotoattēla rediģēšana, izmantojot lietotni...</string>
-  <string name="btn_show_tools">Rādīt rīku atvilktni</string>
-  <string name="btn_expand_tools">Izvērst rīku atvilktni</string>
-  <string name="btn_hide_tools">Sakļaut rīku atvilktni</string>
-  <string name="action_edit_photo">Rediģēt fotoattēlu</string>
-  <string name="add_text_note">Pievienot teksta piezīmi</string>
-  <string name="camera_preview_content_description">Kameras priekšskatījums</string>
-  <string name="input_camera_permission_denied">Nevar izmantot kameru, jo lietotne Science Journal nevar piekļūt tai.</string>
-  <string name="input_photo_library_permission_denied">Fotoattēlu galeriju nevar izmantot, jo lietotne Science Journal nevar tai piekļūt.</string>
-  <string name="action_show_archived_experiments">Rādīt arhivētos eksperimentus</string>
-  <string name="action_hide_archived_experiments">Slēpt arhivētos eksperimentus</string>
-  <string name="action_hide_archived_trials">Slēpt arhivētos ierakstus</string>
-  <string name="snapshot_button_description">Sensora momentuzņēmums</string>
-  <string name="notification_channel_name">Ieraksti</string>
-  <string name="notification_channel_description">Ierakstīšanas statuss</string>
-  <string name="import_failed_recording">Pašlaik tiek izmantota lietotne Science Journal. Lūdzu, pārtrauciet ierakstīšanu un mēģiniet vēlreiz.</string>
-  <string name="import_failed_file">Importēšana neizdevās. Radās problēma ar šo eksperimentu.</string>
-  <string name="import_failed">Diemžēl radās nezināma kļūda.</string>
-  <string name="explore_your_world">Izpētiet pasauli</string>
-  <string name="use_science_journal">Izmantojiet Science Journal, lai veiktu\neksperimentus apkārtējā pasaulē</string>
-  <string name="get_started">Sākt darbu</string>
-  <string name="sign_in_text">Lietotnes Science Journal eksperimentu dati tiek saglabāti un ir pieejami vairākās ierīcēs, izmantojot Google disku (ir jāpierakstās ar Google kontu).\n\nJa jums šajā ierīcē jau ir dati, pēc pierakstīšanās savus eksperimentus varat saglabāt Google diskā. Eksperimenti tiek glabāti Google diska mapē “Science Journal”.</string>
-  <string name="device_settings_applied">Esošie ierīces iestatījumi ir piemēroti šim kontam</string>
-  <string name="sign_in_button">Pierakstīties</string>
-  <string name="sign_in_learn_more_button">Uzzināt vairāk</string>
-  <string name="sign_in_continue_without_signing_in_button">Turpināt bez pierakstīšanās</string>
-  <string name="science_journal_disabled_title">Lietotne Science Journal ir atspējota</string>
-  <string name="science_journal_disabled_message">Jūsu domēna administratoram ir jāieslēdz lietotne Science Journal pakalpojumā Google Admin Console.</string>
-  <string name="science_journal_disabled_yes">Pārslēgt kontus</string>
-  <string name="old_user_option_prompt_headline">Dublēšana Google diskā</string>
-  <plurals name="old_user_option_prompt_text">
-    <item quantity="zero">Laipni lūdzam atpakaļ! Pašlaik šajā ierīcē ir saglabāti %1$d eksperimenti.\n\nLai turpinātu, atlasiet kādu opciju.</item>
+    <string name="crop_failed_range_too_large">Izmēģinājuma datus nevar ierobežot ārpus sākotnēji reģistrētā diapazona</string>
+    <string name="crop_failed_range_too_small">Izmēģinājuma ilgumu nevar ierobežot līdz mazāk nekā vienai sekundei</string>
+    <string name="project_experiment_title">%1$s: %2$s</string>
+    <string name="export_options_title">Eksportēšana...</string>
+    <string name="export_options_relative_time">Relatīvais laiks</string>
+    <string name="old_trigger_note_format">Aktivizētā piezīme: %1s</string>
+    <string name="old_trigger_note_format_custom">Aktivizētā piezīme: %1$s; %2$s</string>
+    <string name="compass">Kompass</string>
+    <string name="compass_units">grādi</string>
+    <string name="sensor_desc_short_compass">Tālruņa orientācija, ņemot vērā Zemes magnētisko lauku.</string>
+    <string name="sensor_desc_first_paragraph_compass">Iespējams, jau zinājāt, ka Zemei ir magnētiskais lauks. Bet varbūt nezinājāt, ka jūsu tālrunī ir ierīce, kas ir paredzēta magnētisko lauku noteikšanai: magnetometrs. Apvienojot datus no tālruņa magnetometra ar tālruņa orientāciju telpā, var izveidot digitālo kompasu.
+
+Vecmodīgais kompass ir primitīvs magnetometrs ar magnetizētu adatu, kas griežas, lai pielāgotos apkārtējam magnētiskajam laukam. Jūsu tālrunī nav kompasa, bet ir neliels trīs asu sensors, kas izmanto elektriskās strāvas, lai noteiktu magnētiskā lauka stiprumu telpā trīs dimensijās. Bet ar to vien nepietiek, lai izveidotu kompasu. 
+
+Kādēļ kompasam ir jāapvieno dati no magnetometra ar tālruņa orientāciju? Zinot tālruņa orientāciju, var aprēķināt magnētisko rotāciju, pat ja tālrunis netiek turēts līdzeni vienā plaknē ar Zemes magnētisko lauku. Mēs zinām, ka gravitācija ir perpendikulāra Zemes magnētiskajam laukam, tādēļ varam izmantot gravitācijas virzienu no akselerometra sensoriem, lai noteiktu magnētiskā lauka lielumu, kas ir vienā plaknē ar Zemes magnētisko lauku.</string>
+    <string name="sensor_desc_second_paragraph_compass">Iespējams, esat pamanījis, ka kompass reaģē ne tikai uz Zemes magnētisko lauku, bet arī uz visiem pārējiem apkārt esošajiem magnētiskajiem laukiem. Magnēti, elektriskā strāva un metāla objekti liek tālruņa magnetometra bultiņai kustēties dažādos virzienos, mainot kompasa rādījumu. Nostājieties atklātā vietā (vēlams brīvā dabā un tālu no elektrolīnijām), ja vēlaties pārliecināties, ka kompasa sarkanā bultiņa pielāgojas Zemes magnētiskajam laukam. Lai kalibrētu tālruņa magnetometru, tālruni var kustināt pa iedomātu astoņnieka trajektoriju.</string>
+    <string name="text_label_details_title">Teksta piezīmes rediģēšana</string>
+    <string name="empty_text_note_error">Teksta piezīmes nedrīkst būt tukšas</string>
+    <string name="navigation_item_experiments">Eksperimenti</string>
+    <string name="note_caption_hint">Pievienojiet aprakstu</string>
+    <string name="month_year_format">MMMM gggg</string>
+    <string name="linear_accelerometer">Lineārais akselerometrs</string>
+    <string name="sensor_desc_short_linear_acc">Tālruņa kopējais paātrinājums, izslēdzot gravitācijas spēku (m/s²)</string>
+    <string name="sensor_desc_first_paragraph_linear_acc">Objektiem ir tendence palikt uz vietas vai turpināt kustību, ja tie kustas, — mēs šo tendenci saucam par inerci. Ņūtona pirmais likums formulē šo ideju: katrs ķermenis paliek miera stāvoklī vai turpina vienmērīgu taisnvirziena kustību tikmēr, kamēr citu spēku iedarbība to neizmaina.
+
+Kad uz ķermeni miera stāvoklī iedarbojas ārējs spēks, mēs sakām, ka objekts tiek paātrināts: tā ātrums mainās — palielinoties, samazinoties vai mainot virzienu. Paātrinājumu mēra kā ātruma izmaiņas laikā (metri sekundē) vai metrus kvadrātsekundē (m/s²). 
+
+Jūsu tālrunī ir ierīce kustības izmaiņu mērīšanai — akselerometrs. Akselerometrā mazas atsperotas masas var brīvi pārvietoties. Kustības izmaiņas liek šīm masām novirzīties, tāpat kā jūsu galva smagi sasveras uz priekšu, mašīnai strauji apstājoties. Mērot šīs mazās inerces novirzes, akselerometrs tālrunī var noteikt kustības un orientācijas izmaiņas, kas noder, lai ekrānā mainītu ainavas un portreta režīmu, tālrunī spēlētu spēles, kā arī citām funkcijām.</string>
+    <string name="sensor_desc_second_paragraph_linear_acc">Apvienotā lineārā akselerometra sensors reģistrē kopējo paātrinājumu visās trīs tālruņa asīs, izslēdzot gravitāciju.</string>
+    <string name="data_with_units">%1$s %2$s</string>
+    <string name="edit_note_time_menu_item">Rediģēt laiku</string>
+    <string name="add_note_to_time_text">Pievienojiet piezīmi: %1$s</string>
+    <string name="snapshot_label_details_title">Informācija par momentuzņēmumu</string>
+    <string name="trigger_label_details_title">Info par aktivizēto piezīmi</string>
+    <string name="load_more_notes_btn">Skatīt vairāk piezīmju</string>
+    <string name="name_experiment_dialog_title">Nosaukuma piešķiršana šim eksperimentam</string>
+    <string name="empty_experiment_title_error">Nosaukums nedrīkst būt tukšs</string>
+    <string name="card_recording_title">%1$s…</string>
+    <string name="throbber_content_description">Notiek ierakstīšana</string>
+    <string name="trigger_label_name_header">%1$s %2$s</string>
+    <string name="description_hint">Apraksts</string>
+    <string name="details_header">Sīkāka informācija</string>
+    <string name="text_label_hint">Pievienojiet novērojumu</string>
+    <string name="first_experiment_title">Laipni lūdzam lietotnē Science Journal</string>
+    <string name="first_experiment_text_note">Pievienojiet piezīmes un reģistrējiet datus, izmantojot tālāk pieejamo rīkjoslu.</string>
+    <string name="first_experiment_picture_note_caption">Laipni lūdzam lietotnē Science Journal!</string>
+    <string name="first_experiment_second_text_note">Šeit varat atrast aktivitātes, ko izmēģināt:
+g.co/sciencejournalactivities</string>
+    <string name="experiment_cover_description">Izvēlieties eksperimenta fotoattēlu</string>
+    <string name="btn_take_picture_content_description">Uzņemt fotoattēlu</string>
+    <string name="gallery_image_content_description">Attēla uzņemšanas datums: %s</string>
+    <string name="gallery_image_content_description_selected">Atlasītā attēla numurs: %1$d. Attēla uzņemšanas datums: %2$s</string>
+    <string name="content_description_selected">atlasīts</string>
+    <string name="gallery_selected_title">Atlasīto attēlu skaits: %1$d</string>
+    <string name="photo_editor_dialog_title">Fotoattēla rediģēšana, izmantojot lietotni...</string>
+    <string name="action_edit_photo">Rediģēt fotoattēlu</string>
+    <string name="input_camera_permission_denied">Nevar izmantot kameru, jo lietotne Science Journal nevar piekļūt tai.</string>
+    <string name="input_photo_library_permission_denied">Fotoattēlu galeriju nevar izmantot, jo lietotne Science Journal nevar tai piekļūt.</string>
+    <string name="action_show_archived_experiments">Rādīt arhivētos eksperimentus</string>
+    <string name="action_hide_archived_experiments">Slēpt arhivētos eksperimentus</string>
+    <string name="action_hide_archived_trials">Slēpt arhivētos ierakstus</string>
+    <string name="snapshot_button_description">Sensora momentuzņēmums</string>
+    <string name="notification_channel_name">Ieraksti</string>
+    <string name="notification_channel_description">Ierakstīšanas statuss</string>
+    <string name="import_failed_recording">Pašlaik tiek izmantota lietotne Science Journal. Lūdzu, pārtrauciet ierakstīšanu un mēģiniet vēlreiz.</string>
+    <string name="import_failed_file">Importēšana neizdevās. Radās problēma ar šo eksperimentu.</string>
+    <string name="import_failed">Diemžēl radās nezināma kļūda.</string>
+    <string name="explore_your_world">Izpētiet pasauli</string>
+    <string name="use_science_journal">Izmantojiet Science Journal, lai veiktu
+eksperimentus apkārtējā pasaulē</string>
+    <string name="get_started">Sākt darbu</string>
+    <string name="sign_in_text">Lietotnes Science Journal eksperimentu dati tiek saglabāti un ir pieejami vairākās ierīcēs, izmantojot Google disku (ir jāpierakstās ar Google kontu).
+
+Ja jums šajā ierīcē jau ir dati, pēc pierakstīšanās savus eksperimentus varat saglabāt Google diskā. Eksperimenti tiek glabāti Google diska mapē “Science Journal”.</string>
+    <string name="device_settings_applied">Esošie ierīces iestatījumi ir piemēroti šim kontam</string>
+    <string name="sign_in_button">Pierakstīties</string>
+    <string name="sign_in_learn_more_button">Uzzināt vairāk</string>
+    <string name="sign_in_continue_without_signing_in_button">Turpināt bez pierakstīšanās</string>
+    <string name="science_journal_disabled_title">Lietotne Science Journal ir atspējota</string>
+    <string name="science_journal_disabled_message">Jūsu domēna administratoram ir jāieslēdz lietotne Science Journal pakalpojumā Google Admin Console.</string>
+    <string name="science_journal_disabled_yes">Pārslēgt kontus</string>
+    <string name="old_user_option_prompt_headline">Dublēšana Google diskā</string>
+    <plurals name="old_user_option_prompt_text">
+        <item quantity="zero">Laipni lūdzam atpakaļ! Pašlaik šajā ierīcē ir saglabāti %1$d eksperimenti.\n\nLai turpinātu, atlasiet kādu opciju.</item>
     <item quantity="one">Laipni lūdzam atpakaļ! Pašlaik šajā ierīcē ir saglabāts %1$d eksperiments.\n\nLai turpinātu, atlasiet kādu opciju.</item>
     <item quantity="other">Laipni lūdzam atpakaļ! Pašlaik šajā ierīcē ir saglabāti %1$d eksperimenti.\n\nLai turpinātu, atlasiet kādu opciju.</item>
   </plurals>
@@ -502,8 +580,6 @@
   <string name="remove_cover_image_confirm">Vai tiešām vēlaties noņemt titulattēlu? Šo darbību nevar atsaukt.</string>
   <string name="drive_sync_cannot_reach_google_drive">Nevar sasniegt Google disku. Pārbaudiet savienojumu.</string>
   <string name="experiment_title_concatenator">%1$s / %2$s</string>
-  <string name="create_experiment_feature_discovery_title">Jauna eksperimenta izveide</string>
-  <string name="create_experiment_feature_discovery_body">Sakārtojiet idejas un novērojumus, veicot piezīmes, ierakstot datus vai uzņemot fotoattēlus</string>
   <string name="download_copy_action">Lejupielādēt</string>
   <string name="saved_to_device_text">Sagl. lejupielāžu mapē.</string>
   <string name="download_options_title">Notiek lejupielāde…</string>
@@ -525,16 +601,35 @@
   <string name="more_observations_draw_title">Zīmējums</string>
   <string name="more_observations_draw_description">Pievienot zīmējuma piezīmes</string>
   <string name="more_observations_velocity_tracker_title">Ātruma izsekotājs</string>
-  <string name="more_observations_velocity_tracker_description">Izmantojot papildināto realitāti, izsekojiet un mēriet objektus.</string>
-  <string name="fit_image_to_scan">Pielāgojiet attēlu</string>
-  <string name="ar_detecting_image">Notiek attēla noteikšana</string>
-  <string name="ar_not_tracking">Netiek veikta izsekošana</string>
-  <string name="action_bar_text_note">Teksta piezīmes izveidošana</string>
-  <string name="action_bar_sensor_note">Sensora ieraksta izveidošana</string>
-  <string name="action_bar_gallery">Attēlu atlase</string>
-  <string name="action_bar_more">Vairāk novērojumu</string>
-  <string name="note_saved">Jūsu piezīme ir saglabāta</string>
-  <string name="note_saved_action">Skatīt</string>
-  <string name="announcement_card_button_text">Uzzināt vairāk</string>
-  <string name="dismiss_button_text">Nerādīt</string>
+    <string name="more_observations_velocity_tracker_description">Izmantojot papildināto realitāti, izsekojiet un mēriet objektus.</string>
+    <string name="fit_image_to_scan">Pielāgojiet attēlu</string>
+    <string name="ar_detecting_image">Notiek attēla noteikšana</string>
+    <string name="ar_not_tracking">Netiek veikta izsekošana</string>
+    <string name="action_bar_text_note">Teksta piezīmes izveidošana</string>
+    <string name="action_bar_sensor_note">Sensora ieraksta izveidošana</string>
+    <string name="action_bar_gallery">Attēlu atlase</string>
+    <string name="action_bar_more">Vairāk novērojumu</string>
+    <string name="note_saved">Jūsu piezīme ir saglabāta</string>
+    <string name="note_saved_action">Skatīt</string>
+    <string name="btn_add_experiment_note_description">Pievienot eksperimenta piezīmi</string>
+    <string name="btn_add_run_note_description">Pievienot izmēģinājuma piezīmi</string>
+    <string name="add_note_hint_text">Pievienojiet jaunu piezīmi</string>
+    <string name="add_run_note_placeholder_text">Pievienojiet piezīmi šim ierakstam</string>
+    <string name="add_note_image_button_content_description">Uzņemt attēlu kā piezīmi</string>
+    <string name="add_note_button_text">Pievienot piezīmi laika skalai</string>
+    <string name="trial_caption_hint_text">Šeit pievienojiet ieraksta aprakstu</string>
+    <string name="tool_picker_tab_layout_description">Pieejamie rīki</string>
+    <string name="tab_description_add_note">Pievienot tekstu</string>
+    <string name="tab_description_observe">Novērojiet sensorus</string>
+    <string name="tab_description_camera">Uzņemt fotoattēlu</string>
+    <string name="tab_description_gallery">Izvēlieties fotoattēlu</string>
+    <string name="btn_show_tools">Rādīt rīku atvilktni</string>
+    <string name="btn_expand_tools">Izvērst rīku atvilktni</string>
+    <string name="btn_hide_tools">Sakļaut rīku atvilktni</string>
+    <string name="add_text_note">Pievienot teksta piezīmi</string>
+    <string name="camera_preview_content_description">Kameras priekšskatījums</string>
+    <string name="create_experiment_feature_discovery_title">Jauna eksperimenta izveide</string>
+    <string name="create_experiment_feature_discovery_body">Sakārtojiet idejas un novērojumus, veicot piezīmes, ierakstot datus vai uzņemot fotoattēlus</string>
+    <string name="announcement_card_button_text">Uzzināt vairāk</string>
+    <string name="dismiss_button_text">Nerādīt</string>
 </resources>

@@ -1,14 +1,44 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="app_name">Arduino Science Journal</string>
-  <string name="action_feedback">Povratne informacije</string>
-  <string name="action_about">Vizitka</string>
-  <string name="action_save">Shrani</string>
-  <string name="action_edit">Uredi</string>
-  <string name="action_archive_experiment">Arhiviraj poskus</string>
-  <string name="action_unarchive_experiment">Odarhiviraj poskus</string>
-  <string name="action_archive_run">Arhiviraj</string>
-  <string name="action_unarchive_run">Odarhiviraj</string>
-  <string name="action_delete">Izbriši</string>
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string-array name="sonification_types_dev">
+        <item>@string/amplitude</item>
+    </string-array>
+    <string-array name="sonification_types_prod">
+        <item>@string/default_sonification</item>
+        <item>@string/scale</item>
+        <item>@string/notes</item>
+        <item>@string/conductor</item>
+    </string-array>
+    <string-array name="trigger_type_list">
+        <item>@string/trigger_type_start_recording</item>
+        <item>@string/trigger_type_stop_recording</item>
+        <item>@string/trigger_type_note</item>
+        <item>@string/trigger_type_alert</item>
+    </string-array>
+    <string-array name="trigger_when_list">
+        <item>@string/trigger_when_at</item>
+        <item>@string/trigger_when_rises_above</item>
+        <item>@string/trigger_when_drops_below</item>
+        <item>@string/trigger_when_is_above</item>
+        <item>@string/trigger_when_is_below</item>
+    </string-array>
+    <string-array name="trigger_when_list_note_text">
+        <item>je pri vrednosti</item>
+        <item>je nad vrednostjo</item>
+        <item>je pod vrednostjo</item>
+        <item>nad</item>
+        <item>pod</item>
+    </string-array>
+    <string name="app_name">Arduino Science Journal</string>
+    <string name="action_feedback">Povratne informacije</string>
+    <string name="action_about">Vizitka</string>
+    <string name="action_save">Shrani</string>
+    <string name="action_edit">Uredi</string>
+    <string name="action_archive_experiment">Arhiviraj poskus</string>
+    <string name="action_unarchive_experiment">Odarhiviraj poskus</string>
+    <string name="action_archive_run">Arhiviraj</string>
+    <string name="action_unarchive_run">Odarhiviraj</string>
+    <string name="action_delete">Izbriši</string>
   <string name="sine_wave">Sinusna krivulja</string>
   <string name="vel">Hitrost</string>
   <string name="acc_x">Merilnik pospeška X</string>
@@ -34,8 +64,6 @@
   <string name="action_retry">Poskusi znova</string>
   <string name="decibel">Jakost zvoka</string>
   <string name="pitch">Višina tona</string>
-  <string name="btn_add_experiment_note_description">Dodajte opombo o poskusu</string>
-  <string name="btn_add_run_note_description">Dodaj opombo o izvedbi</string>
   <string name="btn_record_description">Začni beležiti</string>
   <string name="btn_stop_description">Ustavi beleženje</string>
   <string name="btn_record_label">Beleži</string>
@@ -143,15 +171,6 @@
   <string name="notes">Note</string>
   <string name="scale">Lestvica</string>
   <string name="conductor">Dirigent</string>
-  <string-array name="sonification_types_prod">
-    <item>@string/default_sonification</item>
-    <item>@string/scale</item>
-    <item>@string/notes</item>
-    <item>@string/conductor</item>
-  </string-array>
-  <string-array name="sonification_types_dev">
-    <item>@string/amplitude</item>
-  </string-array>
   <string name="empty_experiment">Nimate še opazovanj</string>
   <string name="device_options_sensor_label_text">Tipalo</string>
   <string name="external_sensor_appearance_name">%1$s – %2$s</string>
@@ -162,55 +181,107 @@
   <string name="device_options_custom_sensor_frequency_checkbox_text">Frekvenca</string>
   <string name="feedback_error_message">Povratnih informacij ni bilo mogoče poslati.</string>
   <string name="sensor_desc_short_acc_x">Pospešek telefona v levo in desno v m/s²</string>
-  <string name="sensor_desc_short_acc_y">Pospešek telefona naprej in nazaj v m/s²</string>
-  <string name="sensor_desc_short_acc_z">Pospešek telefona navzgor in navzdol v m/s²</string>
-  <string name="sensor_desc_short_decibel">Jakost zvoka, ki doseže tipalo ali mikrofon, merjena v decibelih (dB).</string>
-  <string name="sensor_desc_short_pitch">Višina zvoka, izmerjena v hercih (Hz), ki doseže tipalo zvoka ali mikrofon.</string>
-  <string name="sensor_desc_short_light">Količina svetlobe, ki doseže tipalo svetlobe v okolju, merjena v luksih.</string>
-  <string name="sensor_desc_short_magnetic_strength">Moč okoljskega geomagnetnega polja, izražena v enoti mikrotesla.</string>
-  <string name="sensor_desc_short_bluetooth">Zunanje tipalo prikazuje podatke tukaj glede na nastavitve po meri.</string>
-  <string name="sensor_desc_short_rotation">Število vrtljajev na minuto</string>
-  <string name="sensor_desc_short_raw">Odstotek neobdelanih podatkov, prebranih iz zunanjega tipala.</string>
-  <string name="sensor_desc_short_barometer">Atmosferski tlak, izmerjen v hektopaskalih (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Tipalo svetlobe v okolju meri svetlobo v luksih, enoti za osvetlitev, ki je odvisna od količine dohodne svetlobe in območja, po katerem je razporejena. \n\nPolna luna ustvarja približno 1 luks osvetlitve, običajna luč, ki osvetljuje dnevno sobo, približno 50 luksov, osvetlitev učilnice in sončni vzhod ter zahod približno 400 luksov, dnevna svetloba (posredna sončna svetloba) več kot 10.000 luksov, neposredna sončna svetloba pa več kot 30.000 luksov. \n\nLuks je enota, ki je večina od nas ne pozna. Pri kupovanju žarnic uporabljamo vate, vendar nam ti ne povejo, kako svetla je žarnica, pač pa samo, koliko energije porablja. Boljša enota za kupovanje žarnic so lumni, ki povejo, koliko svetlobe bo žarnica dejansko ustvarila, luksi pa povejo, koliko svetlobe bo padlo na določeno območje.</string>
-  <string name="sensor_desc_second_paragraph_light">Svetloba se med potovanjem širi navzven, zato se število luksov pri odmikanju od vira svetlobe zmanjšuje, čeprav vir še vedno oddaja enako količino svetlobe v lumnih. Tudi območje, ki je nagnjeno stran od virov svetlobe, je manj osvetljeno. Zaradi tega so ekvatorialna območja Zemlje toliko toplejša od mrzlih tečajev. \n\nMimogrede, naloga tipala svetlobe v telefonu je, da nadzoruje osvetlitev zaslona in jo prilagaja temnim in svetlim okoljem. Znotraj svetlobnega tipala se majhen polprevodnik odziva na dohodno svetlobo z ustvarjanjem šibkega, vendar merljivega električnega toka – temu pojavu pravimo fotoelektrični učinek. Podobna tipala se uporabljajo v nekaterih uličnih svetilkah, da se vklopijo, ko se zunaj stemni.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">V vašem telefonu je naprava, ki zaznava magnetna polja: magnetometer. To majhno triosno tipalo z električnimi tokovi zaznava moč magnetnega polja v treh dimenzijah prostora. Z združitvijo podatkov z vseh treh osi lahko ustvarimo tipalo za merjenje celotne moči magnetnega polja. \n\nNekateri magnetometri magnetna polja zaznavajo s Hallovim pojavom. Ta pojav označuje značilnost magnetnih polj, da spremenijo smer toka električnega naboja. Novejši magnetometri uporabljajo magnetne upore, kovinske zlitine, ki spreminjajo svojo upornost glede na magnetna polja. \n\nZakaj telefon potrebuje magnetometer? Podatek o usmerjenosti v prostoru je pomemben za vgrajene kompasne in navigacijske aplikacije. To velja predvsem za aplikacije, ki zagotavljajo podrobna navodila za pot.</string>
-  <string name="sensor_desc_second_paragraph_magnetic_strength">Magneti, električni tokovi in kovinski predmeti zelo hitro vplivajo na magnetometer v telefonu. Magnetometer v telefonu tudi sredi praznega polja vedno prikazuje nizko neničelno vrednost: to je magnetno polje Zemlje.</string>
-  <string name="sensor_desc_first_paragraph_acc">Predmeti so nagnjeni k temu, da ostanejo na svojem mestu ali da nadaljujejo z gibanjem, če se gibljejo – temu pravimo vztrajnost. Formalno jo opisuje Newtonov prvi zakon: predmet nadaljuje z gibanjem ali ostane na svojem mestu, razen če nanj deluje neizenačena sila. \n\nKo neizenačena sila povzroči, da se predmet premakne, pravimo, da predmet pospešuje: njegova hitrost se spremeni – predmet pospeši, upočasni ali spremeni smer gibanja. Pospeševanje se meri kot sprememba hitrosti (ta se meri v metrih na sekundo) v času ali v metrih na kvadratno sekundo (m/s²). \n\nV telefonu je naprava, ki meri te spremembe gibanja – merilnik pospeška. Znotraj merilnika pospeška se prosto gibljejo majhne viseče uteži. Spremembe v gibanju povzročijo, da se te uteži premaknejo, podobno kot se vaša glava v avtomobilu, ki nenadoma zavre, premakne naprej. Merilnik pospeška v telefonu meri te majhne vztrajnostne premike in tako zazna spremembe v gibanju in usmerjenosti. To je uporabno za preklapljanje zaslona iz ležeče usmeritve v pokončno, igranje iger na telefonu in drugo.</string>
-  <string name="sensor_desc_second_paragraph_acc">Verjetno ste opazili nenehen pospešek v smeri osi Z, tudi ko telefon odložite na mizo. To je pospešek, ki zaradi gravitacijskega privlaka deluje na nas na površini Zemlje, in znaša približno 9,8 m/s².</string>
-  <string name="sensor_desc_first_paragraph_decibel">Zvok ustvarjajo vibracije. Vaš glas na primer ustvarjajo vibracije glasilk v vašem grlu. Te vibracije ustvarjajo izmenjujoča se območja visokega in nizkega zračnega tlaka, ki potujejo navzven, podobno kot okrogli valovi, ki se širijo navzven, ko v jezero vržete kamen.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Vse zvoke je mogoče opisati z njihovo frekvenco in jakostjo. \n\nZ aplikacijo Science Journal tukaj merite jakost v decibelih (dB). Jakost, ali glasnost, je odvisna od razdalje, za katero se predmet premakne ob vsaki vibraciji. Večjo jakost slišimo kot višjo glasnost. \n\nFrekvenca (tudi višina ali ton) zvočnega vala je enakovredna njegovi hitrosti vibriranja. Hitreje kot predmet vibrira, višji bo ustvarjen zvok. Tipalo za jakost zvoka v aplikaciji Science Journal ne meri frekvence, pač pa le glasnost. \n\nUpoštevati morate, da je mikrofon v vaši napravi zasnovan tako, da je zelo občutljiv na spremembe zvočnih valov skozi čas, ne pa tudi na absolutno velikost vsakega vala. Poskusili smo izbrati kodo, ki bo zagotavljala številke, podobne spodaj navedenim referenčnim, vendar lahko naprave izmerijo dosledno višje ali nižje številke. Znanstveniki taka tipala običajno umerijo glede na znano meritev. Science Journal vam trenutno lahko pove, ali bo vožnja z vlakom glasnejša od rokovskega koncerta, vendar le, če imate na obeh dogodkih isti telefon.\n\nVedeti morate tudi, da so med »jakostjo zvoka«, »ravnjo jakosti zvoka« in »zvočnim tlakom« pomembne razlike. Tukaj vse tri meritve obravnavamo enako, če pa želite več podrobnosti, vam je na voljo veliko število spletnih virov, kjer so opisane razlike. \n\nGlasnost najtišjega zvoka, ki ga lahko zazna uho povprečnega človeka, je 0 dB. Glasnost običajnega pogovora je okrog 60 dB, zvoki nad 140 dB pa so za človeško uho boleči. Škodljivi so lahko tudi neboleči zvoki. Neprekinjena izpostavljenost zvokom glasnosti 90 dB, kar približno ustreza glasnosti sesalnika, lahko sčasoma povzroči okvaro sluha.\n\nMerilna lestvica za decibele je logaritemska, zaradi česar je merjenje nekoliko zapleteno: vir zvoka glasnosti 40 dB ni dvakrat močnejši kot vir zvoka glasnosti 20 dB – je stokrat močnejši. Če ena zvoneča budilka ustvari zvok z glasnostjo 70 dB, dve budilki ne ustvarita zvoka glasnosti 140, pač pa 73 dB. Kot smo omenili, je merilna lestvica nenavadna.\n\nŠumenje listov – 10 dB\nŠepetanje z razdalje 1,5 m – 20 dB\nTiho šepetanje – 30 dB\nDež – 50 dB\nObičajni pogovor – 60 dB\nKuhinjski mešalnik – 90 dB\nAvtomobil brez dušilca – 100 dB\nVpitje v uho – 110 dB\nGrmenje – 120 dB\nPnevmatsko kladivo – 130 dB\nVzlet letala – 140 dB</string>
-  <string name="sensor_desc_first_paragraph_pitch">Zvok ustvarjajo vibracije. Vaš glas na primer ustvarjajo vibracije glasilk v vašem grlu. Te vibracije ustvarjajo izmenjujoča se območja visokega in nizkega zračnega tlaka, ki potujejo navzven, podobno kot okrogli valovi, ki se širijo navzven, ko v jezero vržete kamen.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Vse zvoke je mogoče opisati z njihovo frekvenco in jakostjo. Frekvenca (tudi višina ali ton) zvočnega vala je enakovredna njegovi hitrosti vibriranja. Hitreje kot predmet vibrira, višji bo ustvarjen zvok. Vibriranje merimo v hercih (Hz), kjer je 1 herc 1 vibracija na sekundo. \n\nČloveško uho lahko zazna zvoke v obsegu od 20 do 20.000 Hz. Tipka z najnižjim zvokom klavirja ustvari zvok s frekvenco 27,5 Hz, tipka z najvišjim zvokom pa zvok s frekvenco 4186,01 Hz. \n\nRdeča pika prikazuje, kako blizu najbližji glasbeni noti je zaznan ton. Če je ton nižji, bo pika prikazana na levi. Če je ton višji, bo rdeča pika prikazana na desni.</string>
-  <string name="pitch_low_content_description">nizek ton</string>
-  <string name="pitch_flatter_than_natural_note_content_description">Toliko poltonov nižje od tona %1$s: %3$s, oktava %2$s</string>
-  <string name="pitch_flatter_than_flat_note_content_description">Toliko poltonov nižje od znižanega tona %1$s: %3$s, oktava %2$s</string>
-  <string name="pitch_flatter_than_sharp_note_content_description">Toliko poltonov nižje od zvišanega tona %1$s: %3$s, oktava %2$s</string>
-  <string name="pitch_natural_note_content_description">%1$s, oktava %2$s</string>
-  <string name="pitch_flat_note_content_description">Znižan ton %1$s, oktava %2$s</string>
-  <string name="pitch_sharp_note_content_description">Zvišan ton %1$s, oktava %2$s</string>
-  <string name="pitch_sharper_than_natural_note_content_description">Toliko poltonov višje od tona %1$s: %3$s, oktava %2$s</string>
-  <string name="pitch_sharper_than_flat_note_content_description">Toliko poltonov višje od znižanega tona %1$s: %3$s, oktava %2$s</string>
-  <string name="pitch_sharper_than_sharp_note_content_description">Toliko poltonov višje od zvišanega tona %1$s: %3$s, oktava %2$s</string>
-  <string name="pitch_high_content_description">visok ton</string>
-  <string name="sensor_desc_first_paragraph_rotation">Vrtljaji na minuto (vrt./min) so meritev frekvence vrtenja okoli nepremične osi v eni minuti. \n\nKo se vetrnica vrti, poganja tudi disk kodirnika:</string>
-  <string name="sensor_desc_second_paragraph_rotation">To ustvarja obdobja svetlobe in teme na tipalu, kar se v aplikaciji Science Journal zazna kot vrtljaj.</string>
-  <string name="sensor_desc_first_paragraph_raw">Tukaj prikazani podatki prihajajo iz komunikacije zunanjega tipala s telefonom prek povezave Bluetooth. \n\nVrednost prikazuje odstotek neobdelanih podatkov, odčitanih neposredno iz mikrokrmilnika. To je običajno odstotek padca napetosti prek tipala.</string>
-  <string name="sensor_desc_second_paragraph_raw">Bluetooth je standard za brezžično tehnologijo, s katero nepremične in mobilne naprave z radijskimi valovi izmenjujejo podatke na kratkih razdaljah.</string>
-  <string name="sensor_desc_first_paragraph_unknown_bluetooth">Tukaj prikazani podatki prihajajo iz komunikacije zunanjega tipala s telefonom prek povezave Bluetooth.</string>
-  <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth je standard za brezžično tehnologijo, s katero nepremične in mobilne naprave z radijskimi valovi izmenjujejo podatke na kratkih razdaljah.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Čeprav to redko opazimo, živimo na dnu globokega oceana zraka: to je Zemljina atmosfera, ki se razteza 40 kilometrov (130.000 čevljev) visoko. Teža vsega tega zraka pritiska na nas in ustvarja tako imenovani atmosferski tlak. \n\nNa višini morske gladine atmosfera na vsak kvadratni centimeter površine pritiska s silo enega kilograma. To pomeni, da na površino velikosti običajnega lista papirja deluje s 590-kilogramsko silo.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Tega visokega tlaka ne opazimo, ker smo ga navajeni. Kljub temu pa začutimo že čisto rahle spremembe tega tlaka, na primer ko se povzpnemo na veliko nadmorsko višino ali potujemo z letalom. Atmosferski tlak je odvisen tudi od vremenskih razmer – ob nevihtah in nestabilnem zraku pade, ko pa se zrak umiri in se nebo razjasni, se znova dvigne. \n\nDigitalni barometer v telefonu meri atmosferski tlak v hektopaskalih (hektopaskal je enak 100 paskalom, paskal pa je enak sili enega newtona na kvadratni meter površine). Gotovo ste že slišali, da pri vremenski napovedi o atmosferskem tlaku govorijo v milibarih. Ta lepše zveneča enota je enaka hektopaskalu. \n\nNajbrž se sprašujete, zakaj bi telefon meril tlak. Atmosferski tlak se izmerljivo spremeni že pri najmanjših spremembah višine, denimo ko se povzpnete po stopnicah. Digitalni barometer lahko tako pomaga zaznati spremembo lokacije in vam denimo pove, v katerem nadstropju stavbe se nahajate ali če vozite po zgornji ali spodnji etaži mostu.</string>
-  <string name="run_review_activity_label">Pregled</string>
-  <string name="service_notification_content_title">Science Journal</string>
-  <string name="service_notification_content_text">Beleženje …</string>
-  <string name="live_graph_content_description">Grafikon tipala v živo. Povlecite po zaslonu za pomikanje po osi X, približajte ali razmaknite prsta za spreminjanje povečave na osi Y.</string>
-  <string name="static_graph_content_description">Grafikon tipala. Približajte ali razmaknite prsta za spreminjanje povečave, povlecite po zaslonu za pomikanje, dvakrat se dotaknite za pomanjšavo.</string>
-  <string name="sensor_card_overflow_menu_content_description">Možnosti kartice</string>
-  <string name="sensor_tab_layout_content_description">razpoložljiva tipala</string>
-  <string name="title_activity_sensor_info">Informacije o tipalu</string>
-  <string name="title_activity_sensor_info_format">Senzor %s</string>
-  <string name="heading_info_section">Kaj se dogaja?</string>
+    <string name="sensor_desc_short_acc_y">Pospešek telefona naprej in nazaj v m/s²</string>
+    <string name="sensor_desc_short_acc_z">Pospešek telefona navzgor in navzdol v m/s²</string>
+    <string name="sensor_desc_short_decibel">Jakost zvoka, ki doseže tipalo ali mikrofon, merjena v decibelih (dB).</string>
+    <string name="sensor_desc_short_pitch">Višina zvoka, izmerjena v hercih (Hz), ki doseže tipalo zvoka ali mikrofon.</string>
+    <string name="sensor_desc_short_light">Količina svetlobe, ki doseže tipalo svetlobe v okolju, merjena v luksih.</string>
+    <string name="sensor_desc_short_magnetic_strength">Moč okoljskega geomagnetnega polja, izražena v enoti mikrotesla.</string>
+    <string name="sensor_desc_short_bluetooth">Zunanje tipalo prikazuje podatke tukaj glede na nastavitve po meri.</string>
+    <string name="sensor_desc_short_rotation">Število vrtljajev na minuto</string>
+    <string name="sensor_desc_short_raw">Odstotek neobdelanih podatkov, prebranih iz zunanjega tipala.</string>
+    <string name="sensor_desc_short_barometer">Atmosferski tlak, izmerjen v hektopaskalih (hPa).</string>
+    <string name="sensor_desc_first_paragraph_light">Tipalo svetlobe v okolju meri svetlobo v luksih, enoti za osvetlitev, ki je odvisna od količine dohodne svetlobe in območja, po katerem je razporejena.
+
+Polna luna ustvarja približno 1 luks osvetlitve, običajna luč, ki osvetljuje dnevno sobo, približno 50 luksov, osvetlitev učilnice in sončni vzhod ter zahod približno 400 luksov, dnevna svetloba (posredna sončna svetloba) več kot 10.000 luksov, neposredna sončna svetloba pa več kot 30.000 luksov. 
+
+Luks je enota, ki je večina od nas ne pozna. Pri kupovanju žarnic uporabljamo vate, vendar nam ti ne povejo, kako svetla je žarnica, pač pa samo, koliko energije porablja. Boljša enota za kupovanje žarnic so lumni, ki povejo, koliko svetlobe bo žarnica dejansko ustvarila, luksi pa povejo, koliko svetlobe bo padlo na določeno območje.</string>
+    <string name="sensor_desc_second_paragraph_light">Svetloba se med potovanjem širi navzven, zato se število luksov pri odmikanju od vira svetlobe zmanjšuje, čeprav vir še vedno oddaja enako količino svetlobe v lumnih. Tudi območje, ki je nagnjeno stran od virov svetlobe, je manj osvetljeno. Zaradi tega so ekvatorialna območja Zemlje toliko toplejša od mrzlih tečajev.
+
+Mimogrede, naloga tipala svetlobe v telefonu je, da nadzoruje osvetlitev zaslona in jo prilagaja temnim in svetlim okoljem. Znotraj svetlobnega tipala se majhen polprevodnik odziva na dohodno svetlobo z ustvarjanjem šibkega, vendar merljivega električnega toka – temu pojavu pravimo fotoelektrični učinek. Podobna tipala se uporabljajo v nekaterih uličnih svetilkah, da se vklopijo, ko se zunaj stemni.</string>
+    <string name="sensor_desc_first_paragraph_magnetic_strength">V vašem telefonu je naprava, ki zaznava magnetna polja: magnetometer. To majhno triosno tipalo z električnimi tokovi zaznava moč magnetnega polja v treh dimenzijah prostora. Z združitvijo podatkov z vseh treh osi lahko ustvarimo tipalo za merjenje celotne moči magnetnega polja.
+
+Nekateri magnetometri magnetna polja zaznavajo s Hallovim pojavom. Ta pojav označuje značilnost magnetnih polj, da spremenijo smer toka električnega naboja. Novejši magnetometri uporabljajo magnetne upore, kovinske zlitine, ki spreminjajo svojo upornost glede na magnetna polja. 
+
+Zakaj telefon potrebuje magnetometer? Podatek o usmerjenosti v prostoru je pomemben za vgrajene kompasne in navigacijske aplikacije. To velja predvsem za aplikacije, ki zagotavljajo podrobna navodila za pot.</string>
+    <string name="sensor_desc_second_paragraph_magnetic_strength">Magneti, električni tokovi in kovinski predmeti zelo hitro vplivajo na magnetometer v telefonu. Magnetometer v telefonu tudi sredi praznega polja vedno prikazuje nizko neničelno vrednost: to je magnetno polje Zemlje.</string>
+    <string name="sensor_desc_first_paragraph_acc">Predmeti so nagnjeni k temu, da ostanejo na svojem mestu ali da nadaljujejo z gibanjem, če se gibljejo – temu pravimo vztrajnost. Formalno jo opisuje Newtonov prvi zakon: predmet nadaljuje z gibanjem ali ostane na svojem mestu, razen če nanj deluje neizenačena sila.
+
+Ko neizenačena sila povzroči, da se predmet premakne, pravimo, da predmet pospešuje: njegova hitrost se spremeni – predmet pospeši, upočasni ali spremeni smer gibanja. Pospeševanje se meri kot sprememba hitrosti (ta se meri v metrih na sekundo) v času ali v metrih na kvadratno sekundo (m/s²). 
+
+V telefonu je naprava, ki meri te spremembe gibanja – merilnik pospeška. Znotraj merilnika pospeška se prosto gibljejo majhne viseče uteži. Spremembe v gibanju povzročijo, da se te uteži premaknejo, podobno kot se vaša glava v avtomobilu, ki nenadoma zavre, premakne naprej. Merilnik pospeška v telefonu meri te majhne vztrajnostne premike in tako zazna spremembe v gibanju in usmerjenosti. To je uporabno za preklapljanje zaslona iz ležeče usmeritve v pokončno, igranje iger na telefonu in drugo.</string>
+    <string name="sensor_desc_second_paragraph_acc">Verjetno ste opazili nenehen pospešek v smeri osi Z, tudi ko telefon odložite na mizo. To je pospešek, ki zaradi gravitacijskega privlaka deluje na nas na površini Zemlje, in znaša približno 9,8 m/s².</string>
+    <string name="sensor_desc_first_paragraph_decibel">Zvok ustvarjajo vibracije. Vaš glas na primer ustvarjajo vibracije glasilk v vašem grlu. Te vibracije ustvarjajo izmenjujoča se območja visokega in nizkega zračnega tlaka, ki potujejo navzven, podobno kot okrogli valovi, ki se širijo navzven, ko v jezero vržete kamen.</string>
+    <string name="sensor_desc_second_paragraph_decibel">Vse zvoke je mogoče opisati z njihovo frekvenco in jakostjo.
+
+Z aplikacijo Science Journal tukaj merite jakost v decibelih (dB). Jakost, ali glasnost, je odvisna od razdalje, za katero se predmet premakne ob vsaki vibraciji. Večjo jakost slišimo kot višjo glasnost. 
+
+Frekvenca (tudi višina ali ton) zvočnega vala je enakovredna njegovi hitrosti vibriranja. Hitreje kot predmet vibrira, višji bo ustvarjen zvok. Tipalo za jakost zvoka v aplikaciji Science Journal ne meri frekvence, pač pa le glasnost. 
+
+Upoštevati morate, da je mikrofon v vaši napravi zasnovan tako, da je zelo občutljiv na spremembe zvočnih valov skozi čas, ne pa tudi na absolutno velikost vsakega vala. Poskusili smo izbrati kodo, ki bo zagotavljala številke, podobne spodaj navedenim referenčnim, vendar lahko naprave izmerijo dosledno višje ali nižje številke. Znanstveniki taka tipala običajno umerijo glede na znano meritev. Science Journal vam trenutno lahko pove, ali bo vožnja z vlakom glasnejša od rokovskega koncerta, vendar le, če imate na obeh dogodkih isti telefon.
+
+Vedeti morate tudi, da so med »jakostjo zvoka«, »ravnjo jakosti zvoka« in »zvočnim tlakom« pomembne razlike. Tukaj vse tri meritve obravnavamo enako, če pa želite več podrobnosti, vam je na voljo veliko število spletnih virov, kjer so opisane razlike. 
+
+Glasnost najtišjega zvoka, ki ga lahko zazna uho povprečnega človeka, je 0 dB. Glasnost običajnega pogovora je okrog 60 dB, zvoki nad 140 dB pa so za človeško uho boleči. Škodljivi so lahko tudi neboleči zvoki. Neprekinjena izpostavljenost zvokom glasnosti 90 dB, kar približno ustreza glasnosti sesalnika, lahko sčasoma povzroči okvaro sluha.
+
+Merilna lestvica za decibele je logaritemska, zaradi česar je merjenje nekoliko zapleteno: vir zvoka glasnosti 40 dB ni dvakrat močnejši kot vir zvoka glasnosti 20 dB – je stokrat močnejši. Če ena zvoneča budilka ustvari zvok z glasnostjo 70 dB, dve budilki ne ustvarita zvoka glasnosti 140, pač pa 73 dB. Kot smo omenili, je merilna lestvica nenavadna.
+
+Šumenje listov – 10 dB
+Šepetanje z razdalje 1,5 m – 20 dB
+Tiho šepetanje – 30 dB
+Dež – 50 dB
+Običajni pogovor – 60 dB
+Kuhinjski mešalnik – 90 dB
+Avtomobil brez dušilca – 100 dB
+Vpitje v uho – 110 dB
+Grmenje – 120 dB
+Pnevmatsko kladivo – 130 dB
+Vzlet letala – 140 dB</string>
+    <string name="sensor_desc_first_paragraph_pitch">Zvok ustvarjajo vibracije. Vaš glas na primer ustvarjajo vibracije glasilk v vašem grlu. Te vibracije ustvarjajo izmenjujoča se območja visokega in nizkega zračnega tlaka, ki potujejo navzven, podobno kot okrogli valovi, ki se širijo navzven, ko v jezero vržete kamen.</string>
+    <string name="sensor_desc_second_paragraph_pitch">Vse zvoke je mogoče opisati z njihovo frekvenco in jakostjo. Frekvenca (tudi višina ali ton) zvočnega vala je enakovredna njegovi hitrosti vibriranja. Hitreje kot predmet vibrira, višji bo ustvarjen zvok. Vibriranje merimo v hercih (Hz), kjer je 1 herc 1 vibracija na sekundo.
+
+Človeško uho lahko zazna zvoke v obsegu od 20 do 20.000 Hz. Tipka z najnižjim zvokom klavirja ustvari zvok s frekvenco 27,5 Hz, tipka z najvišjim zvokom pa zvok s frekvenco 4186,01 Hz. 
+
+Rdeča pika prikazuje, kako blizu najbližji glasbeni noti je zaznan ton. Če je ton nižji, bo pika prikazana na levi. Če je ton višji, bo rdeča pika prikazana na desni.</string>
+    <string name="pitch_low_content_description">nizek ton</string>
+    <string name="pitch_flatter_than_natural_note_content_description">Toliko poltonov nižje od tona %1$s: %3$s, oktava %2$s</string>
+    <string name="pitch_flatter_than_flat_note_content_description">Toliko poltonov nižje od znižanega tona %1$s: %3$s, oktava %2$s</string>
+    <string name="pitch_flatter_than_sharp_note_content_description">Toliko poltonov nižje od zvišanega tona %1$s: %3$s, oktava %2$s</string>
+    <string name="pitch_natural_note_content_description">%1$s, oktava %2$s</string>
+    <string name="pitch_flat_note_content_description">Znižan ton %1$s, oktava %2$s</string>
+    <string name="pitch_sharp_note_content_description">Zvišan ton %1$s, oktava %2$s</string>
+    <string name="pitch_sharper_than_natural_note_content_description">Toliko poltonov višje od tona %1$s: %3$s, oktava %2$s</string>
+    <string name="pitch_sharper_than_flat_note_content_description">Toliko poltonov višje od znižanega tona %1$s: %3$s, oktava %2$s</string>
+    <string name="pitch_sharper_than_sharp_note_content_description">Toliko poltonov višje od zvišanega tona %1$s: %3$s, oktava %2$s</string>
+    <string name="pitch_high_content_description">visok ton</string>
+    <string name="sensor_desc_first_paragraph_rotation">Vrtljaji na minuto (vrt./min) so meritev frekvence vrtenja okoli nepremične osi v eni minuti.
+
+Ko se vetrnica vrti, poganja tudi disk kodirnika:</string>
+    <string name="sensor_desc_second_paragraph_rotation">To ustvarja obdobja svetlobe in teme na tipalu, kar se v aplikaciji Science Journal zazna kot vrtljaj.</string>
+    <string name="sensor_desc_first_paragraph_raw">Tukaj prikazani podatki prihajajo iz komunikacije zunanjega tipala s telefonom prek povezave Bluetooth.
+
+Vrednost prikazuje odstotek neobdelanih podatkov, odčitanih neposredno iz mikrokrmilnika. To je običajno odstotek padca napetosti prek tipala.</string>
+    <string name="sensor_desc_second_paragraph_raw">Bluetooth je standard za brezžično tehnologijo, s katero nepremične in mobilne naprave z radijskimi valovi izmenjujejo podatke na kratkih razdaljah.</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">Tukaj prikazani podatki prihajajo iz komunikacije zunanjega tipala s telefonom prek povezave Bluetooth.</string>
+    <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth je standard za brezžično tehnologijo, s katero nepremične in mobilne naprave z radijskimi valovi izmenjujejo podatke na kratkih razdaljah.</string>
+    <string name="sensor_desc_first_paragraph_barometer">Čeprav to redko opazimo, živimo na dnu globokega oceana zraka: to je Zemljina atmosfera, ki se razteza 40 kilometrov (130.000 čevljev) visoko. Teža vsega tega zraka pritiska na nas in ustvarja tako imenovani atmosferski tlak.
+
+Na višini morske gladine atmosfera na vsak kvadratni centimeter površine pritiska s silo enega kilograma. To pomeni, da na površino velikosti običajnega lista papirja deluje s 590-kilogramsko silo.</string>
+    <string name="sensor_desc_second_paragraph_barometer">Tega visokega tlaka ne opazimo, ker smo ga navajeni. Kljub temu pa začutimo že čisto rahle spremembe tega tlaka, na primer ko se povzpnemo na veliko nadmorsko višino ali potujemo z letalom. Atmosferski tlak je odvisen tudi od vremenskih razmer – ob nevihtah in nestabilnem zraku pade, ko pa se zrak umiri in se nebo razjasni, se znova dvigne.
+
+Digitalni barometer v telefonu meri atmosferski tlak v hektopaskalih (hektopaskal je enak 100 paskalom, paskal pa je enak sili enega newtona na kvadratni meter površine). Gotovo ste že slišali, da pri vremenski napovedi o atmosferskem tlaku govorijo v milibarih. Ta lepše zveneča enota je enaka hektopaskalu. 
+
+Najbrž se sprašujete, zakaj bi telefon meril tlak. Atmosferski tlak se izmerljivo spremeni že pri najmanjših spremembah višine, denimo ko se povzpnete po stopnicah. Digitalni barometer lahko tako pomaga zaznati spremembo lokacije in vam denimo pove, v katerem nadstropju stavbe se nahajate ali če vozite po zgornji ali spodnji etaži mostu.</string>
+    <string name="run_review_activity_label">Pregled</string>
+    <string name="service_notification_content_title">Science Journal</string>
+    <string name="service_notification_content_text">Beleženje …</string>
+    <string name="live_graph_content_description">Grafikon tipala v živo. Povlecite po zaslonu za pomikanje po osi X, približajte ali razmaknite prsta za spreminjanje povečave na osi Y.</string>
+    <string name="static_graph_content_description">Grafikon tipala. Približajte ali razmaknite prsta za spreminjanje povečave, povlecite po zaslonu za pomikanje, dvakrat se dotaknite za pomanjšavo.</string>
+    <string name="sensor_card_overflow_menu_content_description">Možnosti kartice</string>
+    <string name="sensor_tab_layout_content_description">razpoložljiva tipala</string>
+    <string name="title_activity_sensor_info">Informacije o tipalu</string>
+    <string name="title_activity_sensor_info_format">Senzor %s</string>
+    <string name="heading_info_section">Kaj se dogaja?</string>
   <string name="edit_note_time">Urejanje časa opombe</string>
   <string name="delete_note_menu_item">Izbriši</string>
   <string name="delete_run">Izbriši</string>
@@ -220,11 +291,8 @@
   <string name="default_trial_title">Posnetek %1$d</string>
   <string name="run_review_switch_sensor_btn_prev">prejšnje tipalo: %s</string>
   <string name="run_review_switch_sensor_btn_next">naslednje tipalo: %s</string>
-  <string name="add_note_hint_text">Dodajte novo opombo</string>
   <string name="snackbar_note_deleted">Opomba je izbrisana</string>
   <string name="snackbar_undo">Razveljavi</string>
-  <string name="add_run_note_placeholder_text">Dodajte opombo temu posnetku</string>
-  <string name="add_note_image_button_content_description">Zajemi slikovno opombo</string>
   <string name="pinned_note_placeholder_text">Dodajte opombo</string>
   <string name="indeterminate_value">--</string>
   <string name="archived_badge">Arhivirano</string>
@@ -246,42 +314,72 @@
   <string name="edit_trial_title_hint">Naslov posnetka</string>
   <string name="include_archived_trials">Pokaži arhivirane posnetke</string>
   <string name="export_error">Izvoz ni uspel.</string>
-  <string name="no_app_found_for_csv">Ni nameščene aplikacije, ki bi omogočala izvoz v obliki CSV.</string>
-  <string name="listing_title">Science Journal</string>
-  <string name="listing_tagline">Poskusi v vašem svetu.</string>
-  <string name="listing_changelog">Nove funkcije in izboljšave:
-\n\u2022 Možnost prenašanja poskusov, fotografij in posnetkov tipal v napravo.
-\n\u2022 Dodatna podpora za vzpostavitev povezave s ploščami Arduino MKR WiFi 1010.</string>
-  <string name="listing_changelog_features">Nove funkcije:</string>
-  <string name="listing_changelog_bug_fixes">Izboljšave učinkovitosti delovanja in popravki napak.</string>
-  <string name="listing_changelog_separator">\n\n﻿</string>
-  <string name="listing_h_feature_1">\n• Tipalo višine tona.</string>
-  <string name="listing_h_feature_2">\n• Poskuse izvozite v datoteko in jih uvozite v druge naprave.</string>
-  <string name="listing_h_feature_3">\n• Izvozite fotografije iz poskusa.</string>
-  <string name="listing__description">Science Journal je brezplačna Googlova digitalna znanstvena beležka.
-\n
-\nNe glede na to, ali ste učitelj katere od naravoslovnih ved ali navdušenec, ki se z znanostjo ukvarja doma, imate lahko vse zapiske, fotografije in opazovanja shranjene na enem priročnem mestu. S tipali v telefonu lahko merite pojave, kot so svetloba, zvok in gibanje, ter jih prikazujete na grafikonih, ali s tehnologijo Bluetooth vzpostavite povezavo z zunanjimi tipali in izvajate poskuse v svetu okoli sebe.
-\n
-\nZ aplikacijo Science Journal lahko:
-\n\u2022 S tipali, vgrajenimi v telefon, merite svetlobo, zvok, pospeške, zračni tlak in drugo.
-\n\u2022 Ustvarjate zapiske in zajemate fotografije ter z njimi beležite znanstvene poskuse. Kmalu bodo na voljo dodatne vrste zapiskov.
-\n\u2022 Z določenimi napravami Arduino in Vernier, ki podpirajo Bluetooth, vzpostavite povezavo z zunanjimi tipali.
-\n\u2022 Dostopate do poskusov v vseh napravah prek Googla Drive.
-\n\u2022 Izvažate zabeležene podatke tipal kot datoteke CSV.
-\n\u2022 Ustvarjate samodejne sprožilnike za beleženje podatkov in ustvarjanje zapiskov.
-\n\u2022 S sonifikacijo poslušate premikanje svojih grafikonov.
-\n
-\nScience Journal je na voljo brezplačno za naprave Android, iPhone, iPad in združljive naprave Chromebook.
-\n
-\nIzobraževalne dejavnosti naših partnerjev so na voljo na naslovu https://makingscience.withgoogle.com/science-journal/activities
-\nZa podporo obiščite https://productforums.google.com/forum/#!forum/sciencejournal
-\nOdprtokodna koda je na voljo na naslovu https://github.com/google/science-journal
-\n\n
+    <string name="no_app_found_for_csv">Ni nameščene aplikacije, ki bi omogočala izvoz v obliki CSV.</string>
+    <string name="listing_title">Science Journal</string>
+    <string name="listing_tagline">Poskusi v vašem svetu.</string>
+    <string name="listing_changelog">Nove funkcije in izboljšave:
+
+\u2022 Možnost prenašanja poskusov, fotografij in posnetkov tipal v napravo.
+
+\u2022 Dodatna podpora za vzpostavitev povezave s ploščami Arduino MKR WiFi 1010.</string>
+    <string name="listing_changelog_features">Nove funkcije:</string>
+    <string name="listing_changelog_bug_fixes">Izboljšave učinkovitosti delovanja in popravki napak.</string>
+    <string name="listing_changelog_separator">
+
+﻿</string>
+    <string name="listing_h_feature_1">
+• Tipalo višine tona.</string>
+    <string name="listing_h_feature_2">
+• Poskuse izvozite v datoteko in jih uvozite v druge naprave.</string>
+    <string name="listing_h_feature_3">
+• Izvozite fotografije iz poskusa.</string>
+    <string name="listing__description">Science Journal je brezplačna Googlova digitalna znanstvena beležka.
+
+
+
+Ne glede na to, ali ste učitelj katere od naravoslovnih ved ali navdušenec, ki se z znanostjo ukvarja doma, imate lahko vse zapiske, fotografije in opazovanja shranjene na enem priročnem mestu. S tipali v telefonu lahko merite pojave, kot so svetloba, zvok in gibanje, ter jih prikazujete na grafikonih, ali s tehnologijo Bluetooth vzpostavite povezavo z zunanjimi tipali in izvajate poskuse v svetu okoli sebe.
+
+
+
+Z aplikacijo Science Journal lahko:
+
+\u2022 S tipali, vgrajenimi v telefon, merite svetlobo, zvok, pospeške, zračni tlak in drugo.
+
+\u2022 Ustvarjate zapiske in zajemate fotografije ter z njimi beležite znanstvene poskuse. Kmalu bodo na voljo dodatne vrste zapiskov.
+
+\u2022 Z določenimi napravami Arduino in Vernier, ki podpirajo Bluetooth, vzpostavite povezavo z zunanjimi tipali.
+
+\u2022 Dostopate do poskusov v vseh napravah prek Googla Drive.
+
+\u2022 Izvažate zabeležene podatke tipal kot datoteke CSV.
+
+\u2022 Ustvarjate samodejne sprožilnike za beleženje podatkov in ustvarjanje zapiskov.
+
+\u2022 S sonifikacijo poslušate premikanje svojih grafikonov.
+
+
+
+Science Journal je na voljo brezplačno za naprave Android, iPhone, iPad in združljive naprave Chromebook.
+
+
+
+Izobraževalne dejavnosti naših partnerjev so na voljo na naslovu https://makingscience.withgoogle.com/science-journal/activities
+
+Za podporo obiščite https://productforums.google.com/forum/#!forum/sciencejournal
+
+Odprtokodna koda je na voljo na naslovu https://github.com/google/science-journal
+
+
+
 Obvestilo o dovoljenjih:
-\n\u2022 Lokacija: potrebna je za iskanje naprav Bluetooth s tipali.
-\n\u2022 Fotoaparat: potreben je za beleženje poskusov s fotografiranjem.
-\n\u2022 Mikrofon: potreben je za tipalo za jakost zvoka.
-\n\u2022 Shramba: potrebna je za dostop do fotografij za vstavljanje v poskuse.</string>
+
+\u2022 Lokacija: potrebna je za iskanje naprav Bluetooth s tipali.
+
+\u2022 Fotoaparat: potreben je za beleženje poskusov s fotografiranjem.
+
+\u2022 Mikrofon: potreben je za tipalo za jakost zvoka.
+
+\u2022 Shramba: potrebna je za dostop do fotografij za vstavljanje v poskuse.</string>
   <string name="third_party_sensors_option_title">Iskanje senzorjev drugih ponudnikov</string>
   <string name="third_party_sensors_option_summary">Poiščite aplikacije, ki podpirajo programski vmesnik za tipala drugih ponudnikov, in omogočite dodajanje teh tipal v poskuse.</string>
   <string name="enable_temperature_sensor_title">Omogoči tipalo temperature okolice</string>
@@ -331,26 +429,6 @@ Obvestilo o dovoljenjih:
   <string name="trigger_when_above_description">%1$s, ko je senzor nad vrednostjo %2$s %3$s</string>
   <string name="trigger_when_below_description">%1$s, ko je senzor pod vrednostjo %2$s %3$s</string>
   <string name="sensor_trigger_deleted">Sprožilec je izbrisan</string>
-  <string-array name="trigger_type_list">
-    <item>@string/trigger_type_start_recording</item>
-    <item>@string/trigger_type_stop_recording</item>
-    <item>@string/trigger_type_note</item>
-    <item>@string/trigger_type_alert</item>
-  </string-array>
-  <string-array name="trigger_when_list">
-    <item>@string/trigger_when_at</item>
-    <item>@string/trigger_when_rises_above</item>
-    <item>@string/trigger_when_drops_below</item>
-    <item>@string/trigger_when_is_above</item>
-    <item>@string/trigger_when_is_below</item>
-  </string-array>
-  <string-array name="trigger_when_list_note_text">
-    <item>je pri vrednosti</item>
-    <item>je nad vrednostjo</item>
-    <item>je pod vrednostjo</item>
-    <item>nad</item>
-    <item>pod</item>
-  </string-array>
   <string name="trigger_only_when_recording">Sproži samo med snemanjem</string>
   <string name="trigger_snackbar_auto_text">%1$s %2$s %3$.2f %4$s</string>
   <string name="scroll_to_card">pokaži</string>
@@ -393,90 +471,90 @@ Obvestilo o dovoljenjih:
   <string name="timestamp_picker_range_error">Čas mora biti v obsegu izvedbe</string>
   <string name="timestamp_picker_crop_range_error">Obrez posnetkov na manj kot 1 s ni mogoč</string>
   <string name="timestamp_picker_prompt">Nov čas (h:mm:ss,SSS)</string>
-  <string name="crop_failed_range_too_large">Izvedbe ni mogoče obrezati zunaj začetnega zabeleženega obsega</string>
-  <string name="crop_failed_range_too_small">Izvedbe ni mogoče obrezati na manj kot eno sekundo</string>
-  <string name="project_experiment_title">%1$s: %2$s</string>
-  <string name="export_options_title">Izvozi …</string>
-  <string name="export_options_relative_time">Relativni čas</string>
-  <string name="old_trigger_note_format">Opomba ob sprožitvi: %1s</string>
-  <string name="old_trigger_note_format_custom">Opomba ob sprožitvi: %1$s; %2$s</string>
-  <string name="compass">Kompas</string>
-  <string name="compass_units">stopinj</string>
-  <string name="sensor_desc_short_compass">Usmerjenost telefona glede na magnetno polje Zemlje.</string>
-  <string name="sensor_desc_first_paragraph_compass">Najbrž že veste, da ima Zemlja magnetno polje. Morda pa niste vedeli, da je v vašem telefonu naprava, ki zaznava magnetna polja: magnetometer. Z združitvijo podatkov iz magnetometra telefona in podatkov o usmerjenosti telefona v prostoru lahko ustvarimo digitalni kompas. \n\nNavadni kompas je preprost magnetometer z magnetno iglo, ki se obrača glede na magnetno polje, ki jo obdaja. Vaš telefon ne vsebuje majhnega kompasa, temveč majhno triosno tipalo, ki z električnimi tokovi zaznava moč magnetnega polja v treh dimenzijah prostora. Vendar samo to ni dovolj, da bi ustvarili kompas. \n\nZakaj mora kompas podatke iz magnetometra združiti s podatki o usmerjenosti telefona? Če poznamo usmerjenost telefona, lahko izračunamo magnetno vrtenje, tudi ko telefon ni postavljen vodoravno v enaki ravnini kot magnetno polje Zemlje. Vemo, da je gravitacija pravokotna na magnetno polje Zemlje, zato lahko s smerjo gravitacije iz tipal merilnika pospeška ugotovimo, kakšen del magnetnega polja je v isti ravnini kot magnetno polje Zemlje.</string>
-  <string name="sensor_desc_second_paragraph_compass">Kot ste mora opazili, se kompas ne odziva le na magnetno polje Zemlje, ampak na vsa magnetna polja, ki ga obdajajo. Magneti, električni tokovi in kovinski predmeti zelo hitro vplivajo na magnetometer v telefonu, zato se bo odčitek na kompasu spreminjal. Če želite zagotoviti, da se rdeča konica kompasa ravna po magnetnem polju Zemlje, se postavite na odprto lokacijo, najbolje na prostem in stran od daljnovodov. Magnetometer v telefonu lahko umerite tako, da ga premikate v obliki številke 8.</string>
-  <string name="text_label_details_title">Urejanje besedilne opombe</string>
-  <string name="empty_text_note_error">Besedilne opombe ne smejo biti prazne</string>
-  <string name="navigation_item_experiments">Poskusi</string>
-  <string name="note_caption_hint">Dodajte opis</string>
-  <string name="month_year_format">MMMM llll</string>
-  <string name="linear_accelerometer">Linearni meril. pospeška</string>
-  <string name="sensor_desc_short_linear_acc">Skupni pospešek telefona brez upoštevanja gravitacije v m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Predmeti so nagnjeni k temu, da ostanejo na svojem mestu ali da nadaljujejo z gibanjem, če se gibljejo – temu pravimo vztrajnost. Formalno jo opisuje Newtonov prvi zakon: predmet nadaljuje z gibanjem ali ostane na svojem mestu, razen če nanj deluje neizenačena sila. \n\nKo neizenačena sila povzroči, da se predmet premakne, pravimo, da predmet pospešuje: njegova hitrost se spremeni – predmet pospeši, upočasni ali spremeni smer gibanja. Pospeševanje se meri kot sprememba hitrosti (ta se meri v metrih na sekundo) v času ali v metrih na kvadratno sekundo (m/s²). \n\nV telefonu je naprava, ki meri te spremembe gibanja – merilnik pospeška. Znotraj merilnika pospeška se prosto gibljejo majhne viseče uteži. Spremembe v gibanju povzročijo, da se te uteži premaknejo, podobno kot se vaša glava v avtomobilu, ki nenadoma zavre, premakne naprej. Merilnik pospeška v telefonu meri te majhne vztrajnostne premike in tako zazna spremembe v gibanju in usmerjenosti. To je uporabno za preklapljanje zaslona iz ležeče usmeritve v pokončno, igranje iger na telefonu in drugo.</string>
-  <string name="sensor_desc_second_paragraph_linear_acc">Združeno tipalo linearnega merilnika pospeška beleži skupen pospešek po vseh treh oseh telefona in pri tem ne upošteva gravitacije.</string>
-  <string name="data_with_units">%1$s %2$s</string>
-  <string name="edit_note_time_menu_item">Urejanje časa</string>
-  <string name="add_note_button_text">Dodaj opombo na časovno os</string>
-  <string name="add_note_to_time_text">Dodajte opombo na %1$s</string>
-  <string name="trial_caption_hint_text">Tukaj dodajte opis posnetka</string>
-  <string name="snapshot_label_details_title">Podrobnosti povzetka</string>
-  <string name="trigger_label_details_title">Podrob. o opombi ob sprožitvi</string>
-  <string name="tool_picker_tab_layout_description">Razpoložljiva orodja</string>
-  <string name="tab_description_add_note">Pisanje besedila</string>
-  <string name="tab_description_observe">Opazovanje tipal</string>
-  <string name="tab_description_camera">Fotografiranje</string>
-  <string name="load_more_notes_btn">Pokaži več opomb</string>
-  <string name="name_experiment_dialog_title">Poimenovanje poskusa</string>
-  <string name="empty_experiment_title_error">Ime ne sme biti prazno</string>
-  <string name="card_recording_title">%1$s …</string>
-  <string name="throbber_content_description">Poteka beleženje</string>
-  <string name="trigger_label_name_header">%1$s %2$s</string>
-  <string name="description_hint">Opis</string>
-  <string name="details_header">Podrobnosti</string>
-  <string name="text_label_hint">Dodajanje opazovanja</string>
-  <string name="first_experiment_title">Dobrodošli v Science Journal</string>
-  <string name="first_experiment_text_note">Poskusite ustvarjati opombe in beležiti podatke s spodnjo orodno vrstico.</string>
-  <string name="first_experiment_picture_note_caption">Dobrodošli v Science Journal!</string>
-  <string name="first_experiment_second_text_note">Na g.co/sciencejournalactivities \nlahko poiščete dejavnosti in jih preskusite</string>
-  <string name="experiment_cover_description">Izberite fotografijo za poskus</string>
-  <string name="btn_take_picture_content_description">Zajem slike</string>
-  <string name="tab_description_gallery">Izbira slike</string>
-  <string name="gallery_image_content_description">Slika je bila zajeta %s</string>
-  <string name="gallery_image_content_description_selected">Izbrana slika: %1$d. Slika je bila posneta %2$s</string>
-  <string name="content_description_selected">izbrano</string>
-  <string name="gallery_selected_title">Izbrano: %1$d</string>
-  <string name="photo_editor_dialog_title">Urejanje fotografije z aplikacijo …</string>
-  <string name="btn_show_tools">Pokaži predal z orodjem</string>
-  <string name="btn_expand_tools">Razširi predal z orodjem</string>
-  <string name="btn_hide_tools">Strni predal z orodjem</string>
-  <string name="action_edit_photo">Urejanje fotografije</string>
-  <string name="add_text_note">Dodaj besedilni zapisek</string>
-  <string name="camera_preview_content_description">Pogled fotoaparata v živo</string>
-  <string name="input_camera_permission_denied">Fotoaparata ni mogoče uporabiti, ker Science Journal nima dovoljenja za dostop do njega.</string>
-  <string name="input_photo_library_permission_denied">Galerije fotografij ni mogoče uporabiti, ker Science Journal nima dovoljenja za dostop do nje.</string>
-  <string name="action_show_archived_experiments">Pokaži arhivirane poskuse</string>
-  <string name="action_hide_archived_experiments">Skrij arhivirane poskuse</string>
-  <string name="action_hide_archived_trials">Skrij arhivirane posnetke</string>
-  <string name="snapshot_button_description">Posnetek tipala</string>
-  <string name="notification_channel_name">Posnetki</string>
-  <string name="notification_channel_description">Stanje beleženja</string>
-  <string name="import_failed_recording">Science Journal je trenutno v uporabi. Ustavite beleženje in poskusite znova.</string>
-  <string name="import_failed_file">Uvažanje ni uspelo. S tem poskusom je nekaj narobe.</string>
-  <string name="import_failed">Prišlo je do neznane napake.</string>
-  <string name="explore_your_world">Raziščite svet</string>
-  <string name="use_science_journal">Z aplikacijo Science Journal izvajajte\nposkuse v svetu okoli sebe</string>
-  <string name="get_started">Začetek</string>
-  <string name="sign_in_text">Podatki o poskusih v aplikaciji Science Journal so shranjeni in na voljo v vseh napravah prek Googla Drive. Za dostop do njih se morate prijaviti v račun Google.\n\nČe imate v tej napravi podatke, lahko obstoječe poskuse shranite v Google Drive, ko ste prijavljeni. Poskusi so shranjeni v mapi \u201CScience Journal\u201D v Googlu Drive.</string>
-  <string name="device_settings_applied">Obstoječe nastavitve naprave so bile uporabljene v tem računu</string>
-  <string name="sign_in_button">Prijava</string>
-  <string name="sign_in_learn_more_button">Več o tem</string>
-  <string name="sign_in_continue_without_signing_in_button">Nadaljuj brez prijave</string>
-  <string name="science_journal_disabled_title">Science Journal je onemogočen</string>
-  <string name="science_journal_disabled_message">Aplikacijo Science Journal mora vaš skrbnik domene vklopiti v Googlovi skrbniški konzoli.</string>
-  <string name="science_journal_disabled_yes">Preklop med računi</string>
-  <string name="old_user_option_prompt_headline">Varnostno kopiranje v Drive</string>
-  <plurals name="old_user_option_prompt_text">
-    <item quantity="one">Dobrodošli nazaj. V napravi je trenutno shranjen %1$d poskus.\n\nZa nadaljevanje izberite možnost:</item>
+    <string name="crop_failed_range_too_large">Izvedbe ni mogoče obrezati zunaj začetnega zabeleženega obsega</string>
+    <string name="crop_failed_range_too_small">Izvedbe ni mogoče obrezati na manj kot eno sekundo</string>
+    <string name="project_experiment_title">%1$s: %2$s</string>
+    <string name="export_options_title">Izvozi …</string>
+    <string name="export_options_relative_time">Relativni čas</string>
+    <string name="old_trigger_note_format">Opomba ob sprožitvi: %1s</string>
+    <string name="old_trigger_note_format_custom">Opomba ob sprožitvi: %1$s; %2$s</string>
+    <string name="compass">Kompas</string>
+    <string name="compass_units">stopinj</string>
+    <string name="sensor_desc_short_compass">Usmerjenost telefona glede na magnetno polje Zemlje.</string>
+    <string name="sensor_desc_first_paragraph_compass">Najbrž že veste, da ima Zemlja magnetno polje. Morda pa niste vedeli, da je v vašem telefonu naprava, ki zaznava magnetna polja: magnetometer. Z združitvijo podatkov iz magnetometra telefona in podatkov o usmerjenosti telefona v prostoru lahko ustvarimo digitalni kompas.
+
+Navadni kompas je preprost magnetometer z magnetno iglo, ki se obrača glede na magnetno polje, ki jo obdaja. Vaš telefon ne vsebuje majhnega kompasa, temveč majhno triosno tipalo, ki z električnimi tokovi zaznava moč magnetnega polja v treh dimenzijah prostora. Vendar samo to ni dovolj, da bi ustvarili kompas. 
+
+Zakaj mora kompas podatke iz magnetometra združiti s podatki o usmerjenosti telefona? Če poznamo usmerjenost telefona, lahko izračunamo magnetno vrtenje, tudi ko telefon ni postavljen vodoravno v enaki ravnini kot magnetno polje Zemlje. Vemo, da je gravitacija pravokotna na magnetno polje Zemlje, zato lahko s smerjo gravitacije iz tipal merilnika pospeška ugotovimo, kakšen del magnetnega polja je v isti ravnini kot magnetno polje Zemlje.</string>
+    <string name="sensor_desc_second_paragraph_compass">Kot ste mora opazili, se kompas ne odziva le na magnetno polje Zemlje, ampak na vsa magnetna polja, ki ga obdajajo. Magneti, električni tokovi in kovinski predmeti zelo hitro vplivajo na magnetometer v telefonu, zato se bo odčitek na kompasu spreminjal. Če želite zagotoviti, da se rdeča konica kompasa ravna po magnetnem polju Zemlje, se postavite na odprto lokacijo, najbolje na prostem in stran od daljnovodov. Magnetometer v telefonu lahko umerite tako, da ga premikate v obliki številke 8.</string>
+    <string name="text_label_details_title">Urejanje besedilne opombe</string>
+    <string name="empty_text_note_error">Besedilne opombe ne smejo biti prazne</string>
+    <string name="navigation_item_experiments">Poskusi</string>
+    <string name="note_caption_hint">Dodajte opis</string>
+    <string name="month_year_format">MMMM llll</string>
+    <string name="linear_accelerometer">Linearni meril. pospeška</string>
+    <string name="sensor_desc_short_linear_acc">Skupni pospešek telefona brez upoštevanja gravitacije v m/s²</string>
+    <string name="sensor_desc_first_paragraph_linear_acc">Predmeti so nagnjeni k temu, da ostanejo na svojem mestu ali da nadaljujejo z gibanjem, če se gibljejo – temu pravimo vztrajnost. Formalno jo opisuje Newtonov prvi zakon: predmet nadaljuje z gibanjem ali ostane na svojem mestu, razen če nanj deluje neizenačena sila.
+
+Ko neizenačena sila povzroči, da se predmet premakne, pravimo, da predmet pospešuje: njegova hitrost se spremeni – predmet pospeši, upočasni ali spremeni smer gibanja. Pospeševanje se meri kot sprememba hitrosti (ta se meri v metrih na sekundo) v času ali v metrih na kvadratno sekundo (m/s²). 
+
+V telefonu je naprava, ki meri te spremembe gibanja – merilnik pospeška. Znotraj merilnika pospeška se prosto gibljejo majhne viseče uteži. Spremembe v gibanju povzročijo, da se te uteži premaknejo, podobno kot se vaša glava v avtomobilu, ki nenadoma zavre, premakne naprej. Merilnik pospeška v telefonu meri te majhne vztrajnostne premike in tako zazna spremembe v gibanju in usmerjenosti. To je uporabno za preklapljanje zaslona iz ležeče usmeritve v pokončno, igranje iger na telefonu in drugo.</string>
+    <string name="sensor_desc_second_paragraph_linear_acc">Združeno tipalo linearnega merilnika pospeška beleži skupen pospešek po vseh treh oseh telefona in pri tem ne upošteva gravitacije.</string>
+    <string name="data_with_units">%1$s %2$s</string>
+    <string name="edit_note_time_menu_item">Urejanje časa</string>
+    <string name="add_note_to_time_text">Dodajte opombo na %1$s</string>
+    <string name="snapshot_label_details_title">Podrobnosti povzetka</string>
+    <string name="trigger_label_details_title">Podrob. o opombi ob sprožitvi</string>
+    <string name="load_more_notes_btn">Pokaži več opomb</string>
+    <string name="name_experiment_dialog_title">Poimenovanje poskusa</string>
+    <string name="empty_experiment_title_error">Ime ne sme biti prazno</string>
+    <string name="card_recording_title">%1$s …</string>
+    <string name="throbber_content_description">Poteka beleženje</string>
+    <string name="trigger_label_name_header">%1$s %2$s</string>
+    <string name="description_hint">Opis</string>
+    <string name="details_header">Podrobnosti</string>
+    <string name="text_label_hint">Dodajanje opazovanja</string>
+    <string name="first_experiment_title">Dobrodošli v Science Journal</string>
+    <string name="first_experiment_text_note">Poskusite ustvarjati opombe in beležiti podatke s spodnjo orodno vrstico.</string>
+    <string name="first_experiment_picture_note_caption">Dobrodošli v Science Journal!</string>
+    <string name="first_experiment_second_text_note">Na g.co/sciencejournalactivities
+lahko poiščete dejavnosti in jih preskusite</string>
+    <string name="experiment_cover_description">Izberite fotografijo za poskus</string>
+    <string name="btn_take_picture_content_description">Zajem slike</string>
+    <string name="gallery_image_content_description">Slika je bila zajeta %s</string>
+    <string name="gallery_image_content_description_selected">Izbrana slika: %1$d. Slika je bila posneta %2$s</string>
+    <string name="content_description_selected">izbrano</string>
+    <string name="gallery_selected_title">Izbrano: %1$d</string>
+    <string name="photo_editor_dialog_title">Urejanje fotografije z aplikacijo …</string>
+    <string name="action_edit_photo">Urejanje fotografije</string>
+    <string name="input_camera_permission_denied">Fotoaparata ni mogoče uporabiti, ker Science Journal nima dovoljenja za dostop do njega.</string>
+    <string name="input_photo_library_permission_denied">Galerije fotografij ni mogoče uporabiti, ker Science Journal nima dovoljenja za dostop do nje.</string>
+    <string name="action_show_archived_experiments">Pokaži arhivirane poskuse</string>
+    <string name="action_hide_archived_experiments">Skrij arhivirane poskuse</string>
+    <string name="action_hide_archived_trials">Skrij arhivirane posnetke</string>
+    <string name="snapshot_button_description">Posnetek tipala</string>
+    <string name="notification_channel_name">Posnetki</string>
+    <string name="notification_channel_description">Stanje beleženja</string>
+    <string name="import_failed_recording">Science Journal je trenutno v uporabi. Ustavite beleženje in poskusite znova.</string>
+    <string name="import_failed_file">Uvažanje ni uspelo. S tem poskusom je nekaj narobe.</string>
+    <string name="import_failed">Prišlo je do neznane napake.</string>
+    <string name="explore_your_world">Raziščite svet</string>
+    <string name="use_science_journal">Z aplikacijo Science Journal izvajajte
+poskuse v svetu okoli sebe</string>
+    <string name="get_started">Začetek</string>
+    <string name="sign_in_text">Podatki o poskusih v aplikaciji Science Journal so shranjeni in na voljo v vseh napravah prek Googla Drive. Za dostop do njih se morate prijaviti v račun Google.
+
+Če imate v tej napravi podatke, lahko obstoječe poskuse shranite v Google Drive, ko ste prijavljeni. Poskusi so shranjeni v mapi \u201CScience Journal\u201D v Googlu Drive.</string>
+    <string name="device_settings_applied">Obstoječe nastavitve naprave so bile uporabljene v tem računu</string>
+    <string name="sign_in_button">Prijava</string>
+    <string name="sign_in_learn_more_button">Več o tem</string>
+    <string name="sign_in_continue_without_signing_in_button">Nadaljuj brez prijave</string>
+    <string name="science_journal_disabled_title">Science Journal je onemogočen</string>
+    <string name="science_journal_disabled_message">Aplikacijo Science Journal mora vaš skrbnik domene vklopiti v Googlovi skrbniški konzoli.</string>
+    <string name="science_journal_disabled_yes">Preklop med računi</string>
+    <string name="old_user_option_prompt_headline">Varnostno kopiranje v Drive</string>
+    <plurals name="old_user_option_prompt_text">
+        <item quantity="one">Dobrodošli nazaj. V napravi je trenutno shranjen %1$d poskus.\n\nZa nadaljevanje izberite možnost:</item>
     <item quantity="two">Dobrodošli nazaj. V napravi sta trenutno shranjena %1$d poskusa.\n\nZa nadaljevanje izberite možnost:</item>
     <item quantity="few">Dobrodošli nazaj. V napravi so trenutno shranjeni %1$d poskusi.\n\nZa nadaljevanje izberite možnost:</item>
     <item quantity="other">Dobrodošli nazaj. V napravi je trenutno shranjenih %1$d poskusov.\n\nZa nadaljevanje izberite možnost:</item>
@@ -528,8 +606,6 @@ Obvestilo o dovoljenjih:
   <string name="remove_cover_image_confirm">Ali ste prepričani, da želite odstraniti naslovno sliko? Tega dejanja ni mogoče razveljaviti.</string>
   <string name="drive_sync_cannot_reach_google_drive">Google Drive ni dosegljiv. Preverite povezavo.</string>
   <string name="experiment_title_concatenator">%1$s/%2$s</string>
-  <string name="create_experiment_feature_discovery_title">Ustvarjanje novega poskusa</string>
-  <string name="create_experiment_feature_discovery_body">Uredite svoje misli in opazovanja tako, da ustvarite zapiske, zabeležite podatke ali zajamete slike</string>
   <string name="download_copy_action">Prenos</string>
   <string name="saved_to_device_text">Shranjeno v mapo Prenosi.</string>
   <string name="download_options_title">Prenos …</string>
@@ -551,16 +627,35 @@ Obvestilo o dovoljenjih:
   <string name="more_observations_draw_title">Risanje</string>
   <string name="more_observations_draw_description">Dodajanje opomb za risanje</string>
   <string name="more_observations_velocity_tracker_title">Sledilnik hitrosti</string>
-  <string name="more_observations_velocity_tracker_description">Uporaba razširjene resničnosti, spremljanje in merjenje predmetov</string>
-  <string name="fit_image_to_scan">Prilagodi sliko, skeniraj</string>
-  <string name="ar_detecting_image">Zaznavanje slike</string>
-  <string name="ar_not_tracking">Sledenje ustavljeno</string>
-  <string name="action_bar_text_note">Ustvarite besedilni zapisek</string>
-  <string name="action_bar_sensor_note">Ustvarite posnetek tipala</string>
-  <string name="action_bar_gallery">Izbira slik</string>
-  <string name="action_bar_more">Več opazovanj</string>
-  <string name="note_saved">Zapisek je shranjen</string>
-  <string name="note_saved_action">Ogled</string>
-  <string name="announcement_card_button_text">Več o tem</string>
-  <string name="dismiss_button_text">Opusti</string>
+    <string name="more_observations_velocity_tracker_description">Uporaba razširjene resničnosti, spremljanje in merjenje predmetov</string>
+    <string name="fit_image_to_scan">Prilagodi sliko, skeniraj</string>
+    <string name="ar_detecting_image">Zaznavanje slike</string>
+    <string name="ar_not_tracking">Sledenje ustavljeno</string>
+    <string name="action_bar_text_note">Ustvarite besedilni zapisek</string>
+    <string name="action_bar_sensor_note">Ustvarite posnetek tipala</string>
+    <string name="action_bar_gallery">Izbira slik</string>
+    <string name="action_bar_more">Več opazovanj</string>
+    <string name="note_saved">Zapisek je shranjen</string>
+    <string name="note_saved_action">Ogled</string>
+    <string name="btn_add_experiment_note_description">Dodajte opombo o poskusu</string>
+    <string name="btn_add_run_note_description">Dodaj opombo o izvedbi</string>
+    <string name="add_note_hint_text">Dodajte novo opombo</string>
+    <string name="add_run_note_placeholder_text">Dodajte opombo temu posnetku</string>
+    <string name="add_note_image_button_content_description">Zajemi slikovno opombo</string>
+    <string name="add_note_button_text">Dodaj opombo na časovno os</string>
+    <string name="trial_caption_hint_text">Tukaj dodajte opis posnetka</string>
+    <string name="tool_picker_tab_layout_description">Razpoložljiva orodja</string>
+    <string name="tab_description_add_note">Pisanje besedila</string>
+    <string name="tab_description_observe">Opazovanje tipal</string>
+    <string name="tab_description_camera">Fotografiranje</string>
+    <string name="tab_description_gallery">Izbira slike</string>
+    <string name="btn_show_tools">Pokaži predal z orodjem</string>
+    <string name="btn_expand_tools">Razširi predal z orodjem</string>
+    <string name="btn_hide_tools">Strni predal z orodjem</string>
+    <string name="add_text_note">Dodaj besedilni zapisek</string>
+    <string name="camera_preview_content_description">Pogled fotoaparata v živo</string>
+    <string name="create_experiment_feature_discovery_title">Ustvarjanje novega poskusa</string>
+    <string name="create_experiment_feature_discovery_body">Uredite svoje misli in opazovanja tako, da ustvarite zapiske, zabeležite podatke ali zajamete slike</string>
+    <string name="announcement_card_button_text">Več o tem</string>
+    <string name="dismiss_button_text">Opusti</string>
 </resources>

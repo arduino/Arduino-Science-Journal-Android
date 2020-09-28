@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Arduino Science Journal</string>
+    <string name="action_feedback">Feedback</string>
+    <string name="action_about">Info</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_edit">Bearbeiten</string>
+    <string name="action_delete">Löschen</string>
+    <string name="sine_wave">Sinuskurve</string>
+    <string name="acc_x">Beschleunigungsmesser X</string>
+    <string name="acc_y">Beschleunigungsmesser Y</string>
+    <string name="acc_z">Beschleunigungsmesser Z</string>
+    <string name="ambient_light">Umgebungslicht</string>
+    <string name="magnetic_field_strength">Magnetometer</string>
+    <string name="barometer">Barometer</string>
+    <string name="ambient_temperature">Umgebungstemperatur</string>
+    <string name="acc_units">m/s²</string>
+    <string name="ambient_light_units">Lux</string>
+    <string name="magnetic_strength_units">μT</string>
+    <string name="decibel_units">dB</string>
+    <string name="hertz_units">Hz</string>
+    <string name="rpm_units">Drehzahl</string>
+    <string name="voltage_units">V</string>
+    <string name="raw_units">%</string>
+    <string name="barometer_units">hPa</string>
+    <string name="temperature_units">°C</string>
+    <string name="action_retry">Wiederholen</string>
+    <string name="decibel">Schallintensität</string>
+    <string name="pitch">Tonhöhe</string>
+    <string name="btn_record_description">Aufzeichnung starten</string>
+    <string name="btn_stop_description">Aufzeichnung beenden</string>
+    <string name="unknown_sensor">Unbekannter Sensor</string>
+    <string name="recording_start_failed">Aufzeichnung kann nicht gestartet werden</string>
+    <string name="recording_stop_failed_no_data_title">Daten werden nicht aufgezeichnet</string>
+    <string name="recording_stop_failed_no_data">Einer oder mehrere Ihrer Sensoren haben keine Daten erfasst. Möchten Sie die Aufzeichnung abbrechen?</string>
+    <string name="recording_stop_failed_continue">Weiter</string>
+    <string name="recording_stop_failed_cancel">Aufzeichnung abbrechen</string>
+    <string name="navigation_item_activities">Aktivitäten</string>
+    <string name="navigation_item_settings">Einstellungen</string>
+    <string name="title_activity_sensor_settings">Sensoreinstellungen</string>
+    <string name="graph_options_audio_feedback_enable">Audio aktivieren</string>
+    <string name="graph_options_audio_feedback_disable">Audio deaktivieren</string>
+    <string name="stat_min">Minimum</string>
+    <string name="stat_max">Maximum</string>
+    <string name="stat_average">Durchschnitt</string>
+    <string name="btn_reset_description">Zu jetzt wechseln</string>
+    <string name="export_action">Teilen</string>
+    <string name="send_copy_action">Kopie senden</string>
+    <string name="export_experiment_chooser_title">Experiment senden</string>
+    <string name="export_photo_chooser_title">Foto teilen mit…</string>
+    <string name="experiment_not_finished_downloading_confirm_button">Experiment teilen</string>
+    <string name="experiment_not_finished_downloading_message">Das Experiment wird noch heruntergeladen. Wenn Sie eine Kopie für andere freigeben, gehen möglicherweise Daten verloren</string>
+    <string name="experiment_not_finished_downloading_title">Download läuft</string>
+    <string name="settings_version_title">Version</string>
+    <string name="settings_open_source_title">Open Source-Lizenzen</string>
+    <string name="action_undo">Rückgängig</string>
+    <string name="choose_photo_button_text">Foto auswählen</string>
+    <string name="btn_new_experiment_content_description">Neues Experiment</string>
+    <string name="archived_experiment_message">Experiment archiviert.</string>
+    <string name="unarchived_experiment_message">Experiment aus Archiv verschoben.</string>
+    <string name="archived_run_message">Aufzeichnung archiviert.</string>
+    <string name="unarchived_run_message">Aufzeichnung aus Archiv verschoben.</string>
+    <string name="archived_content_description">Archivierte Experimente können nicht geändert, aber gelöscht werden</string>
+    <string name="experiment_title_hint">Experimenttitel</string>
+    <string name="btn_add_sensor_card_description">Neue Sensorkarte hinzufügen</string>
+    <string name="btn_sensor_card_close">Karte schließen</string>
+    <string name="default_experiment_name">Unbenanntes Experiment</string>
+    <string name="empty_project">Es sind keine Experimente vorhanden</string>
+    <string name="default_sonification">Standard</string>
+    <string name="amplitude">Amplitude</string>
+    <string name="notes">Anmerkungen</string>
+    <string name="scale">Skalieren</string>
+    <string name="conductor">Leiter</string>
+    <string name="empty_experiment">Sie haben noch keine Beobachtungen</string>
+    <string name="device_options_sensor_label_text">Sensor</string>
+    <string name="sensor_rotation_rpm">Drehung</string>
+    <string name="sensor_raw">Rohdaten</string>
+    <string name="sensor_custom">Benutzerdefiniert</string>
+    <string name="device_options_custom_sensor_pin_label_text">Anheften</string>
+    <string name="device_options_custom_sensor_frequency_checkbox_text">Häufigkeit</string>
+    <string name="sensor_desc_short_acc_x">Die Beschleunigung des Smartphones nach links und rechts in m/s²</string>
+    <string name="sensor_desc_short_acc_y">Die Beschleunigung des Smartphones nach vorn und hinten in m/s²</string>
+    <string name="sensor_desc_short_acc_z">Die Beschleunigung des Smartphones nach oben und unten in m/s²</string>
+    <string name="sensor_desc_short_decibel">Die Intensität des Schalls, der den Schallsensor oder das Mikrofon erreicht, in Dezibel (dB).</string>
+    <string name="sensor_desc_short_pitch">Die Tonhöhe des Tons, der den Schallsensor oder das Mikrofon erreicht, in Hertz (Hz).</string>
+    <string name="sensor_desc_short_magnetic_strength">Die Stärke des geomagnetischen Umgebungsfeldes in Microtesla</string>
+    <string name="sensor_desc_short_bluetooth">Ein externer Sensor zeigt hier basierend auf benutzerdefinierten Einstellungen seine Daten an.</string>
+    <string name="sensor_desc_short_rotation">Die Anzahl der Umdrehungen pro Minute</string>
+    <string name="sensor_desc_short_raw">Der Prozentsatz der Rohdatenlesung von einem externen Sensor.</string>
+    <string name="sensor_desc_short_barometer">Der atmosphärische Druck, gemessen in Hektopascal (hPa).</string>
+    <string name="sensor_desc_first_paragraph_magnetic_strength">Ihr Smartphone enthält eine Funktion zur Erkennung magnetischer Felder: ein Magnetometer. Dieser winzige, dreiachsige Sensor erkennt mithilfe elektrischer Ströme die Magnetfeldstärke in den drei Raumdimensionen. Indem wir die Daten aus allen drei Achsen kombinieren, können wir einen Gesamtmagnetfeldstärkesensor erzeugen.
+
+Einige Magnetometer erkennen Magnetfelder durch Ausnutzung des Hall-Effekts – der Tendenz von Magnetfeldern, sich bewegende Ladungen in ihrem Fluss abzulenken. Neuere Magnetometer setzen auf Magnetowiderstände. Das sind Metalllegierungen, die als Reaktion auf Magnetfelder ihren Widerstand verändern. 
+
+Warum braucht ein Smartphone ein Magnetometer? Die Ausrichtung im Raum zu kennen ist nützlich für eingebaute Kompass- und Navigationsanwendungen, insbesondere für solche, die jede einzelne Richtungsänderung vorgeben sollen.</string>
+    <string name="sensor_desc_second_paragraph_magnetic_strength">Magnete, elektrische Ströme und Metallgegenstände können das Magnetometer Ihres Smartphones in diese oder jene Richtung ablenken. Aber auch dann, wenn Sie mitten auf einem leeren Feld stehen, zeigt das Magnetometer in Ihrem Smartphone immer noch niedrige Messwerte oberhalb Null an: Das ist das Magnetfeld der Erde!</string>
+    <string name="sensor_desc_first_paragraph_acc">Objekte sind meistens entweder bewegungslos oder sie bewegen sich weiter, wenn sie einmal in Bewegung versetzt wurden. Dies wird als Trägheit oder Beharrungsvermögen bezeichnet. Im ersten Newtonschen Gesetz wird dies so ausgedrückt: Ein Körper verharrt im Zustand der Ruhe oder der Bewegung, sofern er nicht durch einwirkende Kräfte zur Änderung seines Zustands gezwungen wird.
+
+Wenn sich ein Objekt aufgrund einer einwirkenden Kraft in Bewegung setzt, spricht man von einer Beschleunigung des Objekts: Seine Geschwindigkeit ändert sich. Es wird schneller oder langsamer oder ändert seine Richtung. Die Beschleunigung wird in Meter pro Quadratsekunde (m/s²) gemessen.
+
+Ihr Smartphone verfügt über eine Funktion, um diese Veränderungen der Bewegung zu messen – den Beschleunigungsmesser. Im Inneren eines Beschleunigungsmessers befinden sich kleine aufgehängte Massen, die sich frei bewegen können. Bewegungsänderungen verursachen eine Verlagerung dieser Massen, wie wenn bei einer plötzlichen Bremsung mit dem Auto Ihr Kopf nach vorne geschleudert wird. Durch das Messen dieser geringfügigen Verlagerungen kann ein Beschleunigungsmesser in einem Smartphone Bewegungs- und Richtungsänderungen erkennen. Dies ist beispielsweise hilfreich, wenn die Bildschirmdarstellung vom Querformat zum Hochformat geändert werden soll, während Sie auf Ihrem Smartphone Spiele spielen, und für weitere Anwendungszwecke.</string>
+    <string name="sensor_desc_second_paragraph_acc">Sie haben wahrscheinlich eine ständige Beschleunigung entlang der Z-Achse bemerkt, selbst wenn das Smartphone ruhig auf dem Tisch liegt. Es handelt sich hierbei um die Beschleunigung, die wir aufgrund der Schwerkraft auf der Erdoberfläche erleben und die etwa 9,8 m/s² beträgt.</string>
+    <string name="sensor_desc_first_paragraph_decibel">Töne werden durch Vibration verursacht. Ihre Stimme zum Beispiel entsteht durch die Schwingungen der Stimmbänder in Ihrem Kehlkopf. Diese Schwingungen erzeugen abwechselnd Zonen mit hohem und niedrigem Luftdruck, die nach außen strömen – ähnlich wie die immer größer werdenden Kreise, die entstehen, wenn man einen Kieselstein in einen Teich wirft.</string>
+    <string name="sensor_desc_second_paragraph_decibel">Alle Töne können hinsichtlich ihrer Frequenz und Intensität beschrieben werden.
+
+Die Intensität können Sie hier mit dem Science Journal-Schallintensitätssensor in Dezibel (dB) messen. Die Intensität bzw. Lautstärke hängt von der Entfernung ab, die ein vibrierendes Objekt bei jeder Vibration zurücklegt. Größere Intensität hören wir als erhöhte Lautstärke.
+
+Die Frequenz bzw. Tonhöhe einer Schallwelle entspricht ihrer Schwingungsrate. Je schneller ein Objekt vibriert, desto höher ist der daraus entstehende Ton. Der Science Journal-Schallintensitätssensor misst nicht die Frequenz, sondern nur die Lautstärke.
+
+Es ist wichtig zu wissen, dass das Mikrofon in Ihrem Gerät sehr empfindlich darauf reagiert, wie sich Schallwellen über die Zeit verändern – auf die absolute Größe jeder Welle reagiert es jedoch nicht. Wir haben versucht, einen Code auszuwählen, der mit hoher Wahrscheinlichkeit ähnliche Zahlen wie die ausgibt, die Sie unten unter Referenz finden. Es kann jedoch sein, dass ein Gerät durchweg höhere oder niedrigere Zahlen angibt. Wissenschaftler würden im Normalfall einen Sensor wie diesen auf Basis einer bekannten Messgröße kalibrieren. Auf dem jetzigen Stand kann Science Journal Ihnen sagen, ob Ihre nächste Zugfahrt oder Ihr nächster Konzertbesuch lauter ist – aber nur, wenn Sie dasselbe Handy zu beidem mitnehmen.
+
+Auch gut zu wissen ist, dass es wichtige Unterschiede zwischen \"Schallintensität\", \"Schallintensitätspegel\" und \"Schalldruck\" gibt. Wir sehen sie hier als dasselbe an, doch wenn Sie sich mit dem Thema näher beschäftigen möchten, gibt es viele Onlineressourcen zu den Unterschieden.
+
+Das leiseste Geräusch, das das durchschnittliche menschliche Ohr wahrnehmen kann, wird als 0 dB definiert. Normale Gespräche entsprechen ungefähr 60 dB und Töne oberhalb von etwa 140 dB werden vom menschlichen Ohr als schmerzhaft empfunden. Aber auch Geräusche, die nicht als schmerzhaft empfunden werden, können schädlich sein. Ist man fortwährend einer Lautstärke von 90 dB ausgesetzt – dies entspricht in etwa der Lautstärke eines Staubsaugers – kann dies letztlich zu Gehörschäden führen.
+
+Die Dezibelskala ist logarithmisch, was das Ganze ein wenig kompliziert macht: Eine Schallquelle von 40 dB ist nicht doppelt, sondern hundertmal so intensiv wie eine Schallquelle von 20 dB. Ein klingelnder Wecker erzeugt 70 dB, aber zwei klingelnde Wecker erzeugen keine 140 dB, sondern 73 dB. Wie gesagt, die Sache ist nicht ganz einfach.
+
+10 dB – raschelndes Laub
+20 dB – Flüstern aus 1,5 m Entfernung
+30 dB – leises Flüstern
+50 dB – Regen
+60 dB – normale Unterhaltung
+90 dB – Mixer
+100 dB – Auto ohne Schalldämpfer
+110 dB – Schreien ins Ohr
+120 dB – Donner
+130 dB – Presslufthammer
+140 dB – startendes Flugzeug</string>
+    <string name="sensor_desc_first_paragraph_pitch">Töne werden durch Vibration verursacht. Ihre Stimme zum Beispiel entsteht durch die Schwingungen der Stimmbänder in Ihrem Kehlkopf. Diese Schwingungen erzeugen abwechselnd Zonen mit hohem und niedrigem Luftdruck, die nach außen strömen – ähnlich wie die immer größer werdenden Kreise, die entstehen, wenn man einen Kieselstein in einen Teich wirft.</string>
+    <string name="sensor_desc_second_paragraph_pitch">Alle Töne können hinsichtlich ihrer Frequenz und Intensität beschrieben werden. Die Frequenz bzw. Tonhöhe einer Schallwelle entspricht ihrer Schwingungsrate. Je schneller ein Objekt vibriert, desto höher ist der daraus entstehende Ton. Wir messen diese Schwingungen in Hertz (Hz), wobei 1 Hertz einer Schwingung pro Sekunde entspricht.
+
+Menschen können Töne im Bereich von 20 bis 20.000 Hz hören. Die tiefste Taste eines Klaviers erzeugt einen Ton mit einer Frequenz von 27,5 Hz und die höchste Taste einen Ton mit einer Frequenz von 4186,01 Hz.
+
+Der rote Punkt gibt darüber Aufschluss, wie nah sich die erkannte Tonhöhe an der nächsten Musiknote befindet. Wenn die Tonhöhe niedriger oder \"vermindert\" ist, erscheint der Punkt links. Ist die Tonhöhe höher oder \"übermäßig\", wird der rote Punkt rechts angezeigt.</string>
+    <string name="pitch_low_content_description">Niedrige Tonhöhe</string>
+    <string name="pitch_flatter_than_natural_note_content_description">%1$s Halbtonschritte tiefer als %2$s, %3$s. Oktave</string>
+    <string name="pitch_flatter_than_flat_note_content_description">%1$s Halbtonschritte tiefer als %2$s♭, %3$s. Oktave</string>
+    <string name="pitch_flatter_than_sharp_note_content_description">%1$s Halbtonschritte tiefer als %2$s♯, %3$s. Oktave</string>
+    <string name="pitch_natural_note_content_description">%1$s, %2$s. Oktave</string>
+    <string name="pitch_flat_note_content_description">%1$s♭, %2$s. Oktave</string>
+    <string name="pitch_sharp_note_content_description">%1$s♯, %2$s. Oktave</string>
+    <string name="pitch_sharper_than_natural_note_content_description">%1$s Halbtonschritte höher als %2$s, %3$s. Oktave</string>
+    <string name="pitch_sharper_than_flat_note_content_description">%1$s Halbtonschritte höher als %2$s♭, %3$s. Oktave</string>
+    <string name="pitch_sharper_than_sharp_note_content_description">%1$s Halbtonschritte höher als %2$s♯, %3$s. Oktave</string>
+    <string name="pitch_high_content_description">Hohe Tonhöhe</string>
+    <string name="sensor_desc_first_paragraph_rotation">\"Umdrehungen pro Minute\" ist eine Maßeinheit für die Anzahl der Drehungen um eine feste Achse innerhalb einer Minute.
+
+Ihr Windrad dreht sich und bringt dadurch die Encoderscheibe zum Drehen:</string>
+    <string name="sensor_desc_second_paragraph_rotation">Dadurch entstehen abwechselnd Helligkeit und Dunkelheit auf dem Sensor, was im Science Journal als Drehung registriert wird.</string>
+    <string name="sensor_desc_first_paragraph_raw">Die hier angezeigten Daten stammen aus einer externen Sensorkommunikation mit Ihrem Smartphone über Bluetooth.
+
+Der Wert zeigt den Prozentsatz der Rohdatenlesung direkt von Ihrem Mikrocontroller an. In der Regel entspricht dies dem Prozentsatz eines Spannungsabfalls an einem Sensor.</string>
+    <string name="sensor_desc_second_paragraph_raw">Bluetooth ist ein Standard für Drahtlostechnologie, bei dem Radiowellen verwendet werden, um über kurze Entfernungen hinweg Daten mit stationären und mobilen Geräten auszutauschen.</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">Die hier angezeigten Daten stammen aus einer externen Sensorkommunikation mit Ihrem Smartphone über Bluetooth.</string>
+    <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth ist ein Standard für Drahtlostechnologie, bei dem Radiowellen verwendet werden, um über kurze Entfernungen hinweg Daten mit stationären und mobilen Geräten auszutauschen.</string>
+    <string name="sensor_desc_first_paragraph_barometer">Obwohl wir es normalerweise nicht merken, leben wir am Boden einer riesigen, 40 Kilometer hohen Luftglocke, der Erdatmosphäre. Der Druck, der durch das Gewicht der Luft auf uns wirkt, wird als \"atmosphärischer Druck\" bezeichnet.
+
+Auf Meereshöhe liegt der atmosphärische Druck bei etwa 1 kg pro Quadratzentimeter – dies entspricht knapp 625 kg für die Fläche eines DIN-A4-Blattes.</string>
+    <string name="sensor_desc_second_paragraph_barometer">Da wir diesen enormen Druck gewohnt sind, nehmen wir ihn nicht wahr – zumindest, solange er unverändert bleibt. Selbst geringe Veränderungen machen sich bemerkbar, beispielsweise wenn wir im Hochgebirge unterwegs sind oder mit dem Flugzeug verreisen. Auch die Wetterlage hat Einfluss auf den atmosphärischen Druck. Bei stürmischem und wechselhaftem Wetter fällt der Druck, während er bei stabiler Wetterlage und klarem Himmel steigt.
+
+Das digitale Barometer in Ihrem Smartphone misst den atmosphärischen Druck in Hektopascal (HPa). 1 Hektopascal entspricht 100 Pascal, wobei 1 Pascal der Kraft von 1 Newton entspricht, die auf einen Quadratmeter wirkt. In Wetterberichten wird der atmosphärische Druck oft in Millibar angegeben. 1 Millibar entspricht 1 Hektopascal.
+
+Vielleicht fragen Sie sich, zu welchem Zweck Ihr Smartphone den Druck misst. Der atmosphärische Druck ändert sich selbst bei geringen Höhenunterschieden messbar. Dabei reicht es bereits, wenn wir eine Treppe hinaufsteigen. Ein digitales Barometer im Smartphone kann somit dazu beitragen, Standortänderungen zu erkennen. Es kann beispielsweise angeben, in welchem Stockwerk eines Gebäudes Sie sind oder ob Sie sich gerade auf einer Brücke oder auf der darunter hindurchführenden Straße befinden.</string>
+    <string name="run_review_activity_label">Überprüfen</string>
+    <string name="heading_info_section">Was passiert hier?</string>
+    <string name="edit_note_time">Notizzeitpunkt bearbeiten</string>
+    <string name="delete_note_menu_item">Löschen</string>
+    <string name="crop_run">Zuschneiden</string>
+    <string name="snackbar_note_deleted">Notiz gelöscht</string>
+    <string name="snackbar_undo">Rückgängig</string>
+    <string name="archived_badge">Archiviert</string>
+    <string name="delete_experiment_dialog_title">Dieses Experiment löschen?</string>
+    <string name="delete_experiment_dialog_message">Möchten Sie dieses Experiment wirklich löschen? Alle zugehörigen Aufzeichnungen und Notizen werden gelöscht.</string>
+    <string name="delete_run_dialog_title">Diese Aufzeichnung löschen?</string>
+    <string name="run_review_delete_confirm">Möchten Sie diese Aufzeichnung wirklich löschen? Die aufgezeichneten Daten und Notizen werden gelöscht.</string>
+    <string name="menu_btn_content_description">Menü</string>
+    <string name="sensor_card_error_text">Laden der Sensordaten fehlgeschlagen</string>
+    <string name="sensor_card_loading_text">Sensordaten werden geladen…</string>
+    <string name="edit_trial_title_hint">Titel der Aufzeichnung</string>
+    <string name="include_archived_trials">Archivierte Aufzeich. anzeigen</string>
+    <string name="export_error">Export fehlgeschlagen.</string>
+    <string name="listing_changelog_features">Neue Funktionen:</string>
+    <string name="listing_changelog_bug_fixes">Leistungsverbesserungen und Fehlerkorrekturen.</string>
+    <string name="listing_changelog_separator">
+
+</string>
+    <string name="listing_h_feature_1">
+• Tonhöhensensor.</string>
+    <string name="listing_h_feature_2">
+• Experimente in eine Datei exportieren und in andere Geräte importieren.</string>
+    <string name="listing_h_feature_3">
+• Fotos aus einem Experiment exportieren.</string>
+    <string name="menu_item_audio_settings">Audioeinstellungen</string>
+    <string name="enable_auto_zoom">Autoscaling an</string>
+    <string name="disable_auto_zoom">Autoscaling aus</string>
+    <string name="menu_item_set_triggers">Trigger festlegen</string>
+    <string name="menu_item_edit_triggers">Trigger bearbeiten</string>
+    <string name="btn_add_new_trigger">Trigger erstellen</string>
+    <string name="empty_trigger_list">Keine Trigger festgelegt</string>
+    <string name="trigger_type_label">Triggertyp</string>
+    <string name="trigger_when_label">Trigger löst aus, wenn</string>
+    <string name="trigger_value_label">Triggerwert</string>
+    <string name="trigger_type_start_recording">Aufzeichnung starten</string>
+    <string name="trigger_type_stop_recording">Aufzeichnung beenden</string>
+    <string name="trigger_type_note">Notiz erstellen</string>
+    <string name="trigger_type_alert">Benachrichtigung an mich</string>
+    <string name="trigger_when_at">ist gleich</string>
+    <string name="trigger_when_drops_below">fällt unter</string>
+    <string name="trigger_when_rises_above">steigt über</string>
+    <string name="trigger_when_is_below">liegt unter</string>
+    <string name="trigger_when_is_above">liegt über</string>
+    <string name="trigger_note_text_label">Standardnotiztext</string>
+    <string name="trigger_note_text_hint">Was sollte in der Notiz angegeben sein?</string>
+    <string name="trigger_audio_alert">Ton</string>
+    <string name="trigger_haptic_alert">Vibration</string>
+    <string name="trigger_visual_alert">visuelle Nachricht</string>
+    <string name="cannot_save_invalid_value">Geben Sie einen numerischen Wert ein, bei dem dieser Trigger ausgelöst wird.</string>
+    <string name="sensor_trigger_deleted">Trigger gelöscht</string>
+    <string name="trigger_only_when_recording">Nur bei Aufzeichnung auslösen</string>
+    <string name="trigger_fired_text">Trigger aktiviert</string>
+    <string name="crop_start_seekbar_content_description">Anfang des Versuchszeitraums:</string>
+    <string name="crop_end_seekbar_content_description">Ende des Versuchszeitraums:</string>
+    <string name="crop_failed_message">Versuchszeitraum konnte nicht gespeichert werden:</string>
+    <string name="trigger_alert_prompt">Benachrichtigung durch</string>
+    <string name="my_devices">Meine Geräte</string>
+    <string name="available_devices">Verfügbare Geräte</string>
+    <string name="phone_sensors">Interne Sensoren</string>
+    <string name="forget_device">Dieses Gerät vergessen</string>
+    <string name="crop_overflow_menu_content_description">Weitere Optionen</string>
+    <string name="edit_crop_start_time">Beginn bearbeiten</string>
+    <string name="edit_crop_end_time">Ende bearbeiten</string>
+    <string name="timestamp_picker_format_error">Gültiges Format verwenden: h:mm:ss.SSS</string>
+    <string name="timestamp_picker_crop_range_error">Aufz. können nicht auf unter 1 Sekunde zugeschnitten werden</string>
+    <string name="timestamp_picker_prompt">Neue Zeit (h:mm:ss.SSS)</string>
+    <string name="export_options_title">Exportieren…</string>
+    <string name="export_options_relative_time">Relative Dauer</string>
+    <string name="compass">Kompass</string>
+    <string name="compass_units">Grad</string>
+    <string name="sensor_desc_short_compass">Die Ausrichtung des Smartphones in Bezug auf das Magnetfeld der Erde</string>
+    <string name="sensor_desc_first_paragraph_compass">Es für Sie vermutlich nichts Neues, dass die Erde ein Magnetfeld besitzt. Möglicherweise ist Ihnen aber nicht bekannt, dass Ihr Smartphone eine Komponente zum Aufspüren von Magnetfeldern enthält – das Magnetometer. Indem wir Daten aus dem Magnetometer Ihres Smartphones mit der Ausrichtung des Telefons im Raum kombinieren, können wir einen digitalen Kompass erzeugen.
+
+Ein gewöhnlicher Kompass ist ein einfaches Magnetometer mit einer magnetisierten Nadel, die sich nach dem Magnetfeld der Umgebung ausrichtet. In Ihrem Smartphone befindet sich zwar kein kleiner Kompass, dafür aber ein kleiner Dreiachsensensor, der mithilfe elektrischer Ströme die magnetische Feldstärke in den drei Raumdimensionen erfasst. Dies allein reicht nicht aus, um einen Kompass zu erzeugen!
+
+Warum also muss ein Kompass die Daten vom Magnetometer mit der Ausrichtung des Telefons kombinieren? Wenn wir die Ausrichtung des Telefons kennen, können wir die magnetische Rotation berechnen, auch wenn das Telefon nicht genau in derselben Ebene wie das Magnetfeld der Erde gehalten wird. Wir wissen, dass die Gravitation senkrecht zum Erdmagnetfeld wirkt, und können folglich die Richtung der Gravitation aus den Beschleunigungssensoren nutzen, um zu bestimmen, wie viel vom Magnetfeld sich in derselben Ebene befindet wie das Erdmagnetfeld.</string>
+    <string name="sensor_desc_second_paragraph_compass">Wie Sie vielleicht bemerkt haben, reagiert der Kompass nicht nur auf das Magnetfeld der Erde, sondern auch auf jedes andere magnetische Feld, das sich in der Nähe befindet. Magnete, elektrische Ströme und Metallobjekte können das Magnetometer Ihres Smartphones unschwer in diese oder jene Richtung ablenken. Wenn Sie sichergehen wollen, dass die rote Kompassspitze des Kompasses am Magnetfeld der Erde ausgerichtet ist, stellen Sie sich auf einer freien Fläche auf – vorzugsweise draußen und fernab von Stromleitungen. Es ist hilfreich, Ihr Smartphone in einem 8er-Muster zu schwenken, um das eingebaute Magnetometer zu kalibrieren.</string>
+    <string name="text_label_details_title">Textnotiz bearbeiten</string>
+    <string name="navigation_item_experiments">Experimente</string>
+    <string name="note_caption_hint">Beschreibung hinzufügen</string>
+    <string name="linear_accelerometer">Linearer Beschl.-messer</string>
+    <string name="sensor_desc_short_linear_acc">Die Gesamtbeschleunigung des Smartphones ohne Berücksichtigung der Gravitation, in m/s²</string>
+    <string name="sensor_desc_first_paragraph_linear_acc">Objekte sind meistens entweder bewegungslos oder sie bewegen sich weiter, wenn sie einmal in Bewegung versetzt wurden. Dies wird als Trägheit oder Beharrungsvermögen bezeichnet. Im ersten Newtonschen Gesetz ist dies folgendermaßen formuliert: Ein Körper verharrt im Zustand der Ruhe oder der Bewegung, sofern er nicht durch einwirkende Kräfte zur Änderung seines Zustands gezwungen wird.
+
+Wenn sich ein Objekt aufgrund einer einwirkenden Kraft in Bewegung setzt, spricht man von einer Beschleunigung des Objekts: Seine Geschwindigkeit ändert sich. Es wird schneller oder langsamer oder ändert seine Richtung. Die Maßeinheit für Beschleunigung ist Meter pro Quadratsekunde (m/s²).
+
+Ihr Smartphone verfügt über eine Funktion, um diese Veränderungen der Bewegung zu messen – einen Beschleunigungsmesser. Im Inneren eines Beschleunigungsmessers befinden sich kleine aufgehängte Massen, die sich frei bewegen können. Bewegungsänderungen verursachen eine Verlagerung dieser Massen, wie wenn bei einer plötzlichen Bremsung mit dem Auto Ihr Kopf nach vorne geschleudert wird. Durch das Messen dieser geringfügigen Verlagerungen kann ein Beschleunigungsmesser in einem Smartphone Bewegungs- und Richtungsänderungen erkennen.Dies ist beispielsweise hilfreich, wenn die Bildschirmdarstellung vom Querformat zum Hochformat geändert werden soll, während Sie auf Ihrem Smartphone Spiele spielen, und für weitere Anwendungszwecke.</string>
+    <string name="sensor_desc_second_paragraph_linear_acc">Der kombinierte lineare Beschleunigungssensor erfasst die Gesamtbeschleunigung in allen drei Achsen des Smartphones, mit Ausnahme der Gravitation.</string>
+    <string name="edit_note_time_menu_item">Zeit bearbeiten</string>
+    <string name="snapshot_label_details_title">Details zur Zusammenfassung</string>
+    <string name="load_more_notes_btn">Weitere Notizen anzeigen</string>
+    <string name="name_experiment_dialog_title">Diesem Experiment einen Namen geben</string>
+    <string name="throbber_content_description">Aufzeichnung läuft</string>
+    <string name="details_header">Details</string>
+    <string name="text_label_hint">Eine Beobachtung hinzufügen</string>
+    <string name="first_experiment_title">Willkommen beim Science Journal</string>
+    <string name="first_experiment_text_note">Versuchen Sie, mit der Symbolleiste unten Notizen zu machen und Daten aufzuzeichnen!</string>
+    <string name="first_experiment_picture_note_caption">Willkommen beim Science Journal!</string>
+    <string name="first_experiment_second_text_note">Aktivitäten zum Ausprobieren finden Sie unter
+g.co/sciencejournalactivities</string>
+    <string name="btn_take_picture_content_description">Fotografieren</string>
+    <string name="input_camera_permission_denied">Die Kamera kann nicht verwendet werden, da Science Journal keine Zugriffsberechtigung dafür hat.</string>
+    <string name="input_photo_library_permission_denied">Ihre Fotogalerie kann nicht verwendet werden, da Science Journal keine Zugriffsberechtigung dafür hat.</string>
+    <string name="import_failed_recording">Science Journal wird gerade verwendet. Bitte beenden Sie die Aufzeichnung und versuchen Sie es noch einmal.</string>
+    <string name="import_failed_file">Import fehlgeschlagen. Mit diesem Experiment stimmt etwas nicht.</string>
+    <string name="import_failed">Ein unbekannter Fehler ist aufgetreten.</string>
+    <string name="explore_your_world">Die Umgebung erforschen</string>
+    <string name="use_science_journal">Mit Science Journal können Sie Experimente in Ihrer Umgebung durchführen</string>
+    <string name="get_started">Jetzt starten</string>
+    <string name="drive_sync_cannot_reach_google_drive">Google Drive ist nicht erreichbar. Prüfen Sie Ihre Verbindung.</string>
+    <string name="add_note_hint_text">Neue Notiz hinzufügen</string>
+    <string name="add_note_button_text">Notiz der Zeitachse hinzufügen</string>
+</resources>
