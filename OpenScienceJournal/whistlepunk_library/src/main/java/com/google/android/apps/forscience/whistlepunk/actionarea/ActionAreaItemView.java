@@ -17,14 +17,16 @@ package com.google.android.apps.forscience.whistlepunk.actionarea;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.content.res.ResourcesCompat;
 import android.util.AttributeSet;
 import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.content.res.ResourcesCompat;
+
 import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.actionarea.ActionAreaView.ActionAreaListener;
 
@@ -36,51 +38,57 @@ import com.google.android.apps.forscience.whistlepunk.actionarea.ActionAreaView.
  * remainder of the view.
  */
 public class ActionAreaItemView extends LinearLayout {
-  public static final int USE_DEFAULT_STYLE = -1;
+    public static final int USE_DEFAULT_STYLE = -1;
 
-  private ActionAreaItem actionAreaItem;
+    private ActionAreaItem actionAreaItem;
 
-  public ActionAreaItemView(@NonNull Context context, @Nullable AttributeSet attrs) {
-    super(context, attrs);
-    inflate(context, R.layout.action_area_item, this);
-  }
-
-  protected void setActionAreaItem(
-      Context context, ActionAreaItem actionAreaItem, ActionAreaListener listener) {
-    this.actionAreaItem = actionAreaItem;
-    TextView textView = findViewById(R.id.text_view);
-    if (actionAreaItem != null && listener != null) {
-      textView.setText(actionAreaItem.getContentDescriptionId());
-      textView.setContentDescription(
-          getResources().getString(actionAreaItem.getContentDescriptionId()));
-      updateView(context, USE_DEFAULT_STYLE);
-      setOnClickListener((View view) -> listener.onClick(actionAreaItem));
-    } else {
-      textView.setText("");
-      textView.setContentDescription("");
-      textView.setCompoundDrawablesRelativeWithIntrinsicBounds(null, null, null, null);
-      setOnClickListener(null);
+    public ActionAreaItemView(@NonNull Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        inflate(context, R.layout.action_area_item, this);
     }
-  }
 
-  protected void updateView(Context context, int optionalStyle) {
-    if (actionAreaItem != null) {
-      ContextThemeWrapper wrapper = new ContextThemeWrapper(context, context.getTheme());
-      if (optionalStyle != USE_DEFAULT_STYLE) {
-        wrapper = new ContextThemeWrapper(context, optionalStyle);
-      }
-      // Use the correctly colored icon and on touch ripple based on the passed in style
-      Drawable drawable =
-          ResourcesCompat.getDrawable(
-              getResources(), actionAreaItem.getIconId(), wrapper.getTheme());
-      ((TextView) findViewById(R.id.text_view))
-          .setCompoundDrawablesRelativeWithIntrinsicBounds(null, drawable, null, null);
-      setBackground(ResourcesCompat.getDrawable(
-          getResources(), R.drawable.action_area_ripple, wrapper.getTheme()));
+    protected void setActionAreaItem(
+            Context context, ActionAreaItem actionAreaItem, ActionAreaListener listener) {
+        this.actionAreaItem = actionAreaItem;
+        TextView textView = findViewById(R.id.text_view);
+        if (actionAreaItem != null && listener != null) {
+            textView.setText(actionAreaItem.getContentDescriptionId());
+            textView.setContentDescription(
+                    getResources().getString(actionAreaItem.getContentDescriptionId()));
+            updateView(context, USE_DEFAULT_STYLE);
+            setOnClickListener((View view) -> listener.onClick(actionAreaItem));
+        } else {
+            textView.setText("");
+            textView.setContentDescription("");
+            textView.setCompoundDrawablesRelativeWithIntrinsicBounds(null, null, null, null);
+            setOnClickListener(null);
+        }
     }
-  }
 
-  protected ActionAreaItem getItem() {
-    return actionAreaItem;
-  }
+    protected void updateView(Context context, int optionalStyle) {
+        if (actionAreaItem != null) {
+            ContextThemeWrapper wrapper;
+            if (optionalStyle == USE_DEFAULT_STYLE) {
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+                    wrapper = new ContextThemeWrapper(context, context.getTheme());
+                } else {
+                    wrapper = new ContextThemeWrapper(context, 0);
+                }
+            } else {
+                wrapper = new ContextThemeWrapper(context, optionalStyle);
+            }
+            // Use the correctly colored icon and on touch ripple based on the passed in style
+            Drawable drawable =
+                    ResourcesCompat.getDrawable(
+                            getResources(), actionAreaItem.getIconId(), wrapper.getTheme());
+            ((TextView) findViewById(R.id.text_view))
+                    .setCompoundDrawablesRelativeWithIntrinsicBounds(null, drawable, null, null);
+            setBackground(ResourcesCompat.getDrawable(
+                    getResources(), R.drawable.action_area_ripple, wrapper.getTheme()));
+        }
+    }
+
+    protected ActionAreaItem getItem() {
+        return actionAreaItem;
+    }
 }
