@@ -19,21 +19,24 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.appcompat.app.ActionBar;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
-import com.google.android.apps.forscience.whistlepunk.actionarea.ActionFragment;
-import com.google.android.apps.forscience.whistlepunk.actionarea.MoreObservationsFragment.ObservationOption;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
 import com.google.android.apps.forscience.whistlepunk.actionarea.ActionAreaItem;
 import com.google.android.apps.forscience.whistlepunk.actionarea.ActionAreaView.ActionAreaListener;
+import com.google.android.apps.forscience.whistlepunk.actionarea.ActionFragment;
 import com.google.android.apps.forscience.whistlepunk.actionarea.AddMoreObservationNotesFragment;
+import com.google.android.apps.forscience.whistlepunk.actionarea.MoreObservationsFragment.ObservationOption;
 import com.google.android.apps.forscience.whistlepunk.actionarea.SensorFragment;
 import com.google.android.apps.forscience.whistlepunk.analytics.TrackerConstants;
 import com.google.android.apps.forscience.whistlepunk.arcore.ARVelocityActivity;
@@ -43,10 +46,12 @@ import com.google.android.apps.forscience.whistlepunk.performance.PerfTrackerPro
 import com.google.android.apps.forscience.whistlepunk.project.experiment.ExperimentDetailsFragment;
 import com.google.android.apps.forscience.whistlepunk.sensors.VelocitySensor;
 import com.google.android.material.snackbar.Snackbar;
-import io.reactivex.Observable;
-import io.reactivex.subjects.SingleSubject;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import io.reactivex.Observable;
+import io.reactivex.subjects.SingleSubject;
 
 /** Displays the experiment and the action bar. */
 public class ExperimentActivity extends NoteTakingActivity
@@ -134,14 +139,16 @@ public class ExperimentActivity extends NoteTakingActivity
           Window window = getWindow();
           if (status.state.shouldShowStopButton()) {
             isRecording = true;
-            bar.setBackgroundDrawable(
-                new ColorDrawable(getResources().getColor(R.color.app_bar_red)));
-            window.setStatusBarColor(getResources().getColor(R.color.status_bar_red));
+            bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.app_bar_red)));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+              window.setStatusBarColor(getResources().getColor(R.color.status_bar_red));
+            }
           } else {
             isRecording = false;
-            bar.setBackgroundDrawable(
-                new ColorDrawable(getResources().getColor(R.color.app_bar_normal)));
-            window.setStatusBarColor(getResources().getColor(R.color.color_primary_dark));
+            bar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.app_bar_normal)));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+              window.setStatusBarColor(getResources().getColor(R.color.color_primary_dark));
+            }
           }
         });
   }
