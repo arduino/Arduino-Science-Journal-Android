@@ -197,4 +197,17 @@
         <item name="android:textColor">@color/arduino_white</item>
     </style>
 
+    <style name="OnboardingText">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+        <item name="android:textColor">@color/arduino_jet</item>
+    </style>
+
+    <style name="OnboardingText.Title">
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/arduino_jet</item>
+    </style>
+
 </resources>

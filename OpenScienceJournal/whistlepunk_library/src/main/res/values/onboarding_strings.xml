@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="onboarding_title" translatable="false">GETTING STARTED</string>
+    <string name="onboarding_page_1_title" translatable="false">Welcome to Science Journal!</string>
+    <string name="onboarding_page_1_text_1" translatable="false">This introduction will walk you through the most important functions of Science Journal and show you how to turn your smart device into a pocket science lab. Swipe left to begin.</string>
 </resources>
