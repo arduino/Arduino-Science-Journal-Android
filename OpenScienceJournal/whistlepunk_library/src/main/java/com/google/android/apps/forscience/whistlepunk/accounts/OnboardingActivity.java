@@ -7,7 +7,9 @@ import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -28,6 +30,7 @@ public class OnboardingActivity extends AppCompatActivity {
         return PreferenceManager.getDefaultSharedPreferences(context).getBoolean(KEY_SHOULD_LAUNCH, true);
     }
 
+    @SuppressWarnings("SameParameterValue")
     static void setShouldLaunch(Context context, boolean shouldLaunch) {
         PreferenceManager.getDefaultSharedPreferences(context)
                 .edit()
@@ -110,6 +113,29 @@ public class OnboardingActivity extends AppCompatActivity {
         page.findViewById(R.id.onboarding_tap_next).setOnClickListener(v -> onNextPage());
         final ViewGroup contents = page.findViewById(R.id.onboarding_page_contents);
         inflater.inflate(resource, contents, true);
+        final ScrollView scroller = page.findViewById(R.id.onboarding_page_scroller);
+        final View scrolled = page.findViewById(R.id.onboarding_page_scroller_contents);
+        final View callToScroll = page.findViewById(R.id.onboarding_page_call_to_scroll);
+        final ViewTreeObserver.OnScrollChangedListener scrollListener = () -> {
+            final int scrollerHeight = scroller.getHeight();
+            final int scrolledHeight = scrolled.getHeight();
+            final boolean isScrollable = scrollerHeight < scrolledHeight;
+            final boolean isScrolled = scrolledHeight - scroller.getScrollY() <= scrollerHeight;
+            callToScroll.setVisibility(isScrollable && !isScrolled ? View.VISIBLE : View.INVISIBLE);
+        };
+        scroller.addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() {
+            @Override
+            public void onViewAttachedToWindow(View v) {
+                scroller.getViewTreeObserver().addOnScrollChangedListener(scrollListener);
+            }
+
+            @Override
+            public void onViewDetachedFromWindow(View v) {
+                scroller.getViewTreeObserver().removeOnScrollChangedListener(scrollListener);
+            }
+        });
+        scrolled.addOnLayoutChangeListener((v, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom) -> scrollListener.onScrollChanged());
+        scrollListener.onScrollChanged();
         return page;
     }
 
