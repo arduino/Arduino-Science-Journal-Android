@@ -81,13 +81,19 @@
 
     <style name="AppTheme.Experiment">
         <item name="android:windowActionBar">false</item>
-
         <item name="icon_color">@color/arduino_gris</item>
         <item name="icon_background">@color/arduino_base_gray</item>
         <item name="colorSecondary">@color/text_color_white</item>
     </style>
 
     <style name="AppTheme.GetStarted">
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Onboarding">
         <item name="android:windowFullscreen">true</item>
         <item name="colorButtonNormal">@android:color/white</item>
         <item name="android:windowNoTitle">true</item>
@@ -181,6 +187,14 @@
         <item name="android:textColor">@color/arduino_white</item>
         <item name="android:textSize">16sp</item>
         <item name="android:gravity">center</item>
+    </style>
+
+    <!-- onboarding styles -->
+    <style name="OnboardingHeaderTitle">
+        <item name="android:fontFamily">@font/roboto_mono_bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/arduino_white</item>
     </style>
 
 </resources>

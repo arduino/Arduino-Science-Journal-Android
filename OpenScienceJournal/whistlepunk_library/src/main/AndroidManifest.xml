@@ -214,9 +214,9 @@
             android:exported="false"
             android:screenOrientation="locked" />
         <activity
-            android:name=".accounts.GetStartedActivity"
+            android:name=".accounts.OnboardingActivity"
             android:exported="false"
-            android:theme="@style/AppTheme.GetStarted" />
+            android:theme="@style/AppTheme.Onboarding" />
         <activity
             android:name=".accounts.SignInActivity"
             android:exported="false"

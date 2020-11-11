@@ -222,5 +222,8 @@
     <!-- Columns in More Observations fragment grid -->
     <integer name="more_observations_column_count">2</integer>
 
+    <!-- onboarding -->
+    <dimen name="onboarding_indicator_margin_h">1.5dp</dimen>
+
     <bool name="is_tablet">false</bool>
 </resources>

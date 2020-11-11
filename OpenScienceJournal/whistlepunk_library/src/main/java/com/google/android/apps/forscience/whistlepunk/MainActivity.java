@@ -37,9 +37,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.apps.forscience.whistlepunk.accounts.AccountsProvider;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
-import com.google.android.apps.forscience.whistlepunk.accounts.GetStartedActivity;
-import com.google.android.apps.forscience.whistlepunk.accounts.OldUserOptionPromptActivity;
-import com.google.android.apps.forscience.whistlepunk.accounts.SignInActivity;
+import com.google.android.apps.forscience.whistlepunk.accounts.OnboardingActivity;
 import com.google.android.apps.forscience.whistlepunk.analytics.TrackerConstants;
 import com.google.android.apps.forscience.whistlepunk.cloudsync.CloudSyncManager;
 import com.google.android.apps.forscience.whistlepunk.cloudsync.CloudSyncProvider;
@@ -361,17 +359,19 @@ public class MainActivity extends ActivityWithNavigationView {
             return false;
         }
 
-        if (GetStartedActivity.shouldLaunch(this)) {
-            Intent intent = new Intent(this, GetStartedActivity.class);
-            startActivityForResult(intent, ActivityRequestCodes.REQUEST_GET_STARTED_ACTIVITY);
+        if (OnboardingActivity.shouldLaunch(this)) {
+            Intent intent = new Intent(this, OnboardingActivity.class);
+            startActivityForResult(intent, ActivityRequestCodes.REQUEST_ONBOARDING_ACTIVITY);
             return true;
         }
 
+        /*
         if (SignInActivity.shouldLaunch(this) || OldUserOptionPromptActivity.shouldLaunch(this)) {
             Intent intent = new Intent(this, SignInActivity.class);
             startActivityForResult(intent, ActivityRequestCodes.REQUEST_SIGN_IN_ACTIVITY);
             return true;
         }
+         */
 
         accountsProvider.setShowSignInActivityIfNotSignedIn(false);
         return false;
@@ -559,8 +559,9 @@ public class MainActivity extends ActivityWithNavigationView {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
-            case ActivityRequestCodes.REQUEST_GET_STARTED_ACTIVITY:
+            case ActivityRequestCodes.REQUEST_ONBOARDING_ACTIVITY:
             case ActivityRequestCodes.REQUEST_SIGN_IN_ACTIVITY:
                 if (resultCode == RESULT_CANCELED) {
                     finish();
