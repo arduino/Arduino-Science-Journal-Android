@@ -62,9 +62,12 @@
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/onboarding_figure_1"
         app:layout_constraintStart_toStartOf="@id/onboarding_figure_1"
-        app:layout_constraintTop_toBottomOf="@id/onboarding_figure_1">
+        app:layout_constraintTop_toBottomOf="@id/onboarding_figure_1"
+        app:layout_constraintVertical_bias="0">
 
         <View
             android:id="@+id/onboarding_quick_tip_box_border"
