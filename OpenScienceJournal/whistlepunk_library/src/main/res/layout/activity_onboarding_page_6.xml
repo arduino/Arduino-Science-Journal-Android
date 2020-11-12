@@ -3,15 +3,127 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context="com.google.android.apps.forscience.whistlepunk.accounts.OnboardingActivity">
 
-    <TextView
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/onboarding_guideline_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Science Journal"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/onboarding_guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/onboarding_title"
+        style="@style/OnboardingText.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/onboarding_06_title"
+        app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end"
+        app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/onboarding_text_1"
+        style="@style/OnboardingText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/onboarding_06_text_01"
+        app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end"
+        app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_title" />
+
+    <LinearLayout
+        android:id="@+id/onboarding_container_2"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end"
+        app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_text_1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/onboarding_figure_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/onboarding_page_6_figure_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/onboarding_text_2"
+                style="@style/OnboardingText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:lineSpacingExtra="0dp"
+                android:text="@string/onboarding_06_text_02"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/onboarding_figure_1"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/onboarding_figure_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/onboarding_page_6_figure_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/onboarding_text_3"
+                style="@style/OnboardingText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:lineSpacingExtra="0dp"
+                android:text="@string/onboarding_06_text_03"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/onboarding_figure_2"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/onboarding_figure_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@null"
+        android:src="@drawable/onboarding_page_6_figure_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end"
+        app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_container_2"
+        app:layout_constraintVertical_bias="0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
