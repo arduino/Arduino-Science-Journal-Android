@@ -207,7 +207,34 @@
     <style name="OnboardingText.Title">
         <item name="android:fontFamily">@font/open_sans_bold</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">14sp</item>
+    </style>
+
+    <style name="OnboardingText.QuickTip">
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/arduino_jet</item>
+    </style>
+
+    <style name="OnboardingText.QuickTip.Header">
+        <item name="android:fontFamily">@font/roboto_mono_bold</item>
+    </style>
+
+    <style name="OnboardingText.Swipe">
+        <item name="android:fontFamily">@font/roboto_mono</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/arduino_asbestos</item>
+    </style>
+
+    <style name="OnboardingButton">
+        <item name="android:background">@drawable/onboarding_button_bg</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/arduino_jet</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
     </style>
 
 </resources>

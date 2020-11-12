@@ -106,7 +106,7 @@ public class OnboardingActivity extends AppCompatActivity {
         }
     }
 
-    private View buildPage(int resource, final ViewGroup container) {
+    private View buildPage(int resource, final ViewGroup container, final CustomPageHandler handler) {
         final LayoutInflater inflater = getLayoutInflater();
         final View page = inflater.inflate(R.layout.activity_onboarding_page_container, container, false);
         page.findViewById(R.id.onboarding_tap_previous).setOnClickListener(v -> onPreviousPage());
@@ -136,6 +136,9 @@ public class OnboardingActivity extends AppCompatActivity {
         });
         scrolled.addOnLayoutChangeListener((v, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom) -> scrollListener.onScrollChanged());
         scrollListener.onScrollChanged();
+        if (handler != null) {
+            handler.run(contents);
+        }
         return page;
     }
 
@@ -154,25 +157,25 @@ public class OnboardingActivity extends AppCompatActivity {
             final View view;
             switch (position) {
                 case 0:
-                    view = buildPage(R.layout.activity_onboarding_page_1, container);
+                    view = buildPage(R.layout.activity_onboarding_page_1, container, contents -> contents.findViewById(R.id.onboarding_skip_button).setOnClickListener(v -> onClose()));
                     break;
                 case 1:
-                    view = buildPage(R.layout.activity_onboarding_page_2, container);
+                    view = buildPage(R.layout.activity_onboarding_page_2, container, null);
                     break;
                 case 2:
-                    view = buildPage(R.layout.activity_onboarding_page_3, container);
+                    view = buildPage(R.layout.activity_onboarding_page_3, container, null);
                     break;
                 case 3:
-                    view = buildPage(R.layout.activity_onboarding_page_4, container);
+                    view = buildPage(R.layout.activity_onboarding_page_4, container, null);
                     break;
                 case 4:
-                    view = buildPage(R.layout.activity_onboarding_page_5, container);
+                    view = buildPage(R.layout.activity_onboarding_page_5, container, null);
                     break;
                 case 5:
-                    view = buildPage(R.layout.activity_onboarding_page_6, container);
+                    view = buildPage(R.layout.activity_onboarding_page_6, container, null);
                     break;
                 case 6:
-                    view = buildPage(R.layout.activity_onboarding_page_7, container);
+                    view = buildPage(R.layout.activity_onboarding_page_7, container, null);
                     break;
                 default:
                     throw new RuntimeException("Unknown onboarding page index " + position);
@@ -199,6 +202,10 @@ public class OnboardingActivity extends AppCompatActivity {
             return false;
         }
 
+    }
+
+    private interface CustomPageHandler {
+        void run(final View contents);
     }
 
     private static final float INDICATOR_ACTIVE_ALPHA = 1f;

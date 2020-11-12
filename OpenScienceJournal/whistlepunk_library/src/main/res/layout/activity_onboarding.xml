@@ -52,7 +52,7 @@
                 android:ellipsize="end"
                 android:gravity="center"
                 android:maxLines="1"
-                android:text="@string/onboarding_title"
+                android:text="@string/onboarding_navigation_title"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/onboarding_header_action_close"
                 app:layout_constraintStart_toStartOf="parent"

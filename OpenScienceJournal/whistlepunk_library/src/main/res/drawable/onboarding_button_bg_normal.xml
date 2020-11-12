@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <size
+        android:width="120dp"
+        android:height="40dp" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/arduino_jet" />
+    <corners android:radius="25dp" />
+</shape>
