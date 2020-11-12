@@ -37,4 +37,6 @@
     <string name="onboarding_07_text_01" translatable="false">It can be challenging to look at the display while doing an experiment. Tap “Enable audio” to transform sensor values into audible <b>sound</b>.</string>
 
     <string name="onboarding_finish_button" translatable="false">START EXPERIMENTING</string>
+
+    <string name="navigation_getting_started" translatable="false">Getting Started</string>
 </resources>

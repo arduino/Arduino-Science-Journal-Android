@@ -112,7 +112,7 @@ public class MainActivity extends ActivityWithNavigationView {
         setContentView(R.layout.activity_main);
         accountsProvider.installAccountSwitcher(this);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         boolean isTablet = getResources().getBoolean(R.bool.is_tablet);
@@ -128,9 +128,9 @@ public class MainActivity extends ActivityWithNavigationView {
             actionBar.setDisplayShowTitleEnabled(true);
         }
 
-        drawerLayout = (MultiTouchDrawerLayout) findViewById(R.id.drawer_layout);
+        drawerLayout = findViewById(R.id.drawer_layout);
         drawerLayout.setStatusBarBackgroundColor(getResources().getColor(R.color.color_primary_dark));
-        navigationView = (NavigationView) findViewById(R.id.navigation);
+        navigationView = findViewById(R.id.navigation);
         navigationView.setNavigationItemSelectedListener(this);
 
         // Only show dev testing options when requested.
@@ -390,7 +390,8 @@ public class MainActivity extends ActivityWithNavigationView {
         if (menuItem == null) {
             return false;
         }
-        if (menuItem.getItemId() == R.id.navigation_item_experiments) {
+        int itemId = menuItem.getItemId();
+        if (itemId == R.id.navigation_item_experiments) {
             if (currentAccount == null) {
                 return false;
             }
@@ -401,7 +402,6 @@ public class MainActivity extends ActivityWithNavigationView {
             }
             FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction transaction = fragmentManager.beginTransaction();
-            int itemId = menuItem.getItemId();
 
             final String tag = String.valueOf(itemId);
             Fragment fragment =
@@ -417,11 +417,12 @@ public class MainActivity extends ActivityWithNavigationView {
             drawerLayout.closeDrawers();
             restoreActionBar();
             selectedItemId = itemId;
+        } else if (itemId == R.id.navigation_item_onboarding) {
+            startActivity(new Intent(this, OnboardingActivity.class));
         } else {
             drawerLayout.closeDrawers();
             // Launch intents
             Intent intent = null;
-            int itemId = menuItem.getItemId();
 
             /*
             if (itemId == R.id.navigation_item_settings) {
