@@ -17,4 +17,13 @@
     <string name="onboarding_03_text_01" translatable="false">Add a new experiment to start exploring &amp; journaling</string>
     <string name="onboarding_03_text_02" translatable="false">An experiment lets you <b>organise</b> all your observations and recordings of a specific topic. Create a new experiment, give it a suitable name and start exploring the sensors.</string>
 
+    <string name="onboarding_04_title" translatable="false">Add Observations</string>
+    <string name="onboarding_04_text_01" translatable="false">Add a text note</string>
+    <string name="onboarding_04_text_02" translatable="false">Take a new photo</string>
+    <string name="onboarding_04_text_03" translatable="false">Make a sensor recording</string>
+    <string name="onboarding_04_text_04" translatable="false">Add a picture from your gallery</string>
+    <string name="onboarding_04_text_05" translatable="false">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+
+    <string name="onboarding_05_title" translatable="false">Select a Sensor</string>
+
 </resources>

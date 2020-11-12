@@ -219,7 +219,7 @@
 
     <style name="OnboardingText.Caption">
         <item name="android:fontFamily">@font/open_sans_bold</item>
-        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:lineSpacingExtra">0dp</item>
     </style>
 
     <style name="OnboardingText.QuickTip.Header">
