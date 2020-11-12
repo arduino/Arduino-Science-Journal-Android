@@ -25,5 +25,13 @@
     <string name="onboarding_04_text_05" translatable="false">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
 
     <string name="onboarding_05_title" translatable="false">Select a Sensor</string>
+    <string name="onboarding_05_text_01" translatable="false">Pick a built-in phone sensor or connect and Arudino board to see live sensor data</string>
+    <string name="onboarding_05_quick_tip" translatable="false">You can add multiple sensors to your experiment to observe them simultaneously.</string>
 
+    <string name="onboarding_06_title" translatable="false">Create a Recording</string>
+    <string name="onboarding_06_text_01" translatable="false">To capture sensor data and save it to your experiment you can either start a <b>recording</b> or you can use the <b>snapshot</b> function.</string>
+    <string name="onboarding_06_text_02" translatable="false">Start a <b>recording</b> to capture the change of sensor values over time.</string>
+    <string name="onboarding_06_text_03" translatable="false">Create a point-in-time <b>snapshot</b> to capture the current sensor values.</string>
+
+    <string name="onboarding_07_title" translatable="false">Transform to sound</string>
 </resources>
