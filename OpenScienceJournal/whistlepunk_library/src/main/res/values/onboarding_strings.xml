@@ -8,4 +8,9 @@
     <string name="onboarding_01_quick_tip" translatable="false">You can always get back to this intro later in the sidebar menu.</string>
     <string name="onboarding_navigation_hint" translatable="false">Tap here or swipe left to proceed</string>
     <string name="onboarding_skip_button" translatable="false">SKIP INTRO</string>
+
+    <string name="onboarding_02_title" translatable="false">What is Science Journal?</string>
+    <string name="onboarding_02_text_01" translatable="false">Science Journal helps you to conduct science experiments by allowing you to observe real time sensor data, <b>record sensor values</b> as well as <b>add notes</b> and <b>observations</b> to your experiments.</string>
+    <string name="onboarding_02_quick_tip" translatable="false">Did you know that smartphones come with various built-in sensors? Connect an Arduino board to add even more advanced sensors.</string>
+
 </resources>
