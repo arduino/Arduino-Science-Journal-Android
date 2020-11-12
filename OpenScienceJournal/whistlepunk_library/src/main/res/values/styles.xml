@@ -241,4 +241,13 @@
         <item name="android:textSize">14sp</item>
         <item name="android:gravity">center</item>
     </style>
+
+    <style name="OnboardingButton.Finish">
+        <item name="android:background">@drawable/onboarding_button_finish_bg</item>
+        <item name="android:fontFamily">@font/open_sans_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/arduino_white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
 </resources>

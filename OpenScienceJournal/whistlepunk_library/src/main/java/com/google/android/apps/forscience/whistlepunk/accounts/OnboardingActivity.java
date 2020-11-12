@@ -175,7 +175,7 @@ public class OnboardingActivity extends AppCompatActivity {
                     view = buildPage(R.layout.activity_onboarding_page_6, container, null);
                     break;
                 case 6:
-                    view = buildPage(R.layout.activity_onboarding_page_7, container, null);
+                    view = buildPage(R.layout.activity_onboarding_page_7, container, contents -> contents.findViewById(R.id.onboarding_finish_button).setOnClickListener(v -> onClose()));
                     break;
                 default:
                     throw new RuntimeException("Unknown onboarding page index " + position);

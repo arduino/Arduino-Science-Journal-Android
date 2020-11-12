@@ -3,15 +3,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context="com.google.android.apps.forscience.whistlepunk.accounts.OnboardingActivity">
 
-    <TextView
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/onboarding_guideline_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Science Journal"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/onboarding_guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/onboarding_title"
+        style="@style/OnboardingText.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/onboarding_07_title"
+        app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end"
+        app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/onboarding_figure_1_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end"
+        app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_title">
+
+        <ImageView
+            android:id="@+id/onboarding_figure_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:contentDescription="@null"
+            android:src="@drawable/onboarding_page_7_figure_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/onboarding_text_1"
+            style="@style/OnboardingText.Caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:gravity="start|center_vertical"
+            android:minHeight="100dp"
+            android:text="@string/onboarding_07_text_01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/onboarding_finish_button"
+        style="@style/OnboardingButton.Finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="@string/onboarding_finish_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end"
+        app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_figure_1_container"
+        app:layout_constraintVertical_bias="1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

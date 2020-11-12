@@ -59,7 +59,7 @@
             style="@style/OnboardingText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="70dp"
+            android:layout_marginStart="74dp"
             android:gravity="start|center_vertical"
             android:lineSpacingExtra="0dp"
             android:minHeight="52dp"
