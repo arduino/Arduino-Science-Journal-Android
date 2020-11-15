@@ -58,7 +58,7 @@
             style="@style/OnboardingText.Caption"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="56dp"
+            android:layout_marginStart="60dp"
             android:gravity="start|center_vertical"
             android:minHeight="44dp"
             android:text="@string/onboarding_03_text_01"

@@ -100,44 +100,49 @@
             app:layout_constraintTop_toBottomOf="@id/onboarding_quick_tip_box_header" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/onboarding_skip_button"
-        style="@style/OnboardingButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="@string/onboarding_skip_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end"
-        app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/onboarding_navigation_hint_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="14dp"
-        app:layout_constraintBottom_toTopOf="@id/onboarding_skip_button"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/onboarding_quick_tip_box"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintVertical_bias="1">
 
         <ImageView
-            android:id="@+id/onboarding_swipe_arrow"
+            android:id="@+id/onboarding_navigation_hint_arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@null"
             android:src="@drawable/onboarding_swipe_arrow"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             style="@style/OnboardingText.QuickTip"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
+            android:layout_marginStart="7dp"
             android:text="@string/onboarding_navigation_hint"
-            app:layout_constraintBottom_toTopOf="@id/onboarding_swipe_arrow"
-            app:layout_constraintEnd_toEndOf="@id/onboarding_swipe_arrow" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/onboarding_navigation_hint_arrow"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/onboarding_skip_button"
+        style="@style/OnboardingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/onboarding_skip_button"
+        app:layout_constraintBottom_toTopOf="@id/onboarding_navigation_hint_container"
+        app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end"
+        app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/onboarding_quick_tip_box"
+        app:layout_constraintVertical_bias="1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

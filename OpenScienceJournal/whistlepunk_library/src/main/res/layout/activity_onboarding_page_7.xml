@@ -56,10 +56,11 @@
 
         <TextView
             android:id="@+id/onboarding_text_1"
-            style="@style/OnboardingText.Caption"
+            style="@style/OnboardingText"
+            android:lineSpacingExtra="0dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
+            android:layout_marginStart="43dp"
             android:gravity="start|center_vertical"
             android:minHeight="100dp"
             android:text="@string/onboarding_07_text_01"

@@ -44,22 +44,30 @@
         app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start"
         app:layout_constraintTop_toBottomOf="@id/onboarding_title">
 
-        <ImageView
-            android:id="@+id/onboarding_figure_1"
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="290dp"
             android:layout_height="wrap_content"
-            android:contentDescription="@null"
-            android:src="@drawable/onboarding_page_5_figure_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/onboarding_figure_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:scaleType="fitStart"
+                android:src="@drawable/onboarding_page_5_figure_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/onboarding_text_1"
             style="@style/OnboardingText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="74dp"
+            android:layout_marginStart="80dp"
             android:gravity="start|center_vertical"
             android:lineSpacingExtra="0dp"
             android:minHeight="52dp"
@@ -73,9 +81,9 @@
         android:id="@+id/onboarding_quick_tip_box"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="14dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="28dp"
         android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/onboarding_figure_1_container"
