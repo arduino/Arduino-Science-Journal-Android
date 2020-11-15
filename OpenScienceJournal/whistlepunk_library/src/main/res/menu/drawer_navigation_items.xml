@@ -26,6 +26,10 @@
             android:icon="@drawable/ic_navlibrary_black_24dp"
             android:title="@string/navigation_item_experiments" />
         <item
+            android:id="@+id/navigation_item_activities"
+            android:icon="@drawable/ic_activities"
+            android:title="@string/navigation_activities" />
+        <item
             android:id="@+id/navigation_item_onboarding"
             android:icon="@drawable/ic_get_started"
             android:title="@string/navigation_getting_started" />

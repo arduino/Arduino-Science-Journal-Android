@@ -13,18 +13,16 @@
   See the License for the specific language governing permissions and
   limitations under the License.
  -->
-<com.google.android.apps.forscience.whistlepunk.MultiTouchDrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<com.google.android.apps.forscience.whistlepunk.MultiTouchDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -33,20 +31,18 @@
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="?attr/actionBarSize"
+                android:accessibilityLiveRegion="polite"
                 android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:popupTheme="@style/NoBarTheme"
-                app:subtitleTextAppearance="@style/NoBarTheme.ActionBar.SubtitleTextStyle"
-                android:accessibilityLiveRegion="polite"
-                >
+                app:subtitleTextAppearance="@style/NoBarTheme.ActionBar.SubtitleTextStyle">
 
             </androidx.appcompat.widget.Toolbar>
 
@@ -57,17 +53,16 @@
             android:id="@+id/content_container"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        </FrameLayout>
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"></FrameLayout>
 
         <ProgressBar
             android:id="@+id/import_indeterminate_bar"
             style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:indeterminate="true"
-            android:visibility="gone"
-            android:layout_gravity="center" />
+            android:visibility="gone" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -76,11 +71,8 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/drawer_navigation_items"
-        app:headerLayout="@layout/drawer_header"
-        android:theme="@style/NavigationView"
         android:fitsSystemWindows="true"
-        />
-
-
+        android:theme="@style/NavigationView"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_navigation_items" />
 </com.google.android.apps.forscience.whistlepunk.MultiTouchDrawerLayout>

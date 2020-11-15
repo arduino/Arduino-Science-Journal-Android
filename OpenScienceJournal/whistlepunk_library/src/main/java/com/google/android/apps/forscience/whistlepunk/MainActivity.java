@@ -21,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.media.AudioManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -419,6 +420,11 @@ public class MainActivity extends ActivityWithNavigationView {
             selectedItemId = itemId;
         } else if (itemId == R.id.navigation_item_onboarding) {
             startActivity(new Intent(this, OnboardingActivity.class));
+        } else if (itemId == R.id.navigation_item_activities) {
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://science-journal.arduino.cc/")));
+            } catch (ActivityNotFoundException ignored) {
+            }
         } else {
             drawerLayout.closeDrawers();
             // Launch intents

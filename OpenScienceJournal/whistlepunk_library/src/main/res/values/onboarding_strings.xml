@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="onboarding_navigation_title" translatable="false">Getting Started</string>
-    <string name="onboarding_navigation_title_extended" translatable="false">Getting Started with Science Journal</string>
+    <string name="onboarding_navigation_title_tablet" translatable="false">Getting Started with Science Journal</string>
     <string name="onboarding_quick_tip_header" translatable="false">Quick tip:</string>
     <string name="onboarding_01_title" translatable="false">Welcome to Science Journal!</string>
     <string name="onboarding_01_text_01" translatable="false">This introduction will walk you through the most important functions of Science Journal and show you how to turn your smart device into a pocket science lab. Swipe left to begin.</string>
     <string name="onboarding_01_quick_tip" translatable="false">You can always get back to this intro later in the sidebar menu.</string>
-    <string name="onboarding_navigation_hint" translatable="false">Tap here or swipe left to proceed</string>
+    <string name="onboarding_navigation_hint" translatable="false">Swipe left to proceed</string>
     <string name="onboarding_skip_button" translatable="false">SKIP INTRO</string>
 
     <string name="onboarding_02_title" translatable="false">What is Science Journal?</string>
@@ -39,4 +39,5 @@
     <string name="onboarding_finish_button" translatable="false">START EXPERIMENTING</string>
 
     <string name="navigation_getting_started" translatable="false">Getting Started</string>
+    <string name="navigation_activities" translatable="false">Activities</string>
 </resources>
