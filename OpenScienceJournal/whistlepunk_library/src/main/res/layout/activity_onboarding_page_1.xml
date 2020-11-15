@@ -138,6 +138,7 @@
         style="@style/OnboardingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:layout_marginBottom="15dp"
         android:text="@string/onboarding_skip_button"
         app:layout_constraintBottom_toTopOf="@id/onboarding_navigation_hint_container"
