@@ -210,6 +210,10 @@
         <item name="android:lineSpacingExtra">14sp</item>
     </style>
 
+    <style name="OnboardingText.Title.Tablet">
+        <item name="android:textSize">36sp</item>
+    </style>
+
     <style name="OnboardingText.QuickTip">
         <item name="android:fontFamily">@font/roboto_mono</item>
         <item name="android:lineSpacingExtra">7sp</item>

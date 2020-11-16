@@ -45,14 +45,20 @@ public class OnboardingActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
 
+    private boolean mTablet;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        boolean isTablet = getResources().getBoolean(R.bool.is_tablet);
-        if (!isTablet) {
+        mTablet = getResources().getBoolean(R.bool.is_tablet);
+        if (!mTablet) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
-        setContentView(R.layout.activity_onboarding);
+        if (mTablet) {
+            setContentView(R.layout.activity_onboarding_tablet);
+        } else {
+            setContentView(R.layout.activity_onboarding);
+        }
         findViewById(R.id.onboarding_header_action_close).setOnClickListener(v -> onClose());
         buildIndicators();
         updateIndicators(0);
@@ -95,8 +101,13 @@ public class OnboardingActivity extends AppCompatActivity {
         for (int i = 0; i < size; i++) {
             final View view = inflater.inflate(R.layout.activity_onboarding_page_indicator, mIndicators, false);
             view.setAlpha(INDICATOR_INACTIVE_ALPHA);
-            final LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, view.getLayoutParams().height);
-            params.weight = weight;
+            final LinearLayout.LayoutParams params;
+            if (mTablet) {
+                params = new LinearLayout.LayoutParams(view.getLayoutParams().width, view.getLayoutParams().height);
+            } else {
+                params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, view.getLayoutParams().height);
+                params.weight = weight;
+            }
             params.leftMargin = margin;
             params.rightMargin = margin;
             mIndicators.addView(view, params);
@@ -153,7 +164,7 @@ public class OnboardingActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 7;
+            return mTablet ? 4 : 7;
         }
 
         @NonNull
@@ -162,16 +173,32 @@ public class OnboardingActivity extends AppCompatActivity {
             final View view;
             switch (position) {
                 case 0:
-                    view = buildPage(R.layout.activity_onboarding_page_1, container, contents -> contents.findViewById(R.id.onboarding_skip_button).setOnClickListener(v -> onClose()));
+                    if (mTablet) {
+                        view = buildPage(R.layout.activity_onboarding_tablet_page_1, container, contents -> contents.findViewById(R.id.onboarding_skip_button).setOnClickListener(v -> onClose()));
+                    } else {
+                        view = buildPage(R.layout.activity_onboarding_page_1, container, contents -> contents.findViewById(R.id.onboarding_skip_button).setOnClickListener(v -> onClose()));
+                    }
                     break;
                 case 1:
-                    view = buildPage(R.layout.activity_onboarding_page_2, container, null);
+                    if (mTablet) {
+                        view = buildPage(R.layout.activity_onboarding_tablet_page_2, container, null);
+                    } else {
+                        view = buildPage(R.layout.activity_onboarding_page_2, container, null);
+                    }
                     break;
                 case 2:
-                    view = buildPage(R.layout.activity_onboarding_page_3, container, null);
+                    if (mTablet) {
+                        view = buildPage(R.layout.activity_onboarding_tablet_page_3, container, null);
+                    } else {
+                        view = buildPage(R.layout.activity_onboarding_page_3, container, null);
+                    }
                     break;
                 case 3:
-                    view = buildPage(R.layout.activity_onboarding_page_4, container, null);
+                    if (mTablet) {
+                        view = buildPage(R.layout.activity_onboarding_tablet_page_4, container, contents -> contents.findViewById(R.id.onboarding_finish_button).setOnClickListener(v -> onClose()));
+                    } else {
+                        view = buildPage(R.layout.activity_onboarding_page_4, container, null);
+                    }
                     break;
                 case 4:
                     view = buildPage(R.layout.activity_onboarding_page_5, container, null);
