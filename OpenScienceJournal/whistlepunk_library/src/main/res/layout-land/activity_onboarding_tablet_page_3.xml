@@ -1,0 +1,254 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.android.apps.forscience.whistlepunk.accounts.OnboardingActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/onboarding_guideline_center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/onboarding_section_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/arduino_base_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/onboarding_guideline_start_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/onboarding_guideline_end_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.92" />
+
+        <TextView
+            android:id="@+id/onboarding_title_1"
+            style="@style/OnboardingText.Title.Tablet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="start"
+            android:text="@string/onboarding_04_title"
+            app:layout_constraintEnd_toStartOf="@id/onboarding_guideline_end_1"
+            app:layout_constraintStart_toEndOf="@id/onboarding_guideline_start_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/onboarding_figure_1_container"
+            android:layout_width="320dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end_1"
+            app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start_1"
+            app:layout_constraintTop_toBottomOf="@id/onboarding_title_1">
+
+            <ImageView
+                android:id="@+id/onboarding_figure_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:contentDescription="@null"
+                android:src="@drawable/onboarding_page_4_figure_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/onboarding_text_2"
+                style="@style/OnboardingText.Caption"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:ellipsize="end"
+                android:gravity="start|top"
+                android:text="@string/onboarding_04_text_01"
+                android:translationX="62dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/onboarding_text_3"
+                style="@style/OnboardingText.Caption"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:ellipsize="end"
+                android:gravity="start|center_vertical"
+                android:text="@string/onboarding_04_text_02"
+                android:translationX="220dp"
+                android:translationY="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/onboarding_text_4"
+                style="@style/OnboardingText.Caption"
+                android:layout_width="95dp"
+                android:layout_height="80dp"
+                android:gravity="end|center_vertical"
+                android:text="@string/onboarding_04_text_03"
+                android:translationY="180dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/onboarding_text_5"
+                style="@style/OnboardingText.Caption"
+                android:layout_width="135dp"
+                android:layout_height="70dp"
+                android:gravity="end|center_vertical"
+                android:text="@string/onboarding_04_text_04"
+                android:translationX="118dp"
+                android:translationY="232.5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/onboarding_text_1"
+            style="@style/OnboardingText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="56dp"
+            android:text="@string/onboarding_04_text_05"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/onboarding_guideline_end_1"
+            app:layout_constraintStart_toEndOf="@id/onboarding_guideline_start_1"
+            app:layout_constraintTop_toBottomOf="@id/onboarding_figure_1_container"
+            app:layout_constraintVertical_bias="0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/onboarding_section_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/arduino_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/onboarding_guideline_center_horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/onboarding_guideline_start_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/onboarding_guideline_end_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.92" />
+
+        <TextView
+            android:id="@+id/onboarding_title_2"
+            style="@style/OnboardingText.Title.Tablet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:gravity="start"
+            android:text="@string/onboarding_05_title"
+            app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end_2"
+            app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start_2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/onboarding_figure_2_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end_2"
+            app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start_2"
+            app:layout_constraintTop_toBottomOf="@id/onboarding_title_2">
+
+            <ImageView
+                android:id="@+id/onboarding_figure_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:src="@drawable/onboarding_page_5_figure_1_tablet_landscape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/onboarding_text_6"
+                style="@style/OnboardingText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:gravity="start|center_vertical"
+                android:lineSpacingExtra="0dp"
+                android:minHeight="60dp"
+                android:text="@string/onboarding_05_text_01"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/onboarding_figure_2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/onboarding_quick_tip_box"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/onboarding_guideline_end_2"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/onboarding_guideline_start_2"
+            app:layout_constraintTop_toBottomOf="@id/onboarding_figure_2_container"
+            app:layout_constraintVertical_bias="0">
+
+            <View
+                android:id="@+id/onboarding_quick_tip_box_border"
+                android:layout_width="6dp"
+                android:layout_height="0dp"
+                android:background="@color/arduino_teal_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/onboarding_quick_tip_box_header"
+                style="@style/OnboardingText.QuickTip.Header"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/onboarding_quick_tip_header"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/onboarding_quick_tip_box_border"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                style="@style/OnboardingText.QuickTip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6sp"
+                android:text="@string/onboarding_05_quick_tip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/onboarding_quick_tip_box_border"
+                app:layout_constraintTop_toBottomOf="@id/onboarding_quick_tip_box_header" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
