@@ -24,12 +24,10 @@
 
         <ImageView
             android:id="@+id/onboarding_figure_1"
-            android:layout_width="390dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:adjustViewBounds="true"
             android:contentDescription="@null"
-            android:src="@drawable/onboarding_page_1_figure_1"
+            android:src="@drawable/onboarding_page_1_figure_1_tablet"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

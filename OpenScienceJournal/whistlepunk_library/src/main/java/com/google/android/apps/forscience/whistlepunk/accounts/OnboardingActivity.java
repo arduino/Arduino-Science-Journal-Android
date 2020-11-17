@@ -50,7 +50,7 @@ public class OnboardingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mTablet = getResources().getBoolean(R.bool.is_tablet);
+        mTablet = getResources().getBoolean(R.bool.is_tablet_onboarding);
         if (!mTablet) {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
