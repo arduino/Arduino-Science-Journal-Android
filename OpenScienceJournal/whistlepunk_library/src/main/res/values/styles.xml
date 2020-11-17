@@ -86,13 +86,6 @@
         <item name="colorSecondary">@color/text_color_white</item>
     </style>
 
-    <style name="AppTheme.GetStarted">
-        <item name="android:windowFullscreen">true</item>
-        <item name="colorButtonNormal">@android:color/white</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
     <style name="AppTheme.Onboarding">
         <item name="android:windowFullscreen">true</item>
         <item name="colorButtonNormal">@android:color/white</item>
@@ -251,7 +244,7 @@
         <item name="android:fontFamily">@font/open_sans_bold</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textColor">@color/arduino_white</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:gravity">center</item>
     </style>
 </resources>

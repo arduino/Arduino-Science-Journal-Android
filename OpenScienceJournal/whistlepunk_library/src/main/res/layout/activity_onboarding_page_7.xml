@@ -51,6 +51,7 @@
             android:layout_marginTop="36dp"
             android:contentDescription="@null"
             android:src="@drawable/onboarding_page_7_figure_1"
+            android:translationY="-30dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,7 +60,7 @@
             style="@style/OnboardingText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="43dp"
+            android:layout_marginStart="48dp"
             android:gravity="start|center_vertical"
             android:lineSpacingExtra="0dp"
             android:minHeight="100dp"

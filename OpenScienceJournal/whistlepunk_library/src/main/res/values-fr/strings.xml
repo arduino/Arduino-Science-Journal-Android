@@ -725,4 +725,36 @@ Si vous avez des données sur cet appareil, vous pouvez les enregistrer sur Goog
     <string name="first_experiment_note_10">Trouvez des activités à essayer sur science-journal.arduino.cc
 
  Maintenant que vous connaissez les bases de l\'utilisation d\'Arduino Science Journal, vous pouvez l\'utiliser pour mener des expériences et explorer votre monde!</string>
+    <string name="onboarding_navigation_title">GETTING STARTED</string>
+    <string name="onboarding_01_title">Welcome to Science Journal!</string>
+    <string name="onboarding_01_text_01">This introduction will walk you through the most important functions of Science Journal and show you how to turn your smart device into a pocket science lab. Swipe left to begin.</string>
+    <string name="onboarding_01_quick_tip">You can always get back to this intro later in the sidebar menu.</string>
+    <string name="onboarding_quick_tip_header">Quick Tip:</string>
+    <string name="onboarding_skip_button">SKIP INTRO</string>
+    <string name="onboarding_navigation_hint">Swipe left to proceed</string>
+    <string name="onboarding_02_title">What is Science Journal?</string>
+    <string name="onboarding_02_text_01">Science Journal helps you to conduct science experiments by allowing you to observe real time sensor data, <b>record sensor values</b> as well as <b>add notes</b> and <b>observations</b> to your experiments.</string>
+    <string name="onboarding_02_quick_tip">Did you know that smartphones come with various built-in sensors? Connect an Arduino board to add even more advanced sensors. </string>
+    <string name="onboarding_03_title">Create Experiments</string>
+    <string name="onboarding_03_text_01">Add a new experiment to start exploring &amp; journaling</string>
+    <string name="onboarding_03_text_02">An experiment lets you <b>organise</b> all your observations and recordings of a specific topic. Create a new experiment, give it a suitable name and start exploring the sensors.</string>
+    <string name="onboarding_04_title">Add Observations</string>
+    <string name="onboarding_04_text_01">Add a text note</string>
+    <string name="onboarding_04_text_02">Take a new photo</string>
+    <string name="onboarding_04_text_03">Make a sensor recording</string>
+    <string name="onboarding_04_text_04">Add a picture from your gallery</string>
+    <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+    <string name="onboarding_05_title">Select a Sensor</string>
+    <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect and Arduino board to see live sensor data</string>
+    <string name="onboarding_05_quick_tip"> You can add multiple sensors to your experiment to observe them simultaneously.</string>
+    <string name="onboarding_06_title">Create a Recording</string>
+    <string name="onboarding_06_text_01">To capture sensor data and save it to your experiment you can either start a <b>recording</b> or you can use the <b>snapshot</b> function.</string>
+    <string name="onboarding_06_text_02">Start a <b>recording</b> to capture the change of sensor values over time.</string>
+    <string name="onboarding_06_text_03">Create a point-in-time <b>snapshot</b> to capture the current sensor values.</string>
+    <string name="onboarding_07_title">Transform to sound</string>
+    <string name="onboarding_07_text_01">It can be challenging to look at the display while doing an experiment. Tap “Enable audio” to transform sensor values into audible <b>sound</b>.</string>
+    <string name="onboarding_finish_button">START EXPERIMENTING</string>
+    <string name="navigation_getting_started">Getting Started</string>
+    <string name="onboarding_navigation_title_tablet">GETTING STARTED WITH SCIENCE JOURNAL</string>
+    <string name="navigation_activities">Activities</string>
 </resources>
