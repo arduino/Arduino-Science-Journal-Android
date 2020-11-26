@@ -234,6 +234,8 @@
         <item name="android:background">@drawable/onboarding_button_bg</item>
         <item name="android:fontFamily">@font/open_sans_bold</item>
         <item name="android:textAllCaps">true</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
         <item name="android:textColor">@color/arduino_jet</item>
         <item name="android:textSize">14sp</item>
         <item name="android:gravity">center</item>

@@ -186,11 +186,11 @@
     <string name="external_sensor_appearance_name"><xliff:g id="sensor_name">%1$s</xliff:g> - <xliff:g id="device_name">%2$s</xliff:g></string>
     <string name="sensor_rotation_rpm">Rotación</string>
     <string name="sensor_raw">Sin procesar</string>
-  <string name="sensor_custom">Personalizado</string>
-  <string name="device_options_custom_sensor_pin_label_text">Marcador</string>
-  <string name="device_options_custom_sensor_frequency_checkbox_text">Frecuencia</string>
+    <string name="sensor_custom">Personalizado</string>
+    <string name="device_options_custom_sensor_pin_label_text">Marcador</string>
+    <string name="device_options_custom_sensor_frequency_checkbox_text">Frecuencia</string>
     <string name="feedback_error_message">Could not send feedback.</string>
-  <string name="sensor_desc_short_acc_x">La aceleración del teléfono hacia la izquierda y hacia la derecha, en m/s²</string>
+    <string name="sensor_desc_short_acc_x">La aceleración del teléfono hacia la izquierda y hacia la derecha, en m/s²</string>
     <string name="sensor_desc_short_acc_y">La aceleración del teléfono hacia adelante y hacia atrás, en m/s²</string>
     <string name="sensor_desc_short_acc_z">La aceleración del teléfono hacia arriba y hacia abajo, en m/s²</string>
     <string name="sensor_desc_short_decibel">La intensidad del sonido, medida en decibeles (dB), que llega al sensor de sonido o micrófono</string>
@@ -225,9 +225,9 @@ Algunos magnetómetros detectan los campos magnéticos mediante el efecto Hall (
 Cuando una fuerza no equilibrada hace que el objeto se desplace, decimos que este se acelera; es decir, su velocidad cambia, y el movimiento pasa a ser más rápido, más lento o cambia de dirección. La aceleración se mide como un cambio de velocidad (metros por segundo) en relación con el tiempo. Por eso, se mide en metros por segundo al cuadrado (m/s²).
 
 Tu teléfono tiene un dispositivo para medir estos cambios de movimiento: un acelerómetro. En el interior del acelerómetro, hay pequeñas masas suspendidas que pueden moverse libremente. Los cambios de movimiento hacen que estas masas se desplacen, al igual que nuestra cabeza tiende a irse hacia adelante cuando un automóvil se detiene de repente. A través de la medición de estos desplazamientos inerciales sutiles, el acelerómetro de un teléfono puede detectar cambios en el movimiento y la orientación, lo que resulta útil para alternar entre el modo horizontal y vertical de la pantalla, controlar juegos en el teléfono y mucho más.</string>
-  <string name="sensor_desc_second_paragraph_acc">Probablemente notaste una aceleración constante del eje Z, incluso cuando el teléfono está quieto sobre una mesa. Esta es la aceleración que experimentamos en la superficie de la Tierra debido a la fuerza de gravedad, aproximadamente 9.8 m/s².</string>
-  <string name="sensor_desc_first_paragraph_decibel">Los sonidos se generan mediante vibraciones. Por ejemplo, tu voz viene de vibraciones en las cuerdas vocales. Estas vibraciones crean zonas alternas de presión de aire alta y baja que viajan hacia afuera, al igual que las ondas circulares que se expanden cuando se arroja una piedra a un estanque.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Todos los sonidos se pueden describir en función de su intensidad y frecuencia. 
+    <string name="sensor_desc_second_paragraph_acc">Probablemente notaste una aceleración constante del eje Z, incluso cuando el teléfono está quieto sobre una mesa. Esta es la aceleración que experimentamos en la superficie de la Tierra debido a la fuerza de gravedad, aproximadamente 9.8 m/s².</string>
+    <string name="sensor_desc_first_paragraph_decibel">Los sonidos se generan mediante vibraciones. Por ejemplo, tu voz viene de vibraciones en las cuerdas vocales. Estas vibraciones crean zonas alternas de presión de aire alta y baja que viajan hacia afuera, al igual que las ondas circulares que se expanden cuando se arroja una piedra a un estanque.</string>
+    <string name="sensor_desc_second_paragraph_decibel">Todos los sonidos se pueden describir en función de su intensidad y frecuencia.
 
 La intensidad es lo que puedes medir con Science Journal en unidades llamadas decibeles (dB). La intensidad, también llamada volumen, depende de la distancia que recorre un objeto oscilante cada vez que vibra. Cuando la intensidad aumenta, oímos un volumen más alto.
 
@@ -268,16 +268,16 @@ El punto rojo indica qué tan cerca está el tono que se detectó de la nota mus
   <string name="pitch_sharper_than_natural_note_content_description">%1$s semitonos más arriba que %2$s, octava %3$s</string>
   <string name="pitch_sharper_than_flat_note_content_description">%1$s semitonos más arriba que %2$s bemol, octava %3$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%1$s semitonos más arriba que %2$s sostenido, octava %3$s</string>
-  <string name="pitch_high_content_description">tono agudo</string>
-  <string name="sensor_desc_first_paragraph_rotation">Las revoluciones por minuto (RPM) son una medida de la frecuencia de rotación sobre un eje fijo en un minuto.
+    <string name="pitch_high_content_description">tono agudo</string>
+    <string name="sensor_desc_first_paragraph_rotation">Las revoluciones por minuto (RPM) son una medida de la frecuencia de rotación sobre un eje fijo en un minuto.
 
 A medida que tu molinillo gira, se mueve el disco codificador:</string>
-  <string name="sensor_desc_second_paragraph_rotation">Esto crea períodos de luz y oscuridad en el sensor que se registran en Science Journal como una rotación.</string>
-  <string name="sensor_desc_first_paragraph_raw">Los datos que se muestran aquí provienen de la comunicación de un sensor externo con el teléfono mediante Bluetooth.
+    <string name="sensor_desc_second_paragraph_rotation">Esto crea períodos de luz y oscuridad en el sensor que se registran en Science Journal como una rotación.</string>
+    <string name="sensor_desc_first_paragraph_raw">Los datos que se muestran aquí provienen de la comunicación de un sensor externo con el teléfono mediante Bluetooth.
 
 El valor muestra el porcentaje de la lectura sin procesar que proviene directamente de tu microcontrolador. Por lo general, este es el porcentaje de una caída de voltaje en un sensor.</string>
-  <string name="sensor_desc_second_paragraph_raw">Bluetooth es un estándar de tecnología inalámbrica que usa ondas de radio para intercambiar datos en distancias cortas desde dispositivos móviles o fijos.</string>
-  <string name="sensor_desc_first_paragraph_unknown_bluetooth">Los datos que se muestran aquí vienen de la comunicación de un sensor externo con el teléfono a través de Bluetooth.</string>
+    <string name="sensor_desc_second_paragraph_raw">Bluetooth es un estándar de tecnología inalámbrica que usa ondas de radio para intercambiar datos en distancias cortas desde dispositivos móviles o fijos.</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">Los datos que se muestran aquí vienen de la comunicación de un sensor externo con el teléfono a través de Bluetooth.</string>
     <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth es un estándar de tecnología inalámbrica que usa ondas de radio para intercambiar datos en distancias cortas desde dispositivos móviles o fijos.</string>
     <string name="sensor_desc_first_paragraph_barometer">Aunque casi nunca lo notamos, todos vivimos en el fondo de un océano de aire: la atmósfera de la Tierra, que se extiende hasta 40 km sobre la superficie. El peso de todo ese aire se denomina presión atmosférica.
 
@@ -355,7 +355,7 @@ Science Journal is the free digital science notebook brought to you by Google.
 
 
 
-Whether you\'re a science educator or a hobbyist doing science at home, you can keep your notes, photos, and observations all in one convenient place. Use the sensors in your phone to measure and graph phenomena such as light, sound, and motion, or connect to external sensors via bluetooth to conduct experiments on the world around you.
+Whether you\'re a science educator or a hobbyist doing science at home, you can keep your notes, photos, and observations all in one convenient place. Use the sensors in your phone to measure and graph phenomena such as light, sound, and motion, or connect to external sensors via Bluetooth to conduct experiments on the world around you.
 
 
 
@@ -391,7 +391,7 @@ Open-source code available: https://github.com/google/science-journal
 
 Permissions notice:
 
-\u2022 Location: needed to scan for bluetooth sensor devices.
+\u2022 Location: needed to scan for Bluetooth sensor devices.
 
 \u2022 Camera: needed to take pictures to document experiments.
 
@@ -762,13 +762,13 @@ Now that you know the basics of using Arduino Science Journal, you can use it to
     <string name="onboarding_04_text_04">Add a picture from your gallery</string>
     <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
     <string name="onboarding_05_title">Select a Sensor</string>
-    <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect and Arduino board to see live sensor data</string>
+    <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
     <string name="onboarding_05_quick_tip"> You can add multiple sensors to your experiment to observe them simultaneously.</string>
     <string name="onboarding_06_title">Create a Recording</string>
     <string name="onboarding_06_text_01">To capture sensor data and save it to your experiment you can either start a <b>recording</b> or you can use the <b>snapshot</b> function.</string>
     <string name="onboarding_06_text_02">Start a <b>recording</b> to capture the change of sensor values over time.</string>
     <string name="onboarding_06_text_03">Create a point-in-time <b>snapshot</b> to capture the current sensor values.</string>
-    <string name="onboarding_07_title">Transform to sound</string>
+    <string name="onboarding_07_title">Transform to Sound</string>
     <string name="onboarding_07_text_01">It can be challenging to look at the display while doing an experiment. Tap “Enable audio” to transform sensor values into audible <b>sound</b>.</string>
     <string name="onboarding_finish_button">START EXPERIMENTING</string>
     <string name="navigation_getting_started">Getting Started</string>

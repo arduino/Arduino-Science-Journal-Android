@@ -355,7 +355,7 @@ Science Journal is the free digital science notebook brought to you by Google.
 
 
 
-Whether you\'re a science educator or a hobbyist doing science at home, you can keep your notes, photos, and observations all in one convenient place. Use the sensors in your phone to measure and graph phenomena such as light, sound, and motion, or connect to external sensors via bluetooth to conduct experiments on the world around you.
+Whether you\'re a science educator or a hobbyist doing science at home, you can keep your notes, photos, and observations all in one convenient place. Use the sensors in your phone to measure and graph phenomena such as light, sound, and motion, or connect to external sensors via Bluetooth to conduct experiments on the world around you.
 
 
 
@@ -391,7 +391,7 @@ Open-source code available: https://github.com/google/science-journal
 
 Permissions notice:
 
-\u2022 Location: needed to scan for bluetooth sensor devices.
+\u2022 Location: needed to scan for Bluetooth sensor devices.
 
 \u2022 Camera: needed to take pictures to document experiments.
 
@@ -762,13 +762,13 @@ Now that you know the basics of using Arduino Science Journal, you can use it to
     <string name="onboarding_04_text_04">Add a picture from your gallery</string>
     <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
     <string name="onboarding_05_title">Select a Sensor</string>
-    <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect and Arduino board to see live sensor data</string>
+    <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
     <string name="onboarding_05_quick_tip"> You can add multiple sensors to your experiment to observe them simultaneously.</string>
     <string name="onboarding_06_title">Create a Recording</string>
     <string name="onboarding_06_text_01">To capture sensor data and save it to your experiment you can either start a <b>recording</b> or you can use the <b>snapshot</b> function.</string>
     <string name="onboarding_06_text_02">Start a <b>recording</b> to capture the change of sensor values over time.</string>
     <string name="onboarding_06_text_03">Create a point-in-time <b>snapshot</b> to capture the current sensor values.</string>
-    <string name="onboarding_07_title">Transform to sound</string>
+    <string name="onboarding_07_title">Transform to Sound</string>
     <string name="onboarding_07_text_01">It can be challenging to look at the display while doing an experiment. Tap “Enable audio” to transform sensor values into audible <b>sound</b>.</string>
     <string name="onboarding_finish_button">START EXPERIMENTING</string>
     <string name="navigation_getting_started">Getting Started</string>

@@ -10,16 +10,16 @@
         <item>@string/conductor</item>
     </string-array>
     <string-array name="trigger_type_list">
-    <item>@string/trigger_type_start_recording</item>
-    <item>@string/trigger_type_stop_recording</item>
-    <item>@string/trigger_type_note</item>
-    <item>@string/trigger_type_alert</item>
-  </string-array>
-  <string-array name="trigger_when_list">
-    <item>@string/trigger_when_at</item>
-    <item>@string/trigger_when_rises_above</item>
-    <item>@string/trigger_when_drops_below</item>
-    <item>@string/trigger_when_is_above</item>
+        <item>@string/trigger_type_start_recording</item>
+        <item>@string/trigger_type_stop_recording</item>
+        <item>@string/trigger_type_note</item>
+        <item>@string/trigger_type_alert</item>
+    </string-array>
+    <string-array name="trigger_when_list">
+        <item>@string/trigger_when_at</item>
+        <item>@string/trigger_when_rises_above</item>
+        <item>@string/trigger_when_drops_below</item>
+        <item>@string/trigger_when_is_above</item>
     <item>@string/trigger_when_is_below</item>
   </string-array>
   <string-array name="trigger_when_list_note_text">
@@ -471,16 +471,16 @@ Pemberitahuan izin:
   <string name="timestamp_picker_format_error">Gunakan format yang valid, yakni h:mm:ss.SSS</string>
   <string name="timestamp_picker_range_error">Stempel waktu harus berada dalam rentang waktu percobaan</string>
   <string name="timestamp_picker_crop_range_error">Eksperimen tidak bisa dipangkas menjadi kurang dari 1 detik</string>
-  <string name="timestamp_picker_prompt">Waktu baru (h:mm:ss.SSS)</string>
-  <string name="crop_failed_range_too_large">Percobaan tidak dapat dipangkas di luar rentang awal yang terekam</string>
-  <string name="crop_failed_range_too_small">Percobaan tidak dapat dipangkas kurang dari satu detik</string>
-  <string name="project_experiment_title">%1$s: %2$s</string>
-  <string name="export_options_title">Mengekspor…</string>
-  <string name="export_options_relative_time">Waktu relatif</string>
-  <string name="old_trigger_note_format">Catatan yang dipicu: %1s</string>
-  <string name="old_trigger_note_format_custom">Catatan yang dipicu: %1$s; %2$s</string>
-  <string name="compass">Kompas</string>
-  <string name="compass_units">derajat</string>
+    <string name="timestamp_picker_prompt">Waktu baru (h:mm:ss.SSS)</string>
+    <string name="crop_failed_range_too_large">Percobaan tidak dapat dipangkas di luar rentang awal yang terekam</string>
+    <string name="crop_failed_range_too_small">Percobaan tidak dapat dipangkas kurang dari satu detik</string>
+    <string name="project_experiment_title">%1$s: %2$s</string>
+    <string name="export_options_title">Mengekspor…</string>
+    <string name="export_options_relative_time">Waktu relatif</string>
+    <string name="old_trigger_note_format">Catatan yang dipicu: %1s</string>
+    <string name="old_trigger_note_format_custom">Catatan yang dipicu: %1$s; %2$s</string>
+    <string name="compass">Kompas</string>
+    <string name="compass_units">derajat</string>
     <string name="sensor_desc_short_compass">Orientasi ponsel relatif terhadap medan magnet Bumi.</string>
     <string name="sensor_desc_first_paragraph_compass">Anda mungkin sudah tahu bahwa Bumi memiliki medan magnet. Hal yang mungkin belum Anda ketahui adalah bahwa ponsel Anda memiliki perangkat yang didesain untuk mendeteksi medan magnet: magnetometer. Dengan menggabungkan data dari magnetometer ponsel dengan orientasi ponsel di mana saja, kita dapat membuat kompas digital.
 
@@ -518,16 +518,16 @@ Ponsel Anda memiliki perangkat untuk mengukur perubahan gerak ini—yaitu aksele
     <string name="trigger_label_name_header">%1$s %2$s</string>
     <string name="description_hint">Deskripsi</string>
     <string name="details_header">Detail</string>
-  <string name="text_label_hint">Tambahkan pengamatan</string>
-  <string name="first_experiment_title">Selamat Datang di Jurnal Sains</string>
-  <string name="first_experiment_text_note">Cobalah mencatat dan merekam data menggunakan toolbar di bawah ini!</string>
-  <string name="first_experiment_picture_note_caption">Selamat Datang di Jurnal Sains!</string>
-  <string name="first_experiment_second_text_note">Temukan aktivitas untuk dicoba di 
+    <string name="text_label_hint">Tambahkan pengamatan</string>
+    <string name="first_experiment_title">Selamat Datang di Jurnal Sains</string>
+    <string name="first_experiment_text_note">Cobalah mencatat dan merekam data menggunakan toolbar di bawah ini!</string>
+    <string name="first_experiment_picture_note_caption">Selamat Datang di Jurnal Sains!</string>
+    <string name="first_experiment_second_text_note">Temukan aktivitas untuk dicoba di
 g.co/sciencejournalactivities</string>
-  <string name="experiment_cover_description">Pilih foto eksperimen</string>
-  <string name="btn_take_picture_content_description">Mengambil gambar</string>
-  <string name="gallery_image_content_description">Gambar diambil tanggal %s</string>
-  <string name="gallery_image_content_description_selected">Nomor gambar yang dipilih %1$d. Gambar diambil pada %2$s</string>
+    <string name="experiment_cover_description">Pilih foto eksperimen</string>
+    <string name="btn_take_picture_content_description">Mengambil gambar</string>
+    <string name="gallery_image_content_description">Gambar diambil tanggal %s</string>
+    <string name="gallery_image_content_description_selected">Nomor gambar yang dipilih %1$d. Gambar diambil pada %2$s</string>
   <string name="content_description_selected">dipilih</string>
   <string name="gallery_selected_title">%1$d Dipilih</string>
   <string name="photo_editor_dialog_title">Edit foto dengan…</string>
@@ -636,16 +636,16 @@ Setelah login, Anda dapat menyimpan eksperimen yang ada ke Google Drive, jika da
   <string name="note_saved">Catatan Anda telah disimpan</string>
   <string name="note_saved_action">Lihat</string>
   <string name="btn_add_experiment_note_description">Tambahkan catatan eksperimen</string>
-  <string name="btn_add_run_note_description">Tambahkan catatan percobaan</string>
-  <string name="add_note_hint_text">Tambahkan catatan baru</string>
-  <string name="add_run_note_placeholder_text">Tambahkan catatan ke rekaman ini</string>
-  <string name="add_note_image_button_content_description">Ambil gambar catatan</string>
-  <string name="add_note_button_text">Tambahkan catatan ke linimasa</string>
-  <string name="trial_caption_hint_text">Tambahkan deskripsi rekaman di sini</string>
-  <string name="tool_picker_tab_layout_description">Fitur yang tersedia</string>
-  <string name="tab_description_add_note">Tulis teks</string>
-  <string name="tab_description_observe">Amati sensor</string>
-  <string name="tab_description_camera">Ambil foto</string>
+    <string name="btn_add_run_note_description">Tambahkan catatan percobaan</string>
+    <string name="add_note_hint_text">Tambahkan catatan baru</string>
+    <string name="add_run_note_placeholder_text">Tambahkan catatan ke rekaman ini</string>
+    <string name="add_note_image_button_content_description">Ambil gambar catatan</string>
+    <string name="add_note_button_text">Tambahkan catatan ke linimasa</string>
+    <string name="trial_caption_hint_text">Tambahkan deskripsi rekaman di sini</string>
+    <string name="tool_picker_tab_layout_description">Fitur yang tersedia</string>
+    <string name="tab_description_add_note">Tulis teks</string>
+    <string name="tab_description_observe">Amati sensor</string>
+    <string name="tab_description_camera">Ambil foto</string>
     <string name="tab_description_gallery">Pilih gambar</string>
     <string name="btn_show_tools">Tampilkan panel samping fitur</string>
     <string name="btn_expand_tools">Luaskan panel samping fitur</string>
@@ -742,13 +742,13 @@ Now that you know the basics of using Arduino Science Journal, you can use it to
     <string name="onboarding_04_text_04">Add a picture from your gallery</string>
     <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
     <string name="onboarding_05_title">Select a Sensor</string>
-    <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect and Arduino board to see live sensor data</string>
+    <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
     <string name="onboarding_05_quick_tip"> You can add multiple sensors to your experiment to observe them simultaneously.</string>
     <string name="onboarding_06_title">Create a Recording</string>
     <string name="onboarding_06_text_01">To capture sensor data and save it to your experiment you can either start a <b>recording</b> or you can use the <b>snapshot</b> function.</string>
     <string name="onboarding_06_text_02">Start a <b>recording</b> to capture the change of sensor values over time.</string>
     <string name="onboarding_06_text_03">Create a point-in-time <b>snapshot</b> to capture the current sensor values.</string>
-    <string name="onboarding_07_title">Transform to sound</string>
+    <string name="onboarding_07_title">Transform to Sound</string>
     <string name="onboarding_07_text_01">It can be challenging to look at the display while doing an experiment. Tap “Enable audio” to transform sensor values into audible <b>sound</b>.</string>
     <string name="onboarding_finish_button">START EXPERIMENTING</string>
     <string name="navigation_getting_started">Getting Started</string>

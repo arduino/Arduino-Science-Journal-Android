@@ -186,11 +186,11 @@
     <string name="external_sensor_appearance_name"><xliff:g id="sensor_name">%1$s</xliff:g> - <xliff:g id="device_name">%2$s</xliff:g></string>
     <string name="sensor_rotation_rpm">Okretaj</string>
     <string name="sensor_raw">Neobrađeno</string>
-  <string name="sensor_custom">Prilagođeno</string>
-  <string name="device_options_custom_sensor_pin_label_text">Prikvačivanje</string>
-  <string name="device_options_custom_sensor_frequency_checkbox_text">Frekvencija</string>
+    <string name="sensor_custom">Prilagođeno</string>
+    <string name="device_options_custom_sensor_pin_label_text">Prikvačivanje</string>
+    <string name="device_options_custom_sensor_frequency_checkbox_text">Frekvencija</string>
     <string name="feedback_error_message">Could not send feedback.</string>
-  <string name="sensor_desc_short_acc_x">Ubrzanje telefona lijevo-desno, u m/s²</string>
+    <string name="sensor_desc_short_acc_x">Ubrzanje telefona lijevo-desno, u m/s²</string>
     <string name="sensor_desc_short_acc_y">Ubrzanje telefona naprijed-natrag, u m/s²</string>
     <string name="sensor_desc_short_acc_z">Ubrzanje telefona gore-dolje, u m/s²</string>
     <string name="sensor_desc_short_decibel">Intenzitet zvuka izmjeren u decibelima (dB) koji dopire do senzora zvuka ili mikrofona.</string>
@@ -225,9 +225,9 @@ Zašto telefoni imaju magnetometar? Orijentacija u prostoru korisna je za aplika
 Kad sila uzrokuje pomicanje tijela, kažemo da ono ubrzava: njegova se brzina mijenja, bilo da se radilo o ubrzavanju, usporavanju ili promjeni smjera. Ubrzanje se mjeri kao promjena brzine u jedinici vremena (metri u sekundi), odnosno u metrima u sekundi na kvadrat (m/s²).
 
 Vaš telefon ima uređaj koji mjeri te promjene kretanja – akcelerometar. U akcelerometru se nalaze male mase koje se slobodno kreću. Uslijed promjena u gibanju te se mase pomiču, slično kao što se vaša glava pomiče unaprijed ako se nađete u automobilu koji naglo zakoči. Mjereći te suptilne inercijske pomake, akcelerometar u telefonu prepoznaje promjene u pokretima i smjeru, što je korisna značajka prilikom okretanja zaslona iz pejzažnog u portretni način rada, igranja igara na telefonu i prilikom drugih radnji.</string>
-  <string name="sensor_desc_second_paragraph_acc">Vjerojatno ste primijetili neprekidno ubrzanje po osi Z, čak i kad telefon leži na stolu. To je ubrzanje kojem smo izloženi zbog Zemljine gravitacije koja nas privlači brzinom od približno 9,8 m/s².</string>
-  <string name="sensor_desc_first_paragraph_decibel">Zvukove proizvode vibracije. Primjerice, vaš glas nastaje vibriranjem vaših glasnica. Te vibracije stvaraju različite zone visokog i niskog zračnog tlaka koje se šire prema van – slično kružnom širenju valova koji nastaju kada u jezero bacite kamenčić.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Svi se zvukovi mogu opisati kroz svoju frekvenciju i intenzitet.
+    <string name="sensor_desc_second_paragraph_acc">Vjerojatno ste primijetili neprekidno ubrzanje po osi Z, čak i kad telefon leži na stolu. To je ubrzanje kojem smo izloženi zbog Zemljine gravitacije koja nas privlači brzinom od približno 9,8 m/s².</string>
+    <string name="sensor_desc_first_paragraph_decibel">Zvukove proizvode vibracije. Primjerice, vaš glas nastaje vibriranjem vaših glasnica. Te vibracije stvaraju različite zone visokog i niskog zračnog tlaka koje se šire prema van – slično kružnom širenju valova koji nastaju kada u jezero bacite kamenčić.</string>
+    <string name="sensor_desc_second_paragraph_decibel">Svi se zvukovi mogu opisati kroz svoju frekvenciju i intenzitet.
 
 Pomoću senzora intenziteta zvuka u Science Journalu mjerite intenzitet u decibelima (dB). Intenzitet, odnosno glasnoća, ovisi o udaljenosti koju tijelo koje vibrira prijeđe prilikom svake vibracije; veći intenzitet doživljavamo kao veću glasnoću.
 
@@ -268,16 +268,16 @@ Crvena točka označava koliko se prepoznata visina tona nalazi blizu najbliže 
   <string name="pitch_sharper_than_natural_note_content_description">%1$s polutona više od %2$s, %3$s. oktava</string>
   <string name="pitch_sharper_than_flat_note_content_description">%1$s polutona više od sniženog %2$s, %3$s. oktava</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%1$s polutona više od povišenog %2$s, %3$s. oktava</string>
-  <string name="pitch_high_content_description">visok ton</string>
-  <string name="sensor_desc_first_paragraph_rotation">Broj okretaja u minuti (o/min) mjera je frekvencije okretanja oko fiksne osi u jednoj minuti.
+    <string name="pitch_high_content_description">visok ton</string>
+    <string name="sensor_desc_first_paragraph_rotation">Broj okretaja u minuti (o/min) mjera je frekvencije okretanja oko fiksne osi u jednoj minuti.
 
 Kako se okreće, vjetromjer okreće disk kodera:</string>
-  <string name="sensor_desc_second_paragraph_rotation">Tako nastaju razdoblja osvijetljenosti i zatamnjenja na senzoru, što Science Journal registrira kao okretaj.</string>
-  <string name="sensor_desc_first_paragraph_raw">Ovdje prikazani podaci rezultat su komunikacije vanjskog senzora s vašim telefonom putem Bluetooth veze.
+    <string name="sensor_desc_second_paragraph_rotation">Tako nastaju razdoblja osvijetljenosti i zatamnjenja na senzoru, što Science Journal registrira kao okretaj.</string>
+    <string name="sensor_desc_first_paragraph_raw">Ovdje prikazani podaci rezultat su komunikacije vanjskog senzora s vašim telefonom putem Bluetooth veze.
 
 Vrijednost prikazuje postotak izravnog neobrađenog očitanja s mikrokontrolera. To je obično vrijednost pada napona na senzoru.</string>
-  <string name="sensor_desc_second_paragraph_raw">Bluetooth je standard za bežični prijenos podataka koji koristi radiovalove za razmjenu podataka između fiksnih i mobilnih uređaja na malim udaljenostima.</string>
-  <string name="sensor_desc_first_paragraph_unknown_bluetooth">Ovdje prikazani podaci rezultat su komunikacije vanjskog senzora s vašim telefonom putem Bluetooth veze.</string>
+    <string name="sensor_desc_second_paragraph_raw">Bluetooth je standard za bežični prijenos podataka koji koristi radiovalove za razmjenu podataka između fiksnih i mobilnih uređaja na malim udaljenostima.</string>
+    <string name="sensor_desc_first_paragraph_unknown_bluetooth">Ovdje prikazani podaci rezultat su komunikacije vanjskog senzora s vašim telefonom putem Bluetooth veze.</string>
     <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth je standard za bežični prijenos podataka koji koristi radiovalove za razmjenu podataka između fiksnih i mobilnih uređaja na malim udaljenostima.</string>
     <string name="sensor_desc_first_paragraph_barometer">Iako to možda tako ne doživljavamo, svi mi zapravo živimo na dnu dubokog oceana zraka: Zemljine atmosfere visine od 40 km. Masa čitavog tog zraka koji nas pritišće stvara atmosferski tlak.
 
@@ -355,7 +355,7 @@ Science Journal is the free digital science notebook brought to you by Google.
 
 
 
-Whether you\'re a science educator or a hobbyist doing science at home, you can keep your notes, photos, and observations all in one convenient place. Use the sensors in your phone to measure and graph phenomena such as light, sound, and motion, or connect to external sensors via bluetooth to conduct experiments on the world around you.
+Whether you\'re a science educator or a hobbyist doing science at home, you can keep your notes, photos, and observations all in one convenient place. Use the sensors in your phone to measure and graph phenomena such as light, sound, and motion, or connect to external sensors via Bluetooth to conduct experiments on the world around you.
 
 
 
@@ -391,7 +391,7 @@ Open-source code available: https://github.com/google/science-journal
 
 Permissions notice:
 
-\u2022 Location: needed to scan for bluetooth sensor devices.
+\u2022 Location: needed to scan for Bluetooth sensor devices.
 
 \u2022 Camera: needed to take pictures to document experiments.
 
@@ -762,13 +762,13 @@ Now that you know the basics of using Arduino Science Journal, you can use it to
     <string name="onboarding_04_text_04">Add a picture from your gallery</string>
     <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
     <string name="onboarding_05_title">Select a Sensor</string>
-    <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect and Arduino board to see live sensor data</string>
+    <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
     <string name="onboarding_05_quick_tip"> You can add multiple sensors to your experiment to observe them simultaneously.</string>
     <string name="onboarding_06_title">Create a Recording</string>
     <string name="onboarding_06_text_01">To capture sensor data and save it to your experiment you can either start a <b>recording</b> or you can use the <b>snapshot</b> function.</string>
     <string name="onboarding_06_text_02">Start a <b>recording</b> to capture the change of sensor values over time.</string>
     <string name="onboarding_06_text_03">Create a point-in-time <b>snapshot</b> to capture the current sensor values.</string>
-    <string name="onboarding_07_title">Transform to sound</string>
+    <string name="onboarding_07_title">Transform to Sound</string>
     <string name="onboarding_07_text_01">It can be challenging to look at the display while doing an experiment. Tap “Enable audio” to transform sensor values into audible <b>sound</b>.</string>
     <string name="onboarding_finish_button">START EXPERIMENTING</string>
     <string name="navigation_getting_started">Getting Started</string>
