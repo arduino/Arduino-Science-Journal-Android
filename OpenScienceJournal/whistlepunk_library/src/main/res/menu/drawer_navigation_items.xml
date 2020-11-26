@@ -13,7 +13,8 @@
   See the License for the specific language governing permissions and
   limitations under the License.
  -->
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <group android:checkableBehavior="single">
         <!--
         <item
@@ -28,6 +29,7 @@
         <item
             android:id="@+id/navigation_item_activities"
             android:icon="@drawable/ic_activities"
+            app:actionLayout="@layout/menu_activities_item"
             android:title="@string/navigation_activities" />
         <item
             android:id="@+id/navigation_item_onboarding"

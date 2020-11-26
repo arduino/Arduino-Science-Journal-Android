@@ -74,5 +74,7 @@
         android:fitsSystemWindows="true"
         android:theme="@style/NavigationView"
         app:headerLayout="@layout/drawer_header"
+        app:itemIconTint="@color/arduino_gris"
+        app:itemTextColor="@color/arduino_gris"
         app:menu="@menu/drawer_navigation_items" />
 </com.google.android.apps.forscience.whistlepunk.MultiTouchDrawerLayout>
