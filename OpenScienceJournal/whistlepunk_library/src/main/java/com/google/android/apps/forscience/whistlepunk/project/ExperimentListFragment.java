@@ -554,15 +554,9 @@ public class ExperimentListFragment extends Fragment
         final long time = AppSingleton.getInstance(applicationContext).getSensorEnvironment().getDefaultClock().getNow();
         e.setTitle(res.getString(R.string.first_experiment_title));
         addPictureNoteToDefaultExperiment(applicationContext, appAccount, res, e, time - 10000, R.drawable.first_note, R.string.first_experiment_note_1);
-        addTextNoteToDefaultExperiment(res, e, time - 9000, R.string.first_experiment_note_2);
+        addPictureNoteToDefaultExperiment(applicationContext, appAccount, res, e, time - 9000, R.drawable.first_experiment_note_2, R.string.first_experiment_note_2);
         addPictureNoteToDefaultExperiment(applicationContext, appAccount, res, e, time - 8000, R.drawable.first_experiment_note_3, R.string.first_experiment_note_3);
         addPictureNoteToDefaultExperiment(applicationContext, appAccount, res, e, time - 7000, R.drawable.first_experiment_note_4, R.string.first_experiment_note_4);
-        addPictureNoteToDefaultExperiment(applicationContext, appAccount, res, e, time - 6000, R.drawable.first_experiment_note_5, R.string.first_experiment_note_5);
-        addPictureNoteToDefaultExperiment(applicationContext, appAccount, res, e, time - 5000, R.drawable.first_experiment_note_6, R.string.first_experiment_note_6);
-        addPictureNoteToDefaultExperiment(applicationContext, appAccount, res, e, time - 4000, R.drawable.first_experiment_note_7, R.string.first_experiment_note_7);
-        addPictureNoteToDefaultExperiment(applicationContext, appAccount, res, e, time - 3000, R.drawable.first_experiment_note_8, R.string.first_experiment_note_8);
-        addPictureNoteToDefaultExperiment(applicationContext, appAccount, res, e, time - 2000, R.drawable.first_experiment_note_9, R.string.first_experiment_note_9);
-        addTextNoteToDefaultExperiment(res, e, time - 1000, R.string.first_experiment_note_10);
     }
 
     private static void addTextNoteToDefaultExperiment(Resources res, Experiment e, long time, int textResId) {
@@ -635,12 +629,9 @@ public class ExperimentListFragment extends Fragment
 
     boolean handleOnBackPressed() {
         // If we are currently claiming an experiment, don't go back.
-        if (claimProgressBarVisible) {
-            return true;
-        }
+        return claimProgressBarVisible;
 
         // The activity can handle it normally.
-        return false;
     }
 
     @Override

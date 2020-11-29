@@ -713,18 +713,10 @@ Si vous avez des données sur cet appareil, vous pouvez les enregistrer sur Goog
     <string name="get_started_header_done">C\'est tout!</string>
     <string name="get_started_message_done">Nous avons fini de vérifier les autorisations. Si vous devez modifier ces autorisations à l\'avenir, vous pouvez le faire à tout moment dans les paramètres de l\'application Science Journal en Android.</string>
     <string name="get_started_action_done">Continuer</string>
-    <string name="first_experiment_note_1">Façonnez votre avenir! Raisonnez avec des données et pensez comme un vrai scientifique! Transformez votre téléphone en un laboratoire de science de poche avec des outils pour mesurer la lumière, le mouvement, le son et plus encore!</string>
-    <string name="first_experiment_note_2">Arduino Science Journal est un journal scientifique numérique que vous pouvez utiliser pour documenter des projets via des notes, des photos et des capteurs intégrés à votre téléphone, ainsi que des cartes externes.</string>
-    <string name="first_experiment_note_3">Pour créer une nouvelle expérience, cliquez sur le + en bas de l\'écran d\'accueil de l\'application Arduino Science Journal. Cliquez ensuite sur l\'icône en forme de crayon en haut pour donner un bon nom à votre expérience!</string>
-    <string name="first_experiment_note_4">La barre d\'outils d\'observation de l\'application peut vous aider à enregistrer les données autour de vous. Nous allons jeter un coup d\'oeil!</string>
-    <string name="first_experiment_note_5">Pour commencer à explorer votre monde en mesurant la lumière, le son, le mouvement, etc., appuyez sur le bouton Capteur.</string>
-    <string name="first_experiment_note_6">Vous pouvez gérer vos capteurs dans l\'écran des paramètres des capteurs. Revenez à l\'onglet du capteur dans la barre d\'outils et appuyez sur l\'icône d\'engrenage sur la carte du capteur.</string>
-    <string name="first_experiment_note_7">Vous pouvez ajouter des notes et des hypothèses à vos expériences en appuyant sur l\'icône Note.</string>
-    <string name="first_experiment_note_8">Pour noter une mesure de capteur unique, appuyez sur le bouton Capteur d\'instantané. Vous pouvez également enregistrer les données du capteur au fil du temps, sélectionner un capteur et appuyer sur le bouton Enregistrer pour commencer à capturer des données.</string>
-    <string name="first_experiment_note_9">Ajoutez des notes et des photos pour garder une trace de vos observations pendant l\'enregistrement.</string>
-    <string name="first_experiment_note_10">Trouvez des activités à essayer sur science-journal.arduino.cc
-
- Maintenant que vous connaissez les bases de l\'utilisation d\'Arduino Science Journal, vous pouvez l\'utiliser pour mener des expériences et explorer votre monde!</string>
+    <string name="first_experiment_note_1">Welcome to Science Journal!</string>
+    <string name="first_experiment_note_2">Start taking notes and record data using the observation toolbar.</string>
+    <string name="first_experiment_note_3">Find activities and inspiration at science-journal.arduino.cc and start exploring the world around you.</string>
+    <string name="first_experiment_note_4">If you missed the Getting Started guide or you want to go back to it, you can find it in the sidebar menu.</string>
     <string name="onboarding_navigation_title">GETTING STARTED</string>
     <string name="onboarding_01_title">Welcome to Science Journal!</string>
     <string name="onboarding_01_text_01">This introduction will walk you through the most important functions of Science Journal and show you how to turn your smart device into a pocket science lab. Swipe left to begin.</string>
@@ -734,7 +726,7 @@ Si vous avez des données sur cet appareil, vous pouvez les enregistrer sur Goog
     <string name="onboarding_navigation_hint">Swipe left to proceed</string>
     <string name="onboarding_02_title">What is Science Journal?</string>
     <string name="onboarding_02_text_01">Science Journal helps you to conduct science experiments by allowing you to observe real time sensor data, <b>record sensor values</b> as well as <b>add notes</b> and <b>observations</b> to your experiments.</string>
-    <string name="onboarding_02_quick_tip">Did you know that smartphones come with various built-in sensors? Connect an Arduino board to add even more advanced sensors. </string>
+    <string name="onboarding_02_quick_tip">Did you know that smartphones come with various built-in sensors? Connect an Arduino board to add even more advanced sensors.</string>
     <string name="onboarding_03_title">Create Experiments</string>
     <string name="onboarding_03_text_01">Add a new experiment to start exploring &amp; journaling</string>
     <string name="onboarding_03_text_02">An experiment lets you <b>organise</b> all your observations and recordings of a specific topic. Create a new experiment, give it a suitable name and start exploring the sensors.</string>
@@ -746,7 +738,7 @@ Si vous avez des données sur cet appareil, vous pouvez les enregistrer sur Goog
     <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
     <string name="onboarding_05_title">Select a Sensor</string>
     <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
-    <string name="onboarding_05_quick_tip"> You can add multiple sensors to your experiment to observe them simultaneously.</string>
+    <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
     <string name="onboarding_06_title">Create a Recording</string>
     <string name="onboarding_06_text_01">To capture sensor data and save it to your experiment you can either start a <b>recording</b> or you can use the <b>snapshot</b> function.</string>
     <string name="onboarding_06_text_02">Start a <b>recording</b> to capture the change of sensor values over time.</string>

@@ -13,7 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
  -->
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- For activities without toolbar or implementing their own toolbar. e.g. MainActivity. -->
     <style name="NoBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
@@ -195,6 +195,7 @@
         <item name="android:textSize">14sp</item>
         <item name="android:lineSpacingExtra">10sp</item>
         <item name="android:textColor">@color/arduino_jet</item>
+        <item name="android:breakStrategy" tools:ignore="NewApi">high_quality</item>
     </style>
 
     <style name="OnboardingText.Title">
