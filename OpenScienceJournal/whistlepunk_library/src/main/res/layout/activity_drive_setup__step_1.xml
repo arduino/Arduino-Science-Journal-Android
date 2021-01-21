@@ -1,0 +1,147 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveSyncSetupActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/drive_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:paddingTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/placeholder_start"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/placeholder_end"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/ArduinoAuth_Text.Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:text="@string/drive_setup_step_1_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/placeholder_end"
+            app:layout_constraintStart_toEndOf="@id/placeholder_start"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/drive_description"
+        style="@style/ArduinoAuth_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:maxWidth="360dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/drive_setup_step_1_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/drive_header" />
+
+    <TextView
+        android:id="@+id/drive_learn_more"
+        style="@style/ArduinoAuth_Text.Hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="@string/drive_learn_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/drive_description" />
+
+    <TextView
+        android:id="@+id/drive_btn_signin"
+        style="@style/ArduinoAuth_Button.GoogleDrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="10dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/gdrive_name"
+        app:drawableStartCompat="@drawable/ic_drive_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/drive_learn_more" />
+
+    <TextView
+        android:id="@+id/drive_btn_skip"
+        style="@style/ArduinoAuth_Button.Secondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/drive_skip"
+        app:layout_constraintEnd_toEndOf="@id/drive_btn_signin"
+        app:layout_constraintTop_toBottomOf="@id/drive_btn_signin" />
+
+    <FrameLayout
+        android:id="@+id/drive_popup_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/drive_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:elevation="4dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/drive_learn_more"
+        tools:targetApi="lollipop">
+
+        <ImageView
+            android:id="@+id/popup_pointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/arduino_auth_popup_pointer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/ArduinoAuth_Text.PopUp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/arduino_white"
+            android:gravity="start"
+            android:padding="20dp"
+            android:text="@string/drive_setup_step_1_popup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/popup_pointer" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="arduino_auth_terms">Terms Of Service</string>
+    <string name="arduino_auth_privacy">Privacy Policy</string>
+    <string name="drive_setup_step_1_title">Cloud Sync</string>
+    <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
+    <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+    <string name="drive_learn_more">Learn More</string>
+    <string name="drive_skip">Skip</string>
+    <string name="drive_select">Select</string>
+    <string name="gdrive_name">Google Drive</string>
+    <string name="gdrive_root">My Drive</string>
+    <string name="gdrive_error">Error connecting to Google Drive. Please try again.</string>
+    <string name="drive_setup_step_2_title">Select a folder</string>
+    <string name="drive_setup_step_2_description">Choose where you would like to save your experiments</string>
+    <string name="drive_setup_step_3_title">Google Drive</string>
+    <string name="drive_setup_step_3_description">Your experiments will be automatically synced in the folder “%1$s” on your Drive.</string>
+    <string name="drive_setup_step_3_action">Sync now</string>
+    <string name="drive_create_folder_title">Create New Folder</string>
+    <string name="drive_create_folder_action">Create</string>
+    <string name="drive_create_folder_def_name">Science Journal</string>
+</resources>

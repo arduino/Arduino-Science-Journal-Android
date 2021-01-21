@@ -46,6 +46,7 @@ import com.google.android.apps.forscience.whistlepunk.feedback.FeedbackProvider;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.Experiment;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.ExperimentLibraryManager;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.LocalSyncManager;
+import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveSyncSetupActivity;
 import com.google.android.apps.forscience.whistlepunk.project.ExperimentListFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
@@ -420,6 +421,8 @@ public class MainActivity extends ActivityWithNavigationView {
             selectedItemId = itemId;
         } else if (itemId == R.id.navigation_item_onboarding) {
             startActivity(new Intent(this, OnboardingActivity.class));
+        } else if (itemId == R.id.navigation_item_drive) {
+            startActivity(new Intent(this, GDriveSyncSetupActivity.class));
         } else if (itemId == R.id.navigation_item_activities) {
             try {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://science-journal.arduino.cc/")));

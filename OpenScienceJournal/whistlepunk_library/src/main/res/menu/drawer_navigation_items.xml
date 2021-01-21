@@ -35,6 +35,10 @@
             android:id="@+id/navigation_item_onboarding"
             android:icon="@drawable/ic_get_started"
             android:title="@string/navigation_getting_started" />
+        <item
+            android:id="@+id/navigation_item_drive"
+            android:icon="@drawable/ic_get_started"
+            android:title="[DEV] Google Drive Test" />
         <!--
         <item
             android:id="@+id/navigation_item_settings"

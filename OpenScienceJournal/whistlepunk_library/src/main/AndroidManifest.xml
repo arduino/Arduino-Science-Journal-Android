@@ -34,6 +34,8 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <!-- Vibrate option available for triggers. -->
     <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- check connection status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- foreground service for recording data -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
@@ -217,6 +219,10 @@
             android:name=".accounts.OnboardingActivity"
             android:exported="false"
             android:theme="@style/AppTheme.Onboarding" />
+        <activity
+            android:name=".gdrivesync.GDriveSyncSetupActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.DriveSetup" />
         <activity
             android:name=".accounts.SignInActivity"
             android:exported="false"

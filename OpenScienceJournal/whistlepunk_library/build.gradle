@@ -158,6 +158,9 @@ dependencies {
     implementation 'joda-time:joda-time:2.9.9'
     implementation 'org.joda:joda-convert:1.8'
 
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.api-client:google-api-client-android:1.25.0'
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation project(':scalarinputapi')
