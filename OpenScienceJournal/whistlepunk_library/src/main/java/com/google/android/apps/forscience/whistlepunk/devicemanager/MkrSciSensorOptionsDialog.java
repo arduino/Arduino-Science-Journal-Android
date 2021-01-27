@@ -3,12 +3,14 @@ package com.google.android.apps.forscience.whistlepunk.devicemanager;
 import android.app.Activity;
 import android.app.Dialog;
 import android.os.Bundle;
-import androidx.fragment.app.DialogFragment;
-import androidx.appcompat.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.DialogFragment;
+
 import com.google.android.apps.forscience.javalib.Success;
 import com.google.android.apps.forscience.whistlepunk.AppSingleton;
 import com.google.android.apps.forscience.whistlepunk.DataController;
@@ -19,6 +21,7 @@ import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
 import com.google.android.apps.forscience.whistlepunk.metadata.ExternalSensorSpec;
 import com.google.android.apps.forscience.whistlepunk.metadata.MkrSciBleSensorSpec;
 import com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor;
+
 import java.util.Objects;
 
 /** Options dialog for a MkrSciSensor */
@@ -88,6 +91,15 @@ public class MkrSciSensorOptionsDialog extends DialogFragment {
           break;
         case MkrSciBleSensor.HANDLER_LIGHT:
           labelId = R.string.mkrsci_input_sensor_light;
+          break;
+        case MkrSciBleSensor.HANDLER_RESISTANCE_RESISTOR_1_K_OHM:
+          labelId = R.string.mkrsci_input_sensor_resistance_1kohm;
+          break;
+        case MkrSciBleSensor.HANDLER_RESISTANCE_RESISTOR_10_K_OHM:
+          labelId = R.string.mkrsci_input_sensor_resistance_10kohm;
+          break;
+        case MkrSciBleSensor.HANDLER_RESISTANCE_RESISTOR_1_M_OHM:
+          labelId = R.string.mkrsci_input_sensor_resistance_1mohm;
           break;
         default:
           labelId = R.string.mkrsci_input_sensor_raw;

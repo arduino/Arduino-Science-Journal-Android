@@ -252,8 +252,8 @@ La escala de decibeles es logarítmica, así que puede ser un poco difícil de e
 120 dB: Truenos
 130 dB: Martillo mecánico
 140 dB: Despegue de un avión</string>
-  <string name="sensor_desc_first_paragraph_pitch">Los sonidos se generan mediante vibraciones. Por ejemplo, tu voz viene de vibraciones en las cuerdas vocales. Estas vibraciones crean zonas alternas de presión de aire alta y baja que se proyectan, al igual que las ondas circulares que se expanden cuando se arroja una piedra a un estanque.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Todos los sonidos pueden describirse en función de su intensidad y frecuencia. La frecuencia (también conocida como registro o tono) de una onda de sonido es equivalente a la velocidad con la que vibra. Cuanto más rápido vibre un objeto, mayor será el tono del sonido que genera. Para medir estas vibraciones, usamos el hercio (Hz), una unidad que equivale a 1 vibración por segundo.
+    <string name="sensor_desc_first_paragraph_pitch">Los sonidos se generan mediante vibraciones. Por ejemplo, tu voz viene de vibraciones en las cuerdas vocales. Estas vibraciones crean zonas alternas de presión de aire alta y baja que se proyectan, al igual que las ondas circulares que se expanden cuando se arroja una piedra a un estanque.</string>
+    <string name="sensor_desc_second_paragraph_pitch">Todos los sonidos pueden describirse en función de su intensidad y frecuencia. La frecuencia (también conocida como registro o tono) de una onda de sonido es equivalente a la velocidad con la que vibra. Cuanto más rápido vibre un objeto, mayor será el tono del sonido que genera. Para medir estas vibraciones, usamos el hercio (Hz), una unidad que equivale a 1 vibración por segundo.
 
 Los humanos pueden oír sonidos dentro de un rango entre 20 y 20,000 Hz. La tecla más grave de un piano produce un sonido con una frecuencia de 27.5 Hz y la tecla con la nota más aguda produce un sonido con una frecuencia de 4,186.01 Hz.
 
@@ -766,4 +766,24 @@ If you have existing data on this device, once signed in, you can save your exis
     <string name="navigation_getting_started">Getting Started</string>
     <string name="onboarding_navigation_title_tablet">GETTING STARTED WITH SCIENCE JOURNAL</string>
     <string name="navigation_activities">Activities</string>
+    <string name="drive_sync_intro_title">Cloud Sync</string>
+    <string name="drive_sync_intro_text">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
+    <string name="drive_sync_intro_more">LEARN MORE</string>
+    <string name="drive_sync_intro_google_action">Google Drive</string>
+    <string name="drive_sync_intro_skip">SKIP</string>
+    <string name="drive_sync_intro_more_text">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
+    <string name="drive_sync_folder_picker_title">Select a folder</string>
+    <string name="drive_sync_folder_picker_text">Select a folder for your experiments</string>
+    <string name="drive_sync_folder_picker_select">SELECT</string>
+    <string name="drive_sync_folder_picker_empty">This folder is empty.</string>
+    <string name="drive_sync_root_folder_label">My Drive</string>
+    <string name="drive_sync_create_folder_title">Create New Folder</string>
+    <string name="drive_sync_create_folder_default">Science Journal</string>
+    <string name="drive_sync_create_folder_button">CREATE</string>
+    <string name="drive_sync_summary_title">Google Drive</string>
+    <string name="drive_sync_summary_text">Your experiments will be automatically synced in the folder “%s” on your Drive.</string>
+    <string name="drive_sync_summary_button">START EXPERIMENTING</string>
+    <string name="mkrsci_input_sensor_resistance_1kohm">1 kΩ Resistor</string>
+    <string name="mkrsci_input_sensor_resistance_10kohm">10 kΩ Resistor</string>
+    <string name="mkrsci_input_sensor_resistance_1mohm">1 MΩ Resistor</string>
 </resources>

@@ -50,17 +50,23 @@ public class MkrSciBleSensor extends ScalarSensor {
     public static final String SENSOR_NANO_33_BLE_SENSE_PROXIMITY = "n33bs_proximity";
     public static final String SENSOR_NANO_33_BLE_SENSE_COLOR_ILLUMINANCE = "n33bs_color_illuminance";
     public static final String SENSOR_NANO_33_BLE_SENSE_COLOR_TEMPERATURE = "n33bs_color_temperature";
+    public static final String SENSOR_NANO_33_BLE_SENSE_RESISTANCE = "n33bs_resistance";
 
     public static final String HANDLER_RAW = "raw";
     public static final String HANDLER_TEMPERATURE_CELSIUS = "temperature_celsius";
     public static final String HANDLER_TEMPERATURE_FAHRENHEIT = "temperature_fahrenheit";
     public static final String HANDLER_LIGHT = "light";
 
-    private String address;
+    public static final String HANDLER_RESISTANCE_RESISTOR_1_K_OHM = "resistance_resistor_1_k_ohm";
+    public static final String HANDLER_RESISTANCE_RESISTOR_10_K_OHM = "resistance_resistor_10_k_ohm";
+    public static final String HANDLER_RESISTANCE_RESISTOR_1_M_OHM = "resistance_resistor_1_m_ohm";
 
-    private String characteristic;
 
-    private ValueHandler valueHandler;
+    private final String address;
+
+    private final String characteristic;
+
+    private final ValueHandler valueHandler;
 
     public MkrSciBleSensor(String sensorId, MkrSciBleSensorSpec spec) {
         super(sensorId);
@@ -207,6 +213,21 @@ public class MkrSciBleSensor extends ScalarSensor {
                 characteristic = MkrSciBleManager.NANO_33_BLE_SENSE_COLOR_UUID;
                 valueHandler = new Nano33BLESenseColorTemperatureValueHandler();
                 break;
+            case SENSOR_NANO_33_BLE_SENSE_RESISTANCE:
+                characteristic = MkrSciBleManager.NANO_33_BLE_SENSE_RESISTANCE_UUID;
+                switch (sensorHandler) {
+                    case HANDLER_RESISTANCE_RESISTOR_1_K_OHM:
+                        valueHandler = new FormulaValueHandler(0, value -> 1 / (value - 1));
+                        break;
+                    default:
+                    case HANDLER_RESISTANCE_RESISTOR_10_K_OHM:
+                        valueHandler = new FormulaValueHandler(0, value -> (1 / (value - 1)) * 10d);
+                        break;
+                    case HANDLER_RESISTANCE_RESISTOR_1_M_OHM:
+                        valueHandler = new FormulaValueHandler(0, value -> (1 / (value - 1)) * 1000d);
+                        break;
+                }
+                break;
             default:
                 throw new RuntimeException("Unmanaged mkr sci ble sensor: " + sensorKind);
         }
@@ -266,7 +287,7 @@ public class MkrSciBleSensor extends ScalarSensor {
     }
 
     private static class SimpleValueHandler extends ValueHandler {
-        private int index;
+        private final int index;
 
         private SimpleValueHandler(int index) {
             this.index = index;
@@ -285,8 +306,8 @@ public class MkrSciBleSensor extends ScalarSensor {
     }
 
     private static class FormulaValueHandler extends ValueHandler {
-        private int index;
-        private Formula formula;
+        private final int index;
+        private final Formula formula;
 
         private FormulaValueHandler(int index, Formula formula) {
             this.index = index;
@@ -302,7 +323,7 @@ public class MkrSciBleSensor extends ScalarSensor {
     }
 
     private static class ScienceKitAccelerometerValueHandler extends ValueHandler {
-        private int index;
+        private final int index;
 
         private ScienceKitAccelerometerValueHandler(int index) {
             this.index = index;
@@ -338,7 +359,7 @@ public class MkrSciBleSensor extends ScalarSensor {
 
     private static class ResistanceValueHandler extends ValueHandler {
 
-        private int index;
+        private final int index;
 
         private ResistanceValueHandler(int index) {
             this.index = index;
@@ -447,6 +468,7 @@ public class MkrSciBleSensor extends ScalarSensor {
             case SENSOR_NANO_33_BLE_SENSE_PROXIMITY:
             case SENSOR_NANO_33_BLE_SENSE_COLOR_ILLUMINANCE:
             case SENSOR_NANO_33_BLE_SENSE_COLOR_TEMPERATURE:
+            case SENSOR_NANO_33_BLE_SENSE_RESISTANCE:
                 break;
             default:
                 throw new RuntimeException("Unmanaged mkr sci ble sensor: " + sensorKind);

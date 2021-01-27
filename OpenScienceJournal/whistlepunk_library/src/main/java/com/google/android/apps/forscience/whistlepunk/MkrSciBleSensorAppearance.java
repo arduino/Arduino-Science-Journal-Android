@@ -38,6 +38,7 @@ import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSe
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_NANO_33_BLE_SENSE_MAGNETOMETER;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_NANO_33_BLE_SENSE_PRESSURE;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_NANO_33_BLE_SENSE_PROXIMITY;
+import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_NANO_33_BLE_SENSE_RESISTANCE;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_NANO_33_BLE_SENSE_TEMPERATURE;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_SCIENCE_KIT_ACCELEROMETER_X;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_SCIENCE_KIT_ACCELEROMETER_Y;
@@ -642,6 +643,24 @@ public class MkrSciBleSensorAppearance extends BuiltInSensorAppearance {
                     2,
                     null);
         }
+        if (Objects.equals(sensorId, SENSOR_NANO_33_BLE_SENSE_RESISTANCE)) {
+            return new MkrSciBleSensorAppearance(
+                    sensorId,
+                    handlerId,
+                    R.string.resistance, // name
+                    R.drawable.ic_sensor_mkrsci_resistance_white_24dp, // icon
+                    R.string.resistance_units, // units
+                    R.string.sensor_desc_short_mkrsci_resistance, // desc short
+                    0, // desc extended 1st part
+                    0, // desc extended 2nd part
+                    0, // desc extended image
+                    new ImageViewSensorAnimationBehavior(
+                            R.drawable.mkrsci_resistance_level_drawable,
+                            ImageViewSensorAnimationBehavior.TYPE_POSITIVE_RELATIVE_SCALE), // animation
+                    2, // BuiltInSensorAppearance.MAX_POINTS_AFTER_DECIMAL, // points after decimal
+                    null // sensor id
+            );
+        }
         return null;
     }
 
@@ -659,9 +678,9 @@ public class MkrSciBleSensorAppearance extends BuiltInSensorAppearance {
         return get(sensorId, handlerId);
     }
 
-    private String sensorId;
+    private final String sensorId;
 
-    private String handlerId;
+    private final String handlerId;
 
     private MkrSciBleSensorAppearance(
             String sensorId,
