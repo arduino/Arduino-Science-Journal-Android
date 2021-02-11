@@ -61,6 +61,7 @@ public class MkrSciBleManager {
     public static final String NANO_33_BLE_SENSE_HUMIDITY_UUID = "555a0002-0016-467a-9538-01f0652c74e8";
     public static final String NANO_33_BLE_SENSE_PROXIMITY_UUID = "555a0002-0017-467a-9538-01f0652c74e8";
     public static final String NANO_33_BLE_SENSE_COLOR_UUID = "555a0002-0018-467a-9538-01f0652c74e8";
+    public static final String NANO_33_BLE_SENSE_RESISTANCE_UUID = "555a0002-0020-467a-9538-01f0652c74e8";
 
     private static final double MAX_VALUE = 2000000000D;
     private static final double MIN_VALUE = -2000000000D;
@@ -328,6 +329,7 @@ public class MkrSciBleManager {
                 case NANO_33_BLE_SENSE_TEMPERATURE_UUID:
                 case NANO_33_BLE_SENSE_PRESSURE_UUID:
                 case NANO_33_BLE_SENSE_HUMIDITY_UUID:
+                case NANO_33_BLE_SENSE_RESISTANCE_UUID:
                     type = ValueType.SFLOAT;
                     break;
                 case SCIENCE_KIT_ACCELEROMETER_UUID:

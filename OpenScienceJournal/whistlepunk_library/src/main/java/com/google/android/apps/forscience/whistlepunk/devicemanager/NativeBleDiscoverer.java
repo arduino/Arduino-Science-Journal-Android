@@ -47,6 +47,9 @@ import java.util.Objects;
 
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.HANDLER_LIGHT;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.HANDLER_RAW;
+import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.HANDLER_RESISTANCE_RESISTOR_10_K_OHM;
+import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.HANDLER_RESISTANCE_RESISTOR_1_K_OHM;
+import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.HANDLER_RESISTANCE_RESISTOR_1_M_OHM;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.HANDLER_TEMPERATURE_CELSIUS;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.HANDLER_TEMPERATURE_FAHRENHEIT;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_NANO_33_BLE_SENSE_ACCELEROMETER_X;
@@ -62,6 +65,7 @@ import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSe
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_NANO_33_BLE_SENSE_MAGNETOMETER;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_NANO_33_BLE_SENSE_PRESSURE;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_NANO_33_BLE_SENSE_PROXIMITY;
+import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_NANO_33_BLE_SENSE_RESISTANCE;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_NANO_33_BLE_SENSE_TEMPERATURE;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_SCIENCE_KIT_ACCELEROMETER_X;
 import static com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor.SENSOR_SCIENCE_KIT_ACCELEROMETER_Y;
@@ -109,7 +113,7 @@ public class NativeBleDiscoverer implements SensorDiscoverer {
 
     private DeviceDiscoverer deviceDiscoverer;
     private Runnable onScanDone;
-    private Context context;
+    private final Context context;
 
     public NativeBleDiscoverer(Context context) {
         this.context = context;
@@ -368,6 +372,7 @@ public class NativeBleDiscoverer implements SensorDiscoverer {
         addMkrSciSensor(scanListener, address, SENSOR_NANO_33_BLE_SENSE_PROXIMITY, context.getString(R.string.humidity));
         addMkrSciSensor(scanListener, address, SENSOR_NANO_33_BLE_SENSE_COLOR_ILLUMINANCE, context.getString(R.string.color_ambient_light));
         addMkrSciSensor(scanListener, address, SENSOR_NANO_33_BLE_SENSE_COLOR_TEMPERATURE, context.getString(R.string.color_temperature));
+        addMkrSciSensor(scanListener, address, SENSOR_NANO_33_BLE_SENSE_RESISTANCE, context.getString(R.string.resistance));
     }
 
     private void addMkrSciSensor(
@@ -419,6 +424,20 @@ public class NativeBleDiscoverer implements SensorDiscoverer {
                                             },
                                             1)
                                             .show(fragmentManager, "edit_sensor_ble_temperature");
+                        }
+                        if (Objects.equals(sensor, SENSOR_NANO_33_BLE_SENSE_RESISTANCE)) {
+                            return (appAccount, experimentId, sensorId, fragmentManager, showForgetButton) ->
+                                    MkrSciSensorOptionsDialog.newInstance(
+                                            appAccount,
+                                            experimentId,
+                                            sensorId,
+                                            new String[]{
+                                                    HANDLER_RESISTANCE_RESISTOR_1_K_OHM,
+                                                    HANDLER_RESISTANCE_RESISTOR_10_K_OHM,
+                                                    HANDLER_RESISTANCE_RESISTOR_1_M_OHM
+                                            },
+                                            1)
+                                            .show(fragmentManager, "edit_sensor_ble_resistance");
                         }
                         return null;
                     }

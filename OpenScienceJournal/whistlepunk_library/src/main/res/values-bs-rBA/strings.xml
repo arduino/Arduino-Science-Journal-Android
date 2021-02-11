@@ -252,8 +252,8 @@ Ljestvica decibela je logaritamska, zbog čega izvor zvuka od 40 dB nije dvostru
 120 dB: grmljavina
 130 dB: pneumatska bušilica
 140: uzlijetanje zrakoplova</string>
-  <string name="sensor_desc_first_paragraph_pitch">Zvukove proizvode vibracije. Primjerice, vaš glas nastaje vibriranjem vaših glasnica. Te vibracije stvaraju različite zone visokog i niskog zračnog tlaka koje se šire prema van – slično kružnom širenju valova koji nastaju kada u jezero bacite kamenčić.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Svi se zvukovi mogu opisati kroz svoju frekvenciju i intenzitet. Frekvencija (ili visina tona) zvučnog vala ekvivalent je brzine vibracije. Što brže tijelo vibrira, to je nastali zvuk viši. Te vibracije mjerimo u hercima (Hz), pri čemu je 1 herc jednak 1 vibraciji u sekundi.
+    <string name="sensor_desc_first_paragraph_pitch">Zvukove proizvode vibracije. Primjerice, vaš glas nastaje vibriranjem vaših glasnica. Te vibracije stvaraju različite zone visokog i niskog zračnog tlaka koje se šire prema van – slično kružnom širenju valova koji nastaju kada u jezero bacite kamenčić.</string>
+    <string name="sensor_desc_second_paragraph_pitch">Svi se zvukovi mogu opisati kroz svoju frekvenciju i intenzitet. Frekvencija (ili visina tona) zvučnog vala ekvivalent je brzine vibracije. Što brže tijelo vibrira, to je nastali zvuk viši. Te vibracije mjerimo u hercima (Hz), pri čemu je 1 herc jednak 1 vibraciji u sekundi.
 
 Ljudi mogu čuti zvukove u rasponu od 20 do 20.000 Hz. Tipka za najdublji ton na klaviru stvara zvuk čija frekvencija iznosi 27,5 Hz, a tipka za najviši ton stvara zvuk frekvencije 4186,01 Hz.
 
@@ -766,4 +766,24 @@ If you have existing data on this device, once signed in, you can save your exis
     <string name="navigation_getting_started">Getting Started</string>
     <string name="onboarding_navigation_title_tablet">GETTING STARTED WITH SCIENCE JOURNAL</string>
     <string name="navigation_activities">Activities</string>
+    <string name="drive_sync_intro_title">Cloud Sync</string>
+    <string name="drive_sync_intro_text">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
+    <string name="drive_sync_intro_more">LEARN MORE</string>
+    <string name="drive_sync_intro_google_action">Google Drive</string>
+    <string name="drive_sync_intro_skip">SKIP</string>
+    <string name="drive_sync_intro_more_text">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
+    <string name="drive_sync_folder_picker_title">Select a folder</string>
+    <string name="drive_sync_folder_picker_text">Select a folder for your experiments</string>
+    <string name="drive_sync_folder_picker_select">SELECT</string>
+    <string name="drive_sync_folder_picker_empty">This folder is empty.</string>
+    <string name="drive_sync_root_folder_label">My Drive</string>
+    <string name="drive_sync_create_folder_title">Create New Folder</string>
+    <string name="drive_sync_create_folder_default">Science Journal</string>
+    <string name="drive_sync_create_folder_button">CREATE</string>
+    <string name="drive_sync_summary_title">Google Drive</string>
+    <string name="drive_sync_summary_text">Your experiments will be automatically synced in the folder “%s” on your Drive.</string>
+    <string name="drive_sync_summary_button">START EXPERIMENTING</string>
+    <string name="mkrsci_input_sensor_resistance_1kohm">1 kΩ Resistor</string>
+    <string name="mkrsci_input_sensor_resistance_10kohm">10 kΩ Resistor</string>
+    <string name="mkrsci_input_sensor_resistance_1mohm">1 MΩ Resistor</string>
 </resources>
