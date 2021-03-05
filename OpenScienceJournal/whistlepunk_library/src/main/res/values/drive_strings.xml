@@ -7,7 +7,7 @@
     <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
     <string name="drive_learn_more">Learn More</string>
     <string name="drive_skip">Skip</string>
-    <string name="drive_select">Select</string>
+    <string name="drive_select">Sync Here</string>
     <string name="gdrive_name">Google Drive</string>
     <string name="gdrive_root">My Drive</string>
     <string name="gdrive_error">Error connecting to Google Drive. Please try again.</string>

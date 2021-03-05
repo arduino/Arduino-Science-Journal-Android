@@ -24,16 +24,6 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
-import androidx.core.app.NavUtils;
-import androidx.core.content.ContextCompat;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.appcompat.widget.PopupMenu;
-import androidx.recyclerview.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.TypedValue;
@@ -49,7 +39,19 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.PopupMenu;
 import androidx.cardview.widget.CardView;
+import androidx.core.app.NavUtils;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.android.apps.forscience.javalib.Success;
 import com.google.android.apps.forscience.whistlepunk.AccessibilityUtils;
 import com.google.android.apps.forscience.whistlepunk.ActionController;
@@ -109,11 +111,7 @@ import com.google.android.apps.forscience.whistlepunk.sensorapi.StreamStat;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.jakewharton.rxbinding2.view.RxView;
-import io.reactivex.Completable;
-import io.reactivex.Observable;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.functions.Consumer;
-import io.reactivex.subjects.BehaviorSubject;
+
 import java.io.File;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
@@ -124,6 +122,12 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
+import io.reactivex.Completable;
+import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Consumer;
+import io.reactivex.subjects.BehaviorSubject;
+
 /**
  * A fragment to handle displaying Experiment details, runs and labels.
  *
@@ -131,7 +135,7 @@ import java.util.concurrent.TimeUnit;
  * action area to add notes to the current experiment.
  */
 public class ExperimentDetailsFragment extends Fragment
-    implements DeleteMetadataItemDialog.DeleteDialogListener,
+        implements DeleteMetadataItemDialog.DeleteDialogListener,
         NameExperimentDialog.OnExperimentTitleChangeListener,
         TitleProvider {
 
@@ -158,17 +162,17 @@ public class ExperimentDetailsFragment extends Fragment
   private AppAccount appAccount;
   private String experimentId;
   private boolean claimExperimentsMode;
-  private Experiment experiment;
-  private BehaviorSubject<Experiment> loadedExperiment = BehaviorSubject.create();
-  private ScalarDisplayOptions scalarDisplayOptions;
+    private Experiment experiment;
+    private final BehaviorSubject<Experiment> loadedExperiment = BehaviorSubject.create();
+    private ScalarDisplayOptions scalarDisplayOptions;
   private boolean includeArchived;
   private BroadcastReceiver broadcastReceiver;
   private String activeTrialId;
   private TextView emptyView;
   private ProgressBar progressBar;
-  private boolean progressVisible = false;
-  private RxEvent destroyed = new RxEvent();
-  private LocalSyncManager localSyncManager;
+    private boolean progressVisible = false;
+    private final RxEvent destroyed = new RxEvent();
+    private LocalSyncManager localSyncManager;
   private ExperimentLibraryManager experimentLibraryManager;
   private ActionController actionController;
 
@@ -736,9 +740,11 @@ public class ExperimentDetailsFragment extends Fragment
                     TAG,
                     "Delete current experiment in ExperimentDetailsFragment failed",
                     error);
+                /*
                 throw new IllegalStateException(
                     "Delete current experiment in ExperimentDetailsFragment failed",
                     error);
+                 */
               }
             });
   }
@@ -1054,9 +1060,9 @@ public class ExperimentDetailsFragment extends Fragment
     static final int VIEW_TYPE_SKETCH = 8;
 
     private final WeakReference<ExperimentDetailsFragment> parentReference;
-    private Experiment experiment;
-    private List<ExperimentDetailItem> items;
-    private List<Integer> sensorIndices = null;
+      private Experiment experiment;
+      private final List<ExperimentDetailItem> items;
+      private List<Integer> sensorIndices = null;
     private boolean hasRunsOrLabels;
     private ScalarDisplayOptions scalarDisplayOptions;
     private boolean reverseOrder = true;

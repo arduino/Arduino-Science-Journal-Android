@@ -52,9 +52,13 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private View mLoader;
 
+    private String mAccountId;
+
     private String mEmail;
 
     private String mToken;
+
+    private String mFolderId;
 
     private boolean mLoading;
 
@@ -182,6 +186,7 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "ACCOUNT: " + account.getEmail());
         new Thread(() -> {
             try {
+                mAccountId = account.getId();
                 mEmail = account.getEmail();
                 if (mEmail == null || mEmail.length() == 0) {
                     throw new Exception("Account email is null or empty");
@@ -307,9 +312,7 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
                 onCreateFolder(folder);
             }
         });
-        b.setNegativeButton(android.R.string.cancel, (dialog, which) -> {
-            dialog.dismiss();
-        });
+        b.setNegativeButton(android.R.string.cancel, (dialog, which) -> dialog.dismiss());
         b.setCancelable(true);
         b.show();
     }
@@ -352,13 +355,20 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private void goToStep3() {
         final GDriveFile f = mFiles.get(mCheckedFileIndex);
+        mFolderId = f.id;
         mStep3Description.setText(getString(R.string.drive_setup_step_3_description, f.name));
         mStep3Folder.setText(f.name);
         mViewPager.setCurrentItem(2, true);
     }
 
     private void onCompleted() {
-        // TODO save values somewhere
+        try {
+            GDriveShared.saveCredentials(this, mAccountId, mEmail, mToken, mFolderId);
+        } catch (Exception e) {
+            Toast.makeText(this, "ERROR", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        setResult(RESULT_OK);
         finish();
     }
 

@@ -4,7 +4,6 @@ import android.content.Context;
 
 import com.google.android.apps.forscience.whistlepunk.remote.AuthenticationException;
 import com.google.android.apps.forscience.whistlepunk.remote.Authenticator;
-import com.google.android.apps.forscience.whistlepunk.remote.NetworkException;
 
 import java.net.HttpURLConnection;
 
@@ -17,7 +16,7 @@ class GDriveAuthenticator implements Authenticator {
     }
 
     @Override
-    public void addAuthentication(Context context, HttpURLConnection connection) throws NetworkException, AuthenticationException, InterruptedException {
+    public void addAuthentication(Context context, HttpURLConnection connection) {
         connection.setRequestProperty("Authorization", "Bearer " + mToken);
     }
 

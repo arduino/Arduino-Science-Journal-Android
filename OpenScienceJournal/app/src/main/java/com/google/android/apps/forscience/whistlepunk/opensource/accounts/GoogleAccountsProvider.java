@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+
 import androidx.fragment.app.Fragment;
+
 import com.google.android.apps.forscience.whistlepunk.ActivityWithNavigationView;
 import com.google.android.apps.forscience.whistlepunk.accounts.AbstractAccountsProvider;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
@@ -13,9 +15,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.tasks.Task;
-import io.reactivex.Single;
 
 /** An accounts provider which is backed by Google Accounts. */
 @SuppressWarnings("RedundantIfStatement")
@@ -75,12 +74,12 @@ public final class GoogleAccountsProvider extends AbstractAccountsProvider {
   @Override
   public void onLoginAccountsChanged(Intent data) {
     try {
-      Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
-      GoogleSignInAccount account = task.getResult(ApiException.class);
+      //Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
+      //GoogleSignInAccount account = task.getResult(ApiException.class);
       GoogleSignInAccount googleSignInAccount = GoogleSignIn.getLastSignedInAccount(context);
       signInCurrentAccount(googleSignInAccount);
-    } catch (ApiException apiException) {
-      Log.e(TAG, "GoogleSignIn api exception");
+    } catch (Exception e) {
+      Log.e(TAG, "GoogleSignIn api exception", e);
     }
   }
 
