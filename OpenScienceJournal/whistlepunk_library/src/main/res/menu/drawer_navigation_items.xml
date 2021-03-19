@@ -38,8 +38,12 @@
         <item
             android:id="@+id/navigation_item_drive"
             android:icon="@drawable/ic_get_started"
-            android:title="[DEV] Google Drive Test" />
+            android:title="[DEV] GDrive Setup" />
         <!--
+        <item
+            android:id="@+id/navigation_item_signout"
+            android:icon="@drawable/ic_get_started"
+            android:title="[DEV] Sign Out" />
         <item
             android:id="@+id/navigation_item_settings"
             android:icon="@drawable/ic_settings_black_24dp"

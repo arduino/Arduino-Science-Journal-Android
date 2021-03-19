@@ -18,18 +18,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/file_checked"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:contentDescription="@null"
-        android:scaleType="center"
-        android:src="@drawable/ic_drive_checked"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
         android:id="@+id/file_enter"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -38,8 +26,7 @@
         android:src="@drawable/ic_drive_enter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/arduino_gris" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/file_name"

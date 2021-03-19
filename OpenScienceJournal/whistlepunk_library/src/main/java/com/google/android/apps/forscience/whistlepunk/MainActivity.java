@@ -423,6 +423,10 @@ public class MainActivity extends ActivityWithNavigationView {
             startActivity(new Intent(this, OnboardingActivity.class));
         } else if (itemId == R.id.navigation_item_drive) {
             startActivityForResult(new Intent(this, GDriveSyncSetupActivity.class), ActivityRequestCodes.REQUEST_GOOGLE_SIGN_IN);
+            /*
+        } else if (itemId == R.id.navigation_item_signout) {
+            accountsProvider.undoSignIn();
+             */
         } else if (itemId == R.id.navigation_item_activities) {
             try {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://science-journal.arduino.cc/")));

@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -65,8 +64,6 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
     private final List<GDriveFile> mPath = new ArrayList<>();
 
     private final List<GDriveFile> mFiles = new ArrayList<>();
-
-    private int mCheckedFileIndex = -1;
 
     private final FileAdapter mFileAdapter = new FileAdapter();
 
@@ -241,8 +238,6 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private void loadFolder() {
         mFiles.clear();
-        mCheckedFileIndex = -1;
-        mSelectFolderView.setEnabled(false);
         final int index = mPath.size() - 1;
         final String folderId;
         if (index < 0) {
@@ -252,6 +247,7 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
             mNavigationParentText.setVisibility(View.GONE);
             mNavigationParentSep.setVisibility(View.GONE);
             mNavigationCurrentText.setText(R.string.gdrive_root);
+            mSelectFolderView.setEnabled(false);
         } else {
             final GDriveFile f = mPath.get(index);
             folderId = f.id;
@@ -264,6 +260,7 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
             mNavigationParentText.setVisibility(View.VISIBLE);
             mNavigationParentSep.setVisibility(View.VISIBLE);
             mNavigationCurrentText.setText(f.name);
+            mSelectFolderView.setEnabled(true);
         }
         updateFiles();
         showLoader();
@@ -354,7 +351,7 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
     }
 
     private void goToStep3() {
-        final GDriveFile f = mFiles.get(mCheckedFileIndex);
+        GDriveFile f = mPath.get(mPath.size() - 1);
         mFolderId = f.id;
         mStep3Description.setText(getString(R.string.drive_setup_step_3_description, f.name));
         mStep3Folder.setText(f.name);
@@ -454,20 +451,7 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
             final GDriveFile f = mFiles.get(position);
             holder.mNameView.setText(f.name);
             if (f.isFolder) {
-                holder.setChecked(position == mCheckedFileIndex);
-                holder.setOnCheckedListener(() -> {
-                    final int previouslyChecked = mCheckedFileIndex;
-                    mCheckedFileIndex = position;
-                    if (previouslyChecked >= 0) {
-                        notifyItemChanged(previouslyChecked);
-                    }
-                    mSelectFolderView.setEnabled(true);
-                });
-                holder.setOnUncheckedListener(() -> {
-                    mCheckedFileIndex = -1;
-                    mSelectFolderView.setEnabled(false);
-                });
-                holder.setOnEnterClickListener(v -> {
+                holder.itemView.setOnClickListener(v -> {
                     mPath.add(f);
                     loadFolder();
                 });
@@ -484,78 +468,15 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private static class FileViewHolder extends RecyclerView.ViewHolder {
 
-        private boolean mChecked;
-
-        private final ImageView mIconView;
-
-        private final ImageView mCheckedView;
-
-        private final ImageView mEnterView;
-
         private final TextView mNameView;
-
-        private Runnable mCheckedListener;
-
-        private Runnable mUncheckedListener;
 
         private FileViewHolder(@NonNull View itemView) {
             super(itemView);
-            mIconView = itemView.findViewById(R.id.file_icon);
-            mCheckedView = itemView.findViewById(R.id.file_checked);
-            mEnterView = itemView.findViewById(R.id.file_enter);
             mNameView = itemView.findViewById(R.id.file_name);
-            final View.OnClickListener onClick = v -> {
-                setChecked(!mChecked);
-                if (mChecked) {
-                    if (mCheckedListener != null) {
-                        mCheckedListener.run();
-                    }
-                } else {
-                    if (mUncheckedListener != null) {
-                        mUncheckedListener.run();
-                    }
-                }
-            };
-            mIconView.setOnClickListener(onClick);
-            mNameView.setOnClickListener(onClick);
-        }
-
-        private void setOnEnterClickListener(final View.OnClickListener listener) {
-            mEnterView.setOnClickListener(listener);
-        }
-
-        private void setOnCheckedListener(final Runnable listener) {
-            mCheckedListener = listener;
-        }
-
-        private void setOnUncheckedListener(final Runnable listener) {
-            mUncheckedListener = listener;
         }
 
         private void reset() {
-            setChecked(false);
-            setOnEnterClickListener(null);
-            setOnCheckedListener(null);
-            setOnUncheckedListener(null);
-        }
-
-        private void setChecked(boolean checked) {
-            if (checked == mChecked) {
-                return;
-            }
-            mChecked = checked;
-            final int color;
-            if (mChecked) {
-                color = mNameView.getResources().getColor(R.color.arduino_teal_3);
-                mIconView.setVisibility(View.INVISIBLE);
-                mCheckedView.setVisibility(View.VISIBLE);
-            } else {
-                color = mNameView.getResources().getColor(R.color.arduino_gris);
-                mIconView.setVisibility(View.VISIBLE);
-                mCheckedView.setVisibility(View.INVISIBLE);
-            }
-            mEnterView.setColorFilter(color);
-            mNameView.setTextColor(color);
+            mNameView.setText("");
         }
 
     }

@@ -71,11 +71,13 @@ public class GoogleDriveApiImpl implements DriveApi {
             AppAccount appAccount,
             Context applicationContext) {
 
-        final GDriveAccount gda;
+        GDriveAccount gda = null;
         try {
             gda = GDriveShared.getCredentials(applicationContext);
         } catch (Exception ignored) {
-            throw new RuntimeException("GDA is null");
+        }
+        if (gda == null) {
+            throw new RuntimeException("gda is null!");
         }
 
         List<String> scopeList = Arrays.asList(SCOPES);
