@@ -19,4 +19,42 @@
     <string name="drive_create_folder_title">Create New Folder</string>
     <string name="drive_create_folder_action">Create</string>
     <string name="drive_create_folder_def_name">Science Journal</string>
+
+    <string name="error_network">A network error occurred, please check your connection and try again.</string>
+    <string name="error_generic">An error occurred. Please try again.</string>
+    <string name="retry">Retry</string>
+
+    <string name="next">Next</string>
+    <string name="arduino_auth_title_sign_in">Sign in to Arduino</string>
+    <string name="arduino_auth_title_sign_up">Sign up to Arduino</string>
+    <string name="arduino_auth_junior_account">Junior Account</string>
+    <string name="arduino_auth_regular_account">Regular Account</string>
+    <string name="arduino_auth_cta_create_1">Don’t have an account?</string>
+    <string name="arduino_auth_cta_create_2">Create one now</string>
+    <string name="arduino_auth_sign_up_birth_date">Enter your birth date below to continue.</string>
+    <string name="arduino_auth_sign_up_field_birthday">Birthday</string>
+    <string name="arduino_auth_sign_up_field_birthday_info">We need to know this in order to create the right account type for you.</string>
+    <string name="arduino_auth_sign_up_field_email">Enter your email</string>
+    <string name="arduino_auth_sign_up_field_username">Choose a username</string>
+    <string name="arduino_auth_sign_up_field_password">Choose a password</string>
+    <string name="arduino_auth_missing_username">Username is required</string>
+    <string name="arduino_auth_invalid_username">Invalid username</string>
+    <string name="arduino_auth_missing_email">Email is required</string>
+    <string name="arduino_auth_invalid_email">Invalid email</string>
+    <string name="arduino_auth_missing_password">Password is required</string>
+    <string name="arduino_auth_invalid_password">Minimum 8 characters</string>
+    <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+    <string name="arduino_auth_sign_up_tp_alternative">Or sign in with</string>
+    <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
+    <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
+    <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
+    <string name="arduino_auth_sign_up_option_newsletter">I would like to receive the Arduino newsletter.</string>
+    <string name="arduino_auth_sign_up_option_marketing">I would like to receive emails about special deals and commercial offers from Arduino.</string>
+    <string name="arduino_auth_sign_up_option_tracking">I want to see personalised commercial offers from Arduino based on my browsing and purchasing behaviour.</string>
+    <string name="arduino_auth_sign_up_action">Sign up</string>
+    <string name="arduino_auth_sign_up_user_exists">Username or email already registered. Please go back and check.</string>
+    <string name="arduino_auth_title_sign_up_regular_completed">Confirm your email</string>
+    <string name="arduino_auth_sign_up_regular_completed_text_1">We sent you an email to finalize your registration. In order to continue, please follow the instructions and activate your account. Once your account is activated, you can login to Science Journal.</string>
+    <string name="arduino_auth_sign_up_regular_completed_action">Back to Login</string>
+
 </resources>

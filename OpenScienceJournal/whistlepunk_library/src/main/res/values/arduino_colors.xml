@@ -20,4 +20,5 @@
     <color name="arduino_charcoal">#2C353A</color>
     <color name="arduino_sun_flower">#F1C40F</color>
     <color name="arduino_white">#FFFFFF</color>
+    <color name="arduino_error">#DA5A4A</color>
 </resources>

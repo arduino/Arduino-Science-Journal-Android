@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/ArduinoAuth_Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/arduino_auth_title_sign_up"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_intro"
+                style="@style/ArduinoAuth_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/arduino_auth_sign_up_birth_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/il_birth_date"
+                style="@style/ArduinoAuth_TextInputLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/arduino_auth_sign_up_field_birthday"
+                android:minWidth="220dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_intro">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_birth_date"
+                    style="@style/ArduinoAuth_TextInputLayout_EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:id="@+id/il_birth_date_cover"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/il_birth_date"
+                app:layout_constraintEnd_toEndOf="@id/il_birth_date"
+                app:layout_constraintStart_toStartOf="@id/il_birth_date"
+                app:layout_constraintTop_toTopOf="@id/il_birth_date" />
+
+            <ImageView
+                android:id="@+id/iv_info"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_arduino_auth_info"
+                app:layout_constraintBottom_toBottomOf="@id/il_birth_date"
+                app:layout_constraintStart_toEndOf="@id/il_birth_date"
+                app:layout_constraintTop_toTopOf="@id/il_birth_date" />
+
+            <TextView
+                android:id="@+id/btn_next"
+                style="@style/ArduinoAuth_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:enabled="false"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="@string/next"
+                app:layout_constraintEnd_toEndOf="@id/il_birth_date"
+                app:layout_constraintTop_toBottomOf="@id/il_birth_date" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

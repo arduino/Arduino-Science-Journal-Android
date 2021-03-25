@@ -48,6 +48,7 @@ import com.google.android.apps.forscience.whistlepunk.filemetadata.ExperimentLib
 import com.google.android.apps.forscience.whistlepunk.filemetadata.LocalSyncManager;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveSyncSetupActivity;
 import com.google.android.apps.forscience.whistlepunk.project.ExperimentListFragment;
+import com.google.android.apps.forscience.whistlepunk.signin.ArduinoSignInActivity;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -421,6 +422,8 @@ public class MainActivity extends ActivityWithNavigationView {
             selectedItemId = itemId;
         } else if (itemId == R.id.navigation_item_onboarding) {
             startActivity(new Intent(this, OnboardingActivity.class));
+        } else if (itemId == R.id.navigation_item_auth) {
+            startActivityForResult(new Intent(this, ArduinoSignInActivity.class), 4242);
         } else if (itemId == R.id.navigation_item_drive) {
             startActivityForResult(new Intent(this, GDriveSyncSetupActivity.class), ActivityRequestCodes.REQUEST_GOOGLE_SIGN_IN);
             /*

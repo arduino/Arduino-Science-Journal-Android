@@ -36,9 +36,13 @@
             android:icon="@drawable/ic_get_started"
             android:title="@string/navigation_getting_started" />
         <item
+            android:id="@+id/navigation_item_auth"
+            android:icon="@drawable/ic_get_started"
+            android:title="[TEST] Arduino Auth" />
+        <item
             android:id="@+id/navigation_item_drive"
             android:icon="@drawable/ic_get_started"
-            android:title="[DEV] GDrive Setup" />
+            android:title="[TEST] GDrive Setup" />
         <!--
         <item
             android:id="@+id/navigation_item_signout"

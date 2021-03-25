@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config_api_base_url" translatable="false">https://api2.arduino.cc</string>
+    <string name="config_auth_base_url_PROD" translatable="false">https://auth.arduino.cc</string>
+    <string name="config_auth_base_url" translatable="false">https://auth-dev.arduino.cc</string>
+
+    <string name="config_auth0_domain_PROD" translatable="false">login.arduino.cc</string>
+    <string name="config_auth0_domain" translatable="false">login.oniudra.cc</string>
+
+    <string name="config_auth0_client_id" translatable="false">y7mbB8KDw20S4XfXRAKRLgfYT9ao0IPx</string>
+
+    <string name="config_auth0_scope" translatable="false">openid offline_access</string>
+    <string name="config_auth0_audience" translatable="false">https://api.arduino.cc</string>
+    <string name="config_auth0_connection" translatable="false">arduino</string>
+
+    <!--
+    <string name="config_auth0_callback_uri" translatable="false">arduino.sj://login.arduino.cc/android/cc.arduino.sciencejournal/callback</string>
+    -->
+    <string name="config_auth0_callback_uri" translatable="false">arduino.sj://login.arduino.cc/ios/cc.arduino.sciencejournal/callback</string>
+</resources>

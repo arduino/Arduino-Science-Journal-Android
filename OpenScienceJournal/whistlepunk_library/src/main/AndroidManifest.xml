@@ -222,13 +222,26 @@
             android:exported="false"
             android:theme="@style/AppTheme.Onboarding" />
         <activity
+            android:name=".signin.ArduinoSignInActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.ArduinoAuth" />
+        <activity
             android:name=".gdrivesync.GDriveSyncSetupActivity"
             android:exported="false"
-            android:theme="@style/AppTheme.DriveSetup" />
+            android:theme="@style/AppTheme.ArduinoAuth" />
+        <activity
+            android:name="com.google.android.apps.forscience.auth0.Auth0WebSignInSocialActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ArduinoAuth"
+            android:windowSoftInputMode="adjustPan" />
+        <!--
         <activity
             android:name=".accounts.SignInActivity"
             android:exported="false"
             android:theme="@style/AppTheme.SignIn" />
+            -->
         <activity
             android:name=".accounts.OldUserOptionPromptActivity"
             android:exported="false"
