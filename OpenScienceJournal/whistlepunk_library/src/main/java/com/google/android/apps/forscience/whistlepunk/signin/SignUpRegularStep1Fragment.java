@@ -160,7 +160,7 @@ public class SignUpRegularStep1Fragment extends AuthBaseFragment {
     }
 
     private void launchGitHubSignUp() {
-        Commons.doGitHubSignIn(getContext(), new Commons.SocialSignInCallback() {
+        Commons.doGitHubSignIn(mContext, new Commons.SocialSignInCallback() {
             @Override
             public void onError(Exception exception) {
                 toast(R.string.error_generic);
@@ -178,7 +178,7 @@ public class SignUpRegularStep1Fragment extends AuthBaseFragment {
     }
 
     private void launchGoogleSignUp() {
-        Commons.doGoogleSignIn(getContext(), new Commons.SocialSignInCallback() {
+        Commons.doGoogleSignIn(mContext, new Commons.SocialSignInCallback() {
             @Override
             public void onError(Exception exception) {
                 toast(R.string.error_generic);
@@ -196,7 +196,7 @@ public class SignUpRegularStep1Fragment extends AuthBaseFragment {
     }
 
     private void launchAppleSignUp() {
-        Commons.doAppleSignIn(getContext(), new Commons.SocialSignInCallback() {
+        Commons.doAppleSignIn(mContext, new Commons.SocialSignInCallback() {
             @Override
             public void onError(Exception exception) {
                 toast(R.string.error_generic);

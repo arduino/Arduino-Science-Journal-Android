@@ -8,13 +8,13 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
-class Auth0MFATokenCall extends Auth0Call<Auth0Token> {
+public class Auth0MFATokenCall extends Auth0Call<Auth0Token> {
 
     private final String mMfaToken;
 
     private final String mOtp;
 
-    Auth0MFATokenCall(final @NonNull Context context, final @NonNull String mfaToken, final @NonNull String otp) {
+    public Auth0MFATokenCall(final @NonNull Context context, final @NonNull String mfaToken, final @NonNull String otp) {
         super(context);
         mMfaToken = mfaToken;
         mOtp = otp;

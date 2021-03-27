@@ -8,11 +8,11 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
-class Auth0PasswordResetCall extends Auth0Call<Boolean> {
+public class Auth0PasswordResetCall extends Auth0Call<Boolean> {
 
     private final String mEmail;
 
-    Auth0PasswordResetCall(final @NonNull Context context, final @NonNull String email) {
+    public Auth0PasswordResetCall(final @NonNull Context context, final @NonNull String email) {
         super(context);
         mEmail = email;
     }

@@ -328,6 +328,16 @@
         <item name="android:drawablePadding">5dp</item>
     </style>
 
+    <style name="ArduinoAuth_Text.ErrorBox">
+        <item name="android:background">@drawable/arduino_auth_errorbox_bg</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:drawableStart">@drawable/ic_arduino_auth_error</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
     <style name="ArduinoAuth_Text.BrowseNavigationBar">
         <item name="android:fontFamily">@font/open_sans_bold</item>
         <item name="android:textColor">@color/arduino_jet</item>

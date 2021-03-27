@@ -9,208 +9,203 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp">
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ArduinoAuth_Text.Title"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/arduino_auth_title_sign_up"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/tv_title"
-                style="@style/ArduinoAuth_Text.Title"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/il_email"
+            style="@style/ArduinoAuth_TextInputLayout"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:hint="@string/arduino_auth_sign_up_field_email"
+            android:minWidth="280dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                style="@style/ArduinoAuth_TextInputLayout_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_error_email"
+            style="@style/ArduinoAuth_Text.Error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/il_email"
+            app:layout_constraintStart_toStartOf="@id/il_email"
+            app:layout_constraintTop_toBottomOf="@id/il_email" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/il_username"
+            style="@style/ArduinoAuth_TextInputLayout"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/arduino_auth_sign_up_field_username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_error_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_username"
+                style="@style/ArduinoAuth_TextInputLayout_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords|textNoSuggestions" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_error_username"
+            style="@style/ArduinoAuth_Text.Error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/il_username"
+            app:layout_constraintStart_toStartOf="@id/il_username"
+            app:layout_constraintTop_toBottomOf="@id/il_username" />
+
+        <ImageView
+            android:id="@+id/iv_username_info"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_arduino_auth_info"
+            app:layout_constraintBottom_toBottomOf="@id/il_username"
+            app:layout_constraintStart_toEndOf="@id/il_username"
+            app:layout_constraintTop_toTopOf="@id/il_username" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/il_password"
+            style="@style/ArduinoAuth_TextInputLayout"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/arduino_auth_sign_up_field_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_error_username">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                style="@style/ArduinoAuth_TextInputLayout_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_error_password"
+            style="@style/ArduinoAuth_Text.Error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@id/il_password"
+            app:layout_constraintStart_toStartOf="@id/il_password"
+            app:layout_constraintTop_toBottomOf="@id/il_password" />
+
+        <TextView
+            android:id="@+id/btn_next"
+            style="@style/ArduinoAuth_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:enabled="false"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/next"
+            app:layout_constraintEnd_toEndOf="@id/tv_error_password"
+            app:layout_constraintTop_toBottomOf="@id/tv_error_password" />
+
+        <View
+            android:id="@+id/v_sep_1"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/arduino_smoke"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_next" />
+
+        <TextView
+            android:id="@+id/tv_text_1"
+            style="@style/ArduinoAuth_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/arduino_auth_sign_up_tp_alternative"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v_sep_1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_text_1">
+
+            <ImageView
+                android:id="@+id/iv_tp_github"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:text="@string/arduino_auth_title_sign_up"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_arduino_auth_github"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/il_email"
-                style="@style/ArduinoAuth_TextInputLayout"
-                android:layout_width="270dp"
+            <ImageView
+                android:id="@+id/iv_tp_google"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
-                android:hint="@string/arduino_auth_sign_up_field_email"
-                android:minWidth="280dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_title">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_email"
-                    style="@style/ArduinoAuth_TextInputLayout_EditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:imeOptions="actionNext"
-                    android:inputType="textEmailAddress" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <TextView
-                android:id="@+id/tv_error_email"
-                style="@style/ArduinoAuth_Text.Error"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:visibility="invisible"
-                app:layout_constraintEnd_toEndOf="@id/il_email"
-                app:layout_constraintStart_toStartOf="@id/il_email"
-                app:layout_constraintTop_toBottomOf="@id/il_email" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/il_username"
-                style="@style/ArduinoAuth_TextInputLayout"
-                android:layout_width="270dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:hint="@string/arduino_auth_sign_up_field_username"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_error_email">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_username"
-                    style="@style/ArduinoAuth_TextInputLayout_EditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:imeOptions="actionNext"
-                    android:inputType="textCapWords|textNoSuggestions" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <TextView
-                android:id="@+id/tv_error_username"
-                style="@style/ArduinoAuth_Text.Error"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:visibility="invisible"
-                app:layout_constraintEnd_toEndOf="@id/il_username"
-                app:layout_constraintStart_toStartOf="@id/il_username"
-                app:layout_constraintTop_toBottomOf="@id/il_username" />
+                android:layout_marginStart="20dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_arduino_auth_google"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_tp_github"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/iv_username_info"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_marginStart="10dp"
+                android:id="@+id/iv_tp_apple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
                 android:contentDescription="@null"
-                android:scaleType="centerInside"
-                android:src="@drawable/ic_arduino_auth_info"
-                app:layout_constraintBottom_toBottomOf="@id/il_username"
-                app:layout_constraintStart_toEndOf="@id/il_username"
-                app:layout_constraintTop_toTopOf="@id/il_username" />
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/il_password"
-                style="@style/ArduinoAuth_TextInputLayout"
-                android:layout_width="270dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:hint="@string/arduino_auth_sign_up_field_password"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_error_username">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/et_password"
-                    style="@style/ArduinoAuth_TextInputLayout_EditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:imeOptions="actionGo"
-                    android:inputType="textPassword" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <TextView
-                android:id="@+id/tv_error_password"
-                style="@style/ArduinoAuth_Text.Error"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
-                android:visibility="invisible"
-                app:layout_constraintEnd_toEndOf="@id/il_password"
-                app:layout_constraintStart_toStartOf="@id/il_password"
-                app:layout_constraintTop_toBottomOf="@id/il_password" />
-
-            <TextView
-                android:id="@+id/btn_next"
-                style="@style/ArduinoAuth_Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:enabled="false"
-                android:paddingStart="30dp"
-                android:paddingEnd="30dp"
-                android:text="@string/next"
-                app:layout_constraintEnd_toEndOf="@id/tv_error_password"
-                app:layout_constraintTop_toBottomOf="@id/tv_error_password" />
-
-            <View
-                android:id="@+id/v_sep_1"
-                android:layout_width="300dp"
-                android:layout_height="1dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/arduino_smoke"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_next" />
-
-            <TextView
-                android:id="@+id/tv_text_1"
-                style="@style/ArduinoAuth_Text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/arduino_auth_sign_up_tp_alternative"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/v_sep_1" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_text_1">
-
-                <ImageView
-                    android:id="@+id/iv_tp_github"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@null"
-                    android:src="@drawable/ic_arduino_auth_github"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/iv_tp_google"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:contentDescription="@null"
-                    android:src="@drawable/ic_arduino_auth_google"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/iv_tp_github"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/iv_tp_apple"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:contentDescription="@null"
-                    android:src="@drawable/ic_arduino_auth_apple"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/iv_tp_google"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                android:src="@drawable/ic_arduino_auth_apple"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_tp_google"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

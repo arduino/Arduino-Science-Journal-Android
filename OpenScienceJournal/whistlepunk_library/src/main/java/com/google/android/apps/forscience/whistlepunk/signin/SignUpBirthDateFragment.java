@@ -40,7 +40,7 @@ public class SignUpBirthDateFragment extends AuthBaseFragment {
         final View btnNext = view.findViewById(R.id.btn_next);
         view.findViewById(R.id.il_birth_date_cover).setOnClickListener(v1 -> {
             final DatePickerDialog d = new DatePickerDialog(
-                    getContext(),
+                    mContext,
                     (v2, year, monthOfYear, dayOfMonth) -> {
                         mCalendar.set(Calendar.YEAR, year);
                         mCalendar.set(Calendar.MONTH, monthOfYear);

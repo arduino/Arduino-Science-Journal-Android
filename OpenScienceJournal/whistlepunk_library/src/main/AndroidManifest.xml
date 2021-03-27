@@ -222,9 +222,10 @@
             android:exported="false"
             android:theme="@style/AppTheme.Onboarding" />
         <activity
-            android:name=".signin.ArduinoSignInActivity"
+            android:name=".signin.ArduinoAuthActivity"
             android:exported="false"
-            android:theme="@style/AppTheme.ArduinoAuth" />
+            android:theme="@style/AppTheme.ArduinoAuth"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".gdrivesync.GDriveSyncSetupActivity"
             android:exported="false"

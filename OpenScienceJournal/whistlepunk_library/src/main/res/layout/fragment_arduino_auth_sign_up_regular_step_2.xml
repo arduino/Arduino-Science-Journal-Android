@@ -7,172 +7,167 @@
     android:scrollbars="none">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+        android:layout_width="290dp"
         android:layout_height="wrap_content"
-        android:padding="20dp">
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="290dp"
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ArduinoAuth_Text.Title"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/arduino_auth_title_sign_up"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/tv_title"
-                style="@style/ArduinoAuth_Text.Title"
-                android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/options_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:text="@string/arduino_auth_title_sign_up"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:orientation="horizontal">
 
-            <LinearLayout
-                android:id="@+id/options_container"
-                android:layout_width="0dp"
+                <CheckBox
+                    android:id="@+id/cb_option_privacy_and_terms"
+                    style="@style/ArduinoAuth_CheckBox"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:checked="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_option_privacy_and_terms"
+                    style="@style/ArduinoAuth_Text.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="start|top"
+                    android:labelFor="@id/cb_option_privacy_and_terms"
+                    android:text="@string/arduino_auth_sign_up_option_privacy_and_terms"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cb_option_privacy_and_terms"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_title">
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
+                <CheckBox
+                    android:id="@+id/cb_option_newsletter"
+                    style="@style/ArduinoAuth_CheckBox"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:checked="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_option_newsletter"
+                    style="@style/ArduinoAuth_Text.Small"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="start|top"
+                    android:labelFor="@id/cb_option_newsletter"
+                    android:text="@string/arduino_auth_sign_up_option_newsletter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cb_option_newsletter"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <CheckBox
-                        android:id="@+id/cb_option_privacy_and_terms"
-                        style="@style/ArduinoAuth_CheckBox"
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:checked="false"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/tv_option_privacy_and_terms"
-                        style="@style/ArduinoAuth_Text.Small"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_weight="1"
-                        android:gravity="start|top"
-                        android:labelFor="@id/cb_option_privacy_and_terms"
-                        android:text="@string/arduino_auth_sign_up_option_privacy_and_terms"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/cb_option_privacy_and_terms"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:id="@+id/cb_option_newsletter"
-                        style="@style/ArduinoAuth_CheckBox"
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:checked="false"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/tv_option_newsletter"
-                        style="@style/ArduinoAuth_Text.Small"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_weight="1"
-                        android:gravity="start|top"
-                        android:labelFor="@id/cb_option_newsletter"
-                        android:text="@string/arduino_auth_sign_up_option_newsletter"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/cb_option_newsletter"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:id="@+id/cb_option_marketing"
-                        style="@style/ArduinoAuth_CheckBox"
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:checked="false"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/tv_option_marketing"
-                        style="@style/ArduinoAuth_Text.Small"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_weight="1"
-                        android:gravity="start|top"
-                        android:labelFor="@id/cb_option_marketing"
-                        android:text="@string/arduino_auth_sign_up_option_marketing"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/cb_option_marketing"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:id="@+id/cb_option_tracking"
-                        style="@style/ArduinoAuth_CheckBox"
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:checked="false"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/tv_option_tracking"
-                        style="@style/ArduinoAuth_Text.Small"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_weight="1"
-                        android:gravity="start|top"
-                        android:labelFor="@id/cb_option_tracking"
-                        android:text="@string/arduino_auth_sign_up_option_tracking"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@id/cb_option_tracking"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/btn_next"
-                style="@style/ArduinoAuth_Button"
-                android:layout_width="wrap_content"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:enabled="false"
-                android:paddingStart="30dp"
-                android:paddingEnd="30dp"
-                android:text="@string/arduino_auth_sign_up_action"
-                app:layout_constraintEnd_toEndOf="@id/options_container"
-                app:layout_constraintTop_toBottomOf="@id/options_container" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_option_marketing"
+                    style="@style/ArduinoAuth_CheckBox"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:checked="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_option_marketing"
+                    style="@style/ArduinoAuth_Text.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="start|top"
+                    android:labelFor="@id/cb_option_marketing"
+                    android:text="@string/arduino_auth_sign_up_option_marketing"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cb_option_marketing"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_option_tracking"
+                    style="@style/ArduinoAuth_CheckBox"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:checked="false"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_option_tracking"
+                    style="@style/ArduinoAuth_Text.Small"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:gravity="start|top"
+                    android:labelFor="@id/cb_option_tracking"
+                    android:text="@string/arduino_auth_sign_up_option_tracking"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cb_option_tracking"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_next"
+            style="@style/ArduinoAuth_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:enabled="false"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/arduino_auth_sign_up_action"
+            app:layout_constraintEnd_toEndOf="@id/options_container"
+            app:layout_constraintTop_toBottomOf="@id/options_container" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

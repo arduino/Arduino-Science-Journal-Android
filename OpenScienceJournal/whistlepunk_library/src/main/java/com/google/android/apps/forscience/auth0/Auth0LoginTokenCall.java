@@ -11,7 +11,7 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
-class Auth0LoginTokenCall extends Auth0Call<Auth0LoginTokenCall.Response> {
+public class Auth0LoginTokenCall extends Auth0Call<Auth0LoginTokenCall.Response> {
 
     private final String mAudience;
 
@@ -21,7 +21,7 @@ class Auth0LoginTokenCall extends Auth0Call<Auth0LoginTokenCall.Response> {
 
     private final String mPassword;
 
-    Auth0LoginTokenCall(final @NonNull Context context, final @NonNull String username, final @NonNull String password) {
+    public Auth0LoginTokenCall(final @NonNull Context context, final @NonNull String username, final @NonNull String password) {
         super(context);
         mAudience = context.getString(R.string.config_auth0_audience);
         mScope = context.getString(R.string.config_auth0_scope);
@@ -86,11 +86,11 @@ class Auth0LoginTokenCall extends Auth0Call<Auth0LoginTokenCall.Response> {
         }
     }
 
-    static class Response {
+    public static class Response {
 
-        String mfa;
+        public String mfa;
 
-        Auth0Token token;
+        public Auth0Token token;
 
     }
 

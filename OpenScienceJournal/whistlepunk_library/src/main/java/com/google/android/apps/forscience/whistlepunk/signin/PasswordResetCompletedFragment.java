@@ -10,16 +10,20 @@ import androidx.annotation.Nullable;
 
 import com.google.android.apps.forscience.whistlepunk.R;
 
-public class AccountTypeFragment extends AuthBaseFragment {
+public class PasswordResetCompletedFragment extends AuthBaseFragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_arduino_auth_account_type, container, false);
-        view.findViewById(R.id.btn_junior).setOnClickListener(v -> alert("WORK IN PROGRESS"));
-        view.findViewById(R.id.btn_regular).setOnClickListener(v -> startFragment(SignInRegularFragment.class, null));
-        view.findViewById(R.id.tv_create_2).setOnClickListener(v -> startFragment(SignUpBirthDateFragment.class, null));
+        final View view = inflater.inflate(R.layout.fragment_arduino_auth_password_reset_completed, container, false);
+        view.findViewById(R.id.btn_completed).setOnClickListener(v -> goBegin());
         return view;
+    }
+
+    @Override
+    public boolean onBackPressed() {
+        goBegin();
+        return true;
     }
 
 }

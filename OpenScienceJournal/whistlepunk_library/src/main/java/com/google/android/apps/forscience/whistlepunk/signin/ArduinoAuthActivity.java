@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -16,7 +17,7 @@ import com.google.android.apps.forscience.whistlepunk.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArduinoSignInActivity extends AppCompatActivity implements AuthBaseFragment.Listener {
+public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFragment.Listener {
 
     private static final String LOG_TAG = "ArduinoSignInActivity";
 
@@ -36,8 +37,8 @@ public class ArduinoSignInActivity extends AppCompatActivity implements AuthBase
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arduino_auth);
-        findViewById(R.id.drive_header_action_close).setOnClickListener(v -> finish());
-        mBack = findViewById(R.id.drive_header_action_back);
+        findViewById(R.id.auth_header_action_close).setOnClickListener(v -> finish());
+        mBack = findViewById(R.id.auth_header_action_back);
         mBack.setOnClickListener(v -> onBackPressed());
         mBlocker = findViewById(R.id.blocker);
         mFragmentManager = getSupportFragmentManager();
@@ -106,7 +107,11 @@ public class ArduinoSignInActivity extends AppCompatActivity implements AuthBase
     @Override
     public void onAuthCompleted(final Auth0Token token) {
         Log.i(LOG_TAG, "TOKEN: " + token);
-        // TODO set result
+        final AlertDialog.Builder b = new AlertDialog.Builder(this);
+        b.setMessage("LOGIN COMPLETED! SUCCESS!");
+        b.setCancelable(false);
+        b.setPositiveButton(android.R.string.ok, (dialogInterface, i) -> dialogInterface.dismiss());
+        b.show();
         finish();
     }
 

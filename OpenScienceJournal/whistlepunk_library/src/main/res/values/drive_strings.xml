@@ -26,6 +26,11 @@
 
     <string name="next">Next</string>
     <string name="arduino_auth_title_sign_in">Sign in to Arduino</string>
+    <string name="arduino_auth_sign_in_field_username">Username or email</string>
+    <string name="arduino_auth_sign_in_field_password">Password</string>
+    <string name="arduino_auth_password_reset_cta">Forgot your password?</string>
+    <string name="arduino_auth_sign_in_failure">Wrong email/username or password</string>
+    <string name="arduino_auth_sign_in_action">Sign in</string>
     <string name="arduino_auth_title_sign_up">Sign up to Arduino</string>
     <string name="arduino_auth_junior_account">Junior Account</string>
     <string name="arduino_auth_regular_account">Regular Account</string>
@@ -56,5 +61,18 @@
     <string name="arduino_auth_title_sign_up_regular_completed">Confirm your email</string>
     <string name="arduino_auth_sign_up_regular_completed_text_1">We sent you an email to finalize your registration. In order to continue, please follow the instructions and activate your account. Once your account is activated, you can login to Science Journal.</string>
     <string name="arduino_auth_sign_up_regular_completed_action">Back to Login</string>
+    <string name="arduino_auth_title_password_reset_1">Recover your account</string>
+    <string name="arduino_auth_password_reset_1_text_1">Enter the email address associated with your account below.</string>
+    <string name="arduino_auth_password_reset_1_field_email">Insert your email</string>
+    <string name="arduino_auth_password_reset_1_action">Recover</string>
+    <string name="arduino_auth_title_password_reset_completed">Email sent</string>
+    <string name="arduino_auth_password_reset_completed_text_1">Check your email, we just sent you a link to complete the reset of your password.</string>
+    <string name="arduino_auth_password_reset_completed_action">Back to Login</string>
+    <string name="arduino_auth_title_mfa">2-Step Verification</string>
+    <string name="arduino_auth_mfa_text_1">Authenticator App</string>
+    <string name="arduino_auth_mfa_text_2">This extra step shows that it’s really you trying to sign in. Get a verification code from the Authenticator app.</string>
+    <string name="arduino_auth_mfa_field_otp">Enter code</string>
+    <string name="arduino_auth_mfa_failure">Invalid code, please try again</string>
+    <string name="arduino_auth_mfa_cta">Verify</string>
 
 </resources>

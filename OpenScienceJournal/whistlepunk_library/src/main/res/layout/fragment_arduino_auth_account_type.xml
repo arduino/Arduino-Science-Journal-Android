@@ -9,104 +9,98 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp">
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@null"
+            android:src="@drawable/auth_arduino_logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/iv_logo"
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/ArduinoAuth_Text.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/arduino_auth_title_sign_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+
+        <TextView
+            android:id="@+id/btn_junior"
+            style="@style/ArduinoAuth_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:minWidth="290dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/arduino_auth_junior_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+        <TextView
+            android:id="@+id/btn_regular"
+            style="@style/ArduinoAuth_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:minWidth="290dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/arduino_auth_regular_account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_junior" />
+
+        <View
+            android:id="@+id/v_sep1"
+            android:layout_width="270dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="64dp"
+            android:background="@color/arduino_smoke"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_regular" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/v_sep1">
+
+            <TextView
+                android:id="@+id/tv_create_1"
+                style="@style/ArduinoAuth_Text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@null"
-                android:src="@drawable/auth_arduino_logo"
-                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/arduino_auth_cta_create_1"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tv_title"
-                style="@style/ArduinoAuth_Text.Title"
+                android:id="@+id/tv_create_2"
+                style="@style/ArduinoAuth_Text.Action"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/arduino_auth_title_sign_in"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/iv_logo" />
-
-            <TextView
-                android:id="@+id/btn_junior"
-                style="@style/ArduinoAuth_Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="45dp"
-                android:minWidth="290dp"
-                android:paddingStart="30dp"
-                android:paddingEnd="30dp"
-                android:text="@string/arduino_auth_junior_account"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_title" />
-
-            <TextView
-                android:id="@+id/btn_regular"
-                style="@style/ArduinoAuth_Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:minWidth="290dp"
-                android:paddingStart="30dp"
-                android:paddingEnd="30dp"
-                android:text="@string/arduino_auth_regular_account"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_junior" />
-
-            <View
-                android:id="@+id/v_sep1"
-                android:layout_width="270dp"
-                android:layout_height="1dp"
-                android:layout_marginTop="64dp"
-                android:background="@color/arduino_smoke"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/btn_regular" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/v_sep1">
-
-                <TextView
-                    android:id="@+id/tv_create_1"
-                    style="@style/ArduinoAuth_Text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/arduino_auth_cta_create_1"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/tv_create_2"
-                    style="@style/ArduinoAuth_Text.Action"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="7.5dp"
-                    android:text="@string/arduino_auth_cta_create_2"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/tv_create_1"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_marginStart="7.5dp"
+                android:text="@string/arduino_auth_cta_create_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_create_1"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

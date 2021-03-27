@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/arduino_clouds"
-    tools:context=".signin.ArduinoSignInActivity">
+    tools:context=".signin.ArduinoAuthActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/drive_footer"
+        android:id="@+id/auth_footer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/arduino_white"
@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/drive_footer_split"
+            android:id="@+id/auth_footer_split"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -33,7 +33,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/drive_terms"
+            android:id="@+id/auth_terms"
             style="@style/ArduinoAuth_Text.Footer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,12 +41,12 @@
             android:layout_marginBottom="14dp"
             android:text="@string/arduino_auth_terms"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/drive_footer_split"
+            app:layout_constraintEnd_toStartOf="@id/auth_footer_split"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/drive_privacy"
+            android:id="@+id/auth_privacy"
             style="@style/ArduinoAuth_Text.Footer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,21 +55,12 @@
             android:text="@string/arduino_auth_privacy"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/drive_footer_split"
+            app:layout_constraintStart_toEndOf="@id/auth_footer_split"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <FrameLayout
-        android:id="@+id/fragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/drive_footer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/drive_header"
+        android:id="@+id/auth_header"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:clipChildren="false"
@@ -79,7 +70,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/drive_header_action_back"
+            android:id="@+id/auth_header_action_back"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="10dp"
@@ -94,7 +85,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/drive_header_action_close"
+            android:id="@+id/auth_header_action_close"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginEnd="10dp"
@@ -114,33 +105,19 @@
             android:src="@drawable/auth_arduino_logo"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/drive_header_action_close"
-            app:layout_constraintStart_toEndOf="@id/drive_header_action_back"
+            app:layout_constraintEnd_toStartOf="@id/auth_header_action_close"
+            app:layout_constraintStart_toEndOf="@id/auth_header_action_back"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/drive_loader"
+    <FrameLayout
+        android:id="@+id/fragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="#80FFFFFF"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/auth_footer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:indeterminate="true"
-            android:indeterminateTint="@color/arduino_teal_3"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:targetApi="lollipop" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@id/auth_header" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/blocker"

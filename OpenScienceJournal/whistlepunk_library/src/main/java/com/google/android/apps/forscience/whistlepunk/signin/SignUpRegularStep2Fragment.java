@@ -14,7 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -67,7 +66,7 @@ public class SignUpRegularStep2Fragment extends AuthBaseFragment {
         setBlockUI(true);
         hideSoftKeyboard();
         new Auth0SignUpCall(
-                getContext(),
+                mContext,
                 username,
                 email,
                 password,
@@ -86,7 +85,7 @@ public class SignUpRegularStep2Fragment extends AuthBaseFragment {
                     if (response.code == Auth0SignUpCall.Response.Code.USER_EXISTS) {
                         alert(R.string.arduino_auth_sign_up_user_exists);
                     } else {
-                        Toast.makeText(mContext, R.string.error_generic, Toast.LENGTH_LONG).show();
+                        toast(R.string.error_generic);
                     }
                 }
             }
@@ -94,13 +93,13 @@ public class SignUpRegularStep2Fragment extends AuthBaseFragment {
             @Override
             public void onFailure(Exception failure) {
                 setBlockUI(false);
-                Toast.makeText(mContext, R.string.error_generic, Toast.LENGTH_LONG).show();
+                toast(R.string.error_generic);
             }
 
             @Override
             public boolean onNetworkError() {
                 setBlockUI(false);
-                Toast.makeText(mContext, R.string.error_network, Toast.LENGTH_LONG).show();
+                toast(R.string.error_network);
                 return true;
             }
         });
