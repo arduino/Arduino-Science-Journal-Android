@@ -227,4 +227,7 @@
 
     <bool name="is_tablet">false</bool>
     <bool name="is_tablet_onboarding">false</bool>
+
+    <dimen name="arduino_auth_sign_up_junior_avatar_side">80dp</dimen>
+    <dimen name="arduino_auth_sign_up_junior_avatar_side_mask_h">30dp</dimen>
 </resources>

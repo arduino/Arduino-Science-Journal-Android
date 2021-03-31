@@ -41,9 +41,14 @@ public class SignUpAdultStep1Fragment extends AuthBaseFragment {
             return false;
         });
         mNextButton.setOnClickListener(v -> onCompleted());
-        view.findViewById(R.id.iv_tp_github).setOnClickListener(v -> launchGitHubSignUp());
-        view.findViewById(R.id.iv_tp_google).setOnClickListener(v -> launchGoogleSignUp());
-        view.findViewById(R.id.iv_tp_apple).setOnClickListener(v -> launchAppleSignUp());
+        final String flow = getArguments().getString("flow");
+        if ("teen".equals(flow)) {
+            view.findViewById(R.id.l_tp).setVisibility(View.GONE);
+        } else {
+            view.findViewById(R.id.iv_tp_github).setOnClickListener(v -> launchGitHubSignUp());
+            view.findViewById(R.id.iv_tp_google).setOnClickListener(v -> launchGoogleSignUp());
+            view.findViewById(R.id.iv_tp_apple).setOnClickListener(v -> launchAppleSignUp());
+        }
         final TextView tvEmailError = view.findViewById(R.id.tv_error_email);
         final TextView tvUsernameError = view.findViewById(R.id.tv_error_username);
         final TextView tvPasswordError = view.findViewById(R.id.tv_error_password);
@@ -140,11 +145,16 @@ public class SignUpAdultStep1Fragment extends AuthBaseFragment {
     }
 
     private void onCompleted() {
-        final Bundle args = new Bundle();
+        final Bundle args = getArguments();
+        final String flow = args.getString("flow");
         args.putString("email", getInputEmail());
         args.putString("username", getInputUsername());
         args.putString("password", getInputPassword());
-        startFragment(SignUpAdultStep2Fragment.class, args);
+        if ("teen".equals(flow)) {
+            startFragment(SignUpJuniorStep2Fragment.class, args);
+        } else {
+            startFragment(SignUpAdultStep2Fragment.class, args);
+        }
     }
 
     private String getInputUsername() {

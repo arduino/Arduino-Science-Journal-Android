@@ -6,6 +6,8 @@
 
     <string name="config_auth0_domain_PROD" translatable="false">login.arduino.cc</string>
     <string name="config_auth0_domain" translatable="false">login.oniudra.cc</string>
+    <string name="config_arduino_api_domain_PROD" translatable="false">api.arduino.cc</string>
+    <string name="config_arduino_api_domain" translatable="false">api-dev.arduino.cc</string>
 
     <string name="config_auth0_client_id" translatable="false">y7mbB8KDw20S4XfXRAKRLgfYT9ao0IPx</string>
 

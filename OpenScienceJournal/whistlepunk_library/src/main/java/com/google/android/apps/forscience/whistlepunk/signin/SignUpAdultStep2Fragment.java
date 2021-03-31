@@ -18,6 +18,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.google.android.apps.forscience.auth0.Auth0SignUpAdultCall;
 import com.google.android.apps.forscience.auth0.Auth0SignUpCall;
 import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.remote.Callback;
@@ -59,17 +60,19 @@ public class SignUpAdultStep2Fragment extends AuthBaseFragment {
         final String email = args.getString("email");
         final String username = args.getString("username");
         final String password = args.getString("password");
+        final String birthday = args.getString("birthday");
         final boolean optionPrivacyAndTerms = mOptionPrivacyAndTermsCheckBox.isChecked();
         final boolean optionNewsletter = mOptionNewsletterCheckBox.isChecked();
         final boolean optionMarketing = mOptionMarketingCheckBox.isChecked();
         final boolean optionTracking = mOptionTrackingCheckBox.isChecked();
         setBlockUI(true);
         hideSoftKeyboard();
-        new Auth0SignUpCall(
+        new Auth0SignUpAdultCall(
                 mContext,
                 username,
                 email,
                 password,
+                birthday,
                 optionPrivacyAndTerms,
                 optionPrivacyAndTerms,
                 optionNewsletter,

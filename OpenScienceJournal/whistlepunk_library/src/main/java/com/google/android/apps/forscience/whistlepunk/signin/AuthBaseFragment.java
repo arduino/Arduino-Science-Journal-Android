@@ -56,6 +56,12 @@ abstract class AuthBaseFragment extends BaseFragment {
         }
     }
 
+    protected final void goClose() {
+        if (mListener != null) {
+            mListener.onClose();
+        }
+    }
+
     protected final void notifyAuthCompleted(final Auth0Token token) {
         if (mListener != null) {
             mListener.onAuthCompleted(token);
@@ -73,6 +79,8 @@ abstract class AuthBaseFragment extends BaseFragment {
         void onBack();
 
         void onBegin();
+
+        void onClose();
 
         void onAuthCompleted(final Auth0Token token);
 

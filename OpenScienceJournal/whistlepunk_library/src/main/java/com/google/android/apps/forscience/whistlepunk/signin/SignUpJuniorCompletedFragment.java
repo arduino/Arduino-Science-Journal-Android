@@ -4,19 +4,22 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.google.android.apps.forscience.whistlepunk.R;
 
-public class SignUpAdultCompletedFragment extends AuthBaseFragment {
+public class SignUpJuniorCompletedFragment extends AuthBaseFragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_arduino_auth_sign_up_adult_completed, container, false);
-        view.findViewById(R.id.btn_completed).setOnClickListener(v -> goBegin());
+        final View view = inflater.inflate(R.layout.fragment_arduino_auth_sign_up_junior_completed, container, false);
+        final TextView tv = view.findViewById(R.id.tv_text);
+        tv.setText(getString(R.string.arduino_auth_sign_up_junior_completed_text, getArguments().getString("email", "")));
+        view.findViewById(R.id.btn_completed).setOnClickListener(v -> goClose());
         return view;
     }
 
@@ -28,7 +31,7 @@ public class SignUpAdultCompletedFragment extends AuthBaseFragment {
 
     @Override
     public boolean onBackPressed() {
-        goBegin();
+        goClose();
         return true;
     }
 

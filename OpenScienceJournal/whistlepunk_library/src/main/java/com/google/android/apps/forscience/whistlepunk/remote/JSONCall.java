@@ -59,6 +59,9 @@ public abstract class JSONCall<R, E> extends HttpCall<R, E> {
                 } else if (obj instanceof JSONArray) {
                     response = new JSONObject();
                     response.put("response", obj);
+                } else if (obj instanceof String) {
+                    response = new JSONObject();
+                    response.put("response", obj);
                 } else {
                     throw new Exception("unsupported JSON response type in: " + obj);
                 }

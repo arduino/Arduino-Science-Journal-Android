@@ -24,10 +24,11 @@
     <string name="error_generic">An error occurred. Please try again.</string>
     <string name="retry">Retry</string>
 
-    <string name="next">Next</string>
+    <string name="arduino_auth_next">Next</string>
+    <string name="arduino_auth_username">Username</string>
+    <string name="arduino_auth_password">Password</string>
     <string name="arduino_auth_title_sign_in">Sign in to Arduino</string>
     <string name="arduino_auth_sign_in_field_username">Username or email</string>
-    <string name="arduino_auth_sign_in_field_password">Password</string>
     <string name="arduino_auth_password_reset_cta">Forgot your password?</string>
     <string name="arduino_auth_sign_in_failure">Wrong email/username or password</string>
     <string name="arduino_auth_sign_in_action">Sign in</string>
@@ -46,6 +47,7 @@
     <string name="arduino_auth_invalid_username">Invalid username</string>
     <string name="arduino_auth_missing_email">Email is required</string>
     <string name="arduino_auth_invalid_email">Invalid email</string>
+    <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
     <string name="arduino_auth_missing_password">Password is required</string>
     <string name="arduino_auth_invalid_password">Minimum 8 characters</string>
     <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
@@ -74,5 +76,16 @@
     <string name="arduino_auth_mfa_field_otp">Enter code</string>
     <string name="arduino_auth_mfa_failure">Invalid code, please try again</string>
     <string name="arduino_auth_mfa_cta">Verify</string>
+    <string name="arduino_auth_title_sign_up_junior_step_1">Create a Junior account</string>
+    <string name="arduino_auth_sign_up_junior_step_1_username_info">The username is created for you automatically, but you can generate new ones until you find the best one.\nYou will use this username to log in to Arduino, and other users will see it when you post projects.</string>
+    <string name="arduino_auth_sign_up_junior_step_1_dialog_avatar">Choose an avatar</string>
+    <string name="arduino_auth_title_sign_up_junior_step_2">Parent email address</string>
+    <string name="arduino_auth_sign_up_junior_step_2_text">A parent needs to help you create the account. Enter their email address below and we will send instructions on how to proceed.</string>
+    <string name="arduino_auth_sign_up_junior_step_2_field_email">Parent’s email address</string>
+    <string name="arduino_auth_sign_up_junior_step_2_field_email_confirm">Confirm email address</string>
+    <string name="arduino_auth_sign_up_junior_step_2_action">Send Email</string>
 
+    <string name="arduino_auth_title_sign_up_junior_completed">Account confirmation</string>
+    <string name="arduino_auth_sign_up_junior_completed_text">We sent an email with instructions to your parent’s email %1$s. You will be able to sign in once they finalize your account.</string>
+    <string name="arduino_auth_sign_up_junior_completed_action">Back to Science Journal</string>
 </resources>

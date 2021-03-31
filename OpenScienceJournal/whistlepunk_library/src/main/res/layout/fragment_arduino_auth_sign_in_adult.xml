@@ -52,7 +52,7 @@
             android:layout_width="270dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
-            android:hint="@string/arduino_auth_sign_in_field_password"
+            android:hint="@string/arduino_auth_password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/il_username">

@@ -111,6 +111,11 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
     }
 
     @Override
+    public void onClose() {
+        finish();
+    }
+
+    @Override
     public void onAuthCompleted(final Auth0Token token) {
         Log.i(LOG_TAG, "TOKEN: " + token);
         final AlertDialog.Builder b = new AlertDialog.Builder(this);

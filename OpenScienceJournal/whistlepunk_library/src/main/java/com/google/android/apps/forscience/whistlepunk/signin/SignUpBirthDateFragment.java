@@ -70,7 +70,14 @@ public class SignUpBirthDateFragment extends AuthBaseFragment {
         Bundle args = new Bundle();
         args.putString("birthday", new SimpleDateFormat("yyyy-MM-dd").format(mCalendar.getTime()));
         if (age >= 16) {
+            args.putString("flow", "adult");
             startFragment(SignUpAdultStep1Fragment.class, args);
+        } else if (age >= 14) {
+            args.putString("flow", "teen");
+            startFragment(SignUpAdultStep1Fragment.class, args);
+        } else {
+            args.putString("flow", "junior");
+            startFragment(SignUpJuniorStep1Fragment.class, args);
         }
     }
 

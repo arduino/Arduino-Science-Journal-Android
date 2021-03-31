@@ -4,40 +4,29 @@ import android.content.Context;
 
 import androidx.annotation.NonNull;
 
+import com.google.android.apps.forscience.utils.StringUtils;
+
 import org.json.JSONObject;
 
 import java.util.Map;
 
-public class Auth0SignUpCall extends Auth0Call<Auth0SignUpCall.Response> {
+public abstract class Auth0SignUpCall extends Auth0Call<Auth0SignUpCall.Response> {
 
     private final String mUsername;
     private final String mEmail;
     private final String mPassword;
-
-    private final boolean mAcceptPrivacy;
-    private final boolean mAcceptTerms;
-    private final boolean mAcceptMarketing;
-    private final boolean mAcceptNewsletter;
-    private final boolean mAcceptTracking;
+    private final String mBirthday;
 
     public Auth0SignUpCall(final @NonNull Context context,
                            final @NonNull String username,
                            final @NonNull String email,
                            final @NonNull String password,
-                           final boolean acceptPrivacy,
-                           final boolean acceptTerms,
-                           final boolean acceptMarketing,
-                           final boolean acceptNewsletter,
-                           final boolean acceptTracking) {
+                           final @NonNull String birthday) {
         super(context);
         mUsername = username;
         mEmail = email;
         mPassword = password;
-        mAcceptPrivacy = acceptPrivacy;
-        mAcceptTerms = acceptTerms;
-        mAcceptMarketing = acceptMarketing;
-        mAcceptNewsletter = acceptNewsletter;
-        mAcceptTracking = acceptTracking;
+        mBirthday = birthday;
     }
 
     @Override
@@ -51,12 +40,13 @@ public class Auth0SignUpCall extends Auth0Call<Auth0SignUpCall.Response> {
         params.put("username", mUsername);
         params.put("email", mEmail);
         params.put("password", mPassword);
-        params.put("user_metadata[privacy_approval]", mAcceptPrivacy ? "true" : "false");
-        params.put("user_metadata[terms_and_conditions]", mAcceptTerms ? "true" : "false");
-        params.put("user_metadata[marketing_approval]", mAcceptMarketing ? "true" : "false");
-        params.put("user_metadata[newsletter_approval]", mAcceptNewsletter ? "true" : "false");
-        params.put("user_metadata[tracking_approval]", mAcceptTracking ? "true" : "false");
+        if (!StringUtils.isEmpty(mBirthday)) {
+            params.put("user_metadata[birthday]", mBirthday);
+        }
+        completeBuildRequest(params);
     }
+
+    protected abstract void completeBuildRequest(Map<String, String> params);
 
     @Override
     protected void onCompleted(int code, JSONObject json) {
@@ -77,6 +67,9 @@ public class Auth0SignUpCall extends Auth0Call<Auth0SignUpCall.Response> {
                     break;
                 case "consent":
                     response.code = Response.Code.CONSENT;
+                    break;
+                case "unconfirmed_teen":
+                    response.success = true;
                     break;
                 default:
                     response.code = Response.Code.UNKNOWN;
