@@ -67,6 +67,12 @@ public class PasswordResetStep1Fragment extends AuthBaseFragment {
         }
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        setBackEnabled(true);
+    }
+
     private void onCompleted() {
         final String email = getInputEmail();
         if (StringUtils.isEmpty(email)) {

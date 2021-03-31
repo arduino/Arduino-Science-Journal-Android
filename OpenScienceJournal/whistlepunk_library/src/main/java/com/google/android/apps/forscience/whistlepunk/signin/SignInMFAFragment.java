@@ -65,6 +65,12 @@ public class SignInMFAFragment extends AuthBaseFragment {
         mMfaToken = getArguments().getString("mfa", "");
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        setBackEnabled(true);
+    }
+
     private void onCompleted() {
         final String otp = getInputOtp();
         if (StringUtils.isEmpty(otp)) {

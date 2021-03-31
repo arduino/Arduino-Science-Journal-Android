@@ -33,10 +33,10 @@
     <string name="arduino_auth_sign_in_action">Sign in</string>
     <string name="arduino_auth_title_sign_up">Sign up to Arduino</string>
     <string name="arduino_auth_junior_account">Junior Account</string>
-    <string name="arduino_auth_regular_account">Regular Account</string>
+    <string name="arduino_auth_adult_account">Adult Account</string>
     <string name="arduino_auth_cta_create_1">Don’t have an account?</string>
     <string name="arduino_auth_cta_create_2">Create one now</string>
-    <string name="arduino_auth_sign_up_birth_date">Enter your birth date below to continue.</string>
+    <string name="arduino_auth_sign_up_birth_date">Enter your birth date below to continue and ensure the data is correct: it will determine the type of account created for you.</string>
     <string name="arduino_auth_sign_up_field_birthday">Birthday</string>
     <string name="arduino_auth_sign_up_field_birthday_info">We need to know this in order to create the right account type for you.</string>
     <string name="arduino_auth_sign_up_field_email">Enter your email</string>
@@ -58,9 +58,9 @@
     <string name="arduino_auth_sign_up_option_tracking">I want to see personalised commercial offers from Arduino based on my browsing and purchasing behaviour.</string>
     <string name="arduino_auth_sign_up_action">Sign up</string>
     <string name="arduino_auth_sign_up_user_exists">Username or email already registered. Please go back and check.</string>
-    <string name="arduino_auth_title_sign_up_regular_completed">Confirm your email</string>
-    <string name="arduino_auth_sign_up_regular_completed_text_1">We sent you an email to finalize your registration. In order to continue, please follow the instructions and activate your account. Once your account is activated, you can login to Science Journal.</string>
-    <string name="arduino_auth_sign_up_regular_completed_action">Back to Login</string>
+    <string name="arduino_auth_title_sign_up_adult_completed">Confirm your email</string>
+    <string name="arduino_auth_sign_up_adult_completed_text_1">We sent you an email to finalize your registration. In order to continue, please follow the instructions and activate your account. Once your account is activated, you can login to Science Journal.</string>
+    <string name="arduino_auth_sign_up_adult_completed_action">Back to Login</string>
     <string name="arduino_auth_title_password_reset_1">Recover your account</string>
     <string name="arduino_auth_password_reset_1_text_1">Enter the email address associated with your account below.</string>
     <string name="arduino_auth_password_reset_1_field_email">Insert your email</string>

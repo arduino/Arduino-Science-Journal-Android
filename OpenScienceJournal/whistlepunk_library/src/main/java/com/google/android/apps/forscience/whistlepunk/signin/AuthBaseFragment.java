@@ -38,6 +38,12 @@ abstract class AuthBaseFragment extends BaseFragment {
         }
     }
 
+    protected final void setBackEnabled(final boolean enabled) {
+        if (mListener != null) {
+            mListener.onBackEnabled(enabled);
+        }
+    }
+
     protected final void goBack() {
         if (mListener != null) {
             mListener.onBack();
@@ -61,6 +67,8 @@ abstract class AuthBaseFragment extends BaseFragment {
         void onStartFragment(Class<? extends AuthBaseFragment> cls, Bundle args);
 
         void onBlockUI(boolean block);
+
+        void onBackEnabled(boolean enabled);
 
         void onBack();
 

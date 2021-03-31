@@ -33,6 +33,8 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
 
     private List<Fragment.SavedState> mFragmentSavedStates;
 
+    private boolean mBackEnabled;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,9 +69,6 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
                 final AuthBaseFragment currentFragment = mFragments.get(fragmentCount - 1);
                 final Fragment.SavedState state = mFragmentManager.saveFragmentInstanceState(currentFragment);
                 mFragmentSavedStates.add(state);
-                mBack.setVisibility(View.VISIBLE);
-            } else {
-                mBack.setVisibility(View.INVISIBLE);
             }
             AuthBaseFragment fragment = cls.newInstance();
             if (args != null) {
@@ -80,6 +79,7 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
             fragmentTransaction.setCustomAnimations(R.anim.slide_horizontal_in, R.anim.slide_horizontal_out, R.anim.slide_horizontal_out_reverse, R.anim.slide_horizontal_in_reverse);
             fragmentTransaction.replace(R.id.fragment, fragment);
             fragmentTransaction.commitAllowingStateLoss();
+            refreshBackStatusUI();
         } catch (Exception e) {
             Log.e(LOG_TAG, "Unable to attach Fragment to Activity", e);
         }
@@ -92,6 +92,12 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
             mBlocker.setKeepScreenOn(block);
             mBlocked = block;
         }
+    }
+
+    @Override
+    public void onBackEnabled(boolean enabled) {
+        mBackEnabled = enabled;
+        refreshBackStatusUI();
     }
 
     @Override
@@ -125,7 +131,7 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
     }
 
     private boolean goBack() {
-        if (mBlocked) {
+        if (mBlocked || !mBackEnabled) {
             return true;
         }
         final int fragmentsCount = mFragments.size();
@@ -144,11 +150,7 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
             fragmentTransaction.setCustomAnimations(R.anim.slide_horizontal_out_reverse, R.anim.slide_horizontal_in_reverse, R.anim.slide_horizontal_in, R.anim.slide_horizontal_out);
             fragmentTransaction.replace(R.id.fragment, previousFragment);
             fragmentTransaction.commitAllowingStateLoss();
-            if (fragmentsCount > 2) {
-                mBack.setVisibility(View.VISIBLE);
-            } else {
-                mBack.setVisibility(View.INVISIBLE);
-            }
+            refreshBackStatusUI();
             return true;
         }
         return false;
@@ -174,10 +176,18 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
             fragmentTransaction.setCustomAnimations(R.anim.slide_horizontal_out_reverse, R.anim.slide_horizontal_in_reverse, R.anim.slide_horizontal_in, R.anim.slide_horizontal_out);
             fragmentTransaction.replace(R.id.fragment, previousFragment);
             fragmentTransaction.commitAllowingStateLoss();
-            mBack.setVisibility(View.INVISIBLE);
+            refreshBackStatusUI();
             return true;
         }
         return false;
+    }
+
+    private void refreshBackStatusUI() {
+        if (mBackEnabled && mFragments.size() > 1) {
+            mBack.setVisibility(View.VISIBLE);
+        } else {
+            mBack.setVisibility(View.INVISIBLE);
+        }
     }
 
 }

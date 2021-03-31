@@ -22,7 +22,7 @@ import com.google.android.apps.forscience.auth0.Auth0SignUpCall;
 import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.remote.Callback;
 
-public class SignUpRegularStep2Fragment extends AuthBaseFragment {
+public class SignUpAdultStep2Fragment extends AuthBaseFragment {
 
     private CheckBox mOptionPrivacyAndTermsCheckBox;
     private CheckBox mOptionNewsletterCheckBox;
@@ -33,7 +33,7 @@ public class SignUpRegularStep2Fragment extends AuthBaseFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_arduino_auth_sign_up_regular_step_2, container, false);
+        final View view = inflater.inflate(R.layout.fragment_arduino_auth_sign_up_adult_step_2, container, false);
         mOptionPrivacyAndTermsCheckBox = view.findViewById(R.id.cb_option_privacy_and_terms);
         mOptionNewsletterCheckBox = view.findViewById(R.id.cb_option_newsletter);
         mOptionMarketingCheckBox = view.findViewById(R.id.cb_option_marketing);
@@ -105,8 +105,14 @@ public class SignUpRegularStep2Fragment extends AuthBaseFragment {
         });
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        setBackEnabled(true);
+    }
+
     private void onCompleted() {
-        startFragment(SignUpRegularCompletedFragment.class, null);
+        startFragment(SignUpAdultCompletedFragment.class, null);
     }
 
     private Spannable getPrivacyTermsWithLinks() {

@@ -8,28 +8,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.google.android.apps.forscience.auth0.Auth0LoginTokenCall;
 import com.google.android.apps.forscience.auth0.Auth0Token;
 import com.google.android.apps.forscience.whistlepunk.R;
-import com.google.android.apps.forscience.whistlepunk.remote.Callback;
-import com.google.android.apps.forscience.whistlepunk.remote.StringUtils;
 
-public class SignInRegularFragment extends AuthBaseFragment {
+public class SignUpAdultStep1Fragment extends AuthBaseFragment {
 
+    private EditText mEmailEdit;
     private EditText mUsernameEdit;
     private EditText mPasswordEdit;
-    private View mError;
     private View mNextButton;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_arduino_auth_sign_in_regular, container, false);
+        final View view = inflater.inflate(R.layout.fragment_arduino_auth_sign_up_adult_step_1, container, false);
         mUsernameEdit = view.findViewById(R.id.et_username);
+        mEmailEdit = view.findViewById(R.id.et_email);
         mPasswordEdit = view.findViewById(R.id.et_password);
         mNextButton = view.findViewById(R.id.btn_next);
         mPasswordEdit.setOnEditorActionListener((v, actionId, event) -> {
@@ -42,6 +41,36 @@ public class SignInRegularFragment extends AuthBaseFragment {
             return false;
         });
         mNextButton.setOnClickListener(v -> onCompleted());
+        view.findViewById(R.id.iv_tp_github).setOnClickListener(v -> launchGitHubSignUp());
+        view.findViewById(R.id.iv_tp_google).setOnClickListener(v -> launchGoogleSignUp());
+        view.findViewById(R.id.iv_tp_apple).setOnClickListener(v -> launchAppleSignUp());
+        final TextView tvEmailError = view.findViewById(R.id.tv_error_email);
+        final TextView tvUsernameError = view.findViewById(R.id.tv_error_username);
+        final TextView tvPasswordError = view.findViewById(R.id.tv_error_password);
+        mEmailEdit.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (isEmailValid()) {
+                    tvEmailError.setVisibility(View.INVISIBLE);
+                } else {
+                    tvEmailError.setVisibility(View.VISIBLE);
+                    if (s.toString().trim().length() == 0) {
+                        tvEmailError.setText(R.string.arduino_auth_missing_email);
+                    } else {
+                        tvEmailError.setText(R.string.arduino_auth_invalid_email);
+                    }
+                }
+                mNextButton.setEnabled(isDataCompleted());
+            }
+        });
         mUsernameEdit.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -53,6 +82,16 @@ public class SignInRegularFragment extends AuthBaseFragment {
 
             @Override
             public void afterTextChanged(Editable s) {
+                if (isUsernameValid()) {
+                    tvUsernameError.setVisibility(View.INVISIBLE);
+                } else {
+                    tvUsernameError.setVisibility(View.VISIBLE);
+                    if (s.toString().trim().length() == 0) {
+                        tvUsernameError.setText(R.string.arduino_auth_missing_username);
+                    } else {
+                        tvUsernameError.setText(R.string.arduino_auth_invalid_username);
+                    }
+                }
                 mNextButton.setEnabled(isDataCompleted());
             }
         });
@@ -67,71 +106,53 @@ public class SignInRegularFragment extends AuthBaseFragment {
 
             @Override
             public void afterTextChanged(Editable s) {
+                if (isPasswordValid()) {
+                    tvPasswordError.setVisibility(View.INVISIBLE);
+                } else {
+                    tvPasswordError.setVisibility(View.VISIBLE);
+                    if (s.toString().trim().length() == 0) {
+                        tvPasswordError.setText(R.string.arduino_auth_missing_password);
+                    } else {
+                        tvPasswordError.setText(R.string.arduino_auth_invalid_password);
+                    }
+                }
                 mNextButton.setEnabled(isDataCompleted());
             }
         });
-        mError = view.findViewById(R.id.tv_error);
-        view.findViewById(R.id.tv_password_reset).setOnClickListener(v -> {
-            final String username = getInputUsername();
-            final Bundle args = new Bundle();
-            if (Commons.isEmailValid(username)) {
-                args.putString("email", username);
-            }
-            startFragment(PasswordResetStep1Fragment.class, args);
+        view.findViewById(R.id.iv_username_info).setOnClickListener(v -> alert(R.string.arduino_auth_username_info));
+        final View showPassword = view.findViewById(R.id.iv_show_password);
+        showPassword.setOnClickListener(v -> {
+            showPassword.setVisibility(View.INVISIBLE);
+            mPasswordEdit.setTransformationMethod(null);
         });
-        view.findViewById(R.id.iv_tp_github).setOnClickListener(v -> launchGitHubSignUp());
-        view.findViewById(R.id.iv_tp_google).setOnClickListener(v -> launchGoogleSignUp());
-        view.findViewById(R.id.iv_tp_apple).setOnClickListener(v -> launchAppleSignUp());
         return view;
     }
 
+    @Override
+    public void onStart() {
+        super.onStart();
+        setBackEnabled(false);
+    }
+
+    @Override
+    public boolean onBackPressed() {
+        return true;
+    }
+
     private void onCompleted() {
-        final String username = getInputUsername();
-        final String password = getInputPassword();
-        if (StringUtils.isEmpty(username) || StringUtils.isEmpty(password)) {
-            return;
-        }
-        mError.setVisibility(View.INVISIBLE);
-        setBlockUI(true);
-        hideSoftKeyboard();
-        new Auth0LoginTokenCall(
-                mContext,
-                username,
-                password
-        ).execute(new Callback<Auth0LoginTokenCall.Response, Exception>() {
-            @Override
-            public void onResponse(Auth0LoginTokenCall.Response response) {
-                setBlockUI(false);
-                if (response == null) {
-                    mError.setVisibility(View.VISIBLE);
-                } else if (!StringUtils.isEmpty(response.mfa)) {
-                    final Bundle args = new Bundle();
-                    args.putString("mfa", response.mfa);
-                    startFragment(SignInMFAFragment.class, args);
-                } else if (response.token != null) {
-                    notifyAuthCompleted(response.token);
-                } else {
-                    toast(R.string.error_generic);
-                }
-            }
-
-            @Override
-            public void onFailure(Exception failure) {
-                setBlockUI(false);
-                toast(R.string.error_generic);
-            }
-
-            @Override
-            public boolean onNetworkError() {
-                setBlockUI(false);
-                toast(R.string.error_network);
-                return true;
-            }
-        });
+        final Bundle args = new Bundle();
+        args.putString("email", getInputEmail());
+        args.putString("username", getInputUsername());
+        args.putString("password", getInputPassword());
+        startFragment(SignUpAdultStep2Fragment.class, args);
     }
 
     private String getInputUsername() {
         return mUsernameEdit.getText().toString().trim();
+    }
+
+    private String getInputEmail() {
+        return mEmailEdit.getText().toString().trim().toLowerCase();
     }
 
     private String getInputPassword() {
@@ -139,8 +160,11 @@ public class SignInRegularFragment extends AuthBaseFragment {
     }
 
     private boolean isUsernameValid() {
-        final String username = getInputUsername();
-        return Commons.isUsernameValid(username) || Commons.isEmailValid(username);
+        return Commons.isUsernameValid(getInputUsername());
+    }
+
+    private boolean isEmailValid() {
+        return Commons.isEmailValid(getInputEmail());
     }
 
     private boolean isPasswordValid() {
@@ -148,7 +172,7 @@ public class SignInRegularFragment extends AuthBaseFragment {
     }
 
     private boolean isDataCompleted() {
-        return isUsernameValid() && isPasswordValid();
+        return isUsernameValid() && isEmailValid() && isPasswordValid();
     }
 
     private void launchGitHubSignUp() {

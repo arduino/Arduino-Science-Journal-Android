@@ -54,9 +54,14 @@ public class SignUpBirthDateFragment extends AuthBaseFragment {
             );
             d.show();
         });
-        view.findViewById(R.id.iv_info).setOnClickListener(v -> alert(R.string.arduino_auth_sign_up_field_birthday_info));
         btnNext.setOnClickListener(v -> onCompleted());
         return view;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        setBackEnabled(true);
     }
 
     @SuppressLint("SimpleDateFormat")
@@ -65,7 +70,7 @@ public class SignUpBirthDateFragment extends AuthBaseFragment {
         Bundle args = new Bundle();
         args.putString("birthday", new SimpleDateFormat("yyyy-MM-dd").format(mCalendar.getTime()));
         if (age >= 16) {
-            startFragment(SignUpRegularStep1Fragment.class, args);
+            startFragment(SignUpAdultStep1Fragment.class, args);
         }
     }
 

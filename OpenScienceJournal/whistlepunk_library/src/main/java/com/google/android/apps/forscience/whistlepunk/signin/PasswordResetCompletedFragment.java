@@ -21,6 +21,12 @@ public class PasswordResetCompletedFragment extends AuthBaseFragment {
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+        setBackEnabled(true);
+    }
+
+    @Override
     public boolean onBackPressed() {
         goBegin();
         return true;

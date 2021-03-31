@@ -69,18 +69,6 @@
             app:layout_constraintStart_toStartOf="@id/il_birth_date"
             app:layout_constraintTop_toTopOf="@id/il_birth_date" />
 
-        <ImageView
-            android:id="@+id/iv_info"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_marginStart="12dp"
-            android:contentDescription="@null"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_arduino_auth_info"
-            app:layout_constraintBottom_toBottomOf="@id/il_birth_date"
-            app:layout_constraintStart_toEndOf="@id/il_birth_date"
-            app:layout_constraintTop_toTopOf="@id/il_birth_date" />
-
         <TextView
             android:id="@+id/btn_next"
             style="@style/ArduinoAuth_Button"

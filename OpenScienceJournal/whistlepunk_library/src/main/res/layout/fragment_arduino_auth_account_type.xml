@@ -50,7 +50,7 @@
             app:layout_constraintTop_toBottomOf="@id/tv_title" />
 
         <TextView
-            android:id="@+id/btn_regular"
+            android:id="@+id/btn_adult"
             style="@style/ArduinoAuth_Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             android:minWidth="290dp"
             android:paddingStart="30dp"
             android:paddingEnd="30dp"
-            android:text="@string/arduino_auth_regular_account"
+            android:text="@string/arduino_auth_adult_account"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_junior" />
@@ -71,7 +71,7 @@
             android:background="@color/arduino_smoke"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btn_regular" />
+            app:layout_constraintTop_toBottomOf="@id/btn_adult" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
