@@ -43,6 +43,8 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
         mBack = findViewById(R.id.auth_header_action_back);
         mBack.setOnClickListener(v -> onBackPressed());
         mBlocker = findViewById(R.id.blocker);
+        findViewById(R.id.auth_terms).setOnClickListener(v -> Commons.openTerms(this));
+        findViewById(R.id.auth_privacy).setOnClickListener(v -> Commons.openPrivacy(this));
         mFragmentManager = getSupportFragmentManager();
         mFragments = new ArrayList<>();
         mFragmentSavedStates = new ArrayList<>();

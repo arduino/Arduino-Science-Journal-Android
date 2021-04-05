@@ -34,6 +34,7 @@ public class Auth0SignUpAdultCall extends Auth0SignUpCall {
 
     @Override
     protected void completeBuildRequest(Map<String, String> params) {
+        params.put("connection", "arduino");
         params.put("user_metadata[privacy_approval]", mAcceptPrivacy ? "true" : "false");
         params.put("user_metadata[terms_and_conditions]", mAcceptTerms ? "true" : "false");
         params.put("user_metadata[marketing_approval]", mAcceptMarketing ? "true" : "false");

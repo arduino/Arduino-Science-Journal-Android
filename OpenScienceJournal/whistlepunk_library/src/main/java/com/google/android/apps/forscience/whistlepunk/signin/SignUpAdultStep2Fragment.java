@@ -57,10 +57,11 @@ public class SignUpAdultStep2Fragment extends AuthBaseFragment {
 
     private void doSignUp() {
         final Bundle args = getArguments();
-        final String email = args.getString("email");
-        final String username = args.getString("username");
-        final String password = args.getString("password");
-        final String birthday = args.getString("birthday");
+        assert args != null;
+        final String email = args.getString("email", "");
+        final String username = args.getString("username", "");
+        final String password = args.getString("password", "");
+        final String birthday = args.getString("birthday", "");
         final boolean optionPrivacyAndTerms = mOptionPrivacyAndTermsCheckBox.isChecked();
         final boolean optionNewsletter = mOptionNewsletterCheckBox.isChecked();
         final boolean optionMarketing = mOptionMarketingCheckBox.isChecked();

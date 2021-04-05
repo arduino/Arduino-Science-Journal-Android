@@ -16,8 +16,16 @@ public class AccountTypeFragment extends AuthBaseFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_arduino_auth_account_type, container, false);
-        view.findViewById(R.id.btn_junior).setOnClickListener(v -> alert("WORK IN PROGRESS"));
-        view.findViewById(R.id.btn_adult).setOnClickListener(v -> startFragment(SignInAdultFragment.class, null));
+        view.findViewById(R.id.btn_junior).setOnClickListener(v -> {
+            final Bundle args = new Bundle();
+            args.putString("flow", "junior");
+            startFragment(SignInFragment.class, args);
+        });
+        view.findViewById(R.id.btn_adult).setOnClickListener(v -> {
+            final Bundle args = new Bundle();
+            args.putString("flow", "adult");
+            startFragment(SignInFragment.class, args);
+        });
         view.findViewById(R.id.tv_create_2).setOnClickListener(v -> startFragment(SignUpBirthDateFragment.class, null));
         return view;
     }

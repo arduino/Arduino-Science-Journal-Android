@@ -41,7 +41,9 @@ public class SignUpAdultStep1Fragment extends AuthBaseFragment {
             return false;
         });
         mNextButton.setOnClickListener(v -> onCompleted());
-        final String flow = getArguments().getString("flow");
+        final Bundle args = getArguments();
+        assert args != null;
+        final String flow = args.getString("flow");
         if ("teen".equals(flow)) {
             view.findViewById(R.id.l_tp).setVisibility(View.GONE);
         } else {
@@ -146,6 +148,7 @@ public class SignUpAdultStep1Fragment extends AuthBaseFragment {
 
     private void onCompleted() {
         final Bundle args = getArguments();
+        assert args != null;
         final String flow = args.getString("flow");
         args.putString("email", getInputEmail());
         args.putString("username", getInputUsername());

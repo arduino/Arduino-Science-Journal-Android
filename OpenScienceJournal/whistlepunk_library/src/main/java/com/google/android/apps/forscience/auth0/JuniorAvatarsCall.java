@@ -17,9 +17,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class GetJuniorAvatarsCall extends JSONCall<GetJuniorAvatarsCall.Avatar[], Exception> {
+public class JuniorAvatarsCall extends JSONCall<JuniorAvatarsCall.Avatar[], Exception> {
 
-    public GetJuniorAvatarsCall(@NonNull Context context) {
+    public JuniorAvatarsCall(@NonNull Context context) {
         super(context);
     }
 

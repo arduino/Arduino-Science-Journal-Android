@@ -25,7 +25,7 @@ public class Auth0PasswordResetCall extends Auth0Call<Boolean> {
     @Override
     protected void buildRequest(Map<String, String> params) {
         params.put("email", mEmail);
-        params.put("connection", mConnection);
+        params.put("connection", "arduino");
     }
 
     @Override

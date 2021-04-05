@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,8 +18,9 @@ import com.google.android.apps.forscience.auth0.Auth0Token;
 import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.remote.Callback;
 import com.google.android.apps.forscience.whistlepunk.remote.StringUtils;
+import com.google.android.material.textfield.TextInputLayout;
 
-public class SignInAdultFragment extends AuthBaseFragment {
+public class SignInFragment extends AuthBaseFragment {
 
     private EditText mUsernameEdit;
     private EditText mPasswordEdit;
@@ -28,7 +30,7 @@ public class SignInAdultFragment extends AuthBaseFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_arduino_auth_sign_in_adult, container, false);
+        final View view = inflater.inflate(R.layout.fragment_arduino_auth_sign_in, container, false);
         mUsernameEdit = view.findViewById(R.id.et_username);
         mPasswordEdit = view.findViewById(R.id.et_password);
         mNextButton = view.findViewById(R.id.btn_next);
@@ -71,14 +73,29 @@ public class SignInAdultFragment extends AuthBaseFragment {
             }
         });
         mError = view.findViewById(R.id.tv_error);
+        final Bundle args = getArguments();
+        assert args != null;
+        final boolean junior = "junior".equals(args.getString("flow"));
         view.findViewById(R.id.tv_password_reset).setOnClickListener(v -> {
             final String username = getInputUsername();
-            final Bundle args = new Bundle();
-            if (Commons.isEmailValid(username)) {
-                args.putString("email", username);
+            if (junior) {
+                if (!StringUtils.isEmpty(username)) {
+                    args.putString("username", username);
+                }
+                startFragment(PasswordResetJuniorStep1Fragment.class, args);
+            } else {
+                if (Commons.isEmailValid(username)) {
+                    args.putString("email", username);
+                }
+                startFragment(PasswordResetAdultStep1Fragment.class, args);
             }
-            startFragment(PasswordResetStep1Fragment.class, args);
         });
+        if (junior) {
+            ((TextInputLayout) view.findViewById(R.id.il_username)).setHint(getString(R.string.arduino_auth_username));
+            view.findViewById(R.id.l_tp).setVisibility(View.GONE);
+            final TextView tv = view.findViewById(R.id.tv_title);
+            tv.setText(R.string.arduino_auth_title_sign_in_junior);
+        }
         view.findViewById(R.id.iv_tp_github).setOnClickListener(v -> launchGitHubSignUp());
         view.findViewById(R.id.iv_tp_google).setOnClickListener(v -> launchGoogleSignUp());
         view.findViewById(R.id.iv_tp_apple).setOnClickListener(v -> launchAppleSignUp());
@@ -111,7 +128,7 @@ public class SignInAdultFragment extends AuthBaseFragment {
                 if (response == null) {
                     mError.setVisibility(View.VISIBLE);
                 } else if (!StringUtils.isEmpty(response.mfa)) {
-                    final Bundle args = new Bundle();
+                    final Bundle args = getArguments();
                     args.putString("mfa", response.mfa);
                     startFragment(SignInMFAFragment.class, args);
                 } else if (response.token != null) {

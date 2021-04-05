@@ -21,8 +21,6 @@ import com.google.android.apps.forscience.whistlepunk.remote.Callback;
 
 public class SignUpJuniorStep2Fragment extends AuthBaseFragment {
 
-    private static final String LOG_TAG = "ArduinoAuth";
-
     private EditText mEmailEdit;
     private EditText mEmailConfirmEdit;
     private View mNextButton;
@@ -104,6 +102,7 @@ public class SignUpJuniorStep2Fragment extends AuthBaseFragment {
         return true;
     }
 
+    @SuppressWarnings("ConstantConditions")
     private void onCompleted() {
         final Bundle args = getArguments();
         final String birthday = args.getString("birthday", null);

@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import com.google.android.apps.forscience.auth0.Auth0Token;
 import com.google.android.apps.forscience.auth0.Auth0WebSignInSocialActivity;
 import com.google.android.apps.forscience.utils.StringUtils;
+import com.google.android.apps.forscience.whistlepunk.R;
 
 class Commons {
 
@@ -89,11 +90,17 @@ class Commons {
     }
 
     public static void openPrivacy(final Context context) {
-        //TODO
+        final Intent intent = new Intent(context, WebActivity.class);
+        intent.putExtra(WebActivity.EXTRA_KEY_TITLE, context.getString(R.string.arduino_auth_privacy));
+        intent.putExtra(WebActivity.EXTRA_KEY_URL, context.getString(R.string.config_auth_privacy));
+        context.startActivity(intent);
     }
 
     public static void openTerms(final Context context) {
-        //TODO
+        final Intent intent = new Intent(context, WebActivity.class);
+        intent.putExtra(WebActivity.EXTRA_KEY_TITLE, context.getString(R.string.arduino_auth_terms));
+        intent.putExtra(WebActivity.EXTRA_KEY_URL, context.getString(R.string.config_auth_terms));
+        context.startActivity(intent);
     }
 
 }

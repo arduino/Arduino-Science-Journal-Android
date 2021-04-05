@@ -28,8 +28,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.caverock.androidsvg.SVG;
-import com.google.android.apps.forscience.auth0.GetJuniorAvatarsCall;
-import com.google.android.apps.forscience.auth0.GetJuniorUsernameCall;
+import com.google.android.apps.forscience.auth0.JuniorAvatarsCall;
+import com.google.android.apps.forscience.auth0.JuniorUsernameCall;
 import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.remote.Callback;
 
@@ -45,9 +45,9 @@ public class SignUpJuniorStep1Fragment extends AuthBaseFragment {
     private EditText mPasswordEdit;
     private View mNextButton;
 
-    private GetJuniorAvatarsCall.Avatar[] mAvatars;
+    private JuniorAvatarsCall.Avatar[] mAvatars;
 
-    private GetJuniorAvatarsCall.Avatar mSelectedAvatar;
+    private JuniorAvatarsCall.Avatar mSelectedAvatar;
 
     @Nullable
     @Override
@@ -107,9 +107,9 @@ public class SignUpJuniorStep1Fragment extends AuthBaseFragment {
     public void onFirstStart() {
         super.onFirstStart();
         setBlockUI(true);
-        new GetJuniorAvatarsCall(mContext).execute(new Callback<GetJuniorAvatarsCall.Avatar[], Exception>() {
+        new JuniorAvatarsCall(mContext).execute(new Callback<JuniorAvatarsCall.Avatar[], Exception>() {
             @Override
-            public void onResponse(GetJuniorAvatarsCall.Avatar[] response) {
+            public void onResponse(JuniorAvatarsCall.Avatar[] response) {
                 mAvatars = response;
                 if (mAvatars != null && mAvatars.length > 0) {
                     mSelectedAvatar = mAvatars[(int) Math.floor(Math.random() * mAvatars.length)];
@@ -168,7 +168,7 @@ public class SignUpJuniorStep1Fragment extends AuthBaseFragment {
 
     private void generateUsername() {
         setBlockUI(true);
-        new GetJuniorUsernameCall(mContext).execute(new Callback<String, Exception>() {
+        new JuniorUsernameCall(mContext).execute(new Callback<String, Exception>() {
             @Override
             public void onResponse(String response) {
                 setBlockUI(false);
@@ -204,7 +204,7 @@ public class SignUpJuniorStep1Fragment extends AuthBaseFragment {
         recycler.setLayoutManager(new GridLayoutManager(mContext, 3));
         recycler.setAdapter(new AvatarAdapter() {
             @Override
-            protected void onAvatarSelected(final GetJuniorAvatarsCall.Avatar avatar) {
+            protected void onAvatarSelected(final JuniorAvatarsCall.Avatar avatar) {
                 mSelectedAvatar = avatar;
                 setSVGAvatar(mContext, mAvatarView, avatar.data, true);
                 d.dismiss();
@@ -234,7 +234,7 @@ public class SignUpJuniorStep1Fragment extends AuthBaseFragment {
             });
         }
 
-        protected abstract void onAvatarSelected(final GetJuniorAvatarsCall.Avatar avatar);
+        protected abstract void onAvatarSelected(final JuniorAvatarsCall.Avatar avatar);
 
     }
 

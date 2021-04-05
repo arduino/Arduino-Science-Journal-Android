@@ -14,9 +14,9 @@
     <string name="config_auth0_scope" translatable="false">openid offline_access</string>
     <string name="config_auth0_audience" translatable="false">https://api.arduino.cc</string>
     <string name="config_auth0_connection" translatable="false">arduino</string>
+    <string name="config_auth0_connection_junior" translatable="false">coppa</string>
 
-    <!--
-    <string name="config_auth0_callback_uri" translatable="false">arduino.sj://login.arduino.cc/android/cc.arduino.sciencejournal/callback</string>
-    -->
     <string name="config_auth0_callback_uri" translatable="false">arduino.sj://login.arduino.cc/ios/cc.arduino.sciencejournal/callback</string>
+    <string name="config_auth_privacy" translatable="false">https://www.arduino.cc/en/privacy-policy?embed</string>
+    <string name="config_auth_terms" translatable="false">https://www.arduino.cc/en/terms-conditions?embed</string>
 </resources>

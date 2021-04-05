@@ -36,7 +36,6 @@ public abstract class Auth0SignUpCall extends Auth0Call<Auth0SignUpCall.Response
 
     @Override
     protected void buildRequest(Map<String, String> params) {
-        params.put("connection", mConnection);
         params.put("username", mUsername);
         params.put("email", mEmail);
         params.put("password", mPassword);

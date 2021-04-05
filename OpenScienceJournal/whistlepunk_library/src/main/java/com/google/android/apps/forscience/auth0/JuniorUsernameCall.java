@@ -14,9 +14,9 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
-public class GetJuniorUsernameCall extends JSONCall<String, Exception> {
+public class JuniorUsernameCall extends JSONCall<String, Exception> {
 
-    public GetJuniorUsernameCall(@NonNull Context context) {
+    public JuniorUsernameCall(@NonNull Context context) {
         super(context);
     }
 

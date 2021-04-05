@@ -22,6 +22,7 @@ public class Auth0SignUpTeenCall extends Auth0SignUpCall {
 
     @Override
     protected void completeBuildRequest(Map<String, String> params) {
+        params.put("connection", "coppa");
         params.put("user_metadata[parent_email]", mParentEmail);
     }
 

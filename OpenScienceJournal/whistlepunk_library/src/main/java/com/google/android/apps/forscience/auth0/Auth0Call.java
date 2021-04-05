@@ -24,13 +24,10 @@ abstract class Auth0Call<RES> extends HttpCall<RES, Exception> {
 
     protected final String mClientId;
 
-    protected final String mConnection;
-
     protected Auth0Call(@NonNull Context context) {
         super(context);
         mDomain = context.getString(R.string.config_auth0_domain);
         mClientId = context.getString(R.string.config_auth0_client_id);
-        mConnection = context.getString(R.string.config_auth0_connection);
     }
 
     @Override
