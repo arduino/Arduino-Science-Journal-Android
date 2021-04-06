@@ -21,12 +21,15 @@ public class Auth0LoginTokenCall extends Auth0Call<Auth0LoginTokenCall.Response>
 
     private final String mPassword;
 
-    public Auth0LoginTokenCall(final @NonNull Context context, final @NonNull String username, final @NonNull String password) {
+    private final boolean mJunior;
+
+    public Auth0LoginTokenCall(final @NonNull Context context, final @NonNull String username, final @NonNull String password, final boolean junior) {
         super(context);
         mAudience = context.getString(R.string.config_auth0_audience);
         mScope = context.getString(R.string.config_auth0_scope);
         mUsername = username;
         mPassword = password;
+        mJunior = junior;
     }
 
     @Override
@@ -42,7 +45,12 @@ public class Auth0LoginTokenCall extends Auth0Call<Auth0LoginTokenCall.Response>
         if (mScope != null) {
             params.put("scope", mScope);
         }
-        params.put("grant_type", "password");
+        if (mJunior) {
+            params.put("grant_type", "http://auth0.com/oauth/grant-type/password-realm");
+            params.put("realm", "coppa");
+        } else {
+            params.put("grant_type", "password");
+        }
         params.put("username", mUsername);
         params.put("password", mPassword);
     }

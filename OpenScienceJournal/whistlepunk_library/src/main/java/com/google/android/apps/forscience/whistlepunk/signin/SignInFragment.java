@@ -27,6 +27,16 @@ public class SignInFragment extends AuthBaseFragment {
     private View mError;
     private View mNextButton;
 
+    private boolean mJunior;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        final Bundle args = getArguments();
+        assert args != null;
+        mJunior = "junior".equals(args.getString("flow"));
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -73,12 +83,11 @@ public class SignInFragment extends AuthBaseFragment {
             }
         });
         mError = view.findViewById(R.id.tv_error);
-        final Bundle args = getArguments();
-        assert args != null;
-        final boolean junior = "junior".equals(args.getString("flow"));
         view.findViewById(R.id.tv_password_reset).setOnClickListener(v -> {
+            final Bundle args = getArguments();
+            assert args != null;
             final String username = getInputUsername();
-            if (junior) {
+            if (mJunior) {
                 if (!StringUtils.isEmpty(username)) {
                     args.putString("username", username);
                 }
@@ -90,7 +99,7 @@ public class SignInFragment extends AuthBaseFragment {
                 startFragment(PasswordResetAdultStep1Fragment.class, args);
             }
         });
-        if (junior) {
+        if (mJunior) {
             ((TextInputLayout) view.findViewById(R.id.il_username)).setHint(getString(R.string.arduino_auth_username));
             view.findViewById(R.id.l_tp).setVisibility(View.GONE);
             final TextView tv = view.findViewById(R.id.tv_title);
@@ -120,7 +129,8 @@ public class SignInFragment extends AuthBaseFragment {
         new Auth0LoginTokenCall(
                 mContext,
                 username,
-                password
+                password,
+                mJunior
         ).execute(new Callback<Auth0LoginTokenCall.Response, Exception>() {
             @Override
             public void onResponse(Auth0LoginTokenCall.Response response) {
@@ -129,6 +139,7 @@ public class SignInFragment extends AuthBaseFragment {
                     mError.setVisibility(View.VISIBLE);
                 } else if (!StringUtils.isEmpty(response.mfa)) {
                     final Bundle args = getArguments();
+                    assert args != null;
                     args.putString("mfa", response.mfa);
                     startFragment(SignInMFAFragment.class, args);
                 } else if (response.token != null) {
