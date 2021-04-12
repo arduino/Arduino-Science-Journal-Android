@@ -17,6 +17,7 @@
 package com.google.android.apps.forscience.whistlepunk.opensource.components;
 
 import com.google.android.apps.forscience.whistlepunk.WhistlePunkApplication;
+import com.google.android.apps.forscience.whistlepunk.accounts.arduino.ArduinoAccountsModule;
 import com.google.android.apps.forscience.whistlepunk.modules.ContextModule;
 import com.google.android.apps.forscience.whistlepunk.modules.InputDeviceModule;
 import com.google.android.apps.forscience.whistlepunk.modules.NativeBleDiscovererModule;
@@ -24,26 +25,27 @@ import com.google.android.apps.forscience.whistlepunk.modules.ScalarInputDiscove
 import com.google.android.apps.forscience.whistlepunk.opensource.licenses.LicenseModule;
 import com.google.android.apps.forscience.whistlepunk.opensource.modules.FeatureDiscoveryModule;
 import com.google.android.apps.forscience.whistlepunk.opensource.modules.FeedbackModule;
-import com.google.android.apps.forscience.whistlepunk.opensource.modules.GoogleAccountsModule;
 import com.google.android.apps.forscience.whistlepunk.opensource.modules.GoogleDriveSyncModule;
 import com.google.android.apps.forscience.whistlepunk.opensource.modules.PerfTrackerModule;
 import com.google.android.apps.forscience.whistlepunk.opensource.modules.UsageTrackerModule;
+
 import dagger.Component;
 
 @Component(
-    modules = {
-      FeatureDiscoveryModule.class,
-      FeedbackModule.class,
-      UsageTrackerModule.class,
-      NativeBleDiscovererModule.class,
-      InputDeviceModule.class,
-      ScalarInputDiscoveryModule.class,
-      ContextModule.class,
-      PerfTrackerModule.class,
-      GoogleAccountsModule.class,
-      LicenseModule.class,
-      GoogleDriveSyncModule.class
-    })
+        modules = {
+                FeatureDiscoveryModule.class,
+                FeedbackModule.class,
+                UsageTrackerModule.class,
+                NativeBleDiscovererModule.class,
+                InputDeviceModule.class,
+                ScalarInputDiscoveryModule.class,
+                ContextModule.class,
+                PerfTrackerModule.class,
+                //GoogleAccountsModule.class,
+                LicenseModule.class,
+                GoogleDriveSyncModule.class,
+                ArduinoAccountsModule.class
+        })
 public interface OpenSourceComponent {
-  void inject(WhistlePunkApplication app);
+    void inject(WhistlePunkApplication app);
 }

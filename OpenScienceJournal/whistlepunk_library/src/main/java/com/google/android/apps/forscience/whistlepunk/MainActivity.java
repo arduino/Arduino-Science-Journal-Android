@@ -423,7 +423,7 @@ public class MainActivity extends ActivityWithNavigationView {
         } else if (itemId == R.id.navigation_item_onboarding) {
             startActivity(new Intent(this, OnboardingActivity.class));
         } else if (itemId == R.id.navigation_item_auth) {
-            startActivityForResult(new Intent(this, ArduinoAuthActivity.class), 4242);
+            startActivityForResult(new Intent(this, ArduinoAuthActivity.class), ActivityRequestCodes.REQUEST_ARDUINO_SIGN_IN);
         } else if (itemId == R.id.navigation_item_drive) {
             startActivityForResult(new Intent(this, GDriveSyncSetupActivity.class), ActivityRequestCodes.REQUEST_GOOGLE_SIGN_IN);
             /*
@@ -585,6 +585,7 @@ public class MainActivity extends ActivityWithNavigationView {
                 }
                 return;
             case ActivityRequestCodes.REQUEST_GOOGLE_SIGN_IN:
+            case ActivityRequestCodes.REQUEST_ARDUINO_SIGN_IN:
                 accountsProvider.onLoginAccountsChanged(data);
                 return;
             default:

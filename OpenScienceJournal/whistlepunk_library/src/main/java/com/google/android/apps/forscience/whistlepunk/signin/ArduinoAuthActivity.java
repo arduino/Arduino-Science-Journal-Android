@@ -1,11 +1,11 @@
 package com.google.android.apps.forscience.whistlepunk.signin;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -119,12 +119,9 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
 
     @Override
     public void onAuthCompleted(final Auth0Token token) {
-        Log.i(LOG_TAG, "TOKEN: " + token);
-        final AlertDialog.Builder b = new AlertDialog.Builder(this);
-        b.setMessage("LOGIN COMPLETED! SUCCESS!");
-        b.setCancelable(false);
-        b.setPositiveButton(android.R.string.ok, (dialogInterface, i) -> dialogInterface.dismiss());
-        b.show();
+        final Intent data = new Intent();
+        data.putExtra("token", token);
+        setResult(RESULT_OK, data);
         finish();
     }
 
