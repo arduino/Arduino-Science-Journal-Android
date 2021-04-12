@@ -10,6 +10,7 @@
     <color name="arduino_carrot">#F39C12</color>
     <color name="arduino_base_gray">#F4F4F4</color>
     <color name="arduino_clouds">#ECF1F1</color>
+    <color name="arduino_fog">#DAE3E3</color>
     <color name="arduino_smoke">#C9D2D2</color>
     <color name="arduino_silver">#BDC7C7</color>
     <color name="arduino_concrete">#95A5A6</color>

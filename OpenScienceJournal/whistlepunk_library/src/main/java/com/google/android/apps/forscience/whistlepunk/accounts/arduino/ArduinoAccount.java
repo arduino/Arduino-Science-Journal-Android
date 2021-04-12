@@ -58,6 +58,11 @@ public class ArduinoAccount extends AbstractAccount {
     }
 
     @Override
+    public String getAccountAvatar() {
+        return picture;
+    }
+
+    @Override
     public String getAccountKey() {
         return accountKey;
     }

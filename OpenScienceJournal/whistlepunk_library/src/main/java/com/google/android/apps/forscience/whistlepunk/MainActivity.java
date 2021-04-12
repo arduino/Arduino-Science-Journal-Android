@@ -26,6 +26,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -36,8 +38,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.bumptech.glide.Glide;
 import com.google.android.apps.forscience.whistlepunk.accounts.AccountsProvider;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
+import com.google.android.apps.forscience.whistlepunk.accounts.NonSignedInAccount;
 import com.google.android.apps.forscience.whistlepunk.accounts.OnboardingActivity;
 import com.google.android.apps.forscience.whistlepunk.analytics.TrackerConstants;
 import com.google.android.apps.forscience.whistlepunk.cloudsync.CloudSyncManager;
@@ -48,7 +52,9 @@ import com.google.android.apps.forscience.whistlepunk.filemetadata.ExperimentLib
 import com.google.android.apps.forscience.whistlepunk.filemetadata.LocalSyncManager;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveSyncSetupActivity;
 import com.google.android.apps.forscience.whistlepunk.project.ExperimentListFragment;
+import com.google.android.apps.forscience.whistlepunk.remote.StringUtils;
 import com.google.android.apps.forscience.whistlepunk.signin.ArduinoAuthActivity;
+import com.google.android.apps.forscience.whistlepunk.signin.WebActivity;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -135,6 +141,21 @@ public class MainActivity extends ActivityWithNavigationView {
         drawerLayout.setStatusBarBackgroundColor(getResources().getColor(R.color.color_primary_dark));
         navigationView = findViewById(R.id.navigation);
         navigationView.setNavigationItemSelectedListener(this);
+
+        findViewById(R.id.navigation_privacy_policy).setOnClickListener(v -> {
+            final Intent intent = new Intent(this, WebActivity.class);
+            intent.putExtra(WebActivity.EXTRA_KEY_TITLE, getString(R.string.arduino_auth_privacy));
+            intent.putExtra(WebActivity.EXTRA_KEY_URL, getString(R.string.config_auth_privacy));
+            startActivity(intent);
+        });
+        findViewById(R.id.navigation_user_layout).setOnClickListener(v -> {
+            if (accountsProvider.isSignedIn()) {
+                // TODO open authentication settings
+                accountsProvider.undoSignIn();
+            } else {
+                startActivityForResult(new Intent(this, ArduinoAuthActivity.class), ActivityRequestCodes.REQUEST_ARDUINO_SIGN_IN);
+            }
+        });
 
         // Only show dev testing options when requested.
         if (!Flags.showTestingOptions()) {
@@ -422,14 +443,8 @@ public class MainActivity extends ActivityWithNavigationView {
             selectedItemId = itemId;
         } else if (itemId == R.id.navigation_item_onboarding) {
             startActivity(new Intent(this, OnboardingActivity.class));
-        } else if (itemId == R.id.navigation_item_auth) {
-            startActivityForResult(new Intent(this, ArduinoAuthActivity.class), ActivityRequestCodes.REQUEST_ARDUINO_SIGN_IN);
         } else if (itemId == R.id.navigation_item_drive) {
             startActivityForResult(new Intent(this, GDriveSyncSetupActivity.class), ActivityRequestCodes.REQUEST_GOOGLE_SIGN_IN);
-            /*
-        } else if (itemId == R.id.navigation_item_signout) {
-            accountsProvider.undoSignIn();
-             */
         } else if (itemId == R.id.navigation_item_activities) {
             try {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://science-journal.arduino.cc/")));
@@ -606,6 +621,22 @@ public class MainActivity extends ActivityWithNavigationView {
         // Dispose of the recording status subscription for the old current account.
         currentAccountChanging.onHappened();
         currentAccount = appAccount;
+
+        // Update user info in navigation menu
+        final ImageView avatarView = findViewById(R.id.navigation_user_avatar);
+        final TextView nicknameView = findViewById(R.id.navigation_user_nickname);
+        if (appAccount instanceof NonSignedInAccount) {
+            avatarView.setImageResource(R.drawable.ic_navigation_user_avatar);
+            nicknameView.setText(R.string.arduino_auth_sign_in_action);
+        } else {
+            final String avatar = appAccount.getAccountAvatar();
+            if (StringUtils.isEmpty(avatar)) {
+                avatarView.setImageResource(R.drawable.ic_navigation_user_avatar);
+            } else {
+                Glide.with(this).load(avatar).circleCrop().into(avatarView);
+            }
+            nicknameView.setText(StringUtils.emptyIfNull(appAccount.getAccountName()));
+        }
 
         // Clean up old files from previous exports.
         ExportService.cleanOldFiles(this, currentAccount);

@@ -2,7 +2,9 @@ package com.google.android.apps.forscience.whistlepunk.accounts;
 
 import android.accounts.Account;
 import android.content.Context;
+
 import androidx.annotation.Nullable;
+
 import java.io.File;
 
 /**
@@ -12,70 +14,72 @@ import java.io.File;
  * before accounts were supported.
  */
 public final class NonSignedInAccount extends AbstractAccount {
-  private static NonSignedInAccount instance;
+    private static NonSignedInAccount instance;
 
-  public static NonSignedInAccount getInstance(Context context) {
-    if (instance == null) {
-      instance = new NonSignedInAccount(context);
+    public static NonSignedInAccount getInstance(Context context) {
+        if (instance == null) {
+            instance = new NonSignedInAccount(context);
+        }
+        return instance;
     }
-    return instance;
-  }
 
-  private NonSignedInAccount(Context context) {
-    super(context);
-  }
-
-  @Nullable
-  @Override
-  public Account getAccount() {
-    return null;
-  }
-
-  @Override
-  public String getAccountName() {
-    return "";
-  }
-
-  @Override
-  public String getAccountKey() {
-    return "com.google.nsi:none";
-  }
-
-  @Override
-  public boolean isSignedIn() {
-    return false;
-  }
-
-  @Override
-  public File getFilesDir() {
-    return applicationContext.getFilesDir();
-  }
-
-  @Override
-  public String getDatabaseFileName(String name) {
-    return name;
-  }
-
-  @Override
-  public String getSharedPreferencesName() {
-    // Return the name of the default SharedPreferences.
-    return applicationContext.getPackageName() + "_preferences";
-  }
-
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) {
-      return true;
+    private NonSignedInAccount(Context context) {
+        super(context);
     }
-    if (o == null || getClass() != o.getClass()) {
-      return false;
-    }
-    // All NonSignedInAccount instances are equal.
-    return true;
-  }
 
-  @Override
-  public int hashCode() {
-    return 42;
-  }
+    @Nullable
+    @Override
+    public Account getAccount() {
+        return null;
+    }
+
+    @Override
+    public String getAccountName() {
+        return "";
+    }
+
+    @Override
+    public String getAccountAvatar() {
+        return null;
+    }
+
+    @Override
+    public String getAccountKey() {
+        return "com.google.nsi:none";
+    }
+
+    @Override
+    public boolean isSignedIn() {
+        return false;
+    }
+
+    @Override
+    public File getFilesDir() {
+        return applicationContext.getFilesDir();
+    }
+
+    @Override
+    public String getDatabaseFileName(String name) {
+        return name;
+    }
+
+    @Override
+    public String getSharedPreferencesName() {
+        // Return the name of the default SharedPreferences.
+        return applicationContext.getPackageName() + "_preferences";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        return o != null && getClass() == o.getClass();
+        // All NonSignedInAccount instances are equal.
+    }
+
+    @Override
+    public int hashCode() {
+        return 42;
+    }
 }

@@ -56,6 +56,11 @@ public class GoogleAccount extends AbstractAccount {
     }
 
     @Override
+    public String getAccountAvatar() {
+        return null;
+    }
+
+    @Override
     public String getAccountKey() {
         return accountKey;
     }

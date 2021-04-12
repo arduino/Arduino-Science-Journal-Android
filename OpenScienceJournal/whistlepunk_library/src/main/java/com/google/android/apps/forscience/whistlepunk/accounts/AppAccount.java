@@ -17,7 +17,9 @@
 package com.google.android.apps.forscience.whistlepunk.accounts;
 
 import android.accounts.Account;
+
 import androidx.annotation.Nullable;
+
 import java.io.File;
 
 /** An interface which represents an account. */
@@ -33,6 +35,8 @@ public interface AppAccount {
    */
   String getAccountName();
 
+  String getAccountAvatar();
+
   /**
    * Returns the key of this account. The key should include a namespace prefix and should not ever
    * change. The key will be used to separate file and database storage as well as preferences. The
@@ -40,7 +44,9 @@ public interface AppAccount {
    */
   String getAccountKey();
 
-  /** Returns true if this account is a signed-in account. */
+  /**
+   * Returns true if this account is a signed-in account.
+   */
   boolean isSignedIn();
 
   /** Returns the root directory for this account. */
