@@ -44,6 +44,11 @@ public final class NonSignedInAccount extends AbstractAccount {
     }
 
     @Override
+    public boolean isMinor() {
+        return false;
+    }
+
+    @Override
     public String getAccountKey() {
         return "com.google.nsi:none";
     }

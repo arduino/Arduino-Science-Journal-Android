@@ -31,9 +31,11 @@ public class ArduinoAccount extends AbstractAccount {
 
     private final String picture;
 
+    private final Boolean isMinor;
+
     private final String accountKey;
 
-    ArduinoAccount(final Context context, final Auth0Token token) {
+    public ArduinoAccount(final Context context, final Auth0Token token) {
         super(context);
         assert token != null;
         this.accessToken = token.getAccessToken();
@@ -43,6 +45,7 @@ public class ArduinoAccount extends AbstractAccount {
         this.nickname = jwt.getClaim("nickname").asString();
         this.email = jwt.getClaim("email").asString();
         this.picture = jwt.getClaim("picture").asString();
+        this.isMinor = jwt.getClaim("http://arduino.cc/is_minor").asBoolean();
         this.accountKey = AccountsUtils.makeAccountKey(NAMESPACE, this.id);
     }
 
@@ -60,6 +63,11 @@ public class ArduinoAccount extends AbstractAccount {
     @Override
     public String getAccountAvatar() {
         return picture;
+    }
+
+    @Override
+    public boolean isMinor() {
+        return Boolean.TRUE.equals(isMinor);
     }
 
     @Override
@@ -99,4 +107,9 @@ public class ArduinoAccount extends AbstractAccount {
     public int hashCode() {
         return Objects.hash(id);
     }
+
+    public String getEmail() {
+        return email;
+    }
+
 }

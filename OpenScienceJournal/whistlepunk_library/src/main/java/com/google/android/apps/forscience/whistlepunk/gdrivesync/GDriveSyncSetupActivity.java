@@ -360,7 +360,14 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private void onCompleted() {
         try {
-            GDriveShared.saveCredentials(this, mAccountId, mEmail, mToken, mFolderId);
+            final StringBuilder path = new StringBuilder();
+            for (final GDriveFile f : mPath) {
+                if (path.length() > 0) {
+                    path.append('/');
+                }
+                path.append(f.name);
+            }
+            GDriveShared.saveCredentials(this, mAccountId, mEmail, mToken, mFolderId, path.toString());
         } catch (Exception e) {
             Toast.makeText(this, "ERROR", Toast.LENGTH_SHORT).show();
             return;

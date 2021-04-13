@@ -22,57 +22,73 @@ import androidx.annotation.Nullable;
 
 import java.io.File;
 
-/** An interface which represents an account. */
+/**
+ * An interface which represents an account.
+ */
 public interface AppAccount {
-  /** Returns the account for this AppAccount, or null if there is no account. */
-  @Nullable
-  Account getAccount();
+    /**
+     * Returns the account for this AppAccount, or null if there is no account.
+     */
+    @Nullable
+    Account getAccount();
 
-  /**
-   * Returns the name of this account, or empty string if the account is the non-signed in account.
-   * The name of an account may change over time. For example, for a google account, the name is an
-   * email address and may be changed.
-   */
-  String getAccountName();
+    /**
+     * Returns the name of this account, or empty string if the account is the non-signed in account.
+     * The name of an account may change over time. For example, for a google account, the name is an
+     * email address and may be changed.
+     */
+    String getAccountName();
 
-  String getAccountAvatar();
+    String getAccountAvatar();
 
-  /**
-   * Returns the key of this account. The key should include a namespace prefix and should not ever
-   * change. The key will be used to separate file and database storage as well as preferences. The
-   * accountKey is also used as the key in the {@link AbstractAccountsProvider#accountsByKey} map.
-   */
-  String getAccountKey();
+    boolean isMinor();
 
-  /**
-   * Returns true if this account is a signed-in account.
-   */
-  boolean isSignedIn();
+    /**
+     * Returns the key of this account. The key should include a namespace prefix and should not ever
+     * change. The key will be used to separate file and database storage as well as preferences. The
+     * accountKey is also used as the key in the {@link AbstractAccountsProvider#accountsByKey} map.
+     */
+    String getAccountKey();
 
-  /** Returns the root directory for this account. */
-  File getFilesDir();
+    /**
+     * Returns true if this account is a signed-in account.
+     */
+    boolean isSignedIn();
 
-  /** Returns the file name of the database with the given name for this account. */
-  String getDatabaseFileName(String name);
+    /**
+     * Returns the root directory for this account.
+     */
+    File getFilesDir();
 
-  /** Returns the name of the SharedPreferences for this account. */
-  String getSharedPreferencesName();
+    /**
+     * Returns the file name of the database with the given name for this account.
+     */
+    String getDatabaseFileName(String name);
 
-  /**
-   * Returns a lock object that must be used to synchronize reading and writing of the local
-   * experiment library file for this account.
-   */
-  Object getLockForExperimentLibraryFile();
+    /**
+     * Returns the name of the SharedPreferences for this account.
+     */
+    String getSharedPreferencesName();
 
-  /**
-   * Returns a lock object that must be used to synchronize reading and writing of local experiment
-   * files in this account.
-   */
-  Object getLockForExperimentProtoFile();
+    /**
+     * Returns a lock object that must be used to synchronize reading and writing of the local
+     * experiment library file for this account.
+     */
+    Object getLockForExperimentLibraryFile();
 
-  /** Increments the count of how many cloud syncs have completed. */
-  void incrementSyncCompleteCount();
+    /**
+     * Returns a lock object that must be used to synchronize reading and writing of local experiment
+     * files in this account.
+     */
+    Object getLockForExperimentProtoFile();
 
-  /** Returns the count of how many cloud syncs have completed. */
-  int getSyncCompleteCount();
+    /**
+     * Increments the count of how many cloud syncs have completed.
+     */
+    void incrementSyncCompleteCount();
+
+    /**
+     * Returns the count of how many cloud syncs have completed.
+     */
+    int getSyncCompleteCount();
 }

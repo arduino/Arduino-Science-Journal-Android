@@ -95,4 +95,14 @@
     <string name="arduino_auth_title_sign_up_junior_completed">Account confirmation</string>
     <string name="arduino_auth_sign_up_junior_completed_text">We sent an email with instructions to your parent’s email %1$s. You will be able to sign in once they finalize your account.</string>
     <string name="arduino_auth_sign_up_junior_completed_action">Back to Science Journal</string>
+
+    <string name="arduino_auth_settings">Settings</string>
+    <string name="arduino_auth_settings_section_account">Arduino Account</string>
+    <string name="arduino_auth_settings_section_sync">Google Drive Sync</string>
+    <string name="arduino_auth_settings_section_sync_enable">Enable Drive Sync</string>
+    <string name="arduino_auth_settings_section_sync_change">Change</string>
+    <string name="arduino_auth_settings_section_sync_account">Account</string>
+    <string name="arduino_auth_settings_section_sync_folder">Sync Folder</string>
+    <string name="arduino_auth_settings_sign_out">Sign Out</string>
+    <string name="arduino_auth_settings_sign_out_confirm">Are you sure you want to Sign Out?</string>
 </resources>

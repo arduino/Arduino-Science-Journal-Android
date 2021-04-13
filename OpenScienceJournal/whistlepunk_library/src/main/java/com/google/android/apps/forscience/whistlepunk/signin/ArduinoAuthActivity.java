@@ -13,6 +13,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.apps.forscience.auth0.Auth0Token;
 import com.google.android.apps.forscience.whistlepunk.R;
+import com.google.android.apps.forscience.whistlepunk.accounts.arduino.ArduinoAccount;
+import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveSyncSetupActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -123,6 +125,10 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
         data.putExtra("token", token);
         setResult(RESULT_OK, data);
         finish();
+        final ArduinoAccount account = new ArduinoAccount(this, token);
+        if (!account.isMinor()) {
+            startActivity(new Intent(this, GDriveSyncSetupActivity.class));
+        }
     }
 
     private void setFirstFragment(AuthBaseFragment fragment) {

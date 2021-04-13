@@ -56,6 +56,11 @@ public class GoogleAccount extends AbstractAccount {
     }
 
     @Override
+    public boolean isMinor() {
+        return false;
+    }
+
+    @Override
     public String getAccountAvatar() {
         return null;
     }

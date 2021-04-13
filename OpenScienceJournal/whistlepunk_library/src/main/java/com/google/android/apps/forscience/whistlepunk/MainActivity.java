@@ -20,6 +20,10 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.RectF;
 import android.media.AudioManager;
 import android.net.Uri;
 import android.os.Bundle;
@@ -39,6 +43,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.bumptech.glide.Glide;
+import com.caverock.androidsvg.SVG;
 import com.google.android.apps.forscience.whistlepunk.accounts.AccountsProvider;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
 import com.google.android.apps.forscience.whistlepunk.accounts.NonSignedInAccount;
@@ -50,14 +55,16 @@ import com.google.android.apps.forscience.whistlepunk.feedback.FeedbackProvider;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.Experiment;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.ExperimentLibraryManager;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.LocalSyncManager;
-import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveSyncSetupActivity;
 import com.google.android.apps.forscience.whistlepunk.project.ExperimentListFragment;
 import com.google.android.apps.forscience.whistlepunk.remote.StringUtils;
 import com.google.android.apps.forscience.whistlepunk.signin.ArduinoAuthActivity;
+import com.google.android.apps.forscience.whistlepunk.signin.ArduinoSettingsActivity;
 import com.google.android.apps.forscience.whistlepunk.signin.WebActivity;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.io.InputStream;
+import java.net.URL;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
@@ -150,8 +157,7 @@ public class MainActivity extends ActivityWithNavigationView {
         });
         findViewById(R.id.navigation_user_layout).setOnClickListener(v -> {
             if (accountsProvider.isSignedIn()) {
-                // TODO open authentication settings
-                accountsProvider.undoSignIn();
+                startActivity(new Intent(this, ArduinoSettingsActivity.class));
             } else {
                 startActivityForResult(new Intent(this, ArduinoAuthActivity.class), ActivityRequestCodes.REQUEST_ARDUINO_SIGN_IN);
             }
@@ -389,14 +395,6 @@ public class MainActivity extends ActivityWithNavigationView {
             return true;
         }
 
-        /*
-        if (SignInActivity.shouldLaunch(this) || OldUserOptionPromptActivity.shouldLaunch(this)) {
-            Intent intent = new Intent(this, SignInActivity.class);
-            startActivityForResult(intent, ActivityRequestCodes.REQUEST_SIGN_IN_ACTIVITY);
-            return true;
-        }
-         */
-
         accountsProvider.setShowSignInActivityIfNotSignedIn(false);
         return false;
     }
@@ -443,13 +441,13 @@ public class MainActivity extends ActivityWithNavigationView {
             selectedItemId = itemId;
         } else if (itemId == R.id.navigation_item_onboarding) {
             startActivity(new Intent(this, OnboardingActivity.class));
-        } else if (itemId == R.id.navigation_item_drive) {
-            startActivityForResult(new Intent(this, GDriveSyncSetupActivity.class), ActivityRequestCodes.REQUEST_GOOGLE_SIGN_IN);
         } else if (itemId == R.id.navigation_item_activities) {
             try {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://science-journal.arduino.cc/")));
             } catch (ActivityNotFoundException ignored) {
             }
+        } else if (itemId == R.id.navigation_item_settings) {
+            startActivity(new Intent(this, ArduinoSettingsActivity.class));
         } else {
             drawerLayout.closeDrawers();
             // Launch intents
@@ -477,13 +475,6 @@ public class MainActivity extends ActivityWithNavigationView {
                         SettingsActivity.getLaunchIntent(
                                 this, menuItem.getTitle(), SettingsActivity.TYPE_DEV_OPTIONS);
             }
-            /*
-            if (itemId == R.id.navigation_item_sign_in) {
-                final String tag = String.valueOf(R.id.navigation_item_experiments);
-                Fragment fragment = getSupportFragmentManager().findFragmentByTag(tag);
-                accountsProvider.showAccountSwitcherDialog(fragment, ActivityRequestCodes.REQUEST_GOOGLE_SIGN_IN);
-            }
-             */
             if (intent != null) {
                 try {
                     startActivity(intent);
@@ -628,14 +619,39 @@ public class MainActivity extends ActivityWithNavigationView {
         if (appAccount instanceof NonSignedInAccount) {
             avatarView.setImageResource(R.drawable.ic_navigation_user_avatar);
             nicknameView.setText(R.string.arduino_auth_sign_in_action);
+            navigationView.getMenu().findItem(R.id.navigation_item_settings).setVisible(false);
         } else {
             final String avatar = appAccount.getAccountAvatar();
             if (StringUtils.isEmpty(avatar)) {
                 avatarView.setImageResource(R.drawable.ic_navigation_user_avatar);
             } else {
-                Glide.with(this).load(avatar).circleCrop().into(avatarView);
+                if (avatar.toLowerCase().endsWith(".svg")) {
+                    new Thread(() -> {
+                        final Resources r = getResources();
+                        final int side = r.getDimensionPixelSize(R.dimen.main_arduino_auth_avatar_side);
+                        final Bitmap bitmap = Bitmap.createBitmap(side, side, Bitmap.Config.ARGB_8888);
+                        final Canvas canvas = new Canvas(bitmap);
+                        canvas.drawRGB(255, 255, 255);
+                        try {
+                            final SVG svg;
+                            try (final InputStream inputStream = new URL(avatar).openConnection().getInputStream()) {
+                                svg = SVG.getFromInputStream(inputStream);
+                            }
+                            svg.setDocumentWidth(side);
+                            svg.setDocumentHeight(side);
+                            svg.renderToCanvas(canvas, new RectF(0, 0, side, side));
+                            runOnUiThread(() -> Glide.with(this).load(bitmap).circleCrop().into(avatarView));
+                        } catch (Exception e) {
+                            Log.e("Main", "Unable to decode SVG", e);
+                            runOnUiThread(() -> avatarView.setImageResource(R.drawable.ic_navigation_user_avatar));
+                        }
+                    }).start();
+                } else {
+                    Glide.with(this).load(avatar).circleCrop().into(avatarView);
+                }
             }
             nicknameView.setText(StringUtils.emptyIfNull(appAccount.getAccountName()));
+            navigationView.getMenu().findItem(R.id.navigation_item_settings).setVisible(true);
         }
 
         // Clean up old files from previous exports.

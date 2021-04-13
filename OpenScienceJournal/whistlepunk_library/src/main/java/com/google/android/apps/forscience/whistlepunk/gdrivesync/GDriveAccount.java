@@ -10,4 +10,6 @@ public class GDriveAccount {
 
     public String folderId;
 
+    public String folderPath;
+
 }

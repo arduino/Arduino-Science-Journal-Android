@@ -16,12 +16,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <group android:checkableBehavior="single">
-        <!--
-        <item
-            android:id="@+id/navigation_item_sign_in"
-            android:icon="@drawable/ic_account_circle_black_24dp"
-            android:title="@string/navigation_item_sign_in" />
-            -->
         <item
             android:id="@+id/navigation_item_experiments"
             android:icon="@drawable/ic_navlibrary_black_24dp"
@@ -29,31 +23,22 @@
         <item
             android:id="@+id/navigation_item_activities"
             android:icon="@drawable/ic_activities"
-            app:actionLayout="@layout/menu_activities_item"
-            android:title="@string/navigation_activities" />
+            android:title="@string/navigation_activities"
+            app:actionLayout="@layout/menu_activities_item" />
         <item
             android:id="@+id/navigation_item_onboarding"
             android:icon="@drawable/ic_get_started"
             android:title="@string/navigation_getting_started" />
         <item
-            android:id="@+id/navigation_item_drive"
-            android:icon="@drawable/ic_get_started"
-            android:title="[TEST] GDrive Setup" />
-        <!--
-        <item
-            android:id="@+id/navigation_item_signout"
-            android:icon="@drawable/ic_get_started"
-            android:title="[DEV] Sign Out" />
-        <item
-            android:id="@+id/navigation_item_settings"
-            android:icon="@drawable/ic_settings_black_24dp"
-            android:title="@string/navigation_item_settings" />
-            -->
-        <item
             android:id="@+id/dev_testing_options"
             android:icon="@drawable/ic_notes_white_24dp"
             android:title="@string/navigation_item_testing_options"
             android:visibility="gone" />
+        <item
+            android:id="@+id/navigation_item_settings"
+            android:icon="@drawable/ic_navigation_settings"
+            android:title="@string/navigation_item_settings"
+            android:visible="false" />
         <item
             android:id="@+id/navigation_item_about"
             android:icon="@drawable/ic_info_black_24dp"
