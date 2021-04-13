@@ -79,6 +79,7 @@ import com.google.android.apps.forscience.whistlepunk.filemetadata.ExperimentLib
 import com.google.android.apps.forscience.whistlepunk.filemetadata.ExperimentOverviewPojo;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.FileMetadataUtil;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.Label;
+import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveShared;
 import com.google.android.apps.forscience.whistlepunk.metadata.GoosciCaption;
 import com.google.android.apps.forscience.whistlepunk.metadata.GoosciLabel;
 import com.google.android.apps.forscience.whistlepunk.metadata.GoosciPictureLabelValue.PictureLabelValue;
@@ -351,11 +352,11 @@ public class ExperimentListFragment extends Fragment
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_experiment_list, container, false);
-        final RecyclerView detailList = (RecyclerView) view.findViewById(R.id.details);
+        final RecyclerView detailList = view.findViewById(R.id.details);
 
         experimentListAdapter = new ExperimentListAdapter(this);
 
-        swipeLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_container);
+        swipeLayout = view.findViewById(R.id.swipe_container);
         swipeLayout.setOnRefreshListener(this);
 
         // TODO: Adjust the column count based on breakpoint specs when available.
@@ -375,7 +376,7 @@ public class ExperimentListFragment extends Fragment
         detailList.setAdapter(experimentListAdapter);
 
         FloatingActionButton newExperimentButton =
-                (FloatingActionButton) view.findViewById(R.id.new_experiment);
+                view.findViewById(R.id.new_experiment);
         if (claimExperimentsMode) {
             newExperimentButton.setVisibility(View.GONE);
         } else {
@@ -730,12 +731,7 @@ public class ExperimentListFragment extends Fragment
         if (isFragmentGone()) {
             return;
         }
-        if (appAccount.isSignedIn()) {
-            // Check if the account hasn't been loaded yet.
-            if (appAccount.getAccount() == null) {
-                syncLater(logMessage);
-                return;
-            }
+        if (appAccount.isSignedIn() && GDriveShared.getCredentials(getContext()) != null) {
             CloudSyncProvider syncProvider =
                     WhistlePunkApplication.getCloudSyncProvider(applicationContext);
             CloudSyncManager syncService = syncProvider.getServiceForAccount(appAccount);
@@ -1527,18 +1523,18 @@ public class ExperimentListFragment extends Fragment
             this.viewType = viewType;
             if (viewType == ExperimentListAdapter.VIEW_TYPE_EXPERIMENT) {
                 cardView = itemView.findViewById(R.id.card_view);
-                experimentImage = (ImageView) itemView.findViewById(R.id.experiment_image);
-                experimentTitle = (TextView) itemView.findViewById(R.id.experiment_title);
+                experimentImage = itemView.findViewById(R.id.experiment_image);
+                experimentTitle = itemView.findViewById(R.id.experiment_title);
                 archivedIndicator = itemView.findViewById(R.id.archived_indicator);
-                menuButton = (ImageButton) itemView.findViewById(R.id.menu_button);
+                menuButton = itemView.findViewById(R.id.menu_button);
                 if (claimExperimentsMode) {
-                    driveButton = (ImageButton) itemView.findViewById(R.id.drive_button);
-                    shareButton = (ImageButton) itemView.findViewById(R.id.share_button);
-                    downloadButton = (ImageButton) itemView.findViewById(R.id.download_button);
-                    deleteButton = (ImageButton) itemView.findViewById(R.id.delete_button);
+                    driveButton = itemView.findViewById(R.id.drive_button);
+                    shareButton = itemView.findViewById(R.id.share_button);
+                    downloadButton = itemView.findViewById(R.id.download_button);
+                    deleteButton = itemView.findViewById(R.id.delete_button);
                 }
             } else if (viewType == ExperimentListAdapter.VIEW_TYPE_CLAIM_EXPERIMENTS) {
-                claimButton = (Button) itemView.findViewById(R.id.btn_claim_experiments);
+                claimButton = itemView.findViewById(R.id.btn_claim_experiments);
             }
         }
     }

@@ -41,7 +41,6 @@ import dagger.Component;
                 ScalarInputDiscoveryModule.class,
                 ContextModule.class,
                 PerfTrackerModule.class,
-                //GoogleAccountsModule.class,
                 LicenseModule.class,
                 GoogleDriveSyncModule.class,
                 ArduinoAccountsModule.class

@@ -1,9 +1,6 @@
 package com.google.android.apps.forscience.whistlepunk.accounts;
 
-import android.accounts.Account;
 import android.content.Context;
-
-import androidx.annotation.Nullable;
 
 import java.io.File;
 
@@ -27,11 +24,6 @@ public final class NonSignedInAccount extends AbstractAccount {
         super(context);
     }
 
-    @Nullable
-    @Override
-    public Account getAccount() {
-        return null;
-    }
 
     @Override
     public String getAccountName() {

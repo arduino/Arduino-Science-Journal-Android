@@ -9,24 +9,25 @@ import com.google.api.services.drive.model.File;
  */
 public class GoogleDriveFileImpl implements DriveFile {
 
-  private final File file;
+    private final File file;
 
-  public GoogleDriveFileImpl(File file) {
-    this.file = file;
-  }
+    public GoogleDriveFileImpl(File file) {
+        this.file = file;
+    }
 
-  @Override
-  public long getVersion() {
-    return file.getVersion();
-  }
+    @Override
+    public long getVersion() {
+        return file.getVersion();
+    }
 
-  @Override
-  public String getId() {
-    return file.getId();
-  }
+    @Override
+    public String getId() {
+        return file.getId();
+    }
 
-  @Override
-  public String getTitle() {
-    return file.getTitle();
-  }
+    @Override
+    public String getTitle() {
+        return file.getTitle();
+    }
+
 }

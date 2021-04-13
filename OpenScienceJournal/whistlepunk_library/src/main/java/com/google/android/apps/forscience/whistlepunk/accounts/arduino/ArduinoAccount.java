@@ -1,9 +1,6 @@
 package com.google.android.apps.forscience.whistlepunk.accounts.arduino;
 
-import android.accounts.Account;
 import android.content.Context;
-
-import androidx.annotation.Nullable;
 
 import com.auth0.android.jwt.JWT;
 import com.google.android.apps.forscience.auth0.Auth0Token;
@@ -47,12 +44,6 @@ public class ArduinoAccount extends AbstractAccount {
         this.picture = jwt.getClaim("picture").asString();
         this.isMinor = jwt.getClaim("http://arduino.cc/is_minor").asBoolean();
         this.accountKey = AccountsUtils.makeAccountKey(NAMESPACE, this.id);
-    }
-
-    @Nullable
-    @Override
-    public Account getAccount() {
-        return null;
     }
 
     @Override

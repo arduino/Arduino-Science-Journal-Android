@@ -2,6 +2,7 @@ package com.google.android.apps.forscience.whistlepunk.cloudsync;
 
 import android.content.Context;
 import android.util.Log;
+
 import com.google.android.apps.forscience.whistlepunk.AppSingleton;
 import com.google.android.apps.forscience.whistlepunk.DataController;
 import com.google.android.apps.forscience.whistlepunk.PictureUtils;
@@ -19,6 +20,7 @@ import com.google.android.apps.forscience.whistlepunk.filemetadata.FileSyncColle
 import com.google.android.apps.forscience.whistlepunk.filemetadata.Label;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.LocalSyncManager;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.Trial;
+import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveShared;
 import com.google.android.apps.forscience.whistlepunk.metadata.GoosciExperiment;
 import com.google.android.apps.forscience.whistlepunk.metadata.GoosciLabel;
 import com.google.android.apps.forscience.whistlepunk.metadata.GoosciScalarSensorData;
@@ -27,6 +29,7 @@ import com.google.api.client.http.HttpTransport;
 import com.google.api.client.json.JsonFactory;
 import com.google.common.base.Strings;
 import com.google.common.base.Supplier;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -159,7 +162,7 @@ public class DriveSyncManager implements CloudSyncManager {
       LocalSyncManager localSyncManager)
       throws IOException {
     Map<String, FileSyncCollection> fileSyncCollectionMap = new HashMap<>();
-    if (!appAccount.isSignedIn()) {
+    if (!appAccount.isSignedIn() || GDriveShared.getCredentials(context) == null) {
       AppSingleton.getInstance(context).setSyncServiceBusy(false);
       return;
     }
