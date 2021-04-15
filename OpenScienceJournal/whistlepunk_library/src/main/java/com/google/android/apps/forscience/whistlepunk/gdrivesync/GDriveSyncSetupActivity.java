@@ -1,7 +1,9 @@
 package com.google.android.apps.forscience.whistlepunk.gdrivesync;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
@@ -149,17 +153,35 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
         return view;
     }
 
+
     private void onGoogleSignIn() {
-        final GoogleSignInOptions options = new GoogleSignInOptions.Builder()
-                .requestId()
-                .requestEmail()
-                .requestScopes(GDRIVE_SCOPES[0], GDRIVE_SCOPES[1], GDRIVE_SCOPES[2], GDRIVE_SCOPES[3])
-                .build();
-        final GoogleSignInClient client = GoogleSignIn.getClient(this, options);
-        showLoader();
-        client.signOut()
-                .addOnCompleteListener(this, task -> startActivityForResult(client.getSignInIntent(), RC_SIGN_IN))
-                .addOnFailureListener(this, task -> startActivityForResult(client.getSignInIntent(), RC_SIGN_IN));
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.GET_ACCOUNTS) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.GET_ACCOUNTS}, PERMISSIONS_REQUEST_GET_ACCOUNTS);
+        } else {
+            final GoogleSignInOptions options = new GoogleSignInOptions.Builder()
+                    .requestId()
+                    .requestEmail()
+                    .requestScopes(GDRIVE_SCOPES[0], GDRIVE_SCOPES[1], GDRIVE_SCOPES[2], GDRIVE_SCOPES[3])
+                    .build();
+            final GoogleSignInClient client = GoogleSignIn.getClient(this, options);
+            showLoader();
+            client.signOut()
+                    .addOnCompleteListener(this, task -> startActivityForResult(client.getSignInIntent(), RC_SIGN_IN))
+                    .addOnFailureListener(this, task -> startActivityForResult(client.getSignInIntent(), RC_SIGN_IN));
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == PERMISSIONS_REQUEST_GET_ACCOUNTS) {
+            for (int i = 0; i < permissions.length; i++) {
+                if (grantResults[i] != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+            }
+            onGoogleSignIn();
+        }
     }
 
     @Override
@@ -496,6 +518,8 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
     };
 
     private static final int RC_SIGN_IN = 1000;
+
+    private static final int PERMISSIONS_REQUEST_GET_ACCOUNTS = 12341;
 
 }
 

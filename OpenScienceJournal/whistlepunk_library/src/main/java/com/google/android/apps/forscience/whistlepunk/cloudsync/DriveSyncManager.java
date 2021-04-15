@@ -56,7 +56,7 @@ public class DriveSyncManager implements CloudSyncManager {
   private final DataController dc;
   private final RecordingDataController rdc;
   private boolean sjFolderExists = false;
-  // State-holders for kicking off a second sync if one is requested during an active sync.
+
   private boolean syncAgain = false;
   private String lastLogMessage = "";
 

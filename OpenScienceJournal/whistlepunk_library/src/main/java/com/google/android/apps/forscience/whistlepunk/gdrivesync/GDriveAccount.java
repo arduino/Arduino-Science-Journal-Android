@@ -12,4 +12,14 @@ public class GDriveAccount {
 
     public String folderPath;
 
+    public GDriveAccount() {
+    }
+
+    public GDriveAccount(String accountId, String email, String token, String folderId, String folderPath) {
+        this.accountId = accountId;
+        this.email = email;
+        this.token = token;
+        this.folderId = folderId;
+        this.folderPath = folderPath;
+    }
 }

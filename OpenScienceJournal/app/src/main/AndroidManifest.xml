@@ -45,26 +45,17 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <!-- Accounts permissions -->
-    <uses-permission
-        android:name="android.permission.GET_ACCOUNTS"
-        android:maxSdkVersion="22" />
-    <uses-permission
-        android:name="android.permission.MANAGE_ACCOUNTS"
-        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
 
     <application
-        android:requestLegacyExternalStorage="true"
         android:name=".ScienceJournalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <service
-            android:name="com.google.android.apps.forscience.whistlepunk.cloudsync.DriveSyncAndroidService"
-            android:enabled="true"
-            android:exported="false" />
 
         <activity
             android:name=".licenses.LicenseActivity"
@@ -76,6 +67,4 @@
                 android:value="com.google.android.apps.forscience.whistlepunk.SettingsActivity" />
         </activity>
     </application>
-
-
 </manifest>

@@ -270,6 +270,11 @@
                 android:value="com.google.android.apps.forscience.whistlepunk.MainActivity" />
         </activity>
 
+        <service
+            android:name=".gdrivesync.GDriveSyncService"
+            android:enabled="true"
+            android:exported="false" />
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}"

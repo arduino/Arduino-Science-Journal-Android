@@ -8,7 +8,13 @@ import androidx.security.crypto.MasterKeys;
 
 public class GDriveShared {
 
+    private static boolean mAccountLoaded = false;
+
+    private static GDriveAccount mAccount = null;
+
     public static void saveCredentials(final Context context, final String accountId, final String email, final String token, final String folderId, final String folderPath) {
+        mAccountLoaded = true;
+        mAccount = new GDriveAccount(accountId, email, token, folderId, folderPath);
         final SharedPreferences.Editor prefs = getSharedPreferences(context).edit();
         prefs.putString(KEY_ACCOUNT_ID, accountId);
         prefs.putString(KEY_EMAIL, email);
@@ -19,6 +25,8 @@ public class GDriveShared {
     }
 
     public static void clearCredentials(final Context context) {
+        mAccountLoaded = true;
+        mAccount = null;
         final SharedPreferences.Editor prefs = getSharedPreferences(context).edit();
         prefs.remove(KEY_ACCOUNT_ID);
         prefs.remove(KEY_EMAIL);
@@ -29,18 +37,21 @@ public class GDriveShared {
     }
 
     public static GDriveAccount getCredentials(final Context context) {
-        final SharedPreferences prefs = getSharedPreferences(context);
-        if (prefs.contains(KEY_ACCOUNT_ID)) {
-            final GDriveAccount account = new GDriveAccount();
-            account.accountId = prefs.getString(KEY_ACCOUNT_ID, "");
-            account.email = prefs.getString(KEY_EMAIL, "");
-            account.token = prefs.getString(KEY_TOKEN, "");
-            account.folderId = prefs.getString(KEY_SYNC_FOLDER_ID, "");
-            account.folderPath = prefs.getString(KEY_SYNC_FOLDER_PATH, "");
-            return account;
-        } else {
-            return null;
+        if (!mAccountLoaded) {
+            final SharedPreferences prefs = getSharedPreferences(context);
+            if (prefs.contains(KEY_ACCOUNT_ID)) {
+                mAccount = new GDriveAccount();
+                mAccount.accountId = prefs.getString(KEY_ACCOUNT_ID, "");
+                mAccount.email = prefs.getString(KEY_EMAIL, "");
+                mAccount.token = prefs.getString(KEY_TOKEN, "");
+                mAccount.folderId = prefs.getString(KEY_SYNC_FOLDER_ID, "");
+                mAccount.folderPath = prefs.getString(KEY_SYNC_FOLDER_PATH, "");
+            } else {
+                return null;
+            }
+            mAccountLoaded = true;
         }
+        return mAccount;
     }
 
     private static SharedPreferences getSharedPreferences(final Context context) {
