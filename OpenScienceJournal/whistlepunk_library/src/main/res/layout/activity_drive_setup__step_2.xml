@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/arduino_clouds"
     tools:context="com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveSyncSetupActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
