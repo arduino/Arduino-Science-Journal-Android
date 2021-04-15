@@ -13,7 +13,6 @@ import dagger.Provides;
 public class GoogleDriveSyncModule {
   @Provides
   CloudSyncProvider provideCloudSyncProvider(Context context) {
-    //return new DriveSyncProvider(context, GoogleDriveApiImpl::new);
     return new GDriveSyncProvider(context);
   }
 }

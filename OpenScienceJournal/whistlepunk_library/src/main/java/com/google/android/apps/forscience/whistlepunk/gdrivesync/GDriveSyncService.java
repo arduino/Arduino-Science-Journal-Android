@@ -160,6 +160,7 @@ public class GDriveSyncService extends Service {
             Log.e(LOG_TAG, "SYNC FAILED", e);
             showToast(R.string.sync_failed);
         }
+        AppSingleton.getInstance(getApplicationContext()).notifyNewExperimentSynced();
         AppSingleton.getInstance(getApplicationContext()).setSyncServiceBusy(false);
     }
 
