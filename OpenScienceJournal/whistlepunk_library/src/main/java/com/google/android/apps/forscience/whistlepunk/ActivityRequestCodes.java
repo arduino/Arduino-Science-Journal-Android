@@ -10,7 +10,6 @@ public final class ActivityRequestCodes {
   public static final int REQUEST_TAKE_PHOTO = 6;
   public static final int REQUEST_SELECT_PHOTO = 7;
 
-  public static final int REQUEST_GOOGLE_SIGN_IN = 8;
   public static final int REQUEST_ARDUINO_SIGN_IN = 9;
 
   private ActivityRequestCodes() {}

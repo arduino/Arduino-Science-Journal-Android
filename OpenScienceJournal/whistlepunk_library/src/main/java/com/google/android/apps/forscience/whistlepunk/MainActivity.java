@@ -590,9 +590,10 @@ public class MainActivity extends ActivityWithNavigationView {
                     finish();
                 }
                 return;
-            case ActivityRequestCodes.REQUEST_GOOGLE_SIGN_IN:
             case ActivityRequestCodes.REQUEST_ARDUINO_SIGN_IN:
-                accountsProvider.onLoginAccountsChanged(data);
+                if (resultCode == RESULT_OK) {
+                    accountsProvider.onLoginAccountsChanged(data);
+                }
                 return;
             default:
                 break;
