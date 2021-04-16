@@ -80,4 +80,24 @@
         android:layout_marginTop="-6dp"
         android:indeterminate="true"
         android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/claim_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:background="@color/arduino_base_gray"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/claim_all_btn"
+            style="@style/ArduinoAuth_Button.Secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:minWidth="200dp"
+            android:text="@string/claim_experiments_action_all" />
+    </FrameLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

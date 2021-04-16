@@ -93,7 +93,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.ArduinoAuth">
+    <style name="AppTheme.Arduino">
         <item name="colorPrimaryDark">@color/color_accent_dark</item>
         <item name="colorPrimary">@color/color_accent</item>
         <item name="colorAccent">@color/color_accent</item>
@@ -165,13 +165,6 @@
              have a 4dp sized throbber -->
         <item name="android:minHeight">26dip</item>
         <item name="android:maxHeight">26dip</item>
-    </style>
-
-    <style name="AppTheme.ClaimExperiments" parent="Theme.MaterialComponents.Light">
-        <item name="colorPrimaryDark">@color/claim_experiments_status_bar</item>
-        <item name="colorPrimary">@color/claim_experiments_action_bar</item>
-        <item name="titleTextColor">@color/claim_experiments_action_bar_text</item>
-        <item name="subtitleTextColor">@color/claim_experiments_action_bar_text</item>
     </style>
 
     <style name="preview_experiment_details" parent="Theme.MaterialComponents.Light">

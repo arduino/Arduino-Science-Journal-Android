@@ -224,30 +224,30 @@
         <activity
             android:name=".signin.ArduinoAuthActivity"
             android:exported="false"
-            android:theme="@style/AppTheme.ArduinoAuth"
+            android:theme="@style/AppTheme.Arduino"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".signin.ArduinoSettingsActivity"
             android:exported="false"
-            android:theme="@style/AppTheme.ArduinoAuth"
+            android:theme="@style/AppTheme.Arduino"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".signin.WebActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.ArduinoAuth"
+            android:theme="@style/AppTheme.Arduino"
             android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".gdrivesync.GDriveSyncSetupActivity"
             android:exported="false"
-            android:theme="@style/AppTheme.ArduinoAuth" />
+            android:theme="@style/AppTheme.Arduino" />
         <activity
             android:name="com.google.android.apps.forscience.auth0.Auth0WebSignInSocialActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.ArduinoAuth"
+            android:theme="@style/AppTheme.Arduino"
             android:windowSoftInputMode="adjustPan" />
         <!--
         <activity
@@ -264,7 +264,7 @@
             android:exported="false"
             android:label="@string/title_activity_claim_experiments"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.ClaimExperiments">
+            android:theme="@style/AppTheme.Arduino">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.google.android.apps.forscience.whistlepunk.MainActivity" />

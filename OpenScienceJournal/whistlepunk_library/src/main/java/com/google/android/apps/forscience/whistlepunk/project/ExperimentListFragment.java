@@ -56,7 +56,6 @@ import com.google.android.apps.forscience.javalib.Success;
 import com.google.android.apps.forscience.utils.StringUtils;
 import com.google.android.apps.forscience.whistlepunk.AccessibilityUtils;
 import com.google.android.apps.forscience.whistlepunk.AppSingleton;
-import com.google.android.apps.forscience.whistlepunk.ColorUtils;
 import com.google.android.apps.forscience.whistlepunk.DataController;
 import com.google.android.apps.forscience.whistlepunk.ExportService;
 import com.google.android.apps.forscience.whistlepunk.LoggingConsumer;
@@ -409,6 +408,11 @@ public class ExperimentListFragment extends Fragment
                     });
         }
 
+        if (claimExperimentsMode) {
+            view.findViewById(R.id.claim_all).setVisibility(View.VISIBLE);
+            view.findViewById(R.id.claim_all_btn).setOnClickListener(v -> confirmClaimUnclaimedExperiments());
+        }
+
         return view;
     }
 
@@ -426,10 +430,6 @@ public class ExperimentListFragment extends Fragment
         return !claimExperimentsMode
                 && appAccount.isSignedIn()
                 && AccountsUtils.getUnclaimedExperimentCount(applicationContext) >= 1;
-    }
-
-    private boolean shouldShowAddExperimentsToDriveCard() {
-        return claimExperimentsMode;
     }
 
     private void loadExperiments() {
@@ -639,14 +639,7 @@ public class ExperimentListFragment extends Fragment
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        if (claimExperimentsMode) {
-            inflater.inflate(R.menu.menu_claim_experiments, menu);
-            ColorUtils.colorDrawable(
-                    applicationContext,
-                    menu.findItem(R.id.run_review_overflow_menu).getIcon(),
-                    R.color.claim_experiments_action_bar_text);
-
-        } else {
+        if (!claimExperimentsMode) {
             inflater.inflate(R.menu.menu_experiment_list, menu);
         }
         optionsMenu = menu;
@@ -713,12 +706,6 @@ public class ExperimentListFragment extends Fragment
             loadExperiments();
             getActivity().invalidateOptionsMenu();
             return true;
-        } else if (id == R.id.action_claim_unclaimed_experiments) {
-            confirmClaimUnclaimedExperiments();
-            return true;
-        } else if (id == R.id.action_delete_unclaimed_experiments) {
-            confirmDeleteUnclaimedExperiments();
-            return true;
         } else if (id == R.id.action_network_disconnected) {
             Resources res = applicationContext.getResources();
             experimentListAdapter.showSnackbar(
@@ -767,18 +754,13 @@ public class ExperimentListFragment extends Fragment
 
     private void confirmClaimUnclaimedExperiments() {
         Context context = getContext();
-        int unclaimedExperimentCount = AccountsUtils.getUnclaimedExperimentCount(applicationContext);
+        final String username = claimingAccount != null && claimingAccount.isSignedIn() ? claimingAccount.getAccountName() : "";
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle(
-                context
-                        .getResources()
-                        .getQuantityString(
-                                R.plurals.claim_all_confirmation_text,
-                                unclaimedExperimentCount,
-                                unclaimedExperimentCount));
+        builder.setTitle(R.string.claim_experiments_confirm_all_title);
+        builder.setMessage(getString(R.string.claim_experiments_confirm_all_message, username));
         builder.setNegativeButton(android.R.string.cancel, (dialog, which) -> dialog.cancel());
         builder.setPositiveButton(
-                R.string.claim_all_confirmation_yes,
+                R.string.claim_experiments_action,
                 (dialog, which) -> {
                     claimUnclaimedExperiments();
                     dialog.dismiss();
@@ -948,7 +930,6 @@ public class ExperimentListFragment extends Fragment
         static final int VIEW_TYPE_EMPTY = 1;
         static final int VIEW_TYPE_DATE = 2;
         static final int VIEW_TYPE_CLAIM_EXPERIMENTS = 3;
-        static final int VIEW_TYPE_ADD_EXPERIMENTS_TO_DRIVE = 4;
         private final Drawable placeHolderImage;
 
         private final Context applicationContext;
@@ -985,9 +966,6 @@ public class ExperimentListFragment extends Fragment
             items.clear();
             if (parentReference.get().shouldShowClaimExperimentsCard()) {
                 items.add(new ExperimentListItem(VIEW_TYPE_CLAIM_EXPERIMENTS));
-            }
-            if (parentReference.get().shouldShowAddExperimentsToDriveCard()) {
-                items.add(new ExperimentListItem(VIEW_TYPE_ADD_EXPERIMENTS_TO_DRIVE));
             }
             if (experimentOverviews.isEmpty()) {
                 items.add(new ExperimentListItem(VIEW_TYPE_EMPTY));
@@ -1026,8 +1004,6 @@ public class ExperimentListFragment extends Fragment
                 view = inflater.inflate(R.layout.experiment_date, parent, false);
             } else if (viewType == VIEW_TYPE_CLAIM_EXPERIMENTS) {
                 view = inflater.inflate(R.layout.claim_experiments_card, parent, false);
-            } else if (viewType == VIEW_TYPE_ADD_EXPERIMENTS_TO_DRIVE) {
-                view = inflater.inflate(R.layout.add_experiments_to_drive_card, parent, false);
             } else { // VIEW_TYPE_EXPERIMENT
                 view =
                         inflater.inflate(
@@ -1299,13 +1275,12 @@ public class ExperimentListFragment extends Fragment
             }
         }
 
-        private void showClaimedSnackbar() {
+        private void showClaimedSnackbar(String expTitle) {
             if (isParentGone()) {
                 return;
             }
-            String accountName = parentReference.get().claimingAccount.getAccountName();
             String message =
-                    applicationContext.getResources().getString(R.string.experiment_added_text, accountName);
+                    applicationContext.getResources().getString(R.string.claim_experiments_done, expTitle);
             showSnackbar(message, null /* undoOnClickListener */);
         }
 
@@ -1385,10 +1360,10 @@ public class ExperimentListFragment extends Fragment
                 return;
             }
             AlertDialog.Builder builder = new AlertDialog.Builder(parentReference.get().getContext());
-            builder.setTitle(R.string.drive_confirmation_text);
+            builder.setMessage(R.string.claim_experiments_confirm_one);
             builder.setNegativeButton(android.R.string.cancel, (dialog, which) -> dialog.cancel());
             builder.setPositiveButton(
-                    R.string.drive_confirmation_yes,
+                    R.string.claim_experiments_action,
                     (dialog, which) -> {
                         claimExperiment(experimentId);
                         dialog.dismiss();
@@ -1399,7 +1374,7 @@ public class ExperimentListFragment extends Fragment
             dialog
                     .getButton(DialogInterface.BUTTON_POSITIVE)
                     .setContentDescription(
-                            applicationContext.getResources().getString(R.string.drive_confirmation_yes));
+                            applicationContext.getResources().getString(R.string.claim_experiments_action));
         }
 
         private void claimExperiment(String experimentId) {
@@ -1427,7 +1402,10 @@ public class ExperimentListFragment extends Fragment
                                                     TrackerConstants.ACTION_CLAIM_SINGLE,
                                                     null,
                                                     0);
-                                    showClaimedSnackbar();
+                                    final AppSingleton appSingleton = AppSingleton.getInstance(applicationContext);
+                                    final DataController dc = appSingleton.getDataController(appAccount);
+                                    final Experiment experiment = RxDataController.getExperimentById(dc, experimentId).blockingGet();
+                                    showClaimedSnackbar(experiment != null ? experiment.getTitle() : experimentId);
                                     // When the snackbar disappears, finish claim experiments mode if there are no
                                     // experiments left.
                                     new Handler()

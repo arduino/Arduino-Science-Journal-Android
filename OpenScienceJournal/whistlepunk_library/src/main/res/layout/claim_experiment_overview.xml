@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   Copyright 2016 Google Inc. All Rights Reserved.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,23 +14,22 @@
   limitations under the License.
  -->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/cardview_margin_sides"
-    android:layout_marginEnd="@dimen/cardview_margin_sides"
     android:layout_marginTop="@dimen/cardview_margin"
+    android:layout_marginEnd="@dimen/cardview_margin_sides"
     android:layout_marginBottom="@dimen/cardview_margin"
-    android:foreground="?attr/selectableItemBackground"
     android:clickable="true"
+    android:elevation="@dimen/cardview_default_elevation"
     android:focusable="true"
-    android:id="@+id/card_view"
+    android:foreground="?attr/selectableItemBackground"
     app:cardCornerRadius="@dimen/cardview_radius"
     app:cardPreventCornerOverlap="false"
-    android:elevation="@dimen/cardview_default_elevation"
-    tools:ignore="UnusedAttribute"
-    >
+    tools:ignore="UnusedAttribute">
 
-    <include layout="@layout/claim_experiment_overview_content"/>
+    <include layout="@layout/claim_experiment_overview_content" />
 </androidx.cardview.widget.CardView>

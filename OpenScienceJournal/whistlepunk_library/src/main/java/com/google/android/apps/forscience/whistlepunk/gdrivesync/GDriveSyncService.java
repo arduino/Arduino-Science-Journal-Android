@@ -258,7 +258,7 @@ public class GDriveSyncService extends Service {
         final AppSingleton appSingleton = AppSingleton.getInstance(context);
         final ExperimentLibraryManager elm = appSingleton.getExperimentLibraryManager(appAccount);
         final LocalSyncManager lsm = appSingleton.getLocalSyncManager(appAccount);
-        final DataController dc = AppSingleton.getInstance(context).getDataController(appAccount);
+        final DataController dc = appSingleton.getDataController(appAccount);
         final Experiment experiment = RxDataController.getExperimentById(dc, localExpId).blockingGet();
         experiment.cleanTrials(this, appAccount);
         remoteExperiment.version = version;
