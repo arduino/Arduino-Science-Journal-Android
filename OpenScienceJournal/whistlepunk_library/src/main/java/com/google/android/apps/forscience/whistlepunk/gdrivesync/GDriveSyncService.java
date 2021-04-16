@@ -100,16 +100,26 @@ public class GDriveSyncService extends Service {
                 boolean remoteIsNewer = false;
                 boolean localIsNewer = false;
                 boolean localIsDeleted = false;
+                boolean conflict = false;
+                long localVersion = -1;
                 for (final String localExpId : localExperimentIds) {
                     if (localExpId.equals(remoteExpId) && !elm.isDeleted(localExpId)) {
                         found = true;
+                        localVersion = lsm.getLastSyncedVersion(localExpId);
+                        if (localVersion < 1) {
+                            localVersion = 1;
+                        }
                         if (elm.isDeleted(localExpId)) {
                             localIsDeleted = true;
                         } else {
-                            final long localVersion = lsm.getLastSyncedVersion(localExpId);
+                            final boolean localDirty = lsm.getDirty(localExpId);
                             if (localVersion < remote.version) {
-                                remoteIsNewer = true;
-                            } else if (localVersion > remote.version || lsm.getDirty(localExpId)) {
+                                if (localDirty) {
+                                    conflict = true;
+                                } else {
+                                    remoteIsNewer = true;
+                                }
+                            } else if (localVersion > remote.version || localDirty) {
                                 localIsNewer = true;
                             }
                         }
@@ -130,8 +140,11 @@ public class GDriveSyncService extends Service {
                         Log.i(LOG_TAG, "Remote experiment " + remoteExpId + " imported.");
                     } else if (localIsNewer) {
                         Log.i(LOG_TAG, "Remote experiment " + remoteExpId + " found on local library. Local is newer.");
-                        exportLocalExperiment(context, appAccount, remoteExpId, api, remote);
+                        exportLocalExperiment(context, appAccount, remoteExpId, api, remote, localVersion + 1);
                         Log.i(LOG_TAG, "Remote experiment " + remoteExpId + " updated from local version");
+                    } else if (conflict) {
+                        Log.i(LOG_TAG, "Remote experiment " + remoteExpId + " found on local library. Conflict detected.");
+                        // TODO
                     } else {
                         Log.i(LOG_TAG, "Remote experiment " + remoteExpId + " found on local library. Already in sync.");
                     }
@@ -149,7 +162,7 @@ public class GDriveSyncService extends Service {
                         final GDriveApi.RemoteExperiment remote = new GDriveApi.RemoteExperiment();
                         remote.experimentId = localId;
                         remote.archived = elm.isArchived(localId);
-                        exportLocalExperiment(context, appAccount, localId, api, remote);
+                        exportLocalExperiment(context, appAccount, localId, api, remote, 1);
                         Log.i(LOG_TAG, "Local experiment with id " + localId + " has been uploaded to remote experiment with file id: " + remote.file.getId());
                     } else {
                         Log.i(LOG_TAG, "Local experiment with id " + localId + " is linked to remote file id " + remoteFileId + " which is not found. The local experiment will be deleted.");
@@ -221,14 +234,14 @@ public class GDriveSyncService extends Service {
         api.deleteFile(exp);
     }
 
-    private void exportLocalExperiment(final Context context, final AppAccount appAccount, final String localExpId, final GDriveApi api, final GDriveApi.RemoteExperiment remoteExperiment) throws IOException {
+    private void exportLocalExperiment(final Context context, final AppAccount appAccount, final String localExpId, final GDriveApi api, final GDriveApi.RemoteExperiment remoteExperiment, final long version) throws IOException {
         final AppSingleton appSingleton = AppSingleton.getInstance(context);
         final ExperimentLibraryManager elm = appSingleton.getExperimentLibraryManager(appAccount);
         final LocalSyncManager lsm = appSingleton.getLocalSyncManager(appAccount);
         final DataController dc = AppSingleton.getInstance(context).getDataController(appAccount);
         final Experiment experiment = RxDataController.getExperimentById(dc, localExpId).blockingGet();
         experiment.cleanTrials(this, appAccount);
-        remoteExperiment.version++;
+        remoteExperiment.version = version;
         remoteExperiment.archived = elm.isArchived(localExpId);
         final File tmpFile = FileMetadataUtil.getInstance()
                 .getFileForExport(getApplicationContext(), appAccount, experiment, dc)
