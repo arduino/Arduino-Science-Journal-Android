@@ -1,5 +1,7 @@
 package com.google.android.apps.forscience.whistlepunk.gdrivesync;
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -363,18 +365,62 @@ public class GDriveSyncService extends Service {
         });
     }
 
-    private ConflictAnswer showConflict(final Context context, final AppAccount appAccount, final String expId) {
-        final DataController dc = AppSingleton.getInstance(context).getDataController(appAccount);
+    private ConflictAnswer showConflict(final Context context, final AppAccount appAccount, final String expId) throws Exception {
+        AppSingleton app = AppSingleton.getInstance(context);
+        final DataController dc = app.getDataController(appAccount);
         final Experiment experiment = RxDataController.getExperimentById(dc, expId).blockingGet();
         if (experiment == null) {
             return ConflictAnswer.SKIP;
         }
+        final Object[] lock = new Object[]{null};
         new Handler(Looper.getMainLooper()).post(() -> {
-            Context baseContext = getBaseContext();
-            if (baseContext != null) {
-                // TODO
+            final Activity activity = app.onNextActivity().blockingGet();
+            if (activity != null) {
+                AlertDialog.Builder d = new AlertDialog.Builder(activity);
+                d.setMessage(R.string.drive_sync_conflict);
+                d.setNeutralButton(R.string.drive_sync_conflict_remote, (dialog, which) -> {
+                    synchronized (lock) {
+                        lock[0] = 0;
+                        lock.notifyAll();
+                    }
+                });
+                d.setPositiveButton(R.string.drive_sync_conflict_local, (dialog, which) -> {
+                    synchronized (lock) {
+                        lock[0] = 1;
+                        lock.notifyAll();
+                    }
+                });
+                d.setOnCancelListener(dialog -> {
+                    synchronized (lock) {
+                        lock[0] = -1;
+                        lock.notifyAll();
+                    }
+                });
+                d.setCancelable(true);
+                try {
+                    d.show();
+                    return;
+                } catch (Exception ignored) {
+                }
+            }
+            synchronized (lock) {
+                lock[0] = -1;
+                lock.notifyAll();
             }
         });
+        synchronized (lock) {
+            if (lock[0] == null) {
+                lock.wait();
+            }
+            if (lock[0] instanceof Integer) {
+                int result = (Integer) lock[0];
+                if (result == 0) {
+                    return ConflictAnswer.THEIR;
+                } else if (result == 1) {
+                    return ConflictAnswer.MINE;
+                }
+            }
+        }
         return ConflictAnswer.SKIP;
     }
 

@@ -19,6 +19,9 @@
     <string name="drive_create_folder_title">Create New Folder</string>
     <string name="drive_create_folder_action">Create</string>
     <string name="drive_create_folder_def_name">Science Journal</string>
+    <string name="drive_sync_conflict">The experiment has been modified from another device</string>
+    <string name="drive_sync_conflict_remote">Keep remote</string>
+    <string name="drive_sync_conflict_local">Keep local</string>
 
     <string name="error_network">A network error occurred, please check your connection and try again.</string>
     <string name="error_generic">An error occurred. Please try again.</string>
