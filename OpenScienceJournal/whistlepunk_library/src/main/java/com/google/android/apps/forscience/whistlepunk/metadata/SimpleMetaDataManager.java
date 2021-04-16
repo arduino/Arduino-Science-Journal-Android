@@ -25,11 +25,13 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteStatement;
 import android.net.Uri;
 import android.provider.BaseColumns;
+import android.text.TextUtils;
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
-import android.text.TextUtils;
-import android.util.Log;
+
 import com.google.android.apps.forscience.whistlepunk.AppSingleton;
 import com.google.android.apps.forscience.whistlepunk.Clock;
 import com.google.android.apps.forscience.whistlepunk.CurrentTimeClock;
@@ -69,6 +71,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.google.common.io.Files;
 import com.google.protobuf.InvalidProtocolBufferException;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -85,29 +88,29 @@ import java.util.Set;
 /** An implementation of the {@link MetaDataManager} which uses a simple database. */
 public class SimpleMetaDataManager implements MetaDataManager {
 
-  private static final int STABLE_EXPERIMENT_ID_LENGTH = 12;
-  private static final int STABLE_PROJECT_ID_LENGTH = 6;
-  private static final String TAG = "SimpleMetaDataManager";
-  private static final String TEXT_LABEL_TAG = "text";
-  private static final String PICTURE_LABEL_TAG = "picture";
-  private static final String SENSOR_TRIGGER_LABEL_TAG = "sensorTriggerLabel";
-  private static final String UNKNOWN_LABEL_TAG = "label";
-  private static final String DEFAULT_PROJECT_ID = "defaultProjectId";
+    private static final int STABLE_EXPERIMENT_ID_LENGTH = 12;
+    private static final int STABLE_PROJECT_ID_LENGTH = 6;
+    private static final String TAG = "SimpleMetaDataManager";
+    private static final String TEXT_LABEL_TAG = "text";
+    private static final String PICTURE_LABEL_TAG = "picture";
+    private static final String SENSOR_TRIGGER_LABEL_TAG = "sensorTriggerLabel";
+    private static final String UNKNOWN_LABEL_TAG = "label";
+    private static final String DEFAULT_PROJECT_ID = "defaultProjectId";
 
-  private DatabaseHelper dbHelper;
-  private Context context;
-  private AppAccount appAccount;
-  private Clock clock;
-  private final Object lock = new Object();
-  private FileMetadataManager fileMetadataManager;
-  private final ExperimentLibraryManager experimentLibraryManager;
-  private final LocalSyncManager localSyncManager;
-  private boolean recoverAlreadyAttempted;
+    private final DatabaseHelper dbHelper;
+    private final Context context;
+    private final AppAccount appAccount;
+    private final Clock clock;
+    private final Object lock = new Object();
+    private final FileMetadataManager fileMetadataManager;
+    private final ExperimentLibraryManager experimentLibraryManager;
+    private final LocalSyncManager localSyncManager;
+    private boolean recoverAlreadyAttempted;
 
-  public void close() {
-    dbHelper.close();
-    getFileMetadataManager().close();
-  }
+    public void close() {
+        dbHelper.close();
+        getFileMetadataManager().close();
+    }
 
   /**
    * List of table names. NOTE: when adding a new table, make sure to delete the metadata in the
@@ -672,12 +675,12 @@ public class SimpleMetaDataManager implements MetaDataManager {
     getFileMetadataManager().updateExperiment(experiment, setDirty);
   }
 
-  @Override
-  public Experiment importExperimentFromZip(Uri zipUri, ContentResolver resolver)
-      throws IOException {
-    FileMetadataManager manager = getFileMetadataManager();
-    return manager.importExperiment(context, zipUri, resolver);
-  }
+    @Override
+    public Experiment importExperimentFromZip(Uri zipUri, ContentResolver resolver, String experimentId, boolean archived)
+            throws IOException {
+        FileMetadataManager manager = getFileMetadataManager();
+        return manager.importExperiment(context, zipUri, resolver, experimentId, archived);
+    }
 
   @Override
   public void saveImmediately() {
@@ -1314,20 +1317,19 @@ public class SimpleMetaDataManager implements MetaDataManager {
    */
   private static List<Label> getDatabaseLabelsForExperiment(
       SQLiteDatabase db, Experiment experiment, Context context) {
-    final String selection =
-        LabelColumns.EXPERIMENT_ID
-            + "=? AND "
-            + LabelColumns.START_LABEL_ID
-            + "=? and not "
-            + LabelColumns.TYPE
-            + "=?";
-    ;
-    final String[] selectionArgs =
-        new String[] {
-          experiment.getExperimentId(),
-          RecorderController.NOT_RECORDING_RUN_ID,
-          ApplicationLabel.TAG
-        };
+      final String selection =
+              LabelColumns.EXPERIMENT_ID
+                      + "=? AND "
+                      + LabelColumns.START_LABEL_ID
+                      + "=? and not "
+                      + LabelColumns.TYPE
+                      + "=?";
+      final String[] selectionArgs =
+              new String[]{
+                      experiment.getExperimentId(),
+                      RecorderController.NOT_RECORDING_RUN_ID,
+                      ApplicationLabel.TAG
+              };
     return getDatabaseLabels(db, selection, selectionArgs, context);
   }
 
@@ -2197,7 +2199,7 @@ public class SimpleMetaDataManager implements MetaDataManager {
       void onMigrateMyDevicesToProto(SQLiteDatabase db);
     }
 
-    private MetadataDatabaseUpgradeCallback upgradeCallback;
+      private final MetadataDatabaseUpgradeCallback upgradeCallback;
 
     DatabaseHelper(
         Context context,

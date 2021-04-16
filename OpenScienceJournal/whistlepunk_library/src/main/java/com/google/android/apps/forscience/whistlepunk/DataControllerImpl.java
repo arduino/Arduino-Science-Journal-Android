@@ -20,6 +20,7 @@ import android.content.ContentResolver;
 import android.content.Context;
 import android.net.Uri;
 import android.util.Log;
+
 import com.google.android.apps.forscience.javalib.Consumer;
 import com.google.android.apps.forscience.javalib.FailureListener;
 import com.google.android.apps.forscience.javalib.MaybeConsumer;
@@ -48,8 +49,7 @@ import com.google.android.apps.forscience.whistlepunk.sensordb.TimeRange;
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
 import com.google.common.collect.Range;
-import io.reactivex.Observable;
-import io.reactivex.schedulers.Schedulers;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -60,31 +60,34 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executor;
 
-public class DataControllerImpl implements DataController, RecordingDataController {
-  private static final String TAG = "DataControllerImpl";
-  private final Context context;
-  private final AppAccount appAccount;
-  private final SensorDatabase sensorDatabase;
-  private final Executor uiThread;
-  private final Executor metaDataThread;
-  private final Executor sensorDataThread;
-  private MetaDataManager metaDataManager;
-  private Clock clock;
-  private Map<String, FailureListener> sensorFailureListeners = new HashMap<>();
-  private final Map<String, SensorProvider> providerMap;
-  private long prevLabelTimestamp = 0;
-  private Map<String, WeakReference<Experiment>> cachedExperiments = new HashMap<>();
-  private ConnectableSensor.Connector connector;
+import io.reactivex.Observable;
+import io.reactivex.schedulers.Schedulers;
 
-  public DataControllerImpl(
-      Context context,
-      AppAccount appAccount,
-      SensorDatabase sensorDatabase,
-      Executor uiThread,
-      Executor metaDataThread,
-      Executor sensorDataThread,
-      MetaDataManager metaDataManager,
-      Clock clock,
+public class DataControllerImpl implements DataController, RecordingDataController {
+    private static final String TAG = "DataControllerImpl";
+    private final Context context;
+    private final AppAccount appAccount;
+    private final SensorDatabase sensorDatabase;
+    private final Executor uiThread;
+    private final Executor metaDataThread;
+    private final Executor sensorDataThread;
+    private final MetaDataManager metaDataManager;
+    private final Clock clock;
+    private final Map<String, FailureListener> sensorFailureListeners = new HashMap<>();
+    private final Map<String, SensorProvider> providerMap;
+    private long prevLabelTimestamp = 0;
+    private final Map<String, WeakReference<Experiment>> cachedExperiments = new HashMap<>();
+    private final ConnectableSensor.Connector connector;
+
+    public DataControllerImpl(
+            Context context,
+            AppAccount appAccount,
+            SensorDatabase sensorDatabase,
+            Executor uiThread,
+            Executor metaDataThread,
+            Executor sensorDataThread,
+            MetaDataManager metaDataManager,
+            Clock clock,
       Map<String, SensorProvider> providerMap,
       ConnectableSensor.Connector connector) {
     this.context = context;
@@ -293,9 +296,7 @@ public class DataControllerImpl implements DataController, RecordingDataControll
 
   @Override
   public void deleteExperiment(final String experimentId, final MaybeConsumer<Success> onSuccess) {
-    if (cachedExperiments.containsKey(experimentId)) {
       cachedExperiments.remove(experimentId);
-    }
     background(
         metaDataThread,
         onSuccess,
@@ -312,9 +313,7 @@ public class DataControllerImpl implements DataController, RecordingDataControll
   @Override
   public void deleteExperiment(
       final Experiment experiment, final MaybeConsumer<Success> onSuccess) {
-    if (cachedExperiments.containsKey(experiment.getExperimentId())) {
       cachedExperiments.remove(experiment.getExperimentId());
-    }
     background(
         metaDataThread,
         onSuccess,
@@ -393,10 +392,7 @@ public class DataControllerImpl implements DataController, RecordingDataControll
           @Override
           public Boolean call() {
             Experiment result = metaDataManager.getExperimentById(experimentId);
-            if (result == null) {
-              return false;
-            }
-            return true;
+              return result != null;
           }
         });
   }
@@ -610,19 +606,19 @@ public class DataControllerImpl implements DataController, RecordingDataControll
         });
   }
 
-  @Override
-  public void importExperimentFromZip(
-      final Uri zipUri, ContentResolver resolver, final MaybeConsumer<String> onSuccess) {
-    background(
-        metaDataThread,
-        onSuccess,
-        new Callable<String>() {
-          @Override
-          public String call() throws Exception {
-            Experiment experiment = metaDataManager.importExperimentFromZip(zipUri, resolver);
-            cacheExperiment(experiment);
-            return experiment.getExperimentId();
-          }
+    @Override
+    public void importExperimentFromZip(
+            final Uri zipUri, ContentResolver resolver, String experimentId, boolean archived, final MaybeConsumer<String> onSuccess) {
+        background(
+                metaDataThread,
+                onSuccess,
+                new Callable<String>() {
+                    @Override
+                    public String call() throws Exception {
+                        Experiment experiment = metaDataManager.importExperimentFromZip(zipUri, resolver, experimentId, archived);
+                        cacheExperiment(experiment);
+                        return experiment.getExperimentId();
+                    }
         });
   }
 
@@ -913,9 +909,7 @@ public class DataControllerImpl implements DataController, RecordingDataControll
   @Override
   public void moveExperimentToAnotherAccount(
       String experimentId, AppAccount targetAccount, MaybeConsumer<Success> onSuccess) {
-    if (cachedExperiments.containsKey(experimentId)) {
       cachedExperiments.remove(experimentId);
-    }
     getExperimentById(
         experimentId,
         MaybeConsumers.chainFailure(

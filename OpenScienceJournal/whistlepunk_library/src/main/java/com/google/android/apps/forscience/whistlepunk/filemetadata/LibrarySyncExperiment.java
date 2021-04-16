@@ -35,12 +35,12 @@ class LibrarySyncExperiment {
   }
 
   public LibrarySyncExperiment(
-      String experimentId,
-      String fileId,
-      long lastOpened,
-      long lastModified,
-      boolean deleted,
-      boolean archived) {
+          String experimentId,
+          String fileId,
+          long lastOpened,
+          long lastModified,
+          boolean deleted,
+          boolean archived) {
     this.fileId = fileId;
     this.experimentId = experimentId;
     this.lastOpened = lastOpened;
@@ -106,10 +106,10 @@ class LibrarySyncExperiment {
       builder.setExperimentId(experimentId);
     }
     return builder
-        .setLastOpened(lastOpened)
-        .setLastModified(lastModified)
-        .setDeleted(deleted)
-        .setArchived(archived)
-        .build();
+            .setLastOpened(lastOpened)
+            .setLastModified(lastModified)
+            .setDeleted(deleted)
+            .setArchived(archived)
+            .build();
   }
 }

@@ -17,9 +17,11 @@
 package com.google.android.apps.forscience.whistlepunk.filemetadata;
 
 import android.content.Context;
-import androidx.annotation.VisibleForTesting;
 import android.text.TextUtils;
 import android.util.Log;
+
+import androidx.annotation.VisibleForTesting;
+
 import com.google.android.apps.forscience.whistlepunk.PictureUtils;
 import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
@@ -39,13 +41,15 @@ import com.google.android.apps.forscience.whistlepunk.metadata.Version.FileVersi
 import com.google.common.base.Preconditions;
 import com.google.common.base.Splitter;
 import com.google.common.base.Strings;
-import io.reactivex.functions.Consumer;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+
+import io.reactivex.functions.Consumer;
 
 /**
  * Represents a Science Journal experiment. All changes should be made using the getters and setters
@@ -59,7 +63,7 @@ public class Experiment extends LabelListHolder {
   private static final String TAG = "Experiment";
   public static final String EXPERIMENTS = "experiments/";
 
-  private ExperimentOverviewPojo experimentOverview;
+  private final ExperimentOverviewPojo experimentOverview;
   private List<SensorLayoutPojo> sensorLayouts;
   private List<ExperimentSensor> experimentSensors;
   private List<SensorTrigger> sensorTriggers;
@@ -255,12 +259,15 @@ public class Experiment extends LabelListHolder {
   }
 
 
-
   public long getCreationTimeMs() {
     return creationTimeMs;
   }
 
   public void setArchived(Context context, AppAccount appAccount, boolean archived) {
+    isArchived = archived;
+  }
+
+  public void setArchived(boolean archived) {
     isArchived = archived;
   }
 

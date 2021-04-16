@@ -18,6 +18,7 @@ package com.google.android.apps.forscience.whistlepunk;
 
 import android.content.ContentResolver;
 import android.net.Uri;
+
 import com.google.android.apps.forscience.javalib.MaybeConsumer;
 import com.google.android.apps.forscience.javalib.Success;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
@@ -33,11 +34,13 @@ import com.google.android.apps.forscience.whistlepunk.metadata.GoosciScalarSenso
 import com.google.android.apps.forscience.whistlepunk.sensordb.ScalarReading;
 import com.google.android.apps.forscience.whistlepunk.sensordb.ScalarReadingList;
 import com.google.android.apps.forscience.whistlepunk.sensordb.TimeRange;
-import io.reactivex.Observable;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+
+import io.reactivex.Observable;
 
 /**
  * Provides access to any data outside of the UI. All methods should be called from the UI thread;
@@ -46,8 +49,8 @@ import java.util.Map;
  */
 public interface DataController {
   void getScalarReadings(
-      String trialId,
-      String databaseTag,
+          String trialId,
+          String databaseTag,
       final int resolutionTier,
       TimeRange timeRange,
       int maxRecords,
@@ -106,7 +109,7 @@ public interface DataController {
   String generateNewLabelId();
 
   void importExperimentFromZip(
-      final Uri zipUri, ContentResolver resolver, final MaybeConsumer<String> onSuccess);
+          final Uri zipUri, ContentResolver resolver, String experimentId, boolean archived, final MaybeConsumer<String> onSuccess);
 
   /** Gets all experiment overviews. */
   void getExperimentOverviews(

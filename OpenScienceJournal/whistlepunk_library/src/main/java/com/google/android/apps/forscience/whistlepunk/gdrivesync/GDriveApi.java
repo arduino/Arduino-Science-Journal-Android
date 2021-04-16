@@ -100,7 +100,7 @@ class GDriveApi {
         return ret;
     }
 
-    void insertFile(java.io.File file, final RemoteExperiment exp) throws IOException {
+    void insertFile(java.io.File file, final RemoteExperiment exp, final String title) throws IOException {
         final String fileName = UUID.randomUUID().toString() + ".sj";
         final FileContent content = new FileContent("application/zip", file);
         final File remoteFile = new File();
@@ -117,9 +117,10 @@ class GDriveApi {
             throw new IOException("Uploaded file not found!");
         }
         exp.file = files.getItems().get(0);
+        renameFile(exp, title);
     }
 
-    void updateFile(java.io.File file, final RemoteExperiment exp) throws IOException {
+    void updateFile(java.io.File file, final RemoteExperiment exp, final String title) throws IOException {
         setProperty(exp.file, "scienceJournalExperiment", "true");
         setProperty(exp.file, "experimentID", String.valueOf(exp.experimentId));
         setProperty(exp.file, "version", String.valueOf(exp.version));
@@ -127,6 +128,19 @@ class GDriveApi {
         setProperty(exp.file, "userAgent", "Android");
         final FileContent content = new FileContent("application/zip", file);
         drive.files().update(exp.file.getId(), exp.file, content).execute();
+        renameFile(exp, title);
+    }
+
+    void renameFile(final RemoteExperiment exp, String title) throws IOException {
+        final String fileName;
+        if (StringUtils.isEmpty(title)) {
+            fileName = "Untitled.sj";
+        } else {
+            fileName = title + ".sj";
+        }
+        final File newFile = new File();
+        newFile.setTitle(fileName);
+        drive.files().patch(exp.file.getId(), newFile).setFields("title").execute();
     }
 
     void deleteFile(final RemoteExperiment exp) throws IOException {

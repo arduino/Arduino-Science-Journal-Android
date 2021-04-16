@@ -22,7 +22,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.apps.forscience.whistlepunk.AppSingleton;
 import com.google.android.apps.forscience.whistlepunk.R;
+import com.google.android.apps.forscience.whistlepunk.WhistlePunkApplication;
+import com.google.android.apps.forscience.whistlepunk.accounts.AccountsProvider;
+import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
+import com.google.android.apps.forscience.whistlepunk.filemetadata.ExperimentLibraryManager;
+import com.google.android.apps.forscience.whistlepunk.filemetadata.LocalSyncManager;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.api.GDriveBrowseCall;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.api.GDriveCreateFolderCall;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.api.GDriveFile;
@@ -44,6 +50,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
+
+import io.reactivex.observers.DisposableObserver;
 
 public class GDriveSyncSetupActivity extends AppCompatActivity {
 
@@ -85,6 +93,10 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private TextView mStep3Folder;
 
+    private DisposableObserver<AppAccount> mAppAccountObserver;
+
+    private AppAccount mAppAccount;
+
     @Override
     @SuppressLint("ClickableViewAccessibility")
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -102,6 +114,32 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
             }
         });
         mLoader = findViewById(R.id.drive_loader);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        final AccountsProvider accountsProvider = WhistlePunkApplication.getAppServices(this).getAccountsProvider();
+        mAppAccountObserver = accountsProvider.getObservableCurrentAccount().subscribeWith(new DisposableObserver<AppAccount>() {
+            @Override
+            public void onNext(@io.reactivex.annotations.NonNull AppAccount appAccount) {
+                mAppAccount = appAccount;
+            }
+
+            @Override
+            public void onError(@io.reactivex.annotations.NonNull Throwable e) {
+            }
+
+            @Override
+            public void onComplete() {
+            }
+        });
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mAppAccountObserver.dispose();
     }
 
     @Override
@@ -381,7 +419,17 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
     }
 
     private void onCompleted() {
+        if (mAppAccount == null || mAppAccount.isMinor()) {
+            return;
+        }
         try {
+            final AppSingleton appSingleton = AppSingleton.getInstance(this);
+            final ExperimentLibraryManager elm = appSingleton.getExperimentLibraryManager(mAppAccount);
+            final LocalSyncManager lsm = appSingleton.getLocalSyncManager(mAppAccount);
+            for (final String id : elm.getKnownExperiments()) {
+                elm.setFileId(id, null);
+                lsm.setDirty(id, false);
+            }
             final StringBuilder path = new StringBuilder();
             for (final GDriveFile f : mPath) {
                 if (path.length() > 0) {
