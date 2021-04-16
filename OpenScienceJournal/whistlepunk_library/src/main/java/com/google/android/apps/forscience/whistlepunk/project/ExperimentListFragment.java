@@ -53,6 +53,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.apps.forscience.javalib.Success;
+import com.google.android.apps.forscience.utils.StringUtils;
 import com.google.android.apps.forscience.whistlepunk.AccessibilityUtils;
 import com.google.android.apps.forscience.whistlepunk.AppSingleton;
 import com.google.android.apps.forscience.whistlepunk.ColorUtils;
@@ -942,7 +943,7 @@ public class ExperimentListFragment extends Fragment
         }
     }
 
-    public static class ExperimentListAdapter extends RecyclerView.Adapter<ViewHolder> {
+    public class ExperimentListAdapter extends RecyclerView.Adapter<ViewHolder> {
         static final int VIEW_TYPE_EXPERIMENT = 0;
         static final int VIEW_TYPE_EMPTY = 1;
         static final int VIEW_TYPE_DATE = 2;
@@ -1493,7 +1494,7 @@ public class ExperimentListFragment extends Fragment
         }
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         // Accessing via fields for faster access.
 
@@ -1532,6 +1533,14 @@ public class ExperimentListFragment extends Fragment
                 }
             } else if (viewType == ExperimentListAdapter.VIEW_TYPE_CLAIM_EXPERIMENTS) {
                 claimButton = itemView.findViewById(R.id.claim_experiments_action);
+            } else if (viewType == ExperimentListAdapter.VIEW_TYPE_EMPTY) {
+                if (appAccount != null && appAccount.isSignedIn()) {
+                    final String name = appAccount.getAccountName();
+                    if (!StringUtils.isEmpty(name)) {
+                        final TextView tv = itemView.findViewById(R.id.empty_list);
+                        tv.setText(getString(R.string.empty_experiment_lab_signed_in, name));
+                    }
+                }
             }
         }
     }

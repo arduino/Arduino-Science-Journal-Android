@@ -113,4 +113,7 @@
     <string name="claim_experiments_notice_other"><![CDATA[There are <strong>%1$d experiments</strong> on the device which don’t belong to anyone. Tap “Collect” to assign yours to your virtual lab.]]></string>
     <string name="claim_experiments_action">Collect</string>
 
+    <string name="empty_experiment_lab_signed_in">There are no experiments in %1$s’s Lab</string>
+    <string name="empty_experiment_lab_anonymous">There are no experiments in your Lab</string>
+
 </resources>

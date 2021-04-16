@@ -20,10 +20,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import androidx.core.content.ContextCompat;
+
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+
 import com.google.android.apps.forscience.whistlepunk.AppSingleton;
 import com.google.android.apps.forscience.whistlepunk.ColorUtils;
 import com.google.android.apps.forscience.whistlepunk.PermissionUtils;
@@ -94,6 +96,7 @@ public class ClaimExperimentsActivity extends AppCompatActivity {
 
   @Override
   public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    super.onActivityResult(requestCode, resultCode, data);
     Fragment fragment = getSupportFragmentManager().findFragmentByTag(FRAGMENT_TAG);
     if (fragment != null) {
       fragment.onActivityResult(requestCode, resultCode, data);

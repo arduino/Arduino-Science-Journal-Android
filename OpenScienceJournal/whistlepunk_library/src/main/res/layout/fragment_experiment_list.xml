@@ -46,7 +46,7 @@
         android:contentDescription="@string/btn_new_experiment_content_description"
         android:src="@drawable/ic_plus_white_36dp"
         android:tag="new_experiment_button"
-        app:backgroundTint="@color/arduino_gris"
+        app:backgroundTint="@color/arduino_teal_3"
         app:elevation="@dimen/fab_elevation"
         app:fabSize="normal"
         app:tint="@color/arduino_white" />
