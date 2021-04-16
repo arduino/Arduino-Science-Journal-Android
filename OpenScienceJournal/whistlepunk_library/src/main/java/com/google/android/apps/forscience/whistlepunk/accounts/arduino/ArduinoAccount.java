@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.auth0.android.jwt.JWT;
 import com.google.android.apps.forscience.auth0.Auth0Token;
+import com.google.android.apps.forscience.utils.StringUtils;
 import com.google.android.apps.forscience.whistlepunk.accounts.AbstractAccount;
 import com.google.android.apps.forscience.whistlepunk.accounts.AccountsUtils;
 
@@ -39,7 +40,14 @@ public class ArduinoAccount extends AbstractAccount {
         this.refreshToken = token.getRefreshToken();
         final JWT jwt = new JWT(token.getIdToken());
         this.id = jwt.getClaim("http://arduino.cc/id").asString();
-        this.nickname = jwt.getClaim("nickname").asString();
+        String nickname = jwt.getClaim("http://arduino.cc/username").asString();
+        if (StringUtils.isEmpty(nickname)) {
+            nickname = jwt.getClaim("nickname").asString();
+            if (StringUtils.isEmpty(nickname)) {
+                nickname = this.id;
+            }
+        }
+        this.nickname = nickname;
         this.email = jwt.getClaim("email").asString();
         this.picture = jwt.getClaim("picture").asString();
         this.isMinor = jwt.getClaim("http://arduino.cc/is_minor").asBoolean();

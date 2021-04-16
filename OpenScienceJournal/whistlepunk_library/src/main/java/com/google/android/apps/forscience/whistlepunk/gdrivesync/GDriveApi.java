@@ -54,7 +54,7 @@ class GDriveApi {
 
     List<RemoteExperiment> listRemoteExperiments() throws IOException {
         final List<RemoteExperiment> experiments = new ArrayList<>();
-        final FileList files = drive.files().list().setQ("'" + folderId + "' in parents").execute();
+        final FileList files = drive.files().list().setQ("'" + folderId + "' in parents and trashed = false").execute();
         for (final File f : files.getItems()) {
             boolean isExperiment = false;
             boolean archived = false;
