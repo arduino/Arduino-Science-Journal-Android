@@ -13,8 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
  -->
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,8 +21,7 @@
     android:fitsSystemWindows="true"
     tools:context=".project.ExperimentListFragment">
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/swipe_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -32,11 +30,9 @@
             android:id="@+id/details"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            android:paddingBottom="@dimen/list_bottom_padding"
-            android:paddingTop="8dp"
             android:clipToPadding="false"
-            />
+            android:paddingBottom="@dimen/list_bottom_padding"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
@@ -45,41 +41,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_marginBottom="@dimen/fab_margin_bottom"
         android:layout_marginEnd="@dimen/fab_margin_right"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        android:contentDescription="@string/btn_new_experiment_content_description"
         android:src="@drawable/ic_plus_white_36dp"
         android:tag="new_experiment_button"
-        android:contentDescription="@string/btn_new_experiment_content_description"
         app:backgroundTint="@color/arduino_gris"
-        app:tint="@color/arduino_white"
         app:elevation="@dimen/fab_elevation"
         app:fabSize="normal"
-        />
+        app:tint="@color/arduino_white" />
+
     <ProgressBar
         android:id="@+id/syncIndeterminateBar"
         style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:indeterminate="true"
-        android:visibility="visible"
+        android:layout_gravity="top"
         android:layout_marginTop="-7dp"
-        android:layout_gravity="top"/>
+        android:indeterminate="true"
+        android:visibility="visible" />
+
     <ProgressBar
         android:id="@+id/exportIndeterminateBar"
         style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:indeterminate="true"
-        android:visibility="visible"
+        android:layout_gravity="top"
         android:layout_marginTop="-6dp"
-        android:layout_gravity="top"/>
+        android:indeterminate="true"
+        android:visibility="visible" />
+
     <ProgressBar
         android:id="@+id/claimIndeterminateBar"
         style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:indeterminate="true"
-        android:visibility="visible"
+        android:layout_gravity="top"
         android:layout_marginTop="-6dp"
-        android:layout_gravity="top"/>
+        android:indeterminate="true"
+        android:visibility="visible" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

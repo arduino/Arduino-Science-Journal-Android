@@ -28,6 +28,7 @@ import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Html;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
 import android.util.Log;
@@ -39,7 +40,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -1048,14 +1048,11 @@ public class ExperimentListFragment extends Fragment
             } else if (items.get(position).viewType == VIEW_TYPE_CLAIM_EXPERIMENTS) {
                 int unclaimedExperimentCount =
                         AccountsUtils.getUnclaimedExperimentCount(applicationContext);
-                TextView textView = holder.itemView.findViewById(R.id.text_claim_experiments);
-                textView.setText(
-                        applicationContext
-                                .getResources()
-                                .getQuantityString(
-                                        R.plurals.claim_experiments_card_text,
-                                        unclaimedExperimentCount,
-                                        unclaimedExperimentCount));
+                TextView textView = holder.itemView.findViewById(R.id.claim_experiments_notice);
+                textView.setText(Html.fromHtml(applicationContext.getResources().getString(
+                        unclaimedExperimentCount == 1 ?
+                                R.string.claim_experiments_notice_one :
+                                R.string.claim_experiments_notice_other)));
                 holder.claimButton.setOnClickListener(
                         v -> {
                             long mbFree = FileMetadataUtil.getInstance().getFreeSpaceInMb();
@@ -1514,7 +1511,7 @@ public class ExperimentListFragment extends Fragment
         public ImageButton shareButton;
         public ImageButton downloadButton;
         public ImageButton deleteButton;
-        public Button claimButton;
+        public TextView claimButton;
 
         int viewType;
 
@@ -1534,7 +1531,7 @@ public class ExperimentListFragment extends Fragment
                     deleteButton = itemView.findViewById(R.id.delete_button);
                 }
             } else if (viewType == ExperimentListAdapter.VIEW_TYPE_CLAIM_EXPERIMENTS) {
-                claimButton = itemView.findViewById(R.id.btn_claim_experiments);
+                claimButton = itemView.findViewById(R.id.claim_experiments_action);
             }
         }
     }
