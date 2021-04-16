@@ -144,7 +144,25 @@ public class GDriveSyncService extends Service {
                         Log.i(LOG_TAG, "Remote experiment " + remoteExpId + " updated from local version");
                     } else if (conflict) {
                         Log.i(LOG_TAG, "Remote experiment " + remoteExpId + " found on local library. Conflict detected.");
-                        // TODO
+                        final ConflictAnswer answer = showConflict(context, appAccount, remoteExpId);
+                        switch (answer) {
+                            case MINE: {
+                                Log.i(LOG_TAG, "User answer for experiment " + remoteExpId + " conflict: overwrite remote. Exporting.");
+                                exportLocalExperiment(context, appAccount, remoteExpId, api, remote, remote.version + 1);
+                                Log.i(LOG_TAG, "Remote experiment " + remoteExpId + " updated from local version");
+                                break;
+                            }
+                            case THEIR: {
+                                Log.i(LOG_TAG, "User answer for experiment " + remoteExpId + " conflict: overwrite local. Importing.");
+                                importRemoteExperiment(context, appAccount, api, remote);
+                                Log.i(LOG_TAG, "Remote experiment " + remoteExpId + " imported.");
+                                break;
+                            }
+                            default: {
+                                Log.i(LOG_TAG, "User answer for experiment " + remoteExpId + " conflict: skip.");
+                                break;
+                            }
+                        }
                     } else {
                         Log.i(LOG_TAG, "Remote experiment " + remoteExpId + " found on local library. Already in sync.");
                     }
@@ -343,6 +361,25 @@ public class GDriveSyncService extends Service {
                 toast.show();
             }
         });
+    }
+
+    private ConflictAnswer showConflict(final Context context, final AppAccount appAccount, final String expId) {
+        final DataController dc = AppSingleton.getInstance(context).getDataController(appAccount);
+        final Experiment experiment = RxDataController.getExperimentById(dc, expId).blockingGet();
+        if (experiment == null) {
+            return ConflictAnswer.SKIP;
+        }
+        new Handler(Looper.getMainLooper()).post(() -> {
+            Context baseContext = getBaseContext();
+            if (baseContext != null) {
+                // TODO
+            }
+        });
+        return ConflictAnswer.SKIP;
+    }
+
+    private enum ConflictAnswer {
+        MINE, THEIR, SKIP
     }
 
 }
