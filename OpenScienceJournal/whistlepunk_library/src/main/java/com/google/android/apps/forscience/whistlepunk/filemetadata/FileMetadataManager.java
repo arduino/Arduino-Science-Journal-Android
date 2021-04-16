@@ -488,6 +488,7 @@ public class FileMetadataManager {
         }
 
         ExperimentOverviewPojo overview = populateOverview(proto.build(), experimentId);
+        overview.setArchived(archived);
         HashMap<String, String> trialIdMap = updateTrials(proto, newExperiment);
 
         updateLabels(proto.build(), newExperiment);

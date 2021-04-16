@@ -22,9 +22,10 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Environment;
 import android.os.StatFs;
-import androidx.annotation.VisibleForTesting;
-import androidx.core.content.FileProvider;
 import android.util.Log;
+
+import androidx.core.content.FileProvider;
+
 import com.google.android.apps.forscience.javalib.MaybeConsumer;
 import com.google.android.apps.forscience.javalib.Success;
 import com.google.android.apps.forscience.whistlepunk.DataController;
@@ -35,7 +36,7 @@ import com.google.android.apps.forscience.whistlepunk.data.GoosciExperimentLibra
 import com.google.android.apps.forscience.whistlepunk.data.GoosciLocalSyncStatus;
 import com.google.android.apps.forscience.whistlepunk.metadata.GoosciScalarSensorData;
 import com.google.android.apps.forscience.whistlepunk.metadata.Version;
-import io.reactivex.Single;
+
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -47,7 +48,11 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipException;
 import java.util.zip.ZipOutputStream;
 
-/** Utility class for interacting with the file system * */
+import io.reactivex.Single;
+
+/**
+ * Utility class for interacting with the file system *
+ */
 public class FileMetadataUtil {
   public static final String COVER_IMAGE_FILE = "assets/ExperimentCoverImage.jpg";
   static final String ASSETS_DIRECTORY = "assets";
@@ -187,16 +192,16 @@ public class FileMetadataUtil {
                           }
 
                           try (FileOutputStream fos = new FileOutputStream(zipFile);
-                              ZipOutputStream zos = new ZipOutputStream(fos); ) {
+                               ZipOutputStream zos = new ZipOutputStream(fos)) {
                             File experimentDirectory =
-                                getExperimentDirectory(appAccount, experiment.getExperimentId());
+                                    getExperimentDirectory(appAccount, experiment.getExperimentId());
                             zipDirectory(experimentDirectory, zos, "");
 
                             if (!experiment.getExperimentOverview().getImagePath().isEmpty()) {
                               File experimentImage =
-                                  new File(
-                                      getFilesDir(appAccount),
-                                      experiment.getExperimentOverview().getImagePath());
+                                      new File(
+                                              getFilesDir(appAccount),
+                                              experiment.getExperimentOverview().getImagePath());
                               zipExperimentImage(experimentImage, zos);
                             }
                           } catch (IOException ioException) {
@@ -342,7 +347,6 @@ public class FileMetadataUtil {
     return null;
   }
 
-  @VisibleForTesting
   public boolean canImportFromVersion(Version.FileVersion fileVersion) {
     switch (fileVersion.getPlatform()) {
       case ANDROID:
@@ -379,7 +383,7 @@ public class FileMetadataUtil {
     if (libraryFile.canRead()) {
       byte[] libraryBytes = new byte[(int) libraryFile.length()];
       try (FileInputStream fis = new FileInputStream(libraryFile);
-          DataInputStream dis = new DataInputStream(fis);) {
+           DataInputStream dis = new DataInputStream(fis)) {
         dis.readFully(libraryBytes);
         library = ExperimentLibrary.parseFrom(libraryBytes);
       } catch (Exception e) {
