@@ -23,31 +23,31 @@
     <item>@string/trigger_when_is_below</item>
   </string-array>
   <string-array name="trigger_when_list_note_text">
-    <item>at</item>
-    <item>rose above</item>
-    <item>dropped below</item>
-    <item>is above</item>
-    <item>is below</item>
+      <item>at</item>
+      <item>superó los</item>
+      <item>disminuyó a menos de</item>
+      <item>is above</item>
+      <item>is below</item>
   </string-array>
-  <string name="app_name">Arduino Science Journal</string>
-  <string name="action_feedback">Comentarios</string>
-  <string name="action_about">Acerca de</string>
-  <string name="action_save">Guardar</string>
-  <string name="action_edit">Editar</string>
-  <string name="action_archive_experiment">Archive experiment</string>
-  <string name="action_unarchive_experiment">Unarchive experiment</string>
-  <string name="action_archive_run">Archive</string>
-  <string name="action_unarchive_run">Unarchive</string>
-  <string name="action_delete">Borrar</string>
-  <string name="sine_wave">Onda sinusoidal</string>
-  <string name="vel">Velocity</string>
-  <string name="acc_x">Acelerómetro X</string>
-  <string name="acc_y">Acelerómetro Y</string>
-  <string name="acc_z">Acelerómetro Z</string>
-  <string name="ambient_light">Luz ambiental</string>
-  <string name="magnetic_field_strength">Magnetómetro</string>
-  <string name="barometer">Barómetro</string>
-  <string name="ambient_temperature">Temperatura ambiental</string>
+    <string name="app_name">Arduino Science Journal</string>
+    <string name="action_feedback">Comentarios</string>
+    <string name="action_about">Acerca de</string>
+    <string name="action_save">Guardar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_archive_experiment">Archivar experimento</string>
+    <string name="action_unarchive_experiment">Desarchivar experimento</string>
+    <string name="action_archive_run">Archivar</string>
+    <string name="action_unarchive_run">Desarchivar</string>
+    <string name="action_delete">Borrar</string>
+    <string name="sine_wave">Onda sinusoidal</string>
+    <string name="vel">Velocity</string>
+    <string name="acc_x">Acelerómetro X</string>
+    <string name="acc_y">Acelerómetro Y</string>
+    <string name="acc_z">Acelerómetro Z</string>
+    <string name="ambient_light">Luz ambiental</string>
+    <string name="magnetic_field_strength">Magnetómetro</string>
+    <string name="barometer">Barómetro</string>
+    <string name="ambient_temperature">Temperatura ambiental</string>
   <string name="vel_units">m/s</string>
   <string name="acc_units">m/s²</string>
   <string name="ambient_light_units">lux</string>
@@ -122,7 +122,7 @@
   <string name="stat_max">Máximo</string>
   <string name="stat_average">Promedio</string>
   <string name="stat_average_label">Average</string>
-  <string name="stat_duration">Duration</string>
+    <string name="stat_duration">Duración</string>
   <string name="stat_unknown">Unknown</string>
   <string name="btn_reset_description">Volver al momento actual</string>
   <string name="export_action">Compartir</string>
@@ -132,7 +132,7 @@
   <string name="export_photo_chooser_title">Compartir foto con…</string>
   <string name="experiment_not_finished_downloading_confirm_button">Compartir experim.</string>
   <string name="experiment_not_finished_downloading_confirm_download_button">Download anyway</string>
-  <string name="experiment_not_finished_downloading_cancel_button">Cancel</string>
+    <string name="experiment_not_finished_downloading_cancel_button">Cancelar</string>
   <string name="experiment_not_finished_downloading_message">Aún no se terminó de descargar el experimento. Si compartes una copia, es posible que falten datos en ella.</string>
   <string name="experiment_missing_data_message">This experiment has unsynced data. If you download a copy now, it will be missing this data</string>
   <string name="experiment_not_finished_downloading_title">Descarga en curso</string>
@@ -289,7 +289,7 @@ El barómetro digital de tu teléfono mide la presión atmosférica en hectopasc
 Tal vez te preguntes para qué sirve que un teléfono mida la presión atmosférica. Esta presión cambia incluso con variaciones mínimas en la altitud, como cuando subes una escalera. Por lo tanto, un barómetro digital en un teléfono puede detectar cambios de ubicación. Por ejemplo, puede indicar en qué piso de un edificio estás o si te encuentras en la parte superior o inferior de un puente.</string>
   <string name="run_review_activity_label">Repaso</string>
   <string name="service_notification_content_title">Science Journal</string>
-  <string name="service_notification_content_text">Recording…</string>
+    <string name="service_notification_content_text">Grabando…</string>
   <string name="live_graph_content_description">Live sensor graph. Drag to pan X axis, pinch to zoom Y axis.</string>
   <string name="static_graph_content_description">Sensor graph. Pinch to zoom and drag to pan, double-tap to zoom out.</string>
   <string name="sensor_card_overflow_menu_content_description">Card options</string>
@@ -534,7 +534,7 @@ Tu teléfono tiene un dispositivo para medir estos cambios de movimiento: un ace
   <string name="card_recording_title"><xliff:g id="title">%1$s</xliff:g>…</string>
   <string name="throbber_content_description">Grabación en curso</string>
   <string name="trigger_label_name_header"><xliff:g id="sensor_name">%1$s</xliff:g> <xliff:g id="trigger_when">%2$s</xliff:g></string>
-  <string name="description_hint">Description</string>
+    <string name="description_hint">Descripción</string>
   <string name="details_header">Detalles</string>
   <string name="text_label_hint">Agrega una observación</string>
   <string name="first_experiment_title">Bienvenido a Science Journal</string>
@@ -560,66 +560,66 @@ g.co/sciencejournalactivities</string>
   <string name="notification_channel_description">Recording status</string>
   <string name="import_failed_recording">Science Journal está en uso actualmente. Detén la grabación y vuelve a intentarlo.</string>
   <string name="import_failed_file">No se pudo importar. Hay un problema con este experimento.</string>
-  <string name="import_failed">Se produjo un error desconocido.</string>
-  <string name="explore_your_world">Explora el mundo que te rodea</string>
-  <string name="use_science_journal">Usa Science Journal para realizar experimentos en el mundo que te rodea</string>
-  <string name="get_started">Comenzar</string>
-  <string name="sign_in_text">Experiment data for Science Journal is saved and made available across devices using Google Drive and requires signing in with a Google account.
+    <string name="import_failed">Se produjo un error desconocido.</string>
+    <string name="explore_your_world">Explora el mundo que te rodea</string>
+    <string name="use_science_journal">Usa Science Journal para realizar experimentos en el mundo que te rodea</string>
+    <string name="get_started">Comenzar</string>
+    <string name="sign_in_text">Experiment data for Science Journal is saved and made available across devices using Google Drive and requires signing in with a Google account.
 
 If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a \u201CScience Journal\u201D folder in Google Drive.</string>
-  <string name="device_settings_applied">Existing device settings have been applied to this account</string>
-  <string name="sign_in_button">Sign in</string>
-  <string name="sign_in_learn_more_button">Learn more</string>
-  <string name="sign_in_continue_without_signing_in_button">Continue without signing in</string>
-  <string name="science_journal_disabled_title">Science Journal is disabled</string>
-  <string name="science_journal_disabled_message">Science Journal needs to be turned on in the Google Admin console by your domain administrator.</string>
-  <string name="science_journal_disabled_yes">Switch accounts</string>
-  <string name="old_user_option_prompt_headline">Back up to Google Drive</string>
-  <plurals name="old_user_option_prompt_text">
-    <item quantity="one">Welcome back, you currently have <xliff:g id="count_of_unclaimed_experiments">%1$d</xliff:g> experiment stored on this device.\n\nTo continue select an option:</item>
-    <item quantity="other">Welcome back, you currently have <xliff:g id="count_of_unclaimed_experiments">%1$d</xliff:g> experiments stored on this device.\n\nTo continue select an option:</item>
-  </plurals>
-  <string name="drive_choice_headline">Save all your experiments</string>
-  <string name="drive_choice_text">All your experiments will be added to Google Drive</string>
-  <string name="delete_choice_headline">Delete all your experiments</string>
-  <string name="delete_choice_text">None of your experiments will be added to Google Drive</string>
-  <string name="select_choice_headline">Select experiments to save</string>
-  <string name="select_choice_text">Choose which experiments to save to Google Drive</string>
-  <string name="delete_all_prompt_headline">Delete all your experiments?</string>
-  <string name="delete_all_prompt_text">All experiments on this device, including archived experiments, will be deleted. You cannot undo this action.</string>
-  <string name="delete_all_prompt_yes">Delete all</string>
-  <string name="claim_experiments_card_headline">Claim past experiments</string>
-  <plurals name="claim_experiments_card_text">
-    <item quantity="one">There is <xliff:g id="count_of_unclaimed_experiments">%1$d</xliff:g> unclaimed experiment on this device.</item>
-    <item quantity="other">There are <xliff:g id="count_of_unclaimed_experiments">%1$d</xliff:g> unclaimed experiments on this device.</item>
-  </plurals>
-  <string name="claim_experiments_card_button_text">Claim experiments</string>
-  <string name="title_activity_claim_experiments">Claim experiments</string>
-  <string name="unclaimed_experiments">Unclaimed Experiments</string>
-  <string name="claim_failed">Claim failed, submit feedback in the menu.</string>
-  <string name="claim_failed_disk_space">Not enough disk space to claim experiments.</string>
-  <string name="sync_failed">Sync failed, try again or submit feedback.</string>
-  <string name="add_experiments_to_drive_card_headline">Add experiments to Google Drive</string>
-  <string name="add_experiments_to_drive_card_text">Experiments cannot be edited and will remain on the device until they are either claimed or deleted</string>
-  <string name="drive_btn_content_description">Add experiment to Google Drive</string>
-  <string name="drive_confirmation_text">Add to Google Drive?</string>
-  <string name="drive_confirmation_yes">Add to Google Drive</string>
-  <string name="experiment_added_text">Experiment added to <xliff:g id="account_name">%1$s</xliff:g></string>
-  <string name="share_btn_content_description">Share experiment</string>
-  <string name="download_btn_content_description">Download experiment</string>
-  <string name="delete_btn_content_description">Delete experiment</string>
-  <string name="action_claim_unclaimed_experiments">Claim all</string>
-  <plurals name="claim_all_confirmation_text">
-    <item quantity="one">Your experiment will be added to Google Drive</item>
+    <string name="device_settings_applied">Se aplicó la configuración actual del dispositivo a esta cuenta</string>
+    <string name="sign_in_button">Sign in</string>
+    <string name="sign_in_learn_more_button">Learn more</string>
+    <string name="sign_in_continue_without_signing_in_button">Continuar sin acceder</string>
+    <string name="science_journal_disabled_title">Science Journal está inhabilitada</string>
+    <string name="science_journal_disabled_message">El administrador de su dominio debe activar Science Journal en la Consola del Administrador de Google.</string>
+    <string name="science_journal_disabled_yes">Cambiar de cuenta</string>
+    <string name="old_user_option_prompt_headline">Crea copia de seg. en Drive</string>
+    <plurals name="old_user_option_prompt_text">
+        <item quantity="one">Welcome back, you currently have <xliff:g id="count_of_unclaimed_experiments">%1$d</xliff:g> experiment stored on this device.\n\nTo continue select an option:</item>
+        <item quantity="other">Welcome back, you currently have <xliff:g id="count_of_unclaimed_experiments">%1$d</xliff:g> experiments stored on this device.\n\nTo continue select an option:</item>
+    </plurals>
+    <string name="drive_choice_headline">Guardar todos tus experimentos</string>
+    <string name="drive_choice_text">Se agregarán todos tus experimentos a Google Drive</string>
+    <string name="delete_choice_headline">Borrar todos tus experimentos</string>
+    <string name="delete_choice_text">No se agregará ningún experimento a Google Drive</string>
+    <string name="select_choice_headline">Selecciona los experimentos</string>
+    <string name="select_choice_text">Elige qué experimentos guardar en Google Drive</string>
+    <string name="delete_all_prompt_headline">¿Quieres borrar todos tus experimentos?</string>
+    <string name="delete_all_prompt_text">Se borrarán todos los experimentos del dispositivo, incluidos los que están archivados. Esta acción no se puede deshacer.</string>
+    <string name="delete_all_prompt_yes">Delete all</string>
+    <string name="claim_experiments_card_headline">Claim past experiments</string>
+    <plurals name="claim_experiments_card_text">
+        <item quantity="one">There is <xliff:g id="count_of_unclaimed_experiments">%1$d</xliff:g> unclaimed experiment on this device.</item>
+        <item quantity="other">There are <xliff:g id="count_of_unclaimed_experiments">%1$d</xliff:g> unclaimed experiments on this device.</item>
+    </plurals>
+    <string name="claim_experiments_card_button_text">Claim experiments</string>
+    <string name="title_activity_claim_experiments">Claim experiments</string>
+    <string name="unclaimed_experiments">Unclaimed Experiments</string>
+    <string name="claim_failed">Claim failed, submit feedback in the menu.</string>
+    <string name="claim_failed_disk_space">Not enough disk space to claim experiments.</string>
+    <string name="sync_failed">Sync failed, try again or submit feedback.</string>
+    <string name="add_experiments_to_drive_card_headline">Agregar experimentos a Google Drive</string>
+    <string name="add_experiments_to_drive_card_text">No se pueden editar los experimentos. Permanecerán en el dispositivo hasta que alguien los reclame o borre.</string>
+    <string name="drive_btn_content_description">Add experiment to Google Drive</string>
+    <string name="drive_confirmation_text">Add to Google Drive?</string>
+    <string name="drive_confirmation_yes">Add to Google Drive</string>
+    <string name="experiment_added_text">Experiment added to <xliff:g id="account_name">%1$s</xliff:g></string>
+    <string name="share_btn_content_description">Share experiment</string>
+    <string name="download_btn_content_description">Download experiment</string>
+    <string name="delete_btn_content_description">Borrar experimento</string>
+    <string name="action_claim_unclaimed_experiments">Claim all</string>
+    <plurals name="claim_all_confirmation_text">
+        <item quantity="one">Your experiment will be added to Google Drive</item>
     <item quantity="other">All <xliff:g id="count_of_unclaimed_experiments">%1$d</xliff:g> experiments will be added to Google Drive</item>
   </plurals>
   <string name="claim_all_confirmation_yes">Claim</string>
   <string name="action_delete_unclaimed_experiments">Delete all</string>
   <string name="action_use_without_an_account">Use without an account</string>
   <string name="action_sync_start">Syncing library to Google Drive.</string>
-  <string name="action_remove_cover_image">Remove cover image</string>
+    <string name="action_remove_cover_image">Quitar imagen de portada</string>
   <string name="remove_cover_image_dialog_title">Remove the cover image?</string>
-  <string name="remove_cover_image_confirm">Are you sure you want to remove the cover image? This action cannot be undone.</string>
+    <string name="remove_cover_image_confirm">¿Estás seguro de que quieres quitar la imagen de portada? Esta acción no se puede deshacer.</string>
   <string name="drive_sync_cannot_reach_google_drive">No se puede conectar con Google Drive. Revisa tu conexión.</string>
   <string name="experiment_title_concatenator"><xliff:g id="first_title">%1$s</xliff:g> / <xliff:g id="second_title">%2$s</xliff:g></string>
   <string name="download_copy_action">Download</string>
@@ -702,26 +702,28 @@ If you have existing data on this device, once signed in, you can save your exis
   <string name="color_spectrophotometer_units">%</string>
   <string name="color_wavelength">Light Wavelength</string>
   <string name="color_wavelength_units">nm</string>
-  <string name="mkrsci_input_sensor_raw">Raw</string>
-  <string name="mkrsci_input_sensor_temperature_c">Temperature (Celsius)</string>
-  <string name="mkrsci_input_sensor_temperature_f">Temperature (Fahrenheit)</string>
-  <string name="mkrsci_input_sensor_light">Light</string>
-  <string name="sensor_desc_short_mkrsci_acc">A device that measures acceleration</string>
-  <string name="sensor_desc_short_mkrsci_current">The amount of flow of charged particles between two places</string>
-  <string name="sensor_desc_short_mkrsci_gyr">A device that measures orientation and angular velocity (rotation).</string>
-  <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
-  <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
-  <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
-  <string name="color_ambient_light">Ambient Light</string>
-  <string name="color_ambient_light_units">lux</string>
-  <string name="color_temperature">Color Temperature</string>
-  <string name="color_temperature_units">K</string>
-  <string name="sensor_desc_short_mkrsci_temperature">Ambient temperature in C or F</string>
-  <string name="sensor_desc_short_mkrsci_pressure">A barometric sensor is used to measure air pressure in a certain environment. Air Pressure can impact short term changes in the weather. The Barometric Air Pressure is measured in Atmosphere or atm.</string>
-  <string name="sensor_desc_short_mkrsci_humidity">A humidity sensor is an electronic device that measures the humidity in its environment and converts it into an electrical signal. Relative humidity is measured in %.</string>
-  <string name="sensor_desc_short_mkrsci_color_illuminance">The ambient light sensor measures light in lux, a measure of illumination that depends on the amount of incoming light and the area over which it is spread. The amount of light is measured in lux.</string>
-  <string name="sensor_desc_short_mkrsci_color_temperature">Color temperature is a characteristic of visible light that has important applications in many industries, such as: lighting, photography, astrophysics, manufacturing, and other fields. Color temperature is expressed in Kelvins (K), a unit of measurement for absolute temperature.</string>
-  <string name="sensor_desc_short_mkrsci_color_temperature_p2">The CIE 1931 x,y chromaticity space, also showing the chromaticities of black-body light sources of various temperatures (Planckian locus), and lines of constant correlated color temperature.</string>
+    <string name="mkrsci_input_sensor_raw">Raw</string>
+    <string name="mkrsci_input_sensor_temperature_c">Temperature (Celsius)</string>
+    <string name="mkrsci_input_sensor_temperature_f">Temperature (Fahrenheit)</string>
+    <string name="mkrsci_input_sensor_light">Light</string>
+    <string name="sensor_desc_short_mkrsci_acc">A device that measures acceleration</string>
+    <string name="sensor_desc_short_mkrsci_current">The amount of flow of charged particles between two places</string>
+    <string name="sensor_desc_short_mkrsci_gyr">A device that measures orientation and angular velocity (rotation).</string>
+    <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
+    <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
+    <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+    <string name="claim_experiments_confirm_one">Collect experiment?</string>
+    <string name="claim_experiments_title">Reclamar experimentos anteriores</string>
+    <string name="color_ambient_light">Ambient Light</string>
+    <string name="color_ambient_light_units">lux</string>
+    <string name="color_temperature">Color Temperature</string>
+    <string name="color_temperature_units">K</string>
+    <string name="sensor_desc_short_mkrsci_temperature">Ambient temperature in C or F</string>
+    <string name="sensor_desc_short_mkrsci_pressure">A barometric sensor is used to measure air pressure in a certain environment. Air Pressure can impact short term changes in the weather. The Barometric Air Pressure is measured in Atmosphere or atm.</string>
+    <string name="sensor_desc_short_mkrsci_humidity">A humidity sensor is an electronic device that measures the humidity in its environment and converts it into an electrical signal. Relative humidity is measured in %.</string>
+    <string name="sensor_desc_short_mkrsci_color_illuminance">The ambient light sensor measures light in lux, a measure of illumination that depends on the amount of incoming light and the area over which it is spread. The amount of light is measured in lux.</string>
+    <string name="sensor_desc_short_mkrsci_color_temperature">Color temperature is a characteristic of visible light that has important applications in many industries, such as: lighting, photography, astrophysics, manufacturing, and other fields. Color temperature is expressed in Kelvins (K), a unit of measurement for absolute temperature.</string>
+    <string name="sensor_desc_short_mkrsci_color_temperature_p2">The CIE 1931 x,y chromaticity space, also showing the chromaticities of black-body light sources of various temperatures (Planckian locus), and lines of constant correlated color temperature.</string>
   <string name="sensor_desc_short_mkrsci_proximity">A proximity sensor is a sensor able to detect the presence of nearby objects without any physical contact. A proximity sensor often emits an electromagnetic field or a beam of electromagnetic radiation (infrared, for instance), and looks for changes in the field or return signal. The object being sensed is often referred to as the proximity sensor\'s target. Proximity here is measured in millimeters or mm.</string>
   <string name="terms">Terms of Services</string>
   <string name="privacy">Privacy Policy</string>
@@ -746,16 +748,16 @@ If you have existing data on this device, once signed in, you can save your exis
   <string name="onboarding_02_quick_tip">Did you know that smartphones come with various built-in sensors? Connect an Arduino board to add even more advanced sensors.</string>
   <string name="onboarding_03_title">Create Experiments</string>
   <string name="onboarding_03_text_01">Add a new experiment to start exploring &amp; journaling</string>
-  <string name="onboarding_03_text_02">An experiment lets you <b>organise</b> all your observations and recordings of a specific topic. Create a new experiment, give it a suitable name and start exploring the sensors.</string>
-  <string name="onboarding_04_title">Add Observations</string>
-  <string name="onboarding_04_text_01">Add a text note</string>
-  <string name="onboarding_04_text_02">Take a new photo</string>
-  <string name="onboarding_04_text_03">Make a sensor recording</string>
-  <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
-  <string name="onboarding_05_title">Select a Sensor</string>
-  <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
-  <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
+    <string name="onboarding_03_text_02">An experiment lets you <b>organise</b> all your observations and recordings of a specific topic. Create a new experiment, give it a suitable name and start exploring the sensors.</string>
+    <string name="onboarding_04_title">Add Observations</string>
+    <string name="onboarding_04_text_01">Add a text note</string>
+    <string name="onboarding_04_text_02">Take a new photo</string>
+    <string name="onboarding_04_text_03">Make a sensor recording</string>
+    <string name="onboarding_04_text_04">Add a picture from your gallery</string>
+    <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+    <string name="onboarding_05_title">Select a Sensor</string>
+    <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
+    <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
     <string name="onboarding_06_title">Create a Recording</string>
     <string name="onboarding_06_text_01">To capture sensor data and save it to your experiment you can either start a <b>recording</b> or you can use the <b>snapshot</b> function.</string>
     <string name="onboarding_06_text_02">Start a <b>recording</b> to capture the change of sensor values over time.</string>
@@ -773,8 +775,8 @@ If you have existing data on this device, once signed in, you can save your exis
     <string name="drive_sync_intro_skip">SKIP</string>
     <string name="drive_sync_intro_more_text">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
     <string name="drive_sync_folder_picker_title">Select a folder</string>
-    <string name="drive_sync_folder_picker_text">Select a folder for your experiments</string>
-    <string name="drive_sync_folder_picker_select">SELECT</string>
+    <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
+    <string name="drive_sync_folder_picker_select">SYNC HERE</string>
     <string name="drive_sync_folder_picker_empty">This folder is empty.</string>
     <string name="drive_sync_root_folder_label">My Drive</string>
     <string name="drive_sync_create_folder_title">Create New Folder</string>
@@ -782,8 +784,130 @@ If you have existing data on this device, once signed in, you can save your exis
     <string name="drive_sync_create_folder_button">CREATE</string>
     <string name="drive_sync_summary_title">Google Drive</string>
     <string name="drive_sync_summary_text">Your experiments will be automatically synced in the folder “%s” on your Drive.</string>
-    <string name="drive_sync_summary_button">START EXPERIMENTING</string>
+    <string name="drive_sync_summary_button">SYNC NOW</string>
     <string name="mkrsci_input_sensor_resistance_1kohm">1 kΩ Resistor</string>
     <string name="mkrsci_input_sensor_resistance_10kohm">10 kΩ Resistor</string>
     <string name="mkrsci_input_sensor_resistance_1mohm">1 MΩ Resistor</string>
+    <string name="arduino_auth_title_sign_in">Sign in to Arduino</string>
+    <string name="arduino_auth_cta_create_2">Create one now</string>
+    <string name="arduino_auth_username">Username</string>
+    <string name="arduino_auth_password">Password</string>
+    <string name="arduino_auth_password_reset_cta">Forgot your password?</string>
+    <string name="arduino_auth_sign_up_tp_alternative">Or sign in with</string>
+    <string name="arduino_auth_password_reset_1_adult_text_1">Enter the email address associated with your account below.</string>
+    <string name="arduino_auth_password_reset_1_field_email">Insert your email</string>
+    <string name="arduino_auth_password_reset_completed_adult_text_1">Check your email, we just sent you a link to complete the reset of your password.</string>
+    <string name="arduino_auth_title_sign_up">Sign up to Arduino</string>
+    <string name="arduino_auth_sign_up_field_birthday">Birthday</string>
+    <string name="arduino_auth_sign_up_field_birthday_info">We need to know this in order to create the right account type for you.</string>
+    <string name="arduino_auth_sign_up_field_password">Choose a password</string>
+    <string name="arduino_auth_sign_up_field_username">Choose a username</string>
+    <string name="arduino_auth_sign_up_field_email">Enter your email</string>
+    <string name="arduino_auth_invalid_password">Minimum 8 characters</string>
+    <string name="arduino_auth_sign_up_option_marketing">I would like to receive emails about special deals and commercial offers from Arduino.</string>
+    <string name="arduino_auth_sign_up_option_newsletter">I would like to receive the Arduino newsletter.</string>
+    <string name="arduino_auth_title_sign_up_adult_completed">Confirm your email</string>
+    <string name="arduino_auth_sign_up_adult_completed_text_1">We sent you an email to finalize your registration. In order to continue, please follow the instructions and activate your account. Once your account is activated, you can login to Science Journal.</string>
+    <string name="arduino_auth_title_sign_in_junior">Sign in with a Junior account</string>
+    <string name="arduino_auth_sign_in_failure">Wrong email/username or password</string>
+    <string name="arduino_auth_sign_in_field_username">Username or email</string>
+    <string name="arduino_auth_title_mfa">2-Step Verification</string>
+    <string name="arduino_auth_mfa_text_2">This extra step shows that it’s really you trying to sign in. Get a verification code from the Authenticator app.</string>
+    <string name="arduino_auth_mfa_field_otp">Enter code</string>
+    <string name="arduino_auth_sign_up_junior_step_2_field_email">Parent’s email address</string>
+    <string name="arduino_auth_sign_up_junior_step_2_field_email_confirm">Confirm email address</string>
+    <string name="arduino_auth_title_sign_up_junior_step_2">Parent email address</string>
+    <string name="arduino_auth_title_sign_up_junior_completed">Account confirmation</string>
+    <string name="arduino_auth_password_reset_1_field_username">Your username</string>
+    <string name="arduino_auth_password_reset_1_field_username_info">The username is the word you used to sign in to your account. If you do not remember your username, ask your parent to restore your account from their Arduino profile page.</string>
+    <string name="arduino_auth_password_reset_completed_junior_text_1">Ask your parent to check their email inbox to reset your account’s password.</string>
+    <string name="arduino_auth_title_sign_up_junior_step_1">Create a Junior account</string>
+    <string name="arduino_auth_sign_up_junior_step_2_text">A parent needs to help you create the account. Enter their email address below and we will send instructions on how to proceed.</string>
+    <string name="claim_experiments_info_2">You may use the following actions to collect, export or discard those experiments:</string>
+    <string name="claim_experiments_info_4">Export or download an experiment</string>
+    <string name="claim_experiments_info_5">Delete an experiment from the device</string>
+    <string name="arduino_auth_terms">Terms Of Service</string>
+    <string name="arduino_auth_privacy">Privacy Policy</string>
+    <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
+    <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+    <string name="drive_setup_step_1_title">Cloud Sync</string>
+    <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
+    <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+    <string name="drive_learn_more">Learn More</string>
+    <string name="drive_skip">Skip</string>
+    <string name="drive_select">Sync Here</string>
+    <string name="gdrive_name">Google Drive</string>
+    <string name="gdrive_root">My Drive</string>
+    <string name="gdrive_error">Error connecting to Google Drive. Please try again.</string>
+    <string name="drive_setup_step_2_title">Select a folder</string>
+    <string name="drive_setup_step_2_description">Choose where you would like to save your experiments</string>
+    <string name="drive_setup_step_3_title">Google Drive</string>
+    <string name="drive_setup_step_3_description">Your experiments will be automatically synced in the folder “%1$s” on your Drive.</string>
+    <string name="drive_setup_step_3_action">Sync now</string>
+    <string name="drive_create_folder_title">Create New Folder</string>
+    <string name="drive_create_folder_action">Create</string>
+    <string name="drive_create_folder_def_name">Science Journal</string>
+    <string name="drive_sync_conflict">The experiment has been modified from another device</string>
+    <string name="drive_sync_conflict_remote">Keep remote</string>
+    <string name="drive_sync_conflict_local">Keep local</string>
+    <string name="error_network">A network error occurred, please check your connection and try again.</string>
+    <string name="error_generic">An error occurred. Please try again.</string>
+    <string name="retry">Retry</string>
+    <string name="arduino_auth_next">Next</string>
+    <string name="arduino_auth_sign_in_action">Sign in</string>
+    <string name="arduino_auth_junior_account">Junior Account</string>
+    <string name="arduino_auth_adult_account">Adult Account</string>
+    <string name="arduino_auth_cta_create_1">Don’t have an account?</string>
+    <string name="arduino_auth_sign_up_birth_date">Enter your birth date below to continue and ensure the data is correct: it will determine the type of account created for you.</string>
+    <string name="arduino_auth_missing_username">Username is required</string>
+    <string name="arduino_auth_invalid_username">Invalid username</string>
+    <string name="arduino_auth_missing_email">Email is required</string>
+    <string name="arduino_auth_invalid_email">Invalid email</string>
+    <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
+    <string name="arduino_auth_missing_password">Password is required</string>
+    <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+    <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
+    <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
+    <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
+    <string name="arduino_auth_sign_up_option_tracking">I want to see personalised commercial offers from Arduino based on my browsing and purchasing behaviour.</string>
+    <string name="arduino_auth_sign_up_action">Sign up</string>
+    <string name="arduino_auth_sign_up_user_exists">Username or email already registered. Please go back and check.</string>
+    <string name="arduino_auth_sign_up_adult_completed_action">Back to Login</string>
+    <string name="arduino_auth_title_password_reset_1">Recover your account</string>
+    <string name="arduino_auth_password_reset_1_junior_text_1">Enter your username and the parent’s email associated with your account below.</string>
+    <string name="arduino_auth_password_reset_1_field_parent_mail">Parent’s email</string>
+    <string name="arduino_auth_password_reset_1_action">Recover</string>
+    <string name="arduino_auth_password_reset_1_not_found">User not found. Please check and try again.</string>
+    <string name="arduino_auth_title_password_reset_completed">Email sent</string>
+    <string name="arduino_auth_password_reset_completed_action">Back to Login</string>
+    <string name="arduino_auth_mfa_text_1">Authenticator App</string>
+    <string name="arduino_auth_mfa_failure">Invalid code, please try again</string>
+    <string name="arduino_auth_mfa_cta">Verify</string>
+    <string name="arduino_auth_sign_up_junior_step_1_username_info">The username is created for you automatically, but you can generate new ones until you find the best one.
+You will use this username to log in to Arduino, and other users will see it when you post projects.</string>
+    <string name="arduino_auth_sign_up_junior_step_1_dialog_avatar">Choose an avatar</string>
+    <string name="arduino_auth_sign_up_junior_step_2_action">Send Email</string>
+    <string name="arduino_auth_sign_up_junior_completed_text">We sent an email with instructions to your parent’s email %1$s. You will be able to sign in once they finalize your account.</string>
+    <string name="arduino_auth_sign_up_junior_completed_action">Back to Science Journal</string>
+    <string name="arduino_auth_settings">Settings</string>
+    <string name="arduino_auth_settings_section_account">Arduino Account</string>
+    <string name="arduino_auth_settings_section_sync">Google Drive Sync</string>
+    <string name="arduino_auth_settings_section_sync_enable">Enable Drive Sync</string>
+    <string name="arduino_auth_settings_section_sync_change">Change</string>
+    <string name="arduino_auth_settings_section_sync_account">Account</string>
+    <string name="arduino_auth_settings_section_sync_folder">Sync Folder</string>
+    <string name="arduino_auth_settings_sign_out">Sign Out</string>
+    <string name="arduino_auth_settings_sign_out_confirm">Are you sure you want to Sign Out?</string>
+    <string name="claim_experiments_notice_one"><![CDATA[There is <strong>one experiment</strong> on the device which don’t belong to anyone. Tap “Collect” to assign yours to your virtual lab.]]></string>
+    <string name="claim_experiments_notice_other"><![CDATA[There are <strong>%1$d experiments</strong> on the device which don’t belong to anyone. Tap “Collect” to assign yours to your virtual lab.]]></string>
+    <string name="claim_experiments_action">Collect</string>
+    <string name="claim_experiments_action_all">Collect all</string>
+    <string name="claim_experiments_info_1"><![CDATA[If you would alike to assign previous experiments to <strong>%1$s’s Lab</strong> you can collect them here.]]></string>
+    <string name="claim_experiments_info_3"><![CDATA[Add an experiment to <strong>%1$s’s Lab</strong>]]></string>
+    <string name="claim_experiments_info_action">Start collecting</string>
+    <string name="claim_experiments_done">Experiment “%1$s” collected</string>
+    <string name="claim_experiments_confirm_all_title">Collect all Experiments</string>
+    <string name="claim_experiments_confirm_all_message">Are you sure to collect all experiments and add them to your account’s lab: %1$s’s Lab?</string>
+    <string name="empty_experiment_lab_signed_in">There are no experiments in %1$s’s Lab</string>
+    <string name="empty_experiment_lab_anonymous">There are no experiments</string>
 </resources>

@@ -17,6 +17,4 @@
     <string name="config_auth0_connection_junior" translatable="false">coppa</string>
 
     <string name="config_auth0_callback_uri" translatable="false">arduino.sj://login.arduino.cc/ios/cc.arduino.sciencejournal/callback</string>
-    <string name="config_auth_privacy" translatable="false">https://www.arduino.cc/en/privacy-policy/?embed</string>
-    <string name="config_auth_terms" translatable="false">https://www.arduino.cc/en/terms-conditions/?embed</string>
 </resources>
