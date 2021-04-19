@@ -865,7 +865,7 @@ You will use this username to log in to Arduino, and other users will see it whe
     <string name="claim_experiments_notice_other"><![CDATA[There are <strong>%1$d experiments</strong> on the device which don’t belong to anyone. Tap “Collect” to assign yours to your virtual lab.]]></string>
     <string name="claim_experiments_action">Collect</string>
     <string name="claim_experiments_action_all">Collect all</string>
-    <string name="claim_experiments_info_1"><![CDATA[If you would alike to assign previous experiments to <strong>%1$s’s Lab</strong> you can collect them here.]]></string>
+    <string name="claim_experiments_info_1"><![CDATA[If you would like to assign previous experiments to <strong>%1$s’s Lab</strong> you can collect them here.]]></string>
     <string name="claim_experiments_info_3"><![CDATA[Add an experiment to <strong>%1$s’s Lab</strong>]]></string>
     <string name="claim_experiments_info_action">Start collecting</string>
     <string name="claim_experiments_done">Experiment “%1$s” collected</string>

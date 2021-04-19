@@ -3,11 +3,13 @@ package com.google.android.apps.forscience.whistlepunk.signin;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.text.method.TransformationMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -22,6 +24,9 @@ public class SignUpAdultStep1Fragment extends AuthBaseFragment {
     private EditText mUsernameEdit;
     private EditText mPasswordEdit;
     private View mNextButton;
+
+    private boolean mPasswordShown;
+    private TransformationMethod mPasswordTransformationMethod;
 
     @Nullable
     @Override
@@ -127,10 +132,19 @@ public class SignUpAdultStep1Fragment extends AuthBaseFragment {
             }
         });
         view.findViewById(R.id.iv_username_info).setOnClickListener(v -> alert(R.string.arduino_auth_username_info));
-        final View showPassword = view.findViewById(R.id.iv_show_password);
+        mPasswordShown = false;
+        final ImageView showPassword = view.findViewById(R.id.iv_show_password);
         showPassword.setOnClickListener(v -> {
-            showPassword.setVisibility(View.INVISIBLE);
-            mPasswordEdit.setTransformationMethod(null);
+            if (!mPasswordShown) {
+                mPasswordShown = true;
+                showPassword.setImageResource(R.drawable.ic_arduino_auth_hide_password);
+                mPasswordTransformationMethod = mPasswordEdit.getTransformationMethod();
+                mPasswordEdit.setTransformationMethod(null);
+            } else {
+                mPasswordShown = false;
+                showPassword.setImageResource(R.drawable.ic_arduino_auth_show_password);
+                mPasswordEdit.setTransformationMethod(mPasswordTransformationMethod);
+            }
         });
         return view;
     }

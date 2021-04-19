@@ -25,6 +25,19 @@ public class SignUpJuniorStep2Fragment extends AuthBaseFragment {
     private EditText mEmailConfirmEdit;
     private View mNextButton;
 
+    private boolean mTeen;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        final Bundle args = getArguments();
+        if (args != null) {
+            mTeen = "teen".equals(args.getString("flow", ""));
+        } else {
+            mTeen = false;
+        }
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -94,12 +107,16 @@ public class SignUpJuniorStep2Fragment extends AuthBaseFragment {
     @Override
     public void onStart() {
         super.onStart();
-        setBackEnabled(true);
+        setBackEnabled(mTeen);
     }
 
     @Override
     public boolean onBackPressed() {
-        return true;
+        if (mTeen) {
+            return super.onBackPressed();
+        } else {
+            return true;
+        }
     }
 
     @SuppressWarnings("ConstantConditions")

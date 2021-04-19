@@ -11,6 +11,7 @@ import android.graphics.RectF;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.text.method.TransformationMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -48,6 +49,9 @@ public class SignUpJuniorStep1Fragment extends AuthBaseFragment {
     private JuniorAvatarsCall.Avatar[] mAvatars;
 
     private JuniorAvatarsCall.Avatar mSelectedAvatar;
+
+    private boolean mPasswordShown;
+    private TransformationMethod mPasswordTransformationMethod;
 
     @Nullable
     @Override
@@ -94,10 +98,19 @@ public class SignUpJuniorStep1Fragment extends AuthBaseFragment {
         });
         view.findViewById(R.id.iv_refresh_username).setOnClickListener(v -> generateUsername());
         view.findViewById(R.id.iv_username_info).setOnClickListener(v -> alert(R.string.arduino_auth_sign_up_junior_step_1_username_info));
-        final View showPassword = view.findViewById(R.id.iv_show_password);
+        mPasswordShown = false;
+        final ImageView showPassword = view.findViewById(R.id.iv_show_password);
         showPassword.setOnClickListener(v -> {
-            showPassword.setVisibility(View.INVISIBLE);
-            mPasswordEdit.setTransformationMethod(null);
+            if (!mPasswordShown) {
+                mPasswordShown = true;
+                showPassword.setImageResource(R.drawable.ic_arduino_auth_hide_password);
+                mPasswordTransformationMethod = mPasswordEdit.getTransformationMethod();
+                mPasswordEdit.setTransformationMethod(null);
+            } else {
+                mPasswordShown = false;
+                showPassword.setImageResource(R.drawable.ic_arduino_auth_show_password);
+                mPasswordEdit.setTransformationMethod(mPasswordTransformationMethod);
+            }
         });
         view.findViewById(R.id.l_avatar).setOnClickListener(v -> onEditAvatar());
         return view;
@@ -128,7 +141,7 @@ public class SignUpJuniorStep1Fragment extends AuthBaseFragment {
     @Override
     public void onStart() {
         super.onStart();
-        setBackEnabled(true);
+        setBackEnabled(false);
     }
 
     @Override
