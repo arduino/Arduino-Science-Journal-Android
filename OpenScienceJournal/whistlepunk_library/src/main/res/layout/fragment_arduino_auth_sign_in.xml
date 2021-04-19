@@ -66,6 +66,18 @@
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <ImageView
+            android:id="@+id/iv_show_password"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_arduino_auth_show_password"
+            app:layout_constraintBottom_toBottomOf="@id/il_password"
+            app:layout_constraintEnd_toEndOf="@id/il_password"
+            app:layout_constraintTop_toTopOf="@id/il_password" />
+
         <TextView
             android:id="@+id/tv_password_reset"
             style="@style/ArduinoAuth_Text.Action"

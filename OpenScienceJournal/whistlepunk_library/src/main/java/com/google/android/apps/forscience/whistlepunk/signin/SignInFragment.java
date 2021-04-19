@@ -3,11 +3,13 @@ package com.google.android.apps.forscience.whistlepunk.signin;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.text.method.TransformationMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -26,6 +28,9 @@ public class SignInFragment extends AuthBaseFragment {
     private EditText mPasswordEdit;
     private View mError;
     private View mNextButton;
+
+    private boolean mPasswordShown;
+    private TransformationMethod mPasswordTransformationMethod;
 
     private boolean mJunior;
 
@@ -105,6 +110,20 @@ public class SignInFragment extends AuthBaseFragment {
             final TextView tv = view.findViewById(R.id.tv_title);
             tv.setText(R.string.arduino_auth_title_sign_in_junior);
         }
+        mPasswordShown = false;
+        final ImageView showPassword = view.findViewById(R.id.iv_show_password);
+        showPassword.setOnClickListener(v -> {
+            if (!mPasswordShown) {
+                mPasswordShown = true;
+                showPassword.setImageResource(R.drawable.ic_arduino_auth_hide_password);
+                mPasswordTransformationMethod = mPasswordEdit.getTransformationMethod();
+                mPasswordEdit.setTransformationMethod(null);
+            } else {
+                mPasswordShown = false;
+                showPassword.setImageResource(R.drawable.ic_arduino_auth_show_password);
+                mPasswordEdit.setTransformationMethod(mPasswordTransformationMethod);
+            }
+        });
         view.findViewById(R.id.iv_tp_github).setOnClickListener(v -> launchGitHubSignUp());
         view.findViewById(R.id.iv_tp_google).setOnClickListener(v -> launchGoogleSignUp());
         view.findViewById(R.id.iv_tp_apple).setOnClickListener(v -> launchAppleSignUp());
