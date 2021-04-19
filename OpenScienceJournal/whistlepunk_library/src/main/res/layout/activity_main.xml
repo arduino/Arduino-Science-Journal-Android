@@ -76,7 +76,7 @@
         app:headerLayout="@layout/drawer_header"
         app:itemIconTint="@color/arduino_gris"
         app:itemTextColor="@color/arduino_gris"
-        app:menu="@menu/drawer_navigation_items">
+        app:menu="@menu/drawer_navigation_ext_link">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

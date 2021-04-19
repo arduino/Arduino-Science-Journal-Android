@@ -746,7 +746,7 @@ g.co/sciencejournalactivities</string>
     <string name="onboarding_finish_button">START EXPERIMENTING</string>
     <string name="navigation_getting_started">Getting Started</string>
     <string name="onboarding_navigation_title_tablet">GETTING STARTED WITH SCIENCE JOURNAL</string>
-    <string name="navigation_activities">Activities</string>
+    <string name="navigation_activities">SJ Activities</string>
     <string name="drive_sync_intro_title">Cloud Sync</string>
     <string name="drive_sync_intro_text">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
     <string name="drive_sync_intro_more">LEARN MORE</string>
@@ -889,4 +889,9 @@ You will use this username to log in to Arduino, and other users will see it whe
     <string name="claim_experiments_confirm_all_message">Are you sure to collect all experiments and add them to your account’s lab: %1$s’s Lab?</string>
     <string name="empty_experiment_lab_signed_in">There are no experiments in %1$s’s Lab</string>
     <string name="empty_experiment_lab_anonymous">There are no experiments</string>
+    <string name="navigation_activities_link">https://science-journal.arduino.cc/</string>
+    <string name="navigation_get_science_kit">Get Science Kit</string>
+    <string name="navigation_get_science_kit_link">https://www.arduino.cc/education/science-kit</string>
+    <string name="navigation_get_help">Get Help</string>
+    <string name="navigation_get_help_link">https://support.arduino.cc/hc/en-us/sections/360004584459-Science-Journal-App</string>
 </resources>

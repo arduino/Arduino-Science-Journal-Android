@@ -26,6 +26,16 @@
             android:title="@string/navigation_activities"
             app:actionLayout="@layout/menu_activities_item" />
         <item
+            android:id="@+id/navigation_item_get_science_kit"
+            android:icon="@drawable/ic_get_science_kit"
+            android:title="@string/navigation_get_science_kit"
+            app:actionLayout="@layout/menu_activities_item" />
+        <item
+            android:id="@+id/navigation_item_get_help"
+            android:icon="@drawable/ic_get_help"
+            android:title="@string/navigation_get_help"
+            app:actionLayout="@layout/menu_activities_item" />
+        <item
             android:id="@+id/navigation_item_onboarding"
             android:icon="@drawable/ic_get_started"
             android:title="@string/navigation_getting_started" />

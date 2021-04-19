@@ -19,16 +19,16 @@
     <item>@string/trigger_when_at</item>
     <item>@string/trigger_when_rises_above</item>
     <item>@string/trigger_when_drops_below</item>
-    <item>@string/trigger_when_is_above</item>
-    <item>@string/trigger_when_is_below</item>
+      <item>@string/trigger_when_is_above</item>
+      <item>@string/trigger_when_is_below</item>
   </string-array>
-  <string-array name="trigger_when_list_note_text">
-      <item>at</item>
-      <item>superó los</item>
-      <item>disminuyó a menos de</item>
-      <item>is above</item>
-      <item>is below</item>
-  </string-array>
+    <string-array name="trigger_when_list_note_text">
+        <item>at</item>
+        <item>superó los</item>
+        <item>disminuyó a menos de</item>
+        <item>is above</item>
+        <item>is below</item>
+    </string-array>
     <string name="app_name">Arduino Science Journal</string>
     <string name="action_feedback">Comentarios</string>
     <string name="action_about">Acerca de</string>
@@ -48,16 +48,16 @@
     <string name="magnetic_field_strength">Magnetómetro</string>
     <string name="barometer">Barómetro</string>
     <string name="ambient_temperature">Temperatura ambiental</string>
-  <string name="vel_units">m/s</string>
-  <string name="acc_units">m/s²</string>
-  <string name="ambient_light_units">lux</string>
-  <string name="magnetic_strength_units">μT</string>
-  <string name="decibel_units">dB</string>
-  <string name="hertz_units">Hz</string>
-  <string name="rpm_units">RPM</string>
-  <string name="voltage_units">V</string>
-  <string name="raw_units">%</string>
-  <string name="barometer_units">hPa</string>
+    <string name="vel_units">m/s</string>
+    <string name="acc_units">m/s²</string>
+    <string name="ambient_light_units">lux</string>
+    <string name="magnetic_strength_units">μT</string>
+    <string name="decibel_units">dB</string>
+    <string name="hertz_units">Hz</string>
+    <string name="rpm_units">RPM</string>
+    <string name="voltage_units">V</string>
+    <string name="raw_units">%</string>
+    <string name="barometer_units">hPa</string>
   <string name="temperature_units">°C</string>
   <string name="header_name_and_units"><xliff:g id="sensor_name">%1$s</xliff:g> (<xliff:g id="sensor_units">%2$s</xliff:g>)</string>
   <string name="snackbar_source_error">Error occurred when connecting to this source: <xliff:g id="error_text">%1s</xliff:g></string>
@@ -550,16 +550,16 @@ g.co/sciencejournalactivities</string>
   <string name="gallery_selected_title"><xliff:g id="selected_number" example="6">%1$d</xliff:g> Selected</string>
   <string name="photo_editor_dialog_title">Edit photo with…</string>
   <string name="action_edit_photo">Edit photo</string>
-  <string name="input_camera_permission_denied">No se puede usar la cámara porque Science Journal no tiene permiso para acceder a ella.</string>
-  <string name="input_photo_library_permission_denied">No se puede usar la biblioteca de fotos porque Science Journal no tiene permiso para acceder a ella.</string>
-  <string name="action_show_archived_experiments">Show archived experiments</string>
-  <string name="action_hide_archived_experiments">Hide archived experiments</string>
-  <string name="action_hide_archived_trials">Hide archived recordings</string>
-  <string name="snapshot_button_description">Sensor snapshot</string>
-  <string name="notification_channel_name">Recordings</string>
-  <string name="notification_channel_description">Recording status</string>
-  <string name="import_failed_recording">Science Journal está en uso actualmente. Detén la grabación y vuelve a intentarlo.</string>
-  <string name="import_failed_file">No se pudo importar. Hay un problema con este experimento.</string>
+    <string name="input_camera_permission_denied">No se puede usar la cámara porque Science Journal no tiene permiso para acceder a ella.</string>
+    <string name="input_photo_library_permission_denied">No se puede usar la biblioteca de fotos porque Science Journal no tiene permiso para acceder a ella.</string>
+    <string name="action_show_archived_experiments">Show archived experiments</string>
+    <string name="action_hide_archived_experiments">Hide archived experiments</string>
+    <string name="action_hide_archived_trials">Hide archived recordings</string>
+    <string name="snapshot_button_description">Sensor snapshot</string>
+    <string name="notification_channel_name">Recordings</string>
+    <string name="notification_channel_description">Recording status</string>
+    <string name="import_failed_recording">Science Journal está en uso actualmente. Detén la grabación y vuelve a intentarlo.</string>
+    <string name="import_failed_file">No se pudo importar. Hay un problema con este experimento.</string>
     <string name="import_failed">Se produjo un error desconocido.</string>
     <string name="explore_your_world">Explora el mundo que te rodea</string>
     <string name="use_science_journal">Usa Science Journal para realizar experimentos en el mundo que te rodea</string>
@@ -611,16 +611,16 @@ If you have existing data on this device, once signed in, you can save your exis
     <string name="action_claim_unclaimed_experiments">Claim all</string>
     <plurals name="claim_all_confirmation_text">
         <item quantity="one">Your experiment will be added to Google Drive</item>
-    <item quantity="other">All <xliff:g id="count_of_unclaimed_experiments">%1$d</xliff:g> experiments will be added to Google Drive</item>
-  </plurals>
-  <string name="claim_all_confirmation_yes">Claim</string>
-  <string name="action_delete_unclaimed_experiments">Delete all</string>
-  <string name="action_use_without_an_account">Use without an account</string>
-  <string name="action_sync_start">Syncing library to Google Drive.</string>
+        <item quantity="other">All <xliff:g id="count_of_unclaimed_experiments">%1$d</xliff:g> experiments will be added to Google Drive</item>
+    </plurals>
+    <string name="claim_all_confirmation_yes">Claim</string>
+    <string name="action_delete_unclaimed_experiments">Delete all</string>
+    <string name="action_use_without_an_account">Use without an account</string>
+    <string name="action_sync_start">Syncing library to Google Drive.</string>
     <string name="action_remove_cover_image">Quitar imagen de portada</string>
-  <string name="remove_cover_image_dialog_title">Remove the cover image?</string>
+    <string name="remove_cover_image_dialog_title">Remove the cover image?</string>
     <string name="remove_cover_image_confirm">¿Estás seguro de que quieres quitar la imagen de portada? Esta acción no se puede deshacer.</string>
-  <string name="drive_sync_cannot_reach_google_drive">No se puede conectar con Google Drive. Revisa tu conexión.</string>
+    <string name="drive_sync_cannot_reach_google_drive">No se puede conectar con Google Drive. Revisa tu conexión.</string>
   <string name="experiment_title_concatenator"><xliff:g id="first_title">%1$s</xliff:g> / <xliff:g id="second_title">%2$s</xliff:g></string>
   <string name="download_copy_action">Download</string>
   <string name="saved_to_device_text">Saved to Downloads folder.</string>
@@ -692,16 +692,16 @@ If you have existing data on this device, once signed in, you can save your exis
   <string name="current_units">A</string>
   <string name="resistance_units">k\u03A9</string>
   <string name="gyr_units">\u00B0/s</string>
-  <string name="pressure">Pressure</string>
-  <string name="pressure_units">atm</string>
-  <string name="humidity">Humidity</string>
-  <string name="humidity_units">%</string>
-  <string name="proximity">Proximity</string>
-  <string name="proximity_units">%</string>
-  <string name="color_spectrophotometer">Light Intensity</string>
-  <string name="color_spectrophotometer_units">%</string>
-  <string name="color_wavelength">Light Wavelength</string>
-  <string name="color_wavelength_units">nm</string>
+    <string name="pressure">Pressure</string>
+    <string name="pressure_units">atm</string>
+    <string name="humidity">Humidity</string>
+    <string name="humidity_units">%</string>
+    <string name="proximity">Proximity</string>
+    <string name="proximity_units">%</string>
+    <string name="color_spectrophotometer">Light Intensity</string>
+    <string name="color_spectrophotometer_units">%</string>
+    <string name="color_wavelength">Light Wavelength</string>
+    <string name="color_wavelength_units">nm</string>
     <string name="mkrsci_input_sensor_raw">Raw</string>
     <string name="mkrsci_input_sensor_temperature_c">Temperature (Celsius)</string>
     <string name="mkrsci_input_sensor_temperature_f">Temperature (Fahrenheit)</string>
@@ -724,30 +724,30 @@ If you have existing data on this device, once signed in, you can save your exis
     <string name="sensor_desc_short_mkrsci_color_illuminance">The ambient light sensor measures light in lux, a measure of illumination that depends on the amount of incoming light and the area over which it is spread. The amount of light is measured in lux.</string>
     <string name="sensor_desc_short_mkrsci_color_temperature">Color temperature is a characteristic of visible light that has important applications in many industries, such as: lighting, photography, astrophysics, manufacturing, and other fields. Color temperature is expressed in Kelvins (K), a unit of measurement for absolute temperature.</string>
     <string name="sensor_desc_short_mkrsci_color_temperature_p2">The CIE 1931 x,y chromaticity space, also showing the chromaticities of black-body light sources of various temperatures (Planckian locus), and lines of constant correlated color temperature.</string>
-  <string name="sensor_desc_short_mkrsci_proximity">A proximity sensor is a sensor able to detect the presence of nearby objects without any physical contact. A proximity sensor often emits an electromagnetic field or a beam of electromagnetic radiation (infrared, for instance), and looks for changes in the field or return signal. The object being sensed is often referred to as the proximity sensor\'s target. Proximity here is measured in millimeters or mm.</string>
-  <string name="terms">Terms of Services</string>
-  <string name="privacy">Privacy Policy</string>
-  <string name="get_started_header_location">Location</string>
-  <string name="get_started_action_understand">I understand</string>
-  <string name="get_started_header_done">That’s it!</string>
-  <string name="get_started_message_done">We’re done checking for permissions. If you need to modify these permissions in the future, you can do so at any time in the Science Journal app settings of the Android Settings app.</string>
-  <string name="get_started_action_done">Continue</string>
-  <string name="first_experiment_note_1">Welcome to Science Journal!</string>
-  <string name="first_experiment_note_2">Start taking notes and record data using the observation toolbar.</string>
+    <string name="sensor_desc_short_mkrsci_proximity">A proximity sensor is a sensor able to detect the presence of nearby objects without any physical contact. A proximity sensor often emits an electromagnetic field or a beam of electromagnetic radiation (infrared, for instance), and looks for changes in the field or return signal. The object being sensed is often referred to as the proximity sensor\'s target. Proximity here is measured in millimeters or mm.</string>
+    <string name="terms">Terms of Services</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="get_started_header_location">Location</string>
+    <string name="get_started_action_understand">I understand</string>
+    <string name="get_started_header_done">That’s it!</string>
+    <string name="get_started_message_done">We’re done checking for permissions. If you need to modify these permissions in the future, you can do so at any time in the Science Journal app settings of the Android Settings app.</string>
+    <string name="get_started_action_done">Continue</string>
+    <string name="first_experiment_note_1">Welcome to Science Journal!</string>
+    <string name="first_experiment_note_2">Start taking notes and record data using the observation toolbar.</string>
   <string name="first_experiment_note_3">Find activities and inspiration at science-journal.arduino.cc and start exploring the world around you.</string>
   <string name="first_experiment_note_4">If you missed the Getting Started guide or you want to go back to it, you can find it in the sidebar menu.</string>
   <string name="onboarding_navigation_title">GETTING STARTED</string>
   <string name="onboarding_01_title">Welcome to Science Journal!</string>
-  <string name="onboarding_01_text_01">This introduction will walk you through the most important functions of Science Journal and show you how to turn your smart device into a pocket science lab. Swipe left to begin.</string>
-  <string name="onboarding_01_quick_tip">You can always get back to this intro later in the sidebar menu.</string>
-  <string name="onboarding_quick_tip_header">Quick Tip:</string>
-  <string name="onboarding_skip_button">SKIP INTRO</string>
-  <string name="onboarding_navigation_hint">Swipe left to proceed</string>
-  <string name="onboarding_02_title">What is Science Journal?</string>
-  <string name="onboarding_02_text_01">Science Journal helps you to conduct science experiments by allowing you to observe real time sensor data, <b>record sensor values</b> as well as <b>add notes</b> and <b>observations</b> to your experiments.</string>
-  <string name="onboarding_02_quick_tip">Did you know that smartphones come with various built-in sensors? Connect an Arduino board to add even more advanced sensors.</string>
-  <string name="onboarding_03_title">Create Experiments</string>
-  <string name="onboarding_03_text_01">Add a new experiment to start exploring &amp; journaling</string>
+    <string name="onboarding_01_text_01">This introduction will walk you through the most important functions of Science Journal and show you how to turn your smart device into a pocket science lab. Swipe left to begin.</string>
+    <string name="onboarding_01_quick_tip">You can always get back to this intro later in the sidebar menu.</string>
+    <string name="onboarding_quick_tip_header">Quick Tip:</string>
+    <string name="onboarding_skip_button">SKIP INTRO</string>
+    <string name="onboarding_navigation_hint">Swipe left to proceed</string>
+    <string name="onboarding_02_title">What is Science Journal?</string>
+    <string name="onboarding_02_text_01">Science Journal helps you to conduct science experiments by allowing you to observe real time sensor data, <b>record sensor values</b> as well as <b>add notes</b> and <b>observations</b> to your experiments.</string>
+    <string name="onboarding_02_quick_tip">Did you know that smartphones come with various built-in sensors? Connect an Arduino board to add even more advanced sensors.</string>
+    <string name="onboarding_03_title">Create Experiments</string>
+    <string name="onboarding_03_text_01">Add a new experiment to start exploring &amp; journaling</string>
     <string name="onboarding_03_text_02">An experiment lets you <b>organise</b> all your observations and recordings of a specific topic. Create a new experiment, give it a suitable name and start exploring the sensors.</string>
     <string name="onboarding_04_title">Add Observations</string>
     <string name="onboarding_04_text_01">Add a text note</string>
@@ -767,7 +767,7 @@ If you have existing data on this device, once signed in, you can save your exis
     <string name="onboarding_finish_button">START EXPERIMENTING</string>
     <string name="navigation_getting_started">Getting Started</string>
     <string name="onboarding_navigation_title_tablet">GETTING STARTED WITH SCIENCE JOURNAL</string>
-    <string name="navigation_activities">Activities</string>
+    <string name="navigation_activities">SJ Activities</string>
     <string name="drive_sync_intro_title">Cloud Sync</string>
     <string name="drive_sync_intro_text">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
     <string name="drive_sync_intro_more">LEARN MORE</string>
@@ -910,4 +910,9 @@ You will use this username to log in to Arduino, and other users will see it whe
     <string name="claim_experiments_confirm_all_message">Are you sure to collect all experiments and add them to your account’s lab: %1$s’s Lab?</string>
     <string name="empty_experiment_lab_signed_in">There are no experiments in %1$s’s Lab</string>
     <string name="empty_experiment_lab_anonymous">There are no experiments</string>
+    <string name="navigation_activities_link">https://science-journal.arduino.cc/</string>
+    <string name="navigation_get_science_kit">Get Science Kit</string>
+    <string name="navigation_get_science_kit_link">https://www.arduino.cc/education/science-kit</string>
+    <string name="navigation_get_help">Get Help</string>
+    <string name="navigation_get_help_link">https://support.arduino.cc/hc/en-us/sections/360004584459-Science-Journal-App</string>
 </resources>

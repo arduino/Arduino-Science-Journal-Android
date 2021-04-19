@@ -443,7 +443,17 @@ public class MainActivity extends ActivityWithNavigationView {
             startActivity(new Intent(this, OnboardingActivity.class));
         } else if (itemId == R.id.navigation_item_activities) {
             try {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://science-journal.arduino.cc/")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_activities_link))));
+            } catch (ActivityNotFoundException ignored) {
+            }
+        } else if (itemId == R.id.navigation_item_get_science_kit) {
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_get_science_kit_link))));
+            } catch (ActivityNotFoundException ignored) {
+            }
+        } else if (itemId == R.id.navigation_item_get_help) {
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_get_help_link))));
             } catch (ActivityNotFoundException ignored) {
             }
         } else if (itemId == R.id.navigation_item_settings) {
