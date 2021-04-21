@@ -199,7 +199,7 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
             final GoogleSignInOptions options = new GoogleSignInOptions.Builder()
                     .requestId()
                     .requestEmail()
-                    .requestScopes(GDRIVE_SCOPES[0], GDRIVE_SCOPES[1], GDRIVE_SCOPES[2], GDRIVE_SCOPES[3])
+                    .requestScopes(GDRIVE_SCOPES[0], GDRIVE_SCOPES[1])
                     .build();
             final GoogleSignInClient client = GoogleSignIn.getClient(this, options);
             showLoader();
@@ -560,9 +560,7 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private static final Scope[] GDRIVE_SCOPES = {
             new Scope("https://www.googleapis.com/auth/drive"),
-            new Scope("https://www.googleapis.com/auth/drive.appdata"),
-            new Scope("https://www.googleapis.com/auth/drive.file"),
-            new Scope("https://www.googleapis.com/auth/drive.metadata")
+            new Scope("https://www.googleapis.com/auth/drive.appdata")
     };
 
     private static final int RC_SIGN_IN = 1000;
