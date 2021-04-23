@@ -1029,7 +1029,7 @@ public class ExperimentListFragment extends Fragment
                 textView.setText(Html.fromHtml(applicationContext.getResources().getString(
                         unclaimedExperimentCount == 1 ?
                                 R.string.claim_experiments_notice_one :
-                                R.string.claim_experiments_notice_other)));
+                                R.string.claim_experiments_notice_other, unclaimedExperimentCount)));
                 holder.claimButton.setOnClickListener(
                         v -> {
                             long mbFree = FileMetadataUtil.getInstance().getFreeSpaceInMb();
