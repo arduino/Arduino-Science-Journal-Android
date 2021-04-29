@@ -87,30 +87,24 @@ public class WebActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (mWebView != null) {
-            mWebView.destroy();
-        }
+        mWebView.destroy();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        if (mWebView != null) {
-            mWebView.onPause();
-        }
+        mWebView.onPause();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        if (mWebView != null) {
-            mWebView.onResume();
-        }
+        mWebView.onResume();
     }
 
     @Override
     public void onBackPressed() {
-        if (mWebView != null && mWebView.canGoBack()) {
+        if (mWebView.canGoBack()) {
             mWebView.goBack();
         } else {
             super.onBackPressed();
