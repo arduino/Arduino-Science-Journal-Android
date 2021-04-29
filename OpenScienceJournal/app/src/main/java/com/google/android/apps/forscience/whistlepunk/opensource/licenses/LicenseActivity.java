@@ -19,13 +19,6 @@ package com.google.android.apps.forscience.whistlepunk.opensource.licenses;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.fragment.app.ListFragment;
-import androidx.core.app.NavUtils;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -35,21 +28,38 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import com.google.android.apps.forscience.whistlepunk.LoadStaticHtmlTask;
-import com.google.android.apps.forscience.whistlepunk.opensource.R;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NavUtils;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.fragment.app.ListFragment;
+
+import com.google.android.apps.forscience.whistlepunk.LoadStaticHtmlTaskUseCase;
 import com.google.android.apps.forscience.whistlepunk.SettingsActivity;
+import com.google.android.apps.forscience.whistlepunk.opensource.R;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
+
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.observers.DisposableSingleObserver;
+import io.reactivex.schedulers.Schedulers;
 
 /** Displays list of code modules. */
 public class LicenseActivity extends AppCompatActivity {
@@ -190,6 +200,8 @@ public class LicenseActivity extends AppCompatActivity {
 
     private WebView webView;
 
+    private final LoadStaticHtmlTaskUseCase loadStaticHtmlTaskUseCase = new LoadStaticHtmlTaskUseCase(Schedulers.io(), AndroidSchedulers.mainThread());
+
     public LicenseFragment() {}
 
     public static LicenseFragment newInstance(License license) {
@@ -212,26 +224,30 @@ public class LicenseActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onDestroyView() {
+      super.onDestroyView();
+      loadStaticHtmlTaskUseCase.discard();
+    }
+
+    @Override
     public void onStart() {
       super.onStart();
-      new LoadStaticHtmlTask(
-              new LoadStaticHtmlTask.StaticHtmlLoadListener() {
-                @Override
-                public void onDataLoaded(String data) {
-                  String copyrightHeader = getArguments().getString(TAG_HEADER);
-                  if (!TextUtils.isEmpty(copyrightHeader)) {
-                    data = data.replace(COPYRIGHT_HEADER_PLACEHOLDER, copyrightHeader);
-                  }
-                  webView.loadData(data, "text/html", "UTF-8");
-                }
-              },
-              getResources(),
-              getResources()
-                  .getIdentifier(
-                      getArguments().getString(TAG_RESOURCE),
-                      "raw",
-                      getActivity().getPackageName()))
-          .execute();
+      int fileId = getResources().getIdentifier(getArguments().getString(TAG_RESOURCE), "raw", requireActivity().getPackageName());
+      loadStaticHtmlTaskUseCase.invoke(getResources(), fileId, new DisposableSingleObserver<String>() {
+        @Override
+        public void onSuccess(@NonNull String data) {
+          String copyrightHeader = getArguments().getString(TAG_HEADER);
+          if (!TextUtils.isEmpty(copyrightHeader)) {
+            data = data.replace(COPYRIGHT_HEADER_PLACEHOLDER, copyrightHeader);
+          }
+          webView.loadData(data, "text/html", "UTF-8");
+        }
+
+        @Override
+        public void onError(@NonNull Throwable throwable) {
+          Log.e(TAG, "loadStaticHtmlTaskUseCase", throwable);
+        }
+      });
     }
 
     @Override
