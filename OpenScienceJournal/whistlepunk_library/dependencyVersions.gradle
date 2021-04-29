@@ -45,6 +45,8 @@ ext {
             "sceneform" : "com.google.ar.sceneform.ux:sceneform-ux:1.9.0",
 
             'playServicesAuth': 'com.google.android.gms:play-services-auth:17.0.0',
+            'googleApiClient': 'com.google.api-client:google-api-client-android:1.25.0',
+            'driveApi' : "com.google.apis:google-api-services-drive:v2-rev362-1.25.0",
 
             "crypto": "androidx.security:security-crypto:1.0.0-rc04",
 

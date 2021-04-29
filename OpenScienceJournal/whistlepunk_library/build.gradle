@@ -142,14 +142,6 @@ dependencies {
     // Depend on jsyn maven repo.
     implementation deps.jsyn
 
-    implementation('com.google.api-client:google-api-client-android:1.25.0') {
-        // Avoid error "Program type already present: com.google.common.annotations.Beta".
-        exclude group: 'com.google.guava'
-        // Avoid error "Program type already present: javax.annotation.CheckForNull"
-        exclude group: 'com.google.code.findbugs'
-        // Avoid error "Program type already present: com.google.j2objc.annotations.AutoreleasePool"
-        exclude group: 'com.google.j2objc'
-    }
     implementation deps.arcore
     implementation deps.sceneform
 
@@ -165,9 +157,8 @@ dependencies {
     }
 
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
-    implementation 'com.google.api-client:google-api-client-android:1.25.0'
 
-    implementation('com.google.api-client:google-api-client-android:1.25.0') {
+    implementation(deps.googleApiClient) {
         // Avoid error "Program type already present: com.google.common.annotations.Beta".
         exclude group: 'com.google.guava'
         // Avoid error "Program type already present: javax.annotation.CheckForNull"
@@ -175,7 +166,8 @@ dependencies {
         // Avoid error "Program type already present: com.google.j2objc.annotations.AutoreleasePool"
         exclude group: 'com.google.j2objc'
     }
-    implementation('com.google.apis:google-api-services-drive:v2-rev362-1.25.0') {
+
+    implementation(deps.driveApi) {
         // Avoid error "Program type already present: com.google.common.annotations.Beta".
         exclude group: 'com.google.guava'
         // Avoid error "Program type already present: javax.annotation.CheckForNull"
