@@ -202,7 +202,7 @@ public class LicenseActivity extends AppCompatActivity {
           if (!TextUtils.isEmpty(copyrightHeader)) {
             data = data.replace(COPYRIGHT_HEADER_PLACEHOLDER, copyrightHeader);
           }
-          webView.loadData(data, "text/html", "UTF-8");
+          webView.loadDataWithBaseURL(null, data, "text/html", "UTF-8", null);
         }
 
         @Override
