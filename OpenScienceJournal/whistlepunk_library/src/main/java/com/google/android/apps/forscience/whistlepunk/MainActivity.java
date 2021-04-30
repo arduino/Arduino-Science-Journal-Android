@@ -408,7 +408,7 @@ public class MainActivity extends ActivityWithNavigationView {
     }
 
     @Override
-    public boolean onNavigationItemSelected(MenuItem menuItem) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         if (menuItem == null) {
             return false;
         }
@@ -442,20 +442,11 @@ public class MainActivity extends ActivityWithNavigationView {
         } else if (itemId == R.id.navigation_item_onboarding) {
             startActivity(new Intent(this, OnboardingActivity.class));
         } else if (itemId == R.id.navigation_item_activities) {
-            try {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_activities_link))));
-            } catch (ActivityNotFoundException ignored) {
-            }
+            safeStartActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_activities_link))));
         } else if (itemId == R.id.navigation_item_get_science_kit) {
-            try {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_get_science_kit_link))));
-            } catch (ActivityNotFoundException ignored) {
-            }
+            safeStartActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_get_science_kit_link))));
         } else if (itemId == R.id.navigation_item_get_help) {
-            try {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_get_help_link))));
-            } catch (ActivityNotFoundException ignored) {
-            }
+            safeStartActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_get_help_link))));
         } else if (itemId == R.id.navigation_item_settings) {
             startActivity(new Intent(this, ArduinoSettingsActivity.class));
         } else {
@@ -499,6 +490,14 @@ public class MainActivity extends ActivityWithNavigationView {
         }
 
         return false;
+    }
+
+    private void safeStartActivity(@NonNull Intent intent) {
+        try {
+            startActivity(intent);
+        } catch (ActivityNotFoundException exception) {
+            Log.e(TAG, "", exception);
+        }
     }
 
     private CharSequence getTitleToRestore(MenuItem menuItem) {
