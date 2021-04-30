@@ -24,13 +24,17 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Html;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
+import android.text.style.StyleSpan;
 import android.util.Log;
 import android.util.TimingLogger;
 import android.view.Gravity;
@@ -86,6 +90,7 @@ import com.google.android.apps.forscience.whistlepunk.metadata.GoosciPictureLabe
 import com.google.android.apps.forscience.whistlepunk.metadata.GoosciTextLabelValue.TextLabelValue;
 import com.google.android.apps.forscience.whistlepunk.performance.PerfTrackerProvider;
 import com.google.android.apps.forscience.whistlepunk.review.DeleteMetadataItemDialog;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.common.base.Preconditions;
@@ -753,11 +758,18 @@ public class ExperimentListFragment extends Fragment
     }
 
     private void confirmClaimUnclaimedExperiments() {
-        Context context = getContext();
+        final Context context = requireContext();
         final String username = claimingAccount != null && claimingAccount.isSignedIn() ? claimingAccount.getAccountName() : "";
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        final AlertDialog.Builder builder = new MaterialAlertDialogBuilder(context, R.style.AlertDialogTheme);
+        final String message = getString(R.string.claim_experiments_confirm_all_message, username);
+        final SpannableStringBuilder messageBuilder = new SpannableStringBuilder(message);
+        messageBuilder.setSpan(new StyleSpan(Typeface.BOLD),
+                message.lastIndexOf(username),
+                message.length() - 1, // Don't apply bold to the question mark at the end.
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
         builder.setTitle(R.string.claim_experiments_confirm_all_title);
-        builder.setMessage(getString(R.string.claim_experiments_confirm_all_message, username));
+        builder.setMessage(messageBuilder);
         builder.setNegativeButton(android.R.string.cancel, (dialog, which) -> dialog.cancel());
         builder.setPositiveButton(
                 R.string.claim_experiments_action,
@@ -1359,16 +1371,24 @@ public class ExperimentListFragment extends Fragment
             if (parentReference.get().claimProgressBarVisible) {
                 return;
             }
-            AlertDialog.Builder builder = new AlertDialog.Builder(parentReference.get().getContext());
-            builder.setMessage(R.string.claim_experiments_confirm_one);
-            builder.setNegativeButton(android.R.string.cancel, (dialog, which) -> dialog.cancel());
-            builder.setPositiveButton(
-                    R.string.claim_experiments_action,
-                    (dialog, which) -> {
+
+            final String username = claimingAccount != null && claimingAccount.isSignedIn() ? claimingAccount.getAccountName() : "";
+            final String message = getString(R.string.claim_experiments_confirm_one_message, username);
+            final SpannableStringBuilder messageBuilder = new SpannableStringBuilder(message);
+            messageBuilder.setSpan(new StyleSpan(Typeface.BOLD),
+                    message.lastIndexOf(username),
+                    message.length() - 1, // Don't apply bold to the question mark at the end.
+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+            final MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(parentReference.get().requireContext(), R.style.AlertDialogTheme)
+                    .setTitle(R.string.claim_experiments_confirm_one)
+                    .setMessage(messageBuilder)
+                    .setNegativeButton(android.R.string.cancel, (dialog, which) -> dialog.cancel())
+                    .setPositiveButton(R.string.claim_experiments_action, (dialog, which) -> {
                         claimExperiment(experimentId);
                         dialog.dismiss();
                     });
-            AlertDialog dialog = builder.create();
+            final AlertDialog dialog = builder.create();
             dialog.show();
             // Need to reset the content description so the button will be read correctly b/116869645
             dialog

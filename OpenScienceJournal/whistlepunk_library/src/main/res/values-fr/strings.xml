@@ -695,7 +695,8 @@ Si vous avez des données sur cet appareil, vous pouvez les enregistrer sur Goog
     <string name="sensor_desc_short_mkrsci_magnetometer">Instrument utilisé pour mesurer l\'intensité et la direction d\'un champ magnétique</string>
     <string name="sensor_desc_short_mkrsci_resistance">La mesure de la difficulté du passage du courant à travers un objet ou un matériau</string>
     <string name="sensor_desc_short_mkrsci_voltage">La différence de potentiel électrique entre deux endroits qui permet à un courant de circuler</string>
-    <string name="claim_experiments_confirm_one">Collect experiment?</string>
+    <string name="claim_experiments_confirm_one">Collect experiment</string>
+    <string name="claim_experiments_confirm_one_message">Are you sure to collect this experiment and add it to your account’s lab: %1$s’s Lab?</string>
     <string name="claim_experiments_title">Revendiquer d\'anciennes expériences</string>
     <string name="color_ambient_light">Lumière ambiante</string>
     <string name="color_ambient_light_units">lux</string>

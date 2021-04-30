@@ -673,7 +673,8 @@ Se sono presenti dati su questo dispositivo, una volta effettuato l\'accesso pot
     <string name="sensor_desc_short_mkrsci_magnetometer">Uno strumento utilizzato per misurare l\'intensità e la direzione di un campo magnetico</string>
     <string name="sensor_desc_short_mkrsci_resistance">La misura della difficoltà del flusso di corrente attraverso un oggetto o un materiale</string>
     <string name="sensor_desc_short_mkrsci_voltage">La differenza di potenziale elettrico tra due luoghi che consente a una corrente di fluire</string>
-    <string name="claim_experiments_confirm_one">Collect experiment?</string>
+    <string name="claim_experiments_confirm_one">Collect experiment</string>
+    <string name="claim_experiments_confirm_one_message">Are you sure to collect this experiment and add it to your account’s lab: %1$s’s Lab?</string>
     <string name="claim_experiments_title">Rivendica esperimenti completati</string>
     <string name="color_ambient_light">Luce ambientale</string>
     <string name="color_ambient_light_units">lux</string>
