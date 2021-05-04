@@ -17,7 +17,7 @@
 package com.google.android.apps.forscience.whistlepunk.actionarea;
 
 import android.os.Bundle;
-import android.transition.Slide;
+import androidx.transition.Slide;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.View;
