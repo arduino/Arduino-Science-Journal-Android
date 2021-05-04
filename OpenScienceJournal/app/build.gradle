@@ -59,6 +59,7 @@ dependencies {
     implementation deps.appCompat
 
     implementation deps.rxJava
+    implementation deps.rxAndroid
     implementation(deps.guava) {
         // Avoid error "Program type already present: javax.annotation.CheckForNull"
         exclude group: 'com.google.code.findbugs'

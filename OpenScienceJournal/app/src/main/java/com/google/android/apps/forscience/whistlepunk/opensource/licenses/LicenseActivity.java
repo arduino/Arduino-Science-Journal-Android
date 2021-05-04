@@ -17,15 +17,7 @@
 package com.google.android.apps.forscience.whistlepunk.opensource.licenses;
 
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.fragment.app.ListFragment;
-import androidx.core.app.NavUtils;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -35,21 +27,26 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import com.google.android.apps.forscience.whistlepunk.LoadStaticHtmlTask;
-import com.google.android.apps.forscience.whistlepunk.opensource.R;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NavUtils;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.fragment.app.ListFragment;
+
+import com.google.android.apps.forscience.whistlepunk.LoadStaticHtmlTaskUseCase;
 import com.google.android.apps.forscience.whistlepunk.SettingsActivity;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
+import com.google.android.apps.forscience.whistlepunk.opensource.R;
+
 import java.util.Comparator;
 import java.util.List;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
+
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.annotations.NonNull;
+import io.reactivex.observers.DisposableSingleObserver;
+import io.reactivex.schedulers.Schedulers;
 
 /** Displays list of code modules. */
 public class LicenseActivity extends AppCompatActivity {
@@ -103,73 +100,48 @@ public class LicenseActivity extends AppCompatActivity {
   }
 
   public static class LicenseListFragment extends ListFragment {
-
     private ArrayAdapter<License> adapter;
+    private final LoadLicenseTask loadLicenseTask = new LoadLicenseTask(Schedulers.io(), AndroidSchedulers.mainThread());
 
-    public LicenseListFragment() {}
+    public LicenseListFragment() {
+    }
 
     @Override
     public void onResume() {
       super.onResume();
-
       setEmptyText(getActivity().getString(R.string.licenses_empty));
       getActivity().setTitle(R.string.settings_open_source_title);
-      new LoadLicenseTask().execute();
+      fetchLicenses();
     }
 
-    private List<License> getLicenses() {
-      DocumentBuilder builder = null;
-      List<License> licenses = new ArrayList<>();
-      try {
-        builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-        Document licenseDoc = builder.parse(getResources().openRawResource(R.raw.license_list));
-        NodeList licenseNodes = licenseDoc.getElementsByTagName(TAG_LICENSE);
-        final int size = licenseNodes.getLength();
-        for (int index = 0; index < size; index++) {
-          Node licenseNode = licenseNodes.item(index);
-          License license = new License();
-          license.key = licenseNode.getAttributes().getNamedItem(ATTRIB_KEY).getNodeValue();
-          Node childNode = licenseNode.getFirstChild();
-          while (childNode != null) {
-            String nodeName = childNode.getNodeName();
-            String nodeValue =
-                childNode.getFirstChild() != null ? childNode.getFirstChild().getNodeValue() : null;
-            if (TAG_TITLE.equals(nodeName)) {
-              license.title = nodeValue;
-            } else if (TAG_RESOURCE.equals(nodeName)) {
-              license.resource = nodeValue;
-            } else if (TAG_HEADER.equals(nodeName)) {
-              license.copyrightHeader = nodeValue;
-            }
-            childNode = childNode.getNextSibling();
-          }
-          if (license.isValid()) {
-            licenses.add(license);
-          } else {
-            Log.e(TAG, "Not adding invalid license: " + license);
-          }
+    @Override
+    public void onPause() {
+      super.onPause();
+      loadLicenseTask.discard();
+    }
+
+    private void fetchLicenses() {
+      final LoadLicenseTask.Args args = new LoadLicenseTask.Args(
+              getResources(),
+              TAG_LICENSE,
+              ATTRIB_KEY,
+              TAG_TITLE,
+              TAG_RESOURCE,
+              TAG_HEADER,
+              LICENSE_COMPARATOR
+      );
+      loadLicenseTask.invoke(args, new DisposableSingleObserver<List<License>>() {
+        @Override
+        public void onSuccess(@NonNull List<License> licenses) {
+          adapter = new ArrayAdapter<>(requireActivity(), android.R.layout.simple_list_item_1, android.R.id.text1, licenses);
+          setListAdapter(adapter);
         }
-      } catch (ParserConfigurationException | SAXException | IOException e) {
-        Log.e(TAG, "Could not parse license file.", e);
-      }
-      Collections.sort(licenses, LICENSE_COMPARATOR);
-      return licenses;
-    }
 
-    class LoadLicenseTask extends AsyncTask<Void, Void, List<License>> {
-
-      @Override
-      protected List<License> doInBackground(Void... params) {
-        return getLicenses();
-      }
-
-      @Override
-      protected void onPostExecute(List<License> licenses) {
-        adapter =
-            new ArrayAdapter<>(
-                getActivity(), android.R.layout.simple_list_item_1, android.R.id.text1, licenses);
-        setListAdapter(adapter);
-      }
+        @Override
+        public void onError(@NonNull Throwable e) {
+          Log.e("LicenseListFragment", "loadLicenseTask", e);
+        }
+      });
     }
 
     @Override
@@ -189,6 +161,8 @@ public class LicenseActivity extends AppCompatActivity {
     private String titleToRestore = null;
 
     private WebView webView;
+
+    private final LoadStaticHtmlTaskUseCase loadStaticHtmlTaskUseCase = new LoadStaticHtmlTaskUseCase(Schedulers.io(), AndroidSchedulers.mainThread());
 
     public LicenseFragment() {}
 
@@ -212,26 +186,30 @@ public class LicenseActivity extends AppCompatActivity {
     }
 
     @Override
+    public void onDestroyView() {
+      super.onDestroyView();
+      loadStaticHtmlTaskUseCase.discard();
+    }
+
+    @Override
     public void onStart() {
       super.onStart();
-      new LoadStaticHtmlTask(
-              new LoadStaticHtmlTask.StaticHtmlLoadListener() {
-                @Override
-                public void onDataLoaded(String data) {
-                  String copyrightHeader = getArguments().getString(TAG_HEADER);
-                  if (!TextUtils.isEmpty(copyrightHeader)) {
-                    data = data.replace(COPYRIGHT_HEADER_PLACEHOLDER, copyrightHeader);
-                  }
-                  webView.loadData(data, "text/html", "UTF-8");
-                }
-              },
-              getResources(),
-              getResources()
-                  .getIdentifier(
-                      getArguments().getString(TAG_RESOURCE),
-                      "raw",
-                      getActivity().getPackageName()))
-          .execute();
+      int fileId = getResources().getIdentifier(getArguments().getString(TAG_RESOURCE), "raw", requireActivity().getPackageName());
+      loadStaticHtmlTaskUseCase.invoke(getResources(), fileId, new DisposableSingleObserver<String>() {
+        @Override
+        public void onSuccess(@NonNull String data) {
+          String copyrightHeader = getArguments().getString(TAG_HEADER);
+          if (!TextUtils.isEmpty(copyrightHeader)) {
+            data = data.replace(COPYRIGHT_HEADER_PLACEHOLDER, copyrightHeader);
+          }
+          webView.loadDataWithBaseURL(null, data, "text/html", "UTF-8", null);
+        }
+
+        @Override
+        public void onError(@NonNull Throwable throwable) {
+          Log.e(TAG, "loadStaticHtmlTaskUseCase", throwable);
+        }
+      });
     }
 
     @Override
