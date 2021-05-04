@@ -20,7 +20,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -80,13 +81,16 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:visibility="visible">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/navigation_user_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:background="?selectableItemBackground"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent">
@@ -124,7 +128,6 @@
                 android:id="@+id/navigation_footer_separator"
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:layout_marginBottom="16dp"
                 android:background="@color/arduino_fog"
                 app:layout_constraintBottom_toTopOf="@id/navigation_user_layout"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -134,9 +137,11 @@
                 android:id="@+id/navigation_privacy_policy"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:background="?selectableItemBackground"
                 android:fontFamily="@font/open_sans"
                 android:gravity="center"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
                 android:text="@string/arduino_auth_privacy"
                 android:textColor="@color/arduino_gris"
                 android:textSize="14sp"
