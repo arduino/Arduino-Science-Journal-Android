@@ -40,6 +40,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
 
 import java.util.ArrayList;
@@ -359,7 +360,7 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
         final EditText et = view.findViewById(R.id.et);
         et.setText(R.string.drive_create_folder_def_name);
         et.selectAll();
-        AlertDialog.Builder b = new AlertDialog.Builder(this);
+        AlertDialog.Builder b = new MaterialAlertDialogBuilder(this, R.style.AlertDialogTheme);
         b.setView(view);
         b.setTitle(R.string.drive_create_folder_title);
         b.setPositiveButton(R.string.drive_create_folder_action, (dialog, which) -> {
