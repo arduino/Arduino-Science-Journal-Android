@@ -695,7 +695,8 @@ g.co/sciencejournalactivities</string>
     <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
     <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
     <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
-    <string name="claim_experiments_confirm_one">Collect experiment?</string>
+    <string name="claim_experiments_confirm_one">Collect experiment</string>
+    <string name="claim_experiments_confirm_one_message">Are you sure to collect this experiment and add it to your account’s lab: %1$s’s Lab?</string>
     <string name="claim_experiments_title">Заявяване на минали експерименти</string>
     <string name="color_ambient_light">Ambient Light</string>
     <string name="color_ambient_light_units">lux</string>

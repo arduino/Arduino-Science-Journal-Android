@@ -47,6 +47,29 @@
         <item name="android:buttonStyle">@style/OpenSansButtonStyle</item>
     </style>
 
+    <!--  MaterialAlertDialog  -->
+    <!--  Use in conjunction with new MaterialAlertDialogBuilder(parentReference.get().requireContext(), R.style.AlertDialogTheme);  -->
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Alert.Button.Negative</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Alert.Button.Negative</item>
+    </style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/color_accent</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="cornerRadius">24dp</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+
+    <style name="Alert.Button.Negative" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">24dp</item>
+        <item name="strokeColor">@color/color_accent</item>
+        <item name="rippleColor">@color/color_accent</item>
+        <item name="android:textColor">@color/color_accent</item>
+    </style>
+    <!--  END MaterialAlertDialog  -->
+
     <!-- Metadata update activities for triggers have a different primary color. -->
     <style name="AppTheme.Triggers">
         <item name="colorPrimaryDark">@color/color_primary_dark</item>
