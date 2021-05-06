@@ -35,6 +35,7 @@ import com.google.android.apps.forscience.whistlepunk.WhistlePunkApplication;
 import com.google.android.apps.forscience.whistlepunk.analytics.TrackerConstants;
 import com.google.android.apps.forscience.whistlepunk.analytics.UsageTracker;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.FileMetadataUtil;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 /** Activity that lets the user choose what to do with their old experiments. */
@@ -126,7 +127,7 @@ public class OldUserOptionPromptActivity extends AppCompatActivity {
       snackbarManager.showSnackbar(bar);
       return;
     }
-    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    AlertDialog.Builder builder = new MaterialAlertDialogBuilder(this, R.style.AlertDialogTheme);
     builder.setTitle(
         getResources()
             .getQuantityString(
@@ -202,7 +203,7 @@ public class OldUserOptionPromptActivity extends AppCompatActivity {
   }
 
   private void showDeleteAllPrompt() {
-    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    AlertDialog.Builder builder = new MaterialAlertDialogBuilder(this, R.style.AlertDialogTheme);
     builder.setTitle(R.string.delete_all_prompt_headline);
     builder.setMessage(R.string.delete_all_prompt_text);
     builder.setNegativeButton(android.R.string.cancel, (dialog, which) -> dialog.cancel());
