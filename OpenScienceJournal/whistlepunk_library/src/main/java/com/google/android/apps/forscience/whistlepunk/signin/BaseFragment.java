@@ -11,6 +11,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.apps.forscience.whistlepunk.R;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 abstract class BaseFragment extends Fragment {
 
@@ -45,7 +46,7 @@ abstract class BaseFragment extends Fragment {
     }
 
     protected final void alert(String message) {
-        final AlertDialog.Builder b = new AlertDialog.Builder(mContext);
+        final AlertDialog.Builder b = new MaterialAlertDialogBuilder(mContext, R.style.AlertDialogTheme);
         b.setMessage(message);
         b.setCancelable(false);
         b.setPositiveButton(android.R.string.ok, (dialogInterface, i) -> dialogInterface.dismiss());
@@ -61,7 +62,7 @@ abstract class BaseFragment extends Fragment {
     }
 
     protected final void alertNetworkError(final Runnable onRetry) {
-        final AlertDialog.Builder b = new AlertDialog.Builder(mContext);
+        final AlertDialog.Builder b = new MaterialAlertDialogBuilder(mContext, R.style.AlertDialogTheme);
         b.setMessage(R.string.error_network);
         b.setCancelable(false);
         b.setPositiveButton(R.string.retry, (dialogInterface, i) -> {
