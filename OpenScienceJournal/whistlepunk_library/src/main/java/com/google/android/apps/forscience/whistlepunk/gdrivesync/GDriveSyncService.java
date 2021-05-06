@@ -1,7 +1,6 @@
 package com.google.android.apps.forscience.whistlepunk.gdrivesync;
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
@@ -19,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 
 import com.google.android.apps.forscience.javalib.MaybeConsumer;
 import com.google.android.apps.forscience.javalib.Success;
@@ -32,6 +32,7 @@ import com.google.android.apps.forscience.whistlepunk.filemetadata.Experiment;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.ExperimentLibraryManager;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.FileMetadataUtil;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.LocalSyncManager;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.io.File;
 import java.io.IOException;
@@ -376,7 +377,7 @@ public class GDriveSyncService extends Service {
         new Handler(Looper.getMainLooper()).post(() -> {
             final Activity activity = app.onNextActivity().blockingGet();
             if (activity != null) {
-                AlertDialog.Builder d = new AlertDialog.Builder(activity);
+                AlertDialog.Builder d = new MaterialAlertDialogBuilder(activity, R.style.AlertDialogTheme);
                 d.setMessage(R.string.drive_sync_conflict);
                 d.setNeutralButton(R.string.drive_sync_conflict_remote, (dialog, which) -> {
                     synchronized (lock) {
