@@ -17,7 +17,6 @@ package com.google.android.apps.forscience.whistlepunk;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.app.DownloadManager;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -41,6 +40,7 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
+import androidx.appcompat.app.AlertDialog;
 import androidx.collection.ArrayMap;
 import androidx.core.app.NotificationCompat;
 import androidx.core.content.FileProvider;
@@ -56,6 +56,7 @@ import com.google.android.apps.forscience.whistlepunk.metadata.GoosciLabel;
 import com.google.android.apps.forscience.whistlepunk.project.experiment.UpdateExperimentFragment;
 import com.google.android.apps.forscience.whistlepunk.sensordb.ScalarReading;
 import com.google.android.apps.forscience.whistlepunk.sensordb.TimeRange;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.common.base.Strings;
 import com.google.common.collect.Range;
@@ -598,7 +599,7 @@ public class ExportService extends Service {
                                             saveLocally
                                                     ? R.string.experiment_not_finished_downloading_confirm_download_button
                                                     : R.string.experiment_not_finished_downloading_confirm_button;
-                                    AlertDialog.Builder builder = new AlertDialog.Builder(context);
+                                    AlertDialog.Builder builder = new MaterialAlertDialogBuilder(context, R.style.AlertDialogTheme);
                                     builder.setTitle(R.string.experiment_not_finished_downloading_title);
                                     builder.setMessage(messageId);
                                     builder.setPositiveButton(
