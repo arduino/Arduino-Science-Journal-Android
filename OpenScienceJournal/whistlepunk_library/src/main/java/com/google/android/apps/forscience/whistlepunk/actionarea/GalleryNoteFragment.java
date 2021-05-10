@@ -415,9 +415,13 @@ public class GalleryNoteFragment extends ActionFragment
             } else {
               // A second click on the same image is a deselect.
               selectedIndices.remove(selectedIndices.indexOf(adapterPosition));
+              // Update other selected items labels.
+              for (int i = 0; i < selectedIndices.size(); ++i) {
+                notifyItemChanged(selectedIndices.get(i));
+              }
+              // Update current selection
+              notifyItemChanged(adapterPosition);
             }
-            holder.selectedIndicator.setSelected(newlySelected);
-            notifyItemChanged(adapterPosition);
 
             listener.onImageClicked();
           });
