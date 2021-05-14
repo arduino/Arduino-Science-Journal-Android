@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/arduino_white">
@@ -20,7 +21,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="18dp"
-            android:background="@null"
+            android:background="?selectableItemBackgroundBorderless"
             android:contentDescription="@null"
             android:scaleType="centerInside"
             android:src="@drawable/ic_arduino_auth_close"
@@ -47,7 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginEnd="15dp"
             android:ellipsize="end"
             android:fontFamily="@font/open_sans_bold"
             android:gravity="center"
@@ -117,7 +118,8 @@
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/section_arduino_account_email">
+            app:layout_constraintTop_toBottomOf="@id/section_arduino_account_email"
+            tools:visibility="visible">
 
             <View
                 android:id="@+id/section_google_drive_sync_separator"
@@ -178,7 +180,8 @@
                 android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/section_google_drive_switch_layout">
+                app:layout_constraintTop_toBottomOf="@id/section_google_drive_switch_layout"
+                tools:visibility="visible">
 
                 <TextView
                     android:id="@+id/section_google_drive_switch_change"
