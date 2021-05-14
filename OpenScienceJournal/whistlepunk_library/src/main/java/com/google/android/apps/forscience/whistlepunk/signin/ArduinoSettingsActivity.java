@@ -2,6 +2,7 @@ package com.google.android.apps.forscience.whistlepunk.signin;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CompoundButton;
@@ -63,6 +64,7 @@ public class ArduinoSettingsActivity extends AppCompatActivity {
         mSyncSwitch = findViewById(R.id.section_google_drive_switch);
         mSyncSwitch.setOnCheckedChangeListener(mSwitchListener);
         findViewById(R.id.section_google_drive_switch_change).setOnClickListener(v -> startActivity(new Intent(this, GDriveSyncSetupActivity.class)));
+        findViewById(R.id.redirect_to_id_page_image_view).setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://id.arduino.cc"))));
     }
 
     @Override
