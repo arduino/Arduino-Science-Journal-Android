@@ -33,6 +33,7 @@ import com.google.android.apps.forscience.whistlepunk.ActivityRequestCodes;
 import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.WhistlePunkApplication;
 import com.google.android.apps.forscience.whistlepunk.analytics.TrackerConstants;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 /**
  * Fragment that tells the user about saving experiments in Google Drive and prompts the user to *
@@ -83,7 +84,7 @@ public class SignInFragment extends Fragment {
     WhistlePunkApplication.getUsageTracker(getActivity())
         .trackEvent(
             TrackerConstants.CATEGORY_SIGN_IN, TrackerConstants.ACTION_PERMISSION_DENIED, null, 0);
-    AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+    AlertDialog.Builder alertDialog = new MaterialAlertDialogBuilder(getActivity(), R.style.AlertDialogTheme);
     Resources resources = getResources();
     alertDialog.setTitle(resources.getString(R.string.science_journal_disabled_title));
     alertDialog.setMessage(resources.getString(R.string.science_journal_disabled_message));

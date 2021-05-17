@@ -23,6 +23,8 @@ import android.os.Bundle;
 import androidx.fragment.app.DialogFragment;
 import androidx.appcompat.app.AlertDialog;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 public class BluetoothDisabledDialog extends DialogFragment {
   public static final String TAG = "bluetooth_disabled_dialog";
 
@@ -30,7 +32,7 @@ public class BluetoothDisabledDialog extends DialogFragment {
 
   @Override
   public AlertDialog onCreateDialog(Bundle savedInstanceState) {
-    final AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+    final AlertDialog.Builder alertDialog = new MaterialAlertDialogBuilder(getActivity(), R.style.AlertDialogTheme);
     alertDialog.setMessage(R.string.bluetooth_not_on_body);
     alertDialog.setTitle(R.string.bluetooth_not_on_title);
     alertDialog.setPositiveButton(

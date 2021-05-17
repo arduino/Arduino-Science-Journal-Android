@@ -21,6 +21,7 @@ import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
 import com.google.android.apps.forscience.whistlepunk.metadata.ExternalSensorSpec;
 import com.google.android.apps.forscience.whistlepunk.metadata.MkrSciBleSensorSpec;
 import com.google.android.apps.forscience.whistlepunk.sensors.MkrSciBleSensor;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import java.util.Objects;
 
@@ -121,7 +122,7 @@ public class MkrSciSensorOptionsDialog extends DialogFragment {
     loadSensorSpec(sensorId, defChecked);
 
     AlertDialog.Builder builder =
-        new AlertDialog.Builder(getActivity())
+        new MaterialAlertDialogBuilder(getActivity(), R.style.AlertDialogTheme)
             .setView(view)
             .setTitle(R.string.title_activity_sensor_settings)
             .setCancelable(true)

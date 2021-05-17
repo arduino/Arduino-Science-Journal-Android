@@ -28,6 +28,8 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.google.android.apps.forscience.whistlepunk.R;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 import java.util.Locale;
 
 /** A dialog for editing RunReviewOverlay timestamps directly. */
@@ -91,7 +93,7 @@ public class EditTimestampDialog extends DialogFragment {
     long currentMs = getArguments().getLong(KEY_CURRENT_MS);
     picker.setTimestampRange(minMs, maxMs, zeroMs, currentMs);
 
-    final AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+    final AlertDialog.Builder alertDialog = new MaterialAlertDialogBuilder(getActivity(), R.style.AlertDialogTheme);
     View rootView =
         LayoutInflater.from(getActivity()).inflate(R.layout.edit_timestamp_dialog, null);
 

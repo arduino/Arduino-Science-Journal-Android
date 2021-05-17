@@ -819,7 +819,7 @@ public class ExperimentListFragment extends Fragment
     }
 
     private void confirmDeleteUnclaimedExperiments() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        AlertDialog.Builder builder = new MaterialAlertDialogBuilder(requireContext(), R.style.AlertDialogTheme);
         builder.setTitle(R.string.delete_all_prompt_headline);
         builder.setMessage(R.string.delete_all_prompt_text);
         builder.setNegativeButton(android.R.string.cancel, (dialog, which) -> dialog.cancel());

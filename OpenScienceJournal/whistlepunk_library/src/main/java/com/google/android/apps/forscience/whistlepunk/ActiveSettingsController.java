@@ -25,6 +25,7 @@ import com.google.android.apps.forscience.javalib.Consumer;
 import com.google.android.apps.forscience.whistlepunk.sensorapi.ActiveBundle;
 import com.google.android.apps.forscience.whistlepunk.sensorapi.ReadableSensorOptions;
 import com.google.android.apps.forscience.whistlepunk.sensorapi.WriteableSensorOptions;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 /**
@@ -71,7 +72,7 @@ public class ActiveSettingsController {
       String name,
       String optionsTitle,
       WriteableSensorOptions options) {
-    final AlertDialog.Builder builder = new AlertDialog.Builder(context);
+    final AlertDialog.Builder builder = new MaterialAlertDialogBuilder(context, R.style.AlertDialogTheme);
 
     final Resources resources = context.getResources();
     if (callbacks == null) {

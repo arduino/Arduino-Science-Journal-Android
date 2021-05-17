@@ -36,6 +36,7 @@ import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.RxEvent;
 import com.google.android.apps.forscience.whistlepunk.WhistlePunkApplication;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 /**
  * Activity that allows a signed-in user to claim experiments that were created before signed-in
@@ -80,7 +81,7 @@ public class ClaimExperimentsActivity extends AppCompatActivity {
                     .commit();
         }
 
-        final AlertDialog.Builder d = new AlertDialog.Builder(this, R.style.AppCompatAlertDialogStyle);
+        final AlertDialog.Builder d = new MaterialAlertDialogBuilder(this, R.style.AlertDialogTheme);
         final View infoView = getLayoutInflater().inflate(R.layout.claim_experiments_info, null);
         infoView.findViewById(R.id.claim_all_btn).setOnClickListener(v -> mInfoDialog.dismiss());
         ((TextView) infoView.findViewById(R.id.info_1)).setText(Html.fromHtml(getString(R.string.claim_experiments_info_1, claimingAccount.getAccountName())));

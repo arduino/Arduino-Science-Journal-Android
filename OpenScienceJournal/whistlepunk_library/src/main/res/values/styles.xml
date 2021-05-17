@@ -49,25 +49,40 @@
 
     <!--  MaterialAlertDialog  -->
     <!--  Use in conjunction with new MaterialAlertDialogBuilder(parentReference.get().requireContext(), R.style.AlertDialogTheme);  -->
-    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
-        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
-        <item name="buttonBarNegativeButtonStyle">@style/Alert.Button.Negative</item>
-        <item name="buttonBarNeutralButtonStyle">@style/Alert.Button.Negative</item>
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="buttonBarPositiveButtonStyle">@style/AlertDialogPositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AlertDialogNegativeButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/AlertDialogNegativeButton</item>
+
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialogTitle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialogMessage</item>
     </style>
 
-    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button">
+    <style name="AlertDialogPositiveButton" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">@color/color_accent</item>
         <item name="android:layout_marginStart">16dp</item>
         <item name="cornerRadius">24dp</item>
         <item name="android:textColor">@color/text_color_white</item>
     </style>
 
-    <style name="Alert.Button.Negative" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <style name="AlertDialogNegativeButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="cornerRadius">24dp</item>
         <item name="strokeColor">@color/color_accent</item>
         <item name="rippleColor">@color/color_accent</item>
         <item name="android:textColor">@color/color_accent</item>
     </style>
+
+    <style name="MaterialAlertDialogTitle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MaterialAlertDialogMessage" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
     <!--  END MaterialAlertDialog  -->
 
     <!-- Metadata update activities for triggers have a different primary color. -->

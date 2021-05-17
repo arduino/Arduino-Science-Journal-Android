@@ -28,6 +28,8 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
 import com.google.android.apps.forscience.whistlepunk.audiogen.SonificationTypeAdapterFactory;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 import java.util.Arrays;
 
 /** DialogFragment to display audio settings to the user. */
@@ -110,7 +112,7 @@ public class AudioSettingsDialog extends DialogFragment {
     }
     sensorIds = getArguments().getStringArray(KEY_SENSOR_ID);
 
-    final AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+    final AlertDialog.Builder alertDialog = new MaterialAlertDialogBuilder(getActivity(), R.style.AlertDialogTheme);
     View rootView =
         LayoutInflater.from(getActivity()).inflate(R.layout.audio_settings_dialog, null);
     alertDialog.setView(rootView);

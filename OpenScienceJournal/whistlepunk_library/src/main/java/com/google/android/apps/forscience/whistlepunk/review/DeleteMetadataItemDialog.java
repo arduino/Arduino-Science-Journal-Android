@@ -21,6 +21,7 @@ import android.os.Bundle;
 import androidx.fragment.app.DialogFragment;
 import androidx.appcompat.app.AlertDialog;
 import com.google.android.apps.forscience.whistlepunk.R;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 /** DialogFragment for deleting a metadata item. */
 public class DeleteMetadataItemDialog extends DialogFragment {
@@ -73,7 +74,7 @@ public class DeleteMetadataItemDialog extends DialogFragment {
   public DeleteMetadataItemDialog() {}
 
   public AlertDialog onCreateDialog(Bundle savedInstanceState) {
-    AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+    AlertDialog.Builder alertDialog = new MaterialAlertDialogBuilder(getActivity(), R.style.AlertDialogTheme);
     alertDialog.setTitle(getArguments().getInt(ARG_TITLE_ID));
     alertDialog.setMessage(getArguments().getInt(ARG_MESSAGE_ID));
 

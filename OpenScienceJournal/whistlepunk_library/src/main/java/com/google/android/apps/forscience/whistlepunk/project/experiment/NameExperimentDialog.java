@@ -33,6 +33,7 @@ import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.RxDataController;
 import com.google.android.apps.forscience.whistlepunk.WhistlePunkApplication;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.jakewharton.rxbinding2.widget.RxTextView;
@@ -80,7 +81,7 @@ public class NameExperimentDialog extends DialogFragment {
 
     experimentId = getArguments().getString(KEY_EXPERIMENT_ID);
 
-    final AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+    final AlertDialog.Builder alertDialog = new MaterialAlertDialogBuilder(getActivity(), R.style.AlertDialogTheme);
     ViewGroup rootView =
         (ViewGroup)
             LayoutInflater.from(getActivity()).inflate(R.layout.name_experiment_dialog, null);

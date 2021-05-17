@@ -23,6 +23,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
 /**
  * DialogFragment for when recording fails to stop.
  */
@@ -53,7 +55,7 @@ public class StopRecordingNoDataDialog extends DialogFragment {
         if (getArguments() != null) {
             text = getArguments().getString(KEY_BODY_STRING, "");
         }
-        AlertDialog.Builder alertDialog = new AlertDialog.Builder(getActivity());
+        AlertDialog.Builder alertDialog = new MaterialAlertDialogBuilder(getActivity(), R.style.AlertDialogTheme);
         alertDialog.setTitle(getResources().getString(R.string.recording_stop_failed_no_data_title));
         alertDialog.setMessage(text);
         alertDialog.setNegativeButton(

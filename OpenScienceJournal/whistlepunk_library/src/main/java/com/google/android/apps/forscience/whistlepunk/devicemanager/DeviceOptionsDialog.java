@@ -33,6 +33,7 @@ import com.google.android.apps.forscience.whistlepunk.WhistlePunkApplication;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
 import com.google.android.apps.forscience.whistlepunk.analytics.TrackerConstants;
 import com.google.android.apps.forscience.whistlepunk.metadata.ExternalSensorSpec;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 /** Presents dialog options for external devices. */
 public class DeviceOptionsDialog extends DialogFragment {
@@ -142,7 +143,7 @@ public class DeviceOptionsDialog extends DialogFragment {
               });
     }
     AlertDialog.Builder builder =
-        new AlertDialog.Builder(getActivity())
+        new MaterialAlertDialogBuilder(getActivity(), R.style.AlertDialogTheme)
             .setView(view)
             .setTitle(R.string.title_activity_sensor_settings)
             .setPositiveButton(android.R.string.ok, onOK);

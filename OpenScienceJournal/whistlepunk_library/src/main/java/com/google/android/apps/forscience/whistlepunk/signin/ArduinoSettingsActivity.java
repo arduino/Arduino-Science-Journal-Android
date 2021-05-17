@@ -19,6 +19,7 @@ import com.google.android.apps.forscience.whistlepunk.accounts.arduino.ArduinoAc
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveAccount;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveShared;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveSyncSetupActivity;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import io.reactivex.annotations.NonNull;
 import io.reactivex.observers.DisposableObserver;
@@ -49,7 +50,7 @@ public class ArduinoSettingsActivity extends AppCompatActivity {
         findViewById(R.id.iv_back_action).setOnClickListener(v -> finish());
         mAccountsProvider = WhistlePunkApplication.getAppServices(this).getAccountsProvider();
         findViewById(R.id.sign_out).setOnClickListener(v -> {
-            AlertDialog.Builder alert = new AlertDialog.Builder(ArduinoSettingsActivity.this);
+            AlertDialog.Builder alert = new MaterialAlertDialogBuilder(ArduinoSettingsActivity.this, R.style.AlertDialogTheme);
             alert.setMessage(R.string.arduino_auth_settings_sign_out_confirm);
             alert.setPositiveButton(android.R.string.ok, (dialog, which) -> {
                 GDriveShared.clearCredentials(this);
