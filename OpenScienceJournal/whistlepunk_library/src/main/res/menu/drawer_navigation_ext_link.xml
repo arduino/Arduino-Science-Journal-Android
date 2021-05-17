@@ -45,11 +45,6 @@
             android:title="@string/navigation_item_testing_options"
             android:visibility="gone" />
         <item
-            android:id="@+id/navigation_item_settings"
-            android:icon="@drawable/ic_navigation_settings"
-            android:title="@string/navigation_item_settings"
-            android:visible="false" />
-        <item
             android:id="@+id/navigation_item_about"
             android:icon="@drawable/ic_info_black_24dp"
             android:title="@string/action_about" />

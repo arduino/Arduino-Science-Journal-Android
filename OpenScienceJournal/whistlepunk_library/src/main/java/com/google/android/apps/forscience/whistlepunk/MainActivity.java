@@ -447,8 +447,6 @@ public class MainActivity extends ActivityWithNavigationView {
             safeStartActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_get_science_kit_link))));
         } else if (itemId == R.id.navigation_item_get_help) {
             safeStartActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_get_help_link))));
-        } else if (itemId == R.id.navigation_item_settings) {
-            startActivity(new Intent(this, ArduinoSettingsActivity.class));
         } else {
             drawerLayout.closeDrawers();
             // Launch intents
@@ -632,7 +630,6 @@ public class MainActivity extends ActivityWithNavigationView {
             final Menu menu = navigationView.getMenu();
             menu.findItem(R.id.navigation_item_get_science_kit).setVisible(true);
             menu.findItem(R.id.navigation_item_get_help).setVisible(true);
-            menu.findItem(R.id.navigation_item_settings).setVisible(false);
         } else {
             final String avatar = appAccount.getAccountAvatar();
             if (StringUtils.isEmpty(avatar)) {
@@ -667,7 +664,6 @@ public class MainActivity extends ActivityWithNavigationView {
             final Menu menu = navigationView.getMenu();
             menu.findItem(R.id.navigation_item_get_science_kit).setVisible(!appAccount.isMinor());
             menu.findItem(R.id.navigation_item_get_help).setVisible(!appAccount.isMinor());
-            menu.findItem(R.id.navigation_item_settings).setVisible(true);
         }
 
         // Clean up old files from previous exports.
