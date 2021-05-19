@@ -665,6 +665,7 @@ public class MainActivity extends ActivityWithNavigationView {
             }
             nicknameView.setText(StringUtils.emptyIfNull(appAccount.getAccountName()));
             final Menu menu = navigationView.getMenu();
+            menu.findItem(R.id.navigation_item_activities).setVisible(!appAccount.isMinor());
             menu.findItem(R.id.navigation_item_get_science_kit).setVisible(!appAccount.isMinor());
             menu.findItem(R.id.navigation_item_get_help).setVisible(!appAccount.isMinor());
             menu.findItem(R.id.navigation_item_settings).setVisible(true);
