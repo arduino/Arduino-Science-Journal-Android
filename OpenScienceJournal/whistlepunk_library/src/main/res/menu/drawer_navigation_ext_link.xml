@@ -15,7 +15,7 @@
  -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <group android:checkableBehavior="single">
+    <group android:id="@+id/navigation_primary_group" android:checkableBehavior="single">
         <item
             android:id="@+id/navigation_item_experiments"
             android:icon="@drawable/ic_navlibrary_black_24dp"
@@ -35,6 +35,9 @@
             android:icon="@drawable/ic_get_help"
             android:title="@string/navigation_get_help"
             app:actionLayout="@layout/menu_activities_item" />
+    </group>
+
+    <group android:id="@+id/navigation_secondary_group" android:checkableBehavior="single">
         <item
             android:id="@+id/navigation_item_onboarding"
             android:icon="@drawable/ic_get_started"

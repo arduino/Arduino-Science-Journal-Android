@@ -188,6 +188,7 @@
     <style name="NavigationView" parent="NoBarTheme">
         <item name="colorControlHighlight">@color/nav_item_background_color</item>
         <item name="colorPrimary">@color/arduino_gris</item>
+        <item name="android:listDivider">@android:color/transparent</item>
     </style>
 
     <style name="RecordingProgressBarColor" parent="AppTheme">
