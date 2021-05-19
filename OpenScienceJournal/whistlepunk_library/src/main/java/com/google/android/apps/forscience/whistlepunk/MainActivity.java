@@ -80,7 +80,8 @@ public class MainActivity extends ActivityWithNavigationView {
     // ARG_USE_PANES value is ever false and if not, remove the argument in MainActivity,
     // ExperimentListFragment, and ClaimExperimentsActivity.
     public static final String ARG_USE_PANES = "use_panes";
-    protected static final int NO_SELECTED_ITEM = -1;
+    public static final int NO_SELECTED_ITEM = -1;
+    protected static final String EXPERIMENTS_FRAGMENT_TAG = "experiments_fragment";
 
     /**
      * The ARG_SELECTED_NAV_ITEM_ID value from onCreate's savedInstanceState if there is one, or
@@ -203,17 +204,18 @@ public class MainActivity extends ActivityWithNavigationView {
         if (savedItemId != NO_SELECTED_ITEM) {
             selectedNavItemId = savedItemId;
         } else if (extras != null) {
-            selectedNavItemId = extras.getInt(ARG_SELECTED_NAV_ITEM_ID, R.id.navigation_item_experiments);
+            selectedNavItemId = extras.getInt(ARG_SELECTED_NAV_ITEM_ID, NO_SELECTED_ITEM);
         } else {
-            selectedNavItemId = R.id.navigation_item_experiments;
+            selectedNavItemId = NO_SELECTED_ITEM;
         }
+
         MenuItem item = navigationView.getMenu().findItem(selectedNavItemId);
         if (item == null) {
-            selectedNavItemId = R.id.navigation_item_experiments;
-            item = navigationView.getMenu().findItem(selectedNavItemId);
+            goToExperiments();
+        } else {
+            navigationView.setCheckedItem(selectedNavItemId);
+            onNavigationItemSelected(item);
         }
-        navigationView.setCheckedItem(selectedNavItemId);
-        onNavigationItemSelected(item);
 
         // Subscribe to account switches.
         accountsProvider
@@ -283,8 +285,12 @@ public class MainActivity extends ActivityWithNavigationView {
             if (intent.getExtras() != null) {
                 desiredItemId = intent.getExtras().getInt(ARG_SELECTED_NAV_ITEM_ID, NO_SELECTED_ITEM);
             }
-            if (desiredItemId != NO_SELECTED_ITEM && selectedItemId != desiredItemId) {
-                onNavigationItemSelected(navigationView.getMenu().findItem(desiredItemId));
+            if (selectedItemId != desiredItemId) {
+                if (desiredItemId != NO_SELECTED_ITEM) {
+                    onNavigationItemSelected(navigationView.getMenu().findItem(desiredItemId));
+                } else {
+                    goToExperiments();
+                }
             }
         }
     }
@@ -413,33 +419,8 @@ public class MainActivity extends ActivityWithNavigationView {
             return false;
         }
         int itemId = menuItem.getItemId();
-        if (itemId == R.id.navigation_item_experiments) {
-            if (currentAccount == null) {
-                return false;
-            }
-            if (accountsProvider.isSignedIn() && !currentAccount.isSignedIn()) {
-                // This can happen when the app is starting and the current account hasn't been completely
-                // restored yet.
-                return false;
-            }
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction transaction = fragmentManager.beginTransaction();
 
-            final String tag = String.valueOf(itemId);
-            Fragment fragment =
-                    ExperimentListFragment.reuseOrCreateInstance(
-                            fragmentManager.findFragmentByTag(tag), currentAccount, shouldUsePanes());
-            adjustActivityForSelectedItem(itemId);
-
-            titleToRestore = getTitleToRestore(menuItem);
-            transaction.replace(R.id.content_container, fragment, tag).commitAllowingStateLoss();
-            if (menuItem.isCheckable()) {
-                menuItem.setChecked(true);
-            }
-            drawerLayout.closeDrawers();
-            restoreActionBar();
-            selectedItemId = itemId;
-        } else if (itemId == R.id.navigation_item_onboarding) {
+        if (itemId == R.id.navigation_item_onboarding) {
             startActivity(new Intent(this, OnboardingActivity.class));
         } else if (itemId == R.id.navigation_item_activities) {
             safeStartActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_activities_link))));
@@ -492,19 +473,39 @@ public class MainActivity extends ActivityWithNavigationView {
         return false;
     }
 
+    private boolean goToExperiments() {
+        if (currentAccount == null) {
+            return false;
+        }
+        if (accountsProvider.isSignedIn() && !currentAccount.isSignedIn()) {
+            // This can happen when the app is starting and the current account hasn't been completely
+            // restored yet.
+            return false;
+        }
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+        Fragment fragment =
+                ExperimentListFragment.reuseOrCreateInstance(
+                        fragmentManager.findFragmentByTag(EXPERIMENTS_FRAGMENT_TAG), currentAccount, shouldUsePanes());
+
+        setTitle(getString(R.string.title_activity_main, R.string.navigation_item_experiments));
+
+        titleToRestore = getResources().getString(R.string.app_name);
+        transaction.replace(R.id.content_container, fragment, EXPERIMENTS_FRAGMENT_TAG).commitAllowingStateLoss();
+
+        drawerLayout.closeDrawers();
+        restoreActionBar();
+        selectedItemId = NO_SELECTED_ITEM;
+
+        return true;
+    }
+
     private void safeStartActivity(@NonNull Intent intent) {
         try {
             startActivity(intent);
         } catch (ActivityNotFoundException exception) {
             Log.e(TAG, "", exception);
-        }
-    }
-
-    private CharSequence getTitleToRestore(MenuItem menuItem) {
-        if (menuItem.getItemId() == R.id.navigation_item_experiments) {
-            return getResources().getString(R.string.app_name);
-        } else {
-            return menuItem.getTitle();
         }
     }
 
@@ -611,7 +612,7 @@ public class MainActivity extends ActivityWithNavigationView {
         // TODO: Do this for all possible IDs in case others have activity results.
         Fragment fragment =
                 getSupportFragmentManager()
-                        .findFragmentByTag(String.valueOf(R.id.navigation_item_experiments));
+                        .findFragmentByTag(EXPERIMENTS_FRAGMENT_TAG);
         if (fragment != null) {
             fragment.onActivityResult(requestCode, resultCode, data);
         }
@@ -686,10 +687,7 @@ public class MainActivity extends ActivityWithNavigationView {
         }
 
         // Navigate to experiments list.
-        int selectedNavItemId = R.id.navigation_item_experiments;
-        MenuItem item = navigationView.getMenu().findItem(selectedNavItemId);
-        navigationView.setCheckedItem(selectedNavItemId);
-        onNavigationItemSelected(item);
+        goToExperiments();
 
         // Log the mode we are in: user has signed in or signed out.
         trackMode();

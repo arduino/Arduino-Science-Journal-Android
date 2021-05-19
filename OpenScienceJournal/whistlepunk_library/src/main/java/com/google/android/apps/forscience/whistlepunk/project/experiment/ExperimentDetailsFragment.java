@@ -827,14 +827,14 @@ public class ExperimentDetailsFragment extends Fragment
       // This is cheating a bit.  Currently, upIntent has only been observed to be null
       // when we're using panes mode, so here we just assume usePanes==true.
       Intent intent =
-          MainActivity.launchIntent(getActivity(), R.id.navigation_item_experiments, true);
+          MainActivity.launchIntent(getActivity(), MainActivity.NO_SELECTED_ITEM, true);
       getActivity().startActivity(intent);
       getActivity().finish();
       return;
     }
     if (NavUtils.shouldUpRecreateTask(getActivity(), upIntent)
         || getArguments().getBoolean(ARG_CREATE_TASK, false)) {
-      upIntent.putExtra(MainActivity.ARG_SELECTED_NAV_ITEM_ID, R.id.navigation_item_experiments);
+      upIntent.putExtra(MainActivity.ARG_SELECTED_NAV_ITEM_ID, MainActivity.NO_SELECTED_ITEM);
       upIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
       // TODO: Transition animation
       TaskStackBuilder.create(getActivity())

@@ -17,10 +17,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <group android:id="@+id/navigation_primary_group" android:checkableBehavior="single">
         <item
-            android:id="@+id/navigation_item_experiments"
-            android:icon="@drawable/ic_navlibrary_black_24dp"
-            android:title="@string/navigation_item_experiments" />
-        <item
             android:id="@+id/navigation_item_activities"
             android:icon="@drawable/ic_activities"
             android:title="@string/navigation_activities"
