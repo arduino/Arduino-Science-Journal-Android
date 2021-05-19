@@ -212,7 +212,7 @@
         <activity
             android:name=".SettingsActivity"
             android:exported="false"
-            android:label="@string/navigation_item_settings" />
+            android:label="@string/navigation_item_account_settings" />
         <activity
             android:name=".arcore.ARVelocityActivity"
             android:exported="false"
