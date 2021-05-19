@@ -967,4 +967,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="navigation_get_help_link">https://support.arduino.cc/hc/en-us/sections/360004584459-Science-Journal-App</string>
   <string name="navigation_item_account_settings">Account Settings</string>
   <string name="claim_experiments_confirm_one_message">Are you sure to collect this experiment and add it to your account’s lab: %1$s’s Lab?</string>
+  <string name="arduino_auth_account_settings">Account Settings</string>
 </resources>

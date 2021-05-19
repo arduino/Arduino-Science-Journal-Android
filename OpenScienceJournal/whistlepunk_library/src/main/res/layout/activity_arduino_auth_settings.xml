@@ -53,7 +53,7 @@
             android:fontFamily="@font/open_sans_bold"
             android:gravity="center"
             android:maxLines="1"
-            android:text="@string/arduino_auth_settings"
+            android:text="@string/arduino_auth_account_settings"
             android:textColor="@color/arduino_white"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
