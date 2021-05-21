@@ -133,23 +133,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <TextView
-                android:id="@+id/navigation_privacy_policy"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:background="?selectableItemBackground"
-                android:fontFamily="@font/open_sans"
-                android:gravity="center"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:text="@string/arduino_auth_privacy"
-                android:textColor="@color/arduino_gris"
-                android:textSize="14sp"
-                app:layout_constraintBottom_toTopOf="@id/navigation_footer_separator"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.navigation.NavigationView>
 </com.google.android.apps.forscience.whistlepunk.MultiTouchDrawerLayout>

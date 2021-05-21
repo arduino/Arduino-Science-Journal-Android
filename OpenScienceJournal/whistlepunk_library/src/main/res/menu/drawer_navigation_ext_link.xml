@@ -52,5 +52,9 @@
             android:id="@+id/navigation_item_about"
             android:icon="@drawable/ic_info_black_24dp"
             android:title="@string/action_about" />
+        <item
+            android:id="@+id/navigation_item_privacy_policy"
+            android:icon="@drawable/ic_navigation_privacy_policy"
+            android:title="@string/navigation_item_privacy_policy" />
     </group>
 </menu>

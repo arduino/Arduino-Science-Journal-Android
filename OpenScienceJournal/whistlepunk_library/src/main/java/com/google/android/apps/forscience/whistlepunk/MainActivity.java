@@ -150,12 +150,6 @@ public class MainActivity extends ActivityWithNavigationView {
         navigationView = findViewById(R.id.navigation);
         navigationView.setNavigationItemSelectedListener(this);
 
-        findViewById(R.id.navigation_privacy_policy).setOnClickListener(v -> {
-            final Intent intent = new Intent(this, WebActivity.class);
-            intent.putExtra(WebActivity.EXTRA_KEY_TITLE, getString(R.string.arduino_auth_privacy));
-            intent.putExtra(WebActivity.EXTRA_KEY_URL, getString(R.string.config_auth_privacy));
-            startActivity(intent);
-        });
         findViewById(R.id.navigation_user_layout).setOnClickListener(v -> {
             if (accountsProvider.isSignedIn()) {
                 startActivity(new Intent(this, ArduinoSettingsActivity.class));
@@ -430,6 +424,11 @@ public class MainActivity extends ActivityWithNavigationView {
             safeStartActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.navigation_get_help_link))));
         } else if (itemId == R.id.navigation_item_settings) {
             startActivity(new Intent(this, ArduinoSettingsActivity.class));
+        } else if (itemId == R.id.navigation_item_privacy_policy) {
+            final Intent intent = new Intent(this, WebActivity.class);
+            intent.putExtra(WebActivity.EXTRA_KEY_TITLE, getString(R.string.arduino_auth_privacy));
+            intent.putExtra(WebActivity.EXTRA_KEY_URL, getString(R.string.config_auth_privacy));
+            startActivity(intent);
         } else {
             drawerLayout.closeDrawers();
             // Launch intents
