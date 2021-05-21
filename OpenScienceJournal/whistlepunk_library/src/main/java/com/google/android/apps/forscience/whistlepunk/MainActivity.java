@@ -445,12 +445,7 @@ public class MainActivity extends ActivityWithNavigationView {
                                 this, currentAccount, menuItem.getTitle(), SettingsActivity.TYPE_SETTINGS);
             }
              */
-            if (itemId == R.id.navigation_item_about) {
-                // Don't use currentAccount for the TYPE_ABOUT version of the SettingsActivity.
-                intent =
-                        SettingsActivity.getLaunchIntent(
-                                this, menuItem.getTitle(), SettingsActivity.TYPE_ABOUT);
-            } else if (itemId == R.id.dev_testing_options) {
+            if (itemId == R.id.dev_testing_options) {
                 // Don't use currentAccount for the TYPE_DEV_OPTIONS version of the SettingsActivity.
                 intent =
                         SettingsActivity.getLaunchIntent(
