@@ -2,16 +2,24 @@ package com.google.android.apps.forscience.whistlepunk.signin;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.RectF;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SwitchCompat;
 
+import com.bumptech.glide.Glide;
+import com.caverock.androidsvg.SVG;
 import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.WhistlePunkApplication;
 import com.google.android.apps.forscience.whistlepunk.accounts.AccountsProvider;
@@ -20,7 +28,11 @@ import com.google.android.apps.forscience.whistlepunk.accounts.arduino.ArduinoAc
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveAccount;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveShared;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveSyncSetupActivity;
+import com.google.android.apps.forscience.whistlepunk.remote.StringUtils;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+
+import java.io.InputStream;
+import java.net.URL;
 
 import io.reactivex.annotations.NonNull;
 import io.reactivex.observers.DisposableObserver;
@@ -65,7 +77,7 @@ public class ArduinoSettingsActivity extends AppCompatActivity {
         mSyncSwitch = findViewById(R.id.section_google_drive_switch);
         mSyncSwitch.setOnCheckedChangeListener(mSwitchListener);
         findViewById(R.id.section_google_drive_switch_change).setOnClickListener(v -> startActivity(new Intent(this, GDriveSyncSetupActivity.class)));
-        findViewById(R.id.redirect_to_id_page_image_view).setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://id.arduino.cc"))));
+        findViewById(R.id.section_arduino_account_settings_advanced_settings_button).setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://id.arduino.cc"))));
     }
 
     @Override
@@ -99,6 +111,7 @@ public class ArduinoSettingsActivity extends AppCompatActivity {
             return;
         }
         final ArduinoAccount aa = (ArduinoAccount) appAccount;
+        final ImageView avatarView = findViewById(R.id.section_arduino_account_avatar);
         final TextView nicknameView = findViewById(R.id.section_arduino_account_nickname);
         final TextView emailView = findViewById(R.id.section_arduino_account_email);
         nicknameView.setText(aa.getAccountName());
@@ -109,6 +122,36 @@ public class ArduinoSettingsActivity extends AppCompatActivity {
             emailView.setText(aa.getEmail());
             findViewById(R.id.section_google_drive_sync_layout).setVisibility(View.VISIBLE);
             updateGDriveSyncUI();
+        }
+
+        final String avatar = appAccount.getAccountAvatar();
+        if (StringUtils.isEmpty(avatar)) {
+            avatarView.setImageResource(R.drawable.ic_navigation_user_avatar);
+        } else {
+            if (avatar.toLowerCase().endsWith(".svg")) {
+                new Thread(() -> {
+                    final Resources r = getResources();
+                    final int side = r.getDimensionPixelSize(R.dimen.main_arduino_auth_avatar_side);
+                    final Bitmap bitmap = Bitmap.createBitmap(side, side, Bitmap.Config.ARGB_8888);
+                    final Canvas canvas = new Canvas(bitmap);
+                    canvas.drawRGB(255, 255, 255);
+                    try {
+                        final SVG svg;
+                        try (final InputStream inputStream = new URL(avatar).openConnection().getInputStream()) {
+                            svg = SVG.getFromInputStream(inputStream);
+                        }
+                        svg.setDocumentWidth(side);
+                        svg.setDocumentHeight(side);
+                        svg.renderToCanvas(canvas, new RectF(0, 0, side, side));
+                        runOnUiThread(() -> Glide.with(this).load(bitmap).circleCrop().into(avatarView));
+                    } catch (Exception e) {
+                        Log.e("Main", "Unable to decode SVG", e);
+                        runOnUiThread(() -> avatarView.setImageResource(R.drawable.ic_navigation_user_avatar));
+                    }
+                }).start();
+            } else {
+                Glide.with(this).load(avatar).circleCrop().into(avatarView);
+            }
         }
     }
 

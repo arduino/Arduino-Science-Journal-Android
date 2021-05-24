@@ -919,4 +919,10 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="claim_experiments_confirm_one_message">Are you sure to collect this experiment and add it to your account’s lab: %1$s’s Lab?</string>
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
+  <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
+  <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync?   If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
+  <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
+  <string name="arduino_auth_settings_disable_sync_cancel">Cancel</string>
 </resources>
