@@ -758,11 +758,15 @@ g.co/sciencejournalactivities</string>
   <string name="onboarding_navigation_title_tablet">GETTING STARTED WITH SCIENCE JOURNAL</string>
   <string name="navigation_activities">SJ Activities</string>
   <string name="drive_sync_intro_title">Cloud Sync</string>
-  <string name="drive_sync_intro_text">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
+  <string name="drive_sync_intro_text">All your experiments can now be saved and accessed from anywhere with the Cloud Sync feature.  By tapping on the \"Google Drive\" button you are agreeing to Google’s permission and privacy policy to enable the backup, and sync of your experiments in a Google Drive folder of your choice, in accordance with Google T&amp;Cs and privacy policy. You will be redirected to Google’s authentication page to complete your Cloud Sync.</string>
   <string name="drive_sync_intro_more">LEARN MORE</string>
   <string name="drive_sync_intro_google_action">Google Drive</string>
   <string name="drive_sync_intro_skip">SKIP</string>
-  <string name="drive_sync_intro_more_text">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
+  <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
+You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
   <string name="drive_sync_folder_picker_select">SYNC HERE</string>
@@ -914,4 +918,11 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync?   If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
   <string name="arduino_auth_settings_disable_sync_cancel">Cancel</string>
+  <string name="arduino_auth_settings_drive_privacy_policy">Privacy Policy</string>
+  <string name="arduino_auth_settings_drive_terms_of_service">Terms of Service</string>
+  <string name="arduino_auth_settings_drive_start_button">Sync now</string>
+  <string name="arduino_auth_settings_drive_start_title">Google Drive</string>
+  <string name="arduino_auth_settings_drive_start_text">Congrats! Your Google Drive Account has been successfully set up.  All your experiments will now be saved and backed up in the folder below.</string>
+  <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
+  <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
 </resources>

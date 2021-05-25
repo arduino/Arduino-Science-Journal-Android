@@ -251,7 +251,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/drive_learn_more"
+                    android:id="@+id/section_google_drive_learn_more"
                     style="@style/ArduinoAuth_Text.Hint"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

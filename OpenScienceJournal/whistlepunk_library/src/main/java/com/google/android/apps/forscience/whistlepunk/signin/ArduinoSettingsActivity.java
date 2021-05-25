@@ -26,6 +26,7 @@ import com.google.android.apps.forscience.whistlepunk.accounts.AccountsProvider;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
 import com.google.android.apps.forscience.whistlepunk.accounts.arduino.ArduinoAccount;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveAccount;
+import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveLearnMoreActivity;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveShared;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveSyncSetupActivity;
 import com.google.android.apps.forscience.whistlepunk.remote.StringUtils;
@@ -78,6 +79,10 @@ public class ArduinoSettingsActivity extends AppCompatActivity {
         mSyncSwitch.setOnCheckedChangeListener(mSwitchListener);
         findViewById(R.id.section_google_drive_switch_change).setOnClickListener(v -> startActivity(new Intent(this, GDriveSyncSetupActivity.class)));
         findViewById(R.id.section_arduino_account_settings_advanced_settings_button).setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://id.arduino.cc"))));
+
+        findViewById(R.id.section_google_drive_learn_more).setOnClickListener(v -> {
+            startActivity(new Intent(this, GDriveLearnMoreActivity.class));
+        });
     }
 
     @Override

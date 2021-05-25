@@ -57,7 +57,7 @@
         android:maxWidth="360dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:text="@string/drive_setup_step_1_description"
+        android:text="@string/drive_sync_intro_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/drive_header" />

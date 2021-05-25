@@ -1,0 +1,103 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.google.android.apps.forscience.whistlepunk.gdrivesync.GDriveLearnMoreActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/drive_learn_more_modal_header"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/drive_learn_more_modal_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/arduino_auth_settings_section_sync"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="5sp"
+            android:textColor="@color/arduino_teal_3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/drive_learn_more_modal_close" />
+
+        <ImageView
+            android:id="@+id/drive_learn_more_modal_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_modal_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/arduino_clouds"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/drive_learn_more_modal_header"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/drive_learn_more_modal_content"
+                style="@style/ArduinoAuth_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/drive_sync_intro_more_text" />
+
+            <TextView
+                android:id="@+id/drive_learn_more_modal_terms_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                style="@style/ArduinoAuth_Text"
+                android:textColor="@color/arduino_teal_3"
+                android:text="@string/arduino_auth_settings_drive_terms_of_service" />
+            <TextView
+                android:id="@+id/drive_learn_more_modal_privacy_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginBottom="16dp"
+                style="@style/ArduinoAuth_Text"
+                android:textColor="@color/arduino_teal_3"
+                android:text="@string/arduino_auth_settings_drive_privacy_policy" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
