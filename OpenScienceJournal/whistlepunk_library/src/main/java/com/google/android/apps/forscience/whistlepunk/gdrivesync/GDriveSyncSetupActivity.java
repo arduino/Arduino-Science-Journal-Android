@@ -33,6 +33,7 @@ import com.google.android.apps.forscience.whistlepunk.gdrivesync.api.GDriveBrows
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.api.GDriveCreateFolderCall;
 import com.google.android.apps.forscience.whistlepunk.gdrivesync.api.GDriveFile;
 import com.google.android.apps.forscience.whistlepunk.remote.Callback;
+import com.google.android.apps.forscience.whistlepunk.signin.WebActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -42,8 +43,6 @@ import com.google.android.gms.common.api.Scope;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -117,6 +116,19 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
             }
         });
         mLoader = findViewById(R.id.drive_loader);
+
+        findViewById(R.id.auth_terms).setOnClickListener(v -> {
+            final Intent intent = new Intent(this, WebActivity.class);
+            intent.putExtra(WebActivity.EXTRA_KEY_TITLE, this.getString(R.string.arduino_auth_terms));
+            intent.putExtra(WebActivity.EXTRA_KEY_URL, this.getString(R.string.config_auth_terms));
+            this.startActivity(intent);
+        });
+        findViewById(R.id.auth_privacy).setOnClickListener(v -> {
+            final Intent intent = new Intent(this, WebActivity.class);
+            intent.putExtra(WebActivity.EXTRA_KEY_TITLE, this.getString(R.string.arduino_auth_privacy));
+            intent.putExtra(WebActivity.EXTRA_KEY_URL, this.getString(R.string.config_auth_privacy));
+            this.startActivity(intent);
+        });
     }
 
     @Override
