@@ -43,6 +43,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -177,18 +179,18 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private View onCreateStep1(@NonNull ViewGroup container) {
         final View view = getLayoutInflater().inflate(R.layout.activity_drive_setup__step_1, container, false);
-        final View popUpBg = view.findViewById(R.id.drive_popup_bg);
-        final View popUp = view.findViewById(R.id.drive_popup);
         view.findViewById(R.id.drive_learn_more).setOnClickListener(v -> {
-            popUpBg.setVisibility(View.VISIBLE);
-            popUp.setVisibility(View.VISIBLE);
-        });
-        popUpBg.setOnClickListener(v -> {
-            popUpBg.setVisibility(View.GONE);
-            popUp.setVisibility(View.GONE);
+            startActivity(new Intent(this, GDriveLearnMoreActivity.class));
         });
         view.findViewById(R.id.drive_btn_signin).setOnClickListener(v -> onGoogleSignIn());
-        view.findViewById(R.id.drive_btn_skip).setOnClickListener(v -> finish());
+
+        final View skipButton = view.findViewById(R.id.drive_btn_skip);
+        final Boolean isAfterAuthActivity = getIntent().getBooleanExtra("AFTER_AUTH_ACTIVITY", false);
+        if (isAfterAuthActivity) {
+            skipButton.setVisibility(View.VISIBLE);
+            skipButton.setOnClickListener(v -> finish());
+        }
+
         return view;
     }
 

@@ -99,50 +99,7 @@
         android:paddingEnd="30dp"
         android:text="@string/drive_skip"
         app:layout_constraintEnd_toEndOf="@id/drive_btn_signin"
-        app:layout_constraintTop_toBottomOf="@id/drive_btn_signin" />
+        app:layout_constraintTop_toBottomOf="@id/drive_btn_signin"
+        android:visibility="gone" />
 
-    <FrameLayout
-        android:id="@+id/drive_popup_bg"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/drive_popup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:elevation="4dp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/drive_learn_more"
-        tools:targetApi="lollipop">
-
-        <ImageView
-            android:id="@+id/popup_pointer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@null"
-            android:src="@drawable/arduino_auth_popup_pointer"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            style="@style/ArduinoAuth_Text.PopUp"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:background="@color/arduino_white"
-            android:gravity="start"
-            android:padding="20dp"
-            android:text="@string/drive_setup_step_1_popup"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/popup_pointer" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

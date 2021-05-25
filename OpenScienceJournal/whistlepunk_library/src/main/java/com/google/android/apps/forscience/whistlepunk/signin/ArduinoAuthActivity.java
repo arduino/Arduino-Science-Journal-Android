@@ -127,7 +127,9 @@ public class ArduinoAuthActivity extends AppCompatActivity implements AuthBaseFr
         finish();
         final ArduinoAccount account = new ArduinoAccount(this, token);
         if (!account.isMinor()) {
-            startActivity(new Intent(this, GDriveSyncSetupActivity.class));
+            final Intent gdriveSetupIntent = new Intent(this, GDriveSyncSetupActivity.class);
+            gdriveSetupIntent.putExtra("AFTER_AUTH_ACTIVITY", true);
+            startActivity(gdriveSetupIntent);
         }
     }
 
