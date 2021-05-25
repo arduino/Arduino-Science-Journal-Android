@@ -231,11 +231,10 @@
                 android:id="@+id/section_google_drive_description_wrapper"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:visibility="gone"
+                android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/section_google_drive_switch"
-                tools:visibility="visible">
+                app:layout_constraintTop_toBottomOf="@id/section_google_drive_switch">
 
                 <TextView
                     android:id="@+id/section_google_drive_description"
@@ -269,81 +268,112 @@
                 android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/section_google_drive_switch"
-                tools:visibility="gone">
-
-                <TextView
-                    android:id="@+id/section_google_drive_switch_change"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="?selectableItemBackgroundBorderless"
-                    android:fontFamily="@font/open_sans_bold"
-                    android:text="@string/arduino_auth_settings_section_sync_change"
-                    android:textAllCaps="true"
-                    android:textColor="@color/arduino_teal_3"
-                    android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@id/section_google_drive_switch">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/section_google_drive_switch_change"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <TextView
-                        android:id="@+id/section_google_drive_account_label"
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/section_google_drive_account_row"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:fontFamily="@font/open_sans"
-                        android:text="@string/arduino_auth_settings_section_sync_account"
-                        android:textColor="@color/arduino_gris"
-                        android:textSize="16sp"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintEnd_toStartOf="@id/section_google_drive_account_info"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent">
 
-                    <TextView
-                        android:id="@+id/section_google_drive_account_value"
-                        android:layout_width="0dp"
+                        <TextView
+                            android:id="@+id/section_google_drive_account_label"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans"
+                            android:text="@string/arduino_auth_settings_section_sync_account"
+                            android:textColor="@color/arduino_gris"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/section_google_drive_account_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.5dp"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:textColor="@color/arduino_gris"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/section_google_drive_account_label" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <ImageButton
+                        android:id="@+id/section_google_drive_account_info"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="2.5dp"
-                        android:fontFamily="@font/open_sans_bold"
-                        android:textColor="@color/arduino_gris"
-                        android:textSize="12sp"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_info_black_24dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/section_google_drive_account_label" />
+                        app:layout_constraintTop_toTopOf="@id/section_google_drive_account_row"
+                        app:layout_constraintBottom_toBottomOf="@id/section_google_drive_account_row" />
 
-                    <TextView
-                        android:id="@+id/section_google_drive_folder_label"
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/section_google_drive_folder_row"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:fontFamily="@font/open_sans"
-                        android:text="@string/arduino_auth_settings_section_sync_folder"
-                        android:textColor="@color/arduino_gris"
-                        android:textSize="16sp"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/section_google_drive_switch_change"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/section_google_drive_account_value" />
+                        app:layout_constraintTop_toBottomOf="@id/section_google_drive_account_row">
+
+                        <TextView
+                            android:id="@+id/section_google_drive_folder_label"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans"
+                            android:text="@string/arduino_auth_settings_section_sync_folder"
+                            android:textColor="@color/arduino_gris"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/section_google_drive_folder_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.5dp"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:textColor="@color/arduino_gris"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/section_google_drive_folder_label" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                     <TextView
-                        android:id="@+id/section_google_drive_folder_value"
-                        android:layout_width="0dp"
+                        android:id="@+id/section_google_drive_switch_change"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="2.5dp"
+                        android:background="?selectableItemBackgroundBorderless"
                         android:fontFamily="@font/open_sans_bold"
-                        android:textColor="@color/arduino_gris"
-                        android:textSize="12sp"
+                        android:text="@string/arduino_auth_settings_section_sync_change"
+                        android:textAllCaps="true"
+                        android:textColor="@color/arduino_teal_3"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@id/section_google_drive_folder_row"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/section_google_drive_folder_label" />
+                        app:layout_constraintTop_toTopOf="@id/section_google_drive_folder_row" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

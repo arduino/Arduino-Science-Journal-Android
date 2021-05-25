@@ -51,8 +51,7 @@ public class ArduinoSettingsActivity extends AppCompatActivity {
         if (isChecked) {
             startActivity(new Intent(this, GDriveSyncSetupActivity.class));
         } else {
-            GDriveShared.clearCredentials(this);
-            updateGDriveSyncUI();
+            confirmDisablingGDrive();
         }
     };
 
@@ -160,6 +159,28 @@ public class ArduinoSettingsActivity extends AppCompatActivity {
         }
     }
 
+    private void confirmDisablingGDrive() {
+        final AlertDialog.Builder builder = new MaterialAlertDialogBuilder(this, R.style.AlertDialogTheme);
+
+        builder.setTitle(R.string.arduino_auth_settings_disable_sync_title);
+        builder.setMessage(R.string.arduino_auth_settings_disable_sync_message);
+        builder.setNegativeButton(R.string.arduino_auth_settings_disable_sync_cancel, (dialog, which) -> {
+            mSyncSwitch.setOnCheckedChangeListener(null);
+            mSyncSwitch.setChecked(true);
+            mSyncSwitch.setOnCheckedChangeListener(mSwitchListener);
+            dialog.cancel();
+        });
+        builder.setPositiveButton(
+            R.string.arduino_auth_settings_disable_sync_confirm,
+            (dialog, which) -> {
+                GDriveShared.clearCredentials(this);
+                updateGDriveSyncUI();
+
+                dialog.dismiss();
+            });
+        builder.create().show();
+    }
+
     private void updateGDriveSyncUI() {
         GDriveAccount gda = GDriveShared.getCredentials(this);
         if (gda == null) {
@@ -172,12 +193,17 @@ public class ArduinoSettingsActivity extends AppCompatActivity {
             mSyncSwitch.setOnCheckedChangeListener(null);
             mSyncSwitch.setChecked(true);
             mSyncSwitch.setOnCheckedChangeListener(mSwitchListener);
+
             findViewById(R.id.section_google_drive_description_wrapper).setVisibility(View.GONE);
             findViewById(R.id.section_google_drive_account_layout).setVisibility(View.VISIBLE);
             final TextView accountView = findViewById(R.id.section_google_drive_account_value);
             final TextView folderView = findViewById(R.id.section_google_drive_folder_value);
             accountView.setText(gda.email);
             folderView.setText(gda.folderPath);
+
+            findViewById(R.id.section_google_drive_account_info).setOnClickListener(v -> {
+                startActivity(new Intent(this, GDriveLearnMoreActivity.class));
+            });
         }
     }
 
