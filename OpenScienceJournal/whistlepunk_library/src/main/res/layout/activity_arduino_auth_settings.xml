@@ -218,34 +218,48 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/section_google_drive_sync_separator" />
 
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/section_google_drive_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/section_google_drive_sync"
+                app:layout_constraintBottom_toBottomOf="@id/section_google_drive_sync" />
+
+
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/section_google_drive_switch_layout"
+                android:id="@+id/section_google_drive_description_wrapper"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/section_google_drive_sync">
+                app:layout_constraintTop_toBottomOf="@id/section_google_drive_switch"
+                tools:visibility="visible">
 
-                <androidx.appcompat.widget.SwitchCompat
-                    android:id="@+id/section_google_drive_switch"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/section_google_drive_description"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/arduino_auth_settings_section_sync_description"
+                    android:textColor="@color/arduino_asbestos"
+                    android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:id="@+id/drive_learn_more"
+                    style="@style/ArduinoAuth_Text.Hint"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/open_sans"
-                    android:text="@string/arduino_auth_settings_section_sync_enable"
-                    android:textColor="@color/arduino_gris"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/section_google_drive_switch"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/drive_learn_more"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toBottomOf="@id/section_google_drive_description" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -255,8 +269,8 @@
                 android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/section_google_drive_switch_layout"
-                tools:visibility="visible">
+                app:layout_constraintTop_toBottomOf="@id/section_google_drive_switch"
+                tools:visibility="gone">
 
                 <TextView
                     android:id="@+id/section_google_drive_switch_change"

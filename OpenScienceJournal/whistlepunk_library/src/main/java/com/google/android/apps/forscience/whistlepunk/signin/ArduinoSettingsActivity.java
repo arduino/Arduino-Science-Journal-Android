@@ -161,11 +161,13 @@ public class ArduinoSettingsActivity extends AppCompatActivity {
             mSyncSwitch.setOnCheckedChangeListener(null);
             mSyncSwitch.setChecked(false);
             mSyncSwitch.setOnCheckedChangeListener(mSwitchListener);
+            findViewById(R.id.section_google_drive_description_wrapper).setVisibility(View.VISIBLE);
             findViewById(R.id.section_google_drive_account_layout).setVisibility(View.GONE);
         } else {
             mSyncSwitch.setOnCheckedChangeListener(null);
             mSyncSwitch.setChecked(true);
             mSyncSwitch.setOnCheckedChangeListener(mSwitchListener);
+            findViewById(R.id.section_google_drive_description_wrapper).setVisibility(View.GONE);
             findViewById(R.id.section_google_drive_account_layout).setVisibility(View.VISIBLE);
             final TextView accountView = findViewById(R.id.section_google_drive_account_value);
             final TextView folderView = findViewById(R.id.section_google_drive_folder_value);
