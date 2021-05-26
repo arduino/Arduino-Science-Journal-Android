@@ -64,6 +64,7 @@ import com.google.android.apps.forscience.whistlepunk.DataController;
 import com.google.android.apps.forscience.whistlepunk.ExportService;
 import com.google.android.apps.forscience.whistlepunk.LoggingConsumer;
 import com.google.android.apps.forscience.whistlepunk.PictureUtils;
+import com.google.android.apps.forscience.whistlepunk.PullToRefreshLayout;
 import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.RecorderController;
 import com.google.android.apps.forscience.whistlepunk.RxDataController;
@@ -124,7 +125,7 @@ import io.reactivex.disposables.Disposable;
  * Menu.findItem for these ids.
  */
 public class ExperimentListFragment extends Fragment
-        implements DeleteMetadataItemDialog.DeleteDialogListener, SwipeRefreshLayout.OnRefreshListener {
+        implements DeleteMetadataItemDialog.DeleteDialogListener, PullToRefreshLayout.OnRefreshListener {
     private static final String TAG = "ExperimentListFragment";
 
     /**
@@ -159,7 +160,7 @@ public class ExperimentListFragment extends Fragment
     private ConnectivityBroadcastReceiver connectivityBroadcastReceiver;
     private Menu optionsMenu = null;
     private FeatureDiscoveryProvider featureDiscoveryProvider;
-    private SwipeRefreshLayout swipeLayout;
+    private PullToRefreshLayout pullToRefreshLayout;
     private final AtomicBoolean syncing = new AtomicBoolean(false);
 
     public static ExperimentListFragment newInstance(AppAccount appAccount, boolean usePanes) {
@@ -345,7 +346,6 @@ public class ExperimentListFragment extends Fragment
 
     @Override
     public void onRefresh() {
-        swipeLayout.setRefreshing(false);
         WhistlePunkApplication.getUsageTracker(applicationContext)
                 .trackEvent(
                         TrackerConstants.CATEGORY_SYNC, TrackerConstants.ACTION_MANUAL_SYNC_STARTED, null, 0);
@@ -361,8 +361,8 @@ public class ExperimentListFragment extends Fragment
 
         experimentListAdapter = new ExperimentListAdapter(this);
 
-        swipeLayout = view.findViewById(R.id.swipe_container);
-        swipeLayout.setOnRefreshListener(this);
+        pullToRefreshLayout = view.findViewById(R.id.swipe_container);
+        pullToRefreshLayout.setOnRefreshListener(this);
 
         // TODO: Adjust the column count based on breakpoint specs when available.
         int column_count = 2;
@@ -722,6 +722,8 @@ public class ExperimentListFragment extends Fragment
     private void syncNow(String logMessage) {
         // This fragment may be gone by the time this code executes.
         if (isFragmentGone()) {
+            pullToRefreshLayout.stopRefreshing();
+
             return;
         }
         if (appAccount.isSignedIn() && GDriveShared.getCredentials(getContext()) != null) {

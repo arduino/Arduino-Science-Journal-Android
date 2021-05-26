@@ -21,10 +21,15 @@
     android:fitsSystemWindows="true"
     tools:context=".project.ExperimentListFragment">
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <com.google.android.apps.forscience.whistlepunk.PullToRefreshLayout
         android:id="@+id/swipe_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/refreshStatus"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/details"
@@ -33,8 +38,7 @@
             android:clipToPadding="false"
             android:paddingBottom="@dimen/list_bottom_padding"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </com.google.android.apps.forscience.whistlepunk.PullToRefreshLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/new_experiment"
