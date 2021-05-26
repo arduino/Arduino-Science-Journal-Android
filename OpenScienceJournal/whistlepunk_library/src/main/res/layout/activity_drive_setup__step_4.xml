@@ -80,14 +80,14 @@
         app:layout_constraintTop_toBottomOf="@id/drive_description" />
 
     <TextView
-        android:id="@+id/drive_btn_confirm"
+        android:id="@+id/drive_btn_sync"
         style="@style/ArduinoAuth_Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:paddingStart="30dp"
         android:paddingEnd="30dp"
-        android:text="@string/arduino_auth_settings_drive_confirm_button"
+        android:text="@string/arduino_auth_settings_drive_start_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/drive_folder" />

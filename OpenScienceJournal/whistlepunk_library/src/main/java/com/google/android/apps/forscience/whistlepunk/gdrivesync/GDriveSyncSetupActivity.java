@@ -91,9 +91,9 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private View mSelectFolderView;
 
-    private TextView mStep3Description;
+    private TextView mStepDescription;
 
-    private TextView mStep3Folder;
+    private TextView mStepFolder;
 
     private DisposableObserver<AppAccount> mAppAccountObserver;
 
@@ -419,18 +419,38 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private View onCreateStep3(@NonNull ViewGroup container) {
         final View view = getLayoutInflater().inflate(R.layout.activity_drive_setup__step_3, container, false);
-        mStep3Description = view.findViewById(R.id.drive_description);
-        mStep3Folder = view.findViewById(R.id.drive_folder);
-        view.findViewById(R.id.drive_btn_sync).setOnClickListener(v -> onCompleted());
+        mStepDescription = view.findViewById(R.id.drive_description);
+        mStepFolder = view.findViewById(R.id.drive_folder);
+        view.findViewById(R.id.drive_btn_confirm).setOnClickListener(v -> onFolderSelectionConfirmed());
         return view;
     }
 
     private void goToStep3() {
         GDriveFile f = mPath.get(mPath.size() - 1);
         mFolderId = f.id;
-        mStep3Description.setText(getString(R.string.drive_setup_step_3_description, f.name));
-        mStep3Folder.setText(f.name);
+        mStepDescription.setText(getString(R.string.drive_setup_step_3_description, f.name));
+        mStepFolder.setText(f.name);
         mViewPager.setCurrentItem(2, true);
+    }
+
+    private void onFolderSelectionConfirmed() {
+        goToStep4();
+    }
+
+    private View onCreateStep4(@NonNull ViewGroup container) {
+        final View view = getLayoutInflater().inflate(R.layout.activity_drive_setup__step_4, container, false);
+        mStepDescription = view.findViewById(R.id.drive_description);
+        mStepFolder = view.findViewById(R.id.drive_folder);
+        view.findViewById(R.id.drive_btn_sync).setOnClickListener(v -> onCompleted());
+        return view;
+    }
+
+    private void goToStep4() {
+        GDriveFile f = mPath.get(mPath.size() - 1);
+        mFolderId = f.id;
+        mStepDescription.setText(getString(R.string.arduino_auth_settings_drive_start_text));
+        mStepFolder.setText(f.name);
+        mViewPager.setCurrentItem(3, true);
     }
 
     private void onCompleted() {
@@ -481,7 +501,7 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 3;
+            return 4;
         }
 
         @NonNull
@@ -497,6 +517,9 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
                     break;
                 case 2:
                     view = onCreateStep3(container);
+                    break;
+                case 3:
+                    view = onCreateStep4(container);
                     break;
                 default:
                     throw new RuntimeException("Unknown drive setup page index " + position);
