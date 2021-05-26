@@ -122,9 +122,11 @@ public class ArduinoSettingsActivity extends AppCompatActivity {
         if (appAccount.isMinor()) {
             emailView.setVisibility(View.INVISIBLE);
             findViewById(R.id.section_google_drive_sync_layout).setVisibility(View.GONE);
+            findViewById(R.id.section_arduino_account_settings_advanced_settings_button).setVisibility(View.GONE);
         } else {
             emailView.setText(aa.getEmail());
             findViewById(R.id.section_google_drive_sync_layout).setVisibility(View.VISIBLE);
+            findViewById(R.id.section_arduino_account_settings_advanced_settings_button).setVisibility(View.VISIBLE);
             updateGDriveSyncUI();
         }
 

@@ -134,7 +134,7 @@
             android:id="@+id/section_arduino_account_settings_advanced_settings_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@+id/section_arduino_account_info"
+            app:layout_constraintStart_toStartOf="@+id/section_arduino_account_settings_divider"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/section_arduino_account_settings_divider">
 
@@ -181,7 +181,7 @@
             android:textColor="@color/arduino_teal_3"
             android:textSize="14sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@id/section_arduino_account_settings_advanced_settings_button"
+            app:layout_constraintStart_toStartOf="@id/section_arduino_account_settings_divider"
             app:layout_constraintTop_toBottomOf="@id/section_arduino_account_settings_advanced_settings_button"
             app:layout_constraintVertical_bias="1" />
 
