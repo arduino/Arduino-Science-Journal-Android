@@ -75,6 +75,8 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private boolean mLoading;
 
+    private boolean mSkipFirstStep = false;
+
     private final List<GDriveFile> mPath = new ArrayList<>();
 
     private final List<GDriveFile> mFiles = new ArrayList<>();
@@ -91,9 +93,9 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private View mSelectFolderView;
 
-    private TextView mStepDescription;
+    private TextView mStep3Description;
 
-    private TextView mStepFolder;
+    private TextView mStep3Folder;
 
     private DisposableObserver<AppAccount> mAppAccountObserver;
 
@@ -109,13 +111,29 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
         mViewPager = findViewById(R.id.drive_pager);
         mViewPager.setAdapter(mPagerAdapter);
         mViewPager.setOnTouchListener((v, event) -> true);
+
+        mLoader = findViewById(R.id.drive_loader);
+
+        GDriveAccount gda = GDriveShared.getCredentials(this);
+        if (gda != null) {
+            // if the google account is already set, go to folder selection
+            mSkipFirstStep = true;
+            mAccountId = gda.accountId;
+            mEmail = gda.email;
+            mFolderId = gda.folderId;
+            mToken = gda.token;
+
+            mViewPager.setCurrentItem(1, true);
+        }
+
         mViewPager.addOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
             public void onPageSelected(int position) {
-                findViewById(R.id.drive_header_action_back).setVisibility(position > 0 ? View.VISIBLE : View.INVISIBLE);
+                boolean isBackVisible = position > 1 || (position == 1 && !mSkipFirstStep);
+
+                findViewById(R.id.drive_header_action_back).setVisibility(isBackVisible ? View.VISIBLE : View.INVISIBLE);
             }
         });
-        mLoader = findViewById(R.id.drive_loader);
 
         findViewById(R.id.auth_terms).setOnClickListener(v -> {
             final Intent intent = new Intent(this, WebActivity.class);
@@ -168,6 +186,11 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
             return;
         }
         if (current == 1) {
+            if (mSkipFirstStep) {
+                finish();
+                return;
+            }
+
             if (mPath.size() > 0) {
                 mPath.remove(mPath.size() - 1);
                 loadFolder();
@@ -300,6 +323,13 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
         mNavigationCurrentText = view.findViewById(R.id.drive_current);
         mSelectFolderView = view.findViewById(R.id.drive_btn_select);
         mSelectFolderView.setOnClickListener(v -> onFolderSelected());
+
+        if (mViewPager.getCurrentItem() == 1) {
+            mPath.clear();
+            mFiles.clear();
+            showLoader();
+            loadFolder();
+        }
         return view;
     }
 
@@ -419,8 +449,8 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private View onCreateStep3(@NonNull ViewGroup container) {
         final View view = getLayoutInflater().inflate(R.layout.activity_drive_setup__step_3, container, false);
-        mStepDescription = view.findViewById(R.id.drive_description);
-        mStepFolder = view.findViewById(R.id.drive_folder);
+        mStep3Description = view.findViewById(R.id.drive_description);
+        mStep3Folder = view.findViewById(R.id.drive_folder);
         view.findViewById(R.id.drive_btn_confirm).setOnClickListener(v -> onFolderSelectionConfirmed());
         return view;
     }
@@ -428,8 +458,8 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
     private void goToStep3() {
         GDriveFile f = mPath.get(mPath.size() - 1);
         mFolderId = f.id;
-        mStepDescription.setText(getString(R.string.drive_setup_step_3_description, f.name));
-        mStepFolder.setText(f.name);
+        mStep3Description.setText(getString(R.string.drive_setup_step_3_description, f.name));
+        mStep3Folder.setText(f.name);
         mViewPager.setCurrentItem(2, true);
     }
 
@@ -439,8 +469,6 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private View onCreateStep4(@NonNull ViewGroup container) {
         final View view = getLayoutInflater().inflate(R.layout.activity_drive_setup__step_4, container, false);
-        mStepDescription = view.findViewById(R.id.drive_description);
-        mStepFolder = view.findViewById(R.id.drive_folder);
         view.findViewById(R.id.drive_btn_sync).setOnClickListener(v -> onCompleted());
         return view;
     }
