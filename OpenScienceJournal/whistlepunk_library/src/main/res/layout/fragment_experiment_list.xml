@@ -26,10 +26,39 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/refresh_status"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:id="@+id/refreshStatus"/>
+            android:layout_height="120dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="27dp"
+            android:alpha="0">
+
+            <ImageView
+                android:id="@+id/refresh_status_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_refresh"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/refresh_status_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="@string/arduino_auth_settings_drive_loading_indicator_text"
+                android:lineSpacingExtra="5sp"
+                android:textSize="12sp"
+                android:letterSpacing="0.1"
+                android:textColor="@color/arduino_asbestos"
+                app:layout_constraintTop_toBottomOf="@id/refresh_status_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/details"
@@ -54,16 +83,6 @@
         app:elevation="@dimen/fab_elevation"
         app:fabSize="normal"
         app:tint="@color/arduino_white" />
-
-    <ProgressBar
-        android:id="@+id/syncIndeterminateBar"
-        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:layout_marginTop="-7dp"
-        android:indeterminate="true"
-        android:visibility="visible" />
 
     <ProgressBar
         android:id="@+id/exportIndeterminateBar"

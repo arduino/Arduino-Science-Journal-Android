@@ -148,7 +148,6 @@ public class ExperimentListFragment extends Fragment
     private Context applicationContext;
     private ExperimentListAdapter experimentListAdapter;
     private boolean includeArchived;
-    private boolean syncProgressBarVisible = false;
     private boolean exportProgressBarVisible = false;
     private boolean claimProgressBarVisible = false;
     private final RxEvent destroyed = new RxEvent();
@@ -254,7 +253,10 @@ public class ExperimentListFragment extends Fragment
                                         if (isFragmentGone()) {
                                             return;
                                         }
-                                        setSyncProgressBarVisible(busy);
+
+                                        if (!busy) {
+                                            pullToRefreshLayout.stopRefreshing();
+                                        }
                                     });
                         });
 
@@ -293,8 +295,12 @@ public class ExperimentListFragment extends Fragment
     @Override
     public void onResume() {
         super.onResume();
+
+        if (syncing.get()) {
+            pullToRefreshLayout.stopRefreshing();
+        }
+
         setExportProgressBarVisible(exportProgressBarVisible);
-        setSyncProgressBarVisible(syncProgressBarVisible);
         setClaimProgressBarVisible(claimProgressBarVisible);
 
         connectivityBroadcastReceiver = new ConnectivityBroadcastReceiver();
@@ -358,6 +364,13 @@ public class ExperimentListFragment extends Fragment
             LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_experiment_list, container, false);
         final RecyclerView detailList = view.findViewById(R.id.details);
+
+        if (!appAccount.isSignedIn() || GDriveShared.getCredentials(getContext()) == null) {
+            // gdrive sync not active
+            view.findViewById(R.id.refresh_status_label).setVisibility(View.GONE);
+        } else {
+            view.findViewById(R.id.refresh_status_label).setVisibility(View.VISIBLE);
+        }
 
         experimentListAdapter = new ExperimentListAdapter(this);
 
@@ -603,16 +616,6 @@ public class ExperimentListFragment extends Fragment
         return AppSingleton.getInstance(applicationContext).getExperimentLibraryManager(appAccount);
     }
 
-    public void setSyncProgressBarVisible(boolean visible) {
-        syncProgressBarVisible = visible;
-        // This fragment may be gone by the time this code executes.
-        if (isFragmentGone()) {
-            return;
-        }
-        getView().findViewById(R.id.syncIndeterminateBar)
-                .setVisibility(visible ? View.VISIBLE : View.GONE);
-    }
-
     public void setExportProgressBarVisible(boolean visible) {
         exportProgressBarVisible = visible;
         // This fragment may be gone by the time this code executes.
@@ -722,8 +725,6 @@ public class ExperimentListFragment extends Fragment
     private void syncNow(String logMessage) {
         // This fragment may be gone by the time this code executes.
         if (isFragmentGone()) {
-            pullToRefreshLayout.stopRefreshing();
-
             return;
         }
         if (appAccount.isSignedIn() && GDriveShared.getCredentials(getContext()) != null) {
@@ -744,6 +745,7 @@ public class ExperimentListFragment extends Fragment
             }
         } else {
             loadExperiments();
+            pullToRefreshLayout.stopRefreshing();
         }
     }
 

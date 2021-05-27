@@ -2,9 +2,11 @@ package com.google.android.apps.forscience.whistlepunk;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.content.Intent;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 
 import androidx.annotation.AttrRes;
@@ -20,6 +22,10 @@ public class PullToRefreshLayout extends FrameLayout {
     private RecyclerView.OnScrollListener onScrollListener = null;
     private boolean refreshing = false;
     private OnRefreshListener onRefreshListener = null;
+    private View refreshStatusView = null;
+    private View refreshStatusIcon = null;
+    private RecyclerView recyclerView = null;
+    private Animation rotation = null;
 
     class MyOnScrollListener extends RecyclerView.OnScrollListener {
         @Override
@@ -44,11 +50,6 @@ public class PullToRefreshLayout extends FrameLayout {
 
     public PullToRefreshLayout(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init(context);
-    }
-
-    private void init(Context context) {
-
     }
 
     @Override
@@ -82,10 +83,17 @@ public class PullToRefreshLayout extends FrameLayout {
                     // user has pulled the refresh view to its extent,
                     // no need to increase the margin on the child.
                 } else {
-                    RecyclerView targetView = (RecyclerView) getChildAt(1);
-                    marginParams = (MarginLayoutParams) targetView.getLayoutParams();
-                    marginParams.topMargin = (int) (y - initialY);
-                    targetView.setLayoutParams(marginParams);
+                    float topMargin = y - initialY;
+                    // set opacity
+                    refreshStatusView.setAlpha(topMargin / MAX_REFRESH_HEIGHT);
+
+                    // set rotation
+                    refreshStatusIcon.setRotation(-90 + topMargin / MAX_REFRESH_HEIGHT * 90);
+
+                    // set position
+                    marginParams = (MarginLayoutParams) recyclerView.getLayoutParams();
+                    marginParams.topMargin = Math.round(topMargin);
+                    recyclerView.setLayoutParams(marginParams);
                 }
 
                 break;
@@ -101,6 +109,9 @@ public class PullToRefreshLayout extends FrameLayout {
                     // For demonstration purposes I have replaced it with a delay and finally called the resetMargin function()
                     if (onRefreshListener != null) {
                         refreshing = true;
+
+                        startIconRotation();
+
                         onRefreshListener.onRefresh();
                     } else {
                         resetMargin(MAX_REFRESH_HEIGHT);
@@ -111,17 +122,34 @@ public class PullToRefreshLayout extends FrameLayout {
         return super.onTouchEvent(event);
     }
 
+    private void startIconRotation() {
+        refreshStatusIcon.setEnabled(false);
+        stopIconRotation();
+        rotation = AnimationUtils.loadAnimation(refreshStatusIcon.getContext(), R.anim.refresh_rotate);
+        refreshStatusIcon.startAnimation(rotation);
+        refreshStatusIcon.setOnClickListener(null);
+    }
+    private void stopIconRotation() {
+        if (rotation != null) {
+            rotation.cancel();
+            rotation = null;
+        }
+    }
+
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
 
-        MAX_REFRESH_HEIGHT = getChildAt(0).getHeight();
-        RecyclerView targetView = (RecyclerView) getChildAt(1);
+        refreshStatusView = findViewById(R.id.refresh_status);
+        refreshStatusIcon = findViewById(R.id.refresh_status_icon);
+        recyclerView = findViewById(R.id.details);
+
+        MAX_REFRESH_HEIGHT = refreshStatusView.getHeight();
 
         if (onScrollListener == null) {
             onScrollListener = new MyOnScrollListener();
 
-            targetView.addOnScrollListener(onScrollListener);
+            recyclerView.addOnScrollListener(onScrollListener);
         }
     }
 
@@ -129,13 +157,21 @@ public class PullToRefreshLayout extends FrameLayout {
         initialY = 0f;
         refreshing = false;
 
-        ValueAnimator marginAnimator = ValueAnimator.ofInt(topMargin, 0);
+        ValueAnimator marginAnimator = ValueAnimator.ofFloat(topMargin, 0);
 
         marginAnimator.addUpdateListener(valueAnimator -> {
-            RecyclerView targetView = (RecyclerView) getChildAt(1);
-            MarginLayoutParams params = (MarginLayoutParams) targetView.getLayoutParams();
-            params.topMargin = (int) valueAnimator.getAnimatedValue();
-            targetView.setLayoutParams(params);
+            float value = (float) valueAnimator.getAnimatedValue();
+
+            // set opacity
+            refreshStatusView.setAlpha(value / MAX_REFRESH_HEIGHT);
+
+            // set rotation
+            refreshStatusIcon.setRotation(-90 + value / MAX_REFRESH_HEIGHT * 90);
+
+            // set position
+            MarginLayoutParams params = (MarginLayoutParams) recyclerView.getLayoutParams();
+            params.topMargin = Math.round(value);
+            recyclerView.setLayoutParams(params);
         });
         marginAnimator.start();
     }
@@ -144,7 +180,11 @@ public class PullToRefreshLayout extends FrameLayout {
         onRefreshListener = listener;
     }
     public void stopRefreshing() {
-        resetMargin(MAX_REFRESH_HEIGHT);
+        if (refreshing) {
+            resetMargin(MAX_REFRESH_HEIGHT);
+        }
+
+        stopIconRotation();
     }
 };
 
