@@ -57,27 +57,10 @@
         android:maxWidth="360dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:text="@string/drive_setup_step_3_description"
+        android:text="@string/arduino_auth_settings_drive_start_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/drive_header" />
-
-    <TextView
-        android:id="@+id/drive_folder"
-        style="@style/ArduinoAuth_Text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/drive_step3_folder_bg"
-        android:drawablePadding="10dp"
-        android:gravity="center"
-        android:maxWidth="300dp"
-        android:padding="10dp"
-        android:textColor="@color/arduino_gris"
-        app:drawableStartCompat="@drawable/ic_drive_folder"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/drive_description" />
 
     <TextView
         android:id="@+id/drive_btn_sync"
@@ -90,5 +73,24 @@
         android:text="@string/arduino_auth_settings_drive_start_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/drive_folder" />
+        app:layout_constraintTop_toBottomOf="@id/drive_description" />
+
+    <TextView
+        android:id="@+id/drive_notice"
+        style="@style/ArduinoAuth_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:maxWidth="360dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/arduino_auth_settings_drive_start_notice"
+        android:textSize="14sp"
+        android:textColor="@color/arduino_asbestos"
+        android:lineSpacingExtra="5sp"
+        android:letterSpacing="0.01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/drive_btn_sync" />
 </androidx.constraintlayout.widget.ConstraintLayout>

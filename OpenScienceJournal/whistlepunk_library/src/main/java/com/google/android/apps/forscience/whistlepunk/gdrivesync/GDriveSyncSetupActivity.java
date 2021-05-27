@@ -448,8 +448,6 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
     private void goToStep4() {
         GDriveFile f = mPath.get(mPath.size() - 1);
         mFolderId = f.id;
-        mStepDescription.setText(getString(R.string.arduino_auth_settings_drive_start_text));
-        mStepFolder.setText(f.name);
         mViewPager.setCurrentItem(3, true);
     }
 
