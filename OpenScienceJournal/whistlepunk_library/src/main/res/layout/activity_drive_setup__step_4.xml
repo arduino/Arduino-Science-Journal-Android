@@ -62,6 +62,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/drive_header" />
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cb_agree_terms_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:maxWidth="360dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/drive_description">
+
+        <CheckBox
+            android:id="@+id/cb_agree_terms"
+            style="@style/ArduinoAuth_CheckBox"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:checked="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cb_agree_terms_label"
+            style="@style/ArduinoAuth_Text.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:gravity="start|top"
+            android:labelFor="@id/cb_option_newsletter"
+            android:text="Lorem ipsum dolor sit amet consequietat audire labor at ludo"
+            app:layout_constraintWidth_max="240dp"
+            app:layout_constraintStart_toEndOf="@id/cb_agree_terms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <TextView
         android:id="@+id/drive_btn_sync"
         style="@style/ArduinoAuth_Button"
@@ -70,10 +110,11 @@
         android:layout_marginTop="50dp"
         android:paddingStart="30dp"
         android:paddingEnd="30dp"
+        android:enabled="false"
         android:text="@string/arduino_auth_settings_drive_start_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/drive_description" />
+        app:layout_constraintTop_toBottomOf="@id/cb_agree_terms_wrapper" />
 
     <TextView
         android:id="@+id/drive_notice"

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -469,7 +470,15 @@ public class GDriveSyncSetupActivity extends AppCompatActivity {
 
     private View onCreateStep4(@NonNull ViewGroup container) {
         final View view = getLayoutInflater().inflate(R.layout.activity_drive_setup__step_4, container, false);
-        view.findViewById(R.id.drive_btn_sync).setOnClickListener(v -> onCompleted());
+        final View syncButton = view.findViewById(R.id.drive_btn_sync);
+        final CheckBox termsCheckbox = view.findViewById(R.id.cb_agree_terms);
+        final TextView termsCheckboxLabel = view.findViewById(R.id.cb_agree_terms_label);
+
+        syncButton.setEnabled(false);
+        termsCheckbox.setOnCheckedChangeListener((buttonView, isChecked) -> syncButton.setEnabled(isChecked));
+        termsCheckboxLabel.setOnClickListener(v -> termsCheckbox.toggle());
+        syncButton.setOnClickListener(v -> onCompleted());
+
         return view;
     }
 
