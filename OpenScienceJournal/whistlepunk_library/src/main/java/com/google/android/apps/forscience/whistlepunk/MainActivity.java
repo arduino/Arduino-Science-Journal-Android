@@ -488,7 +488,7 @@ public class MainActivity extends ActivityWithNavigationView {
                 ExperimentListFragment.reuseOrCreateInstance(
                         fragmentManager.findFragmentByTag(EXPERIMENTS_FRAGMENT_TAG), currentAccount, shouldUsePanes());
 
-        setTitle(getString(R.string.title_activity_main, R.string.navigation_item_experiments));
+        setTitle(getString(R.string.title_activity_main, getString(R.string.navigation_item_experiments)));
 
         titleToRestore = getResources().getString(R.string.app_name);
         transaction.replace(R.id.content_container, fragment, EXPERIMENTS_FRAGMENT_TAG).commitAllowingStateLoss();
