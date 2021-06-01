@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Número de rotaciones por minuto.</string>
   <string name="sensor_desc_short_raw">Porcentaje de lectura sin procesar de un sensor externo.</string>
   <string name="sensor_desc_short_barometer">Presión atmosférica en hectopascales (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">El sensor de luz ambiental mide la luz en luxes, una medida de iluminación que depende de la cantidad de luz que entra y la superficie por la que se extiende. 
+  <string name="sensor_desc_first_paragraph_light">El sensor de luz ambiental mide la luz en luxes, una medida de iluminación que depende de la cantidad de luz que entra y la superficie por la que se extiende.
 
-La luna llena irradia cerca de un 1 lux de iluminación; un salón iluminado con lámparas normales, 50 luxes; la iluminación de un aula, así como el atardecer y el amanecer, unos 400 luxes; la luz del Sol indirecta, más de 10.000 luxes, y la luz del Sol directa, más de 30.000 luxes. 
+La luna llena irradia cerca de un 1 lux de iluminación; un salón iluminado con lámparas normales, 50 luxes; la iluminación de un aula, así como el atardecer y el amanecer, unos 400 luxes; la luz del Sol indirecta, más de 10.000 luxes, y la luz del Sol directa, más de 30.000 luxes.
 
 El lux es una unidad de medida no muy conocida. Cuando compramos bombillas, solemos hacerlo pensando en vatios, pero la potencia eléctrica no nos dice cuánto brilla, sino cuánta energía utiliza. Los lúmenes son una medida más útil cuando compramos bombillas, ya que nos indican cuánta luz emiten realmente. El lux, en cambio, señala la cantidad de luz que llega a una zona concreta.</string>
-  <string name="sensor_desc_second_paragraph_light">Como la luz se dispersa a medida que viaja por el espacio, el número de luxes disminuye conforme te alejas de una fuente de luz, a pesar de que dicha fuente sigue emitiendo la misma cantidad de luz en lúmenes. Si una superficie está oblicua con respecto a la fuente de luz, también recibe menos iluminación. Y ese es el motivo por el que las regiones ecuatoriales de la Tierra son mucho más cálidas que los gélidos polos. 
+  <string name="sensor_desc_second_paragraph_light">Como la luz se dispersa a medida que viaja por el espacio, el número de luxes disminuye conforme te alejas de una fuente de luz, a pesar de que dicha fuente sigue emitiendo la misma cantidad de luz en lúmenes. Si una superficie está oblicua con respecto a la fuente de luz, también recibe menos iluminación. Y ese es el motivo por el que las regiones ecuatoriales de la Tierra son mucho más cálidas que los gélidos polos.
 
 Por cierto, el objetivo del sensor de luz de tu teléfono es controlar el nivel de iluminación de la pantalla, que se ajusta en función de lo tenue o luminoso que sea el entorno. Dentro del sensor de luz, hay un diminuto semiconductor que reacciona a la luz produciendo una corriente eléctrica pequeña pero medible. Este fenómeno se conoce como efecto fotoeléctrico. Se emplean sensores similares en algunas farolas para que se enciendan cuando comienza a oscurecer.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Tu teléfono contiene un dispositivo diseñado para detectar campos magnéticos: el magnetómetro. Este pequeño sensor tiene 3 ejes y utiliza las corrientes eléctricas para detectar la intensidad del campo magnético en las 3 dimensiones del espacio. Si combinamos los datos de los 3 ejes, podemos crear un sensor con el que medir la intensidad total de un campo magnético. 
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Tu teléfono contiene un dispositivo diseñado para detectar campos magnéticos: el magnetómetro. Este pequeño sensor tiene 3 ejes y utiliza las corrientes eléctricas para detectar la intensidad del campo magnético en las 3 dimensiones del espacio. Si combinamos los datos de los 3 ejes, podemos crear un sensor con el que medir la intensidad total de un campo magnético.
 
-Algunos magnetómetros detectan los campos magnéticos mediante el efecto Hall (la tendencia de dichos campos a desviar la carga en movimiento conforme esta se transmite). Los magnetómetros más modernos incluyen magnetorresistores, es decir, aleaciones de metal que modifican su resistencia en respuesta a los campos magnéticos. 
+Algunos magnetómetros detectan los campos magnéticos mediante el efecto Hall (la tendencia de dichos campos a desviar la carga en movimiento conforme esta se transmite). Los magnetómetros más modernos incluyen magnetorresistores, es decir, aleaciones de metal que modifican su resistencia en respuesta a los campos magnéticos.
 
 ¿Por qué hay un magnetómetro en tu teléfono? Muy sencillo: tu orientación espacial es muy útil para la brújula integrada y las aplicaciones de navegación, sobre todo para las que dan indicaciones mediante el GPS.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">El magnetómetro de tu teléfono reacciona enseguida ante imanes, corrientes eléctricas y objetos de metal. Sin embargo, este dispositivo siempre muestra una lectura baja pero superior a cero, que refleja el campo magnético terrestre.</string>
-  <string name="sensor_desc_first_paragraph_acc">Los objetos que están quietos tienden a quedarse como están, y los que están en movimiento tienden a seguir moviéndose. A esto lo llamamos inercia. La primera ley de Newton lo explica de manera más formal: un objeto continúa en su estado de reposo o de movimiento a menos que actúe sobre él una fuerza no equilibrada. 
+  <string name="sensor_desc_first_paragraph_acc">Los objetos que están quietos tienden a quedarse como están, y los que están en movimiento tienden a seguir moviéndose. A esto lo llamamos inercia. La primera ley de Newton lo explica de manera más formal: un objeto continúa en su estado de reposo o de movimiento a menos que actúe sobre él una fuerza no equilibrada.
 
-Cuando una fuerza no equilibrada hace que se mueva un objeto, decimos que el objeto se acelera, es decir, que su velocidad varía; puede que se acelere, que frene o que cambie de dirección. La aceleración se mide como un cambio de la velocidad (metros por segundo) en el tiempo, o metros por segundo al cuadrado (m/s²). 
+Cuando una fuerza no equilibrada hace que se mueva un objeto, decimos que el objeto se acelera, es decir, que su velocidad varía; puede que se acelere, que frene o que cambie de dirección. La aceleración se mide como un cambio de la velocidad (metros por segundo) en el tiempo, o metros por segundo al cuadrado (m/s²).
 
 Tu teléfono tiene un dispositivo que mide estos cambios en el movimiento: un acelerómetro. Dentro de él se mueven libremente pequeñas masas suspendidas. Los cambios en el movimiento hacen que estas masas se desplacen, igual que tu cabeza se inclina hacia delante cuando vas en coche y da un frenazo. Al medir estas oscilaciones provocadas por la inercia, el acelerómetro del teléfono puede detectar los cambios en el movimiento y la orientación. Esto sirve para cambiar el modo de la pantalla de horizontal a vertical, para jugar a videojuegos, etc.</string>
   <string name="sensor_desc_second_paragraph_acc">Puede que hayas visto la aceleración persistente que hay en el eje Z, incluso cuando el teléfono está quieto sobre la mesa. Es la aceleración que experimentamos en la superficie de la Tierra debido a la fuerza de la gravedad, de unos 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Los sonidos se producen por vibración. Tu voz, por ejemplo, suena porque vibran las cuerdas vocales que tienes en la garganta. Esas vibraciones crean zonas de presiones bajas y altas que se van alternando y se proyectan hacia fuera, como sucede con las ondas circulares que se crean en un estanque cuando lanzas una piedra.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Todos los sonidos se pueden describir en términos de frecuencia e intensidad. 
+  <string name="sensor_desc_second_paragraph_decibel">Todos los sonidos se pueden describir en términos de frecuencia e intensidad.
 
-La intensidad (o volumen) es lo que medimos aquí con el sensor de intensidad del sonido de Science Journal, en decibelios (dB). Depende de la distancia a la que se mueve un objeto vibratorio cada vez que vibra. Cuanto mayor es la intensidad, más fuertes percibimos los sonidos. 
+La intensidad (o volumen) es lo que medimos aquí con el sensor de intensidad del sonido de Science Journal, en decibelios (dB). Depende de la distancia a la que se mueve un objeto vibratorio cada vez que vibra. Cuanto mayor es la intensidad, más fuertes percibimos los sonidos.
 
-La frecuencia (o tono) de una onda sonora equivale a su frecuencia de vibración. Cuanto más rápido vibra un objeto, más agudo es su sonido. El sensor de intensidad de Science Journal no mide la frecuencia, solo el volumen. 
+La frecuencia (o tono) de una onda sonora equivale a su frecuencia de vibración. Cuanto más rápido vibra un objeto, más agudo es su sonido. El sensor de intensidad de Science Journal no mide la frecuencia, solo el volumen.
 
-Es importante señalar que el micrófono de tu dispositivo está diseñado para percibir incluso los cambios más sutiles en las ondas sonoras a lo largo del tiempo, pero no para determinar el tamaño absoluto de cada onda. Hemos tratado de elegir un código que probablemente dé como resultado cifras similares a las que aparecen abajo, aunque cada dispositivo puede mostrar números superiores o inferiores de forma constante. Los científicos suelen calibrar este tipo de sensores con un patrón de referencia conocido. A día de hoy, Science Journal es capaz de determinar si la intensidad del sonido del próximo tren que cojas es mayor que el próximo concierto de rock al que asistas, siempre y cuando lleves el mismo teléfono en ambas ocasiones. 
+Es importante señalar que el micrófono de tu dispositivo está diseñado para percibir incluso los cambios más sutiles en las ondas sonoras a lo largo del tiempo, pero no para determinar el tamaño absoluto de cada onda. Hemos tratado de elegir un código que probablemente dé como resultado cifras similares a las que aparecen abajo, aunque cada dispositivo puede mostrar números superiores o inferiores de forma constante. Los científicos suelen calibrar este tipo de sensores con un patrón de referencia conocido. A día de hoy, Science Journal es capaz de determinar si la intensidad del sonido del próximo tren que cojas es mayor que el próximo concierto de rock al que asistas, siempre y cuando lleves el mismo teléfono en ambas ocasiones.
 
-Otro aspecto destacable es que hay diferencias entre la intensidad del sonido (o intensidad acústica), el nivel de intensidad del sonido y la presión sonora. Aquí los tratamos como sinónimos, pero si investigas un poco en Internet, descubrirás las diferencias. 
+Otro aspecto destacable es que hay diferencias entre la intensidad del sonido (o intensidad acústica), el nivel de intensidad del sonido y la presión sonora. Aquí los tratamos como sinónimos, pero si investigas un poco en Internet, descubrirás las diferencias.
 
-El sonido más débil que puede percibir el oído humano medio es el que se ha fijado como 0 dB. Una conversación normal corresponde a unos 60 dB y los sonidos que sobrepasan los 140 dB resultan dolorosos para nuestros oídos. Sin embargo, no todos los sonidos dañinos provocan dolor. Una exposición continua a sonidos de 90 dB (el volumen de una aspiradora) puede llegar a causar pérdida auditiva. 
+El sonido más débil que puede percibir el oído humano medio es el que se ha fijado como 0 dB. Una conversación normal corresponde a unos 60 dB y los sonidos que sobrepasan los 140 dB resultan dolorosos para nuestros oídos. Sin embargo, no todos los sonidos dañinos provocan dolor. Una exposición continua a sonidos de 90 dB (el volumen de una aspiradora) puede llegar a causar pérdida auditiva.
 
-La escala de decibelios es logarítmica, lo que complica un poco las cosas: una fuente de sonido de 40 dB no es el doble de intensa que una de 20 dB, sino que es 100 veces más intensa. Por otra parte, si un despertador produce un sonido de 70 dB, dos no emiten 140 dB, sino 73 dB. Como ves, se trata de una escala peculiar. 
+La escala de decibelios es logarítmica, lo que complica un poco las cosas: una fuente de sonido de 40 dB no es el doble de intensa que una de 20 dB, sino que es 100 veces más intensa. Por otra parte, si un despertador produce un sonido de 70 dB, dos no emiten 140 dB, sino 73 dB. Como ves, se trata de una escala peculiar.
 
-10 dB: crujido de hojas 
-20 dB: un susurro a metro y medio 
-30 dB: un susurro suave 
-50 dB: lluvia 
-60 dB: conversación normal 
-90 dB: batidora 
-100dB: coche sin silenciador 
-110 dB: grito en la oreja 
-120 dB: trueno 
-130 dB: martillo neumático 
+10 dB: crujido de hojas
+20 dB: un susurro a metro y medio
+30 dB: un susurro suave
+50 dB: lluvia
+60 dB: conversación normal
+90 dB: batidora
+100dB: coche sin silenciador
+110 dB: grito en la oreja
+120 dB: trueno
+130 dB: martillo neumático
 140 dB: avión despegando</string>
   <string name="sensor_desc_first_paragraph_pitch">Los sonidos se producen por vibración. Tu voz, por ejemplo, suena porque vibran las cuerdas vocales que tienes en la garganta. Esas vibraciones crean zonas de presiones bajas y altas que se van alternando y se proyectan hacia fuera, como sucede con las ondas circulares que se forman en un estanque cuando lanzas una piedra.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Todos los sonidos se pueden describir en términos de frecuencia e intensidad. La frecuencia (o tono) de una onda sonora equivale a su frecuencia de vibración. Cuanto más rápido vibra un objeto, más agudo es su sonido. Esta vibración se mide en hercios (Hz), donde 1 Hz equivale a 1 vibración/segundo. 
+  <string name="sensor_desc_second_paragraph_pitch">Todos los sonidos se pueden describir en términos de frecuencia e intensidad. La frecuencia (o tono) de una onda sonora equivale a su frecuencia de vibración. Cuanto más rápido vibra un objeto, más agudo es su sonido. Esta vibración se mide en hercios (Hz), donde 1 Hz equivale a 1 vibración/segundo.
 
-El espectro audible del ser humano se encuentra entre 20 y 20.000 Hz. La tecla más grave de un piano produce un sonido con una frecuencia de 27,5 Hz y la más aguda alcanza 4186,01 Hz. 
+El espectro audible del ser humano se encuentra entre 20 y 20.000 Hz. La tecla más grave de un piano produce un sonido con una frecuencia de 27,5 Hz y la más aguda alcanza 4186,01 Hz.
 
 El punto rojo indica la proximidad del tono detectado a la nota musical más similar. Si el tono es más grave (bemol), el punto aparecerá a la izquierda. Por el contrario, si es más agudo (sostenido), el punto aparecerá a la derecha.</string>
   <string name="pitch_low_content_description">grave</string>
@@ -255,22 +255,22 @@ El punto rojo indica la proximidad del tono detectado a la nota musical más sim
   <string name="pitch_sharper_than_flat_note_content_description">%3$s semitonos más agudo que %1$s bemol, %2$s.ª octava</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s semitonos más agudo que %1$s sostenido, %2$s.ª octava</string>
   <string name="pitch_high_content_description">agudo</string>
-  <string name="sensor_desc_first_paragraph_rotation">Las revoluciones por minuto (RPM) son una medida de frecuencia de rotación en torno a un eje fijo en un minuto. 
+  <string name="sensor_desc_first_paragraph_rotation">Las revoluciones por minuto (RPM) son una medida de frecuencia de rotación en torno a un eje fijo en un minuto.
 
 Cuando el molinillo de viento gira, hace que rote el disco del codificador:</string>
   <string name="sensor_desc_second_paragraph_rotation">Esto genera periodos de luz y oscuridad en el sensor que se registran en Science Journal como una rotación.</string>
-  <string name="sensor_desc_first_paragraph_raw">Los datos que se muestran aquí proceden de la comunicación de un sensor externo con tu teléfono a través de Bluetooth. 
+  <string name="sensor_desc_first_paragraph_raw">Los datos que se muestran aquí proceden de la comunicación de un sensor externo con tu teléfono a través de Bluetooth.
 
 El valor que aparece muestra el porcentaje de lectura sin procesar obtenido directamente del microcontrolador. Suele ser el porcentaje de la caída de tensión en un sensor.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth es un estándar de tecnología inalámbrica que emplea ondas de radio para intercambiar datos en distancias cortas desde dispositivos móviles y fijos.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Los datos que se muestran aquí proceden de la comunicación de un sensor externo con tu teléfono a través de Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth es un estándar de tecnología inalámbrica que emplea ondas de radio para intercambiar datos en distancias cortas desde dispositivos móviles y fijos.</string>
-  <string name="sensor_desc_first_paragraph_barometer">No lo notamos, pero todos nosotros vivimos en las profundidades de un enorme océano de aire: la atmósfera terrestre, que tiene una altitud de 40 kilómetros (130.000 pies). El peso de todo este aire que cae sobre nosotros genera lo que se conoce como presión atmosférica. 
+  <string name="sensor_desc_first_paragraph_barometer">No lo notamos, pero todos nosotros vivimos en las profundidades de un enorme océano de aire: la atmósfera terrestre, que tiene una altitud de 40 kilómetros (130.000 pies). El peso de todo este aire que cae sobre nosotros genera lo que se conoce como presión atmosférica.
 
 A nivel del mar, dicha presión ejerce una fuerza de 6,35 kilos por cada 6,45 centímetros cuadrados. En otras palabras, en la superficie de un folio ejerce una fuerza de 590 kilos.</string>
-  <string name="sensor_desc_second_paragraph_barometer">No notamos esta presión aplastante porque ya estamos acostumbrados a ella. Sí la percibimos cuando varía, aunque sea ligeramente. Por ejemplo, cuando volamos en avión o nos encontramos a gran altura. Las condiciones meteorológicas también afectan a la presión atmosférica: se reduce cuando hay tormenta o el aire es inestable, y aumenta cuando el aire se estabiliza y el cielo se despeja. 
+  <string name="sensor_desc_second_paragraph_barometer">No notamos esta presión aplastante porque ya estamos acostumbrados a ella. Sí la percibimos cuando varía, aunque sea ligeramente. Por ejemplo, cuando volamos en avión o nos encontramos a gran altura. Las condiciones meteorológicas también afectan a la presión atmosférica: se reduce cuando hay tormenta o el aire es inestable, y aumenta cuando el aire se estabiliza y el cielo se despeja.
 
-El barómetro digital del teléfono mide la presión atmosférica en hectopascales (1 pascal es la presión que ejerce una fuerza de 1 newton sobre una superficie de 1 metro cuadrado, y 1 hectopascal equivale a 100 pascales). Como sabrás, los meteorólogos miden la presión atmosférica en milibares. Es una unidad más conocida y equivalente al hectopascal. 
+El barómetro digital del teléfono mide la presión atmosférica en hectopascales (1 pascal es la presión que ejerce una fuerza de 1 newton sobre una superficie de 1 metro cuadrado, y 1 hectopascal equivale a 100 pascales). Como sabrás, los meteorólogos miden la presión atmosférica en milibares. Es una unidad más conocida y equivalente al hectopascal.
 
 Quizá te preguntes por qué hay teléfonos capaces de medir la presión atmosférica. Esta presión varía enormemente incluso con pequeños cambios de elevación (por ejemplo, cuando subes unas escaleras). Por lo tanto, los barómetros digitales de los teléfonos sirven para detectar cambios de ubicación y te permiten saber en qué planta del edificio te encuentras o si conduces por la parte superior o inferior de un puente.</string>
   <string name="run_review_activity_label">Revisión</string>
@@ -484,7 +484,7 @@ Aviso relacionado con los permisos:
   <string name="sensor_desc_short_compass">La orientación del teléfono con respecto al campo magnético terrestre.</string>
   <string name="sensor_desc_first_paragraph_compass">Puede que hayas oído ya que la Tierra tiene un campo magnético. Lo que quizá no sepas es que tu móvil contiene un dispositivo diseñado para detectar campos magnéticos: el magnetómetro. Combinando los datos de este instrumento con la orientación espacial del móvil, podemos crear una brújula digital.
 
-Las brújulas tradicionales son magnetómetros de tecnología menos avanzada: contienen una aguja imantada que gira para alinearse con el campo magnético que la rodea. Dentro de tu teléfono no hay ninguna brújula en miniatura, sino un pequeño sensor con 3 ejes que sirve para detectar la intensidad del campo magnético en las 3 dimensiones del espacio a través de la corriente eléctrica. No obstante, esto no es suficiente para crear una brújula. 
+Las brújulas tradicionales son magnetómetros de tecnología menos avanzada: contienen una aguja imantada que gira para alinearse con el campo magnético que la rodea. Dentro de tu teléfono no hay ninguna brújula en miniatura, sino un pequeño sensor con 3 ejes que sirve para detectar la intensidad del campo magnético en las 3 dimensiones del espacio a través de la corriente eléctrica. No obstante, esto no es suficiente para crear una brújula.
 
 ¿Que por qué hace falta combinar los datos del magnetómetro con la orientación del teléfono? Saber este dato nos permite calcular la rotación magnética incluso cuando el teléfono no está en el mismo plano que el campo magnético terrestre. Sabemos que la gravedad es perpendicular a dicho campo magnético, así que podemos usar la dirección de la gravedad, captada mediante los sensores del acelerómetro, para determinar qué cantidad del campo magnético se encuentra en el mismo plano que el campo magnético de la Tierra.</string>
   <string name="sensor_desc_second_paragraph_compass">Puede que hayas notado que la brújula no solo reacciona ante el campo magnético de la Tierra, sino también ante cualquier campo de este tipo que esté a su alrededor: si hay imanes, corrientes eléctricas u objetos de metal, es probable que el magnetómetro del teléfono se mueva y la indicación de la brújula varíe. Si quieres que esta se alinee con el campo magnético terrestre, ve a un espacio abierto (preferiblemente en el exterior y lejos de los tendidos eléctricos). Para calibrar el magnetómetro, es muy útil realizar un movimiento en forma de 8 con el teléfono en la mano.</string>
@@ -497,9 +497,9 @@ Las brújulas tradicionales son magnetómetros de tecnología menos avanzada: co
   <string name="month_year_format">MMMM yyyy</string>
   <string name="linear_accelerometer">Acelerómetro lineal</string>
   <string name="sensor_desc_short_linear_acc">La aceleración total del móvil, excluyendo la fuerza de la gravedad, en m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Los objetos que están quietos tienden a quedarse como están, y los que están en movimiento tienden a seguir moviéndose. A esto lo llamamos inercia. La Primera Ley de Newton lo explica de manera más formal: un objeto continúa en su estado de reposo o de movimiento a menos que actúe sobre él una fuerza no equilibrada. 
+  <string name="sensor_desc_first_paragraph_linear_acc">Los objetos que están quietos tienden a quedarse como están, y los que están en movimiento tienden a seguir moviéndose. A esto lo llamamos inercia. La Primera Ley de Newton lo explica de manera más formal: un objeto continúa en su estado de reposo o de movimiento a menos que actúe sobre él una fuerza no equilibrada.
 
-Cuando una fuerza no equilibrada hace que se mueva un objeto, decimos que el objeto se acelera, es decir, que su velocidad varía; puede que se acelere, que frene o que cambie de dirección. La aceleración se mide como un cambio de la velocidad (metros por segundo) en el tiempo, o metros por segundo al cuadrado (m/s²). 
+Cuando una fuerza no equilibrada hace que se mueva un objeto, decimos que el objeto se acelera, es decir, que su velocidad varía; puede que se acelere, que frene o que cambie de dirección. La aceleración se mide como un cambio de la velocidad (metros por segundo) en el tiempo, o metros por segundo al cuadrado (m/s²).
 
 Tu teléfono tiene un dispositivo que mide estos cambios en el movimiento: el acelerómetro. Dentro de él se mueven libremente pequeñas masas suspendidas. Los cambios en el movimiento hacen que estas masas se desplacen, igual que tu cabeza se inclina hacia delante cuando vas en coche y da un frenazo. Al medir estas oscilaciones provocadas por la inercia, el acelerómetro del teléfono puede detectar los cambios en el movimiento y la orientación. Esto sirve para cambiar el modo de la pantalla de horizontal a vertical, jugar a videojuegos, etc.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">El sensor del acelerómetro lineal combinado registra la aceleración total en los 3 ejes del teléfono, excluyendo la gravedad.</string>
@@ -522,7 +522,7 @@ Tu teléfono tiene un dispositivo que mide estos cambios en el movimiento: el ac
   <string name="first_experiment_title">Te damos la bienvenida a Science Journal</string>
   <string name="first_experiment_text_note">Prueba a tomar notas y registrar datos mediante la barra de herramientas de abajo.</string>
   <string name="first_experiment_picture_note_caption">¡Te damos la bienvenida a Science Journal!</string>
-  <string name="first_experiment_second_text_note">Encuentra actividades interesantes en 
+  <string name="first_experiment_second_text_note">Encuentra actividades interesantes en
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Elige una foto para el experimento</string>
   <string name="btn_take_picture_content_description">Hacer foto</string>
@@ -758,8 +758,8 @@ Si ya tienes datos en este dispositivo, podrás guardar tus experimentos actuale
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -816,7 +816,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -920,5 +920,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>

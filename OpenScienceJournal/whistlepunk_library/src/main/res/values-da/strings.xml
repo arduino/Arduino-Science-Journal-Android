@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Antallet af rotationer pr. minut</string>
   <string name="sensor_desc_short_raw">Procentangivelsen fra den ubehandlede aflæsning fra en ekstern sensor.</string>
   <string name="sensor_desc_short_barometer">Det atmosfæriske tryk målt i hektopascal (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Sensoren for omgivende lys måler lys i lux, der er et mål for lys, som afhænger af mængden af indfaldende lys og området, som lyset spredes over. 
+  <string name="sensor_desc_first_paragraph_light">Sensoren for omgivende lys måler lys i lux, der er et mål for lys, som afhænger af mængden af indfaldende lys og området, som lyset spredes over.
 
-En fuldmåne giver en belysning på ca. 1 lux; en normal stue, der er oplyst vha. lamper, er på ca. 50 lux; belysningen i et klasselokale eller en solopgang eller solnedgang er på ca. 400 lux. Dagslys (indirekte lys) er på over 10.000 lux, og direkte sol er på over 30.000 lux. 
+En fuldmåne giver en belysning på ca. 1 lux; en normal stue, der er oplyst vha. lamper, er på ca. 50 lux; belysningen i et klasselokale eller en solopgang eller solnedgang er på ca. 400 lux. Dagslys (indirekte lys) er på over 10.000 lux, og direkte sol er på over 30.000 lux.
 
 De fleste af os er ikke fortrolige med betegnelsen lux. Når vi køber lyspærer, ser vi ofte på antallet af watt. Men wattangivelsen på en lyspære fortæller ikke noget om, hvor lysstærk pæren er, men derimod hvor meget energi, den bruger. Lumen er et bedre mål, når du er på indkøb efter lyspærer. Det fortæller, hvor meget lys, en pære udsender. Antallet af lux fortæller derimod, hvor meget af lyset, der når frem til et bestemt område.</string>
-  <string name="sensor_desc_second_paragraph_light">Lys spredes over afstand, og antallet af lux bliver derfor mindre, når du bevæger dig væk fra en lyskilde, selvom kilden stadig udsender den samme mængde lys målt i lumen. Et område, der drejes i forhold til en lyskilde, modtager også mindre lys. Dette er årsagen til, at områderne ved ækvator her på jorden er så meget varmere end de kolde poler. 
+  <string name="sensor_desc_second_paragraph_light">Lys spredes over afstand, og antallet af lux bliver derfor mindre, når du bevæger dig væk fra en lyskilde, selvom kilden stadig udsender den samme mængde lys målt i lumen. Et område, der drejes i forhold til en lyskilde, modtager også mindre lys. Dette er årsagen til, at områderne ved ækvator her på jorden er så meget varmere end de kolde poler.
 
 Forresten bruges lyssensoren i din telefon til at styre skærmens lysniveau, så det justeres i forhold til svagt eller kraftigt lys i omgivelserne. Lyssensoren indeholder en lille halvleder, der reagerer på indfaldende lys ved at skabe en lille, men målbar elektrisk strøm, der opstår via et fænomen, der kaldes den fotoelektriske effekt. I nogle gadelamper bruges tilsvarende sensorer til at tænde lyset, når mørket falder på.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Din telefon indeholder en enhed til at registrere magnetfelter: Et magnetometer. Denne lillebitte sensor med tre akser bruger elektrisk strøm til at registrere magnetfeltets styrke i de tre rumlige dimensioner. Ved at kombinere data fra alle tre akser kan vi skabe en sensor, der registrerer magnetfeltets samlede styrke. 
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Din telefon indeholder en enhed til at registrere magnetfelter: Et magnetometer. Denne lillebitte sensor med tre akser bruger elektrisk strøm til at registrere magnetfeltets styrke i de tre rumlige dimensioner. Ved at kombinere data fra alle tre akser kan vi skabe en sensor, der registrerer magnetfeltets samlede styrke.
 
-Nogle magnetometre registrerer magnetfelter ved hjælp af Hall-effekten, som er magnetfelters tendens til at afbøje en ladning i bevægelse. Nyere magnetometre benytter sig af magnetoresistorer, som er metalblandinger, hvis modstand ændres som respons på magnetfelter. 
+Nogle magnetometre registrerer magnetfelter ved hjælp af Hall-effekten, som er magnetfelters tendens til at afbøje en ladning i bevægelse. Nyere magnetometre benytter sig af magnetoresistorer, som er metalblandinger, hvis modstand ændres som respons på magnetfelter.
 
 Hvorfor har en telefon brug for et magnetometer? Det kan være nyttigt for indbyggede kompas- og navigationsapps at kende din rumlige position, især for dem, der giver dig en detaljeret rutevejledning.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magneter, elektrisk strøm og metalgenstande vil nemt lede din telefons magnetometer i den ene eller anden retning. Men selv midt på en åben plads vil magnetometeret i din telefon altid vise en lav måling, der ikke er lig med nul: Det er jordens magnetfelt!</string>
-  <string name="sensor_desc_first_paragraph_acc">Objekter har en tendens til at blive, hvor de er, eller fortsætte en eventuel igangværende bevægelse. Denne tendens kaldes for interti. Newtons første lov udtrykker denne ide formelt: Et objekt fortsætter sin bevægelsestilstand, medmindre det påvirkes af en ubalanceret kraft. 
+  <string name="sensor_desc_first_paragraph_acc">Objekter har en tendens til at blive, hvor de er, eller fortsætte en eventuel igangværende bevægelse. Denne tendens kaldes for interti. Newtons første lov udtrykker denne ide formelt: Et objekt fortsætter sin bevægelsestilstand, medmindre det påvirkes af en ubalanceret kraft.
 
-Når en ubalanceret kraft får et objekt til at bevæge sig, siger man, at objektet accelererer: Objektets hastighed eller fart ændres, enten ved forøgelse eller reduktion af hastigheden, eller ved at bevægelsesretningen ændres. Acceleration måles som ændring af hastighed (meter pr. sekund) over tid, eller som meter pr. sekund i anden (m/s²). 
+Når en ubalanceret kraft får et objekt til at bevæge sig, siger man, at objektet accelererer: Objektets hastighed eller fart ændres, enten ved forøgelse eller reduktion af hastigheden, eller ved at bevægelsesretningen ændres. Acceleration måles som ændring af hastighed (meter pr. sekund) over tid, eller som meter pr. sekund i anden (m/s²).
 
 Din telefon har en enhed, der kan måle disse ændringer af bevægelse. Enheden hedder et accelerometer. Et accelerometer indeholder små masser, der kan bevæge sig frit. En ændring af bevægelsen får disse masser til at bevæge sig, lidt på samme måde som dit hoved har en tendens til at bevæge sig fremefter, når du sidder i en bil, der pludselig stopper. Ved at måle næsten umærkelige ændringer i intertien kan accelerometeret i en telefon registrere ændringer i bevægelse og retning. Dette er nyttigt, når skærmen skal skifte mellem liggende og stående tilstand, eller når du spiller spil på telefonen og meget mere.</string>
   <string name="sensor_desc_second_paragraph_acc">Du har sikkert bemærket en konstant acceleration langs Z-aksen, selv når telefonen ligger helt stille på et bord. Dette er den acceleration, vi oplever her på jordens overflade, der skyldes tyngdekraftens virkning (tyngdeaccelerationen), som er på ca. 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Lyd skabes af svingninger. For eksempel opstår lyden af din stemme på grund af svingninger i stemmebåndene i din hals. Svingningerne skaber områder med skiftevist lavt og højt lufttryk, der bevæger sig udefter, lidt på samme måde som ringe i vandet, når du kaster en sten i en sø.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Alle lyde kan beskrives ved hjælp af deres frekvens og deres intensitet. 
+  <string name="sensor_desc_second_paragraph_decibel">Alle lyde kan beskrives ved hjælp af deres frekvens og deres intensitet.
 
-Det er intensiteten, du måler med Science Journal, og det foregår i enheden decibel (dB). Intensiteten, eller lydstyrken, afhænger af den afstand, som et vibrerende objekt bevæger sig, hver gang det vibrerer. Vi oplever større intensitet som øget lydstyrke. 
+Det er intensiteten, du måler med Science Journal, og det foregår i enheden decibel (dB). Intensiteten, eller lydstyrken, afhænger af den afstand, som et vibrerende objekt bevæger sig, hver gang det vibrerer. Vi oplever større intensitet som øget lydstyrke.
 
-Frekvensen (også kaldet pitch eller tonehøjde) af en lydbølge svarer til dens vibrationshastighed. Jo hurtigere et objekt vibrerer, desto højere er tonehøjden af den resulterende lyd. Science Journal måler ikke frekvens – kun lydstyrke. 
+Frekvensen (også kaldet pitch eller tonehøjde) af en lydbølge svarer til dens vibrationshastighed. Jo hurtigere et objekt vibrerer, desto højere er tonehøjden af den resulterende lyd. Science Journal måler ikke frekvens – kun lydstyrke.
 
-Det er vigtigt at vide, at mikrofonen i din enhed er designet til at være meget følsom over for forskelle i lydbølger over tid, men ikke den enkelte lydbølges absolutte størrelse. Vi har forsøgt at udvælge kode, der med stor sandsynlighed kan producere tal, der ligger tæt på referencenumrene nedenfor, men hver enkelt enhed kan give tal, der konsekvent er højere eller lavere. Forskere vil normalt kalibrere en sensor som denne til en kendt måling. Indtil videre kan Science Journal fortælle dig, om lydstyrken på din næste togtur er højere end til din næste rockkoncert, men kun hvis du medbringer den samme telefon begge steder. 
+Det er vigtigt at vide, at mikrofonen i din enhed er designet til at være meget følsom over for forskelle i lydbølger over tid, men ikke den enkelte lydbølges absolutte størrelse. Vi har forsøgt at udvælge kode, der med stor sandsynlighed kan producere tal, der ligger tæt på referencenumrene nedenfor, men hver enkelt enhed kan give tal, der konsekvent er højere eller lavere. Forskere vil normalt kalibrere en sensor som denne til en kendt måling. Indtil videre kan Science Journal fortælle dig, om lydstyrken på din næste togtur er højere end til din næste rockkoncert, men kun hvis du medbringer den samme telefon begge steder.
 
-Det er også værd at vide, at der er væsentlige forskelle mellem \"lydintensitet\", \"lydintensitetsniveau\" og \"lydtryk\". Her behandler vi dem som det samme, men hvis du vil dykke længere ned i det, findes der mange onlineressourcer om forskellene. 
+Det er også værd at vide, at der er væsentlige forskelle mellem \"lydintensitet\", \"lydintensitetsniveau\" og \"lydtryk\". Her behandler vi dem som det samme, men hvis du vil dykke længere ned i det, findes der mange onlineressourcer om forskellene.
 
-Den mindste lyd, der kan opfattes af det menneskelige øre, er defineret som 0 dB. Almindelig samtale svarer til ca. 60 dB, og lyd over 140 dB giver smerter i det menneskelige øre. Lyd behøver imidlertid ikke at forårsage smerte for at være skadelig. Konstant udsættelse for lyd på 90 dB (svarer omtrent til lydstyrken af en støvsuger) kan med tiden medføre høretab. 
+Den mindste lyd, der kan opfattes af det menneskelige øre, er defineret som 0 dB. Almindelig samtale svarer til ca. 60 dB, og lyd over 140 dB giver smerter i det menneskelige øre. Lyd behøver imidlertid ikke at forårsage smerte for at være skadelig. Konstant udsættelse for lyd på 90 dB (svarer omtrent til lydstyrken af en støvsuger) kan med tiden medføre høretab.
 
-Decibelskalaen er logaritmisk og kan derfor være svær at gå til: En lydkilde på 40 dB er ikke dobbelt så intens som en lydkilde på 20 dB – den er 100 gange så intens! På samme skala har du et vækkeur, der ringer med 70 dB, men to vækkeure ringer ikke med 140 dB, de ringer med 73 dB. Som allerede nævnt er det en underlig skala. 
+Decibelskalaen er logaritmisk og kan derfor være svær at gå til: En lydkilde på 40 dB er ikke dobbelt så intens som en lydkilde på 20 dB – den er 100 gange så intens! På samme skala har du et vækkeur, der ringer med 70 dB, men to vækkeure ringer ikke med 140 dB, de ringer med 73 dB. Som allerede nævnt er det en underlig skala.
 
-10 dB raslende blade 
-20 dB hvisken over 1,5 meter 
-30 dB stille hvisken 
-50 dB regnvejr 
-60 dB almindelig samtale 
-90 dB blender 
-100 dB bil uden lydpotte 
-110 dB råben direkte ind i øret 
-120 dB torden 
-130 dB trykluftsbor 
+10 dB raslende blade
+20 dB hvisken over 1,5 meter
+30 dB stille hvisken
+50 dB regnvejr
+60 dB almindelig samtale
+90 dB blender
+100 dB bil uden lydpotte
+110 dB råben direkte ind i øret
+120 dB torden
+130 dB trykluftsbor
 140 dB et fly, der letter</string>
   <string name="sensor_desc_first_paragraph_pitch">Lyd skabes af svingninger. For eksempel opstår lyden af din stemme på grund af svingninger i stemmebåndene i din hals. Svingningerne skaber områder med skiftevist lavt og højt lufttryk, der bevæger sig udefter, lidt på samme måde som ringe i vandet, når du kaster en sten i en sø.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Alle lyde kan beskrives ved hjælp af deres frekvens og intensitet. Frekvensen (også kaldet pitch eller tonehøjde) af en lydbølge svarer til dens vibrationsrate. Jo hurtigere et objekt vibrerer, desto højere er tonehøjden for den resulterende lyd. Vi måler disse vibrationer i Hertz (Hz), hvor 1 Hertz = 1 vibration/sekund. 
+  <string name="sensor_desc_second_paragraph_pitch">Alle lyde kan beskrives ved hjælp af deres frekvens og intensitet. Frekvensen (også kaldet pitch eller tonehøjde) af en lydbølge svarer til dens vibrationsrate. Jo hurtigere et objekt vibrerer, desto højere er tonehøjden for den resulterende lyd. Vi måler disse vibrationer i Hertz (Hz), hvor 1 Hertz = 1 vibration/sekund.
 
-Mennesket kan høre lyde i frekvensområdet 20 til 20.000 Hz. Den laveste tangent på et flygel producerer en lyd med frekvensen 27,5 Hz, og den højeste tangent producerer en lyd med frekvensen 4.186,01 Hz. 
+Mennesket kan høre lyde i frekvensområdet 20 til 20.000 Hz. Den laveste tangent på et flygel producerer en lyd med frekvensen 27,5 Hz, og den højeste tangent producerer en lyd med frekvensen 4.186,01 Hz.
 
 Den røde prik indikerer, hvor tæt den registrerede tonehøjde er på den nærmeste skalatone. Hvis tonehøjden er lavere, vises prikken til venstre. Hvis tonehøjden er lavere, vises prikken til højre.</string>
   <string name="pitch_low_content_description">lavt toneleje</string>
@@ -255,22 +255,22 @@ Den røde prik indikerer, hvor tæt den registrerede tonehøjde er på den nærm
   <string name="pitch_sharper_than_flat_note_content_description">%3$s halvtonetrin højere end %1$ses, oktav %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s halvtonetrin højere end %1$sis, oktav %2$s</string>
   <string name="pitch_high_content_description">højt toneleje</string>
-  <string name="sensor_desc_first_paragraph_rotation">Rotationer pr. minut (RPM, rotations per minute) er et mål for antal omdrejninger pr. minut rundt om en fast akse. 
+  <string name="sensor_desc_first_paragraph_rotation">Rotationer pr. minut (RPM, rotations per minute) er et mål for antal omdrejninger pr. minut rundt om en fast akse.
 
 Når vindmøllen drejer, får den konverteringsskiven til at dreje rundt:</string>
   <string name="sensor_desc_second_paragraph_rotation">Dette skaber perioder med lys og mørke på sensoren, og dette registreres i Science Journal som rotation.</string>
-  <string name="sensor_desc_first_paragraph_raw">Dataene, der vises her, kommer fra kommunikation mellem en ekstern sensor og din telefon via Bluetooth. 
+  <string name="sensor_desc_first_paragraph_raw">Dataene, der vises her, kommer fra kommunikation mellem en ekstern sensor og din telefon via Bluetooth.
 
 Værdien viser procentdelen for den ubehandlede aflæsning direkte fra mikrocontrolleren. Dette er normalt det procentvise spændingsfald i en sensor.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth er en industristandard for teknologi til trådløs kommunikation, der bruger radiobølger til udveksling af data fra fastmonterede og mobilenheder over korte afstande.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Dataene, der vises her, kommer fra kommunikation mellem en ekstern sensor og din telefon via Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth er en industristandard for teknologi til trådløs kommunikation, der bruger radiobølger til udveksling af data fra fastmonterede og mobilenheder over korte afstande.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Selvom vi ikke lægger mærke til det, bor vi allesammen på bunden af et dybt hav med luft: Jordens atmosfære, som strækker sig op til 40 kilometers højde. Vægten af al den luft, der presses ned over os ovenfra, kaldes for atmosfærisk tryk. 
+  <string name="sensor_desc_first_paragraph_barometer">Selvom vi ikke lægger mærke til det, bor vi allesammen på bunden af et dybt hav med luft: Jordens atmosfære, som strækker sig op til 40 kilometers højde. Vægten af al den luft, der presses ned over os ovenfra, kaldes for atmosfærisk tryk.
 
 Ved havets overflade udøver det atmosfæriske tryk en kraft på 7 kg på hver kvadrattomme – det svarer til ca. 600 kg på et område med samme størrelse som et stykke papir i standardformat.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Vi bemærker ikke dette hårde tryk, fordi vi er vant til det – dvs. indtil det ændrer sig bare det mindste, ligesom det gør, når vi befinder os i store højder eller i fly. Det atmosfæriske tryk varierer også i henhold til vejrforholdene. Det falder, hvis der er stormfuldt og ustabilt vejr, mens det stiger, når luften stabiliseres, og der er skyfrit. 
+  <string name="sensor_desc_second_paragraph_barometer">Vi bemærker ikke dette hårde tryk, fordi vi er vant til det – dvs. indtil det ændrer sig bare det mindste, ligesom det gør, når vi befinder os i store højder eller i fly. Det atmosfæriske tryk varierer også i henhold til vejrforholdene. Det falder, hvis der er stormfuldt og ustabilt vejr, mens det stiger, når luften stabiliseres, og der er skyfrit.
 
-Det digitale barometer i din telefon måler atmosfærisk tryk i hektopascal (en hektopascal er 100 pascal, hvor en pascal er, når der udøves 1 newton kraft på et område på en kvadratmeter). Du har sikker hørt metrologer omtale atmosfærisk tryk i millibar – denne enhed, som lyder mindre kompliceret, svarer til hektopascal. 
+Det digitale barometer i din telefon måler atmosfærisk tryk i hektopascal (en hektopascal er 100 pascal, hvor en pascal er, når der udøves 1 newton kraft på et område på en kvadratmeter). Du har sikker hørt metrologer omtale atmosfærisk tryk i millibar – denne enhed, som lyder mindre kompliceret, svarer til hektopascal.
 
 Du tænker måske: Hvorfor måler en telefon tryk? Det atmosfæriske tryk ændrer sig målbart ved selv de mindste ændringer i højde, f.eks. når du går op ad en trappe. Så et digitalt barometer i en telefon kan hjælpe med at registrere placeringsændringer ved f.eks. at oplyse dig om, hvilken etage du befinder dig på, eller om du kører på den øverste eller nederste del af en bro.</string>
   <string name="run_review_activity_label">Gennemgang</string>
@@ -480,9 +480,9 @@ Meddelelse om tilladelser:
   <string name="compass">Kompas</string>
   <string name="compass_units">grader</string>
   <string name="sensor_desc_short_compass">Telefonens placering i forhold til jordens magnetfelt.</string>
-  <string name="sensor_desc_first_paragraph_compass">Du ved sikkert allerede, at jorden har et magnetfelt. Men du er muligvis ikke klar over, at din telefon indeholder en enhed, der kan måle magnetfelter: Et magnetometer. Ved at kombinere data fra din telefons magnetometer med telefonens rumlige position kan vi skabe et digitalt kompas. 
+  <string name="sensor_desc_first_paragraph_compass">Du ved sikkert allerede, at jorden har et magnetfelt. Men du er muligvis ikke klar over, at din telefon indeholder en enhed, der kan måle magnetfelter: Et magnetometer. Ved at kombinere data fra din telefons magnetometer med telefonens rumlige position kan vi skabe et digitalt kompas.
 
-Et gammeldags kompas er et lavteknologisk magnetometer med en magnetiseret nål, der drejer i overensstemmelse med det omgivende magnetfelt. Der er ikke et lillebitte kompas i din telefon, men i stedet er der en meget lille sensor med tre akser, der bruger elektrisk strøm til at registrere magnetfeltets styrke i de tre rumlige dimensioner. Men dette alene er ikke nok til at skabe et kompas! 
+Et gammeldags kompas er et lavteknologisk magnetometer med en magnetiseret nål, der drejer i overensstemmelse med det omgivende magnetfelt. Der er ikke et lillebitte kompas i din telefon, men i stedet er der en meget lille sensor med tre akser, der bruger elektrisk strøm til at registrere magnetfeltets styrke i de tre rumlige dimensioner. Men dette alene er ikke nok til at skabe et kompas!
 
 Hvorfor skal et kompas kombinere data fra magnetometeret med telefonens position? Når vi kender telefonens position, kan vi beregne magnetfeltets rotation, selv når telefonen ikke holdes plant på samme niveau som jordens magnetfelt. Vi ved, at tyngdekraften ligger lodret på jordens magnetfelt, og derfor kan vi bruge tyngdekraftens retning fra accelerometerets sensorer til at bestemme, hvor meget af magnetfeltet der er på samme niveau som jordens magnetfelt.</string>
   <string name="sensor_desc_second_paragraph_compass">Du har måske bemærket, at kompasset ikke kun reagerer på jordens magnetfelt, men også på alle andre magnetfelter, der måtte være i nærheden. Magneter, elektrisk strøm og metalgenstande kan nemt lede dit magnetometer i den ene eller anden retning, hvilket ændrer kompasvisningen. Prøv at stille dig på en åben plads – helst udenfor og på lang afstand af strømførende kabler – hvis du vil være sikker på, at kompassets røde spids følger jordens magnetfelt. Det kan hjælpe at bevæge din telefon i et ottetalsmønster for at kalibrere magnetometeret i din telefon.</string>
@@ -495,9 +495,9 @@ Hvorfor skal et kompas kombinere data fra magnetometeret med telefonens position
   <string name="month_year_format">MMMM åååå</string>
   <string name="linear_accelerometer">Lineært accelerometer</string>
   <string name="sensor_desc_short_linear_acc">Telefonens samlede acceleration med undtagelse af tyngdekraften, i m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Objekter har en tendens til at blive, hvor de er, eller fortsætte en eventuel igangværende bevægelse. Denne tendens kaldes for interti. Newtons første lov udtrykker denne idé formelt: Et objekt fortsætter sin bevægelsestilstand, medmindre det påvirkes af en ubalanceret kraft. 
+  <string name="sensor_desc_first_paragraph_linear_acc">Objekter har en tendens til at blive, hvor de er, eller fortsætte en eventuel igangværende bevægelse. Denne tendens kaldes for interti. Newtons første lov udtrykker denne idé formelt: Et objekt fortsætter sin bevægelsestilstand, medmindre det påvirkes af en ubalanceret kraft.
 
-Når en ubalanceret kraft får et objekt til at bevæge sig, siger man, at objektet accelererer: Objektets hastighed eller fart ændres, enten ved forøgelse eller reduktion af hastigheden, eller ved at bevægelsesretningen ændres. Acceleration måles som ændring af hastighed (meter pr. sekund) over tid, eller som meter pr. sekund i anden (m/s²). 
+Når en ubalanceret kraft får et objekt til at bevæge sig, siger man, at objektet accelererer: Objektets hastighed eller fart ændres, enten ved forøgelse eller reduktion af hastigheden, eller ved at bevægelsesretningen ændres. Acceleration måles som ændring af hastighed (meter pr. sekund) over tid, eller som meter pr. sekund i anden (m/s²).
 
 Din telefon har en enhed, der kan måle disse ændringer af bevægelse. Enheden hedder et accelerometer. Et accelerometer indeholder små masser, der kan bevæge sig frit. En ændring af bevægelsen får disse masser til at bevæge sig, lidt på samme måde som dit hoved har en tendens til at bevæge sig fremefter, når du sidder i en bil, der pludselig stopper. Ved at måle næsten umærkelige ændringer i intertien kan accelerometeret i en telefon registrere ændringer i bevægelse og retning. Dette er nyttigt, når skærmen skal skifte mellem liggende og stående format, eller når du spiller spil på telefonen og meget mere.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Den kombinerede sensor med lineært accelerometer registrerer den samlede acceleration på telefonens tre akser med undtagelse af tyngdekraften.</string>
@@ -520,7 +520,7 @@ Din telefon har en enhed, der kan måle disse ændringer af bevægelse. Enheden 
   <string name="first_experiment_title">Velkommen til Science Journal</string>
   <string name="first_experiment_text_note">Prøv at tage noter og registrere data ved hjælp af værktøjslinjen nedenfor.</string>
   <string name="first_experiment_picture_note_caption">Velkommen til Science Journal!</string>
-  <string name="first_experiment_second_text_note">Find aktiviteter på 
+  <string name="first_experiment_second_text_note">Find aktiviteter på
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Vælg et billede til eksperimentet</string>
   <string name="btn_take_picture_content_description">Tag et billede</string>
@@ -756,8 +756,8 @@ Hvis du har eksisterende data på denne enhed, kan du, når du er logget ind, ge
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -814,7 +814,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -918,5 +918,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>

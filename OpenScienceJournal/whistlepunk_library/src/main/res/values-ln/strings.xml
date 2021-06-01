@@ -202,15 +202,15 @@
   <string name="sensor_desc_short_raw">Le pourcentage de la mesure brute obtenue à partir du capteur externe</string>
   <string name="sensor_desc_short_barometer">La pression atmosphérique est mesurée en hectopascals (hPa).</string>
   <string name="sensor_desc_first_paragraph_light">The ambient light sensor measures light in lux, a measure of illumination that depends on the amount of incoming light and the area over which it is spread.
-        
+
 
 A full moon provides about 1 lux of illumination, a typical lamp-lit living room about 50 lux, classroom lighting and sunrise and sunset about 400 lux, daylight (indirect sun) over 10,000 lux, and direct sun over 30,000 lux.
-        
+
 
 Lux is an unfamiliar unit for most of us. When we buy lightbulbs, we often shop by watts—but the wattage of a bulb doesn\'t tell you how bright a bulb is, only how much energy it uses. Lumens are a better measure for light shopping; they tell you how much light a bulb will actually produce. Lux, meanwhile, tells you how much of that light arrives at a particular area.
     </string>
   <string name="sensor_desc_second_paragraph_light">Since light spreads out as it travels, the number of lux dwindles as you back away from a light source, even though the source is still emitting the same amount of light in lumens. An area that is tilted away from a light sources also receives less illumination—which happens to be why the equatorial regions here on Earth are so much warmer than the chilly poles.
-        
+
 
 By the way, the purpose of the light sensor in your phone is to control the light level of the screen, adjusting accordingly to dim and bright environments. Inside the light sensor, a tiny semiconductor responds to incoming light by producing a small but measurable electrical current—a phenomenon known as the photoelectric effect. Similar sensors are used in some streetlights to turn them on when it gets dark outside.
     </string>
@@ -775,8 +775,8 @@ If you have existing data on this device, once signed in, you can save your exis
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -833,7 +833,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -937,5 +937,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>

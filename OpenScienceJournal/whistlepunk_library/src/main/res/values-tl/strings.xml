@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Ang bilang ng mga pag-ikot kada minuto</string>
   <string name="sensor_desc_short_raw">Ang porsyento ng raw reading mula sa isang external sensor.</string>
   <string name="sensor_desc_short_barometer">Ang presyon ng atmosphere na sinusukat sa hectopascals (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Sinusukat ng sensor ng liwanag sa paligid sa lux ang liwanag, isang sukat ng pagliwanag na nakadepende sa halaga ng paparating na liwanag at ang lugar kung saan ito kumakalat. 
+  <string name="sensor_desc_first_paragraph_light">Sinusukat ng sensor ng liwanag sa paligid sa lux ang liwanag, isang sukat ng pagliwanag na nakadepende sa halaga ng paparating na liwanag at ang lugar kung saan ito kumakalat.
 
-Nagbibigay ng humigit-kumulang 1 lux ng liwanag, ang isang bilog na buwan, ang pangkaraniwang sala na inilawan ng lamp ay humigit-kumulang 50 lux, ang ilaw sa silid-aralan at pagsikat at paglubog ng araw ay humigit-kumulang 400 lux, ang liwanag sa umaga (hindi direktang araw) ay higit sa 10,000 lux, at ang direktang araw ay higit sa 30,000 Lux. 
+Nagbibigay ng humigit-kumulang 1 lux ng liwanag, ang isang bilog na buwan, ang pangkaraniwang sala na inilawan ng lamp ay humigit-kumulang 50 lux, ang ilaw sa silid-aralan at pagsikat at paglubog ng araw ay humigit-kumulang 400 lux, ang liwanag sa umaga (hindi direktang araw) ay higit sa 10,000 lux, at ang direktang araw ay higit sa 30,000 Lux.
 
 Hindi pamilyar na unit ang lux para sa karamihan sa atin. Kapag bumibili tayo ng mga bombilya, kadalasang bumibili tayo ayon sa watts—ngunit hindi sinasabi sa iyo ng wattage ng isang bombilya kung gaano kaliwanag ang isang bombilya, kundi kung gaano lamang ito kalakas na kumonsumo ng enerhiya. Mas magandang sukatan sa pamimili ng ilaw ang lumens; sinasabi ng mga ito sa iyo kung gaano kaliwanag ang aktuwal na magagawa ng isang bombilya. Samantala, sinasabi sa iyo ng lux, kung gaano kalakas na liwanag ang dumadating sa isang partikular na lugar.</string>
-  <string name="sensor_desc_second_paragraph_light">Sapagkat kumakalat ang liwanag habang naglalakbay ito, bumababa ang bilang ng lux habang umaatras ka palayo sa isang pinagmumulan ng liwanag, kahit pa nagbibigay pa rin ng parehong dami ng liwanag sa lumens ang pinagmumulan. Ang isang bahagi na nakatagilid palayo sa isang pinagmumulan ng liwanag ay nakatatanggap din ng mas kaunting liwanag—na siyang dahilan kung bakit ang mga rehiyon sa equator dito sa Mundo ay mas mainit kaysa sa magiginaw na pole. 
+  <string name="sensor_desc_second_paragraph_light">Sapagkat kumakalat ang liwanag habang naglalakbay ito, bumababa ang bilang ng lux habang umaatras ka palayo sa isang pinagmumulan ng liwanag, kahit pa nagbibigay pa rin ng parehong dami ng liwanag sa lumens ang pinagmumulan. Ang isang bahagi na nakatagilid palayo sa isang pinagmumulan ng liwanag ay nakatatanggap din ng mas kaunting liwanag—na siyang dahilan kung bakit ang mga rehiyon sa equator dito sa Mundo ay mas mainit kaysa sa magiginaw na pole.
 
 Siya nga pala, ang layunin ng sensor ng liwanag sa iyong telepono ay upang makontrol ang antas ng liwanag ng screen, na iniaayon sa mga makulimlim at maliliwanag na kapaligiran. Sa loob ng light sensor, may maliit na semiconductor na tutumugon sa papasok na liwanag sa pamamagitan ng paggawa ng kakaunti ngunit nasusukat na kuryente—isang pambihirang pangyayari na kilala bilang epektong photoelectric. Ginagamit ang mga katulad na sensor sa ilang ilaw sa poste upang mai-on lang ang mga ito kapag dumilim na sa labas.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Naglalaman ng device ang iyong telepono na dinisenyo upang makadetekta ng mga magnetic field: isang magnetometer. Ang maliit na tatlong axis na sensor na ito na gumagamit ng kuryente upang madetekta ang lakas ng magnetic field sa tatlong dimensiyon ng kalawakan. Sa pamamagitan ng pagsasama-sama ng data mula sa lahat ng tatlong axis ay makakagawa tayo ng sensor ng kabuuang lakas ng magnetic field. 
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Naglalaman ng device ang iyong telepono na dinisenyo upang makadetekta ng mga magnetic field: isang magnetometer. Ang maliit na tatlong axis na sensor na ito na gumagamit ng kuryente upang madetekta ang lakas ng magnetic field sa tatlong dimensiyon ng kalawakan. Sa pamamagitan ng pagsasama-sama ng data mula sa lahat ng tatlong axis ay makakagawa tayo ng sensor ng kabuuang lakas ng magnetic field.
 
-May ilang magnetometer na nagdedetekta ng mga magnetic field gamit ang Hall effect—ang likas na katangian ng mga magnetic field na mag-deflect ng kumikilos na charge habang dumadaloy ito. Gumagamit ng mga magnetoresistor ang mga mas bagong magnetometer, mga metal na alloy na nagbabago ng kanilang resistance bilang tugon sa mga magnetic field. 
+May ilang magnetometer na nagdedetekta ng mga magnetic field gamit ang Hall effect—ang likas na katangian ng mga magnetic field na mag-deflect ng kumikilos na charge habang dumadaloy ito. Gumagamit ng mga magnetoresistor ang mga mas bagong magnetometer, mga metal na alloy na nagbabago ng kanilang resistance bilang tugon sa mga magnetic field.
 
 Bakit kailangan ng telepono ang magnetometer? Kapaki-pakinabang ang pag-alam ng iyong orientation sa kalawakan para sa mga built-in na compass at mga navigation app, lalo na ang mga naghahangad na makapagbigay ng mga direksyon sa bawat pagliko.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Mas madaling maililiko na paganito at paganoon ng mga magnet, kuryente, at mga metal na bagay ang magnetometer ng iyong telepono. Pero kahit sa gitna ng isang bakanteng field, laging nagpapakita ng mababa, hindi zero na reading ang magnetometer sa iyong telepono: ito ang magnetic field ng Mundo!</string>
-  <string name="sensor_desc_first_paragraph_acc">Likas sa mga bagay ang manatili sa kinalalagyan, o kumilos kung kumikilos ang mga ito—tinatawag nating inertia ang likas na katangiang ito. Pormal na inihahayag ng Unang Batas ni Newton ang ideyang ito: Patuloy na kikilos o mananatili ang isang bagay maliban kung maapektuhan ng isang hindi balanseng puwersa. 
+  <string name="sensor_desc_first_paragraph_acc">Likas sa mga bagay ang manatili sa kinalalagyan, o kumilos kung kumikilos ang mga ito—tinatawag nating inertia ang likas na katangiang ito. Pormal na inihahayag ng Unang Batas ni Newton ang ideyang ito: Patuloy na kikilos o mananatili ang isang bagay maliban kung maapektuhan ng isang hindi balanseng puwersa.
 
-Kapag may hindi balanseng puwersa na nagdulot ng paggalaw ng isang bagay, sinasabi natin na nag-a-accelerate (bumibilis ang pagkilos) ng bagay: nagbabago ang velocity nito, o bilis—maaaring sa pamamagitan ng pagbilis, pagbagal, o pagbabago ng direksyon. Sinusukat ang acceleration bilang isang pagbabago ng velocity (metro kada segundo) sa oras, o metro kada segundo kuwadrado (m/s²). 
+Kapag may hindi balanseng puwersa na nagdulot ng paggalaw ng isang bagay, sinasabi natin na nag-a-accelerate (bumibilis ang pagkilos) ng bagay: nagbabago ang velocity nito, o bilis—maaaring sa pamamagitan ng pagbilis, pagbagal, o pagbabago ng direksyon. Sinusukat ang acceleration bilang isang pagbabago ng velocity (metro kada segundo) sa oras, o metro kada segundo kuwadrado (m/s²).
 
 May device ang iyong telepono upang masukat ang mga pagbabagong ito sa paggalaw—isang accelerometer. Sa loob ng isang accelerometer, malayang nakakagalaw ang maliliit na nakasuspinding bagay. Ang mga pagbabago sa paggalaw ang nagiging sanhi ng pagkilos ng mga bagay na ito, tulad ng iyong likas na pagsubsob kapag nakasakay ka sa kotse na biglang huminto. Sa pagsukat ng mga hindi kapansin-pansing pagkilos na ito na dulot ng inertia, nadedetekta ng accelerometer sa isang telepono ang mga pagbabago sa galaw at orientation, kapaki-pakinabang para sa paglipat ng screen mula sa landscape tungo sa portrait mode, para sa paglalaro sa iyong telepono, at marami pang iba.</string>
   <string name="sensor_desc_second_paragraph_acc">Marahil ay may napansin kang patuloy na acceleration sa Z axis, kahit pa nakapirmi ang telepono sa ibabaw ng isang mesa. Ito ang acceleration na nararanasan natin dito sa ibabaw ng Daigdig dahil sa paghila ng gravity, humigit-kumulang ay 9.8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Mula sa vibration ang mga tunog. Ang iyong boses, halimbawa, ay mula sa mga vibration ng mga vocal chord sa iyong lalamunan. Ang mga vibration na ito ay gumagawa ng mga nagsasalitang sona ng mataas at mababang presyon ng hangin na naglalakbay palabas—tulad ng maliliit na along ginawa ng isang maliit na batong inihagis sa tubig.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Lahat ng tunog ay mailalarawan ayon sa kanilang dalas (frequency) at katindihan (intensity). 
+  <string name="sensor_desc_second_paragraph_decibel">Lahat ng tunog ay mailalarawan ayon sa kanilang dalas (frequency) at katindihan (intensity).
 
-Katindihan ang sinusukat mo rito sa Science Journal, sa mga unit na decibels (dB). Ang katindihan, o lakas ng tunog, ay nakasalalay sa layo ng ikinikilos ng isang nagba-vibrate na bagay sa bawat pag-vibrate nito; mas matindi ang nadidinig natin bilang malakas na ingay. 
+Katindihan ang sinusukat mo rito sa Science Journal, sa mga unit na decibels (dB). Ang katindihan, o lakas ng tunog, ay nakasalalay sa layo ng ikinikilos ng isang nagba-vibrate na bagay sa bawat pag-vibrate nito; mas matindi ang nadidinig natin bilang malakas na ingay.
 
-Ang dalas o frequency (tining (pitch) o tono (tone) rin) ng isang sound wave ay katumbas ng bilis ng vibration nito. Mas mabilis mag-vibrate ang isang bagay, mas matining ang nabubuong tunog. Hindi sinusukat ng sensor ng tindi ng tunog ng Science Journal ang dalas o frequency—lakas ng tunog lang. 
+Ang dalas o frequency (tining (pitch) o tono (tone) rin) ng isang sound wave ay katumbas ng bilis ng vibration nito. Mas mabilis mag-vibrate ang isang bagay, mas matining ang nabubuong tunog. Hindi sinusukat ng sensor ng tindi ng tunog ng Science Journal ang dalas o frequency—lakas ng tunog lang.
 
-Isang mahalagang bagay na dapat malaman ay dinisenyo ang mikropono sa iyong device para maging napakasensitibo sa mga kaibahan sa mga sound wave sa kalaunan, pero hindi ang ganap na laki ng bawat wave. Sinubukan naming pumili ng code na malamang na gumawa ng mga numerong katulad ng mga reference na numerong ipinapakita sa ibaba, pero maaaring magbigay ng patuloy na mas mataas o mas mababang numero ang bawat device. Karaniwang ika-calibrate ng mga scientist ang isang sensor na tulad nito sa isang kilalang sukatan. Sa ngayon, masasabi sa iyo ng Science Journal kung ang susunod mong pagsakay sa tren ay mas maingay kaysa susunod na rock concert mo, pero kung dadalhin mo lang ang mismong telepono sa parehong event. 
+Isang mahalagang bagay na dapat malaman ay dinisenyo ang mikropono sa iyong device para maging napakasensitibo sa mga kaibahan sa mga sound wave sa kalaunan, pero hindi ang ganap na laki ng bawat wave. Sinubukan naming pumili ng code na malamang na gumawa ng mga numerong katulad ng mga reference na numerong ipinapakita sa ibaba, pero maaaring magbigay ng patuloy na mas mataas o mas mababang numero ang bawat device. Karaniwang ika-calibrate ng mga scientist ang isang sensor na tulad nito sa isang kilalang sukatan. Sa ngayon, masasabi sa iyo ng Science Journal kung ang susunod mong pagsakay sa tren ay mas maingay kaysa susunod na rock concert mo, pero kung dadalhin mo lang ang mismong telepono sa parehong event.
 
-Isa pang dapat malaman ay may mahahalagang kaibahan sa pagitan ng “sound intensity” (tindi ng tunog), “sound intensity level” (antas ng tindi ng tunog), at “sound pressure” (pressure ng tunog). Itinuturing namin na pare-pareho lang ang mga ito rito, pero kung gusto mo pang mag-usisa, maraming online resource tungkol sa mga kaibahan. 
+Isa pang dapat malaman ay may mahahalagang kaibahan sa pagitan ng “sound intensity” (tindi ng tunog), “sound intensity level” (antas ng tindi ng tunog), at “sound pressure” (pressure ng tunog). Itinuturing namin na pare-pareho lang ang mga ito rito, pero kung gusto mo pang mag-usisa, maraming online resource tungkol sa mga kaibahan.
 
-Ang pinakatahimik na tunog na nadedetekta ng karaniwang tainga ng tao ay tinukoy bilang 0 dB. Ang ordinaryong pag-uusap ay katumbas ng humigit-kumulang 60 dB, at ang mga tunog na higit pa sa 140 dB ay masakit sa tainga ng tao. Ngunit hindi kailangang maging masakit ang mga tunog upang makapaminsala. Ang patuloy na pagkakalantad sa mga tunog na 90 dB—mga kasinglakas ng vacuum cleaner—ay maaaring humantong sa pagkabingi. 
+Ang pinakatahimik na tunog na nadedetekta ng karaniwang tainga ng tao ay tinukoy bilang 0 dB. Ang ordinaryong pag-uusap ay katumbas ng humigit-kumulang 60 dB, at ang mga tunog na higit pa sa 140 dB ay masakit sa tainga ng tao. Ngunit hindi kailangang maging masakit ang mga tunog upang makapaminsala. Ang patuloy na pagkakalantad sa mga tunog na 90 dB—mga kasinglakas ng vacuum cleaner—ay maaaring humantong sa pagkabingi.
 
-Logarithmic ang decibel scale, na kung minsan ay nakakalito: Ang isang pinagmumulan ng tunog na 40 dB ay hindi doble ng tindi ng isang 20 dB—100 beses na mas matindi ito. Samantala, kung ang isang tumutunog na alarm clock ay gumagawa ng 70 dB, ang dalawang tumutunog na alarm clock ay hindi gumagawa ng 140 dB, sa halip ay 73 dB. Tulad ng sinabi namin, kakaibang sukatan ito. 
+Logarithmic ang decibel scale, na kung minsan ay nakakalito: Ang isang pinagmumulan ng tunog na 40 dB ay hindi doble ng tindi ng isang 20 dB—100 beses na mas matindi ito. Samantala, kung ang isang tumutunog na alarm clock ay gumagawa ng 70 dB, ang dalawang tumutunog na alarm clock ay hindi gumagawa ng 140 dB, sa halip ay 73 dB. Tulad ng sinabi namin, kakaibang sukatan ito.
 
-10 dB kumakaluskos na dahon 
-20 dB pagbulong sa layong 5 talampakan 
-30 dB mahinang pagbulong 
-50 dB ulan 
-60 dB normal na pag-uusap 
-90 dB blender 
-100 dB kotseng walang muffler 
-110 dB pagsigaw sa tainga 
-120 dB kulog 
-130 dB jackhammer 
+10 dB kumakaluskos na dahon
+20 dB pagbulong sa layong 5 talampakan
+30 dB mahinang pagbulong
+50 dB ulan
+60 dB normal na pag-uusap
+90 dB blender
+100 dB kotseng walang muffler
+110 dB pagsigaw sa tainga
+120 dB kulog
+130 dB jackhammer
 140 dB palipad na eroplano</string>
   <string name="sensor_desc_first_paragraph_pitch">Mula sa vibration ang mga tunog. Ang iyong boses, halimbawa, ay mula sa mga vibration ng mga vocal chord sa iyong lalamunan. Ang mga vibration na ito ay gumagawa ng mga nagsasalitang sona ng mataas at mababang presyon ng hangin na naglalakbay palabas—tulad ng maliliit na along ginawa ng isang maliit na batong inihagis sa tubig.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Lahat ng tunog ay mailalarawan ayon sa kanilang dalas (frequency) at katindihan (intensity). Ang dalas o frequency (tining (pitch) o tono (tone) rin) ng isang sound wave ay katumbas ng bilis ng vibration nito. Mas mabilis mag-vibrate ang isang bagay, mas matining ang nabubuong tunog. Sinusukat natin ang mga vibration na ito sa Hertz (Hz) kung saan ang 1 Hertz = 1 vibration/segundo. 
+  <string name="sensor_desc_second_paragraph_pitch">Lahat ng tunog ay mailalarawan ayon sa kanilang dalas (frequency) at katindihan (intensity). Ang dalas o frequency (tining (pitch) o tono (tone) rin) ng isang sound wave ay katumbas ng bilis ng vibration nito. Mas mabilis mag-vibrate ang isang bagay, mas matining ang nabubuong tunog. Sinusukat natin ang mga vibration na ito sa Hertz (Hz) kung saan ang 1 Hertz = 1 vibration/segundo.
 
-Nakakarinig ang mga tao ng mga tunog na mula 20 hanggang 20,000 Hz. Ang pinakamababang key sa piano ay bumubuo ng tunog na may frequency na 27.5 Hz at ang pinakamataas na key ay bumubuo ng tunog na may frequency na 4186.01 Hz. 
+Nakakarinig ang mga tao ng mga tunog na mula 20 hanggang 20,000 Hz. Ang pinakamababang key sa piano ay bumubuo ng tunog na may frequency na 27.5 Hz at ang pinakamataas na key ay bumubuo ng tunog na may frequency na 4186.01 Hz.
 
 Ipinababatid ng pulang tuldok kung gaano kalapit ang nadetektang pitch sa pinakamalapit na notang musikal. Kung mas mababa o “mas-flat” ang pitch, lalabas ang tuldok sa kaliwa. Kung mas mataas ang o “mas-sharp” ang pitch, lalabas ang pulang tuldok sa kanan.</string>
   <string name="pitch_low_content_description">mababang pitch</string>
@@ -255,22 +255,22 @@ Ipinababatid ng pulang tuldok kung gaano kalapit ang nadetektang pitch sa pinaka
   <string name="pitch_sharper_than_flat_note_content_description">%3$s (na) kalahating hakbang na mas sharp kaysa %1$s flat, octave %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s (na) kalahating hakbang na mas sharp kaysa %1$s sharp, octave %2$s</string>
   <string name="pitch_high_content_description">mataas na pitch</string>
-  <string name="sensor_desc_first_paragraph_rotation">Ang rotations per minute (RPM) ay isang sukat sa frequency ng pag-ikot sa paligid ng isang nakapirming axis sa loob ng isang minuto. 
+  <string name="sensor_desc_first_paragraph_rotation">Ang rotations per minute (RPM) ay isang sukat sa frequency ng pag-ikot sa paligid ng isang nakapirming axis sa loob ng isang minuto.
 
 Habang pumipihit ang iyong wind spinner, pinaiikot nito ang encoder disc:</string>
   <string name="sensor_desc_second_paragraph_rotation">Gumagawa ito ng mga panahon ng liwanag at dilim sa sensor na nagrerehistro sa Science Journal bilang pag-ikot.</string>
-  <string name="sensor_desc_first_paragraph_raw">Ang data na ipinapakita rito ay nagmumula sa komunikasyon ng isang external sensor sa iyong telepono sa pamamagitan ng Bluetooth. 
+  <string name="sensor_desc_first_paragraph_raw">Ang data na ipinapakita rito ay nagmumula sa komunikasyon ng isang external sensor sa iyong telepono sa pamamagitan ng Bluetooth.
 
 Ipinapakita ng value ang porsyento ng raw reading na direkta mula sa iyong microcontroller. Karaniwang porsyento ito ng isang pagbagsak ng boltahe sa kabuuan ng isang sensor.</string>
   <string name="sensor_desc_second_paragraph_raw">Isang pamantayan sa wireless na teknolohiya ang Bluetooth na gumagamit ng radio waves upang makipagpalitan ng data sa malalapit na lugar mula sa mga nakapirmi at mobile device.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Nagmumula sa isang komunikasyon ng external sensor sa iyong telepono ang data na ipinapakita rito sa pamamagitan ng Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Isang pamantayan sa wireless na teknolohiya ang Bluetooth na gumagamit ng radio waves upang makipagpalitan ng data sa malalapit na lugar mula sa mga nakapirmi at mobile device.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Bagaman bihira nating mapansin ito, lahat tayo ay nakatira sa ilalim ng isang malalim na karagatan ng hangin: Ang atmosphere ng Daigdig, na umaabot paitaas nang 40 kilometro (130,000 talampakan) ang taas. Ang bigat ng lahat ng hangin na iyon na dumadagan sa atin ay gumagawa ng tinatawag na presyon ng atmosphere. 
+  <string name="sensor_desc_first_paragraph_barometer">Bagaman bihira nating mapansin ito, lahat tayo ay nakatira sa ilalim ng isang malalim na karagatan ng hangin: Ang atmosphere ng Daigdig, na umaabot paitaas nang 40 kilometro (130,000 talampakan) ang taas. Ang bigat ng lahat ng hangin na iyon na dumadagan sa atin ay gumagawa ng tinatawag na presyon ng atmosphere.
 
 Sa dagat, nagbibigay ng 14 pounds ng puwersa sa bawat square inch—katumbas iyon ng 1,300 pounds sa isang lugar na sinlaki ng isang karaniwang papel.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Hindi natin napapansin ang nakadudurog na presyon na ito dahil sanay na tayo rito—iyon ay, hanggang sa magbago ito, kahit na kaunti lang, tulad ng pagbabago nito kapag nagpupunta tayo sa matataas na lugar o sumasakay sa mga eroplano. Nagbabago rin ang presyon ng atmosphere sa mga lagay ng panahon, pagbagsak habang may pabugso-bugso, hindi matatag na hangin, at tumataas kapag tumatag ang hangin at luminaw ang kalangitan. 
+  <string name="sensor_desc_second_paragraph_barometer">Hindi natin napapansin ang nakadudurog na presyon na ito dahil sanay na tayo rito—iyon ay, hanggang sa magbago ito, kahit na kaunti lang, tulad ng pagbabago nito kapag nagpupunta tayo sa matataas na lugar o sumasakay sa mga eroplano. Nagbabago rin ang presyon ng atmosphere sa mga lagay ng panahon, pagbagsak habang may pabugso-bugso, hindi matatag na hangin, at tumataas kapag tumatag ang hangin at luminaw ang kalangitan.
 
-Sumusukat ng presyon ng atmosphere sa hectopascals ang digital na barometer sa iyong telepono. (100 pascals ang isang hectopascal, kung saan ang isang pascal ay isang newton ng puwersang ginamit sa isang metro kuwadradong bahagi.) Marahil ay narinig mo na ang mga forecaster ng panahon na nagsasabi ng presyon ng atmosphere sa millibars—ang unit na ito na magandang pakinggan ay katumbas ng hectopascals. 
+Sumusukat ng presyon ng atmosphere sa hectopascals ang digital na barometer sa iyong telepono. (100 pascals ang isang hectopascal, kung saan ang isang pascal ay isang newton ng puwersang ginamit sa isang metro kuwadradong bahagi.) Marahil ay narinig mo na ang mga forecaster ng panahon na nagsasabi ng presyon ng atmosphere sa millibars—ang unit na ito na magandang pakinggan ay katumbas ng hectopascals.
 
 Maaaring nag-iisip ka: Bakit susukatin ng isang telepono ang presyon? Malaki ang ipinagbabago ng presyon ng atmosphere sa kahit na bahagyang pagbabago ng taas, kunwari, kapag umakyat ka ng hagdan. Kung kaya ang isang digital barometer sa isang telepono ay maaaring makatulong na makita ang mga pagbabago ng lokasyon, halimbawa, pagsasabi sa iyo kung saang palapag ka ng isang gusali, o kung nagmamaneho ka sa itaas o ibabang deck ng isang tulay.</string>
   <string name="run_review_activity_label">Suriin</string>
@@ -480,9 +480,9 @@ Paunawa ukol sa mga pahintulot:
   <string name="compass">Compass</string>
   <string name="compass_units">degrees</string>
   <string name="sensor_desc_short_compass">Ang orientation ng telepono kaugnay ng magnetic field ng Mundo.</string>
-  <string name="sensor_desc_first_paragraph_compass">Marahil ay alam mo na na may magnetic field ang Mundo. Maaaring hindi mo alam na naglalaman ng device ang iyong telepono na dinisenyo upang makadetekta ng mga magnetic field: isang magnetometer. Sa pamamagitan ng pagsasama ng data mula sa magnetometer ng telepono mo sa orientation ng telepono sa kalawakan, makakagawa tayo ng digital compass. 
+  <string name="sensor_desc_first_paragraph_compass">Marahil ay alam mo na na may magnetic field ang Mundo. Maaaring hindi mo alam na naglalaman ng device ang iyong telepono na dinisenyo upang makadetekta ng mga magnetic field: isang magnetometer. Sa pamamagitan ng pagsasama ng data mula sa magnetometer ng telepono mo sa orientation ng telepono sa kalawakan, makakagawa tayo ng digital compass.
 
-Ang makalumang compass ay isang low-tech na magnetometer, na may magnetized na needle na pumipihit upang kusang humanay ito sa nakapaligid na magnetic field. Walang maliit na compass sa loob ng telepono mo, ngunit sa halip ay may maliit na tatlong axis na sensor na gumagamit ng kuryente upang madetekta ang lakas ng magnetic field sa tatlong dimensiyon ng kalawakan. Pero kulang ito para makagawa ng compass! 
+Ang makalumang compass ay isang low-tech na magnetometer, na may magnetized na needle na pumipihit upang kusang humanay ito sa nakapaligid na magnetic field. Walang maliit na compass sa loob ng telepono mo, ngunit sa halip ay may maliit na tatlong axis na sensor na gumagamit ng kuryente upang madetekta ang lakas ng magnetic field sa tatlong dimensiyon ng kalawakan. Pero kulang ito para makagawa ng compass!
 
 Bakit kailangang pagsamahin ng compass ang data mula sa magnetometer sa orientation ng telepono? Ang pag-alam sa orientation ng telepono ay nagbibigay-kakayahan sa amin na makwenta ang magnetic na pag-ikot kahit pa hindi naka-flat ang telepono sa parehong plane na tulad ng sa magnetic field ng Mundo. Alam natin na perpendicular ang gravity sa magnetic field ng Mundo, kaya magagamit natin ang direksyon ng gravity mula sa mga accelerometer sensor upang malaman kung gaano kalakas ang magnetic field sa parehong plane na tulad ng sa magnetic field ng Mundo.</string>
   <string name="sensor_desc_second_paragraph_compass">Marahil ay napansin mo na, tumutugon ang compass hindi lamang sa magnetic field ng Mundo, ngunit gayon din sa anuman at bawat magnetic field na maaaring nasa paligid. Mas madaling maililiko na paganito at paganoon ng mga magnet, kuryente, at mga metal na bagay ang magnetometer ng iyong telepono, na nagiging sanhi ng pagbabago ng reading ng compass. Tumayo sa isang bukas na lugar—mas mainam sa labas at malayo sa mga linya ng kuryente— kung gusto mong matiyak na humahanay sa magnetic field ng Mundo ang pulang dulo ng iyong compass. Nakatutulong ito na maigalaw ang iyong telepono sa hugis 8 na pattern upang ma-calibrate ang magnetometer sa iyong telepono.</string>
@@ -495,9 +495,9 @@ Bakit kailangang pagsamahin ng compass ang data mula sa magnetometer sa orientat
   <string name="month_year_format">MMMM yyyy</string>
   <string name="linear_accelerometer">Linear accelerometer</string>
   <string name="sensor_desc_short_linear_acc">Ang kabuuang acceleration ng telepono, hindi kasama ang pwersa ng gravity, sa m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Likas sa mga bagay ang manatili sa kinalalagyan, o patuloy na kumilos kung kumikilos ang mga ito—tinatawag nating inertia ang likas na katangiang ito. Pormal na inihahayag ng Newton\'s First Law ang ideyang ito: Patuloy na kikilos o mananatili ang isang bagay maliban kung maapektuhan ng isang hindi balanseng puwersa. 
+  <string name="sensor_desc_first_paragraph_linear_acc">Likas sa mga bagay ang manatili sa kinalalagyan, o patuloy na kumilos kung kumikilos ang mga ito—tinatawag nating inertia ang likas na katangiang ito. Pormal na inihahayag ng Newton\'s First Law ang ideyang ito: Patuloy na kikilos o mananatili ang isang bagay maliban kung maapektuhan ng isang hindi balanseng puwersa.
 
-Kapag may hindi balanseng puwersa na nagdulot ng paggalaw ng isang bagay, sinasabi natin na nag-a-accelerate (bumibilis ang pagkilos) ng bagay: nagbabago ang velocity, o bilis nito—maaaring sa pamamagitan ng pagbilis, pagbagal, o pagbabago ng direksyon. Sinusukat ang acceleration bilang isang pagbabago ng velocity (metro kada segundo) sa oras, o metro kada segundo kuwadrado (m/s²). 
+Kapag may hindi balanseng puwersa na nagdulot ng paggalaw ng isang bagay, sinasabi natin na nag-a-accelerate (bumibilis ang pagkilos) ng bagay: nagbabago ang velocity, o bilis nito—maaaring sa pamamagitan ng pagbilis, pagbagal, o pagbabago ng direksyon. Sinusukat ang acceleration bilang isang pagbabago ng velocity (metro kada segundo) sa oras, o metro kada segundo kuwadrado (m/s²).
 
 May device ang iyong telepono upang masukat ang mga pagbabagong ito sa paggalaw—isang accelerometer. Sa loob ng isang accelerometer, malayang nakakagalaw ang maliliit na lumulutang na bagay. Ang mga pagbabago sa paggalaw ang nagiging sanhi ng pagkilos ng mga bagay na ito, tulad ng iyong likas na pagsubsob kapag nakasakay ka sa kotse na biglang huminto. Sa pagsukat ng mga hindi kapansin-pansing pagkilos na ito na dulot ng inertia, nadedetekta ng accelerometer sa isang telepono ang mga pagbabago sa galaw at orientation, kapaki-pakinabang para sa paglipat ng screen mula sa landscape tungo sa portrait mode, para sa paglalaro sa iyong telepono, at marami pang iba.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Ang pinagsamang sensor ng linear accelerometer ay nagtatala ng kabuuang acceleration sa lahat ng tatlong axis ng telepono, hindi kasama ang gravity.</string>
@@ -520,7 +520,7 @@ May device ang iyong telepono upang masukat ang mga pagbabagong ito sa paggalaw�
   <string name="first_experiment_title">Welcome sa Science Journal</string>
   <string name="first_experiment_text_note">Subukang kumuha ng mga tala at data ng recording gamit ang toolbar sa ibaba!</string>
   <string name="first_experiment_picture_note_caption">Welcome sa Science Journal!</string>
-  <string name="first_experiment_second_text_note">Maghanap ng mga aktibidad na susubukan sa 
+  <string name="first_experiment_second_text_note">Maghanap ng mga aktibidad na susubukan sa
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Pumili ng eksperimentong litrato</string>
   <string name="btn_take_picture_content_description">Kumuha ng litrato</string>
@@ -767,8 +767,8 @@ Kung dati ka nang may data sa device na ito, kapag naka-sign in na, maaari mong 
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -825,7 +825,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -929,5 +929,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>

@@ -192,12 +192,12 @@
   <string name="sensor_desc_short_rotation">Liczba obrotów na minutę</string>
   <string name="sensor_desc_short_raw">Wartość procentowa nieprzetworzonego odczytu z czujnika zewnętrznego.</string>
   <string name="sensor_desc_short_barometer">Ciśnienie atmosferyczne mierzone w hektopaskalach (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Czujnik oświetlenia zewnętrznego mierzy światło w luksach (lx). Jest to miara natężenia oświetlenia, które zależy od wielkości strumienia świetlnego i powierzchni, na którą ten strumień pada. 
+  <string name="sensor_desc_first_paragraph_light">Czujnik oświetlenia zewnętrznego mierzy światło w luksach (lx). Jest to miara natężenia oświetlenia, które zależy od wielkości strumienia świetlnego i powierzchni, na którą ten strumień pada.
 
-Natężenie oświetlenia w nocy, przy księżycu w pełni, wynosi 1 luks, w salonie domowym z typowymi lampami oświetlenie ma natężenie około 50 luksów, oświetlenie sali lekcyjnej i oświetlenie przy wschodzie i zachodzie słońca ma natężenie około 400 luksów, światło słoneczne (pośrednie) ma ponad 10 000 luksów, a światło słoneczne bezpośrednie ponad 30 000 luksów. 
+Natężenie oświetlenia w nocy, przy księżycu w pełni, wynosi 1 luks, w salonie domowym z typowymi lampami oświetlenie ma natężenie około 50 luksów, oświetlenie sali lekcyjnej i oświetlenie przy wschodzie i zachodzie słońca ma natężenie około 400 luksów, światło słoneczne (pośrednie) ma ponad 10 000 luksów, a światło słoneczne bezpośrednie ponad 30 000 luksów.
 
 Dla większości z nas luks jest jednostką nieznaną. Kiedy kupujemy żarówki, często kierujemy się mocą podawaną w watach (W) – ale moc w watach nie określa jasności światła żarówki, a jedynie informuje o tym, ile pobiera ona energii. Przy zakupie żarówki bardziej przydatna jest wielkość mierzona w lumenach, która określa rzeczywistą ilość światła wytwarzaną przez żarówkę. Natomiast wielkość podawana w luksach informuje o tym, ile tego światła pada na daną powierzchnię.</string>
-  <string name="sensor_desc_second_paragraph_light">Gdy światło się rozchodzi, rozprasza się, więc jeśli oddalasz się od źródła światła, charakteryzująca go liczba luksów (natężenie oświetlenia) maleje, mimo że źródło emituje taką samą ilość światła (strumień świetlny) mierzoną w lumenach. Ponadto powierzchnia odchylona od źródła światła jest słabiej oświetlona – dlatego obszary Ziemi w pobliżu równika są znacznie cieplejsze niż strefy podbiegunowe. 
+  <string name="sensor_desc_second_paragraph_light">Gdy światło się rozchodzi, rozprasza się, więc jeśli oddalasz się od źródła światła, charakteryzująca go liczba luksów (natężenie oświetlenia) maleje, mimo że źródło emituje taką samą ilość światła (strumień świetlny) mierzoną w lumenach. Ponadto powierzchnia odchylona od źródła światła jest słabiej oświetlona – dlatego obszary Ziemi w pobliżu równika są znacznie cieplejsze niż strefy podbiegunowe.
 
 Nawiasem mówiąc, celem czujnika światła w telefonie jest regulowanie jasności ekranu w zależności od oświetlenia otoczenia. Znajdujący się w czujniku światła mały półprzewodnik reaguje na padające światło, wytwarzając niewielki, ale mierzalny, prąd – jest to zjawisko znane jako efekt fotoelektryczny. Podobne czujniki są stosowane w niektórych lampach ulicznych, aby je włączać, gdy robi się ciemno.</string>
   <string name="sensor_desc_first_paragraph_magnetic_strength">W Twoim telefonie znajduje się urządzenie, które wykrywa pola magnetyczne – to magnetometr. Ten niewielki trójosiowy czujnik za pomocą impulsów elektrycznych mierzy natężenie pola magnetycznego w trzech wymiarach. Łącząc dane ze wszystkich trzech osi, możemy stworzyć kompletny czujnik natężenia pola magnetycznego.
@@ -206,42 +206,42 @@ Działanie niektórych magnetometrów opiera się na efekcie Halla, czyli tenden
 
 Po co umieszczać magnetometr w telefonie? Informacje o Twoim położeniu w przestrzeni są wykorzystywane przez aplikację imitującą kompas na Twoim urządzeniu i przez inne aplikacje nawigacyjne, w szczególności te, które podają trasę zakręt po zakręcie.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magnesy, prąd elektryczny i metalowe obiekty mogą zakłócać pracę magnetometru. Jednak nawet pośrodku pustej łąki magnetometr w telefonie zawsze wskazuje niską wartość powyżej zera – to właśnie pole magnetyczne Ziemi.</string>
-  <string name="sensor_desc_first_paragraph_acc">Obiekty mają tendencję do pozostawania w spoczynku lub w ruchu (jeśli się poruszają) – co określa się mianem bezwładności. Pierwsza zasada dynamiki Newtona wyraża tę myśl w sposób ścisły: obiekt, na który nie działają żadne niezrównoważone siły, pozostaje w spoczynku lub porusza się ruchem jednostajnym prostoliniowym. 
+  <string name="sensor_desc_first_paragraph_acc">Obiekty mają tendencję do pozostawania w spoczynku lub w ruchu (jeśli się poruszają) – co określa się mianem bezwładności. Pierwsza zasada dynamiki Newtona wyraża tę myśl w sposób ścisły: obiekt, na który nie działają żadne niezrównoważone siły, pozostaje w spoczynku lub porusza się ruchem jednostajnym prostoliniowym.
 
-Gdy na obiekt zadziała niezrównoważona siła, mówimy, że obiekt przyspiesza, czyli jego prędkość zmienia wartość (zwiększa się lub zmniejsza) albo kierunek. Przyspieszenie mierzy się jako zmianę prędkości (w metrach na sekundę) w czasie, czyli w metrach na sekundę do kwadratu (m/s²). 
+Gdy na obiekt zadziała niezrównoważona siła, mówimy, że obiekt przyspiesza, czyli jego prędkość zmienia wartość (zwiększa się lub zmniejsza) albo kierunek. Przyspieszenie mierzy się jako zmianę prędkości (w metrach na sekundę) w czasie, czyli w metrach na sekundę do kwadratu (m/s²).
 
 Telefon jest wyposażony w urządzenie do pomiaru tych zmian ruchu – akcelerometr. W akcelerometrze zawieszone są niewielkie ciężarki, które mogą się swobodnie poruszać. Zmiany w ruchu powodują przesunięcie tych ciężarków, podobnie jak głowa osoby jadącej samochodem opada do przodu podczas gwałtownego hamowania. Mierząc te nieznaczne przesunięcia spowodowane bezwładnością, akcelerometr w telefonie może wykryć zmiany w ruchu i zmiany kierunku. Przydaje się to między innymi przy zmianie orientacji ekranu z poziomej na pionową oraz w grach.</string>
   <string name="sensor_desc_second_paragraph_acc">Wyraźnie widać stałe przyspieszenie w osi Z, mimo że telefon leży nieruchomo na stole. Jest to przyspieszenie, którego doświadczamy na powierzchni Ziemi z powodu grawitacji. Ma ono wartość około 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Dźwięki są generowane przez drgania. Na przykład Twój głos wydobywa się z drgających w gardle strun głosowych. Drgania wytwarzają naprzemiennie strefy wysokiego i niskiego ciśnienia powietrza, które przemieszczają się na zewnątrz – podobnie jak kręgi rozchodzące się po wodzie po wrzuceniu kamyka do stawu.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Każdy dźwięk można opisać za pomocą częstotliwości i natężenia. 
+  <string name="sensor_desc_second_paragraph_decibel">Każdy dźwięk można opisać za pomocą częstotliwości i natężenia.
 
-Natężenie, wyrażone w jednostkach zwanych decybelami (dB), możesz zmierzyć za pomocą dostępnego w aplikacji Science Journal czujnika natężenia dźwięku. Natężenie, czyli głośność, zależy od odległości, jaką pokonuje drgający obiekt; większe natężenie odczuwamy jako większą głośność. 
+Natężenie, wyrażone w jednostkach zwanych decybelami (dB), możesz zmierzyć za pomocą dostępnego w aplikacji Science Journal czujnika natężenia dźwięku. Natężenie, czyli głośność, zależy od odległości, jaką pokonuje drgający obiekt; większe natężenie odczuwamy jako większą głośność.
 
-Częstotliwość fali dźwiękowej (nazywana również wysokością dźwięku lub tonem) odpowiada szybkości drgań. Im szybciej drga obiekt, tym większa jest wysokość powstającego dźwięku. Czujnik natężenia dźwięku dostępny w aplikacji Science Journal nie mierzy częstotliwości, a jedynie głośność. 
+Częstotliwość fali dźwiękowej (nazywana również wysokością dźwięku lub tonem) odpowiada szybkości drgań. Im szybciej drga obiekt, tym większa jest wysokość powstającego dźwięku. Czujnik natężenia dźwięku dostępny w aplikacji Science Journal nie mierzy częstotliwości, a jedynie głośność.
 
-Musisz pamiętać, że mikrofon w Twoim urządzeniu jest bardzo wyczulony na różnice w falach dźwiękowych na przestrzeni czasu, ale nie na wielkość bezwzględną każdej fali. Staraliśmy się dobrać kod, który byłby w stanie wygenerować wartości podobne do wartości referencyjnych pokazanych poniżej, ale każde urządzenie może konsekwentnie generować wyższe lub niższe wartości. Zazwyczaj naukowcy kalibrują czujniki tego typu do znanego pomiaru. Na razie Science Journal jest w stanie określić, czy pociąg, którym podróżujesz, jest głośniejszy od koncertu, na który się wybierzesz, ale tylko pod warunkiem, że w obu przypadkach będziesz korzystać z tego samego telefonu. 
+Musisz pamiętać, że mikrofon w Twoim urządzeniu jest bardzo wyczulony na różnice w falach dźwiękowych na przestrzeni czasu, ale nie na wielkość bezwzględną każdej fali. Staraliśmy się dobrać kod, który byłby w stanie wygenerować wartości podobne do wartości referencyjnych pokazanych poniżej, ale każde urządzenie może konsekwentnie generować wyższe lub niższe wartości. Zazwyczaj naukowcy kalibrują czujniki tego typu do znanego pomiaru. Na razie Science Journal jest w stanie określić, czy pociąg, którym podróżujesz, jest głośniejszy od koncertu, na który się wybierzesz, ale tylko pod warunkiem, że w obu przypadkach będziesz korzystać z tego samego telefonu.
 
-Warto też wiedzieć, że występują istotne różnice między „natężeniem dźwięku”, „poziomem natężenia dźwięku” a „ciśnieniem akustycznym”. Tutaj traktujemy je tak samo, ale jeżeli interesuje Cię ten temat, w internecie znajdziesz wiele materiałów, które opisują te różnice. 
+Warto też wiedzieć, że występują istotne różnice między „natężeniem dźwięku”, „poziomem natężenia dźwięku” a „ciśnieniem akustycznym”. Tutaj traktujemy je tak samo, ale jeżeli interesuje Cię ten temat, w internecie znajdziesz wiele materiałów, które opisują te różnice.
 
-Najcichszy dźwięk, jaki może wykryć ucho przeciętnego człowieka, ma głośność zdefiniowaną jako 0 dB. Zwykła rozmowa ma głośność około 60 dB, a dźwięki powyżej około 140 dB są bolesne dla ludzkiego ucha. Jednak dźwięki nie muszą być bolesne, aby szkodzić. Stałe narażenie na hałas o głośności 90 dB – w przybliżeniu dźwięk odkurzacza – może w końcu doprowadzić do utraty słuchu. 
+Najcichszy dźwięk, jaki może wykryć ucho przeciętnego człowieka, ma głośność zdefiniowaną jako 0 dB. Zwykła rozmowa ma głośność około 60 dB, a dźwięki powyżej około 140 dB są bolesne dla ludzkiego ucha. Jednak dźwięki nie muszą być bolesne, aby szkodzić. Stałe narażenie na hałas o głośności 90 dB – w przybliżeniu dźwięk odkurzacza – może w końcu doprowadzić do utraty słuchu.
 
-Skala decybeli jest logarytmiczna, co sprawia pewną trudność: źródło dźwięku 40 dB nie jest dwa razy głośniejsze od źródła 20 dB – jest 100 razy bardziej intensywne. Z drugiej strony, jeśli jeden budzik generuje dźwięk o głośności 70 dB, dwa budziki generują nie 140 dB, a 73 dB. Jak widać, jest to osobliwa skala. 
+Skala decybeli jest logarytmiczna, co sprawia pewną trudność: źródło dźwięku 40 dB nie jest dwa razy głośniejsze od źródła 20 dB – jest 100 razy bardziej intensywne. Z drugiej strony, jeśli jeden budzik generuje dźwięk o głośności 70 dB, dwa budziki generują nie 140 dB, a 73 dB. Jak widać, jest to osobliwa skala.
 
-10 dB – szelest liści 
-20 dB – szept z odległości 1,5 metra 
-30 dB – cichy szept 
-50 dB – deszcz 
-60 dB – normalna rozmowa 
-90 dB – blender kuchenny 
-100 dB – samochód bez tłumika 
-110 dB – krzyk do ucha 
-120 dB – grzmot pioruna 
-130 dB – młot pneumatyczny 
+10 dB – szelest liści
+20 dB – szept z odległości 1,5 metra
+30 dB – cichy szept
+50 dB – deszcz
+60 dB – normalna rozmowa
+90 dB – blender kuchenny
+100 dB – samochód bez tłumika
+110 dB – krzyk do ucha
+120 dB – grzmot pioruna
+130 dB – młot pneumatyczny
 140 dB – startujący samolot</string>
   <string name="sensor_desc_first_paragraph_pitch">Dźwięki są generowane przez drgania. Na przykład Twój głos wydobywa się z drgających w gardle strun głosowych. Drgania wytwarzają naprzemiennie strefy wysokiego i niskiego ciśnienia powietrza, które przemieszczają się na zewnątrz – podobnie jak kręgi rozchodzące się po wodzie po wrzuceniu kamyka do stawu.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Każdy dźwięk można opisać za pomocą częstotliwości i natężenia. Częstotliwość fali dźwiękowej (nazywana również wysokością dźwięku lub tonem) odpowiada szybkości drgań. Im szybciej drga obiekt, tym większa jest wysokość powstającego dźwięku. Drgania te mierzymy w hercach (Hz), gdzie jeden herc odpowiada jednemu cyklowi drgań na sekundę. 
+  <string name="sensor_desc_second_paragraph_pitch">Każdy dźwięk można opisać za pomocą częstotliwości i natężenia. Częstotliwość fali dźwiękowej (nazywana również wysokością dźwięku lub tonem) odpowiada szybkości drgań. Im szybciej drga obiekt, tym większa jest wysokość powstającego dźwięku. Drgania te mierzymy w hercach (Hz), gdzie jeden herc odpowiada jednemu cyklowi drgań na sekundę.
 
-Ludzie słyszą dźwięki z zakresu od 20 do 20 000 Hz. Najniższy dźwięk, jaki można zagrać na fortepianie, ma częstotliwość 27,5 Hz, a najwyższy 4186,01 Hz. 
+Ludzie słyszą dźwięki z zakresu od 20 do 20 000 Hz. Najniższy dźwięk, jaki można zagrać na fortepianie, ma częstotliwość 27,5 Hz, a najwyższy 4186,01 Hz.
 
 Czerwona kropka pokazuje, w jakim stopniu wykryta wysokość dźwięku oddalona jest od najbliższej nuty. Jeżeli wysokość dźwięku jest niższa od danej nuty, kropka pojawia się po lewej stronie, a jeżeli wyższa – po prawej.</string>
   <string name="pitch_low_content_description">niski dźwięk</string>
@@ -255,22 +255,22 @@ Czerwona kropka pokazuje, w jakim stopniu wykryta wysokość dźwięku oddalona 
   <string name="pitch_sharper_than_flat_note_content_description">O %3$s półtonu wyżej od %1$s z bemolem, %2$s oktawa</string>
   <string name="pitch_sharper_than_sharp_note_content_description">O %3$s półtonu wyżej od %1$s z krzyżykiem, %2$s oktawa</string>
   <string name="pitch_high_content_description">wysoki dźwięk</string>
-  <string name="sensor_desc_first_paragraph_rotation">Obroty na minutę (obr./min) są miarą prędkości obrotowej wokół stałej osi. 
+  <string name="sensor_desc_first_paragraph_rotation">Obroty na minutę (obr./min) są miarą prędkości obrotowej wokół stałej osi.
 
 Łopatki wiatromierza obracają tarczę enkodera:</string>
   <string name="sensor_desc_second_paragraph_rotation">W rezultacie czujnik wykrywa okresy oświetlenia i zaciemnienia, które są rejestrowane w Science Journal jako obrót.</string>
-  <string name="sensor_desc_first_paragraph_raw">Dane wyświetlane tutaj pochodzą z czujnika zewnętrznego komunikującego się z telefonem za pośrednictwem technologii Bluetooth. 
+  <string name="sensor_desc_first_paragraph_raw">Dane wyświetlane tutaj pochodzą z czujnika zewnętrznego komunikującego się z telefonem za pośrednictwem technologii Bluetooth.
 
 Pokazywana jest wartość procentowa nieprzetworzonego bezpośredniego odczytu z mikrokontrolera. Jest to zazwyczaj procentowy spadek napięcia na czujniku.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth jest standardem technologii bezprzewodowej wykorzystującym fale radiowe do wymiany danych między urządzeniami stacjonarnymi i mobilnymi, które znajdują się w małej odległości od siebie.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Dane wyświetlane tutaj pochodzą z czujnika zewnętrznego komunikującego się z telefonem za pośrednictwem technologii Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth jest standardem technologii bezprzewodowej wykorzystującym fale radiowe do wymiany danych między urządzeniami stacjonarnymi i mobilnymi, które znajdują się w małej odległości od siebie.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Chociaż rzadko zwracamy na to uwagę, wszyscy żyjemy na dnie oceanu powietrza – atmosfery ziemskiej, która sięga na wysokość ponad 40 kilometrów w górę. Ciężar powietrza, który naciska na nas z jej wyższych partii, nazywany jest ciśnieniem atmosferycznym. 
+  <string name="sensor_desc_first_paragraph_barometer">Chociaż rzadko zwracamy na to uwagę, wszyscy żyjemy na dnie oceanu powietrza – atmosfery ziemskiej, która sięga na wysokość ponad 40 kilometrów w górę. Ciężar powietrza, który naciska na nas z jej wyższych partii, nazywany jest ciśnieniem atmosferycznym.
 
 Na poziomie morza ciśnienie atmosferyczne naciska z siłą 1013,25 hPa, co można przyrównać do nacisku około 590 kilogramów na obszar o wielkości standardowej kartki papieru.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Przyzwyczailiśmy się do tego miażdżącego ciśnienia, dlatego zauważamy je dopiero, gdy się zmieni, choćby nieznacznie, jak np. wtedy, gdy wspinamy się na duże wysokości lub lecimy samolotem. Ciśnienie atmosferyczne zmienia się także w zależności od pogody. Gdy zbliża się burza, a powietrze jest niestabilne, ciśnienie spada. Jeśli natomiast powietrze stabilizuje się, a niebo jest czyste – ciśnienie rośnie. 
+  <string name="sensor_desc_second_paragraph_barometer">Przyzwyczailiśmy się do tego miażdżącego ciśnienia, dlatego zauważamy je dopiero, gdy się zmieni, choćby nieznacznie, jak np. wtedy, gdy wspinamy się na duże wysokości lub lecimy samolotem. Ciśnienie atmosferyczne zmienia się także w zależności od pogody. Gdy zbliża się burza, a powietrze jest niestabilne, ciśnienie spada. Jeśli natomiast powietrze stabilizuje się, a niebo jest czyste – ciśnienie rośnie.
 
-Barometr cyfrowy w Twoim telefonie mierzy ciśnienie atmosferyczne w hektopaskalach (hektopaskal to 100 paskali, przy czym jeden paskal to jeden niuton na metr kwadratowy). W niektórych krajach, w prognozach pogody prezenterzy podają ciśnienie w milibarach. To bardziej przyjazna jednostka, która jest równa hektopaskalom. 
+Barometr cyfrowy w Twoim telefonie mierzy ciśnienie atmosferyczne w hektopaskalach (hektopaskal to 100 paskali, przy czym jeden paskal to jeden niuton na metr kwadratowy). W niektórych krajach, w prognozach pogody prezenterzy podają ciśnienie w milibarach. To bardziej przyjazna jednostka, która jest równa hektopaskalom.
 
 Zastanawiasz się, dlaczego telefon mierzy ciśnienie? Ciśnienie atmosferyczne zmienia się znacząco, nawet kiedy zmieniasz swoją pozycję w pionie w niewielkim stopniu, np. wchodzisz po schodach. Barometr cyfrowy w telefonie pomaga zatem wykryć zmiany lokalizacji, podając na przykład, na którym piętrze budynku się znajdujesz, lub czy jedziesz drogą na moście, czy pod nim.</string>
   <string name="run_review_activity_label">Analiza</string>
@@ -348,7 +348,7 @@ Aplikacja Science Journal pozwala:
 • wykorzystywać udźwiękowienie, aby słyszeć zmiany na wykresach.
 
 Aplikacja Science Journal jest dostępna bezpłatnie na urządzeniach z Androidem, iPhone\'ach, iPadach i zgodnych Chromebookach.
- 
+
 Ćwiczenia przygotowane przez naszych partnerów: https://makingscience.withgoogle.com/science-journal/activities
 Pomoc: https://productforums.google.com/forum/#!forum/sciencejournal
 Kod open source: https://github.com/google/science-journal
@@ -499,7 +499,7 @@ Telefon jest wyposażony w urządzenie do pomiaru tych zmian ruchu – akcelerom
   <string name="first_experiment_title">Witamy w Science Journal</string>
   <string name="first_experiment_text_note">Użyj paska narzędzi poniżej, aby robić notatki i rejestrować dane.</string>
   <string name="first_experiment_picture_note_caption">Witamy w Science Journal</string>
-  <string name="first_experiment_second_text_note">Znajdź ciekawe pomysły na stronie 
+  <string name="first_experiment_second_text_note">Znajdź ciekawe pomysły na stronie
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Wybierz zdjęcie doświadczenia</string>
   <string name="btn_take_picture_content_description">Zrób zdjęcie</string>
@@ -740,8 +740,8 @@ Jeśli masz już dane na tym urządzeniu, po zalogowaniu się możesz zapisać i
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -798,7 +798,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -902,5 +902,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>

@@ -192,21 +192,21 @@
   <string name="sensor_desc_short_rotation">מספר הסיבובים לדקה</string>
   <string name="sensor_desc_short_raw">נתוני קריאה גולמיים באחוזים מחיישן חיצוני.</string>
   <string name="sensor_desc_short_barometer">הלחץ האטמוספרי נמדד בהקטופסקל (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">חיישן האור מהסביבה מודד את האור ביחידות לוקס, יחידת תאורה שתלויה בכמות האור הנכנס ובגודל השטח עליו הוא מתפזר. 
+  <string name="sensor_desc_first_paragraph_light">חיישן האור מהסביבה מודד את האור ביחידות לוקס, יחידת תאורה שתלויה בכמות האור הנכנס ובגודל השטח עליו הוא מתפזר.
 
-ירח מלא מספק בערך לוקס אחד של הארה, נורת חדר טיפוסית מפיקה כ-50 לוקס, תאורה של חדר כיתה, זריחה ושקיעה מייצרות כ-400 לוקס, אור יום (קרינת שמש לא ישירה) מייצר בערך 10,000 לוקס וקרינת שמש ישירה כ-30,000 לוקס. 
+ירח מלא מספק בערך לוקס אחד של הארה, נורת חדר טיפוסית מפיקה כ-50 לוקס, תאורה של חדר כיתה, זריחה ושקיעה מייצרות כ-400 לוקס, אור יום (קרינת שמש לא ישירה) מייצר בערך 10,000 לוקס וקרינת שמש ישירה כ-30,000 לוקס.
 
 לוקס הוא יחידה שרוב האנשים אינם מכירים. יחידת המידה המשמשת אותנו כאשר אנחנו רוכשים נורות לשימוש ביתי היא ואט – אבל ערך הוואט של נורה לא מוסר מידע על רמת הבהירות של הנורה, אלא רק כמה אנרגיה היא צורכת. יחידות לומן הן מדד טוב יותר כאשר רוכשים נורות: בעזרתן תדע כמה אור הנורה תייצר בפועל. יחידות לוקס לעומת זאת, מציינות כמה מן האור הזה מגיע לאזור מסוים.</string>
-  <string name="sensor_desc_second_paragraph_light">האור מתפשט במרחב תוך כדי תנועה, ולכן מספר יחידות הלוקס יורד ככל שמתרחקים ממקור האור, אף על פי שהמקור ממשיך לפלוט כמות זהה של אור ביחידות לומן. גם משטח מוטה, שפני השטח שלו אינם פונים לכיוון מקור האור, זוכה לכמות פחותה של תאורה – זו גם הסיבה לכך שאזורי קו המשווה על פני כדור הארץ חמים הרבה יותר בהשוואה לקטבים הצוננים. 
+  <string name="sensor_desc_second_paragraph_light">האור מתפשט במרחב תוך כדי תנועה, ולכן מספר יחידות הלוקס יורד ככל שמתרחקים ממקור האור, אף על פי שהמקור ממשיך לפלוט כמות זהה של אור ביחידות לומן. גם משטח מוטה, שפני השטח שלו אינם פונים לכיוון מקור האור, זוכה לכמות פחותה של תאורה – זו גם הסיבה לכך שאזורי קו המשווה על פני כדור הארץ חמים הרבה יותר בהשוואה לקטבים הצוננים.
 
 דרך אגב, חיישן האור במכשיר הטלפון שלך מיועד לבקר את רמת התאורה של המסך ולהתאים אותה לסביבה חשוכה או בהירה. רכיב קטנטן מסוג מוליך למחצה בתוך חיישן האור מגיב לאור הנכנס ביצירה של כמות קטנה, אך ניתנת למדידה של זרם חשמלי – תופעה המוכרת בשם האפקט הפוטואלקטרי. חיישנים דומים משמשים לפעמים להדלקה של פנסי רחוב עם רדת החשכה.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">בטלפון שלך יש התקן שנועד לזהות שדות מגנטיים: מגנטומטר. זהו חיישן תלת-צירי זעיר שמשתמש בזרמים חשמליים כדי לזהות את העוצמה של השדה המגנטי בשלושת הממדים של המרחב. על ידי שילוב בין הנתונים משלושת הצירים אנחנו יכולים ליצור חיישן שמודד את העוצמה הכוללת של השדה המגנטי. 
+  <string name="sensor_desc_first_paragraph_magnetic_strength">בטלפון שלך יש התקן שנועד לזהות שדות מגנטיים: מגנטומטר. זהו חיישן תלת-צירי זעיר שמשתמש בזרמים חשמליים כדי לזהות את העוצמה של השדה המגנטי בשלושת הממדים של המרחב. על ידי שילוב בין הנתונים משלושת הצירים אנחנו יכולים ליצור חיישן שמודד את העוצמה הכוללת של השדה המגנטי.
 
-חלק מהמגנטומטרים מזהים שדות מגנטיים באמצעות אפקט הול — הנטייה של שדות מגנטיים להסיט מטען חשמלי נע תוך כדי זרימה. מגנטומטרים חדשים יותר מבוססים על נגדים מגנטיים, סגסוגות שההתנגדות החשמלית שלהן משתנה בתגובה לשדות מגנטיים. 
+חלק מהמגנטומטרים מזהים שדות מגנטיים באמצעות אפקט הול — הנטייה של שדות מגנטיים להסיט מטען חשמלי נע תוך כדי זרימה. מגנטומטרים חדשים יותר מבוססים על נגדים מגנטיים, סגסוגות שההתנגדות החשמלית שלהן משתנה בתגובה לשדות מגנטיים.
 
 למה צריך מגנטומטר בטלפון? מפני שהיכולת להתמצא במרחב שימושית לאפליקציות ניווט ולאפליקציות שונות עם מצפן מובנה, במיוחד כאלו שמכוונות נהגים במהלך נסיעה.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">מגנטים, זרמים חשמליים ועצמים ממתכת מסיטים בקלות רבה את המגנטומטר שבטלפון, אך גם באמצע שדה פתוח המגנטומטר יראה קריאה נמוכה שאינה אפס: זהו השדה המגנטי של כדור הארץ!</string>
-  <string name="sensor_desc_first_paragraph_acc">עצמים נוטים להישאר ללא תנועה, או להמשיך לנוע אם הם כבר נמצאים בתנועה – לתופעה זו קוראים אינרציה. החוק הראשון של ניוטון מנסח את הרעיון הזה כעיקרון: כל גוף יתמיד במצבו – עמידה או תנועה – כל עוד לא פועלים עליו שום כוחות חיצוניים. 
+  <string name="sensor_desc_first_paragraph_acc">עצמים נוטים להישאר ללא תנועה, או להמשיך לנוע אם הם כבר נמצאים בתנועה – לתופעה זו קוראים אינרציה. החוק הראשון של ניוטון מנסח את הרעיון הזה כעיקרון: כל גוף יתמיד במצבו – עמידה או תנועה – כל עוד לא פועלים עליו שום כוחות חיצוניים.
 
 כאשר כוח חיצוני גורם לגוף לזוז ממקומו, אנו אומרים שהגוף מאיץ: המהירות שלו משתנה – עולה, יורדת או משנה כיוון. התאוצה נמדדת כשינוי במהירות (מטרים לשנייה) למשך זמן, או מטרים לשנייה בריבוע (m/s²). ‏
 
@@ -265,12 +265,12 @@
   <string name="sensor_desc_second_paragraph_raw">Bluetooth הוא תקן טכנולוגיה אלחוטי שמשתמש בגלי רדיו כדי לשלוח ולקבל נתונים למרחקים קצרים ממכשירים נייחים וניידים.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">הנתונים המופיעים כאן מגיעים מתקשורת של חיישן חיצוני עם הטלפון דרך Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth הוא תקן טכנולוגיה אלחוטי שמשתמש בגלי רדיו כדי לשלוח ולקבל נתונים למרחקים קצרים ממכשירים נייחים וניידים.</string>
-  <string name="sensor_desc_first_paragraph_barometer">על אף שבדרך כלל אנחנו לא מבחינים בכך, כולנו גרים בתחתית של אוקיינוס עמוק מלא באוויר: האטמוספירה של כדור הארץ, שגובהה למעלה מ-40 ק\"מ. משקל כל האוויר הזה, הלוחץ עלינו מלמעלה, יוצר לחץ שנקרא לחץ אטמוספרי. 
+  <string name="sensor_desc_first_paragraph_barometer">על אף שבדרך כלל אנחנו לא מבחינים בכך, כולנו גרים בתחתית של אוקיינוס עמוק מלא באוויר: האטמוספירה של כדור הארץ, שגובהה למעלה מ-40 ק\"מ. משקל כל האוויר הזה, הלוחץ עלינו מלמעלה, יוצר לחץ שנקרא לחץ אטמוספרי.
 
 בגובה פני הים, הלחץ האטמוספרי מפעיל כוח של ‎14 psi (שהם 0.9843 ק\"ג לס\"מ מרובע) - או שווה ערך של 0.65 טון על שטח בגודל דף נייר סטנדרטי.</string>
-  <string name="sensor_desc_second_paragraph_barometer">אנחנו לא מבחינים בלחץ הכבד הזה מפני שאנחנו רגילים אליו, אבל אנחנו שמים לב אליו מיד ברגע שהוא משתנה, אפילו במעט. זה קורה כשאנחנו נמצאים במקומות גבוהים במיוחד או בטיסות, למשל. הלחץ האטמוספרי משתנה גם לפי תנאי מזג האוויר. הוא יורד כשהאוויר סוער ולא יציב ועולה כאשר האוויר מתייצב והשמיים מתבהרים. 
+  <string name="sensor_desc_second_paragraph_barometer">אנחנו לא מבחינים בלחץ הכבד הזה מפני שאנחנו רגילים אליו, אבל אנחנו שמים לב אליו מיד ברגע שהוא משתנה, אפילו במעט. זה קורה כשאנחנו נמצאים במקומות גבוהים במיוחד או בטיסות, למשל. הלחץ האטמוספרי משתנה גם לפי תנאי מזג האוויר. הוא יורד כשהאוויר סוער ולא יציב ועולה כאשר האוויר מתייצב והשמיים מתבהרים.
 
-הברומטר הדיגיטלי שבטלפון שלך מודד לחץ אטמוספרי ביחידות של הקטו-פסקל (הקטו-פסקל אחד הוא 100 פסקל, ופסקל אחד הוא ניוטון אחד של כוח המופעל על מטר רבוע). בתחזיות מזג האוויר, החזאים מציינים את הלחץ האטמוספרי ביחידות של מיליבר. זו יחידת מידה שוות ערך להקטו-פסקל ונעימה יותר לאוזן. 
+הברומטר הדיגיטלי שבטלפון שלך מודד לחץ אטמוספרי ביחידות של הקטו-פסקל (הקטו-פסקל אחד הוא 100 פסקל, ופסקל אחד הוא ניוטון אחד של כוח המופעל על מטר רבוע). בתחזיות מזג האוויר, החזאים מציינים את הלחץ האטמוספרי ביחידות של מיליבר. זו יחידת מידה שוות ערך להקטו-פסקל ונעימה יותר לאוזן.
 
 אתה ודאי שואל את עצמך: למה טלפון צריך למדוד לחץ? התשובה היא מכיוון שהלחץ האטמוספרי משתנה באופן מדיד אפילו כאשר מתרחש שינוי קל בגובה, כמו למשל בזמן עלייה במדרגות. לכן, הברומטר הדיגיטלי שבטלפון יכול לזהות שינויים במיקום. לדוגמה, ניתן להשתמש בו כדי לזהות באיזו קומה אתה נמצא בבניין או באיזה מפלס של מחלף אתה נוסע.</string>
   <string name="run_review_activity_label">סקירה</string>
@@ -482,9 +482,9 @@
   <string name="compass">מצפן</string>
   <string name="compass_units">מעלות</string>
   <string name="sensor_desc_short_compass">הכיוון של הטלפון ביחס לשדה המגנטי של כדור הארץ.</string>
-  <string name="sensor_desc_first_paragraph_compass">בטח כבר ידעת שלכדור הארץ יש שדה מגנטי.  מה שאולי לא ידעת הוא שבטלפון שלך יש התקן שנועד לזהות שדות מגנטיים: מגנטומטר. על ידי שילוב בין נתוני המגנטומטר של הטלפון והכיוון שאליו מופנה הטלפון במרחב, אפשר ליצור מצפן דיגיטלי. 
+  <string name="sensor_desc_first_paragraph_compass">בטח כבר ידעת שלכדור הארץ יש שדה מגנטי.  מה שאולי לא ידעת הוא שבטלפון שלך יש התקן שנועד לזהות שדות מגנטיים: מגנטומטר. על ידי שילוב בין נתוני המגנטומטר של הטלפון והכיוון שאליו מופנה הטלפון במרחב, אפשר ליצור מצפן דיגיטלי.
 
-המצפן הקלאסי הוא מגנטומטר פשוט בעל מחט ממוגנטת שמסתובבת ומתיישרת לכיוון של השדה המגנטי שסביבה. בטלפון אין מצפן, אלא חיישן תלת-צירי זעיר שמשתמש בזרמים חשמליים כדי לזהות את העוצמה של השדה המגנטי בשלושת הממדים של המרחב. זה נשמע מדהים, אבל זה לא מספיק כדי ליצור מצפן! 
+המצפן הקלאסי הוא מגנטומטר פשוט בעל מחט ממוגנטת שמסתובבת ומתיישרת לכיוון של השדה המגנטי שסביבה. בטלפון אין מצפן, אלא חיישן תלת-צירי זעיר שמשתמש בזרמים חשמליים כדי לזהות את העוצמה של השדה המגנטי בשלושת הממדים של המרחב. זה נשמע מדהים, אבל זה לא מספיק כדי ליצור מצפן!
 
 למה המצפן צריך לשלב בין נתוני המגנטומטר לבין הכיוון שאליו המכשיר מופנה? כי אם אנחנו יודעים לאיזה כיוון פונה המכשיר, אנחנו יכולים לחשב את הסיבוב המגנטי גם כשהטלפון לא מונח על משטח אופקי, כלומר לא נמצא באותו מישור כמו השדה המגנטי של כדור הארץ. אנחנו יודעים שכוח הכבידה פועל במאונך לשדה המגנטי של כדור הארץ. לכן, אנחנו יכולים להשתמש בכיוון של כוח הכבידה מהחיישנים של מד התאוצה כדי לקבוע איזה חלק מהשדה המגנטי של הטלפון נמצא באותו מישור כמו השדה המגנטי של כדור הארץ.</string>
   <string name="sensor_desc_second_paragraph_compass">כמו שבטח שמת לב, המצפן מגיב לא רק לשדה המגנטי של כדור הארץ, אלא לכל שדה מגנטי אחר בסביבה. מגנטים, זרמים חשמליים ועצמים ממתכת מסיטים את המגנטומטר שבטלפון בקלות רבה ומשנים את הקריאה של המצפן. כדי להיות בטוחים שהקצה האדום של המצפן מצביע לעבר השדה המגנטי של כדור הארץ, מומלץ לעמוד בשטח פתוח — עדיף בשטח לא מקורה ורחוק מקווי חשמל. הזזת מכשיר הטלפון בצורה של הספרה 8 עוזרת לכייל את המגנומטר שלו.</string>
@@ -497,7 +497,7 @@
   <string name="month_year_format">MMMM yyyy</string>
   <string name="linear_accelerometer">מד תאוצה לינארי</string>
   <string name="sensor_desc_short_linear_acc">התאוצה הכוללת של הטלפון, לא כולל את כוח הכבידה, ביחידות של m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">עצמים שאינם זזים נוטים להישאר ללא תנועה, אבל אם הם כבר נמצאים בתנועה, הם נוטים להמשיך לנוע. לתופעה הזו קוראים אינרציה או הֶתְמֵד. העיקרון הזה נקרא \"החוק הראשון של ניוטון\": כל גוף יתמיד במצבו, כלומר יישאר במנוחה או בתנועה, כל עוד לא פועלים עליו שום כוחות חיצוניים. 
+  <string name="sensor_desc_first_paragraph_linear_acc">עצמים שאינם זזים נוטים להישאר ללא תנועה, אבל אם הם כבר נמצאים בתנועה, הם נוטים להמשיך לנוע. לתופעה הזו קוראים אינרציה או הֶתְמֵד. העיקרון הזה נקרא \"החוק הראשון של ניוטון\": כל גוף יתמיד במצבו, כלומר יישאר במנוחה או בתנועה, כל עוד לא פועלים עליו שום כוחות חיצוניים.
 
 כאשר כוח חיצוני גורם לגוף לזוז ממקומו, אנחנו אומרים שהגוף מאיץ: המהירות שלו משתנה – עולה, יורדת או משנה כיוון. תאוצה נמדדת כשינוי במהירות (מטרים לשנייה) למשך זמן, ויחידות המידה שלה הן מטרים לשנייה בריבוע (m/s²). ‏
 
@@ -522,7 +522,7 @@
   <string name="first_experiment_title">ברוכים הבאים ליומן המדע</string>
   <string name="first_experiment_text_note">בעזרת סרגל הכלים שלמטה אפשר לרשום הערות ולתעד נתונים.</string>
   <string name="first_experiment_picture_note_caption">ברוכים הבאים ליומן המדע!</string>
-  <string name="first_experiment_second_text_note">רוצה למצוא פעילויות מעניינות? אפשר לחפש בכתובת 
+  <string name="first_experiment_second_text_note">רוצה למצוא פעילויות מעניינות? אפשר לחפש בכתובת
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">בחירת תמונה לניסוי</string>
   <string name="btn_take_picture_content_description">צילום תמונה</string>
@@ -764,8 +764,8 @@ g.co/sciencejournalactivities</string>
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -822,7 +822,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -926,5 +926,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>

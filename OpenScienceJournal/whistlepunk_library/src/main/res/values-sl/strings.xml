@@ -192,36 +192,36 @@
   <string name="sensor_desc_short_rotation">Število vrtljajev na minuto</string>
   <string name="sensor_desc_short_raw">Odstotek neobdelanih podatkov, prebranih iz zunanjega tipala.</string>
   <string name="sensor_desc_short_barometer">Atmosferski tlak, izmerjen v hektopaskalih (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Tipalo svetlobe v okolju meri svetlobo v luksih, enoti za osvetlitev, ki je odvisna od količine dohodne svetlobe in območja, po katerem je razporejena. 
+  <string name="sensor_desc_first_paragraph_light">Tipalo svetlobe v okolju meri svetlobo v luksih, enoti za osvetlitev, ki je odvisna od količine dohodne svetlobe in območja, po katerem je razporejena.
 
-Polna luna ustvarja približno 1 luks osvetlitve, običajna luč, ki osvetljuje dnevno sobo, približno 50 luksov, osvetlitev učilnice in sončni vzhod ter zahod približno 400 luksov, dnevna svetloba (posredna sončna svetloba) več kot 10.000 luksov, neposredna sončna svetloba pa več kot 30.000 luksov. 
+Polna luna ustvarja približno 1 luks osvetlitve, običajna luč, ki osvetljuje dnevno sobo, približno 50 luksov, osvetlitev učilnice in sončni vzhod ter zahod približno 400 luksov, dnevna svetloba (posredna sončna svetloba) več kot 10.000 luksov, neposredna sončna svetloba pa več kot 30.000 luksov.
 
 Luks je enota, ki je večina od nas ne pozna. Pri kupovanju žarnic uporabljamo vate, vendar nam ti ne povejo, kako svetla je žarnica, pač pa samo, koliko energije porablja. Boljša enota za kupovanje žarnic so lumni, ki povejo, koliko svetlobe bo žarnica dejansko ustvarila, luksi pa povejo, koliko svetlobe bo padlo na določeno območje.</string>
-  <string name="sensor_desc_second_paragraph_light">Svetloba se med potovanjem širi navzven, zato se število luksov pri odmikanju od vira svetlobe zmanjšuje, čeprav vir še vedno oddaja enako količino svetlobe v lumnih. Tudi območje, ki je nagnjeno stran od virov svetlobe, je manj osvetljeno. Zaradi tega so ekvatorialna območja Zemlje toliko toplejša od mrzlih tečajev. 
+  <string name="sensor_desc_second_paragraph_light">Svetloba se med potovanjem širi navzven, zato se število luksov pri odmikanju od vira svetlobe zmanjšuje, čeprav vir še vedno oddaja enako količino svetlobe v lumnih. Tudi območje, ki je nagnjeno stran od virov svetlobe, je manj osvetljeno. Zaradi tega so ekvatorialna območja Zemlje toliko toplejša od mrzlih tečajev.
 
 Mimogrede, naloga tipala svetlobe v telefonu je, da nadzoruje osvetlitev zaslona in jo prilagaja temnim in svetlim okoljem. Znotraj svetlobnega tipala se majhen polprevodnik odziva na dohodno svetlobo z ustvarjanjem šibkega, vendar merljivega električnega toka – temu pojavu pravimo fotoelektrični učinek. Podobna tipala se uporabljajo v nekaterih uličnih svetilkah, da se vklopijo, ko se zunaj stemni.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">V vašem telefonu je naprava, ki zaznava magnetna polja: magnetometer. To majhno triosno tipalo z električnimi tokovi zaznava moč magnetnega polja v treh dimenzijah prostora. Z združitvijo podatkov z vseh treh osi lahko ustvarimo tipalo za merjenje celotne moči magnetnega polja. 
+  <string name="sensor_desc_first_paragraph_magnetic_strength">V vašem telefonu je naprava, ki zaznava magnetna polja: magnetometer. To majhno triosno tipalo z električnimi tokovi zaznava moč magnetnega polja v treh dimenzijah prostora. Z združitvijo podatkov z vseh treh osi lahko ustvarimo tipalo za merjenje celotne moči magnetnega polja.
 
-Nekateri magnetometri magnetna polja zaznavajo s Hallovim pojavom. Ta pojav označuje značilnost magnetnih polj, da spremenijo smer toka električnega naboja. Novejši magnetometri uporabljajo magnetne upore, kovinske zlitine, ki spreminjajo svojo upornost glede na magnetna polja. 
+Nekateri magnetometri magnetna polja zaznavajo s Hallovim pojavom. Ta pojav označuje značilnost magnetnih polj, da spremenijo smer toka električnega naboja. Novejši magnetometri uporabljajo magnetne upore, kovinske zlitine, ki spreminjajo svojo upornost glede na magnetna polja.
 
 Zakaj telefon potrebuje magnetometer? Podatek o usmerjenosti v prostoru je pomemben za vgrajene kompasne in navigacijske aplikacije. To velja predvsem za aplikacije, ki zagotavljajo podrobna navodila za pot.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magneti, električni tokovi in kovinski predmeti zelo hitro vplivajo na magnetometer v telefonu. Magnetometer v telefonu tudi sredi praznega polja vedno prikazuje nizko neničelno vrednost: to je magnetno polje Zemlje.</string>
-  <string name="sensor_desc_first_paragraph_acc">Predmeti so nagnjeni k temu, da ostanejo na svojem mestu ali da nadaljujejo z gibanjem, če se gibljejo – temu pravimo vztrajnost. Formalno jo opisuje Newtonov prvi zakon: predmet nadaljuje z gibanjem ali ostane na svojem mestu, razen če nanj deluje neizenačena sila. 
+  <string name="sensor_desc_first_paragraph_acc">Predmeti so nagnjeni k temu, da ostanejo na svojem mestu ali da nadaljujejo z gibanjem, če se gibljejo – temu pravimo vztrajnost. Formalno jo opisuje Newtonov prvi zakon: predmet nadaljuje z gibanjem ali ostane na svojem mestu, razen če nanj deluje neizenačena sila.
 
-Ko neizenačena sila povzroči, da se predmet premakne, pravimo, da predmet pospešuje: njegova hitrost se spremeni – predmet pospeši, upočasni ali spremeni smer gibanja. Pospeševanje se meri kot sprememba hitrosti (ta se meri v metrih na sekundo) v času ali v metrih na kvadratno sekundo (m/s²). 
+Ko neizenačena sila povzroči, da se predmet premakne, pravimo, da predmet pospešuje: njegova hitrost se spremeni – predmet pospeši, upočasni ali spremeni smer gibanja. Pospeševanje se meri kot sprememba hitrosti (ta se meri v metrih na sekundo) v času ali v metrih na kvadratno sekundo (m/s²).
 
 V telefonu je naprava, ki meri te spremembe gibanja – merilnik pospeška. Znotraj merilnika pospeška se prosto gibljejo majhne viseče uteži. Spremembe v gibanju povzročijo, da se te uteži premaknejo, podobno kot se vaša glava v avtomobilu, ki nenadoma zavre, premakne naprej. Merilnik pospeška v telefonu meri te majhne vztrajnostne premike in tako zazna spremembe v gibanju in usmerjenosti. To je uporabno za preklapljanje zaslona iz ležeče usmeritve v pokončno, igranje iger na telefonu in drugo.</string>
   <string name="sensor_desc_second_paragraph_acc">Verjetno ste opazili nenehen pospešek v smeri osi Z, tudi ko telefon odložite na mizo. To je pospešek, ki zaradi gravitacijskega privlaka deluje na nas na površini Zemlje, in znaša približno 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Zvok ustvarjajo vibracije. Vaš glas na primer ustvarjajo vibracije glasilk v vašem grlu. Te vibracije ustvarjajo izmenjujoča se območja visokega in nizkega zračnega tlaka, ki potujejo navzven, podobno kot okrogli valovi, ki se širijo navzven, ko v jezero vržete kamen.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Vse zvoke je mogoče opisati z njihovo frekvenco in jakostjo. 
+  <string name="sensor_desc_second_paragraph_decibel">Vse zvoke je mogoče opisati z njihovo frekvenco in jakostjo.
 
-Z aplikacijo Science Journal tukaj merite jakost v decibelih (dB). Jakost, ali glasnost, je odvisna od razdalje, za katero se predmet premakne ob vsaki vibraciji. Večjo jakost slišimo kot višjo glasnost. 
+Z aplikacijo Science Journal tukaj merite jakost v decibelih (dB). Jakost, ali glasnost, je odvisna od razdalje, za katero se predmet premakne ob vsaki vibraciji. Večjo jakost slišimo kot višjo glasnost.
 
-Frekvenca (tudi višina ali ton) zvočnega vala je enakovredna njegovi hitrosti vibriranja. Hitreje kot predmet vibrira, višji bo ustvarjen zvok. Tipalo za jakost zvoka v aplikaciji Science Journal ne meri frekvence, pač pa le glasnost. 
+Frekvenca (tudi višina ali ton) zvočnega vala je enakovredna njegovi hitrosti vibriranja. Hitreje kot predmet vibrira, višji bo ustvarjen zvok. Tipalo za jakost zvoka v aplikaciji Science Journal ne meri frekvence, pač pa le glasnost.
 
 Upoštevati morate, da je mikrofon v vaši napravi zasnovan tako, da je zelo občutljiv na spremembe zvočnih valov skozi čas, ne pa tudi na absolutno velikost vsakega vala. Poskusili smo izbrati kodo, ki bo zagotavljala številke, podobne spodaj navedenim referenčnim, vendar lahko naprave izmerijo dosledno višje ali nižje številke. Znanstveniki taka tipala običajno umerijo glede na znano meritev. Science Journal vam trenutno lahko pove, ali bo vožnja z vlakom glasnejša od rokovskega koncerta, vendar le, če imate na obeh dogodkih isti telefon.
 
-Vedeti morate tudi, da so med »jakostjo zvoka«, »ravnjo jakosti zvoka« in »zvočnim tlakom« pomembne razlike. Tukaj vse tri meritve obravnavamo enako, če pa želite več podrobnosti, vam je na voljo veliko število spletnih virov, kjer so opisane razlike. 
+Vedeti morate tudi, da so med »jakostjo zvoka«, »ravnjo jakosti zvoka« in »zvočnim tlakom« pomembne razlike. Tukaj vse tri meritve obravnavamo enako, če pa želite več podrobnosti, vam je na voljo veliko število spletnih virov, kjer so opisane razlike.
 
 Glasnost najtišjega zvoka, ki ga lahko zazna uho povprečnega človeka, je 0 dB. Glasnost običajnega pogovora je okrog 60 dB, zvoki nad 140 dB pa so za človeško uho boleči. Škodljivi so lahko tudi neboleči zvoki. Neprekinjena izpostavljenost zvokom glasnosti 90 dB, kar približno ustreza glasnosti sesalnika, lahko sčasoma povzroči okvaro sluha.
 
@@ -239,9 +239,9 @@ Grmenje – 120 dB
 Pnevmatsko kladivo – 130 dB
 Vzlet letala – 140 dB</string>
   <string name="sensor_desc_first_paragraph_pitch">Zvok ustvarjajo vibracije. Vaš glas na primer ustvarjajo vibracije glasilk v vašem grlu. Te vibracije ustvarjajo izmenjujoča se območja visokega in nizkega zračnega tlaka, ki potujejo navzven, podobno kot okrogli valovi, ki se širijo navzven, ko v jezero vržete kamen.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Vse zvoke je mogoče opisati z njihovo frekvenco in jakostjo. Frekvenca (tudi višina ali ton) zvočnega vala je enakovredna njegovi hitrosti vibriranja. Hitreje kot predmet vibrira, višji bo ustvarjen zvok. Vibriranje merimo v hercih (Hz), kjer je 1 herc 1 vibracija na sekundo. 
+  <string name="sensor_desc_second_paragraph_pitch">Vse zvoke je mogoče opisati z njihovo frekvenco in jakostjo. Frekvenca (tudi višina ali ton) zvočnega vala je enakovredna njegovi hitrosti vibriranja. Hitreje kot predmet vibrira, višji bo ustvarjen zvok. Vibriranje merimo v hercih (Hz), kjer je 1 herc 1 vibracija na sekundo.
 
-Človeško uho lahko zazna zvoke v obsegu od 20 do 20.000 Hz. Tipka z najnižjim zvokom klavirja ustvari zvok s frekvenco 27,5 Hz, tipka z najvišjim zvokom pa zvok s frekvenco 4186,01 Hz. 
+Človeško uho lahko zazna zvoke v obsegu od 20 do 20.000 Hz. Tipka z najnižjim zvokom klavirja ustvari zvok s frekvenco 27,5 Hz, tipka z najvišjim zvokom pa zvok s frekvenco 4186,01 Hz.
 
 Rdeča pika prikazuje, kako blizu najbližji glasbeni noti je zaznan ton. Če je ton nižji, bo pika prikazana na levi. Če je ton višji, bo rdeča pika prikazana na desni.</string>
   <string name="pitch_low_content_description">nizek ton</string>
@@ -255,22 +255,22 @@ Rdeča pika prikazuje, kako blizu najbližji glasbeni noti je zaznan ton. Če je
   <string name="pitch_sharper_than_flat_note_content_description">Toliko poltonov višje od znižanega tona %1$s: %3$s, oktava %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">Toliko poltonov višje od zvišanega tona %1$s: %3$s, oktava %2$s</string>
   <string name="pitch_high_content_description">visok ton</string>
-  <string name="sensor_desc_first_paragraph_rotation">Vrtljaji na minuto (vrt./min) so meritev frekvence vrtenja okoli nepremične osi v eni minuti. 
+  <string name="sensor_desc_first_paragraph_rotation">Vrtljaji na minuto (vrt./min) so meritev frekvence vrtenja okoli nepremične osi v eni minuti.
 
 Ko se vetrnica vrti, poganja tudi disk kodirnika:</string>
   <string name="sensor_desc_second_paragraph_rotation">To ustvarja obdobja svetlobe in teme na tipalu, kar se v aplikaciji Science Journal zazna kot vrtljaj.</string>
-  <string name="sensor_desc_first_paragraph_raw">Tukaj prikazani podatki prihajajo iz komunikacije zunanjega tipala s telefonom prek povezave Bluetooth. 
+  <string name="sensor_desc_first_paragraph_raw">Tukaj prikazani podatki prihajajo iz komunikacije zunanjega tipala s telefonom prek povezave Bluetooth.
 
 Vrednost prikazuje odstotek neobdelanih podatkov, odčitanih neposredno iz mikrokrmilnika. To je običajno odstotek padca napetosti prek tipala.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth je standard za brezžično tehnologijo, s katero nepremične in mobilne naprave z radijskimi valovi izmenjujejo podatke na kratkih razdaljah.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Tukaj prikazani podatki prihajajo iz komunikacije zunanjega tipala s telefonom prek povezave Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth je standard za brezžično tehnologijo, s katero nepremične in mobilne naprave z radijskimi valovi izmenjujejo podatke na kratkih razdaljah.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Čeprav to redko opazimo, živimo na dnu globokega oceana zraka: to je Zemljina atmosfera, ki se razteza 40 kilometrov (130.000 čevljev) visoko. Teža vsega tega zraka pritiska na nas in ustvarja tako imenovani atmosferski tlak. 
+  <string name="sensor_desc_first_paragraph_barometer">Čeprav to redko opazimo, živimo na dnu globokega oceana zraka: to je Zemljina atmosfera, ki se razteza 40 kilometrov (130.000 čevljev) visoko. Teža vsega tega zraka pritiska na nas in ustvarja tako imenovani atmosferski tlak.
 
 Na višini morske gladine atmosfera na vsak kvadratni centimeter površine pritiska s silo enega kilograma. To pomeni, da na površino velikosti običajnega lista papirja deluje s 590-kilogramsko silo.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Tega visokega tlaka ne opazimo, ker smo ga navajeni. Kljub temu pa začutimo že čisto rahle spremembe tega tlaka, na primer ko se povzpnemo na veliko nadmorsko višino ali potujemo z letalom. Atmosferski tlak je odvisen tudi od vremenskih razmer – ob nevihtah in nestabilnem zraku pade, ko pa se zrak umiri in se nebo razjasni, se znova dvigne. 
+  <string name="sensor_desc_second_paragraph_barometer">Tega visokega tlaka ne opazimo, ker smo ga navajeni. Kljub temu pa začutimo že čisto rahle spremembe tega tlaka, na primer ko se povzpnemo na veliko nadmorsko višino ali potujemo z letalom. Atmosferski tlak je odvisen tudi od vremenskih razmer – ob nevihtah in nestabilnem zraku pade, ko pa se zrak umiri in se nebo razjasni, se znova dvigne.
 
-Digitalni barometer v telefonu meri atmosferski tlak v hektopaskalih (hektopaskal je enak 100 paskalom, paskal pa je enak sili enega newtona na kvadratni meter površine). Gotovo ste že slišali, da pri vremenski napovedi o atmosferskem tlaku govorijo v milibarih. Ta lepše zveneča enota je enaka hektopaskalu. 
+Digitalni barometer v telefonu meri atmosferski tlak v hektopaskalih (hektopaskal je enak 100 paskalom, paskal pa je enak sili enega newtona na kvadratni meter površine). Gotovo ste že slišali, da pri vremenski napovedi o atmosferskem tlaku govorijo v milibarih. Ta lepše zveneča enota je enaka hektopaskalu.
 
 Najbrž se sprašujete, zakaj bi telefon meril tlak. Atmosferski tlak se izmerljivo spremeni že pri najmanjših spremembah višine, denimo ko se povzpnete po stopnicah. Digitalni barometer lahko tako pomaga zaznati spremembo lokacije in vam denimo pove, v katerem nadstropju stavbe se nahajate ali če vozite po zgornji ali spodnji etaži mostu.</string>
   <string name="run_review_activity_label">Pregled</string>
@@ -482,9 +482,9 @@ Obvestilo o dovoljenjih:
   <string name="compass">Kompas</string>
   <string name="compass_units">stopinj</string>
   <string name="sensor_desc_short_compass">Usmerjenost telefona glede na magnetno polje Zemlje.</string>
-  <string name="sensor_desc_first_paragraph_compass">Najbrž že veste, da ima Zemlja magnetno polje. Morda pa niste vedeli, da je v vašem telefonu naprava, ki zaznava magnetna polja: magnetometer. Z združitvijo podatkov iz magnetometra telefona in podatkov o usmerjenosti telefona v prostoru lahko ustvarimo digitalni kompas. 
+  <string name="sensor_desc_first_paragraph_compass">Najbrž že veste, da ima Zemlja magnetno polje. Morda pa niste vedeli, da je v vašem telefonu naprava, ki zaznava magnetna polja: magnetometer. Z združitvijo podatkov iz magnetometra telefona in podatkov o usmerjenosti telefona v prostoru lahko ustvarimo digitalni kompas.
 
-Navadni kompas je preprost magnetometer z magnetno iglo, ki se obrača glede na magnetno polje, ki jo obdaja. Vaš telefon ne vsebuje majhnega kompasa, temveč majhno triosno tipalo, ki z električnimi tokovi zaznava moč magnetnega polja v treh dimenzijah prostora. Vendar samo to ni dovolj, da bi ustvarili kompas. 
+Navadni kompas je preprost magnetometer z magnetno iglo, ki se obrača glede na magnetno polje, ki jo obdaja. Vaš telefon ne vsebuje majhnega kompasa, temveč majhno triosno tipalo, ki z električnimi tokovi zaznava moč magnetnega polja v treh dimenzijah prostora. Vendar samo to ni dovolj, da bi ustvarili kompas.
 
 Zakaj mora kompas podatke iz magnetometra združiti s podatki o usmerjenosti telefona? Če poznamo usmerjenost telefona, lahko izračunamo magnetno vrtenje, tudi ko telefon ni postavljen vodoravno v enaki ravnini kot magnetno polje Zemlje. Vemo, da je gravitacija pravokotna na magnetno polje Zemlje, zato lahko s smerjo gravitacije iz tipal merilnika pospeška ugotovimo, kakšen del magnetnega polja je v isti ravnini kot magnetno polje Zemlje.</string>
   <string name="sensor_desc_second_paragraph_compass">Kot ste mora opazili, se kompas ne odziva le na magnetno polje Zemlje, ampak na vsa magnetna polja, ki ga obdajajo. Magneti, električni tokovi in kovinski predmeti zelo hitro vplivajo na magnetometer v telefonu, zato se bo odčitek na kompasu spreminjal. Če želite zagotoviti, da se rdeča konica kompasa ravna po magnetnem polju Zemlje, se postavite na odprto lokacijo, najbolje na prostem in stran od daljnovodov. Magnetometer v telefonu lahko umerite tako, da ga premikate v obliki številke 8.</string>
@@ -497,9 +497,9 @@ Zakaj mora kompas podatke iz magnetometra združiti s podatki o usmerjenosti tel
   <string name="month_year_format">MMMM llll</string>
   <string name="linear_accelerometer">Linearni meril. pospeška</string>
   <string name="sensor_desc_short_linear_acc">Skupni pospešek telefona brez upoštevanja gravitacije v m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Predmeti so nagnjeni k temu, da ostanejo na svojem mestu ali da nadaljujejo z gibanjem, če se gibljejo – temu pravimo vztrajnost. Formalno jo opisuje Newtonov prvi zakon: predmet nadaljuje z gibanjem ali ostane na svojem mestu, razen če nanj deluje neizenačena sila. 
+  <string name="sensor_desc_first_paragraph_linear_acc">Predmeti so nagnjeni k temu, da ostanejo na svojem mestu ali da nadaljujejo z gibanjem, če se gibljejo – temu pravimo vztrajnost. Formalno jo opisuje Newtonov prvi zakon: predmet nadaljuje z gibanjem ali ostane na svojem mestu, razen če nanj deluje neizenačena sila.
 
-Ko neizenačena sila povzroči, da se predmet premakne, pravimo, da predmet pospešuje: njegova hitrost se spremeni – predmet pospeši, upočasni ali spremeni smer gibanja. Pospeševanje se meri kot sprememba hitrosti (ta se meri v metrih na sekundo) v času ali v metrih na kvadratno sekundo (m/s²). 
+Ko neizenačena sila povzroči, da se predmet premakne, pravimo, da predmet pospešuje: njegova hitrost se spremeni – predmet pospeši, upočasni ali spremeni smer gibanja. Pospeševanje se meri kot sprememba hitrosti (ta se meri v metrih na sekundo) v času ali v metrih na kvadratno sekundo (m/s²).
 
 V telefonu je naprava, ki meri te spremembe gibanja – merilnik pospeška. Znotraj merilnika pospeška se prosto gibljejo majhne viseče uteži. Spremembe v gibanju povzročijo, da se te uteži premaknejo, podobno kot se vaša glava v avtomobilu, ki nenadoma zavre, premakne naprej. Merilnik pospeška v telefonu meri te majhne vztrajnostne premike in tako zazna spremembe v gibanju in usmerjenosti. To je uporabno za preklapljanje zaslona iz ležeče usmeritve v pokončno, igranje iger na telefonu in drugo.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Združeno tipalo linearnega merilnika pospeška beleži skupen pospešek po vseh treh oseh telefona in pri tem ne upošteva gravitacije.</string>
@@ -522,7 +522,7 @@ V telefonu je naprava, ki meri te spremembe gibanja – merilnik pospeška. Znot
   <string name="first_experiment_title">Dobrodošli v Science Journal</string>
   <string name="first_experiment_text_note">Poskusite ustvarjati opombe in beležiti podatke s spodnjo orodno vrstico.</string>
   <string name="first_experiment_picture_note_caption">Dobrodošli v Science Journal!</string>
-  <string name="first_experiment_second_text_note">Na g.co/sciencejournalactivities 
+  <string name="first_experiment_second_text_note">Na g.co/sciencejournalactivities
 lahko poiščete dejavnosti in jih preskusite</string>
   <string name="experiment_cover_description">Izberite fotografijo za poskus</string>
   <string name="btn_take_picture_content_description">Zajem slike</string>
@@ -764,8 +764,8 @@ poskuse v svetu okoli sebe</string>
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -822,7 +822,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -926,5 +926,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>

@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Het aantal rotaties per minuut</string>
   <string name="sensor_desc_short_raw">Het percentage van de onbewerkte lezing van een externe sensor.</string>
   <string name="sensor_desc_short_barometer">De atmosferische druk gemeten in hectopascal (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">De omgevingslichtsensor meet het licht in lux, een eenheid van verlichtingssterkte. 1 lux is de verlichtingssterkte voortgebracht door 1 candela op een oppervlak loodrecht op de lichtstralen op een afstand van 1 meter van de bron. 
+  <string name="sensor_desc_first_paragraph_light">De omgevingslichtsensor meet het licht in lux, een eenheid van verlichtingssterkte. 1 lux is de verlichtingssterkte voortgebracht door 1 candela op een oppervlak loodrecht op de lichtstralen op een afstand van 1 meter van de bron.
 
- Een volle maan levert ongeveer 1 lux verlichting, een gewone lamp in de kamer ongeveer 50 lux, de verlichting in een klaslokaal en een zonsopgang of zonsondergang ongeveer 400 lux, daglicht (indirect zonlicht) meer dan 10.000 lux en direct zonlicht meer dan 30.000 lux. 
+ Een volle maan levert ongeveer 1 lux verlichting, een gewone lamp in de kamer ongeveer 50 lux, de verlichting in een klaslokaal en een zonsopgang of zonsondergang ongeveer 400 lux, daglicht (indirect zonlicht) meer dan 10.000 lux en direct zonlicht meer dan 30.000 lux.
 
 Veel mensen kennen de eenheid lux eigenlijk niet. Als we een lamp kopen, kijken we naar de hoeveelheid watt. Maar de wattage van een lamp zegt niets over de helderheid, alleen over het energieverbruik. Je kunt beter naar de lumina kijken als je een lamp koopt. Deze geven aan hoe helder de lamp is. Lux geeft de hoeveelheid licht aan die een bepaalde plek bereikt.</string>
-  <string name="sensor_desc_second_paragraph_light">Aangezien licht zich verspreidt als het zich verplaatst, neemt het aantal lux af als je je van een lichtbron verwijdert, ook al straalt de bron dezelfde hoeveelheid licht uit in lumina. Een gebied dat van een lichtbron is afgekanteld, krijgt ook minder verlichting. Daarom zijn de tropen hier op aarde ook warmer dan de polen. 
+  <string name="sensor_desc_second_paragraph_light">Aangezien licht zich verspreidt als het zich verplaatst, neemt het aantal lux af als je je van een lichtbron verwijdert, ook al straalt de bron dezelfde hoeveelheid licht uit in lumina. Een gebied dat van een lichtbron is afgekanteld, krijgt ook minder verlichting. Daarom zijn de tropen hier op aarde ook warmer dan de polen.
 
 Het doel van de lichtsensor in je telefoon is trouwens om het lichtniveau van het scherm te regelen en aan te passen aan donkere en lichte omgevingen. In de lichtsensor zit een piepkleine halfgeleider die op licht reageert door een kleine, maar meetbare elektrische stroom te produceren. Dit noemen we het foto-elektrische effect. Soortgelijke sensoren worden ook gebruikt om straatverlichting in te schakelen als het buiten donker wordt.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">In je telefoon zit een apparaatje dat magnetische velden detecteert: een magnetometer. Deze kleine sensor met drie assen gebruikt elektrische stromen om de sterkte van het magnetische veld te bepalen in de drie ruimtelijke dimensies. Door de gegevens van alle drie de assen te combineren, kunnen we een complete sensor maken om het magnetische veld mee te meten. 
+  <string name="sensor_desc_first_paragraph_magnetic_strength">In je telefoon zit een apparaatje dat magnetische velden detecteert: een magnetometer. Deze kleine sensor met drie assen gebruikt elektrische stromen om de sterkte van het magnetische veld te bepalen in de drie ruimtelijke dimensies. Door de gegevens van alle drie de assen te combineren, kunnen we een complete sensor maken om het magnetische veld mee te meten.
 
-Sommige magnetometers detecteren magnetische velden aan de hand van het Hall-effect: de neiging van magnetische velden om bewegende elektrische ladingen af te buigen. Nieuwere magnetometers gebruiken magneetweerstanden (metaallegeringen waarvan de weerstand wijzigt onder invloed van magnetische velden). 
+Sommige magnetometers detecteren magnetische velden aan de hand van het Hall-effect: de neiging van magnetische velden om bewegende elektrische ladingen af te buigen. Nieuwere magnetometers gebruiken magneetweerstanden (metaallegeringen waarvan de weerstand wijzigt onder invloed van magnetische velden).
 
 Waar heeft een telefoon een magnetometer voor nodig? Weten in welke richting je georiënteerd bent, is handig voor ingebouwde kompas- en navigatie-apps, vooral als ze in realtime aanwijzingen moeten geven.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magneten, elektrische stromen en metalen objecten hebben een duidelijke invloed op de magnetometer van je telefoon. Maar zelfs midden in een leeg veld geeft de magnetometer in je telefoon altijd een waarde aan die net boven nul ligt: dat is het magnetische veld van de aarde.</string>
-  <string name="sensor_desc_first_paragraph_acc">Objecten hebben de neiging om op hun plek te blijven, of om te blijven bewegen als ze al in beweging zijn. Dit noemen we inertie. In de eerste wet van Newton wordt dit als volgt beschreven: een object blijft in zijn staat van beweging of rust, tenzij er een onevenwichtige kracht op wordt uitgeoefend. 
+  <string name="sensor_desc_first_paragraph_acc">Objecten hebben de neiging om op hun plek te blijven, of om te blijven bewegen als ze al in beweging zijn. Dit noemen we inertie. In de eerste wet van Newton wordt dit als volgt beschreven: een object blijft in zijn staat van beweging of rust, tenzij er een onevenwichtige kracht op wordt uitgeoefend.
 
-Wanneer een onevenwichtige kracht een object verplaatst, zeggen we dat het object versnelt: de snelheid verandert, hetzij door sneller of langzamer te gaan, hetzij door een richtingsverandering. Versnelling wordt gemeten als verandering van snelheid (meter per seconde) in tijd, of in meter per seconde kwadraat (m/s²). 
+Wanneer een onevenwichtige kracht een object verplaatst, zeggen we dat het object versnelt: de snelheid verandert, hetzij door sneller of langzamer te gaan, hetzij door een richtingsverandering. Versnelling wordt gemeten als verandering van snelheid (meter per seconde) in tijd, of in meter per seconde kwadraat (m/s²).
 
 In je telefoon zit een apparaatje waarmee je deze bewegingsveranderingen kunt meten: een accelerometer. Deze meter bevat kleine zwevende massa\'s die vrij bewegen. Bij een verandering in beweging verschuiven deze massa\'s, net zoals je hoofd naar voren klapt als je in een auto zit die plotseling stopt. Door deze subtiele verschuivingen te meten, kan de accelerometer in je telefoon veranderingen in beweging en richting waarnemen. Dat is handig bij het schakelen van de verticale naar de horizontale schermmodus, bij het spelen van games op je telefoon en nog veel meer.</string>
   <string name="sensor_desc_second_paragraph_acc">Je hebt waarschijnlijk al opgemerkt dat er een constante versnelling op de Z-as is, zelfs als je telefoon op tafel ligt. Deze versnelling is het gevolg van de zwaartekracht hier op het aardoppervlak en bedraagt ongeveer 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Geluiden worden gemaakt door trillingen. Je stem is bijvoorbeeld het resultaat van trillingen van de stembanden in je keel. Deze trillingen maken gebiedjes met hoge en lage luchtdruk die naar buiten bewegen, net als de rimpelingen die ontstaan als je een steentje in een vijver gooit.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Alle geluiden kunnen in termen van hun frequentie en intensiteit worden beschreven. 
+  <string name="sensor_desc_second_paragraph_decibel">Alle geluiden kunnen in termen van hun frequentie en intensiteit worden beschreven.
 
-De intensiteit is wat je hier met de sensor van Science Journal meet, in de eenheid decibel (dB). De intensiteit (ook wel geluidssterkte) hangt af van de afstand waarover een trillend voorwerp zich bij elke trilling verplaatst: hoe hoger de intensiteit, hoe harder een geluid voor ons klinkt. 
+De intensiteit is wat je hier met de sensor van Science Journal meet, in de eenheid decibel (dB). De intensiteit (ook wel geluidssterkte) hangt af van de afstand waarover een trillend voorwerp zich bij elke trilling verplaatst: hoe hoger de intensiteit, hoe harder een geluid voor ons klinkt.
 
-De frequentie (ook wel toonhoogte of toon) van een geluidsgolf staat gelijk aan de trillingssnelheid ervan. Hoe sneller een voorwerp trilt, hoe hoger de toon van het geproduceerde geluid. De Science Journal-sensor voor geluidsintensiteit meet de frequentie niet, alleen de geluidssterkte. 
+De frequentie (ook wel toonhoogte of toon) van een geluidsgolf staat gelijk aan de trillingssnelheid ervan. Hoe sneller een voorwerp trilt, hoe hoger de toon van het geproduceerde geluid. De Science Journal-sensor voor geluidsintensiteit meet de frequentie niet, alleen de geluidssterkte.
 
-Het is belangrijk om te weten dat de microfoon in je toestel zo is ontworpen dat deze heel gevoelig is voor verschillen in geluidsgolven in de loop van de tijd, maar niet voor de absolute grootte van afzonderlijke geluidsgolven. In de app hebben we code gebruikt die waarden oplevert die vergelijkbaar zijn met de onderstaande referentiewaarden, maar ieder apparaat kan structureel hogere of lagere waarden opleveren. Meestal kalibreren wetenschappers een sensor zoals deze op basis van een bekende meting. Op dit moment kan Science Journal je vertellen of het geluid van de trein waarin je zit luider is dan dat van het rockconcert dat je hebt bezocht, maar alleen als je beide geluiden met dezelfde telefoon opneemt. 
+Het is belangrijk om te weten dat de microfoon in je toestel zo is ontworpen dat deze heel gevoelig is voor verschillen in geluidsgolven in de loop van de tijd, maar niet voor de absolute grootte van afzonderlijke geluidsgolven. In de app hebben we code gebruikt die waarden oplevert die vergelijkbaar zijn met de onderstaande referentiewaarden, maar ieder apparaat kan structureel hogere of lagere waarden opleveren. Meestal kalibreren wetenschappers een sensor zoals deze op basis van een bekende meting. Op dit moment kan Science Journal je vertellen of het geluid van de trein waarin je zit luider is dan dat van het rockconcert dat je hebt bezocht, maar alleen als je beide geluiden met dezelfde telefoon opneemt.
 
-Ook is het goed om te weten dat er belangrijke verschillen zijn tussen de geluidsintensiteit, het geluidsintensiteitsniveau en de geluidsdruk. We behandelen ze hier als één concept, maar als je je erin wilt verdiepen, kun je online veel informatie over de verschillen vinden. 
+Ook is het goed om te weten dat er belangrijke verschillen zijn tussen de geluidsintensiteit, het geluidsintensiteitsniveau en de geluidsdruk. We behandelen ze hier als één concept, maar als je je erin wilt verdiepen, kun je online veel informatie over de verschillen vinden.
 
-Het zachtste geluid dat het gemiddelde menselijke oor kan waarnemen, is gedefinieerd als 0 dB. Een normaal gesprek komt overeen met ongeveer 60 dB en geluiden boven ongeveer 140 dB zijn pijnlijk voor het menselijk oor. Maar geluiden hoeven niet pijnlijk te zijn om ook schadelijk te zijn. Voortdurende blootstelling aan geluid van 90 dB (ongeveer de geluidssterkte van een stofzuiger) kan uiteindelijk tot gehoorverlies leiden. 
+Het zachtste geluid dat het gemiddelde menselijke oor kan waarnemen, is gedefinieerd als 0 dB. Een normaal gesprek komt overeen met ongeveer 60 dB en geluiden boven ongeveer 140 dB zijn pijnlijk voor het menselijk oor. Maar geluiden hoeven niet pijnlijk te zijn om ook schadelijk te zijn. Voortdurende blootstelling aan geluid van 90 dB (ongeveer de geluidssterkte van een stofzuiger) kan uiteindelijk tot gehoorverlies leiden.
 
-De decibelschaal is logaritmisch en dat levert merkwaardige dingen op. Zo is een geluidsbron van 40 dB niet tweemaal zo intens als een geluidsbron van 20 dB: deze is 100 keer zo intens. Wanneer één rinkelende wekker 70 dB produceert, produceren twee van deze wekkers niet 140 dB, maar 73 dB. We zeiden het al: dit is een merkwaardige schaal. 
+De decibelschaal is logaritmisch en dat levert merkwaardige dingen op. Zo is een geluidsbron van 40 dB niet tweemaal zo intens als een geluidsbron van 20 dB: deze is 100 keer zo intens. Wanneer één rinkelende wekker 70 dB produceert, produceren twee van deze wekkers niet 140 dB, maar 73 dB. We zeiden het al: dit is een merkwaardige schaal.
 
-10 dB: ruisende bladeren 
-20 dB: gefluister op 1,5 meter afstand 
-30 dB: zacht gefluister 
-50 dB: vallende regen 
-60 dB: normaal gesprek 
+10 dB: ruisende bladeren
+20 dB: gefluister op 1,5 meter afstand
+30 dB: zacht gefluister
+50 dB: vallende regen
+60 dB: normaal gesprek
 90 dB: blender
-100 dB: auto zonder knaldemper 
-110 dB: geschreeuw in je oor 
-120 dB: donder 
-130 dB: drilboor 
+100 dB: auto zonder knaldemper
+110 dB: geschreeuw in je oor
+120 dB: donder
+130 dB: drilboor
 140 dB: opstijgend vliegtuig</string>
   <string name="sensor_desc_first_paragraph_pitch">Geluiden worden door trillingen gemaakt. Het geluid van je stem is bijvoorbeeld het resultaat van trillingen van de stembanden in je keel. Deze trillingen maken gebiedjes met hoge en lage luchtdruk die naar buiten bewegen, net als de rimpelingen die ontstaan als je een steentje in een vijver gooit.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Alle geluiden kunnen in termen van frequentie en intensiteit worden beschreven. De frequentie (ook wel toonhoogte of toon) van een geluidsgolf staat gelijk aan de trillingssnelheid ervan. Hoe sneller een voorwerp trilt, hoe hoger de toon van het geproduceerde geluid. We meten deze trillingen in hertz (Hz), waarbij 1 Hertz gelijkstaat aan 1 trilling per seconde. 
+  <string name="sensor_desc_second_paragraph_pitch">Alle geluiden kunnen in termen van frequentie en intensiteit worden beschreven. De frequentie (ook wel toonhoogte of toon) van een geluidsgolf staat gelijk aan de trillingssnelheid ervan. Hoe sneller een voorwerp trilt, hoe hoger de toon van het geproduceerde geluid. We meten deze trillingen in hertz (Hz), waarbij 1 Hertz gelijkstaat aan 1 trilling per seconde.
 
-Het menselijk oor kan geluiden tussen 20 en 20.000 Hz horen. De laagste snaar van een piano maakt geluid met een frequentie van 27,5 Hz en de hoogste snaar maakt geluid met een frequentie van 4186,01 Hz. 
+Het menselijk oor kan geluiden tussen 20 en 20.000 Hz horen. De laagste snaar van een piano maakt geluid met een frequentie van 27,5 Hz en de hoogste snaar maakt geluid met een frequentie van 4186,01 Hz.
 
 De rode stip geeft aan hoe dicht de gemeten toonhoogte bij de dichtstbijzijnde muzieknoot ligt. Als de toon lager is (richting mol), staat de stip links. Als de toon hoger is (richting kruis), staat de rode stip rechts.</string>
   <string name="pitch_low_content_description">lage toonhoogte</string>
@@ -255,22 +255,22 @@ De rode stip geeft aan hoe dicht de gemeten toonhoogte bij de dichtstbijzijnde m
   <string name="pitch_sharper_than_flat_note_content_description">%3$s halve tonen hoger dan %1$s-mol, octaaf %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s halve tonen hoger dan %1$s-kruis, octaaf %2$s</string>
   <string name="pitch_high_content_description">hoge toonhoogte</string>
-  <string name="sensor_desc_first_paragraph_rotation">Rotaties per minuut (RPM) is een maateenheid voor de rotatiefrequentie om een ​​vaste as in één minuut. 
+  <string name="sensor_desc_first_paragraph_rotation">Rotaties per minuut (RPM) is een maateenheid voor de rotatiefrequentie om een ​​vaste as in één minuut.
 
 Uw windmolentje laat de encoderschijf draaien:</string>
   <string name="sensor_desc_second_paragraph_rotation">Dit zorgt voor lichte en donkere perioden op de sensor die in de Science-journal als rotatie worden geregistreerd.</string>
-  <string name="sensor_desc_first_paragraph_raw">De hier getoonde gegevens zijn afkomstig van een externe sensorcommunicatie met je telefoon via bluetooth. 
+  <string name="sensor_desc_first_paragraph_raw">De hier getoonde gegevens zijn afkomstig van een externe sensorcommunicatie met je telefoon via bluetooth.
 
 De waarde geeft het percentage weer van de onbewerkte lezing van je microcontroller. Dit is meestal het percentage van een spanningsdaling over een sensor.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth is een draadloze technologiestandaard die met behulp van radiogolven gegevens over korte afstanden vanaf vaste en mobiele apparaten uitwisselt.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">De hier getoonde gegevens zijn afkomstig van een externe sensorcommunicatie met je telefoon via bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth is een standaard voor draadloze technologie die met behulp van radiogolven gegevens over korte afstanden vanaf vaste en mobiele apparaten uitwisselt.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Meestal merken we het niet, maar ons leven speelt zich af op de bodem van een diepe oceaan van lucht: de atmosfeer van de aarde, die maar liefst 40 kilometer hoog is. Al die lucht boven ons oefent behoorlijk wat druk uit. Dat noemen we atmosferische druk. 
+  <string name="sensor_desc_first_paragraph_barometer">Meestal merken we het niet, maar ons leven speelt zich af op de bodem van een diepe oceaan van lucht: de atmosfeer van de aarde, die maar liefst 40 kilometer hoog is. Al die lucht boven ons oefent behoorlijk wat druk uit. Dat noemen we atmosferische druk.
 
 Op zeeniveau oefent de atmosferische druk een kracht van ruim 1 kilo per vierkante centimeter uit. Dat is gelijk aan circa 590 kilo op een gebied ter grootte van een A4\'tje.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Deze verpletterende druk valt ons niet op omdat we eraan gewend zijn. We voelen het wel als de druk verandert, al is het maar een beetje, bijvoorbeeld wanneer we ons op grootte hoogte bevinden of in een vliegtuig zitten. Atmosferische druk is ook afhankelijk van de weersomstandigheden. De druk gaat omlaag in stormachtige, onstabiele situaties, en omhoog wanneer de lucht zich stabiliseert en de hemel opklaart. 
+  <string name="sensor_desc_second_paragraph_barometer">Deze verpletterende druk valt ons niet op omdat we eraan gewend zijn. We voelen het wel als de druk verandert, al is het maar een beetje, bijvoorbeeld wanneer we ons op grootte hoogte bevinden of in een vliegtuig zitten. Atmosferische druk is ook afhankelijk van de weersomstandigheden. De druk gaat omlaag in stormachtige, onstabiele situaties, en omhoog wanneer de lucht zich stabiliseert en de hemel opklaart.
 
-Op de digitale barometer van je telefoon wordt de atmosferische druk gemeten in hectopascal. (Een hectopascal is 100 pascal, waarbij een pascal wordt gedefinieerd als een kracht van 1 newton die op 1 vierkante meter wordt uitgeoefend.) Bij de weersverwachting heb je vast wel eens gehoord dat de atmosferische druk in millibar wordt aangegeven. Dat klinkt heel wat vriendelijker, maar is precies hetzelfde als een hectopascal. 
+Op de digitale barometer van je telefoon wordt de atmosferische druk gemeten in hectopascal. (Een hectopascal is 100 pascal, waarbij een pascal wordt gedefinieerd als een kracht van 1 newton die op 1 vierkante meter wordt uitgeoefend.) Bij de weersverwachting heb je vast wel eens gehoord dat de atmosferische druk in millibar wordt aangegeven. Dat klinkt heel wat vriendelijker, maar is precies hetzelfde als een hectopascal.
 
 Misschien vraag je je af waarom je telefoon deze druk kan meten. Atmosferische druk verandert meetbaar bij hoogteverschillen, zelfs bij kleine verschillen, bijvoorbeeld wanneer je een trap opgaat. Een digitale barometer op een telefoon is een handig hulpmiddel om te bepalen waar je je precies bevindt, bijvoorbeeld op welke etage van een gebouw of op het boven- of benedendek van een brug.</string>
   <string name="run_review_activity_label">Beoordelen</string>
@@ -482,9 +482,9 @@ Kennisgeving met betrekking tot rechten:
   <string name="compass">Kompas</string>
   <string name="compass_units">graden</string>
   <string name="sensor_desc_short_compass">De oriëntatie van de telefoon ten opzichte van het aardmagnetische veld.</string>
-  <string name="sensor_desc_first_paragraph_compass">Je wist waarschijnlijk al dat de aarde een magnetisch veld heeft. Wat je misschien nog niet wist, is dat je telefoon een sensor bevat die magnetische velden kan detecteren: een magnetometer. Door de gegevens van de magnetometer van je telefoon te combineren met de oriëntatie van je telefoon, kunnen we een digitaal kompas maken. 
+  <string name="sensor_desc_first_paragraph_compass">Je wist waarschijnlijk al dat de aarde een magnetisch veld heeft. Wat je misschien nog niet wist, is dat je telefoon een sensor bevat die magnetische velden kan detecteren: een magnetometer. Door de gegevens van de magnetometer van je telefoon te combineren met de oriëntatie van je telefoon, kunnen we een digitaal kompas maken.
 
-Een ouderwets kompas is een eenvoudige magnetometer, met een gemagnetiseerde naald die draait op basis van het omliggende magnetische veld. Er zit geen minuscuul kompas in je telefoon, maar wel een sensor met drie assen die elektrische stromen gebruikt om de sterkte van het magnetische veld te bepalen in de drie ruimtelijke dimensies. Deze sensor op zich is echter niet genoeg om een kompas mee te maken. 
+Een ouderwets kompas is een eenvoudige magnetometer, met een gemagnetiseerde naald die draait op basis van het omliggende magnetische veld. Er zit geen minuscuul kompas in je telefoon, maar wel een sensor met drie assen die elektrische stromen gebruikt om de sterkte van het magnetische veld te bepalen in de drie ruimtelijke dimensies. Deze sensor op zich is echter niet genoeg om een kompas mee te maken.
 
 Waarom moet een kompas de gegevens van de magnetometer combineren met de oriëntatie van de telefoon? Aan de hand van de positie van de telefoon kunnen we de magnetische rotatie bepalen, zelfs wanneer de telefoon niet vlak wordt gehouden, in dezelfde richting als het magnetische veld van de aarde. We weten dat de zwaartekracht loodrecht op het aardmagnetische veld staat, dus kunnen we de richting van de zwaartekracht, die wordt gemeten door de sensoren van de versnellingsmeter, gebruiken om te bepalen hoeveel van het magnetische veld zich in hetzelfde vlak bevindt als het aardmagnetische veld.</string>
   <string name="sensor_desc_second_paragraph_compass">Het is je misschien opgevallen dat de magnetometer in je telefoon niet alleen reageert op het magnetische veld van de aarde, maar ook op alle andere magnetische velden in de buurt van de telefoon. Magneten, elektrische stromen en metalen objecten hebben een duidelijke invloed op de magnetometer van je telefoon, waardoor je kompas een andere richting op wijst. Ga op een open plek staan, bij voorkeur buiten en ver weg van elektriciteitskabels, om er zeker van te zijn dat de rode punt van je kompas zich oriënteert naar het magnetische veld van de aarde. Om de magnetometer in je telefoon te kalibreren, kun je je telefoon in de vorm van een acht bewegen.</string>
@@ -497,9 +497,9 @@ Waarom moet een kompas de gegevens van de magnetometer combineren met de oriënt
   <string name="month_year_format">MMMM jjjj</string>
   <string name="linear_accelerometer">Lineaire versnellingsmeter</string>
   <string name="sensor_desc_short_linear_acc">De totale versnelling van de telefoon, de zwaartekracht niet meegeteld, in m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Objecten hebben de neiging om op hun plek te blijven, of om te blijven bewegen als ze al in beweging zijn. Dit noemen we inertie. In de eerste wet van Newton wordt dit als volgt beschreven: een object blijft in dezelfde staat van beweging of rust, tenzij er een resulterende kracht op wordt uitgeoefend. 
+  <string name="sensor_desc_first_paragraph_linear_acc">Objecten hebben de neiging om op hun plek te blijven, of om te blijven bewegen als ze al in beweging zijn. Dit noemen we inertie. In de eerste wet van Newton wordt dit als volgt beschreven: een object blijft in dezelfde staat van beweging of rust, tenzij er een resulterende kracht op wordt uitgeoefend.
 
-Wanneer een resulterende kracht een object in beweging brengt, zeggen we dat het object \'versnelt\': de snelheid verandert, hetzij door sneller of langzamer te gaan, hetzij door een richtingsverandering. Versnelling wordt gemeten als verandering van snelheid (meter per seconde) in tijd, of meter per seconde kwadraat (m/s²). 
+Wanneer een resulterende kracht een object in beweging brengt, zeggen we dat het object \'versnelt\': de snelheid verandert, hetzij door sneller of langzamer te gaan, hetzij door een richtingsverandering. Versnelling wordt gemeten als verandering van snelheid (meter per seconde) in tijd, of meter per seconde kwadraat (m/s²).
 
 In je telefoon zit een apparaatje waarmee je deze bewegingsveranderingen kunt meten: een versnellingsmeter. Deze meter bevat kleine zwevende massa\'s die vrij bewegen. Bij een verandering in beweging verschuiven deze massa\'s, net zoals je hoofd naar voren klapt als je in een auto zit die plotseling stopt. Door deze subtiele verschuivingen te meten, kan de versnellingsmeter in je telefoon veranderingen in beweging en richting waarnemen. Dat is handig bij het schakelen van de liggende naar de staande schermmodus, bij het spelen van games op je telefoon en nog veel meer.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">De gecombineerde lineaire versnellingsmeter-sensor meet de totale versnelling op alle drie de assen van de telefoon, waarbij de zwaartekracht niet wordt meegeteld.</string>
@@ -522,7 +522,7 @@ In je telefoon zit een apparaatje waarmee je deze bewegingsveranderingen kunt me
   <string name="first_experiment_title">Welkom bij Science Journal</string>
   <string name="first_experiment_text_note">Probeer notities te maken en gegevens op te nemen met behulp van de werkbalk hieronder.</string>
   <string name="first_experiment_picture_note_caption">Welkom bij Science Journal.</string>
-  <string name="first_experiment_second_text_note">Ga aan de slag met activiteiten op 
+  <string name="first_experiment_second_text_note">Ga aan de slag met activiteiten op
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Kies een foto voor het experiment</string>
   <string name="btn_take_picture_content_description">Foto maken</string>
@@ -758,8 +758,8 @@ Als er al gegevens op dit apparaat staan, kun je inloggen om je bestaande experi
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -816,7 +816,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -920,5 +920,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>

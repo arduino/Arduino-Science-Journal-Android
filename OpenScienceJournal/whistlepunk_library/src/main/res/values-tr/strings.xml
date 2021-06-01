@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Dakikadaki devir sayısıdır</string>
   <string name="sensor_desc_short_raw">Harici bir sensörden gelen ham okuma değerinin yüzdesidir.</string>
   <string name="sensor_desc_short_barometer">Atmosfer basıncı, hektopaskal (hPa) birimiyle ölçülür.</string>
-  <string name="sensor_desc_first_paragraph_light">Ortam ışığı sensörü, ışığı lüks cinsinden ölçer. Lüks, gelen ışığa ve yayıldığı alana dayalı olarak aydınlık seviyesini belirten bir ölçü birimidir. 
+  <string name="sensor_desc_first_paragraph_light">Ortam ışığı sensörü, ışığı lüks cinsinden ölçer. Lüks, gelen ışığa ve yayıldığı alana dayalı olarak aydınlık seviyesini belirten bir ölçü birimidir.
 
-Dolunay zamanında yaklaşık 1 lüks ışık oluşur. Tipik bir ampülle aydınlatılan odada yaklaşık 50 lüks ışık vardır. Sınıf ışıklarında, gündoğumu ve günbatımında ise yaklaşık 400 lüks ışık oluşur. Gün ışığı (dolaysız güneş ışığı) 10.000 lüksün ve doğrudan güneş ışığı da 30.000 lüksün üzerindedir. 
+Dolunay zamanında yaklaşık 1 lüks ışık oluşur. Tipik bir ampülle aydınlatılan odada yaklaşık 50 lüks ışık vardır. Sınıf ışıklarında, gündoğumu ve günbatımında ise yaklaşık 400 lüks ışık oluşur. Gün ışığı (dolaysız güneş ışığı) 10.000 lüksün ve doğrudan güneş ışığı da 30.000 lüksün üzerindedir.
 
 Lüks birimini çoğumuz bilmiyoruz. Ampul alırken watt\'ına bakarak alıyoruz, ancak bir ampulün watt değeri size ampulün ne kadar parlak olduğunu değil, ne kadar enerji harcadığını söyler. Lümen, bir ampülün ne kadar ışık üreteceğini belirttiği için ışıklandırma alışverişlerinde daha iyi bir ölçü birimidir. Lüks de bu ışığın ne kadarının belirli bir alana ulaştığını belirtir.</string>
-  <string name="sensor_desc_second_paragraph_light">Işık hareket ederek yayıldığından, ışık kaynağı lümen olarak aynı ışık miktarını yaysa da ışık kaynağından uzaklaştıkça lüks sayısı azalır. Bir ışık kaynağından uzağa yatırılan bir alan da daha az aydınlatılır. Dünya\'daki ekvatoral bölgelerin soğuk kutuplardan daha sıcak olmasının sebebi de budur. 
+  <string name="sensor_desc_second_paragraph_light">Işık hareket ederek yayıldığından, ışık kaynağı lümen olarak aynı ışık miktarını yaysa da ışık kaynağından uzaklaştıkça lüks sayısı azalır. Bir ışık kaynağından uzağa yatırılan bir alan da daha az aydınlatılır. Dünya\'daki ekvatoral bölgelerin soğuk kutuplardan daha sıcak olmasının sebebi de budur.
 
 Bu arada, telefonunuzdaki ışık sensörünün amacı karanlık ve parlak ortamlara uygun şekilde uyum sağlayarak ışık seviyesini kontrol etmektir. Işık sensörünün içinde küçük bir yarı iletken, küçük ama ölçülebilir bir elektrik akımı oluşturarak gelen ışığa tepki verir. Bu olay fotoelektrik etki olarak bilinir. Hava karardığında yanmaları için bazı sokak lambalarında buna benzer sensörler kullanılır.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Telefonunuzda manyetik alanları algılayabilecek bir cihaz, yani manyetometre bulunur. Bu üç eksenli küçük sensör, uzaydaki üç boyutta manyetik alan kuvvetini algılamak için elektrik akımlarından yararlanır. Üç eksenin her birinden gelen verileri bir araya getirerek, toplam manyetik alan kuvveti sensörü oluşturuyoruz. 
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Telefonunuzda manyetik alanları algılayabilecek bir cihaz, yani manyetometre bulunur. Bu üç eksenli küçük sensör, uzaydaki üç boyutta manyetik alan kuvvetini algılamak için elektrik akımlarından yararlanır. Üç eksenin her birinden gelen verileri bir araya getirerek, toplam manyetik alan kuvveti sensörü oluşturuyoruz.
 
-Bazı manyetometreler, manyetik alanların hareket eden yük taşıyıcıların yönünü değiştirme eğilimi anlamına gelen Hall etkisinden yararlanarak bu alanları algılar. Daha yeni manyetometrelerde manyetik direnç, yani manyetik alanlara karşılık olarak direncini değiştiren metal alaşımlar kullanılır. 
+Bazı manyetometreler, manyetik alanların hareket eden yük taşıyıcıların yönünü değiştirme eğilimi anlamına gelen Hall etkisinden yararlanarak bu alanları algılar. Daha yeni manyetometrelerde manyetik direnç, yani manyetik alanlara karşılık olarak direncini değiştiren metal alaşımlar kullanılır.
 
 Peki telefona manyetometre eklenmesinin sebebi nedir? Uzaydaki yönünüzün bilinmesi, özellikle adım adım yol tarifi veren gezinme uygulamalarında ve dahili pusulalarda oldukça işe yarar.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Mıknatıs, elektrik akımı ve metal nesneler, telefonunuzun manyetometresini çift taraflı olarak kolayca hareket ettirebilir. Ancak boş bir alanın ortasında bile telefonunuzun manyetometresi daima, sıfır olmayan düşük bir değer gösterir: Bu, Dünya\'nın manyetik alanıdır!</string>
-  <string name="sensor_desc_first_paragraph_acc">Cisimler durağan halde kalma veya hareket ediyorlarsa hareketlerine devam etme eğilimindedir. Buna eylemsizlik yasası denir. Newton\'ın Birinci Hareket Yasası bu fikri resmi olarak şu şekilde ifade ediyor: Bir cisim üzerine dengelenmemiş bir kuvvet etki etmedikçe hareket durumunu veya durağanlığını korur. 
+  <string name="sensor_desc_first_paragraph_acc">Cisimler durağan halde kalma veya hareket ediyorlarsa hareketlerine devam etme eğilimindedir. Buna eylemsizlik yasası denir. Newton\'ın Birinci Hareket Yasası bu fikri resmi olarak şu şekilde ifade ediyor: Bir cisim üzerine dengelenmemiş bir kuvvet etki etmedikçe hareket durumunu veya durağanlığını korur.
 
-Cisim üzerine dengelenmemiş bir kuvvet etki edip harekete geçtiğinde buna cismin hızı artarak, azalarak veya yönü değişerek ivme kazanması (hızının veya süratinin değişmesi) diyoruz. İvme, zaman içinde hızdaki değişimle (saniyede alınan metre) veya metre bölü saniyenin karesiyle (m/s²) ölçülür. 
+Cisim üzerine dengelenmemiş bir kuvvet etki edip harekete geçtiğinde buna cismin hızı artarak, azalarak veya yönü değişerek ivme kazanması (hızının veya süratinin değişmesi) diyoruz. İvme, zaman içinde hızdaki değişimle (saniyede alınan metre) veya metre bölü saniyenin karesiyle (m/s²) ölçülür.
 
 Telefonunuzda hareketteki bu değişimleri ölçen, ivmeölçer adında bir cihaz bulunur. İvmeölçerin içinde serbestçe hareket eden askı halindeki küçük kütleler bulunur. Nasıl ki aniden duran bir arabada kafanız öne doğru sarsılıyorsa hareketteki değişimler de bu kütlelerin yer değiştirmesine neden olur. Telefonlardaki ivmeölçer, bu ani eylemsizlik değişimlerini ölçerek hareketteki ve yöndeki değişimleri algılayabilir. Ekranı yatay moddan dikey moda geçirirken, telefonunuzda oyun oynarken ve daha birçok şey yaparken bu araçtan faydalanılır.</string>
   <string name="sensor_desc_second_paragraph_acc">Telefon masada hareketsiz haldeyken bile Z ekseninde aralıksız bir ivmelenme fark etmişsinizdir. Bu, Dünya\'nın yüzeyine etki eden yaklaşık 9,8 m/s²\'lik yer çekimi kuvvetinden kaynaklanan ivmelenmedir.</string>
   <string name="sensor_desc_first_paragraph_decibel">Sesler, titreşimle oluşur. Örneğin, kendi sesinizin kaynağı gırtlağınızdaki ses tellerinde meydana gelen titreşimlerdir. Bu titreşimler, dışa doğru hareket eden ve birbiri ardına gelen yüksek ve alçak hava basıncı alanları oluşturur. Bunu, bir su birikintisine attığımız taşın oluşturduğu genişleyen dairesel dalgalara benzetebiliriz.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Tüm sesler, frekansları ve şiddetleri açısından açıklanabilir. 
+  <string name="sensor_desc_second_paragraph_decibel">Tüm sesler, frekansları ve şiddetleri açısından açıklanabilir.
 
-Şiddet, burada Science Journal ile desibel (dB) biriminden ölçtüğünüz değerdir. Ses şiddeti veya yüksekliği, titreşen bir nesnenin her titreştiğinde aldığı mesafeye bağlıdır; yüksek seste şiddet de büyüktür. 
+Şiddet, burada Science Journal ile desibel (dB) biriminden ölçtüğünüz değerdir. Ses şiddeti veya yüksekliği, titreşen bir nesnenin her titreştiğinde aldığı mesafeye bağlıdır; yüksek seste şiddet de büyüktür.
 
-Bir ses dalgasının frekansı (perde veya ton olarak da kullanılır), titreşim hızına eşdeğerdir. Bir nesne ne kadar hızlı titreşirse ortaya çıkan sesin perdesi de o kadar yüksek olur. Science Journal ses şiddeti sensörü, sadece ses yüksekliğini ölçer. Frekansı ölçmez. 
+Bir ses dalgasının frekansı (perde veya ton olarak da kullanılır), titreşim hızına eşdeğerdir. Bir nesne ne kadar hızlı titreşirse ortaya çıkan sesin perdesi de o kadar yüksek olur. Science Journal ses şiddeti sensörü, sadece ses yüksekliğini ölçer. Frekansı ölçmez.
 
-Bilinmesi gereken önemli bir nokta şudur: Cihazınızdaki mikrofon, zaman içinde ses dalgalarındaki farklılıklara karşı çok hassas olacak şekilde tasarlanmıştır ancak her bir dalganın mutlak büyüklüğüne karşı hassas değildir. Aşağıda gösterilen referans sayılara benzer değerler üretmesi beklenen kodu seçmeye çalıştık ancak her cihaz sürekli olarak daha yüksek veya daha düşük değerler verebilir. Bilim insanları genellikle böyle bir sensörü bilinen bir ölçüm değerine kalibre ederler. Science Journal şimdilik size sadece tren yolculuğunuzun gittiğiniz rock konserinden daha gürültülü olup olmadığını söyleyebilir, tabii iki etkinliğe de aynı telefonu getirmeniz koşuluyla. 
+Bilinmesi gereken önemli bir nokta şudur: Cihazınızdaki mikrofon, zaman içinde ses dalgalarındaki farklılıklara karşı çok hassas olacak şekilde tasarlanmıştır ancak her bir dalganın mutlak büyüklüğüne karşı hassas değildir. Aşağıda gösterilen referans sayılara benzer değerler üretmesi beklenen kodu seçmeye çalıştık ancak her cihaz sürekli olarak daha yüksek veya daha düşük değerler verebilir. Bilim insanları genellikle böyle bir sensörü bilinen bir ölçüm değerine kalibre ederler. Science Journal şimdilik size sadece tren yolculuğunuzun gittiğiniz rock konserinden daha gürültülü olup olmadığını söyleyebilir, tabii iki etkinliğe de aynı telefonu getirmeniz koşuluyla.
 
-Bilinmesi gereken bir diğer nokta da \"ses şiddeti\", \"ses şiddeti düzeyi\" ve \"ses basıncı\" kavramları arasında önemli farklar olmasıdır. Biz burada bunları aynı kavram gibi ele alıyoruz ancak daha derine inmek istiyorsanız farklılıkları hakkında birçok dijital kaynak bulabilirsiniz. 
+Bilinmesi gereken bir diğer nokta da \"ses şiddeti\", \"ses şiddeti düzeyi\" ve \"ses basıncı\" kavramları arasında önemli farklar olmasıdır. Biz burada bunları aynı kavram gibi ele alıyoruz ancak daha derine inmek istiyorsanız farklılıkları hakkında birçok dijital kaynak bulabilirsiniz.
 
-Ortalama bir insan kulağının duyabileceği en düşük ses seviyesi 0 dB olarak bulunmuştur. Normal bir konuşma yaklaşık 60 dB değerine karşılık gelir. 140 dB üzerindeki sesler insan kulağını rahatsız eder. Ancak seslerin zarar vermesi için kulağı rahatsız etmesi gerekmez. Örneğin, 90 dB seviyesindeki seslere (elektrik süpürgesi gibi) sürekli maruz kalınması, sonunda duyma kaybına yol açabilir. 
+Ortalama bir insan kulağının duyabileceği en düşük ses seviyesi 0 dB olarak bulunmuştur. Normal bir konuşma yaklaşık 60 dB değerine karşılık gelir. 140 dB üzerindeki sesler insan kulağını rahatsız eder. Ancak seslerin zarar vermesi için kulağı rahatsız etmesi gerekmez. Örneğin, 90 dB seviyesindeki seslere (elektrik süpürgesi gibi) sürekli maruz kalınması, sonunda duyma kaybına yol açabilir.
 
-Desibel ölçeği logaritmiktir. Bu noktada ölçüme dikkat edilmesi gerekir. Örneğin, 40 dB değerindeki bir ses kaynağı, 20 dB değerindeki ses kaynağının iki katı değil 100 katı şiddetindedir. Başka bir örnek verecek olursak, bir çalar saat alarmı 70 dB şiddetinde ses üretiyorsa iki çalar saat alarmı 140 değil, 73 dB şiddet üretir. Daha önce de söylediğimiz gibi, bu ölçek biraz farklı. 
+Desibel ölçeği logaritmiktir. Bu noktada ölçüme dikkat edilmesi gerekir. Örneğin, 40 dB değerindeki bir ses kaynağı, 20 dB değerindeki ses kaynağının iki katı değil 100 katı şiddetindedir. Başka bir örnek verecek olursak, bir çalar saat alarmı 70 dB şiddetinde ses üretiyorsa iki çalar saat alarmı 140 değil, 73 dB şiddet üretir. Daha önce de söylediğimiz gibi, bu ölçek biraz farklı.
 
-Yaprak hışırtısı 10 dB\'dir 
-1,5 metre yakından fısıldama 20 dB\'dir 
-Hafif fısıltı 30 dB\'dir 
-Yağmur sesi 50 dB\'dir 
-Günlük konuşmalar 60 dB\'dir 
-Mikser sesi 90 dB\'dir 
-Susturucusuz araba sesi 100 dB\'dir 
-Kulağın içine bağırmak 110 dB\'dir 
-Gök gürültüsü 120 dB\'dir 
-Kaya matkabı sesi 130 dB\'dir 
+Yaprak hışırtısı 10 dB\'dir
+1,5 metre yakından fısıldama 20 dB\'dir
+Hafif fısıltı 30 dB\'dir
+Yağmur sesi 50 dB\'dir
+Günlük konuşmalar 60 dB\'dir
+Mikser sesi 90 dB\'dir
+Susturucusuz araba sesi 100 dB\'dir
+Kulağın içine bağırmak 110 dB\'dir
+Gök gürültüsü 120 dB\'dir
+Kaya matkabı sesi 130 dB\'dir
 Kalkmakta olan uçak sesi 140 dB\'dir</string>
   <string name="sensor_desc_first_paragraph_pitch">Sesler, titreşimle oluşur. Örneğin, kendi sesinizin kaynağı gırtlağınızdaki ses tellerinde meydana gelen titreşimlerdir. Bu titreşimler, dışa doğru hareket eden ve birbiri ardına gelen yüksek ve alçak hava basıncı alanları oluşturur. Bunu, bir su birikintisine attığımız taşın oluşturduğu genişleyen dairesel dalgalara benzetebiliriz.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Tüm sesler, frekansları ve şiddetleri açısından açıklanabilir. Bir ses dalgasının frekansı (perde veya ton olarak da kullanılır), titreşim hızına eşdeğerdir. Bir nesne ne kadar hızlı titreşirse ortaya çıkan sesin perdesi de o kadar yüksek olur. Bu titreşimleri, 1 Hertz = 1 titreşim/saniye olarak hesaplanan Hertz (Hz) ölçüm birimiyle ölçeriz. 
+  <string name="sensor_desc_second_paragraph_pitch">Tüm sesler, frekansları ve şiddetleri açısından açıklanabilir. Bir ses dalgasının frekansı (perde veya ton olarak da kullanılır), titreşim hızına eşdeğerdir. Bir nesne ne kadar hızlı titreşirse ortaya çıkan sesin perdesi de o kadar yüksek olur. Bu titreşimleri, 1 Hertz = 1 titreşim/saniye olarak hesaplanan Hertz (Hz) ölçüm birimiyle ölçeriz.
 
-İnsanlar 20 - 20.000 Hz değerleri arasındaki sesleri duyabilir. Piyanoda en düşük sesli tuş 27,5 Hz ve en yüksek sesli tuş 4186,01 Hz\'dir. 
+İnsanlar 20 - 20.000 Hz değerleri arasındaki sesleri duyabilir. Piyanoda en düşük sesli tuş 27,5 Hz ve en yüksek sesli tuş 4186,01 Hz\'dir.
 
 Kırmızı nokta, tespit edilen perdenin en yakın müzik notasına olan yakınlığını belirtir. Perde daha düşük veya \"kalın\" olduğunda nokta sol tarafta görünür. Perde daha yüksek veya \"ince\" olduğunda ise kırmızı nokta sağ tarafta görünecektir.</string>
   <string name="pitch_low_content_description">düşük perde</string>
@@ -255,17 +255,17 @@ Kırmızı nokta, tespit edilen perdenin en yakın müzik notasına olan yakınl
   <string name="pitch_sharper_than_flat_note_content_description">%3$s, %1$s bemolden yarım ses daha incedir, %2$s oktav</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s, %1$s diyezden yarım ses daha incedir, %2$s oktav</string>
   <string name="pitch_high_content_description">yüksek perde</string>
-  <string name="sensor_desc_first_paragraph_rotation">Dakikadaki devir sayısı (RPM), sabit bir eksen üzerinde bir dakikadaki dönüş sıklığının ölçümüdür. 
+  <string name="sensor_desc_first_paragraph_rotation">Dakikadaki devir sayısı (RPM), sabit bir eksen üzerinde bir dakikadaki dönüş sıklığının ölçümüdür.
 
 Rüzgar pervanesi döndükçe kodlayıcı diski döndürür:</string>
   <string name="sensor_desc_second_paragraph_rotation">Bu şekilde sensörde aydınlık ve karanlık periyotlar oluşturulur. Bunlar Science Journal\'da devir olarak kaydolur.</string>
-  <string name="sensor_desc_first_paragraph_raw">Burada gösterilen veriler, telefonunuzun Bluetooth aracılığıyla iletişim kurduğu harici bir sensörden geliyor. 
+  <string name="sensor_desc_first_paragraph_raw">Burada gösterilen veriler, telefonunuzun Bluetooth aracılığıyla iletişim kurduğu harici bir sensörden geliyor.
 
 Değer, doğrudan mikrodenetleyicinizden gelen ham okuma değerlerinin yüzdesini gösteriyor. Bu, genelde bir sensördeki gerilim düşüşünün yüzdesidir.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth, sabit ve mobil cihazlardan kısa mesafeler arasında veri alışverişi yapmak için radyo dalgalarını kullanan kablosuz bir teknoloji standardıdır.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Burada gösterilen veriler, telefonunuzun Bluetooth aracılığıyla iletişim kurduğu harici bir sensörden geliyor.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth, sabit ve mobil cihazlardan kısa mesafeler arasında veri alışverişi yapmak için radyo dalgalarını kullanan kablosuz bir teknoloji standardıdır.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Çok azımız farkında olsa da, büyük bir hava kütlesinin en dibinde yaşıyoruz: Dünya\'nın atmosfer tabakası 40 km (130.000 feet) kalınlığındadır. Atmosfer basıncı, üstümüze yığılmış bu hava katmanının ağırlığıdır. 
+  <string name="sensor_desc_first_paragraph_barometer">Çok azımız farkında olsa da, büyük bir hava kütlesinin en dibinde yaşıyoruz: Dünya\'nın atmosfer tabakası 40 km (130.000 feet) kalınlığındadır. Atmosfer basıncı, üstümüze yığılmış bu hava katmanının ağırlığıdır.
 
 Atmosfer basıncı, deniz seviyesinde inç kareye 14 pound\'luk güç uygular. Bu, A4 kağıdı genişliğindeki bir alanda basıncın yaklaşık 1.300 pound kadar olmasına eşdeğerdir.</string>
   <string name="sensor_desc_second_paragraph_barometer">Omuzlarımızdaki bu ağır basıncı hissetmememizin sebebi, buna alışkın olmamızdır. Ancak rakımı daha yüksek olan bölgeleri ziyaret ettiğimizde veya uçağa bindiğimizde olduğu gibi, en ufak değişikliği bile hissedebiliriz. Atmosfer basıncı, hava koşullarına göre de değişir, fırtınalı ve değişken havalarda basınç düşerken stabil ve açık havalarda yükselir.
@@ -482,9 +482,9 @@ Açık kaynak kodu: https://github.com/google/science-journal
   <string name="compass">Pusula</string>
   <string name="compass_units">derece</string>
   <string name="sensor_desc_short_compass">Dünya\'nın manyetik alanına göre telefonun yönü.</string>
-  <string name="sensor_desc_first_paragraph_compass">Dünya\'nın manyetik bir alana sahip olduğunu muhtemelen biliyorsunuzdur. Ancak telefonunuzun manyetik alanları algılayabilecek bir cihaza, yani manyetometreye sahip olduğunu fark etmemiş olabilirsiniz. Telefonunuzun manyetometresinden alınan verilerle telefonunuzun uzaydaki yönünü bir araya getirerek dijital bir pusula oluşturuyoruz. 
+  <string name="sensor_desc_first_paragraph_compass">Dünya\'nın manyetik bir alana sahip olduğunu muhtemelen biliyorsunuzdur. Ancak telefonunuzun manyetik alanları algılayabilecek bir cihaza, yani manyetometreye sahip olduğunu fark etmemiş olabilirsiniz. Telefonunuzun manyetometresinden alınan verilerle telefonunuzun uzaydaki yönünü bir araya getirerek dijital bir pusula oluşturuyoruz.
 
-Eski pusulalar, kendisini etraftaki manyetik alanla aynı eksene getirmek için dönen manyetize iğnesi sayesinde basit bir manyetometre işlevi görür. Telefonunuzun içinde ufak bir pusula olmasa da elektrik akımlarını kullanarak uzaydaki üç boyutta manyetik alan kuvvetini ölçen üç eksenli küçük bir sensör vardır. Ancak bu tek başına, pusula oluşturmaya yetmez! 
+Eski pusulalar, kendisini etraftaki manyetik alanla aynı eksene getirmek için dönen manyetize iğnesi sayesinde basit bir manyetometre işlevi görür. Telefonunuzun içinde ufak bir pusula olmasa da elektrik akımlarını kullanarak uzaydaki üç boyutta manyetik alan kuvvetini ölçen üç eksenli küçük bir sensör vardır. Ancak bu tek başına, pusula oluşturmaya yetmez!
 
 Pusulanın neden manyetometreden alınan verilerle telefonunuzun yönünü bir araya getirmesi gerekir? Telefonun yönünü bilirsek telefon, Dünya\'nın manyetik alanıyla aynı düzlemde düz tutulmadığında bile manyetik dönüşü hesaplayabiliriz. Yer çekiminin, Dünya\'nın manyetik alanına dik olduğunu biliyoruz. Bu sayede, ivmeölçer sensörlerinden öğrendiğimiz yer çekimi yönünden yararlanarak, manyetik alanın ne kadarlık kısmının, Dünya\'nın manyetik alanıyla aynı düzlemde olduğunu belirleyebiliriz.</string>
   <string name="sensor_desc_second_paragraph_compass">Pusulanın, yalnızca Dünya\'nın manyetik alanına değil, etrafınızda oluşan diğer tüm manyetik alanlara da tepki verdiğini fark etmiş olabilirsiniz. Mıknatıs, elektrik akımı ve metal nesneler, telefonunuzun manyetometresini çift taraflı olarak kolayca hareket ettirebilir. Manyetometrenizin kırmızı ibresinin Dünya\'nın manyetik alanıyla hizalanabilmesi için mümkünse dışarıda, elektrik hatlarına yakın olmayan açık bir alana gidin. Telefonunuzla havada 8 çizmek, telefondaki manyetometrenin ayarlanmasına yardımcı olur.</string>
@@ -497,9 +497,9 @@ Pusulanın neden manyetometreden alınan verilerle telefonunuzun yönünü bir a
   <string name="month_year_format">MMMM yyyy</string>
   <string name="linear_accelerometer">Doğrusal ivmeölçer</string>
   <string name="sensor_desc_short_linear_acc">Yer çekimi kuvveti hariç, telefonunuzun toplam ivmesi (m/sn² cinsinden)</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Cisimler durağan halde kalma veya hareket ediyorlarsa hareketlerine devam etme eğilimindedir. Buna eylemsizlik yasası denir. Newton\'ın Birinci Hareket Yasası bu fikri resmi olarak şu şekilde ifade ediyor: Bir cisim, üzerine dengelenmemiş bir kuvvet etki etmedikçe hareket durumunu veya durağanlığını korur. 
+  <string name="sensor_desc_first_paragraph_linear_acc">Cisimler durağan halde kalma veya hareket ediyorlarsa hareketlerine devam etme eğilimindedir. Buna eylemsizlik yasası denir. Newton\'ın Birinci Hareket Yasası bu fikri resmi olarak şu şekilde ifade ediyor: Bir cisim, üzerine dengelenmemiş bir kuvvet etki etmedikçe hareket durumunu veya durağanlığını korur.
 
-Cisim üzerine dengelenmemiş bir kuvvet etki edip harekete geçtiğinde buna cismin hızının artması, azalması veya yönünün değişmesiyle ivme kazanması (hızının veya süratinin değişmesi) diyoruz. İvme, zaman içinde hızdaki değişimle (saniyede alınan metre) veya metre bölü saniyenin karesiyle (m/sn²) ölçülür. 
+Cisim üzerine dengelenmemiş bir kuvvet etki edip harekete geçtiğinde buna cismin hızının artması, azalması veya yönünün değişmesiyle ivme kazanması (hızının veya süratinin değişmesi) diyoruz. İvme, zaman içinde hızdaki değişimle (saniyede alınan metre) veya metre bölü saniyenin karesiyle (m/sn²) ölçülür.
 
 Telefonunuzda bu hareket değişimlerini ölçen, ivmeölçer adında bir cihaz bulunur. İvme ölçerin içinde serbestçe hareket eden küçük ve askıda kütleler bulunur. Tıpkı aniden duran bir arabada kafanızın öne doğru sarsılması gibi, hareket değişimleri de bu kütlelerin yer değiştirmesine neden olur. Telefonlardaki ivmeölçer, bu ani eylemsizlik değişimlerini ölçerek hareket ve yöndeki değişimleri algılayabilir. Ekranı yatay moddan dikey moda geçirirken, telefonunuzda oyun oynarken ve daha birçok şey yaparken bu araçtan faydalanılır.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Birleştirilmiş doğrusal ivmeölçer sensörü, yer çekimini hariç tutarak telefonunuzun üç ekseninin her birindeki toplam ivmeyi kaydeder.</string>
@@ -758,8 +758,8 @@ Bu cihazda mevcut verileriniz varsa oturum açtıktan sonra deneylerinizi Google
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -816,7 +816,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -920,5 +920,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>

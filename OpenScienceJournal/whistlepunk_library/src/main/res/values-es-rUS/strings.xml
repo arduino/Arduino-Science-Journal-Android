@@ -192,23 +192,23 @@
   <string name="sensor_desc_short_rotation">La cantidad de revoluciones por minuto</string>
   <string name="sensor_desc_short_raw">El porcentaje de la lectura en crudo de un sensor externo</string>
   <string name="sensor_desc_short_barometer">La presión atmosférica medida en hectopascales (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">El sensor de luz ambiental mide la luz en lux, una unidad que sirve para medir la iluminación. Su valor depende de la cantidad de luz entrante y del área sobre la cual se extiende. 
+  <string name="sensor_desc_first_paragraph_light">El sensor de luz ambiental mide la luz en lux, una unidad que sirve para medir la iluminación. Su valor depende de la cantidad de luz entrante y del área sobre la cual se extiende.
 
-La luna llena proporciona cerca de 1 lx de iluminación, la iluminación de una lámpara en una sala de estar brinda cerca de 50 lx, la iluminación de una sala de clases y el amanecer y el atardecer dan cerca de 400 lx, la luz del día (sol indirecto) tiene más de 10,000 lx, y el sol directo, más de 30,000 lx. 
+La luna llena proporciona cerca de 1 lx de iluminación, la iluminación de una lámpara en una sala de estar brinda cerca de 50 lx, la iluminación de una sala de clases y el amanecer y el atardecer dan cerca de 400 lx, la luz del día (sol indirecto) tiene más de 10,000 lx, y el sol directo, más de 30,000 lx.
 
 Los luxes son una unidad medida desconocida para la mayoría de nosotros. Cuando compramos una lámpara, a menudo nos fijamos en los vatios, pero estos no nos dicen cuánto ilumina la lámpara, sino solo cuánta energía consume. Los lúmenes son una mejor medida para comprar luces. Estos indican cuánta luz puede producir realmente una lámpara. El lux, por su parte, indica qué cantidad de esa luz incide sobre un área específica.</string>
-  <string name="sensor_desc_second_paragraph_light">Dado que la luz se expande a medida que se desplaza, la cantidad de lux disminuye a medida que te alejas de la fuente de luz, pese a que la fuente sigue emitiendo la misma cantidad de luz en lúmenes. Un área que se inclina en dirección contraria a la fuente de luz también recibe menos iluminación. Es por esto que las regiones ecuatoriales de la Tierra son mucho más cálidas que los fríos polos. 
+  <string name="sensor_desc_second_paragraph_light">Dado que la luz se expande a medida que se desplaza, la cantidad de lux disminuye a medida que te alejas de la fuente de luz, pese a que la fuente sigue emitiendo la misma cantidad de luz en lúmenes. Un área que se inclina en dirección contraria a la fuente de luz también recibe menos iluminación. Es por esto que las regiones ecuatoriales de la Tierra son mucho más cálidas que los fríos polos.
 
 Por cierto, el propósito del sensor de luz de tu teléfono es controlar el nivel de luz de la pantalla que se ajusta según los ambientes tenues o luminosos. Dentro del sensor de luz, un semiconductor pequeño responde a la luz entrante y produce una corriente eléctrica pequeña, pero que se puede medir. Este fenómeno se conoce como el efecto fotoeléctrico. Se usan sensores similares en algunas farolas para que se enciendan cuando oscurece.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Tu teléfono tiene un dispositivo diseñado para detectar campos magnéticos llamado magnetómetro. Este pequeño sensor de tres ejes usa corrientes eléctricas para detectar la fuerza de un campo magnético en las tres dimensiones del espacio. Gracias a la combinación de datos de los tres ejes, podemos crear un sensor de fuerza de campo magnético. 
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Tu teléfono tiene un dispositivo diseñado para detectar campos magnéticos llamado magnetómetro. Este pequeño sensor de tres ejes usa corrientes eléctricas para detectar la fuerza de un campo magnético en las tres dimensiones del espacio. Gracias a la combinación de datos de los tres ejes, podemos crear un sensor de fuerza de campo magnético.
 
-Algunos magnetómetros detectan los campos magnéticos mediante el efecto Hall, es decir, gracias a la tendencia de los campos magnéticos a desviar una carga en movimiento a medida que fluye. Los magnetómetros más recientes usan magnetorresistores: aleaciones de metal cuya resistencia cambia en respuesta a los campos magnéticos. 
+Algunos magnetómetros detectan los campos magnéticos mediante el efecto Hall, es decir, gracias a la tendencia de los campos magnéticos a desviar una carga en movimiento a medida que fluye. Los magnetómetros más recientes usan magnetorresistores: aleaciones de metal cuya resistencia cambia en respuesta a los campos magnéticos.
 
 ¿Por qué un teléfono necesita un magnetómetro? Conocer tu orientación en el espacio resulta útil para las apps integradas de brújula y navegación, especialmente aquellas diseñadas para darte indicaciones detalladas sobre cómo llegar a un lugar.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Los imanes, las corrientes eléctricas y los objetos de metal afectan el magnetómetro de tu teléfono. Pero incluso en medio de un campo vacío, el magnetómetro de tu teléfono siempre mostrará una lectura baja diferente de cero: ese es el campo magnético de la Tierra.</string>
-  <string name="sensor_desc_first_paragraph_acc">Los objetos tienden a quedarse quietos o a seguir en movimiento si lo están. Esta tendencia se denomina \"inercia\". La primera ley de Newton expresa esta idea de manera formal: un objeto continúa en su estado de movimiento o de reposo a menos que se ejerza sobre él una fuerza desequilibrada. 
+  <string name="sensor_desc_first_paragraph_acc">Los objetos tienden a quedarse quietos o a seguir en movimiento si lo están. Esta tendencia se denomina \"inercia\". La primera ley de Newton expresa esta idea de manera formal: un objeto continúa en su estado de movimiento o de reposo a menos que se ejerza sobre él una fuerza desequilibrada.
 
-Cuando una fuerza desequilibrada hace que un objeto se desplace, decimos que el objeto acelera: su velocidad cambia, ya sea porque acelera, frena o cambia de dirección. La aceleración se mide como un cambio de velocidad (metros por segundo) en el tiempo, o metros por segundo al cuadrado (m/s²). 
+Cuando una fuerza desequilibrada hace que un objeto se desplace, decimos que el objeto acelera: su velocidad cambia, ya sea porque acelera, frena o cambia de dirección. La aceleración se mide como un cambio de velocidad (metros por segundo) en el tiempo, o metros por segundo al cuadrado (m/s²).
 
 Tu teléfono tiene un dispositivo para medir estos cambios de movimiento: un acelerómetro. Dentro de un acelerómetro, hay pequeñas masas suspendidas en libertad de movimiento. Los cambios en el movimiento hacen que estas masas se desplacen, de la misma manera en la que tu cabeza se mueve hacia adelante cuando el vehículo en el que vas frena repentinamente. Con esta medición de cambios sutiles en la inercia, el acelerómetro de un teléfono puede detectar cambios en el movimiento y la orientación, que sirven para cambiar la pantalla de modo horizontal a vertical, jugar en el teléfono y otras acciones.</string>
   <string name="sensor_desc_second_paragraph_acc">Probablemente notaste una aceleración constante del eje Z, incluso cuando el teléfono está quieto sobre una mesa. Esta es la aceleración que experimentamos en la superficie de la Tierra debido a la fuerza de gravedad, aproximadamente 9.8 m/s².</string>
@@ -233,8 +233,8 @@ La escala de decibeles es logarítmica, así que puede ser un poco difícil de e
 50 dB: Lluvia
 60 dB: Conversación normal
 90 dB: Licuadora
-100 dB: Automóvil sin silenciador 
-110 dB: Gritos en el oído 
+100 dB: Automóvil sin silenciador
+110 dB: Gritos en el oído
 120 dB: Truenos
 130 dB: Martillo mecánico
 140 dB: Despegue de un avión</string>
@@ -255,22 +255,22 @@ El punto rojo indica qué tan cerca está el tono que se detectó de la nota mus
   <string name="pitch_sharper_than_flat_note_content_description">%3$s semitonos más arriba que %1$s bemol, octava %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s semitonos más arriba que %1$s sostenido, octava %2$s</string>
   <string name="pitch_high_content_description">tono agudo</string>
-  <string name="sensor_desc_first_paragraph_rotation">Las revoluciones por minuto (RPM) son una medida de la frecuencia de rotación sobre un eje fijo en un minuto. 
+  <string name="sensor_desc_first_paragraph_rotation">Las revoluciones por minuto (RPM) son una medida de la frecuencia de rotación sobre un eje fijo en un minuto.
 
 A medida que el molinillo gira, se mueve el disco codificador:</string>
   <string name="sensor_desc_second_paragraph_rotation">Esto crea períodos de luz y oscuridad en el sensor que se registran en Science Journal como una rotación.</string>
-  <string name="sensor_desc_first_paragraph_raw">Los datos que aquí se muestran provienen de la comunicación de un sensor externo con el teléfono a través de Bluetooth. 
+  <string name="sensor_desc_first_paragraph_raw">Los datos que aquí se muestran provienen de la comunicación de un sensor externo con el teléfono a través de Bluetooth.
 
 El valor muestra el porcentaje de la lectura en crudo proveniente directamente del microcontrolador. Por lo general, este es el porcentaje de una caída de voltaje en un sensor.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth es un estándar de tecnología inalámbrica que usa ondas de radio para intercambiar datos en distancias cortas desde dispositivos móviles o fijos.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Los datos que se muestran aquí vienen de la comunicación de un sensor externo con el teléfono a través de Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth es un estándar de tecnología inalámbrica que usa ondas de radio para intercambiar datos en distancias cortas desde dispositivos móviles o fijos.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Aunque casi nunca lo notamos, todos vivimos en el fondo de un océano de aire: la atmósfera de la Tierra, que se extiende hasta 40 km sobre la superficie. El peso de todo ese aire se denomina presión atmosférica. 
+  <string name="sensor_desc_first_paragraph_barometer">Aunque casi nunca lo notamos, todos vivimos en el fondo de un océano de aire: la atmósfera de la Tierra, que se extiende hasta 40 km sobre la superficie. El peso de todo ese aire se denomina presión atmosférica.
 
 En el nivel del mar, la presión atmosférica aplica cerca de 1 kg de fuerza sobre cada centímetro cuadrado. Eso equivale a unos 600 kg sobre una superficie del tamaño de una hoja de papel.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Generalmente, no percibimos esa presión porque estamos acostumbrados a ella. Sin embargo, sí la notamos cuando cambia, por muy poco que sea, como suele ocurrir dentro de los aviones o cuando subimos una montaña. La presión atmosférica también cambia según las condiciones del tiempo: por ejemplo, baja cuando ocurre una tormenta y sube cuando el aire se estabiliza y vuelve a salir el sol. 
+  <string name="sensor_desc_second_paragraph_barometer">Generalmente, no percibimos esa presión porque estamos acostumbrados a ella. Sin embargo, sí la notamos cuando cambia, por muy poco que sea, como suele ocurrir dentro de los aviones o cuando subimos una montaña. La presión atmosférica también cambia según las condiciones del tiempo: por ejemplo, baja cuando ocurre una tormenta y sube cuando el aire se estabiliza y vuelve a salir el sol.
 
-El barómetro digital de tu teléfono mide la presión atmosférica en hectopascales. Esta unidad equivale a 100 pascales (un pascal es un newton de fuerza aplicado sobre un área de un metro cuadrado). Tal vez hayas escuchado pronósticos del tiempo en los que hablan de la presión atmosférica en milibares. Son lo mismo que los hectopascales, pero ese nombre suena mucho mejor. 
+El barómetro digital de tu teléfono mide la presión atmosférica en hectopascales. Esta unidad equivale a 100 pascales (un pascal es un newton de fuerza aplicado sobre un área de un metro cuadrado). Tal vez hayas escuchado pronósticos del tiempo en los que hablan de la presión atmosférica en milibares. Son lo mismo que los hectopascales, pero ese nombre suena mucho mejor.
 
 Tal vez te preguntes para qué sirve que un teléfono mida la presión atmosférica. Esta cambia incluso cuando hay variaciones mínimas en la altitud, como cuando subes una escalera. Por lo tanto, un barómetro digital en un teléfono puede detectar cambios de ubicación. Por ejemplo, puede indicar en qué piso de un edificio estás o si te encuentras en la parte superior o inferior de un puente.</string>
   <string name="run_review_activity_label">Repaso</string>
@@ -334,29 +334,29 @@ Tal vez te preguntes para qué sirve que un teléfono mida la presión atmosfér
 • Exporta experimentos a un archivo para luego importarlos en otros dispositivos.</string>
   <string name="listing_h_feature_3">
 • Exporta fotos de un experimento.</string>
-  <string name="listing__description">Science Journal es el cuaderno digital de ciencias gratuito que te ofrece Google. 
- 
-Con él, podrás guardar tus notas, fotos y observaciones en un solo lugar, independientemente de si eres profesor de ciencias o un aficionado a los experimentos caseros. Usa los sensores de tu teléfono para medir y crear gráficos de fenómenos como la luz, el sonido y el movimiento, o conéctate a sensores externos mediante Bluetooth para realizar experimentos en el mundo que te rodea. 
- 
-Con la app de Science Journal, puedes hacer lo siguiente:
-\u2022 Usar los sensores incorporados de tu teléfono para medir la luz, el sonido, la aceleración, la presión del aire y mucho más. 
-\u2022 Tomar notas y capturar fotos para documentar tus experimentos científicos. Pronto tendremos nuevos tipos de notas disponibles. 
-\u2022 Conectarte a sensores externos mediante ciertos dispositivos Arduino y Vernier compatibles con Bluetooth. 
-\u2022 Acceder a tus experimentos en tus dispositivos mediante Google Drive. 
-\u2022 Exportar los datos que registraron los sensores en archivos CSV. 
-\u2022 Crear activadores automáticos para registrar datos y tomar notas. 
-\u2022 Usar la sonificación para escuchar los movimientos de tus gráficos. 
- 
-Science Journal está disponible sin costo para Android, iPhone, iPad y dispositivos Chromebook compatibles. 
- 
-Actividades educativas de nuestros socios: https://makingscience.withgoogle.com/science-journal/activities. 
-Para obtener asistencia, visita: https://productforums.google.com/forum/#!forum/sciencejournal 
-El código fuente abierto está disponible en https://github.com/google/science-journal 
+  <string name="listing__description">Science Journal es el cuaderno digital de ciencias gratuito que te ofrece Google.
 
- Aviso de permisos: 
-\u2022 Ubicación: Se necesita para buscar dispositivos Bluetooth con sensores. 
-\u2022 Cámara: Se necesita para tomar fotos y documentar experimentos. 
-\u2022 Micrófono: Se necesita para usar el sensor de intensidad del sonido. 
+Con él, podrás guardar tus notas, fotos y observaciones en un solo lugar, independientemente de si eres profesor de ciencias o un aficionado a los experimentos caseros. Usa los sensores de tu teléfono para medir y crear gráficos de fenómenos como la luz, el sonido y el movimiento, o conéctate a sensores externos mediante Bluetooth para realizar experimentos en el mundo que te rodea.
+
+Con la app de Science Journal, puedes hacer lo siguiente:
+\u2022 Usar los sensores incorporados de tu teléfono para medir la luz, el sonido, la aceleración, la presión del aire y mucho más.
+\u2022 Tomar notas y capturar fotos para documentar tus experimentos científicos. Pronto tendremos nuevos tipos de notas disponibles.
+\u2022 Conectarte a sensores externos mediante ciertos dispositivos Arduino y Vernier compatibles con Bluetooth.
+\u2022 Acceder a tus experimentos en tus dispositivos mediante Google Drive.
+\u2022 Exportar los datos que registraron los sensores en archivos CSV.
+\u2022 Crear activadores automáticos para registrar datos y tomar notas.
+\u2022 Usar la sonificación para escuchar los movimientos de tus gráficos.
+
+Science Journal está disponible sin costo para Android, iPhone, iPad y dispositivos Chromebook compatibles.
+
+Actividades educativas de nuestros socios: https://makingscience.withgoogle.com/science-journal/activities.
+Para obtener asistencia, visita: https://productforums.google.com/forum/#!forum/sciencejournal
+El código fuente abierto está disponible en https://github.com/google/science-journal
+
+ Aviso de permisos:
+\u2022 Ubicación: Se necesita para buscar dispositivos Bluetooth con sensores.
+\u2022 Cámara: Se necesita para tomar fotos y documentar experimentos.
+\u2022 Micrófono: Se necesita para usar el sensor de intensidad del sonido.
 \u2022 Almacenamiento: Se necesita para acceder a las fotos y agregarlas a los experimentos.</string>
   <string name="third_party_sensors_option_title">Buscar sensores de terceros</string>
   <string name="third_party_sensors_option_summary">Busca apps compatibles con la API de los sensores externos y habilítalos para agregarlos a los experimentos.</string>
@@ -459,9 +459,9 @@ El código fuente abierto está disponible en https://github.com/google/science-
   <string name="compass">Brújula</string>
   <string name="compass_units">grados</string>
   <string name="sensor_desc_short_compass">La orientación del teléfono en relación con el campo magnético de la Tierra</string>
-  <string name="sensor_desc_first_paragraph_compass">Probablemente ya sepas que la Tierra tiene un campo magnético. Sin embargo, tal vez no hayas notado que tu teléfono tiene un dispositivo diseñado para detectar campos magnéticos llamado magnetómetro. Si combinamos datos del magnetómetro de tu teléfono con la orientación del teléfono en el espacio, podemos crear una brújula digital. 
+  <string name="sensor_desc_first_paragraph_compass">Probablemente ya sepas que la Tierra tiene un campo magnético. Sin embargo, tal vez no hayas notado que tu teléfono tiene un dispositivo diseñado para detectar campos magnéticos llamado magnetómetro. Si combinamos datos del magnetómetro de tu teléfono con la orientación del teléfono en el espacio, podemos crear una brújula digital.
 
-Las brújulas tradicionales son magnetómetros menos sofisticados: constan de una aguja magnética que gira para alinearse con el campo magnético circundante. No hay ninguna brújula pequeña en tu teléfono, pero hay un pequeño sensor de tres ejes que usa corrientes eléctricas para detectar la fuerza de un campo magnético en tres dimensiones espaciales. Pero esto no es suficiente para crear una brújula. 
+Las brújulas tradicionales son magnetómetros menos sofisticados: constan de una aguja magnética que gira para alinearse con el campo magnético circundante. No hay ninguna brújula pequeña en tu teléfono, pero hay un pequeño sensor de tres ejes que usa corrientes eléctricas para detectar la fuerza de un campo magnético en tres dimensiones espaciales. Pero esto no es suficiente para crear una brújula.
 
 ¿Por qué una brújula necesita combinar los datos del magnetómetro con la orientación del teléfono? Conocer la orientación del teléfono nos permite computar la rotación magnética, incluso cuando el teléfono no está horizontal en el mismo plano que el campo magnético de la Tierra. Sabemos que la gravedad es perpendicular al campo magnético de la Tierra, por lo tanto, podemos usar la dirección de la gravedad de los sensores del acelerómetro para determinar qué cantidad del campo magnético se encuentra en el mismo plano que el campo magnético de la Tierra.</string>
   <string name="sensor_desc_second_paragraph_compass">Como seguramente habrás notado, la brújula no solo responde al campo magnético de la Tierra, sino también a todos los campos magnéticos que se encuentren a su alrededor. Los imanes, las corrientes eléctricas y los objetos metálicos pueden afectar el magnetómetro de tu teléfono y así alterar la lectura de la brújula. Si quieres asegurarte de que la punta roja de la brújula esté alineada con el campo magnético de la Tierra, párate en un área abierta, preferentemente al aire libre y lejos de cables de electricidad. Para calibrar el magnetómetro, mueve tu teléfono en forma de 8.</string>
@@ -474,9 +474,9 @@ Las brújulas tradicionales son magnetómetros menos sofisticados: constan de un
   <string name="month_year_format">MMMM aaaa</string>
   <string name="linear_accelerometer">Acelerómetro lineal</string>
   <string name="sensor_desc_short_linear_acc">La aceleración total del teléfono, sin incluir la fuerza de gravedad, en m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Los objetos tienden a quedarse quietos o a seguir en movimiento si se están desplazando. Esta tendencia se denomina \"inercia\". La primera ley de Newton expresa esta idea de manera formal: un objeto continúa en su estado de movimiento o de reposo, a menos que se ejerza sobre él una fuerza desequilibrada. 
+  <string name="sensor_desc_first_paragraph_linear_acc">Los objetos tienden a quedarse quietos o a seguir en movimiento si se están desplazando. Esta tendencia se denomina \"inercia\". La primera ley de Newton expresa esta idea de manera formal: un objeto continúa en su estado de movimiento o de reposo, a menos que se ejerza sobre él una fuerza desequilibrada.
 
-Cuando una fuerza desequilibrada hace que un objeto se desplace, decimos que el objeto acelera: su velocidad cambia, ya sea porque acelera, frena o cambia de dirección. La aceleración se mide como un cambio de velocidad (metros por segundo) en el tiempo, o metros por segundo al cuadrado (m/s²). 
+Cuando una fuerza desequilibrada hace que un objeto se desplace, decimos que el objeto acelera: su velocidad cambia, ya sea porque acelera, frena o cambia de dirección. La aceleración se mide como un cambio de velocidad (metros por segundo) en el tiempo, o metros por segundo al cuadrado (m/s²).
 
 Tu teléfono tiene un dispositivo para medir estos cambios de movimiento: un acelerómetro. Dentro de un acelerómetro, hay pequeñas masas suspendidas en libertad de movimiento. Los cambios en el movimiento hacen que estas masas se desplacen, de la misma manera en la que tu cabeza se mueve hacia delante cuando el vehículo en el que vas frena repentinamente. Con esta medición de cambios sutiles en la inercia, el acelerómetro de un teléfono puede detectar cambios en el movimiento y la orientación, que sirven para cambiar la pantalla de modo horizontal a vertical, jugar en el teléfono y más.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">El sensor del acelerómetro lineal combinado registra la aceleración total de los tres ejes del teléfono, sin incluir la gravedad.</string>
@@ -499,7 +499,7 @@ Tu teléfono tiene un dispositivo para medir estos cambios de movimiento: un ace
   <string name="first_experiment_title">Bienvenido a Science Journal</string>
   <string name="first_experiment_text_note">Prueba tomar notas y grabar datos con la siguiente barra de herramientas.</string>
   <string name="first_experiment_picture_note_caption">¡Bienvenido a Science Journal!</string>
-  <string name="first_experiment_second_text_note">Descubre actividades para proar en 
+  <string name="first_experiment_second_text_note">Descubre actividades para proar en
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Elige una foto para el experimento</string>
   <string name="btn_take_picture_content_description">Tomar foto</string>
@@ -735,8 +735,8 @@ Si ya hay datos de experimentos almacenados en este dispositivo, accede para gua
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -793,7 +793,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -897,5 +897,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>

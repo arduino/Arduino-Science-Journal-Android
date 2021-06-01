@@ -157,6 +157,25 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/terms_notice"
+            style="@style/ArduinoAuth_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:maxWidth="360dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/arduino_auth_sign_up_privacy_and_terms_notice"
+            android:textSize="14sp"
+            android:textColor="@color/arduino_asbestos"
+            android:lineSpacingExtra="5sp"
+            android:letterSpacing="0.01"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/options_container" />
+
+        <TextView
             android:id="@+id/btn_next"
             style="@style/ArduinoAuth_Button"
             android:layout_width="wrap_content"
@@ -167,6 +186,6 @@
             android:paddingEnd="30dp"
             android:text="@string/arduino_auth_sign_up_action"
             app:layout_constraintEnd_toEndOf="@id/options_container"
-            app:layout_constraintTop_toBottomOf="@id/options_container" />
+            app:layout_constraintTop_toBottomOf="@id/terms_notice" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

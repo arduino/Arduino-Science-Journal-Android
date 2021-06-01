@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Le nombre de tours par minute</string>
   <string name="sensor_desc_short_raw">Le pourcentage de la mesure brute obtenue à partir du capteur externe</string>
   <string name="sensor_desc_short_barometer">La pression atmosphérique est mesurée en hectopascals (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Le capteur de lumière ambiante mesure la lumière en lux, une unité de mesure de l\'illumination qui dépend de la quantité de lumière et de la zone dans laquelle elle se diffuse. 
+  <string name="sensor_desc_first_paragraph_light">Le capteur de lumière ambiante mesure la lumière en lux, une unité de mesure de l\'illumination qui dépend de la quantité de lumière et de la zone dans laquelle elle se diffuse.
 
-La pleine lune génère environ un lux, une lampe de salon, environ 50 lux, l\'éclairage d\'une salle de classe, tout comme le lever et le coucher du soleil, environ 400 lux, la lumière du jour (indirecte), plus de 10 000 lux, tandis que la lumière directe du soleil génère plus de 30 000 lux. 
+La pleine lune génère environ un lux, une lampe de salon, environ 50 lux, l\'éclairage d\'une salle de classe, tout comme le lever et le coucher du soleil, environ 400 lux, la lumière du jour (indirecte), plus de 10 000 lux, tandis que la lumière directe du soleil génère plus de 30 000 lux.
 
  Le lux est une unité généralement peu connue. Lorsque nous achetons des ampoules, nous regardons le plus souvent le nombre de watts. Ils ne nous renseignent cependant pas sur la luminosité ni sur la consommation d\'énergie de ces ampoules. Les lumens sont une mesure plus pertinente, car ils indiquent la quantité de lumière effectivement produite par l\'ampoule. En revanche, le lux vous indique la quantité de lumière atteignant une zone spécifique.</string>
-  <string name="sensor_desc_second_paragraph_light">Étant donné que la lumière se disperse au fur et à mesure qu\'elle se propage, le nombre de lux diminue lorsque vous vous éloignez de la source, même si elle continue à émettre la même quantité de lumière en lumens. Une zone qui est inclinée par rapport à une source lumineuse reçoit également moins de lumière, ce qui explique pourquoi les régions équatoriales sont bien plus chaudes que les pôles Nord et Sud. 
+  <string name="sensor_desc_second_paragraph_light">Étant donné que la lumière se disperse au fur et à mesure qu\'elle se propage, le nombre de lux diminue lorsque vous vous éloignez de la source, même si elle continue à émettre la même quantité de lumière en lumens. Une zone qui est inclinée par rapport à une source lumineuse reçoit également moins de lumière, ce qui explique pourquoi les régions équatoriales sont bien plus chaudes que les pôles Nord et Sud.
 
 D\'ailleurs, le capteur de lumière de votre téléphone a pour but de contrôler le niveau de luminosité de l\'écran, en l\'ajustant selon que vous êtes dans un environnement sombre ou éclairé. Ce capteur est équipé d\'un tout petit semi-conducteur qui réagit à la lumière entrante en produisant un courant électrique infime, mais quantifiable. Ce phénomène est connu sous le nom d\'effet photoélectrique. Des capteurs similaires sont utilisés sur certains réverbères, qui s\'allument dès qu\'il fait sombre.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Votre téléphone comporte un appareil conçu pour détecter les champs magnétiques : un magnétomètre. Il s\'agit d\'un petit capteur à trois axes qui utilise les courants électriques pour détecter l\'intensité du champ magnétique dans les trois dimensions de l\'espace. En associant les données de ces trois axes, nous pouvons créer un capteur d\'intensité totale du champ magnétique. 
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Votre téléphone comporte un appareil conçu pour détecter les champs magnétiques : un magnétomètre. Il s\'agit d\'un petit capteur à trois axes qui utilise les courants électriques pour détecter l\'intensité du champ magnétique dans les trois dimensions de l\'espace. En associant les données de ces trois axes, nous pouvons créer un capteur d\'intensité totale du champ magnétique.
 
-Certains magnétomètres sont basés sur l\'effet Hall selon lequel les champs magnétiques font dévier la charge en mouvement lorsqu\'elle se déplace. Les modèles plus récents fonctionnent avec des matériaux magnétorésistifs, c\'est-à-dire des alliages de métaux dont la résistance change en fonction des champs magnétiques. 
+Certains magnétomètres sont basés sur l\'effet Hall selon lequel les champs magnétiques font dévier la charge en mouvement lorsqu\'elle se déplace. Les modèles plus récents fonctionnent avec des matériaux magnétorésistifs, c\'est-à-dire des alliages de métaux dont la résistance change en fonction des champs magnétiques.
 
 À quoi sert un magnétomètre sur un téléphone ? À fournir des données sur votre orientation dans l\'espace aux boussoles et aux applications de navigation, en particulier à celles proposant des itinéraires détaillés.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Le magnétomètre de votre téléphone est très sensible aux aimants, courants électriques et objets métalliques environnants. Même au beau milieu d\'un champ ne comportant aucune de ces sources magnétiques, il affichera toujours un relevé bas non nul, car il réagit de toute façon au champ magnétique de la Terre.</string>
-  <string name="sensor_desc_first_paragraph_acc">Les objets ont tendance à rester immobiles ou à rester en mouvement s\'ils l\'étaient au départ. On appelle cette tendance \"inertie\". La première loi de Newton l\'énonce ainsi : un objet demeure à l\'état de repos ou de mouvement uniforme en ligne droite dans lequel il se trouve, à moins qu\'une force déséquilibrée n\'agisse sur lui. 
+  <string name="sensor_desc_first_paragraph_acc">Les objets ont tendance à rester immobiles ou à rester en mouvement s\'ils l\'étaient au départ. On appelle cette tendance \"inertie\". La première loi de Newton l\'énonce ainsi : un objet demeure à l\'état de repos ou de mouvement uniforme en ligne droite dans lequel il se trouve, à moins qu\'une force déséquilibrée n\'agisse sur lui.
 
-Lorsqu\'une force déséquilibrée entraîne un mouvement de l\'objet, nous disons que l\'objet accélère. Sa vélocité ou vitesse change. Elle peut augmenter, diminuer ou l\'objet peut changer de direction. L\'accélération est mesurée en fonction de la variation de la vélocité (en mètres par seconde) sur la durée, ou en mètres par seconde carrée (m/s²). 
+Lorsqu\'une force déséquilibrée entraîne un mouvement de l\'objet, nous disons que l\'objet accélère. Sa vélocité ou vitesse change. Elle peut augmenter, diminuer ou l\'objet peut changer de direction. L\'accélération est mesurée en fonction de la variation de la vélocité (en mètres par seconde) sur la durée, ou en mètres par seconde carrée (m/s²).
 
 Votre téléphone dispose d\'un appareil permettant de mesurer ces changements de mouvement : un accéléromètre. L\'accéléromètre se compose de petites masses suspendues libres de leurs mouvements. Les changements de mouvement entraînent un déplacement de ces masses, de même que votre tête est entraînée vers l\'avant lorsque vous êtes dans une voiture qui freine brusquement. En mesurant ces légers déplacements, l\'accéléromètre de votre téléphone peut détecter des changements de mouvement et de direction, ce qui est très utile pour lui permettre de passer du mode portrait ou mode paysage, pour les jeux vidéo et bien d\'autres applications.</string>
   <string name="sensor_desc_second_paragraph_acc">Vous avez probablement remarqué une accélération continue sur l\'axe Z, même lorsque votre téléphone est posé sur une table. Il s\'agit de l\'accélération que nous ressentons ici, à la surface de la Terre, en raison de la force de gravité. Elle est d\'environ 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Les sons proviennent des vibrations. Par exemple, votre voix est émise par les vibrations des cordes vocales de votre gorge. Ces vibrations créent des zones alternées de haute et basse pression d\'air qui se propagent vers l\'extérieur, un peu comme des ondulations circulaires qui apparaissent lorsque vous jetez un caillou dans un étang.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Tous les sons peuvent être décrits en termes de fréquence et d\'intensité. 
+  <string name="sensor_desc_second_paragraph_decibel">Tous les sons peuvent être décrits en termes de fréquence et d\'intensité.
 
-L\'intensité est ce que vous mesurez avec le capteur d\'intensité sonore de Science Journal et s\'exprime en décibels (dB). L\'intensité, ou la sonie, dépend de la distance parcourue par l\'objet en mouvement à chaque vibration. Nous percevons une intensité plus importante lorsque la sonie augmente. 
+L\'intensité est ce que vous mesurez avec le capteur d\'intensité sonore de Science Journal et s\'exprime en décibels (dB). L\'intensité, ou la sonie, dépend de la distance parcourue par l\'objet en mouvement à chaque vibration. Nous percevons une intensité plus importante lorsque la sonie augmente.
 
-La fréquence (ou hauteur, ou ton) d\'une onde sonore équivaut à son taux de vibration. Plus un objet vibre vite, plus la hauteur du son émis est élevée. Le capteur d\'intensité sonore de Science Journal ne mesure pas la fréquence, mais seulement la sonie. 
+La fréquence (ou hauteur, ou ton) d\'une onde sonore équivaut à son taux de vibration. Plus un objet vibre vite, plus la hauteur du son émis est élevée. Le capteur d\'intensité sonore de Science Journal ne mesure pas la fréquence, mais seulement la sonie.
 
-Il faut savoir que le microphone de votre appareil est conçu pour être très sensible aux différences d\'ondes sonores dans le temps, mais pas à la taille absolue de chaque onde. Nous avons essayé de choisir un code susceptible de générer des données similaires aux références présentées ci-dessous, mais chaque appareil peut invariablement fournir des données plus ou moins élevées. Les scientifiques étalonnent généralement un capteur comme celui-ci en fonction d\'une mesure connue. Pour l\'instant, Science Journal peut vous indiquer si votre prochain voyage en train sera plus bruyant que le concert de rock auquel vous assisterez, mais seulement si vous utilisez le même téléphone dans les deux situations. 
+Il faut savoir que le microphone de votre appareil est conçu pour être très sensible aux différences d\'ondes sonores dans le temps, mais pas à la taille absolue de chaque onde. Nous avons essayé de choisir un code susceptible de générer des données similaires aux références présentées ci-dessous, mais chaque appareil peut invariablement fournir des données plus ou moins élevées. Les scientifiques étalonnent généralement un capteur comme celui-ci en fonction d\'une mesure connue. Pour l\'instant, Science Journal peut vous indiquer si votre prochain voyage en train sera plus bruyant que le concert de rock auquel vous assisterez, mais seulement si vous utilisez le même téléphone dans les deux situations.
 
-Sachez également qu\'il existe d\'importantes différences entre l\'intensité du son, le niveau d\'intensité du son et la pression acoustique. Nous utilisons ici ces termes indifféremment, mais si vous souhaitez en savoir plus, vous trouverez de nombreuses ressources en ligne expliquant leurs caractéristiques. 
+Sachez également qu\'il existe d\'importantes différences entre l\'intensité du son, le niveau d\'intensité du son et la pression acoustique. Nous utilisons ici ces termes indifféremment, mais si vous souhaitez en savoir plus, vous trouverez de nombreuses ressources en ligne expliquant leurs caractéristiques.
 
-Le son le plus discret que l\'oreille d\'un être humain lambda peut percevoir est de zéro décibel. Une conversation ordinaire atteint environ 60 dB, et les sons supérieurs à 140 dB sont douloureux pour l\'oreille humaine. Cependant, même les sons qui ne font pas mal peuvent être dangereux. Une exposition continue à des sons de 90 dB (ce qui équivaut à la sonie d\'un aspirateur) peut entraîner une perte de l\'audition. 
+Le son le plus discret que l\'oreille d\'un être humain lambda peut percevoir est de zéro décibel. Une conversation ordinaire atteint environ 60 dB, et les sons supérieurs à 140 dB sont douloureux pour l\'oreille humaine. Cependant, même les sons qui ne font pas mal peuvent être dangereux. Une exposition continue à des sons de 90 dB (ce qui équivaut à la sonie d\'un aspirateur) peut entraîner une perte de l\'audition.
 
-L\'échelle des décibels est logarithmique, ce qui peut être assez trompeur : une source sonore de 40 dB n\'est pas deux fois plus intense qu\'une source de 20 dB. Elle est en réalité 100 fois plus intense. Dans le même temps, si l\'alarme d\'un réveil génère 70 dB, deux alarmes ne produiront pas 140, mais 73 dB. Cette échelle fonctionne en effet étrangement. 
+L\'échelle des décibels est logarithmique, ce qui peut être assez trompeur : une source sonore de 40 dB n\'est pas deux fois plus intense qu\'une source de 20 dB. Elle est en réalité 100 fois plus intense. Dans le même temps, si l\'alarme d\'un réveil génère 70 dB, deux alarmes ne produiront pas 140, mais 73 dB. Cette échelle fonctionne en effet étrangement.
 
-10 dB : bruissements de feuilles 
-20 dB : chuchotement à 1,50 m 
-30 dB : léger chuchotement 
-50 dB : pluie 
-60 dB : conversation normale 
-90 dB : mixeur 
-100 dB : voiture sans silencieux 
-110 dB : cri dans l\'oreille 
-120 dB : tonnerre 
-130 dB : marteau-piqueur 
+10 dB : bruissements de feuilles
+20 dB : chuchotement à 1,50 m
+30 dB : léger chuchotement
+50 dB : pluie
+60 dB : conversation normale
+90 dB : mixeur
+100 dB : voiture sans silencieux
+110 dB : cri dans l\'oreille
+120 dB : tonnerre
+130 dB : marteau-piqueur
 140 dB : décollage d\'un avion</string>
   <string name="sensor_desc_first_paragraph_pitch">Les sons proviennent des vibrations. Par exemple, votre voix est émise par les vibrations des cordes vocales de votre gorge. Ces vibrations créent des zones alternées de haute et basse pression d\'air qui se propagent vers l\'extérieur, un peu comme des ondulations circulaires qui apparaissent lorsque vous jetez un caillou dans un étang.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Tous les sons peuvent être décrits en termes de fréquence et d\'intensité. La fréquence (ou hauteur, ou ton) d\'une onde sonore équivaut à son taux de vibration. Plus un objet vibre vite, plus la hauteur du son émis est élevée. Ces vibrations s\'expriment en Hertz (Hz), où 1 Hertz = 1 vibration/seconde. 
+  <string name="sensor_desc_second_paragraph_pitch">Tous les sons peuvent être décrits en termes de fréquence et d\'intensité. La fréquence (ou hauteur, ou ton) d\'une onde sonore équivaut à son taux de vibration. Plus un objet vibre vite, plus la hauteur du son émis est élevée. Ces vibrations s\'expriment en Hertz (Hz), où 1 Hertz = 1 vibration/seconde.
 
-Les fréquences sonores pouvant être perçues par un être humain vont de 20 à 20 000 Hz. La touche d\'un piano correspondant à la note la plus grave produit un son d\'une fréquence de 27,5 Hz, tandis que la touche correspondant à la note la plus aiguë produit un son d\'une fréquence de 4 186,01 Hz. 
+Les fréquences sonores pouvant être perçues par un être humain vont de 20 à 20 000 Hz. La touche d\'un piano correspondant à la note la plus grave produit un son d\'une fréquence de 27,5 Hz, tandis que la touche correspondant à la note la plus aiguë produit un son d\'une fréquence de 4 186,01 Hz.
 
 Le point rouge indique l\'écart entre la hauteur détectée et la note la plus proche. Si la hauteur est grave ou \"en dessous\", le point apparaît sur la gauche. Si la hauteur est aiguë ou \"au-dessus\", le point rouge apparaît sur la droite.</string>
   <string name="pitch_low_content_description">hauteur grave</string>
@@ -255,22 +255,22 @@ Le point rouge indique l\'écart entre la hauteur détectée et la note la plus 
   <string name="pitch_sharper_than_flat_note_content_description">%3$s demi-tons au-dessus de %1$s bémol, octave %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s demi-tons au-dessus de %1$s dièse, octave %2$s</string>
   <string name="pitch_high_content_description">hauteur aiguë</string>
-  <string name="sensor_desc_first_paragraph_rotation">Le tour par minute (tr/min) est une unité permettant de mesurer la fréquence de rotation autour d\'un axe fixe en une minute. 
+  <string name="sensor_desc_first_paragraph_rotation">Le tour par minute (tr/min) est une unité permettant de mesurer la fréquence de rotation autour d\'un axe fixe en une minute.
 
  Lorsque votre girouette tourne, elle entraîne une rotation du disque codeur :</string>
   <string name="sensor_desc_second_paragraph_rotation">Cela est interprété en périodes de lumière et d\'obscurité par le capteur et enregistré dans Science Journal en tant que rotation.</string>
-  <string name="sensor_desc_first_paragraph_raw">Les données qui s\'affichent ici proviennent d\'un capteur externe et sont transmises à votre téléphone par Bluetooth. 
+  <string name="sensor_desc_first_paragraph_raw">Les données qui s\'affichent ici proviennent d\'un capteur externe et sont transmises à votre téléphone par Bluetooth.
 
 La valeur indique le pourcentage de la mesure brute obtenue directement à partir du microcontrôleur. Il s\'agit généralement du pourcentage d\'une chute de tension rencontrée par le capteur.</string>
   <string name="sensor_desc_second_paragraph_raw">Le Bluetooth est une norme de technologie sans fil qui utilise les ondes radio pour échanger des données sur de courtes distances, à partir d\'appareils fixes et mobiles.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Les données qui s\'affichent ici proviennent d\'un capteur externe et sont transmises à votre téléphone par Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Le Bluetooth est une norme de technologie sans fil qui utilise les ondes radio pour échanger des données sur de courtes distances, à partir d\'appareils fixes et mobiles.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Sans même nous en rendre compte, nous vivons au fond d\'un profond océan d\'air, l\'atmosphère terrestre, qui s\'élève à plus de 40 km au-dessus de la surface de la Terre. Le poids de cette masse d\'air au-dessus de nos têtes est appelé pression atmosphérique. 
+  <string name="sensor_desc_first_paragraph_barometer">Sans même nous en rendre compte, nous vivons au fond d\'un profond océan d\'air, l\'atmosphère terrestre, qui s\'élève à plus de 40 km au-dessus de la surface de la Terre. Le poids de cette masse d\'air au-dessus de nos têtes est appelé pression atmosphérique.
 
 Au niveau de la mer, la pression atmosphérique exerce une force d\'environ 1 kg par centimètre carré, l\'équivalent de 590 kg exercés sur la surface d\'une feuille de papier.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Nous ne remarquons pas cette pression écrasante parce que nous y sommes habitués, du moins jusqu\'à ce que celle-ci change, même très légèrement. C\'est le cas lorsque nous montons en altitude ou que nous prenons l\'avion. La pression atmosphérique varie également en fonction des conditions météorologiques : elle diminue lorsque le temps est orageux et instable, et augmente lorsqu\'il se stabilise et s\'éclaircit. 
+  <string name="sensor_desc_second_paragraph_barometer">Nous ne remarquons pas cette pression écrasante parce que nous y sommes habitués, du moins jusqu\'à ce que celle-ci change, même très légèrement. C\'est le cas lorsque nous montons en altitude ou que nous prenons l\'avion. La pression atmosphérique varie également en fonction des conditions météorologiques : elle diminue lorsque le temps est orageux et instable, et augmente lorsqu\'il se stabilise et s\'éclaircit.
 
-Le baromètre numérique présent dans votre téléphone mesure la pression atmosphérique en hectopascals (un hectopascal est égal à 100 pascals, et un pascal correspond à une force d\'un newton exercée sur une surface d\'un mètre carré). Vous avez peut-être déjà entendu les présentateurs météo parler de pression atmosphérique en millibars : cette unité est équivalente à l\'hectopascal. 
+Le baromètre numérique présent dans votre téléphone mesure la pression atmosphérique en hectopascals (un hectopascal est égal à 100 pascals, et un pascal correspond à une force d\'un newton exercée sur une surface d\'un mètre carré). Vous avez peut-être déjà entendu les présentateurs météo parler de pression atmosphérique en millibars : cette unité est équivalente à l\'hectopascal.
 
 Vous vous demandez probablement pourquoi un téléphone mesure la pression. La pression atmosphérique évolue de manière mesurable pour tout changement, même minime, d\'altitude (par exemple, lorsque vous montez un escalier). Le baromètre numérique intégré à un téléphone peut donc servir à détecter des changements de position, en vous indiquant par exemple à quel étage d\'un immeuble vous vous trouvez, ou si vous êtes au-dessus ou en dessous d\'un pont.</string>
   <string name="run_review_activity_label">Examen</string>
@@ -334,13 +334,13 @@ Vous vous demandez probablement pourquoi un téléphone mesure la pression. La p
 • Exportez des expériences dans un fichier, puis importez-les sur d\'autres appareils.</string>
   <string name="listing_h_feature_3">
 • Exportez des photos d\'une expérience.</string>
-  <string name="listing__description">Science Journal est un carnet scientifique numérique gratuit proposé par Google. 
+  <string name="listing__description">Science Journal est un carnet scientifique numérique gratuit proposé par Google.
 
- 
 
-Que vous soyez un professeur de science ou un amateur réalisant des expériences à la maison, cette application vous permet de conserver vos notes, photos et observations au même endroit. Utilisez les capteurs de votre téléphone pour mesurer et reproduire, sur des graphiques, des phénomènes comme la lumière, le son et le mouvement. Vous pouvez également connecter des capteurs externes via Bluetooth pour mener des expériences sur le monde qui vous entoure. 
 
- 
+Que vous soyez un professeur de science ou un amateur réalisant des expériences à la maison, cette application vous permet de conserver vos notes, photos et observations au même endroit. Utilisez les capteurs de votre téléphone pour mesurer et reproduire, sur des graphiques, des phénomènes comme la lumière, le son et le mouvement. Vous pouvez également connecter des capteurs externes via Bluetooth pour mener des expériences sur le monde qui vous entoure.
+
+
 
 Voici ce que l\'application Science Journal vous permet de faire :
 
@@ -364,15 +364,15 @@ Science Journal est disponible gratuitement sur les appareils Android, iPhone, 
 
 
 
-Activités pédagogiques proposées par nos partenaires : https://makingscience.withgoogle.com/science-journal/activities 
+Activités pédagogiques proposées par nos partenaires : https://makingscience.withgoogle.com/science-journal/activities
 
-Assistance : https://productforums.google.com/forum/#!forum/sciencejournal 
+Assistance : https://productforums.google.com/forum/#!forum/sciencejournal
 
-Code Open Source disponible : https://github.com/google/science-journal 
+Code Open Source disponible : https://github.com/google/science-journal
 
 
 
- Avis relatif aux autorisations : 
+ Avis relatif aux autorisations :
 
 \u2022 Position : autorisation requise pour rechercher des appareils dotés de capteurs Bluetooth.
 
@@ -482,9 +482,9 @@ Code Open Source disponible : https://github.com/google/science-journal
   <string name="compass">Boussole</string>
   <string name="compass_units">degrés</string>
   <string name="sensor_desc_short_compass">L\'orientation du téléphone par rapport au champ magnétique de la Terre.</string>
-  <string name="sensor_desc_first_paragraph_compass">La Terre est entourée d\'un champ magnétique, que vous pouvez détecter avec le magnétomètre de votre téléphone. Les données de ce magnétomètre associées aux informations d\'orientation du téléphone dans l\'espace permettent de créer une boussole numérique. 
+  <string name="sensor_desc_first_paragraph_compass">La Terre est entourée d\'un champ magnétique, que vous pouvez détecter avec le magnétomètre de votre téléphone. Les données de ce magnétomètre associées aux informations d\'orientation du téléphone dans l\'espace permettent de créer une boussole numérique.
 
-La boussole classique est un magnétomètre basique dont l\'aiguille aimantée tourne pour s\'aligner avec le champ magnétique environnant. Votre téléphone n\'est pas équipé d\'une mini-boussole, mais d\'un tout petit capteur à trois axes qui utilise les courants électriques pour détecter l\'intensité du champ magnétique dans les trois dimensions de l\'espace. Ce capteur ne suffit bien entendu pas à créer une boussole. 
+La boussole classique est un magnétomètre basique dont l\'aiguille aimantée tourne pour s\'aligner avec le champ magnétique environnant. Votre téléphone n\'est pas équipé d\'une mini-boussole, mais d\'un tout petit capteur à trois axes qui utilise les courants électriques pour détecter l\'intensité du champ magnétique dans les trois dimensions de l\'espace. Ce capteur ne suffit bien entendu pas à créer une boussole.
 
 Pourquoi une boussole doit-elle associer les données issues du magnétomètre aux informations d\'orientation du téléphone ? En connaissant ces dernières, nous pouvons calculer la rotation magnétique même lorsque le téléphone ne se trouve ni à plat, ni sur le même plan que le champ magnétique de la Terre. Nous savons que la gravité est perpendiculaire au champ magnétique de la Terre, nous pouvons donc utiliser la direction de la gravité indiquée par les capteurs de l\'accéléromètre pour déterminer quelle part du champ magnétique est sur le même plan que le champ magnétique de la Terre.</string>
   <string name="sensor_desc_second_paragraph_compass">Comme vous avez pu le constater, la boussole réagit à n\'importe quel champ magnétique environnant (aimants, courants électriques et objets métalliques), et pas seulement à celui de la Terre. Ses relevés vont donc varier. Pour vous assurer que l\'aiguille rouge de la boussole est alignée avec le champ magnétique de la Terre, placez-vous dans un lieu ouvert (de préférence, en extérieur et loin des lignes électriques). Effectuez un mouvement en forme de huit avec votre téléphone pour faciliter le calibrage du magnétomètre.</string>
@@ -497,9 +497,9 @@ Pourquoi une boussole doit-elle associer les données issues du magnétomètre a
   <string name="month_year_format">MMMM aaaa</string>
   <string name="linear_accelerometer">Accéléromètre linéaire</string>
   <string name="sensor_desc_short_linear_acc">L\'accélération totale du téléphone en m/s², à l\'exception de la force de gravité.</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Les objets ont tendance à rester immobiles ou à rester en mouvement s\'ils l\'étaient au départ. On appelle cette tendance \"inertie\". La première loi de Newton l\'énonce ainsi : un objet demeure à l\'état de repos ou de mouvement uniforme en ligne droite dans lequel il se trouve, à moins qu\'une force déséquilibrée n\'agisse sur lui. 
+  <string name="sensor_desc_first_paragraph_linear_acc">Les objets ont tendance à rester immobiles ou à rester en mouvement s\'ils l\'étaient au départ. On appelle cette tendance \"inertie\". La première loi de Newton l\'énonce ainsi : un objet demeure à l\'état de repos ou de mouvement uniforme en ligne droite dans lequel il se trouve, à moins qu\'une force déséquilibrée n\'agisse sur lui.
 
-Lorsqu\'une force déséquilibrée entraîne un mouvement de l\'objet, nous disons que l\'objet accélère. Sa vélocité ou vitesse change. Elle peut augmenter ou diminuer, ou l\'objet peut changer de direction. L\'accélération est mesurée en fonction de la variation de la vélocité (en mètres par seconde) sur la durée, ou en mètres par seconde carrée (m/s²). 
+Lorsqu\'une force déséquilibrée entraîne un mouvement de l\'objet, nous disons que l\'objet accélère. Sa vélocité ou vitesse change. Elle peut augmenter ou diminuer, ou l\'objet peut changer de direction. L\'accélération est mesurée en fonction de la variation de la vélocité (en mètres par seconde) sur la durée, ou en mètres par seconde carrée (m/s²).
 
 Votre téléphone dispose d\'un appareil permettant de mesurer ces changements de mouvement : un accéléromètre. L\'accéléromètre se compose de petites masses suspendues libres de leurs mouvements. Les changements de mouvement entraînent un déplacement de ces masses, de même que votre tête est entraînée vers l\'avant lorsque vous êtes dans une voiture qui freine brusquement. En mesurant ces légers déplacements, l\'accéléromètre de votre téléphone peut détecter des changements de mouvement et de direction, ce qui est très utile pour lui permettre de passer du mode portrait au mode paysage (et vice versa), pour les jeux vidéo et bien d\'autres applications.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Le capteur de l\'accéléromètre linéaire enregistre l\'accélération totale sur les trois axes du téléphone, à l\'exception de la gravité.</string>
@@ -522,7 +522,7 @@ Votre téléphone dispose d\'un appareil permettant de mesurer ces changements d
   <string name="first_experiment_title">Bienvenue dans Science Journal</string>
   <string name="first_experiment_text_note">Essayez de prendre des notes et d\'enregistrer des données à l\'aide de la barre d\'outils ci-dessous.</string>
   <string name="first_experiment_picture_note_caption">Bienvenue dans Science Journal !</string>
-  <string name="first_experiment_second_text_note">Découvrez des activités à tester sur le site 
+  <string name="first_experiment_second_text_note">Découvrez des activités à tester sur le site
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Sélectionner une photo de l\'expérience</string>
   <string name="btn_take_picture_content_description">Prendre une photo</string>
@@ -758,8 +758,8 @@ Si vous avez des données sur cet appareil, vous pouvez les enregistrer sur Goog
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -816,7 +816,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -920,5 +920,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>

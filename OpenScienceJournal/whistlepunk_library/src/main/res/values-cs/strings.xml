@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Počet otáček za minutu</string>
   <string name="sensor_desc_short_raw">Nezpracovaný odečet z externího senzoru v procentech.</string>
   <string name="sensor_desc_short_barometer">Atmosférický tlak měřený v hektopascalech (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Senzor okolního světla měří intenzitu světla v luxech. Jedná se o množství světla dopadajícího na určitou plochu. 
+  <string name="sensor_desc_first_paragraph_light">Senzor okolního světla měří intenzitu světla v luxech. Jedná se o množství světla dopadajícího na určitou plochu.
 
-Měsíc v úplňku poskytuje přibližně 1 lux světla, v průměrně osvětleném pokoji je přibližně 50 luxů, ve školní třídě a při západu či východu slunce 400 luxů, denní světlo (mimo přímé slunce) má přes 10 000 luxů a přímé sluneční světlo více než 30 000 luxů. 
+Měsíc v úplňku poskytuje přibližně 1 lux světla, v průměrně osvětleném pokoji je přibližně 50 luxů, ve školní třídě a při západu či východu slunce 400 luxů, denní světlo (mimo přímé slunce) má přes 10 000 luxů a přímé sluneční světlo více než 30 000 luxů.
 
 Lux obvykle nepatří mezi běžně známé jednotky. Když kupujeme žárovky, většinou se řídíme podle počtu wattů. Tato hodnota ale nevypovídá o tom, jak moc bude žárovka svítit, ale pouze o tom, kolik energie spotřebuje. Je proto lepší sledovat počet lumenů – tento údaj lépe popisuje, kolik světla žárovka skutečně vydá. Luxy pak označují, kolik tohoto světla dopadne na určitou plochu.</string>
-  <string name="sensor_desc_second_paragraph_light">Kužel světla z běžných světelných zdrojů se s rostoucí vzdáleností rozšiřuje. Čím je tedy vzdálenost od zdroje větší, tím je počet luxů nižší, i když zdroj vyzařuje stále stejné množství světla v lumenech. Na oblast, která je vzhledem ke zdroji položena šikmo, také dopadá méně světla (můžeme to vidět například na Zemi, kde jsou rovníkové oblasti mnohem teplejší než póly). 
+  <string name="sensor_desc_second_paragraph_light">Kužel světla z běžných světelných zdrojů se s rostoucí vzdáleností rozšiřuje. Čím je tedy vzdálenost od zdroje větší, tím je počet luxů nižší, i když zdroj vyzařuje stále stejné množství světla v lumenech. Na oblast, která je vzhledem ke zdroji položena šikmo, také dopadá méně světla (můžeme to vidět například na Zemi, kde jsou rovníkové oblasti mnohem teplejší než póly).
 
 Váš telefon je vybaven senzorem světla, který pomáhá nastavit jas obrazovky podle toho, zda je v okolí světlo nebo tma. Uvnitř senzoru se nacházejí drobné polovodiče, které reagují na dopadající světlo produkcí malého množství elektrického proudu (takzvaný fotoelektrický jev). Podobné senzory se používají v některých venkovních lampách a zapínají je, když se setmí.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Váš telefon obsahuje zařízení navržené k detekci magnetických polí: magnetometr. Jedná se o malý, tříosý snímač využívající elektrické proudy k detekci síly magnetického pole ve trojrozměrném prostoru. Kombinací dat ze všech tří os můžeme vytvořit snímač celkové síly magnetického pole. 
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Váš telefon obsahuje zařízení navržené k detekci magnetických polí: magnetometr. Jedná se o malý, tříosý snímač využívající elektrické proudy k detekci síly magnetického pole ve trojrozměrném prostoru. Kombinací dat ze všech tří os můžeme vytvořit snímač celkové síly magnetického pole.
 
-Některé magnetometry využívají takzvaný Hallův jev – vliv magnetického pole na směr toku elektrického proudu. Novější magnetometry používají magnetorezistory; kovové slitiny, které vlivem magnetického pole mění odpor. 
+Některé magnetometry využívají takzvaný Hallův jev – vliv magnetického pole na směr toku elektrického proudu. Novější magnetometry používají magnetorezistory; kovové slitiny, které vlivem magnetického pole mění odpor.
 
 K čemu telefon potřebuje magnetometr? Orientace v prostoru je důležitá pro aplikace kompasu a map, a to především pokud vyžadujete podrobné navigační pokyny.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magnety, elektrické proudy a kovové předměty váš magnetometr snadno vychýlí. Ovšem dokonce i uprostřed prázdného pole magnetometr v telefonu vždy ukazuje nízkou nenulovou hodnotu: jedná se o magnetické pole Země.</string>
-  <string name="sensor_desc_first_paragraph_acc">Tělesa mají tendenci zůstávat v klidu, případně pokračovat v započatém pohybu. Tuto skutečnost nazýváme setrvačností. Popisuje ji první Newtonův zákon: Těleso zůstává v klidu nebo rovnoměrném přímočarém pohybu, není-li nuceno vnějšími silami tento stav změnit. 
+  <string name="sensor_desc_first_paragraph_acc">Tělesa mají tendenci zůstávat v klidu, případně pokračovat v započatém pohybu. Tuto skutečnost nazýváme setrvačností. Popisuje ji první Newtonův zákon: Těleso zůstává v klidu nebo rovnoměrném přímočarém pohybu, není-li nuceno vnějšími silami tento stav změnit.
 
-Pokud je těleso uvedeno do pohybu vnější silou, mluvíme o zrychlení – mění se rychlost pohybu (zvyšuje se, snižuje nebo mění směr). Zrychlení se měří jako změna rychlosti (metry za sekundu) v čase nebo v metrech na druhou mocninu sekundy (m/s²). 
+Pokud je těleso uvedeno do pohybu vnější silou, mluvíme o zrychlení – mění se rychlost pohybu (zvyšuje se, snižuje nebo mění směr). Zrychlení se měří jako změna rychlosti (metry za sekundu) v čase nebo v metrech na druhou mocninu sekundy (m/s²).
 
 Váš telefon je vybaven zařízením, které dokáže změny pohybu měřit – takzvaným akcelerometrem. Uvnitř akcelerometru je drobné zavěšené těleso, které se může volně pohybovat. Při změně pohybu se toto těleso posune, podobně jako se například posune vaše tělo, když při jízdě autem náhle zabrzdíte. Měřením těchto nepatrných posunů dokáže akcelerometr v telefonu sledovat změny pohybu a směru náklonu. Tato funkce je užitečná například při přepínání obrazovky na výšku a na šířku nebo při hraní her.</string>
   <string name="sensor_desc_second_paragraph_acc">Možná jste si všimli trvalého zrychlení naměřeného na ose Z, a to i v době, kdy telefon leží v klidu na stole. Jedná se o zrychlení, kterému jsme trvale vystaveni na povrchu Země z důvodu působení gravitace. Přibližná hodnota tohoto zrychlení je 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Zvuky jsou tvořeny vibracemi. Váš hlas například vzniká vibracemi hlasivek ve vašem hrdle. Tyto vibrace vytvářejí střídající se pole vysokého a nízkého tlaku vzduchu, které se šíří směrem od zdroje – podobně jako se šíří kruhy na vodě, když do ní hodíte kámen.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Všechny zvuky lze popsat hodnotou frekvence a intenzity. 
+  <string name="sensor_desc_second_paragraph_decibel">Všechny zvuky lze popsat hodnotou frekvence a intenzity.
 
-Intenzitu lze měřit zde ve Vědeckém žurnálu; její jednotkou jsou decibely (dB). Intenzita neboli hlasitost závisí na tom, jak velký pohyb vibrující objekt během vibrace vykonává. Vyšší intenzitu vnímáme jako větší hlasitost. 
+Intenzitu lze měřit zde ve Vědeckém žurnálu; její jednotkou jsou decibely (dB). Intenzita neboli hlasitost závisí na tom, jak velký pohyb vibrující objekt během vibrace vykonává. Vyšší intenzitu vnímáme jako větší hlasitost.
 
-Frekvence (nebo také výška, tón) zvukové vlny odpovídá rychlosti vibrací. Čím rychleji objekt vibruje, tím vyšší je výsledný zvuk. Náš Vědecký žurnál nedokáže změřit frekvenci, pouze hlasitost. 
+Frekvence (nebo také výška, tón) zvukové vlny odpovídá rychlosti vibrací. Čím rychleji objekt vibruje, tím vyšší je výsledný zvuk. Náš Vědecký žurnál nedokáže změřit frekvenci, pouze hlasitost.
 
-Je důležité uvědomit si, že mikrofon v zařízení je velmi citlivý na změny zvukových vln v průběhu času, nedokáže ale přesně určit absolutní velikost jednotlivých vln. Snažili jsme se vybrat kód, který by měl přinést podobné hodnoty jako referenční údaje níže, ale u některých zařízení získáte vždy soustavně vyšší či nižší hodnoty. V takovém případě by skuteční vědci senzor nakalibrovali na známou hodnotu. My se budeme muset spokojit s tím, že nám Vědecký žurnál prozradí, jestli byla jízda vlakem hlasitější než rockový koncert, ale jen za předpokladu, že si na obě akce vezmeme stejný telefon. 
+Je důležité uvědomit si, že mikrofon v zařízení je velmi citlivý na změny zvukových vln v průběhu času, nedokáže ale přesně určit absolutní velikost jednotlivých vln. Snažili jsme se vybrat kód, který by měl přinést podobné hodnoty jako referenční údaje níže, ale u některých zařízení získáte vždy soustavně vyšší či nižší hodnoty. V takovém případě by skuteční vědci senzor nakalibrovali na známou hodnotu. My se budeme muset spokojit s tím, že nám Vědecký žurnál prozradí, jestli byla jízda vlakem hlasitější než rockový koncert, ale jen za předpokladu, že si na obě akce vezmeme stejný telefon.
 
-Další důležitá věc je, že pojmy „intenzita zvuku“, „úroveň intenzity zvuku“ a „akustický tlak“ nejsou úplně totožné. My je tady sice vzájemně zaměňujeme, ale pokud vás toto téma zajímá víc, na internetu najdete řadu zdrojů s podrobnějšími informacemi. 
+Další důležitá věc je, že pojmy „intenzita zvuku“, „úroveň intenzity zvuku“ a „akustický tlak“ nejsou úplně totožné. My je tady sice vzájemně zaměňujeme, ale pokud vás toto téma zajímá víc, na internetu najdete řadu zdrojů s podrobnějšími informacemi.
 
-Nejtišší zvuk, jaký je lidské ucho průměrně schopno zaslechnout, je definován jako 0 dB. Běžná konverzace odpovídá přibližně 60 dB a zvuky nad 140 dB jsou pro ucho bolestivé. Škodlivý zvuk ale nemusí být nutně bolestivý. Dlouhodobé vystavení zvuku o síle 90 dB (přibližně hlasitost vysavače) může vést k trvalé ztrátě sluchu. 
+Nejtišší zvuk, jaký je lidské ucho průměrně schopno zaslechnout, je definován jako 0 dB. Běžná konverzace odpovídá přibližně 60 dB a zvuky nad 140 dB jsou pro ucho bolestivé. Škodlivý zvuk ale nemusí být nutně bolestivý. Dlouhodobé vystavení zvuku o síle 90 dB (přibližně hlasitost vysavače) může vést k trvalé ztrátě sluchu.
 
-Decibelová stupnice je logaritmická, což může být trochu matoucí. Zvuk o síle 40 dB není dvojnásobkem 20 dB – jedná se o stonásobnou hodnotu. Podobně když jeden budík vydává 70 decibelů, dva budíky dohromady nedávají 140, ale 73 decibelů. Jak už jsme říkali, tato stupnice je poněkud složitá. 
+Decibelová stupnice je logaritmická, což může být trochu matoucí. Zvuk o síle 40 dB není dvojnásobkem 20 dB – jedná se o stonásobnou hodnotu. Podobně když jeden budík vydává 70 decibelů, dva budíky dohromady nedávají 140, ale 73 decibelů. Jak už jsme říkali, tato stupnice je poněkud složitá.
 
-10 dB má šumění listí 
-20 dB šepot na vzdálenost 1,5 metru 
-30 dB tichý šepot 
-50 dB déšť 
-60 dB běžná konverzace 
-90 dB mixér 
-100 dB automobil bez tlumiče 
-110 dB křik do ucha 
-120 dB hrom 
-130 dB sbíječka 
+10 dB má šumění listí
+20 dB šepot na vzdálenost 1,5 metru
+30 dB tichý šepot
+50 dB déšť
+60 dB běžná konverzace
+90 dB mixér
+100 dB automobil bez tlumiče
+110 dB křik do ucha
+120 dB hrom
+130 dB sbíječka
 140 dB startující letadlo</string>
   <string name="sensor_desc_first_paragraph_pitch">Zvuky jsou tvořeny vibracemi. Váš hlas například vzniká vibracemi hlasivek ve vašem hrdle. Tyto vibrace vytvářejí střídající se pole vysokého a nízkého tlaku vzduchu, které se šíří směrem od zdroje – podobně jako se šíří kruhy na vodě, když do ní hodíte kámen.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Všechny zvuky lze popsat hodnotou frekvence a intenzity. Frekvence (nebo také výška, tón) zvukové vlny odpovídá rychlosti vibrací. Čím rychleji objekt vibruje, tím vyšší je výsledný zvuk. Tyto vibrace měříme v hertzích (Hz), přičemž 1 hertz = 1 vibrace za sekundu. 
+  <string name="sensor_desc_second_paragraph_pitch">Všechny zvuky lze popsat hodnotou frekvence a intenzity. Frekvence (nebo také výška, tón) zvukové vlny odpovídá rychlosti vibrací. Čím rychleji objekt vibruje, tím vyšší je výsledný zvuk. Tyto vibrace měříme v hertzích (Hz), přičemž 1 hertz = 1 vibrace za sekundu.
 
-Lidské ucho zachytí zvuky od 20 do 20 000 Hz. Nejnižší klávesa piana vytváří zvuk o frekvenci 27,5 Hz, nejvyšší zvuk o frekvenci 4186,01 Hz. 
+Lidské ucho zachytí zvuky od 20 do 20 000 Hz. Nejnižší klávesa piana vytváří zvuk o frekvenci 27,5 Hz, nejvyšší zvuk o frekvenci 4186,01 Hz.
 
 Červený bod ukazuje, jak vzdálená je výška zjištěného zvuku od nejbližšího tónu. Pokud jde o nižší tón, bod se zobrazí nalevo. Pokud jde o vyšší tón, bod se zobrazí napravo.</string>
   <string name="pitch_low_content_description">nízký tón</string>
@@ -255,22 +255,22 @@ Lidské ucho zachytí zvuky od 20 do 20 000 Hz. Nejnižší klávesa piana vyt
   <string name="pitch_sharper_than_flat_note_content_description">%3$s zvýšené o půltón oproti %1$s sníženému o půltón, oktáva %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s zvýšené o půltón oproti %1$s zvýšenému o půltón, oktáva %2$s</string>
   <string name="pitch_high_content_description">vysoký tón</string>
-  <string name="sensor_desc_first_paragraph_rotation">Otáčivý pohyb měříme počtem otočení kolem dané osy za minutu. 
+  <string name="sensor_desc_first_paragraph_rotation">Otáčivý pohyb měříme počtem otočení kolem dané osy za minutu.
 
 Jak se otáčí větrník, otáčí se také disk kodéru:</string>
   <string name="sensor_desc_second_paragraph_rotation">Dochází ke střídání světla a tmy, což senzor ve Vědeckém žurnálu vyhodnotí jako rotaci.</string>
-  <string name="sensor_desc_first_paragraph_raw">Zde zobrazená data pocházejí z externího senzoru, který s vaším telefonem komunikuje přes Bluetooth. 
+  <string name="sensor_desc_first_paragraph_raw">Zde zobrazená data pocházejí z externího senzoru, který s vaším telefonem komunikuje přes Bluetooth.
 
 Hodnota uvádí nezpracovaný odečet přímo z mikrořadiče. Jedná se obvykle o pokles napětí na senzoru vyjádřený v procentech.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth je standard bezdrátové technologie, která využívá rádiové vlny k přenosu dat na krátké vzdálenosti z přenosných a dalších zařízení.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Zde zobrazená data pocházejí z externího senzoru, který s vaším telefonem komunikuje přes Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth je standard bezdrátové technologie, která využívá rádiové vlny k přenosu dat na krátké vzdálenosti z přenosných a dalších zařízení.</string>
-  <string name="sensor_desc_first_paragraph_barometer">I když si to většinu času neuvědomujeme, žijeme na dně hlubokého oceánu vzduchu, který tvoří atmosféru Země a sahá až do výšky 40 kilometrů. Tíha tohoto vzduchu, který na nás shora tlačí, vytváří takzvaný atmosférický tlak. 
+  <string name="sensor_desc_first_paragraph_barometer">I když si to většinu času neuvědomujeme, žijeme na dně hlubokého oceánu vzduchu, který tvoří atmosféru Země a sahá až do výšky 40 kilometrů. Tíha tohoto vzduchu, který na nás shora tlačí, vytváří takzvaný atmosférický tlak.
 
 Na úrovni hladiny moře je atmosférický tlak tak velký, jako by na každý centimetr plochy tlačilo kilogramové závaží; u běžného listu papíru by to například bylo přibližně 620 kilogramů.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Na tento drtivý tlak jsme zvyklí, a tak si ho vůbec neuvědomujeme – tedy pokud se nezmění, k čemuž dochází, když navštívíme vysoko položená místa nebo letíme letadlem. Atmosférický tlak se také mění s počasím; při bouřlivém a neklidném počasí klesá a při jasné obloze a stálém počasí stoupá. 
+  <string name="sensor_desc_second_paragraph_barometer">Na tento drtivý tlak jsme zvyklí, a tak si ho vůbec neuvědomujeme – tedy pokud se nezmění, k čemuž dochází, když navštívíme vysoko položená místa nebo letíme letadlem. Atmosférický tlak se také mění s počasím; při bouřlivém a neklidném počasí klesá a při jasné obloze a stálém počasí stoupá.
 
-Digitální barometr ve vašem telefonu měří atmosférický tlak v hektopascalech. (Hektopascal má 100 pascalů, jeden pascal odpovídá tlaku jednoho newtonu na metr čtvereční plochy.) Možná jste slyšeli, že v předpovědích počasí se používá měření atmosférického tlaku v milibarech – tato známější jednotka označuje to samé jako hektopascal. 
+Digitální barometr ve vašem telefonu měří atmosférický tlak v hektopascalech. (Hektopascal má 100 pascalů, jeden pascal odpovídá tlaku jednoho newtonu na metr čtvereční plochy.) Možná jste slyšeli, že v předpovědích počasí se používá měření atmosférického tlaku v milibarech – tato známější jednotka označuje to samé jako hektopascal.
 
 Možná si říkáte: Proč umí telefon měřit tlak? Změny atmosférického tlaku se dají měřit už při malé změně nadmořské výšky, například když vystoupáte jedno patro schodů. Digitální barometr v telefonu tak může pomoci při zjišťování polohy. Může například pomoci zjistit, ve kterém patře budovy se nacházíte nebo zda jedete pod mostem, či po něm.</string>
   <string name="run_review_activity_label">Kontrola</string>
@@ -482,9 +482,9 @@ Oznámení o oprávněních:
   <string name="compass">Kompas</string>
   <string name="compass_units">stupně</string>
   <string name="sensor_desc_short_compass">Orientace telefonu bude respektovat magnetické pole Země.</string>
-  <string name="sensor_desc_first_paragraph_compass">Pravděpodobně víte, že naše Země má magnetické pole. Možná ale nevíte, že váš telefon je vybaven zařízením, které dokáže magnetické pole zjistit – takzvaným magnetometrem. Kombinací dat z magnetometru telefonu s orientací telefonu v prostoru můžeme vytvořit digitální kompas. 
+  <string name="sensor_desc_first_paragraph_compass">Pravděpodobně víte, že naše Země má magnetické pole. Možná ale nevíte, že váš telefon je vybaven zařízením, které dokáže magnetické pole zjistit – takzvaným magnetometrem. Kombinací dat z magnetometru telefonu s orientací telefonu v prostoru můžeme vytvořit digitální kompas.
 
-Nejznámějším magnetometrem je starý dobrý kompas, jehož zmagnetizovaná střelka se otáčí tak, aby směřovala podle okolního magnetického pole. V telefonu takový kompas nenajdeme, je zde ale maličký tříosý senzor, který určuje magnetické pole ve třech prostorových směrech pomocí elektrického proudu. Ovšem to samo o sobě k vytvoření kompasu nestačí! 
+Nejznámějším magnetometrem je starý dobrý kompas, jehož zmagnetizovaná střelka se otáčí tak, aby směřovala podle okolního magnetického pole. V telefonu takový kompas nenajdeme, je zde ale maličký tříosý senzor, který určuje magnetické pole ve třech prostorových směrech pomocí elektrického proudu. Ovšem to samo o sobě k vytvoření kompasu nestačí!
 
 Proč musí kompas kombinovat data z magnetometru s orientací telefonu? Informace o orientaci telefonu nám dává možnost vypočítat magnetickou rotaci i v případě, že telefon není držen rovně ve stejné rovině jako magnetické pole Země. Víme totiž, že gravitace je kolmá na to magnetické pole Země, takže můžeme pomocí směru gravitace ze snímačů akcelerometru určit, nakolik je magnetické pole ve stejné rovině jako magnetické pole Země.</string>
   <string name="sensor_desc_second_paragraph_compass">Možná jste si všimli, že kompas reaguje nejen na magnetické pole Země, ale také na jakékoli magnetické pole v dosahu. Magnety, elektrické proudy a kovové předměty snadno vychýlí magnetometr telefonu jiným směrem, což způsobí také změnu hodnot kompasu. Pokud chcete mít jistotu, že červená špička magnetometru skutečně ukazuje magnetické pole Země, vyjděte do otevřeného prostoru, nejlépe ven a mimo elektrické vedení. Magnetometr také můžete zkusit nakalibrovat pohybem telefonu po dráze ve tvaru číslice 8.</string>
@@ -497,9 +497,9 @@ Proč musí kompas kombinovat data z magnetometru s orientací telefonu? Infor
   <string name="month_year_format">MMMM rrrr</string>
   <string name="linear_accelerometer">Lineární akcelerometr</string>
   <string name="sensor_desc_short_linear_acc">Celkové zrychlení telefonu, bez gravitační síly, v m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Tělesa mají tendenci zůstávat v klidu, případně pokračovat v započatém pohybu. Tuto skutečnost nazýváme setrvačností. Popisuje ji první Newtonův zákon: Těleso zůstává v klidu nebo rovnoměrném přímočarém pohybu, není-li nuceno vnějšími silami tento stav změnit. 
+  <string name="sensor_desc_first_paragraph_linear_acc">Tělesa mají tendenci zůstávat v klidu, případně pokračovat v započatém pohybu. Tuto skutečnost nazýváme setrvačností. Popisuje ji první Newtonův zákon: Těleso zůstává v klidu nebo rovnoměrném přímočarém pohybu, není-li nuceno vnějšími silami tento stav změnit.
 
-Pokud je těleso uvedeno do pohybu vnější silou, mluvíme o zrychlení – mění se rychlost pohybu (zvyšuje se, snižuje nebo mění směr). Zrychlení se měří jako změna rychlosti (metry za sekundu) v čase nebo v metrech na druhou mocninu sekundy (m/s²). 
+Pokud je těleso uvedeno do pohybu vnější silou, mluvíme o zrychlení – mění se rychlost pohybu (zvyšuje se, snižuje nebo mění směr). Zrychlení se měří jako změna rychlosti (metry za sekundu) v čase nebo v metrech na druhou mocninu sekundy (m/s²).
 
 Váš telefon je vybaven zařízením, které dokáže změny pohybu měřit, takzvaným akcelerometrem. Uvnitř akcelerometru je drobné zavěšené těleso, které se může volně pohybovat. Při změně pohybu se toto těleso posune, podobně jako se například posune vaše tělo, když při jízdě autem náhle zabrzdíte. Měřením těchto nepatrných posunů dokáže akcelerometr v telefonu sledovat změny pohybu a směru náklonu. Tato funkce je užitečná například při přepínání obrazovky na výšku a na šířku nebo při hraní her.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Kombinovaný snímač lineárního akcelerometru zaznamenává celkovou akceleraci ve všech třech osách telefonu, kromě gravitace.</string>
@@ -522,7 +522,7 @@ Váš telefon je vybaven zařízením, které dokáže změny pohybu měřit, ta
   <string name="first_experiment_title">Vítejte ve Vědeckém žurnálu</string>
   <string name="first_experiment_text_note">Zkuste pomocí níže zobrazeného panelu nástrojů psát poznámky a zaznamenávat data.</string>
   <string name="first_experiment_picture_note_caption">Vítejte ve Vědeckém žurnálu!</string>
-  <string name="first_experiment_second_text_note">Aktivity k vyzkoušení najdete na adrese 
+  <string name="first_experiment_second_text_note">Aktivity k vyzkoušení najdete na adrese
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Vyberte fotku experimentu</string>
   <string name="btn_take_picture_content_description">Pořídit fotku</string>
@@ -762,8 +762,8 @@ experimentovat s okolním světem</string>
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -820,7 +820,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_terms">Terms Of Service</string>
   <string name="arduino_auth_privacy">Privacy Policy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
-  <string name="config_auth_terms">https://www.arduino.cc/en/terms-conditions/?embed</string>
+  <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
   <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
@@ -924,5 +924,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
 </resources>
