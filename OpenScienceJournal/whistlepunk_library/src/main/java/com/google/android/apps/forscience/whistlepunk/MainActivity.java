@@ -429,6 +429,11 @@ public class MainActivity extends ActivityWithNavigationView {
             intent.putExtra(WebActivity.EXTRA_KEY_TITLE, getString(R.string.arduino_auth_privacy));
             intent.putExtra(WebActivity.EXTRA_KEY_URL, getString(R.string.config_auth_privacy));
             startActivity(intent);
+        } else if (itemId == R.id.navigation_item_terms_and_conditions) {
+            final Intent intent = new Intent(this, WebActivity.class);
+            intent.putExtra(WebActivity.EXTRA_KEY_TITLE, getString(R.string.terms));
+            intent.putExtra(WebActivity.EXTRA_KEY_URL, getString(R.string.config_terms));
+            startActivity(intent);
         } else {
             drawerLayout.closeDrawers();
             // Launch intents

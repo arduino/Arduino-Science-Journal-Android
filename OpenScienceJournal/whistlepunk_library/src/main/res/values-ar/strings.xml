@@ -932,4 +932,5 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
+  <string name="config_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
 </resources>
