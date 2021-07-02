@@ -8,13 +8,16 @@ import android.util.Log;
 
 import androidx.fragment.app.Fragment;
 import androidx.security.crypto.EncryptedSharedPreferences;
-import androidx.security.crypto.MasterKeys;
+import androidx.security.crypto.MasterKey;
 
 import com.google.android.apps.forscience.auth0.Auth0Token;
 import com.google.android.apps.forscience.whistlepunk.ActivityWithNavigationView;
 import com.google.android.apps.forscience.whistlepunk.accounts.AbstractAccountsProvider;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
 import com.google.android.apps.forscience.whistlepunk.remote.StringUtils;
+
+import java.io.IOException;
+import java.security.GeneralSecurityException;
 
 public class ArduinoAccountProvider extends AbstractAccountsProvider {
 
@@ -98,18 +101,25 @@ public class ArduinoAccountProvider extends AbstractAccountsProvider {
     }
 
     private SharedPreferences getSharedPreferences() {
+        MasterKey masterKey = null;
         try {
-            final String masterKeyAlias = MasterKeys.getOrCreate(MasterKeys.AES256_GCM_SPEC);
+            masterKey = new MasterKey.Builder(applicationContext, MasterKey.DEFAULT_MASTER_KEY_ALIAS)
+                    .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
+                    .build();
+
             return EncryptedSharedPreferences.create(
-                    "ArduinoAccountProvider",
-                    masterKeyAlias,
                     applicationContext,
+                    "ArduinoAccountProvider",
+                    masterKey,
                     EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
                     EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
             );
-        } catch (Throwable t) {
-            Log.e(LOG_TAG, "Unable to retrieve encrypted shared preferences", t);
-            throw new RuntimeException("Unable to retrieve encrypted shared preferences", t);
+        } catch (GeneralSecurityException e) {
+            Log.e(LOG_TAG, "Unable to retrieve encrypted shared preferences", e);
+            throw new RuntimeException("Unable to retrieve encrypted shared preferences", e);
+        } catch (IOException e) {
+            Log.e(LOG_TAG, "Unable to retrieve encrypted shared preferences", e);
+            throw new RuntimeException("Unable to retrieve encrypted shared preferences", e);
         }
     }
 

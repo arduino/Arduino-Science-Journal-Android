@@ -48,7 +48,7 @@ ext {
             'googleApiClient': 'com.google.api-client:google-api-client-android:1.25.0',
             'driveApi' : "com.google.apis:google-api-services-drive:v2-rev362-1.25.0",
 
-            "crypto": "androidx.security:security-crypto:1.0.0-rc04",
+            "crypto": "androidx.security:security-crypto:1.1.0-alpha03",
 
             "jsyn": "com.jsyn:jsyn:20170815",
 
