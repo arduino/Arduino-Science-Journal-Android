@@ -946,6 +946,6 @@ Snap pictures to document your process
 Take notes of your experiment findings</string>
   <string name="arduino_terms_agreement_cta">Agree</string>
   <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
-  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By accepting them you indicate that you have read and agree to the new Terms presented in the agreement.</string>
   <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>
