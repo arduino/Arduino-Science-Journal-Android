@@ -109,7 +109,7 @@ public class ArduinoAccountProvider extends AbstractAccountsProvider {
 
             return EncryptedSharedPreferences.create(
                     applicationContext,
-                    "ArduinoAccountProvider",
+                    "ArduinoSharedPreferences",
                     masterKey,
                     EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
                     EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
