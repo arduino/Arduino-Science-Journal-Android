@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Die Anzahl der Umdrehungen pro Minute</string>
   <string name="sensor_desc_short_raw">Der Prozentsatz der Rohdatenlesung von einem externen Sensor.</string>
   <string name="sensor_desc_short_barometer">Der atmosphärische Druck, gemessen in Hektopascal (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Der Umgebungslichtsensor misst das Licht in Lux, einer Einheit für die Beleuchtungsstärke, die angibt, welcher Lichtstrom auf eine Flächeneinheit fällt.
+  <string name="sensor_desc_first_paragraph_light">Der Umgebungslichtsensor misst das Licht in Lux, einer Einheit für die Beleuchtungsstärke, die angibt, welcher Lichtstrom auf eine Flächeneinheit fällt. 
 
-Die Beleuchtungsstärke bei Vollmond beträgt ungefähr 1 Lux, die in einem von einer Lampe beleuchteten Zimmer ungefähr 50 Lux, die eines Klassenzimmers, eines Sonnenaufgangs und eines Sonnenuntergangs etwa 400 Lux, Tageslicht (indirekte Sonneneinstrahlung) über 10.000 Lux und direktes Sonnenlicht mehr als 30.000 Lux.
+Die Beleuchtungsstärke bei Vollmond beträgt ungefähr 1 Lux, die in einem von einer Lampe beleuchteten Zimmer ungefähr 50 Lux, die eines Klassenzimmers, eines Sonnenaufgangs und eines Sonnenuntergangs etwa 400 Lux, Tageslicht (indirekte Sonneneinstrahlung) über 10.000 Lux und direktes Sonnenlicht mehr als 30.000 Lux. 
 
 Für die meisten Menschen ist Lux eine unbekannte Messgröße. Beim Einkauf von Glühbirnen achten wir auf die Wattzahl. Allerdings sagt diese nichts darüber aus, wie hell die jeweilige Glühbirne ist, sondern nur, wie viel Energie sie verbraucht. Lumen ist eine besser für den Einkauf von Glühbirnen geeignete Messgröße. Damit wird angegeben, wie viel Licht eine Glühbirne tatsächlich produziert. Lux hingegen gibt an, wie viel von diesem Licht auf einen bestimmten Bereich fällt.</string>
-  <string name="sensor_desc_second_paragraph_light">Da sich Licht in unterschiedliche Richtungen ausbreitet, werden die Lux weniger, wenn Sie sich von der Lichtquelle fortbewegen, auch wenn diese immer noch die gleiche Menge Licht in Lumen aussendet. Auch eine Fläche, die gegenüber einer Lichtquelle geneigt ist, wird weniger beleuchtet. Aus diesem Grund sind die Äquatorregionen unserer Erde auch so viel wärmer als die kalten Pole.
+  <string name="sensor_desc_second_paragraph_light">Da sich Licht in unterschiedliche Richtungen ausbreitet, werden die Lux weniger, wenn Sie sich von der Lichtquelle fortbewegen, auch wenn diese immer noch die gleiche Menge Licht in Lumen aussendet. Auch eine Fläche, die gegenüber einer Lichtquelle geneigt ist, wird weniger beleuchtet. Aus diesem Grund sind die Äquatorregionen unserer Erde auch so viel wärmer als die kalten Pole. 
 
 Der Sinn und Zweck des Lichtsensors in Ihrem Smartphone besteht übrigens darin, die Helligkeit des Bildschirms zu steuern und an dunkle und helle Umgebungen anzupassen. Innerhalb des Lichtsensors reagiert ein winziger Halbleiter auf einfallendes Licht, in dem er schwachen, aber dennoch messbaren elektrischen Strom produziert. Dieses Phänomen bezeichnet man als fotoelektrischen Effekt. Ähnliche Sensoren werden auch in Straßenlaternen verwendet, damit diese von allein angehen, wenn es draußen dunkel wird.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Ihr Smartphone enthält ein Gerät zur Erkennung magnetischer Felder: ein Magnetometer. Dieser winzige, dreiachsige Sensor erkennt mithilfe elektrischer Ströme die Magnetfeldstärke in den drei Raumdimensionen. Indem wir die Daten aus allen drei Achsen kombinieren, können wir einen Gesamtmagnetfeldstärkesensor erzeugen.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Ihr Smartphone enthält ein Gerät zur Erkennung magnetischer Felder: ein Magnetometer. Dieser winzige, dreiachsige Sensor erkennt mithilfe elektrischer Ströme die Magnetfeldstärke in den drei Raumdimensionen. Indem wir die Daten aus allen drei Achsen kombinieren, können wir einen Gesamtmagnetfeldstärkesensor erzeugen. 
 
-Einige Magnetometer erkennen Magnetfelder durch Ausnutzung des Hall-Effekts – der Tendenz von Magnetfeldern, sich bewegende Ladungen in ihrem Fluss abzulenken. Neuere Magnetometer setzen auf Magnetowiderstände. Das sind Metalllegierungen, die als Reaktion auf Magnetfelder ihren Widerstand verändern.
+Einige Magnetometer erkennen Magnetfelder durch Ausnutzung des Hall-Effekts – der Tendenz von Magnetfeldern, sich bewegende Ladungen in ihrem Fluss abzulenken. Neuere Magnetometer setzen auf Magnetowiderstände. Das sind Metalllegierungen, die als Reaktion auf Magnetfelder ihren Widerstand verändern. 
 
 Warum braucht ein Smartphone ein Magnetometer? Die Ausrichtung im Raum zu kennen ist nützlich für eingebaute Kompass- und Navigationsanwendungen, insbesondere für solche, die jede einzelne Richtungsänderung vorgeben sollen.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magnete, elektrische Ströme und Metallgegenstände können das Magnetometer Ihres Smartphones in diese oder jene Richtung ablenken. Aber auch dann, wenn Sie mitten auf einem leeren Feld stehen, zeigt das Magnetometer in Ihrem Smartphone immer noch niedrige Messwerte oberhalb Null an: Das ist das Magnetfeld der Erde!</string>
-  <string name="sensor_desc_first_paragraph_acc">Objekte neigen dazu, sich nicht vom Fleck zu rühren oder, wenn sie sich in Bewegung befinden, sich weiter zu bewegen. Dies wird als Trägheit oder Beharrungsvermögen bezeichnet. Im ersten Newtonschen Gesetz wird dies folgendermaßen formuliert: Ein Körper verharrt im Zustand der Ruhe oder der Bewegung, sofern er nicht durch einwirkende Kräfte zur Änderung seines Zustands gezwungen wird.
+  <string name="sensor_desc_first_paragraph_acc">Objekte neigen dazu, sich nicht vom Fleck zu rühren oder, wenn sie sich in Bewegung befinden, sich weiter zu bewegen. Dies wird als Trägheit oder Beharrungsvermögen bezeichnet. Im ersten Newtonschen Gesetz wird dies folgendermaßen formuliert: Ein Körper verharrt im Zustand der Ruhe oder der Bewegung, sofern er nicht durch einwirkende Kräfte zur Änderung seines Zustands gezwungen wird. 
 
-Wenn sich ein Objekt aufgrund einer einwirkenden Kraft in Bewegung setzt, spricht man von einer Beschleunigung des Objekts: Seine Geschwindigkeit ändert sich. Es wird schneller oder langsamer oder ändert seine Richtung. Die Maßeinheit für Beschleunigung ist Meter pro Quadratsekunde (m/s²).
+Wenn sich ein Objekt aufgrund einer einwirkenden Kraft in Bewegung setzt, spricht man von einer Beschleunigung des Objekts: Seine Geschwindigkeit ändert sich. Es wird schneller oder langsamer oder ändert seine Richtung. Die Maßeinheit für Beschleunigung ist Meter pro Quadratsekunde (m/s²). 
 
 Ihr Smartphone verfügt über ein Gerät, um diese Veränderungen der Bewegung zu messen – einen Beschleunigungsmesser. Im Inneren eines Beschleunigungsmessers befinden sich kleine aufgehängte Massen, die sich frei bewegen können. Bewegungsänderungen verursachen eine Verlagerung dieser Massen, wie zum Beispiel, wenn Ihr Kopf nach vorne sackt, wenn Sie in einem Auto sitzen, das plötzlich bremst. Durch das Messen dieser geringfügigen Verlagerungen kann ein Beschleunigungsmesser in einem Smartphone Bewegungs- und Richtungsänderungen wahrnehmen, was z. B. hilfreich ist, wenn die Displayanzeige vom Querformat zum Hochformat wechseln soll oder Sie auf Ihrem Smartphone Spiele spielen.</string>
   <string name="sensor_desc_second_paragraph_acc">Sie haben wahrscheinlich eine ständige Beschleunigung entlang der Z-Achse bemerkt, selbst wenn das Smartphone ruhig auf dem Tisch liegt. Es handelt sich hierbei um die Beschleunigung, die wir aufgrund der Schwerkraft auf der Erdoberfläche erleben und die etwa 9,8 m/s² beträgt.</string>
   <string name="sensor_desc_first_paragraph_decibel">Töne werden durch Vibration verursacht. Ihre Stimme zum Beispiel entsteht durch die Schwingungen der Stimmbänder in Ihrem Kehlkopf. Diese Schwingungen erzeugen abwechselnd Zonen mit hohem und niedrigem Luftdruck, die nach außen strömen – ähnlich wie die immer größer werdenden Kreise, die entstehen, wenn man einen Kieselstein in einen Teich wirft.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Alle Töne können hinsichtlich ihrer Frequenz und Intensität beschrieben werden.
+  <string name="sensor_desc_second_paragraph_decibel">Alle Töne können hinsichtlich ihrer Frequenz und Intensität beschrieben werden. 
 
-Die Intensität können Sie hier mit dem Science Journal-Schallintensitätssensor in Dezibel (dB) messen. Die Intensität bzw. Lautstärke hängt von der Entfernung ab, die ein vibrierendes Objekt bei jeder Vibration zurücklegt. Größere Intensität hören wir als erhöhte Lautstärke.
+Die Intensität können Sie hier mit dem Science Journal-Schallintensitätssensor in Dezibel (dB) messen. Die Intensität bzw. Lautstärke hängt von der Entfernung ab, die ein vibrierendes Objekt bei jeder Vibration zurücklegt. Größere Intensität hören wir als erhöhte Lautstärke. 
 
-Die Frequenz bzw. Tonhöhe einer Schallwelle entspricht ihrer Schwingungsrate. Je schneller ein Objekt vibriert, desto höher ist der daraus entstehende Ton. Der Science Journal-Schallintensitätssensor misst nicht die Frequenz, sondern nur die Lautstärke.
+Die Frequenz bzw. Tonhöhe einer Schallwelle entspricht ihrer Schwingungsrate. Je schneller ein Objekt vibriert, desto höher ist der daraus entstehende Ton. Der Science Journal-Schallintensitätssensor misst nicht die Frequenz, sondern nur die Lautstärke. 
 
-Es ist wichtig zu wissen, dass das Mikrofon in Ihrem Gerät sehr empfindlich darauf reagiert, wie sich Schallwellen über die Zeit verändern – auf die absolute Größe jeder Welle reagiert es jedoch nicht. Wir haben versucht, einen Code auszuwählen, der mit hoher Wahrscheinlichkeit ähnliche Zahlen wie die ausgibt, die Sie unten unter Referenz finden. Es kann jedoch sein, dass ein Gerät durchweg höhere oder niedrigere Zahlen angibt. Wissenschaftler würden im Normalfall einen Sensor wie diesen auf Basis einer bekannten Messgröße kalibrieren. Auf dem jetzigen Stand kann Science Journal Ihnen sagen, ob Ihre nächste Zugfahrt oder Ihr nächster Konzertbesuch lauter ist – aber nur, wenn Sie dasselbe Handy zu beidem mitnehmen.
+Es ist wichtig zu wissen, dass das Mikrofon in Ihrem Gerät sehr empfindlich darauf reagiert, wie sich Schallwellen über die Zeit verändern – auf die absolute Größe jeder Welle reagiert es jedoch nicht. Wir haben versucht, einen Code auszuwählen, der mit hoher Wahrscheinlichkeit ähnliche Zahlen wie die ausgibt, die Sie unten unter Referenz finden. Es kann jedoch sein, dass ein Gerät durchweg höhere oder niedrigere Zahlen angibt. Wissenschaftler würden im Normalfall einen Sensor wie diesen auf Basis einer bekannten Messgröße kalibrieren. Auf dem jetzigen Stand kann Science Journal Ihnen sagen, ob Ihre nächste Zugfahrt oder Ihr nächster Konzertbesuch lauter ist – aber nur, wenn Sie dasselbe Handy zu beidem mitnehmen. 
 
-Auch gut zu wissen ist, dass es wichtige Unterschiede zwischen \"Schallintensität\", \"Schallintensitätspegel\" und \"Schalldruck\" gibt. Wir sehen sie hier als dasselbe an, doch wenn Sie sich mit dem Thema näher beschäftigen möchten, gibt es viele Onlineressourcen zu den Unterschieden.
+Auch gut zu wissen ist, dass es wichtige Unterschiede zwischen \"Schallintensität\", \"Schallintensitätspegel\" und \"Schalldruck\" gibt. Wir sehen sie hier als dasselbe an, doch wenn Sie sich mit dem Thema näher beschäftigen möchten, gibt es viele Onlineressourcen zu den Unterschieden. 
 
-Das leiseste Geräusch, das das durchschnittliche menschliche Ohr wahrnehmen kann, wird als 0 dB definiert. Normale Gespräche entsprechen ungefähr 60 dB und Töne oberhalb von etwa 140 dB werden vom menschlichen Ohr als schmerzhaft empfunden. Aber auch Geräusche, die nicht als schmerzhaft empfunden werden, können schädlich sein. Ist man fortwährend einer Lautstärke von 90 dB ausgesetzt – dies entspricht in etwa der Lautstärke eines Staubsaugers – kann dies letztlich zu Gehörschäden führen.
+Das leiseste Geräusch, das das durchschnittliche menschliche Ohr wahrnehmen kann, wird als 0 dB definiert. Normale Gespräche entsprechen ungefähr 60 dB und Töne oberhalb von etwa 140 dB werden vom menschlichen Ohr als schmerzhaft empfunden. Aber auch Geräusche, die nicht als schmerzhaft empfunden werden, können schädlich sein. Ist man fortwährend einer Lautstärke von 90 dB ausgesetzt – dies entspricht in etwa der Lautstärke eines Staubsaugers – kann dies letztlich zu Gehörschäden führen. 
 
-Die Dezibelskala ist logarithmisch, was das Ganze ein wenig kompliziert macht: Eine Schallquelle von 40 dB ist nicht doppelt, sondern hundertmal so intensiv wie eine Schallquelle von 20 dB. Ein klingelnder Wecker erzeugt 70 dB, aber zwei klingelnde Wecker erzeugen keine 140 dB, sondern 73 dB. Wie gesagt, die Sache ist nicht ganz einfach.
+Die Dezibelskala ist logarithmisch, was das Ganze ein wenig kompliziert macht: Eine Schallquelle von 40 dB ist nicht doppelt, sondern hundertmal so intensiv wie eine Schallquelle von 20 dB. Ein klingelnder Wecker erzeugt 70 dB, aber zwei klingelnde Wecker erzeugen keine 140 dB, sondern 73 dB. Wie gesagt, die Sache ist nicht ganz einfach. 
 
-10 dB – raschelndes Laub
-20 dB – Flüstern aus 1,5 m Entfernung
-30 dB – leises Flüstern
-50 dB – Regen
-60 dB – normale Unterhaltung
-90 dB – Mixer
-100 dB – Auto ohne Schalldämpfer
-110 dB – Schreien ins Ohr
-120 dB – Donner
-130 dB – Presslufthammer
+10 dB – raschelndes Laub 
+20 dB – Flüstern aus 1,5 m Entfernung 
+30 dB – leises Flüstern 
+50 dB – Regen 
+60 dB – normale Unterhaltung 
+90 dB – Mixer 
+100 dB – Auto ohne Schalldämpfer 
+110 dB – Schreien ins Ohr 
+120 dB – Donner 
+130 dB – Presslufthammer 
 140 dB – startendes Flugzeug</string>
   <string name="sensor_desc_first_paragraph_pitch">Töne werden durch Vibration verursacht. Ihre Stimme zum Beispiel entsteht durch die Schwingungen der Stimmbänder in Ihrem Kehlkopf. Diese Schwingungen erzeugen abwechselnd Zonen mit hohem und niedrigem Luftdruck, die nach außen strömen – ähnlich wie die immer größer werdenden Kreise, die entstehen, wenn man einen Kieselstein in einen Teich wirft.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Alle Töne können hinsichtlich ihrer Frequenz und Intensität beschrieben werden. Die Frequenz bzw. Tonhöhe einer Schallwelle entspricht ihrer Schwingungsrate. Je schneller ein Objekt vibriert, desto höher ist der daraus entstehende Ton. Wir messen diese Schwingungen in Hertz (Hz), wobei 1 Hertz einer Schwingung pro Sekunde entspricht.
+  <string name="sensor_desc_second_paragraph_pitch">Alle Töne können hinsichtlich ihrer Frequenz und Intensität beschrieben werden. Die Frequenz bzw. Tonhöhe einer Schallwelle entspricht ihrer Schwingungsrate. Je schneller ein Objekt vibriert, desto höher ist der daraus entstehende Ton. Wir messen diese Schwingungen in Hertz (Hz), wobei 1 Hertz einer Schwingung pro Sekunde entspricht. 
 
-Menschen können Töne im Bereich von 20 bis 20.000 Hz hören. Die tiefste Taste eines Klaviers erzeugt einen Ton mit einer Frequenz von 27,5 Hz und die höchste Taste einen Ton mit einer Frequenz von 4186,01 Hz.
+Menschen können Töne im Bereich von 20 bis 20.000 Hz hören. Die tiefste Taste eines Klaviers erzeugt einen Ton mit einer Frequenz von 27,5 Hz und die höchste Taste einen Ton mit einer Frequenz von 4186,01 Hz. 
 
 Der rote Punkt gibt darüber Aufschluss, wie nah sich die erkannte Tonhöhe an der nächsten Musiknote befindet. Wenn die Tonhöhe niedriger oder \"vermindert\" ist, erscheint der Punkt links. Ist die Tonhöhe höher oder \"übermäßig\", wird der rote Punkt rechts angezeigt.</string>
   <string name="pitch_low_content_description">Niedrige Tonhöhe</string>
@@ -255,22 +255,22 @@ Der rote Punkt gibt darüber Aufschluss, wie nah sich die erkannte Tonhöhe an d
   <string name="pitch_sharper_than_flat_note_content_description">%3$s Halbtonschritte höher als %1$s vermindert, Oktave %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s Halbtonschritte höher als %1$s übermäßig, Oktave %2$s</string>
   <string name="pitch_high_content_description">Hohe Tonhöhe</string>
-  <string name="sensor_desc_first_paragraph_rotation">\"Umdrehungen pro Minute\" ist eine Maßeinheit für die Anzahl der Drehungen um eine feste Achse innerhalb einer Minute.
+  <string name="sensor_desc_first_paragraph_rotation">\"Umdrehungen pro Minute\" ist eine Maßeinheit für die Anzahl der Drehungen um eine feste Achse innerhalb einer Minute. 
 
 Ihr Windrad dreht sich und bringt dadurch die Encoderscheibe zum Drehen:</string>
   <string name="sensor_desc_second_paragraph_rotation">Dadurch entstehen abwechselnd Helligkeit und Dunkelheit auf dem Sensor, was im Science Journal als Drehung registriert wird.</string>
-  <string name="sensor_desc_first_paragraph_raw">Die hier angezeigten Daten stammen aus einer externen Sensorkommunikation mit Ihrem Smartphone über Bluetooth.
+  <string name="sensor_desc_first_paragraph_raw">Die hier angezeigten Daten stammen aus einer externen Sensorkommunikation mit Ihrem Smartphone über Bluetooth. 
 
 Der Wert zeigt den Prozentsatz der Rohdatenlesung direkt von Ihrem Mikrocontroller an. In der Regel entspricht dies dem Prozentsatz eines Spannungsabfalls an einem Sensor.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth ist ein Standard für Drahtlostechnologie, bei dem Radiowellen verwendet werden, um über kurze Entfernungen hinweg Daten mit stationären und mobilen Geräten auszutauschen.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Die hier angezeigten Daten stammen aus einer externen Sensorkommunikation mit Ihrem Smartphone über Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth ist ein Standard für Drahtlostechnologie, bei dem Radiowellen verwendet werden, um über kurze Entfernungen hinweg Daten mit stationären und mobilen Geräten auszutauschen.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Wir merken es zwar normalerweise nicht, aber wir leben unter einer riesigen, 40 Kilometer hohen Luftglocke. Der Druck, der durch das Gewicht der Luft auf uns wirkt, wird als \"atmosphärischer Druck\" bezeichnet.
+  <string name="sensor_desc_first_paragraph_barometer">Wir merken es zwar normalerweise nicht, aber wir leben unter einer riesigen, 40 Kilometer hohen Luftglocke. Der Druck, der durch das Gewicht der Luft auf uns wirkt, wird als \"atmosphärischer Druck\" bezeichnet. 
 
 Auf Meereshöhe liegt der atmosphärische Druck bei gut 1 kg pro Quadratzentimeter – auf ein normales A4-Blatt wirken also knapp 625 kg Masse.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Da wir diesen enormen Druck gewohnt sind, nehmen wir ihn nicht wahr – zumindest, solange er unverändert bleibt. Selbst geringe Veränderungen machen sich bemerkbar, beispielsweise wenn wir im Hochgebirge unterwegs sind oder mit dem Flugzeug verreisen. Auch die Wetterlage hat Einfluss auf den atmosphärischen Druck. Bei stürmischem und wechselhaftem Wetter fällt der Druck, während er bei stabiler Wetterlage und klarem Himmel steigt.
+  <string name="sensor_desc_second_paragraph_barometer">Da wir diesen enormen Druck gewohnt sind, nehmen wir ihn nicht wahr – zumindest, solange er unverändert bleibt. Selbst geringe Veränderungen machen sich bemerkbar, beispielsweise wenn wir im Hochgebirge unterwegs sind oder mit dem Flugzeug verreisen. Auch die Wetterlage hat Einfluss auf den atmosphärischen Druck. Bei stürmischem und wechselhaftem Wetter fällt der Druck, während er bei stabiler Wetterlage und klarem Himmel steigt. 
 
-Das digitale Barometer in Ihrem Smartphone misst den atmosphärischen Druck in Hektopascal (HPa). 1 Hektopascal entspricht 100 Pascal, wobei 1 Pascal der Kraft von 1 Newton entspricht, die auf einen Quadratmeter wirkt. In Wetterberichten wird der atmosphärische Druck oft in Millibar angegeben. 1 Millibar entspricht 1 Hektopascal.
+Das digitale Barometer in Ihrem Smartphone misst den atmosphärischen Druck in Hektopascal (HPa). 1 Hektopascal entspricht 100 Pascal, wobei 1 Pascal der Kraft von 1 Newton entspricht, die auf einen Quadratmeter wirkt. In Wetterberichten wird der atmosphärische Druck oft in Millibar angegeben. 1 Millibar entspricht 1 Hektopascal. 
 
 Vielleicht fragen Sie sich, zu welchem Zweck Ihr Smartphone den Druck misst. Der atmosphärische Druck ändert sich selbst bei geringen Höhenunterschieden messbar. Dabei reicht es bereits, wenn wir eine Treppe hinaufsteigen. Ein digitales Barometer im Smartphone kann somit dazu beitragen, Standortänderungen zu erkennen. Es kann beispielsweise angeben, in welchem Stockwerk eines Gebäudes Sie sind oder ob Sie sich gerade auf einer Brücke oder auf der darunter hindurchführenden Straße befinden.</string>
   <string name="run_review_activity_label">Überprüfen</string>
@@ -482,9 +482,9 @@ Hinweis zu Berechtigungen:
   <string name="compass">Kompass</string>
   <string name="compass_units">Grad</string>
   <string name="sensor_desc_short_compass">Die Ausrichtung des Smartphones in Bezug auf das Magnetfeld der Erde</string>
-  <string name="sensor_desc_first_paragraph_compass">Dass die Erde ein Magnetfeld hat, wussten Sie wahrscheinlich schon, aber Ihnen war vielleicht noch nicht bewusst, dass in Ihr Smartphone ein Gerät zur Erkennung von Magnetfeldern eingebaut ist: ein Magnetometer. Indem wir Daten aus dem Magnetometer Ihres Smartphones mit der Ausrichtung des Telefons im Raum kombinieren, können wir einen digitalen Kompass erzeugen.
+  <string name="sensor_desc_first_paragraph_compass">Dass die Erde ein Magnetfeld hat, wussten Sie wahrscheinlich schon, aber Ihnen war vielleicht noch nicht bewusst, dass in Ihr Smartphone ein Gerät zur Erkennung von Magnetfeldern eingebaut ist: ein Magnetometer. Indem wir Daten aus dem Magnetometer Ihres Smartphones mit der Ausrichtung des Telefons im Raum kombinieren, können wir einen digitalen Kompass erzeugen. 
 
-Ein altmodischer Kompass ist ein einfaches Magnetometer mit einer magnetisierten Nadel, die sich dreht, bis sie sich am umgebenden Magnetfeld ausgerichtet hat. Im Inneren Ihres Smartphones gibt es zwar keinen winzigen Kompass, dafür aber einen winzigen Drei-Achsen-Sensor, der mithilfe elektrischer Ströme die Magnetfeldstärke in den drei Raumdimensionen erkennt. Aber das allein reicht nicht aus, um einen Kompass zu erzeugen.
+Ein altmodischer Kompass ist ein einfaches Magnetometer mit einer magnetisierten Nadel, die sich dreht, bis sie sich am umgebenden Magnetfeld ausgerichtet hat. Im Inneren Ihres Smartphones gibt es zwar keinen winzigen Kompass, dafür aber einen winzigen Drei-Achsen-Sensor, der mithilfe elektrischer Ströme die Magnetfeldstärke in den drei Raumdimensionen erkennt. Aber das allein reicht nicht aus, um einen Kompass zu erzeugen. 
 
 Warum also muss ein Kompass die Daten vom Magnetometer mit der Ausrichtung des Telefons kombinieren? Wenn wir die Ausrichtung des Telefons kennen, können wir die magnetische Rotation berechnen, auch wenn das Telefon nicht genau in derselben Ebene wie das Magnetfeld der Erde gehalten wird. Wir wissen, dass die Gravitation senkrecht zum Erdmagnetfeld wirkt, wir können also die Richtung der Gravitation aus den Beschleunigungssensoren nutzen, um zu bestimmen, wie viel vom Magnetfeld sich in derselben Ebene befindet wie das Erdmagnetfeld.</string>
   <string name="sensor_desc_second_paragraph_compass">Wie Sie vielleicht bemerkt haben, reagiert der Kompass nicht nur auf das Magnetfeld der Erde, sondern auch auf jedes andere magnetische Feld, das sich in der Nähe befindet. Magnete, elektrische Ströme und Metallobjekte können das Magnetometer Ihres Smartphones unschwer in diese oder jene Richtung ablenken. Wenn Sie sichergehen wollen, dass die rote Kompassspitze des Kompasses am Magnetfeld der Erde ausgerichtet ist, stellen Sie sich auf einer freien Fläche auf – vorzugsweise draußen und fernab von Stromleitungen. Es ist hilfreich, Ihr Smartphone in einem 8er-Muster zu schwenken, um das eingebaute Magnetometer zu kalibrieren.</string>
@@ -497,9 +497,9 @@ Warum also muss ein Kompass die Daten vom Magnetometer mit der Ausrichtung des T
   <string name="month_year_format">MMMM yyyy</string>
   <string name="linear_accelerometer">Linearer Beschl.-messer</string>
   <string name="sensor_desc_short_linear_acc">Die Gesamtbeschleunigung des Smartphones ohne Berücksichtigung der Gravitation, in m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Objekte neigen dazu, sich nicht vom Fleck zu rühren oder sich weiter zu bewegen, wenn sie sich in Bewegung befinden. Dies wird als Trägheit oder Beharrungsvermögen bezeichnet. Im ersten Newtonschen Gesetz ist dies folgendermaßen formuliert: Ein Körper verharrt im Zustand der Ruhe oder der Bewegung, sofern er nicht durch einwirkende Kräfte zur Änderung seines Zustands gezwungen wird.
+  <string name="sensor_desc_first_paragraph_linear_acc">Objekte neigen dazu, sich nicht vom Fleck zu rühren oder sich weiter zu bewegen, wenn sie sich in Bewegung befinden. Dies wird als Trägheit oder Beharrungsvermögen bezeichnet. Im ersten Newtonschen Gesetz ist dies folgendermaßen formuliert: Ein Körper verharrt im Zustand der Ruhe oder der Bewegung, sofern er nicht durch einwirkende Kräfte zur Änderung seines Zustands gezwungen wird. 
 
-Wenn sich ein Objekt aufgrund einer einwirkenden Kraft in Bewegung setzt, spricht man von einer Beschleunigung des Objekts: Seine Geschwindigkeit ändert sich. Es wird schneller oder langsamer oder ändert seine Richtung. Die Maßeinheit für Beschleunigung ist Meter pro Quadratsekunde (m/s²).
+Wenn sich ein Objekt aufgrund einer einwirkenden Kraft in Bewegung setzt, spricht man von einer Beschleunigung des Objekts: Seine Geschwindigkeit ändert sich. Es wird schneller oder langsamer oder ändert seine Richtung. Die Maßeinheit für Beschleunigung ist Meter pro Quadratsekunde (m/s²). 
 
 Ihr Smartphone verfügt über ein Gerät, um diese Veränderungen der Bewegung zu messen – einen Beschleunigungsmesser. Im Inneren eines Beschleunigungsmessers befinden sich kleine aufgehängte Massen, die sich frei bewegen können. Bewegungsänderungen verursachen eine Verlagerung dieser Massen. So sackt beispielsweise Ihr Kopf nach vorne, wenn Sie in einem Auto sitzen, das plötzlich bremst. Durch das Messen dieser geringfügigen Verlagerungen kann ein Beschleunigungsmesser in einem Smartphone Bewegungs- und Richtungsänderungen wahrnehmen, was z. B. hilfreich ist, wenn die Displayanzeige vom Querformat zum Hochformat wechseln soll oder Sie auf Ihrem Smartphone Spiele spielen.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Der kombinierte lineare Beschleunigungssensor erfasst die Gesamtbeschleunigung in allen drei Achsen des Smartphones, mit Ausnahme der Gravitation.</string>
@@ -522,7 +522,7 @@ Ihr Smartphone verfügt über ein Gerät, um diese Veränderungen der Bewegung z
   <string name="first_experiment_title">Willkommen beim Science Journal</string>
   <string name="first_experiment_text_note">Versuchen Sie, mit der Symbolleiste unten Notizen zu machen und Daten aufzuzeichnen!</string>
   <string name="first_experiment_picture_note_caption">Willkommen beim Science Journal!</string>
-  <string name="first_experiment_second_text_note">Aktivitäten zum Ausprobieren finden Sie unter
+  <string name="first_experiment_second_text_note">Aktivitäten zum Ausprobieren finden Sie unter 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Experimentfoto wählen</string>
   <string name="btn_take_picture_content_description">Fotografieren</string>
@@ -693,6 +693,7 @@ Experimente in Ihrer Umgebung durchführen</string>
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Science Journal von Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Vorherige Experimente anfordern</string>
   <string name="color_ambient_light">Umgebungslicht</string>
@@ -756,8 +757,8 @@ Experimente in Ihrer Umgebung durchführen</string>
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -817,7 +818,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -850,7 +851,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -905,7 +906,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -919,4 +920,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

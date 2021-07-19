@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Apsisukimų skaičius per minutę</string>
   <string name="sensor_desc_short_raw">Pirminių duomenų nuskaitymas iš išorinio jutiklio procentais.</string>
   <string name="sensor_desc_short_barometer">Atmosferos slėgis matuojamas hektopaskaliais (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Aplinkos šviesos jutiklis matuoja šviesą liuksais (lx) – tai apšvietimo, kuris priklauso nuo gaunamo šviesos kiekio ir srities, virš kurios jie paskleidžiami, matavimas.
+  <string name="sensor_desc_first_paragraph_light">Aplinkos šviesos jutiklis matuoja šviesą liuksais (lx) – tai apšvietimo, kuris priklauso nuo gaunamo šviesos kiekio ir srities, virš kurios jie paskleidžiami, matavimas. 
 
-Pilnaties skleidžiamas apšvietimas yra maždaug 1 lx vertės, įprasto svetainės šviestuvo – apie 50 lx, klasėje naudojamų lempų šviesos ir saulėtekio bei saulėlydžio – apie 400 lx, dienos šviesos (netiesioginės saulės) – daugiau nei 10 000 lx, o tiesioginės saulės šviesos – daugiau nei 30 000 lx.
+Pilnaties skleidžiamas apšvietimas yra maždaug 1 lx vertės, įprasto svetainės šviestuvo – apie 50 lx, klasėje naudojamų lempų šviesos ir saulėtekio bei saulėlydžio – apie 400 lx, dienos šviesos (netiesioginės saulės) – daugiau nei 10 000 lx, o tiesioginės saulės šviesos – daugiau nei 30 000 lx. 
 
 Liuksas daugeliui iš mūsų nežinomas matavimo vienetas. Kai perkame lemputes, jas dažnai renkamės pagal vatus, bet lemputės galia vatais nenusako lemputės šviesumo, tik tai, kiek energijos ji naudoja. Kur kas geriau perkant apšvietimo prekes atkreipti dėmesį į liumenus – jais nusakoma, kiek šviesos lemputė iš tiesų pagamins. Liuksais nurodoma, kiek tos šviesos pateks į konkrečią vietą.</string>
-  <string name="sensor_desc_second_paragraph_light">Šviesai pasklidus ir jai keliaujant tolyn, liuksų sumažėja, tarsi būtumėte atsitraukę nuo šviesos šaltinio, net jei šaltinis vis dar spinduliuoja tą patį kiekį šviesos, matuojant liumenais. Nuo šviesos šaltinių nukreipta sritis taip pat apšviečiama mažiau. Būtent dėl to Žemės pusiaujo regionuose yra daug šilčiau, nei vėsiuose poliuose.
+  <string name="sensor_desc_second_paragraph_light">Šviesai pasklidus ir jai keliaujant tolyn, liuksų sumažėja, tarsi būtumėte atsitraukę nuo šviesos šaltinio, net jei šaltinis vis dar spinduliuoja tą patį kiekį šviesos, matuojant liumenais. Nuo šviesos šaltinių nukreipta sritis taip pat apšviečiama mažiau. Būtent dėl to Žemės pusiaujo regionuose yra daug šilčiau, nei vėsiuose poliuose. 
 
 Be to, šviesos jutiklio jūsų telefone paskirtis yra valdyti ekrano apšvietimo lygį, jį koreguojant pagal pritemdytą ir šviesią aplinką. Šviesos jutiklyje į ateinančią šviesą reaguoja mažytis puslaidininkis, gamindamas nedidelę, bet vertingą elektros srovę. Šis fenomenas žinomas kaip fotoefektas. Panašūs jutikliai naudojami kai kuriuose gatvių žibintuose – taip žibintai įjungiami lauke pradėjus temti.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Telefone yra įrenginys, skirtas magnetiniams laukams aptikti – magnetometras. Tai mažas trijų ašių jutiklis, kuris naudodamas elektros sroves nustato magnetinio lauko stiprumą trimatėje erdvėje. Derindami visų trijų ašių duomenis galime sukurti viso magnetinio lauko stiprumo jutiklį.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Telefone yra įrenginys, skirtas magnetiniams laukams aptikti – magnetometras. Tai mažas trijų ašių jutiklis, kuris naudodamas elektros sroves nustato magnetinio lauko stiprumą trimatėje erdvėje. Derindami visų trijų ašių duomenis galime sukurti viso magnetinio lauko stiprumo jutiklį. 
 
-Kai kurie magnetometrai magnetinius laukus aptinka pagal Hallo efektą – magnetinių laukų polinkį nuo savęs nukreipti judantį krūvį. Naujesnių magnetometrų veikimas pagrįstas magnetovaržais – metalo lydiniais, kurių varža keičiasi priklausomai nuo magnetinių laukų.
+Kai kurie magnetometrai magnetinius laukus aptinka pagal Hallo efektą – magnetinių laukų polinkį nuo savęs nukreipti judantį krūvį. Naujesnių magnetometrų veikimas pagrįstas magnetovaržais – metalo lydiniais, kurių varža keičiasi priklausomai nuo magnetinių laukų. 
 
 Kam telefone reikalingas magnetometras? Padėties erdvėje duomenys reikalingi integruotoms kompaso ir navigacijos programoms, ypač toms, kurios teikia „posūkis po posūkio“ tipo nurodymus.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magnetai, elektros srovės ir metaliniai objektai telefono magnetometrą lengvai nukreipia įvairiomis kryptimis.Tačiau netgi tuščio lauko viduryje telefono magnetometras rodys nedidelės vertės rodmenį (ne nulį) – tai Žemės magnetinis laukas!</string>
-  <string name="sensor_desc_first_paragraph_acc">Objektai turi polinkį likti vietoje arba judėti toliau, jei juda, – tai vadiname inercija. Pirmasis Niutono dėsnis nusako šią idėją pagal tokią formulę: jei objekto nepaveikia išorinė jėga, jis toliau tolygiai juda arba išlaiko rimties būseną.
+  <string name="sensor_desc_first_paragraph_acc">Objektai turi polinkį likti vietoje arba judėti toliau, jei juda, – tai vadiname inercija. Pirmasis Niutono dėsnis nusako šią idėją pagal tokią formulę: jei objekto nepaveikia išorinė jėga, jis toliau tolygiai juda arba išlaiko rimties būseną. 
 
-Kai išorinė jėga išjudina objektą, sakome, kad objektas įgyja pagreitį: pasikeičia jo greitis ar tempas – objekto judėjimas pagreitėja, sulėtėja ar pakeičia kryptį. Pagreitis matuojamas įvertinant greičio pokytį per laiką (metrais per sekundę) arba metrais per sekundę kvadratu (m/s²).
+Kai išorinė jėga išjudina objektą, sakome, kad objektas įgyja pagreitį: pasikeičia jo greitis ar tempas – objekto judėjimas pagreitėja, sulėtėja ar pakeičia kryptį. Pagreitis matuojamas įvertinant greičio pokytį per laiką (metrais per sekundę) arba metrais per sekundę kvadratu (m/s²). 
 
 Jūsų telefone yra įrenginys, matuojantis šiuos judėjimo pokyčius – akselerometras. Jame pakabinti nedideli laisvai judantys svoriai. Pasikeitus judėjimui pajudinami ir šie svoriai, panašiai kaip jūsų galva, krestelėjusi pirmyn, jums sėdint automobilyje, kuris staiga sustoja. Matuodamas šiuos vos pastebimus inertinius judesius telefono akselerometras gali aptikti judėjimo ir orientacijos pokyčius. Tai naudinga perjungiant ekrano padėtį iš gulsčio režimo į stačią, žaidžiant žaidimus ir pan.</string>
   <string name="sensor_desc_second_paragraph_acc">Tikriausiai pastebėjote nuolatinį pagreitį Z ašyje, net kai telefonas padėtas ant stalo. Tai vidutiniškai 9,8 m/s² pagreitis, kurį patiriame Žemės paviršiuje dėl gravitacijos.</string>
   <string name="sensor_desc_first_paragraph_decibel">Garsus sukelia vibracija. Pavyzdžiui, jūsų balsas randasi dėl gerklėje esančių balso stygų vibracijos. Šios vibracijos sukelia besikeičiančias aukšto ir žemo oro slėgio sritis, kurios plinta išorėn panašiai kaip besiplečiantys raibuliuojantys ratilai vandens paviršiuje įmetus akmenuką į tvenkinį.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Visi garsai gali būti aprašomi pagal jų dažnį ir stiprį.
+  <string name="sensor_desc_second_paragraph_decibel">Visi garsai gali būti aprašomi pagal jų dažnį ir stiprį. 
 
-Stiprį matuojate naudodamiesi „Science Journal“, jis matuojamas decibelais (dB). Garso stipris, arba garsumas, priklauso nuo atstumo, kurį nukeliauja vibruojantis objektas kas kartą, kai jis vibruoja, – didesnio stiprio garsą girdime kaip garsesnį.
+Stiprį matuojate naudodamiesi „Science Journal“, jis matuojamas decibelais (dB). Garso stipris, arba garsumas, priklauso nuo atstumo, kurį nukeliauja vibruojantis objektas kas kartą, kai jis vibruoja, – didesnio stiprio garsą girdime kaip garsesnį. 
 
-Garso bangos dažnis (taip pat aukštis ar tonas) yra lygus jos vibracijos dažniui. Kuo greičiau vibruoja objektas, tuo aukštesnis garsas išgaunamas. „Science Journal“ nematuoja dažnio, tik garsumą.
+Garso bangos dažnis (taip pat aukštis ar tonas) yra lygus jos vibracijos dažniui. Kuo greičiau vibruoja objektas, tuo aukštesnis garsas išgaunamas. „Science Journal“ nematuoja dažnio, tik garsumą. 
 
-Vienas svarbūs dalykas, kurį turėtumėte žinoti, yra tai, kad įrenginyje esantis mikrofonas sukurtas taip, kad jautriai fiksuotų garso bangų skirtumus per laiką, bet ne pagal absoliutų kiekvienos bangos dydį. Bandėme pasirinkti kodą, kurį naudojant gaunamos vertės, panašios į toliau parodytas normines vertes, bet kiekvienas įrenginys gali pateikti nuosekliai didesnes ar mažesnes vertes. Mokslininkai tokius jutiklius paprastai kalibruoja pagal žinomus matavimus. Kol kas „Science Journal“ gali nustatyti, ar kitas jūsų pasivažinėjimas traukiniu bus garsesnis už kitą roko koncertą, į kurį eisite, bet tik tokiu atveju, jei abu kartus turėsite tą patį telefoną.
+Vienas svarbūs dalykas, kurį turėtumėte žinoti, yra tai, kad įrenginyje esantis mikrofonas sukurtas taip, kad jautriai fiksuotų garso bangų skirtumus per laiką, bet ne pagal absoliutų kiekvienos bangos dydį. Bandėme pasirinkti kodą, kurį naudojant gaunamos vertės, panašios į toliau parodytas normines vertes, bet kiekvienas įrenginys gali pateikti nuosekliai didesnes ar mažesnes vertes. Mokslininkai tokius jutiklius paprastai kalibruoja pagal žinomus matavimus. Kol kas „Science Journal“ gali nustatyti, ar kitas jūsų pasivažinėjimas traukiniu bus garsesnis už kitą roko koncertą, į kurį eisite, bet tik tokiu atveju, jei abu kartus turėsite tą patį telefoną. 
 
-Kitas svarbūs dalykas, kurį turėtumėte žinoti, yra tai, kad egzistuoja svarbūs skirtumai tarp „garso stiprio“, „garso stiprio lygio“ ir „garso slėgio“. Šiuose eksperimentuose juos vertiname kaip tą patį dalyką, bet jei norite sužinoti daugiau, paieškokite internete – yra daug išteklių apie šių matavimo vienetų skirtumus.
+Kitas svarbūs dalykas, kurį turėtumėte žinoti, yra tai, kad egzistuoja svarbūs skirtumai tarp „garso stiprio“, „garso stiprio lygio“ ir „garso slėgio“. Šiuose eksperimentuose juos vertiname kaip tą patį dalyką, bet jei norite sužinoti daugiau, paieškokite internete – yra daug išteklių apie šių matavimo vienetų skirtumus. 
 
-Tyliausias vidutinio žmogaus ausiai girdimas garsas yra 0 dB. Eilinis pokalbis atitinka apie 60 dB, o garsai, viršijantys apie 140 dB, yra skausmingi žmogaus ausiai. Bet garsas nebūtinai turi kelti skausmą, kad būtų žalingas. Nuolatinis 90 dB garso poveikis (maždaug dulkių siurblio skleidžiamo garsumo) gali ilgainiui sukelti klausos sutrikimų.
+Tyliausias vidutinio žmogaus ausiai girdimas garsas yra 0 dB. Eilinis pokalbis atitinka apie 60 dB, o garsai, viršijantys apie 140 dB, yra skausmingi žmogaus ausiai. Bet garsas nebūtinai turi kelti skausmą, kad būtų žalingas. Nuolatinis 90 dB garso poveikis (maždaug dulkių siurblio skleidžiamo garsumo) gali ilgainiui sukelti klausos sutrikimų. 
 
-Decibelų skalė yra logaritminė ir turi tam tikrų subtilybių: 40 dB garso šaltinis nėra dvigubai stipresnis nei 20 dB šaltinis – jis stipresnis 100 kartų. Taip pat vienam skambančiam žadintuvui skleidžiant 70 dB garsą, dviejų skambančių žadintuvų garsas sudarys ne 140 dB, o 73 dB. Kaip sakėme, ši skalė keista.
+Decibelų skalė yra logaritminė ir turi tam tikrų subtilybių: 40 dB garso šaltinis nėra dvigubai stipresnis nei 20 dB šaltinis – jis stipresnis 100 kartų. Taip pat vienam skambančiam žadintuvui skleidžiant 70 dB garsą, dviejų skambančių žadintuvų garsas sudarys ne 140 dB, o 73 dB. Kaip sakėme, ši skalė keista. 
 
-10 dB garsą sukelia lapų čežėjimas
-20 dB – šnabždėjimas maždaug už pusantro metro
-30 dB – tylus šnabždesys
-50 dB – liūtis
-60 dB – įprastas pokalbis
-90 dB – plaktuvas
-100 dB – automobilis be duslintuvo
-110 dB – rėkimas į ausį
-120 dB – griaustinis
-130 dB – pneumatinis kūjis
+10 dB garsą sukelia lapų čežėjimas 
+20 dB – šnabždėjimas maždaug už pusantro metro 
+30 dB – tylus šnabždesys 
+50 dB – liūtis 
+60 dB – įprastas pokalbis 
+90 dB – plaktuvas 
+100 dB – automobilis be duslintuvo 
+110 dB – rėkimas į ausį 
+120 dB – griaustinis 
+130 dB – pneumatinis kūjis 
 140 dB – kylanti lėktuvas</string>
   <string name="sensor_desc_first_paragraph_pitch">Garsus sukelia vibracija. Pavyzdžiui, jūsų balsas randasi dėl gerklėje esančių balso stygų vibracijos. Šios vibracijos sukelia besikeičiančias aukšto ir žemo oro slėgio sritis, kurios plinta išorėn panašiai kaip besiplečiantys raibuliuojantys ratilai vandens paviršiuje įmetus akmenuką į tvenkinį.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Visi garsai gali būti aprašomi pagal jų dažnį ir stiprį. Garso bangos dažnis (taip pat aukštis ar tonas) yra lygus jos vibracijos dažniui. Kuo greičiau vibruoja objektas, tuo aukštesnis garsas išgaunamas. Šią vibraciją matuojame herzais (Hz), kai 1 hercas = 1 vibracija per sekundę.
+  <string name="sensor_desc_second_paragraph_pitch">Visi garsai gali būti aprašomi pagal jų dažnį ir stiprį. Garso bangos dažnis (taip pat aukštis ar tonas) yra lygus jos vibracijos dažniui. Kuo greičiau vibruoja objektas, tuo aukštesnis garsas išgaunamas. Šią vibraciją matuojame herzais (Hz), kai 1 hercas = 1 vibracija per sekundę. 
 
-Žmonės gali girdėti garsus, kurie patenka į 20–20 000 Hz intervalą. Žemiausias pianino klavišas skleidžia 27,5 Hz dažnio garsą, o aukščiausias pianino klavišas – 4186,01 Hz dažnio garsą.
+Žmonės gali girdėti garsus, kurie patenka į 20–20 000 Hz intervalą. Žemiausias pianino klavišas skleidžia 27,5 Hz dažnio garsą, o aukščiausias pianino klavišas – 4186,01 Hz dažnio garsą. 
 
 Raudonas taškas rodo, kokiu atstumu užfiksuotas tonas yra nuo artimiausios muzikinės natos. Jei tonas yra žemesnis arba „duslesnis“, taškas rodomas kairėje. Jei tonas yra aukštesnis arba „aštresnis“, taškas rodomas dešinėje.</string>
   <string name="pitch_low_content_description">žemas tonas</string>
@@ -255,22 +255,22 @@ Raudonas taškas rodo, kokiu atstumu užfiksuotas tonas yra nuo artimiausios muz
   <string name="pitch_sharper_than_flat_note_content_description">%3$s puston. aukštesnis nei %1$s bemolis, %2$s oktava</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s puston. aukštesnis nei %1$s diezas, %2$s oktava</string>
   <string name="pitch_high_content_description">aukštas tonas</string>
-  <string name="sensor_desc_first_paragraph_rotation">Apsisukimai per minutę (APM) – tai apsisukimo apie fiksuotą ašį dažnio per vieną minutę matavimas.
+  <string name="sensor_desc_first_paragraph_rotation">Apsisukimai per minutę (APM) – tai apsisukimo apie fiksuotą ašį dažnio per vieną minutę matavimas. 
 
 Sukdamasis vėjo malūnėlis sukioja kodavimo diską:</string>
   <string name="sensor_desc_second_paragraph_rotation">Jutiklis fiksuoja šviesos ir tamsos tarpsnius, kurie „Science Journal“ registruojami kaip apsisukimai.</string>
-  <string name="sensor_desc_first_paragraph_raw">Čia rodomi duomenys gaunami iš išorinio jutiklio, susieto su jūsų telefonu „Bluetooth“ ryšiu.
+  <string name="sensor_desc_first_paragraph_raw">Čia rodomi duomenys gaunami iš išorinio jutiklio, susieto su jūsų telefonu „Bluetooth“ ryšiu. 
 
 Vertė nurodo pirminių duomenų nuskaitymą tiesiai iš jūsų mikrovaldiklio procentais. Paprastai tai yra procentais išreikštas įtampos kritimas, kurį aptinka jutiklis.</string>
   <string name="sensor_desc_second_paragraph_raw">„Bluetooth“ – tai belaidė technologija, įprastai radijo bangomis nedideliais atstumais perduodanti duomenis iš fiksuotojo ir mobiliojo ryšio įrenginių.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Čia rodomi duomenys gaunami iš išorinio jutiklio, susieto su jūsų telefonu „Bluetooth“ ryšiu.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">„Bluetooth“ – tai belaidė technologija, įprastai radijo bangomis nedideliais atstumais perduodanti duomenis iš fiksuotojo ir mobiliojo ryšio įrenginių.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Nors tai retai pastebime, visi gyvename gilaus oro telkinio dugne: Žemės atmosferoje, kuri tęsiasi į viršų 40 kilometrų (130 000 pėdų). Viso šio mus slegiančio oro svoris vadinamas atmosferos slėgiu.
+  <string name="sensor_desc_first_paragraph_barometer">Nors tai retai pastebime, visi gyvename gilaus oro telkinio dugne: Žemės atmosferoje, kuri tęsiasi į viršų 40 kilometrų (130 000 pėdų). Viso šio mus slegiančio oro svoris vadinamas atmosferos slėgiu. 
 
 Jūros lygyje atmosferos slėgis kiekvieną kvadratinį centimetrą veikia 1033 g jėga – tai tas pats, lyg maždaug 589,67 kg jėga slėgtų standartinio dydžio popieriaus lapą.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Šio didelio slėgio nejuntame, nes esame prie jo pripratę. Tai yra, pajuntame tik tada, kai jis pasikeičia, kad ir nedaug, pavyzdžiui, kai esame gerokai aukščiau virš jūros lygio ar skrendame lėktuvu. Atmosferos slėgis taip pat kinta priklausomai nuo oro sąlygų: krenta, kai oras audringas ir nepastovus, ir kyla, kai oras tampa pastovus ir dangus išsigiedrija.
+  <string name="sensor_desc_second_paragraph_barometer">Šio didelio slėgio nejuntame, nes esame prie jo pripratę. Tai yra, pajuntame tik tada, kai jis pasikeičia, kad ir nedaug, pavyzdžiui, kai esame gerokai aukščiau virš jūros lygio ar skrendame lėktuvu. Atmosferos slėgis taip pat kinta priklausomai nuo oro sąlygų: krenta, kai oras audringas ir nepastovus, ir kyla, kai oras tampa pastovus ir dangus išsigiedrija. 
 
-Telefone esantis skaitmeninis barometras atmosferos slėgį matuoja hektopaskaliais (hektopaskalis yra 100 paskalių, o paskalis yra vieno niutono jėga, kuria veikiamas vienas kvadratinis metras). Tikriausiai girdėjote orų pranešėjus atmosferos slėgį nurodant milibarais – tai labiau įprasti matavimo vienetai, lygiaverčiai hektopaskaliams.
+Telefone esantis skaitmeninis barometras atmosferos slėgį matuoja hektopaskaliais (hektopaskalis yra 100 paskalių, o paskalis yra vieno niutono jėga, kuria veikiamas vienas kvadratinis metras). Tikriausiai girdėjote orų pranešėjus atmosferos slėgį nurodant milibarais – tai labiau įprasti matavimo vienetai, lygiaverčiai hektopaskaliams. 
 
 Gali kilti klausimas: kodėl telefonu reikėtų matuoti slėgį? Atmosferos slėgis pastebimai keičiasi, kai nors šiek tiek pasikeičia aukštis virš jūros lygio, pavyzdžiui, kai užlipate laiptų pakopa. Taigi telefone įtaisytas skaitmeninis barometras gali padėti nustatyti vietos pokyčius, pavyzdžiui, galite sužinoti, kokiame aukšte ar pastate esate, arba tai, ar važiuojate apatine ar viršutine tilto eile.</string>
   <string name="run_review_activity_label">Peržiūra</string>
@@ -482,9 +482,9 @@ Toliau pateiktas pranešimas apie leidimus.
   <string name="compass">Kompasas</string>
   <string name="compass_units">laipsniai</string>
   <string name="sensor_desc_short_compass">Telefono padėtis atsižvelgiant į Žemės magnetinį lauką.</string>
-  <string name="sensor_desc_first_paragraph_compass">Tikriausiai žinote, kad Žemė turi magnetinį lauką. Tačiau galbūt nežinote, kad telefone yra įrenginys, skirtas magnetiniams laukams aptikti – magnetometras. Derindami telefono magnetometro duomenis su telefono padėtimi erdvėje galime sukurti skaitmeninį kompasą.
+  <string name="sensor_desc_first_paragraph_compass">Tikriausiai žinote, kad Žemė turi magnetinį lauką. Tačiau galbūt nežinote, kad telefone yra įrenginys, skirtas magnetiniams laukams aptikti – magnetometras. Derindami telefono magnetometro duomenis su telefono padėtimi erdvėje galime sukurti skaitmeninį kompasą. 
 
-Paprasčiausias magnetometras yra senamadiškas kompasas su įmagnetinta rodykle, kuri sukasi pagal aplink esantį magnetinį lauką. Telefone jokio mažyčio kompaso nėra – jame įmontuotas mažas trijų ašių jutiklis, kuris naudodamas elektros sroves nustato magnetinio lauko stiprumą trimatėje erdvėje. Tačiau vien to nepakanka kompasui sukurti!
+Paprasčiausias magnetometras yra senamadiškas kompasas su įmagnetinta rodykle, kuri sukasi pagal aplink esantį magnetinį lauką. Telefone jokio mažyčio kompaso nėra – jame įmontuotas mažas trijų ašių jutiklis, kuris naudodamas elektros sroves nustato magnetinio lauko stiprumą trimatėje erdvėje. Tačiau vien to nepakanka kompasui sukurti! 
 
 Kodėl, siekiant sukurti kompasą, magnetometro duomenis reikia derinti su telefono padėtimi? Žinodami telefono padėtį galime apskaičiuoti magnetinį sukimąsi, net jei telefonas nelaikomas gulsčiai, toje pačioje plokštumoje kaip Žemės magnetinis laukas. Žinome, kad sunkis Žemės magnetinį lauką veikia statmenai, todėl, pasinaudoję akcelerometro jutiklių nurodyta sunkio kryptimi, galime nustatyti, kokia dalis magnetinio lauko yra toje pačioje plokštumoje kaip Žemės magnetinis laukas.</string>
   <string name="sensor_desc_second_paragraph_compass">Galbūt pastebėjote, kad kompasas reaguoja ne tik į Žemės magnetinį lauką, bet ir į visus aplink esančius magnetinius laukus. Magnetai, elektros srovės ir metaliniai objektai telefono magnetometrą lengvai nukreipia visomis kryptimis. Jei norite būti tikri, kad raudona magnetometro rodyklė sukasi pagal Žemės magnetinį lauką, atsistokite atviroje vietoje – geriausiai lauke ir toli nuo elektros linijų. Jei norite kalibruoti telefono magnetometrą, judinkite telefoną pagal 8 pav. pateiktą pavyzdį.</string>
@@ -497,9 +497,9 @@ Kodėl, siekiant sukurti kompasą, magnetometro duomenis reikia derinti su telef
   <string name="month_year_format">yyyy-MM</string>
   <string name="linear_accelerometer">Linijinis akcelerometras</string>
   <string name="sensor_desc_short_linear_acc">Visas telefono pagreitis, išskyrus sunkio jėgą, m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Objektai turi polinkį likti vietoje arba judėti toliau, jei juda, – tai vadiname inercija. Pirmasis Niutono dėsnis nusako šią idėją pagal tokią formulę: jei objekto nepaveikia išorinė jėga, jis toliau tolygiai juda arba išlaiko rimties būseną.
+  <string name="sensor_desc_first_paragraph_linear_acc">Objektai turi polinkį likti vietoje arba judėti toliau, jei juda, – tai vadiname inercija. Pirmasis Niutono dėsnis nusako šią idėją pagal tokią formulę: jei objekto nepaveikia išorinė jėga, jis toliau tolygiai juda arba išlaiko rimties būseną. 
 
-Kai išorinė jėga išjudina objektą, sakome, kad objektas įgyja pagreitį: pasikeičia jo greitis ar tempas – objekto judėjimas pagreitėja, sulėtėja ar pakeičia kryptį. Pagreitis matuojamas įvertinant greičio pokytį per laiką (metrais per sekundę) arba metrais per sekundę kvadratu (m/s²).
+Kai išorinė jėga išjudina objektą, sakome, kad objektas įgyja pagreitį: pasikeičia jo greitis ar tempas – objekto judėjimas pagreitėja, sulėtėja ar pakeičia kryptį. Pagreitis matuojamas įvertinant greičio pokytį per laiką (metrais per sekundę) arba metrais per sekundę kvadratu (m/s²). 
 
 Jūsų telefone yra įrenginys, matuojantis šiuos judėjimo pokyčius – akcelerometras. Jame pakabinti nedideli laisvai judantys svoriai. Pasikeitus judėjimui pajudinami ir šie svoriai, panašiai kaip jūsų galva, krestelėjusi pirmyn, jums sėdint automobilyje, kuris staiga sustoja. Matuodamas šiuos vos pastebimus inertinius judesius telefono akcelerometras gali aptikti judėjimo ir orientacijos pokyčius. Tai naudinga perjungiant ekrano padėtį iš gulsčio režimo į stačią, žaidžiant žaidimus ir pan.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Šis suderintas linijinio akcelerometro jutiklis įrašo visą pagreitį naudodamas visas tris telefono ašis, išskyrus sunkį.</string>
@@ -522,7 +522,7 @@ Jūsų telefone yra įrenginys, matuojantis šiuos judėjimo pokyčius – akcel
   <string name="first_experiment_title">Sveiki, tai – „Science Journal“!</string>
   <string name="first_experiment_text_note">Pabandykite rašyti pastabas ir įrašyti duomenis naudodami toliau pateiktą įrankių juostą!</string>
   <string name="first_experiment_picture_note_caption">Sveiki, tai – „Science Journal“!</string>
-  <string name="first_experiment_second_text_note">Eksperimentų, kuriuos galėtumėte atlikti, rasite adresu
+  <string name="first_experiment_second_text_note">Eksperimentų, kuriuos galėtumėte atlikti, rasite adresu 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Pasirinkite eksperimento nuotrauką</string>
   <string name="btn_take_picture_content_description">Fotografuoti</string>
@@ -701,6 +701,7 @@ Jei šiame įrenginyje saugote duomenų, prisijungę galite išsaugoti esamus ek
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Google progr. Science Journal</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Reikšti teises į įvykdytus eksperimentus</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -743,7 +744,7 @@ Jei šiame įrenginyje saugote duomenų, prisijungę galite išsaugoti esamus ek
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -764,8 +765,8 @@ Jei šiame įrenginyje saugote duomenų, prisijungę galite išsaugoti esamus ek
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -825,7 +826,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -858,7 +859,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -913,7 +914,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -927,4 +928,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

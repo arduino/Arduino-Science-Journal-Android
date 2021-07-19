@@ -169,7 +169,7 @@ public class SignInFragment extends Fragment {
     WhistlePunkApplication.getUsageTracker(getActivity())
         .trackEvent(TrackerConstants.CATEGORY_SIGN_IN, TrackerConstants.ACTION_LEARN_MORE, null, 0);
     startActivity(
-        new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.sign_in_learn_more_url))));
+        new Intent(Intent.ACTION_VIEW, Uri.parse("https://support.google.com/sciencejournal/answer/9176370")));
   }
 
   private void continueWithoutSigningInClicked() {

@@ -202,15 +202,15 @@
   <string name="sensor_desc_short_raw">The percentage of the raw reading from an external sensor.</string>
   <string name="sensor_desc_short_barometer">The atmospheric pressure measured in hectopascals (hPa).</string>
   <string name="sensor_desc_first_paragraph_light">The ambient light sensor measures light in lux, a measure of illumination that depends on the amount of incoming light and the area over which it is spread.
-
+        
 
 A full moon provides about 1 lux of illumination, a typical lamp-lit living room about 50 lux, classroom lighting and sunrise and sunset about 400 lux, daylight (indirect sun) over 10,000 lux, and direct sun over 30,000 lux.
-
+        
 
 Lux is an unfamiliar unit for most of us. When we buy lightbulbs, we often shop by watts—but the wattage of a bulb doesn\'t tell you how bright a bulb is, only how much energy it uses. Lumens are a better measure for light shopping; they tell you how much light a bulb will actually produce. Lux, meanwhile, tells you how much of that light arrives at a particular area.
     </string>
   <string name="sensor_desc_second_paragraph_light">Since light spreads out as it travels, the number of lux dwindles as you back away from a light source, even though the source is still emitting the same amount of light in lumens. An area that is tilted away from a light sources also receives less illumination—which happens to be why the equatorial regions here on Earth are so much warmer than the chilly poles.
-
+        
 
 By the way, the purpose of the light sensor in your phone is to control the light level of the screen, adjusting accordingly to dim and bright environments. Inside the light sensor, a tiny semiconductor responds to incoming light by producing a small but measurable electrical current—a phenomenon known as the photoelectric effect. Similar sensors are used in some streetlights to turn them on when it gets dark outside.
     </string>
@@ -350,55 +350,43 @@ New features and improvements:
 • Export experiments to a file, and import them to other devices.</string>
   <string name="listing_h_feature_3">
 • Export photos from an experiment.</string>
-  <string name="listing__description">
-Science Journal is the free digital science notebook brought to you by Google.
+  <string name="listing__description">The Arduino Science Journal is one of the BETT Award 2021 Finalist in the \"FREE DIGITAL CONTENT OR OPEN EDUCATIONAL RESOURCES\" category.
+
+The Arduino Science Journal (formerly Science Journal, an initiative by Google) is free and open-source, and allows you to gather data about the world around you by harnessing the sensors in your smartphone as well as sensors connected to Arduino, or other third party hardware. The Science Journal transforms smartphones, tablets, and Chromebooks into science notebooks that encourage students to explore their world.
+
+The Arduino Science Journal app is recommended for students from 10 to 18 years of age, and is available in 45 languages.
+
+About the Science Journal
+
+With the Arduino Science Journal, you can learn interactively, conduct experiments and iterate on findings.
+
+• 💪 Enhance your existing lesson plans: use the Science Journal with activities and assignments you have already prepared
+• ✏️ Classroom &amp; home-school friendly: you don’t have to be in a classroom setting to start exploring. The Arduino Science Journal can be used to run experiments straight away, as long as you have your smartphone or tablet with you!
+• 🌱 Move learning outside: the use of mobile devices along with the types of experiments we offer encourage students to get out of their seats and open their eyes to the world around them through the power of science
+• 🔍 Science and data have no secrets: you can easily record your observations, store your data sensors in real-time and analyse them, just as a proper scientist!
+• 🔄 Connect the digital and the physical world from your pocket: go through a series of simple tutorials and start having fun with science
+
+It transforms different devices such as smartphones, tablets, and Chromebooks, into a pocket-size science tool that encourages you to explore your world. As students conduct experiments, they’ll record observations and make new, exciting discoveries. Through documentation and reflections, students can conduct experiments just like any other scientist. You can use the app as it is, using the sensors included in your smartphone or tablet, or use external hardware like sensors and microcontrollers that are compatible with bluetooth connections, to run more demanding experiments. By using external sensors, the students can extend their experimentation and learning. For a more in-depth experience of the world of science, the app comes with different topic-related lessons - available for students and teachers alike!
 
 
-
-Whether you\'re a science educator or a hobbyist doing science at home, you can keep your notes, photos, and observations all in one convenient place. Use the sensors in your phone to measure and graph phenomena such as light, sound, and motion, or connect to external sensors via Bluetooth to conduct experiments on the world around you.
-
-
-
-With the Science Journal app, you can:
-
-\u2022 Measure light, sound, acceleration, air pressure, and more using your phone\'s built-in sensors.
-
-\u2022 Take notes and photos to document your science experiments. More note types coming soon!
-
-\u2022 Connect to external sensors using select Bluetooth-enabled Arduino and Vernier devices.
-
-\u2022 Access your experiments across your devices using Google Drive.
-
-\u2022 Export recorded sensor data as CSV files.
-
-\u2022 Create automated triggers for recording data and taking notes.
-
-\u2022 Use sonification to hear the movement of your graphs.
-
-
-
-Science Journal is available for free on Android, iPhone, iPad, and compatible Chromebook devices.
-
-
-
-Educational activities by our partners: https://makingscience.withgoogle.com/science-journal/activities
-
-For support: https://productforums.google.com/forum/#!forum/sciencejournal
-
-Open-source code available: https://github.com/google/science-journal
-
-
+The app is classroom-friendly, since students can sign in on any device and access their experiments to continue exploring the world, wherever they are!
 
 Permissions notice:
+• 📍Location: Needed to scan for Bluetooth sensor devices.
+• 📷 Camera: Needed to take pictures to document experiments.
+• 🎙Microphone: Needed for sound intensity sensor.
+• 📥Storage: Needed to access photos to insert into experiments.
 
-\u2022 Location: needed to scan for Bluetooth sensor devices.
-
-\u2022 Camera: needed to take pictures to document experiments.
-
-\u2022 Microphone: needed for sound intensity sensor.
-
-\u2022 Storage: needed to access photos to insert into experiments.
-    </string>
+Benefits of using the Arduino Science Journal
+• It’s free and simple to use
+• Easy setup: download the app and start exploring with your phone’s built-in sensors
+• Cross-platform: supports Android, iOS, and Chromebooks
+• Portable: enhance your home learning or bring your device outside to study the world around you
+• Safe for children to use: COPPA Compliance underway
+• Fully compatible with Arduino hardware: keep experimenting with the Arduino Science Kit Physics Lab, as well as the Arduino Nano 33 BLE Sense board
+• Compatible with third-party hardware
+• Fully open-source: you can develop your own hardware support as the app is open-source
+• Google Drive integration (coming soon), as well as local download</string>
   <string name="third_party_sensors_option_title">Scan for third-party sensors</string>
   <string name="third_party_sensors_option_summary">Look for apps that support the third-party sensor API, and enable adding those sensors to experiments.</string>
   <string name="enable_temperature_sensor_title">Enable ambient temperature</string>
@@ -712,6 +700,7 @@ If you have existing data on this device, once signed in, you can save your exis
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Science Journal by Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Claim past experiments</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -754,7 +743,7 @@ If you have existing data on this device, once signed in, you can save your exis
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -775,8 +764,8 @@ If you have existing data on this device, once signed in, you can save your exis
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -836,7 +825,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -869,7 +858,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -924,7 +913,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -938,4 +927,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

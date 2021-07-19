@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Broj okretaja u minuti</string>
   <string name="sensor_desc_short_raw">Postotak izravnog neobrađenog očitanja s vanjskog senzora.</string>
   <string name="sensor_desc_short_barometer">Atmosferski tlak mjeri se u hektopaskalima (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Senzor ambijentalnog osvjetljenja mjeri svjetlost u luksima, mjernoj jedinici osvjetljenja koja ovisi o količini isijane svjetlosti i površini preko koje se ona širi.
+  <string name="sensor_desc_first_paragraph_light">Senzor ambijentalnog osvjetljenja mjeri svjetlost u luksima, mjernoj jedinici osvjetljenja koja ovisi o količini isijane svjetlosti i površini preko koje se ona širi. 
 
-Pun mjesec osvjetljava svjetlošću od približno 1 luksa, tipična prostorija osvijetljena svjetiljkom ima približno 50 luksa, osvjetljenje u učionici i svjetlost prilikom izlaska, odnosno zalaska sunca ima približno 400 luksa, dnevna svjetlost (neizravna sunčeva svjetlost) preko 10.000 luksa, a izravna sunčeva svjetlost preko 30.000 luksa.
+Pun mjesec osvjetljava svjetlošću od približno 1 luksa, tipična prostorija osvijetljena svjetiljkom ima približno 50 luksa, osvjetljenje u učionici i svjetlost prilikom izlaska, odnosno zalaska sunca ima približno 400 luksa, dnevna svjetlost (neizravna sunčeva svjetlost) preko 10.000 luksa, a izravna sunčeva svjetlost preko 30.000 luksa. 
 
 Većini nas luks je nepoznata mjerna jedinica. Kada kupujemo sijalice, najčešće se orijentiramo prema vatima – ali vati nam ne govore koliko je sijalica svijetla, već samo koliko energije troši. Lumeni su bolja mjera za odabir sijalica; govore nam koliko svjetlosti sijalica daje. Luks, s druge strane, govori kolika količina te svjetlosti dolazi do određene površine.</string>
-  <string name="sensor_desc_second_paragraph_light">Budući da se svjetlost svojim kretanjem širi, broj luksa smanjuje se kako se udaljavate od izvora svjetlosti, iako on i dalje isijava istu količinu svjetlosti u lumenima. Osim toga, površine koja su u odnosu na izvor nagnute pod određenim kutom primaju manje svjetlosti – zbog toga su ekvatorijalni predjeli Zemlje puno topliji od hladnih polova.
+  <string name="sensor_desc_second_paragraph_light">Budući da se svjetlost svojim kretanjem širi, broj luksa smanjuje se kako se udaljavate od izvora svjetlosti, iako on i dalje isijava istu količinu svjetlosti u lumenima. Osim toga, površine koja su u odnosu na izvor nagnute pod određenim kutom primaju manje svjetlosti – zbog toga su ekvatorijalni predjeli Zemlje puno topliji od hladnih polova. 
 
 Usput, senzor svjetlosti u telefonu služi za upravljanje razinom osvijetljenosti zaslona koju prilagođava u skladu s osvijetljenošću okruženja. Unutar senzora svjetlosti maleni je poluvodič koji reagira na ulaznu svjetlost i proizvodi malu, ali mjerljivu količinu struje – to nazivamo fotoelektričnim efektom. Slični se senzori koriste u nekim uličnim svjetiljkama te ih uključuju kad se vani dovoljno smrači.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Vaš telefon sadrži uređaj koji otkriva magnetska polja: magnetometar. Taj sićušan senzor s tri osi pomoću električne struje otkriva snagu magnetskog polja u tri prostorne dimenzije. Kombiniranjem podataka s tih triju osi možemo izraditi senzor jačine cjelokupnog magnetskog polja.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Vaš telefon sadrži uređaj koji otkriva magnetska polja: magnetometar. Taj sićušan senzor s tri osi pomoću električne struje otkriva snagu magnetskog polja u tri prostorne dimenzije. Kombiniranjem podataka s tih triju osi možemo izraditi senzor jačine cjelokupnog magnetskog polja. 
 
-Neki magnetometri otkrivaju magnetska polja pomoću Hallova efekta – sklonosti magnetskog polja da odbija naboj u pokretu. Noviji magnetometri imaju magnetske otpornike, metalne legure koje mijenjaju otpor s promjenom magnetskog polja.
+Neki magnetometri otkrivaju magnetska polja pomoću Hallova efekta – sklonosti magnetskog polja da odbija naboj u pokretu. Noviji magnetometri imaju magnetske otpornike, metalne legure koje mijenjaju otpor s promjenom magnetskog polja. 
 
 Zašto telefoni imaju magnetometar? Orijentacija u prostoru korisna je za aplikacije s ugrađenim kompasom i za navigaciju, prvenstveno one koje pokazuju detaljne navigacijske upute.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magneti, električne struje i metalni predmeti mogu isto tako utjecati na magnetometar u telefonu. No čak i usred praznog polja magnetometar u telefonu uvijek prikazuje nisku vrijednost koja nije nula: to je Zemljino magnetsko polje!</string>
-  <string name="sensor_desc_first_paragraph_acc">Tijela imaju tendenciju mirovanja, odnosno gibanja ako su u pokretu – tu tendenciju nazivamo inercijom. Prvi Newtonov zakon tu ideju formalizira na sljedeći način: svako tijelo ostaje u stanju mirovanja ili gibanja sve dok neka sila ne dovede do promjene tog stanja.
+  <string name="sensor_desc_first_paragraph_acc">Tijela imaju tendenciju mirovanja, odnosno gibanja ako su u pokretu – tu tendenciju nazivamo inercijom. Prvi Newtonov zakon tu ideju formalizira na sljedeći način: svako tijelo ostaje u stanju mirovanja ili gibanja sve dok neka sila ne dovede do promjene tog stanja. 
 
-Kad sila uzrokuje pomicanje tijela, kažemo da ono ubrzava: njegova se brzina mijenja, bilo da se radilo o ubrzavanju, usporavanju ili promjeni smjera. Ubrzanje se mjeri kao promjena brzine u jedinici vremena (metri u sekundi), odnosno u metrima u sekundi na kvadrat (m/s²).
+Kad sila uzrokuje pomicanje tijela, kažemo da ono ubrzava: njegova se brzina mijenja, bilo da se radilo o ubrzavanju, usporavanju ili promjeni smjera. Ubrzanje se mjeri kao promjena brzine u jedinici vremena (metri u sekundi), odnosno u metrima u sekundi na kvadrat (m/s²). 
 
 Vaš telefon ima uređaj koji mjeri te promjene kretanja – akcelerometar. U akcelerometru se nalaze male mase koje se slobodno kreću. Uslijed promjena u gibanju te se mase pomiču, slično kao što se vaša glava pomiče unaprijed ako se nađete u automobilu koji naglo zakoči. Mjereći te suptilne inercijske pomake, akcelerometar u telefonu prepoznaje promjene u pokretima i smjeru, što je korisna značajka prilikom okretanja zaslona iz pejzažnog u portretni način rada, igranja igara na telefonu i prilikom drugih radnji.</string>
   <string name="sensor_desc_second_paragraph_acc">Vjerojatno ste primijetili neprekidno ubrzanje po osi Z, čak i kad telefon leži na stolu. To je ubrzanje kojem smo izloženi zbog Zemljine gravitacije koja nas privlači brzinom od približno 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Zvukove proizvode vibracije. Primjerice, vaš glas nastaje vibriranjem vaših glasnica. Te vibracije stvaraju različite zone visokog i niskog zračnog tlaka koje se šire prema van – slično kružnom širenju valova koji nastaju kada u jezero bacite kamenčić.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Svi se zvukovi mogu opisati kroz svoju frekvenciju i intenzitet.
+  <string name="sensor_desc_second_paragraph_decibel">Svi se zvukovi mogu opisati kroz svoju frekvenciju i intenzitet. 
 
-Pomoću senzora intenziteta zvuka u Science Journalu mjerite intenzitet u decibelima (dB). Intenzitet, odnosno glasnoća, ovisi o udaljenosti koju tijelo koje vibrira prijeđe prilikom svake vibracije; veći intenzitet doživljavamo kao veću glasnoću.
+Pomoću senzora intenziteta zvuka u Science Journalu mjerite intenzitet u decibelima (dB). Intenzitet, odnosno glasnoća, ovisi o udaljenosti koju tijelo koje vibrira prijeđe prilikom svake vibracije; veći intenzitet doživljavamo kao veću glasnoću. 
 
-Frekvencija (ili visina tona) zvučnog vala ekvivalent je brzine vibracije. Što brže tijelo vibrira, to je nastali zvuk viši. Senzor intenziteta u Science Journalu ne mjeri frekvenciju, već samo glasnoću. Senzor intenziteta zvuka u Science Journalu ne mjeri frekvenciju, već samo glasnoću.
+Frekvencija (ili visina tona) zvučnog vala ekvivalent je brzine vibracije. Što brže tijelo vibrira, to je nastali zvuk viši. Senzor intenziteta u Science Journalu ne mjeri frekvenciju, već samo glasnoću. Senzor intenziteta zvuka u Science Journalu ne mjeri frekvenciju, već samo glasnoću. 
 
-Važno je napomenuti da je mikrofon u vašem uređaju dizajniran tako da bude vrlo osjetljiv na razlike u zvučnim valovima tijekom vremena, ali ne i na apsolutnu veličinu svakog vala. Pokušali smo odabrati kôd koji će vjerojatno generirati brojeve slične referentnim brojevima koji su navedeni ispod, no svaki uređaj može dati konzistentno veće ili manje brojeve. Znanstvenici takve senzore obično kalibriraju prema poznatim mjerenjima. Science Journal vam zasad može reći je li vaše sljedeće putovanje vlakom glasnije od sljedećeg rock koncerta, no samo ako ponesete telefon na ta mjesta.
+Važno je napomenuti da je mikrofon u vašem uređaju dizajniran tako da bude vrlo osjetljiv na razlike u zvučnim valovima tijekom vremena, ali ne i na apsolutnu veličinu svakog vala. Pokušali smo odabrati kôd koji će vjerojatno generirati brojeve slične referentnim brojevima koji su navedeni ispod, no svaki uređaj može dati konzistentno veće ili manje brojeve. Znanstvenici takve senzore obično kalibriraju prema poznatim mjerenjima. Science Journal vam zasad može reći je li vaše sljedeće putovanje vlakom glasnije od sljedećeg rock koncerta, no samo ako ponesete telefon na ta mjesta. 
 
-Još jedna bitna napomena: postoje važne razlike između \"intenziteta zvuka\", \"razine intenziteta zvuka\" i \"tlaka zvuka\". Ovdje ih tretiramo kao istu stvar, no ako želite produbiti svoja znanja, dostupni su brojni online resursi o njihovim razlikama.
+Još jedna bitna napomena: postoje važne razlike između \"intenziteta zvuka\", \"razine intenziteta zvuka\" i \"tlaka zvuka\". Ovdje ih tretiramo kao istu stvar, no ako želite produbiti svoja znanja, dostupni su brojni online resursi o njihovim razlikama. 
 
-Najtiši zvuk koji prosječno ljudsko uho može čuti definira se kao 0 dB. Uobičajeni razgovor odgovara vrijednosti od približno 60 dB, a zvukovi iznad 140 dB bolni su za ljudsko uho. Međutim, zvukovi ne moraju biti bolni da bi bili štetni. Neprekidna izloženost zvukovima od 90 dB, što otprilike odgovara buci koju proizvodi usisavač, može naposljetku dovesti do gubitka sluha.
+Najtiši zvuk koji prosječno ljudsko uho može čuti definira se kao 0 dB. Uobičajeni razgovor odgovara vrijednosti od približno 60 dB, a zvukovi iznad 140 dB bolni su za ljudsko uho. Međutim, zvukovi ne moraju biti bolni da bi bili štetni. Neprekidna izloženost zvukovima od 90 dB, što otprilike odgovara buci koju proizvodi usisavač, može naposljetku dovesti do gubitka sluha. 
 
-Ljestvica decibela je logaritamska, zbog čega izvor zvuka od 40 dB nije dvostruko intenzivniji od 20 dB, već 100 puta intenzivniji. Osim toga, ako jedna budilica daje 70 dB, dvije budilice ne daju 140 dB, već 73 dB. Kao što smo rekli, to je osebujna ljestvica.
+Ljestvica decibela je logaritamska, zbog čega izvor zvuka od 40 dB nije dvostruko intenzivniji od 20 dB, već 100 puta intenzivniji. Osim toga, ako jedna budilica daje 70 dB, dvije budilice ne daju 140 dB, već 73 dB. Kao što smo rekli, to je osebujna ljestvica. 
 
-10 dB: šuštanje lišća
-20 dB: šapat s 1,5 m
-30 dB: tihi šapat
-50 dB: kiša
-60 dB: normalan razgovor
-90 dB: mikser
-100 dB: automobil bez ispušnog prigušivača
-110 dB: vikanje u uho
-120 dB: grmljavina
-130 dB: pneumatska bušilica
+10 dB: šuštanje lišća 
+20 dB: šapat s 1,5 m 
+30 dB: tihi šapat 
+50 dB: kiša 
+60 dB: normalan razgovor 
+90 dB: mikser 
+100 dB: automobil bez ispušnog prigušivača 
+110 dB: vikanje u uho 
+120 dB: grmljavina 
+130 dB: pneumatska bušilica 
 140 dB: uzlijetanje zrakoplova</string>
   <string name="sensor_desc_first_paragraph_pitch">Zvukove proizvode vibracije. Primjerice, vaš glas nastaje vibriranjem vaših glasnica. Te vibracije stvaraju različite zone visokog i niskog zračnog tlaka koje se šire prema van – slično kružnom širenju valova koji nastaju kada u jezero bacite kamenčić.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Svi se zvukovi mogu opisati kroz svoju frekvenciju i intenzitet. Frekvencija (ili visina tona) zvučnog vala ekvivalent je brzine vibracije. Što brže tijelo vibrira, to je nastali zvuk viši. Te vibracije mjerimo u hercima (Hz), pri čemu je 1 herc jednak 1 vibraciji u sekundi.
+  <string name="sensor_desc_second_paragraph_pitch">Svi se zvukovi mogu opisati kroz svoju frekvenciju i intenzitet. Frekvencija (ili visina tona) zvučnog vala ekvivalent je brzine vibracije. Što brže tijelo vibrira, to je nastali zvuk viši. Te vibracije mjerimo u hercima (Hz), pri čemu je 1 herc jednak 1 vibraciji u sekundi. 
 
-Ljudi mogu čuti zvukove u rasponu od 20 do 20.000 Hz. Tipka za najdublji ton na klaviru stvara zvuk čija frekvencija iznosi 27,5 Hz, a tipka za najviši ton stvara zvuk frekvencije 4186,01 Hz.
+Ljudi mogu čuti zvukove u rasponu od 20 do 20.000 Hz. Tipka za najdublji ton na klaviru stvara zvuk čija frekvencija iznosi 27,5 Hz, a tipka za najviši ton stvara zvuk frekvencije 4186,01 Hz. 
 
 Crvena točka označava koliko se prepoznata visina tona nalazi blizu najbliže note. Ako je visina tona niža (snižen ton), točka se nalazi na lijevoj strani. Ako je visina tona viša (povišen ton), crvena točka nalazi se na desnoj strani.</string>
   <string name="pitch_low_content_description">nizak ton</string>
@@ -255,22 +255,22 @@ Crvena točka označava koliko se prepoznata visina tona nalazi blizu najbliže 
   <string name="pitch_sharper_than_flat_note_content_description">%3$s polutona više od sniženog %1$s, %2$s. oktava</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s polutona više od povišenog %1$s, %2$s. oktava</string>
   <string name="pitch_high_content_description">visok ton</string>
-  <string name="sensor_desc_first_paragraph_rotation">Broj okretaja u minuti (o/min) mjera je frekvencije okretanja oko fiksne osi u jednoj minuti.
+  <string name="sensor_desc_first_paragraph_rotation">Broj okretaja u minuti (o/min) mjera je frekvencije okretanja oko fiksne osi u jednoj minuti. 
 
 Kako se okreće, vjetromjer okreće disk kodera:</string>
   <string name="sensor_desc_second_paragraph_rotation">Tako nastaju razdoblja osvijetljenosti i zatamnjenja na senzoru, što Science Journal registrira kao okretaj.</string>
-  <string name="sensor_desc_first_paragraph_raw">Ovdje prikazani podaci rezultat su komunikacije vanjskog senzora s vašim telefonom putem Bluetooth veze.
+  <string name="sensor_desc_first_paragraph_raw">Ovdje prikazani podaci rezultat su komunikacije vanjskog senzora s vašim telefonom putem Bluetooth veze. 
 
 Vrijednost prikazuje postotak izravnog neobrađenog očitanja s mikrokontrolera. To je obično vrijednost pada napona na senzoru.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth je standard za bežični prijenos podataka koji koristi radiovalove za razmjenu podataka između fiksnih i mobilnih uređaja na malim udaljenostima.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Ovdje prikazani podaci rezultat su komunikacije vanjskog senzora s vašim telefonom putem Bluetooth veze.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth je standard za bežični prijenos podataka koji koristi radiovalove za razmjenu podataka između fiksnih i mobilnih uređaja na malim udaljenostima.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Iako to možda tako ne doživljavamo, svi mi zapravo živimo na dnu dubokog zračnog oceana: Zemljine atmosfere visine od 40 km. Masa čitavog tog zraka koji nas pritišće stvara atmosferski tlak.
+  <string name="sensor_desc_first_paragraph_barometer">Iako to možda tako ne doživljavamo, svi mi zapravo živimo na dnu dubokog zračnog oceana: Zemljine atmosfere visine od 40 km. Masa čitavog tog zraka koji nas pritišće stvara atmosferski tlak. 
 
 Na morskoj razini atmosferski tlak iznosi 96 kPa, odnosno 96 njutna po kvadratnom metru. Za usporedbu, na području standardne veličine lista papira, ekvivalentna vrijednost tog pritiska iznosila bi približno 8900 kPa.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Taj tlak ne osjećamo jer smo na njega navikli, no primijetimo ga čak i ako se neznatno promijeni, primjerice kad smo na većim nadmorskim visinama ili u zrakoplovu. Atmosferski tlak ovisi i o vremenskim uvjetima: niži je u području olujnog, nestabilnog zraka, a viši kad je zrak stabilniji i nebo bez oblaka.
+  <string name="sensor_desc_second_paragraph_barometer">Taj tlak ne osjećamo jer smo na njega navikli, no primijetimo ga čak i ako se neznatno promijeni, primjerice kad smo na većim nadmorskim visinama ili u zrakoplovu. Atmosferski tlak ovisi i o vremenskim uvjetima: niži je u području olujnog, nestabilnog zraka, a viši kad je zrak stabilniji i nebo bez oblaka. 
 
-Digitalni barometar u telefonu mjeri atmosferski tlak u hektopaskalima. (Jedan hektopaskal iznosi 100 paskala, a paskal je jedan njutn sile po kvadratnom metru.) Vjerojatno ste čuli da prognostičari iskazuju atmosferski tlak u milibarima. Ta jedinica možda zvuči poznatije, ali istovjetna je hektopaskalu.
+Digitalni barometar u telefonu mjeri atmosferski tlak u hektopaskalima. (Jedan hektopaskal iznosi 100 paskala, a paskal je jedan njutn sile po kvadratnom metru.) Vjerojatno ste čuli da prognostičari iskazuju atmosferski tlak u milibarima. Ta jedinica možda zvuči poznatije, ali istovjetna je hektopaskalu. 
 
 Možda se pitate sljedeće: zašto se telefonom može mjeriti atmosferski tlak? Atmosferski tlak mijenja se čak i uslijed sitnih promjena nadmorske visine, na primjer kad hodate uz stepenice. Dakle, digitalni barometar u vašem telefonu može vam pomoći u otkrivanju promjene lokacije. Primjerice, može vam reći na kojem se katu zgrade nalazite ili vozite li se nadvožnjakom ili podvožnjakom.</string>
   <string name="run_review_activity_label">Pregled</string>
@@ -482,9 +482,9 @@ Obavijest o dopuštenjima:
   <string name="compass">Kompas</string>
   <string name="compass_units">stupnjevi</string>
   <string name="sensor_desc_short_compass">Orijentacija telefona u odnosu na Zemljino magnetsko polje.</string>
-  <string name="sensor_desc_first_paragraph_compass">Vjerojatno već znate da Zemlja ima magnetsko polje. No možda ne znate da vaš telefon sadrži uređaj koji otkriva magnetska polja: magnetometar. Ako podatke s magnetometra telefona povežemo s orijentacijom telefona u prostoru, možemo izraditi digitalni kompas.
+  <string name="sensor_desc_first_paragraph_compass">Vjerojatno već znate da Zemlja ima magnetsko polje. No možda ne znate da vaš telefon sadrži uređaj koji otkriva magnetska polja: magnetometar. Ako podatke s magnetometra telefona povežemo s orijentacijom telefona u prostoru, možemo izraditi digitalni kompas. 
 
-Običan kompas vrsta je magnetometra \"stare tehnologije\", čija se igla pomiče uslijed djelovanja magnetskog polja. Telefoni u sebi nemaju sićušan kompas, već senzor s tri osi koji pomoću električne struje otkriva snagu magnetskog polja u tri prostorne dimenzije. No to nije dovoljno za izradu kompasa!
+Običan kompas vrsta je magnetometra \"stare tehnologije\", čija se igla pomiče uslijed djelovanja magnetskog polja. Telefoni u sebi nemaju sićušan kompas, već senzor s tri osi koji pomoću električne struje otkriva snagu magnetskog polja u tri prostorne dimenzije. No to nije dovoljno za izradu kompasa! 
 
 Zašto je za kompas potrebno povezati podatke s magnetometra i orijentaciju telefona? Orijentacija telefona omogućuje nam da izračunamo magnetsku rotaciju čak i kad telefon nije postavljen ravno, u istoj ravnini kao Zemljino magnetsko polje. Budući da znamo da gravitacija djeluje okomito na Zemljino magnetsko polje, možemo upotrijebiti smjer gravitacije iz senzora akcelerometra da bismo utvrdili koliko je magnetskog polja u istoj ravnini kao Zemljino magnetsko polje.</string>
   <string name="sensor_desc_second_paragraph_compass">Možda ste primijetili da kompas ne reagira samo na Zemljino magnetsko polje, već i na svako drugo magnetsko polje u njegovoj blizini. Magneti, električne struje i metalni predmeti mogu isto tako utjecati na magnetometar u telefonu i uzrokovati promjene u očitavanju kompasa. Iziđite na otvoreni prostor, po mogućnosti van i podalje od električnih vodova, da biste bili sigurni da se crveni vršak magnetometra poravnao sa Zemljinim magnetskim poljem. Ako trebate kalibrirati magnetometar u telefonu, izvodite telefonom kretnje u obliku brojke 8.</string>
@@ -497,9 +497,9 @@ Zašto je za kompas potrebno povezati podatke s magnetometra i orijentaciju tele
   <string name="month_year_format">MMMM gggg</string>
   <string name="linear_accelerometer">Linearni akcelerometar</string>
   <string name="sensor_desc_short_linear_acc">Ukupno ubrzanje telefona u m/s², isključujući silu gravitacije</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Tijela imaju tendenciju mirovanja, odnosno gibanja ako su u pokretu – tu tendenciju nazivamo inercijom. Prvi Newtonov zakon tu ideju formalizira na sljedeći način: svako tijelo ostaje u stanju mirovanja ili gibanja sve dok neka sila ne dovede do promjene tog stanja.
+  <string name="sensor_desc_first_paragraph_linear_acc">Tijela imaju tendenciju mirovanja, odnosno gibanja ako su u pokretu – tu tendenciju nazivamo inercijom. Prvi Newtonov zakon tu ideju formalizira na sljedeći način: svako tijelo ostaje u stanju mirovanja ili gibanja sve dok neka sila ne dovede do promjene tog stanja. 
 
-Kad sila uzrokuje pomicanje tijela, kažemo da ono ubrzava: njegova se brzina mijenja, bilo da se radi o ubrzavanju, usporavanju ili promjeni smjera. Ubrzanje se mjeri kao promjena brzine u jedinici vremena (metri u sekundi), odnosno u metrima u sekundi na kvadrat (m/s²).
+Kad sila uzrokuje pomicanje tijela, kažemo da ono ubrzava: njegova se brzina mijenja, bilo da se radi o ubrzavanju, usporavanju ili promjeni smjera. Ubrzanje se mjeri kao promjena brzine u jedinici vremena (metri u sekundi), odnosno u metrima u sekundi na kvadrat (m/s²). 
 
 Vaš telefon ima uređaj koji mjeri te promjene kretanja – akcelerometar. U akcelerometru se nalaze male mase koje se slobodno kreću. Uslijed promjena u gibanju te se mase pomiču, slično kao što se vaša glava pomiče unaprijed ako se nađete u automobilu koji naglo zakoči. Mjereći te suptilne inercijske pomake, akcelerometar u telefonu prepoznaje promjene u pokretima i smjeru, što je korisna značajka prilikom okretanja zaslona iz pejzažnog u portretni način rada, igranja igara na telefonu i prilikom drugih radnji.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Senzor kombiniranog linearnog akcelerometra bilježi ukupno ubrzanje za sve tri osi telefona, osim gravitacije.</string>
@@ -522,7 +522,7 @@ Vaš telefon ima uređaj koji mjeri te promjene kretanja – akcelerometar. U ak
   <string name="first_experiment_title">Dobro došli u Science Journal</string>
   <string name="first_experiment_text_note">Pokušajte sastaviti bilješke i bilježiti podatke putem alatne trake u nastavku!</string>
   <string name="first_experiment_picture_note_caption">Dobro došli u Science Journal!</string>
-  <string name="first_experiment_second_text_note">Pronađite aktivnosti u kojima se možete okušati na adresi
+  <string name="first_experiment_second_text_note">Pronađite aktivnosti u kojima se možete okušati na adresi 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Odaberite fotografiju eksperimenta</string>
   <string name="btn_take_picture_content_description">Snimanje fotografije</string>
@@ -698,6 +698,7 @@ Ako imate podatke na ovom uređaju, svoje postojeće eksperimente možete spremi
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Science Journal iz Googlea</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Polaganje prava na prošle eksperimente</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -740,7 +741,7 @@ Ako imate podatke na ovom uređaju, svoje postojeće eksperimente možete spremi
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -761,8 +762,8 @@ Ako imate podatke na ovom uređaju, svoje postojeće eksperimente možete spremi
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -822,7 +823,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -855,7 +856,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -910,7 +911,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -924,4 +925,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

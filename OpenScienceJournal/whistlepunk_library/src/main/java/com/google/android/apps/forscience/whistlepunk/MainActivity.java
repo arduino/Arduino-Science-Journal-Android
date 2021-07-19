@@ -46,6 +46,7 @@ import com.bumptech.glide.Glide;
 import com.caverock.androidsvg.SVG;
 import com.google.android.apps.forscience.whistlepunk.accounts.AccountsProvider;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
+import com.google.android.apps.forscience.whistlepunk.accounts.NewTermsActivity;
 import com.google.android.apps.forscience.whistlepunk.accounts.NonSignedInAccount;
 import com.google.android.apps.forscience.whistlepunk.accounts.OnboardingActivity;
 import com.google.android.apps.forscience.whistlepunk.analytics.TrackerConstants;
@@ -389,6 +390,12 @@ public class MainActivity extends ActivityWithNavigationView {
             return false;
         }
 
+        if (NewTermsActivity.shouldLaunch(this)) {
+            Intent intent = new Intent(this, NewTermsActivity.class);
+            startActivityForResult(intent, ActivityRequestCodes.REQUEST_NEW_TERMS_ACTIVITY);
+            return true;
+        }
+
         if (OnboardingActivity.shouldLaunch(this)) {
             Intent intent = new Intent(this, OnboardingActivity.class);
             startActivityForResult(intent, ActivityRequestCodes.REQUEST_ONBOARDING_ACTIVITY);
@@ -593,6 +600,7 @@ public class MainActivity extends ActivityWithNavigationView {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
+            case ActivityRequestCodes.REQUEST_NEW_TERMS_ACTIVITY:
             case ActivityRequestCodes.REQUEST_ONBOARDING_ACTIVITY:
             case ActivityRequestCodes.REQUEST_SIGN_IN_ACTIVITY:
                 if (resultCode == RESULT_CANCELED) {

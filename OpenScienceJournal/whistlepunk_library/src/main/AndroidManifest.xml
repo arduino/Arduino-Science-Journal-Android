@@ -222,6 +222,10 @@
             android:exported="false"
             android:theme="@style/AppTheme.Onboarding" />
         <activity
+            android:name=".accounts.NewTermsActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.Arduino" />
+        <activity
             android:name=".signin.ArduinoAuthActivity"
             android:exported="false"
             android:theme="@style/AppTheme.Arduino"

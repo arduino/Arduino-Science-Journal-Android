@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">O número de rotações por minuto</string>
   <string name="sensor_desc_short_raw">A percentagem da leitura por processar de um sensor externo.</string>
   <string name="sensor_desc_short_barometer">A pressão atmosférica é medida em hectopascais (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">O sensor de luz ambiente mede a luz em lux, uma medida de iluminação que depende da quantidade de luz recebida e da área iluminada.
+  <string name="sensor_desc_first_paragraph_light">O sensor de luz ambiente mede a luz em lux, uma medida de iluminação que depende da quantidade de luz recebida e da área iluminada. 
 
-A lua cheia proporciona 1 lux de iluminação, uma lâmpada de sala comum cerca de 50 lux, a iluminação de uma sala de aula e o nascer do sol ou o pôr-do-sol sensivelmente 400 lux, a luz do dia (luz solar indireta) cerca de 10 000 lux e a luz solar direta mais de 30 000 lux.
+A lua cheia proporciona 1 lux de iluminação, uma lâmpada de sala comum cerca de 50 lux, a iluminação de uma sala de aula e o nascer do sol ou o pôr-do-sol sensivelmente 400 lux, a luz do dia (luz solar indireta) cerca de 10 000 lux e a luz solar direta mais de 30 000 lux. 
 
 O lux é uma unidade de medida pouco familiar para a maioria. Quando compramos lâmpadas, compramos a pensar em watts, mas os watts de uma lâmpada não lhe dizem o quão brilhante a luz é, apenas indicam a quantidade de energia que consome. O lúmen é uma unidade de medida melhor para comprar iluminação, diz efetivamente quanta luz a lâmpada vai produzir. O lux, por sua vez, indica a percentagem de luz que chega a uma área em particular.</string>
-  <string name="sensor_desc_second_paragraph_light">Uma vez que a luz se expande conforme viaja, o número de lux diminui à medida que nos afastamos de uma fonte de luz, ainda que a fonte continue a emitir a mesma quantidade de luz em lúmens. Uma área que se inclina afastando-se da fonte de luz também é menos iluminada, razão pela qual as regiões equatoriais da terra são muito mais quentes do que os polos gelados.
+  <string name="sensor_desc_second_paragraph_light">Uma vez que a luz se expande conforme viaja, o número de lux diminui à medida que nos afastamos de uma fonte de luz, ainda que a fonte continue a emitir a mesma quantidade de luz em lúmens. Uma área que se inclina afastando-se da fonte de luz também é menos iluminada, razão pela qual as regiões equatoriais da terra são muito mais quentes do que os polos gelados. 
 
 O objetivo do sensor de luz no seu telemóvel é controlar o nível de luz do ecrã e ajustá-lo de acordo com ambientes de muita ou pouca luz. No interior do sensor de luz, um semicondutor minúsculo responde à luz recebida ao produzir uma corrente elétrica, pequena mas mensurável, um fenómeno conhecido como efeito fotoelétrico. São utilizados sensores semelhantes em algumas lâmpadas da rua para as acender quando escurece.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">O seu telemóvel contém um dispositivo concebido para detetar campos magnéticos: um magnetómetro. Este pequeno sensor de três eixos utiliza correntes elétricas para detetar a força do campo magnético nas três dimensões do espaço. Ao combinar dados dos três eixos, podemos criar um sensor da força total do campo magnético.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">O seu telemóvel contém um dispositivo concebido para detetar campos magnéticos: um magnetómetro. Este pequeno sensor de três eixos utiliza correntes elétricas para detetar a força do campo magnético nas três dimensões do espaço. Ao combinar dados dos três eixos, podemos criar um sensor da força total do campo magnético. 
 
-Alguns magnetómetros detetam campos magnéticos através do efeito Hall, a tendência dos campos magnéticos para defletir carga em movimento à medida que esta flui. Os magnetómetros mais recentes utilizam magnetoresistores, ligas metálicas que alteram a respetiva resistência em resposta a campos magnéticos.
+Alguns magnetómetros detetam campos magnéticos através do efeito Hall, a tendência dos campos magnéticos para defletir carga em movimento à medida que esta flui. Os magnetómetros mais recentes utilizam magnetoresistores, ligas metálicas que alteram a respetiva resistência em resposta a campos magnéticos. 
 
 Porque é que um telemóvel precisa de um magnetómetro? Saber a sua orientação no espaço é útil para desenvolver aplicações de bússola e navegação, especialmente para as destinadas a fornecer direções curva a curva.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Ímanes, correntes elétricas e objetos metálicos afetam facilmente o magnetómetro do telemóvel. Mas mesmo no centro de um campo vazio, o magnetómetro do seu telemóvel mostra uma leitura baixa, diferente de zero: trata-se do campo magnético da Terra!</string>
-  <string name="sensor_desc_first_paragraph_acc">Os objetos têm uma tendência para permanecer parados, ou para permanecer em movimento se estiverem em movimento. Chamamos a isto inércia. A Primeira Lei de Newton expressa esta ideia formalmente: um objeto permanece no respetivo estado de movimento ou repouso, exceto quando uma força não nula é exercida sobre ele.
+  <string name="sensor_desc_first_paragraph_acc">Os objetos têm uma tendência para permanecer parados, ou para permanecer em movimento se estiverem em movimento. Chamamos a isto inércia. A Primeira Lei de Newton expressa esta ideia formalmente: um objeto permanece no respetivo estado de movimento ou repouso, exceto quando uma força não nula é exercida sobre ele. 
 
-Quando uma força não nula causa o movimento de um objeto, dizemos que este acelera; a respetiva velocidade muda, seja por aceleração ou desaceleração. A aceleração é medida como uma alteração da velocidade (metros por segundo) no tempo, ou metros por segundo ao quadrado (m/s²).
+Quando uma força não nula causa o movimento de um objeto, dizemos que este acelera; a respetiva velocidade muda, seja por aceleração ou desaceleração. A aceleração é medida como uma alteração da velocidade (metros por segundo) no tempo, ou metros por segundo ao quadrado (m/s²). 
 
 O seu telemóvel tem um dispositivo para medir estas alterações de movimento; um acelerómetro. No interior do acelerómetro, existem pequenas massas suspensas que se podem mover livremente. As alterações de movimento causam a deslocação destas massas, tal como quando inclina a sua cabeça para a frente porque está num carro que para repentinamente. Ao medir estas subtis deslocações inerciais, um acelerómetro num telemóvel pode detetar alterações de movimento e de orientação, o que é útil para mudar o ecrã do modo de paisagem para o modo de retrato, para jogar jogos e muito mais.</string>
   <string name="sensor_desc_second_paragraph_acc">Reparou provavelmente numa aceleração persistente no eixo Z, mesmo com o telefone em repouso em cima da mesa. Esta é a aceleração que sentimos na superfície da terra devido à gravidade, e que é de aproximadamente 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Os sons são gerados por vibração. A voz, por exemplo, provém de vibrações das cordas vocais da garganta. Estas vibrações criam zonas alternadas de pressão de ar elevada e reduzida que se deslocam para o exterior, tal como acontece com a onda circular gerada pelo lançamento de uma pedra à água.</string>
-  <string name="sensor_desc_second_paragraph_decibel">É possível descrever todos os sons em termos da respetiva frequência e intensidade.
+  <string name="sensor_desc_second_paragraph_decibel">É possível descrever todos os sons em termos da respetiva frequência e intensidade. 
 
-A intensidade é o que mede com o sensor de intensidade do som do Science Journal em unidades de decibéis (dB). A intensidade, ou a sonoridade, depende da distância que um objeto em vibração percorre cada vez que vibra. Sentimos uma intensidade superior como um aumento da sonoridade.
+A intensidade é o que mede com o sensor de intensidade do som do Science Journal em unidades de decibéis (dB). A intensidade, ou a sonoridade, depende da distância que um objeto em vibração percorre cada vez que vibra. Sentimos uma intensidade superior como um aumento da sonoridade. 
 
-A frequência (também designada por altura ou tom) de uma onda sonora é equivalente à respetiva taxa de vibração. Quanto mais rápido um objeto vibra, maior a altura do som resultante. O sensor de intensidade do som do Science Journal não mede a frequência, apenas a sonoridade.
+A frequência (também designada por altura ou tom) de uma onda sonora é equivalente à respetiva taxa de vibração. Quanto mais rápido um objeto vibra, maior a altura do som resultante. O sensor de intensidade do som do Science Journal não mede a frequência, apenas a sonoridade. 
 
-Um aspeto importante que deve saber é que o microfone do seu dispositivo foi concebido para ser muito sensível às diferenças nas ondas sonoras ao longo do tempo, mas não ao tamanho absoluto de cada onda. Tentámos escolher código com probabilidade de produzir números semelhantes aos números de referência apresentados abaixo, mas cada dispositivo pode apresentar de forma consistente números mais elevados ou mais baixos. Normalmente, os cientistas calibram sensores como este para uma medida conhecida. Por agora, o Science Journal pode dizer-lhe se a sua próxima viagem de comboio é mais sonora do que o seu próximo concerto de rock, mas apenas se levar o mesmo telemóvel a ambos os eventos.
+Um aspeto importante que deve saber é que o microfone do seu dispositivo foi concebido para ser muito sensível às diferenças nas ondas sonoras ao longo do tempo, mas não ao tamanho absoluto de cada onda. Tentámos escolher código com probabilidade de produzir números semelhantes aos números de referência apresentados abaixo, mas cada dispositivo pode apresentar de forma consistente números mais elevados ou mais baixos. Normalmente, os cientistas calibram sensores como este para uma medida conhecida. Por agora, o Science Journal pode dizer-lhe se a sua próxima viagem de comboio é mais sonora do que o seu próximo concerto de rock, mas apenas se levar o mesmo telemóvel a ambos os eventos. 
 
-Outro aspeto a ter em conta é a existência de diferenças importantes entre \"intensidade do som\", \"nível de intensidade do som\" e \"pressão do som\". Aqui, tratamo-los como a mesma coisa. No entanto, se pretender aprofundar a questão, existem vários recursos online relativamente às diferenças.
+Outro aspeto a ter em conta é a existência de diferenças importantes entre \"intensidade do som\", \"nível de intensidade do som\" e \"pressão do som\". Aqui, tratamo-los como a mesma coisa. No entanto, se pretender aprofundar a questão, existem vários recursos online relativamente às diferenças. 
 
-O som mais baixo que o ouvido humano comum pode detetar é 0 dB. O som de uma conversa normal corresponde a 60 dB e os sons acima de 140 dB são dolorosos para o ouvido humano. Não obstante, os sons não precisam de ser dolorosos para serem nocivos. A exposição contínua a sons de 90 dB, sensivelmente a sonoridade de um aspirador, pode gerar eventualmente a perda de audição.
+O som mais baixo que o ouvido humano comum pode detetar é 0 dB. O som de uma conversa normal corresponde a 60 dB e os sons acima de 140 dB são dolorosos para o ouvido humano. Não obstante, os sons não precisam de ser dolorosos para serem nocivos. A exposição contínua a sons de 90 dB, sensivelmente a sonoridade de um aspirador, pode gerar eventualmente a perda de audição. 
 
-A escala de decibéis é logarítmica, o que complica a situação: uma fonte sonora de 40 dB não é duas vezes mais intensa que uma de 20 dB, mas sim 100 vezes mais intensa. Contudo, se um alarme de despertador produz 70 dB, dois alarmes de despertador não produzem 140 dB, mas 73 dB. Como referido, é uma escala estranha.
+A escala de decibéis é logarítmica, o que complica a situação: uma fonte sonora de 40 dB não é duas vezes mais intensa que uma de 20 dB, mas sim 100 vezes mais intensa. Contudo, se um alarme de despertador produz 70 dB, dois alarmes de despertador não produzem 140 dB, mas 73 dB. Como referido, é uma escala estranha. 
 
-10 dB o farfalhar de folhas
-20 dB o sussurro a 1,5 m
-30 dB o sussurro suave
-50 dB o som da chuva
-60 dB uma conversa normal
-90 dB a batedeira
-100 dB um carro sem silenciador
-110 dB gritar ao ouvido
-120 dB trovões
-130 dB uma britadeira
+10 dB o farfalhar de folhas 
+20 dB o sussurro a 1,5 m 
+30 dB o sussurro suave 
+50 dB o som da chuva 
+60 dB uma conversa normal 
+90 dB a batedeira 
+100 dB um carro sem silenciador 
+110 dB gritar ao ouvido 
+120 dB trovões 
+130 dB uma britadeira 
 140 dB um avião a descolar</string>
   <string name="sensor_desc_first_paragraph_pitch">Os sons são gerados por vibração. A voz, por exemplo, provém de vibrações das cordas vocais da garganta. Estas vibrações criam zonas alternadas de pressão de ar elevada e reduzida que se deslocam para o exterior, tal como acontece com a onda circular gerada pelo lançamento de uma pedra à água.</string>
-  <string name="sensor_desc_second_paragraph_pitch">É possível descrever todos os sons em termos da respetiva frequência e intensidade. A frequência (também designada por altura ou tom) de uma onda sonora é equivalente à respetiva taxa de vibração. Quanto mais rápido um objeto vibra, maior a altura do som resultante. Medimos estas vibrações em Hertz (Hz), sendo que 1 Hertz = 1 vibração por segundo.
+  <string name="sensor_desc_second_paragraph_pitch">É possível descrever todos os sons em termos da respetiva frequência e intensidade. A frequência (também designada por altura ou tom) de uma onda sonora é equivalente à respetiva taxa de vibração. Quanto mais rápido um objeto vibra, maior a altura do som resultante. Medimos estas vibrações em Hertz (Hz), sendo que 1 Hertz = 1 vibração por segundo. 
 
-O ser humano pode ouvir sons num intervalo de 20 a 20 000 Hz. A tecla com o tom mais baixo num piano produz um som com uma frequência de 27,5 Hz e a tecla com o tom mais alto produz um som com uma frequência de 4186,01 Hz.
+O ser humano pode ouvir sons num intervalo de 20 a 20 000 Hz. A tecla com o tom mais baixo num piano produz um som com uma frequência de 27,5 Hz e a tecla com o tom mais alto produz um som com uma frequência de 4186,01 Hz. 
 
 O ponto vermelho indica a proximidade entre a altura detetada e a nota musical mais próxima. Se a altura é menor ou \"bemol\", o ponto aparece à esquerda. Se a altura é maior ou \"sustenida\", o ponto vermelho aparece à direita.</string>
   <string name="pitch_low_content_description">tom grave</string>
@@ -255,22 +255,22 @@ O ponto vermelho indica a proximidade entre a altura detetada e a nota musical m
   <string name="pitch_sharper_than_flat_note_content_description">%3$s meio(s) tom(ns) acima de %1$s bemol, oitava %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s meio(s) tom(ns) acima de %1$s sustenido, oitava %2$s</string>
   <string name="pitch_high_content_description">tom agudo</string>
-  <string name="sensor_desc_first_paragraph_rotation">Rotações por minuto (RPM) é uma medida de frequência de rotação em torno de um eixo fixo num minuto.
+  <string name="sensor_desc_first_paragraph_rotation">Rotações por minuto (RPM) é uma medida de frequência de rotação em torno de um eixo fixo num minuto. 
 
 À medida que o cata-vento gira, roda o disco codificador:</string>
   <string name="sensor_desc_second_paragraph_rotation">Isto cria períodos de luz e ausência de luz no sensor que são registados no Science Journal como uma rotação.</string>
-  <string name="sensor_desc_first_paragraph_raw">Os dados apresentados aqui provêm de uma comunicação entre o sensor externo e o seu telemóvel através de Bluetooth.
+  <string name="sensor_desc_first_paragraph_raw">Os dados apresentados aqui provêm de uma comunicação entre o sensor externo e o seu telemóvel através de Bluetooth. 
 
 Este valor mostra a percentagem de leitura por processar diretamente a partir do seu microcontrolador. Corresponde habitualmente à percentagem de uma queda de tensão num sensor.</string>
   <string name="sensor_desc_second_paragraph_raw">O Bluetooth é uma norma de tecnologia sem fios que utiliza ondas de rádio para partilhar dados a pequenas distâncias entre dispositivos fixos e móveis.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Os dados apresentados aqui provêm de uma comunicação entre o sensor externo e o seu telemóvel através de Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">O Bluetooth é uma norma de tecnologia sem fios que utiliza ondas de rádio para partilhar dados a pequenas distâncias entre dispositivos fixos e móveis.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Embora raramente nos apercebamos, todos vivemos no fundo de um profundo oceano de ar: a atmosfera da Terra, que se estende a 40 quilómetros de altura. O peso de todo este ar que nos pressiona cria o que chamamos de pressão atmosférica.
+  <string name="sensor_desc_first_paragraph_barometer">Embora raramente nos apercebamos, todos vivemos no fundo de um profundo oceano de ar: a atmosfera da Terra, que se estende a 40 quilómetros de altura. O peso de todo este ar que nos pressiona cria o que chamamos de pressão atmosférica. 
 
 Ao nível do mar, a pressão atmosférica aplica 6,35 quilogramas de força por cada 0,00065 metros quadrados, o que equivale a cerca de 590 quilogramas numa área do tamanho de uma folha de papel padrão.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Não notamos esta pressão esmagadora porque estamos habituados, pelo menos até que esta mude, ainda que ligeiramente, como quando visitamos locais a alta altitude ou andamos de avião. A pressão atmosférica também varia consoante as condições atmosféricas: diminui na presença de ar tempestuoso e instável e aumenta quando o ar estabiliza e o céu está limpo.
+  <string name="sensor_desc_second_paragraph_barometer">Não notamos esta pressão esmagadora porque estamos habituados, pelo menos até que esta mude, ainda que ligeiramente, como quando visitamos locais a alta altitude ou andamos de avião. A pressão atmosférica também varia consoante as condições atmosféricas: diminui na presença de ar tempestuoso e instável e aumenta quando o ar estabiliza e o céu está limpo. 
 
-O barómetro digital do telemóvel mede a pressão atmosférica em hectopascais. (Um hectopascal equivale a 100 pascais e um pascal equivale a um newton de força aplicado a um metro quadrado.) Provavelmente, já ouviu os apresentadores da meteorologia falarem da pressão atmosférica em milibares. Esta unidade mais agradável ao ouvido equivale ao hectopascal.
+O barómetro digital do telemóvel mede a pressão atmosférica em hectopascais. (Um hectopascal equivale a 100 pascais e um pascal equivale a um newton de força aplicado a um metro quadrado.) Provavelmente, já ouviu os apresentadores da meteorologia falarem da pressão atmosférica em milibares. Esta unidade mais agradável ao ouvido equivale ao hectopascal. 
 
 Pode estar a pensar: de que serve ter um telemóvel que mede a pressão? A pressão atmosférica muda de forma mensurável mesmo com alterações mínimas de elevação, por exemplo, quando sobe um lance de escadas. Assim, o barómetro digital do telemóvel pode ajudá-lo a detetar mudanças de localização, por exemplo, dizer-lhe em que andar de um edifício se encontra ou se está a conduzir no tabuleiro superior ou inferior de uma ponte.</string>
   <string name="run_review_activity_label">Rever</string>
@@ -482,9 +482,9 @@ Aviso de autorizações:
   <string name="compass">Bússola</string>
   <string name="compass_units">graus</string>
   <string name="sensor_desc_short_compass">A orientação do telemóvel em relação ao campo magnético da Terra.</string>
-  <string name="sensor_desc_first_paragraph_compass">Provavelmente, já sabia que a Terra tem um campo magnético. O que pode não saber é que o seu telemóvel contém um dispositivo concebido para detetar campos magnéticos: um magnetómetro. Ao combinar os dados do magnetómetro do seu telemóvel com a orientação do telemóvel no espaço, podemos criar uma bússola digital.
+  <string name="sensor_desc_first_paragraph_compass">Provavelmente, já sabia que a Terra tem um campo magnético. O que pode não saber é que o seu telemóvel contém um dispositivo concebido para detetar campos magnéticos: um magnetómetro. Ao combinar os dados do magnetómetro do seu telemóvel com a orientação do telemóvel no espaço, podemos criar uma bússola digital. 
 
-Uma bússola à moda antiga é um magnetómetro de baixa tecnologia com uma agulha magnetizada que gira para se alinhar com o campo magnético envolvente. O seu telemóvel não tem uma bússola pequena no interior, mas tem um sensor de três eixos minúsculo que utiliza correntes elétricas para detetar a força do campo magnético nas três dimensões do espaço. Mas isto não é suficiente para criar uma bússola!
+Uma bússola à moda antiga é um magnetómetro de baixa tecnologia com uma agulha magnetizada que gira para se alinhar com o campo magnético envolvente. O seu telemóvel não tem uma bússola pequena no interior, mas tem um sensor de três eixos minúsculo que utiliza correntes elétricas para detetar a força do campo magnético nas três dimensões do espaço. Mas isto não é suficiente para criar uma bússola! 
 
 Porque é que a bússola necessita de combinar os dados do magnetómetro com a orientação do telemóvel? Conhecer a orientação do telemóvel permite-nos calcular a rotação magnética, mesmo quando o telemóvel não se encontra na posição horizontal, no mesmo plano do campo magnético da Terra. Sabemos que a gravidade é perpendicular ao campo magnético da Terra. Desta forma, podemos utilizar a direção da gravidade dos sensores do acelerómetro para determinar a quantidade do campo magnético que se encontra no mesmo plano do campo magnético da Terra.</string>
   <string name="sensor_desc_second_paragraph_compass">Como já deve ter notado, a bússola não reage apenas ao campo magnético da Terra, mas também a qualquer campo magnético nas proximidades. Ímanes, correntes elétricas e objetos metálicos afetam facilmente a bússola do seu telemóvel e alteram as leituras da bússola. Coloque-se num espaço aberto, preferencialmente ao ar livre e longe de linhas elétricas, se quiser garantir que a ponta vermelha da bússola está alinhada com o campo magnético da Terra. Mover o seu telemóvel no padrão ilustrado na figura 8 ajuda a calibrar o magnetómetro do telemóvel.</string>
@@ -497,9 +497,9 @@ Porque é que a bússola necessita de combinar os dados do magnetómetro com a o
   <string name="month_year_format">MMMM aaaa</string>
   <string name="linear_accelerometer">Acelerómetro linear</string>
   <string name="sensor_desc_short_linear_acc">A aceleração total do telemóvel, excluindo a força da gravidade, em m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Os objetos têm uma tendência para permanecer parados, ou para permanecer em movimento se estiverem em movimento. Chamamos a isto inércia. A Primeira Lei de Newton expressa esta ideia formalmente: um objeto permanece no respetivo estado de movimento ou repouso, exceto quando uma força não nula é exercida sobre ele.
+  <string name="sensor_desc_first_paragraph_linear_acc">Os objetos têm uma tendência para permanecer parados, ou para permanecer em movimento se estiverem em movimento. Chamamos a isto inércia. A Primeira Lei de Newton expressa esta ideia formalmente: um objeto permanece no respetivo estado de movimento ou repouso, exceto quando uma força não nula é exercida sobre ele. 
 
-Quando uma força não nula causa o movimento de um objeto, dizemos que este acelera; a respetiva velocidade muda, seja por aceleração ou por desaceleração. A aceleração é medida como uma alteração da velocidade (metros por segundo) no tempo, ou metros por segundo ao quadrado (m/s²).
+Quando uma força não nula causa o movimento de um objeto, dizemos que este acelera; a respetiva velocidade muda, seja por aceleração ou por desaceleração. A aceleração é medida como uma alteração da velocidade (metros por segundo) no tempo, ou metros por segundo ao quadrado (m/s²). 
 
 O seu telemóvel tem um dispositivo para medir estas alterações de movimento; um acelerómetro. No interior do acelerómetro, existem pequenas massas suspensas que se podem mover livremente. As alterações de movimento causam a deslocação destas massas, tal como quando inclina a sua cabeça para a frente porque está num carro que para repentinamente. Ao medir estas subtis deslocações inerciais, um acelerómetro num telemóvel pode detetar alterações de movimento e de orientação, o que é útil para mudar o ecrã do modo de paisagem para o modo de retrato, para jogar jogos e muito mais.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">O sensor de acelerómetro linear combinado regista a aceleração total nos três eixos do telemóvel, excluindo a gravidade.</string>
@@ -522,7 +522,7 @@ O seu telemóvel tem um dispositivo para medir estas alterações de movimento; 
   <string name="first_experiment_title">Bem-vindo ao Science Journal</string>
   <string name="first_experiment_text_note">Experimente tomar notas e registar dados com a barra de ferramentas abaixo!</string>
   <string name="first_experiment_picture_note_caption">Bem-vindo ao Science Journal!</string>
-  <string name="first_experiment_second_text_note">Encontre atividades para experimentar em
+  <string name="first_experiment_second_text_note">Encontre atividades para experimentar em 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Selecione uma foto da experiência</string>
   <string name="btn_take_picture_content_description">Tirar foto</string>
@@ -694,6 +694,7 @@ Se tiver dados neste dispositivo, após iniciar sessão, pode guardar as experi�
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Science Journal da Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Reivindicar experiências anteriores</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -736,7 +737,7 @@ Se tiver dados neste dispositivo, após iniciar sessão, pode guardar as experi�
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -757,8 +758,8 @@ Se tiver dados neste dispositivo, após iniciar sessão, pode guardar as experi�
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -818,7 +819,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -851,7 +852,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -906,7 +907,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -920,4 +921,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

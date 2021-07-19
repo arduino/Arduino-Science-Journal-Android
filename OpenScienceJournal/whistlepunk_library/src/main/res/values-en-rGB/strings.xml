@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">The number of rotations per minute</string>
   <string name="sensor_desc_short_raw">The percentage of the raw reading from an external sensor.</string>
   <string name="sensor_desc_short_barometer">The atmospheric pressure measured in hectopascals (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">The ambient light sensor measures light in lux, a measure of illumination that depends on the amount of incoming light and the area over which it is spread.
+  <string name="sensor_desc_first_paragraph_light">The ambient light sensor measures light in lux, a measure of illumination that depends on the amount of incoming light and the area over which it is spread. 
 
-A full moon provides about 1 lux of illumination, a typical lamp-lit living room about 50 lux, classroom lighting and sunrise and sunset about 400 lux, daylight (indirect sun) over 10,000 lux, and direct sun over 30,000 lux.
+A full moon provides about 1 lux of illumination, a typical lamp-lit living room about 50 lux, classroom lighting and sunrise and sunset about 400 lux, daylight (indirect sun) over 10,000 lux, and direct sun over 30,000 lux. 
 
 Lux is an unfamiliar unit for most of us. When we buy lightbulbs, we often shop by watts, but the wattage of a bulb doesn\'t tell you how bright a bulb is, only how much energy it uses. Lumens are a better measure for light shopping; they tell you how much light a bulb will actually produce. Lux, meanwhile, tells you how much of that light arrives at a particular area.</string>
-  <string name="sensor_desc_second_paragraph_light">Since light spreads out as it travels, the number of lux dwindles as you back away from a light source, even though the source is still emitting the same amount of light in lumens. An area that is tilted away from a light sources also receives less illumination, which happens to be why the equatorial regions here on Earth are so much warmer than the chilly poles.
+  <string name="sensor_desc_second_paragraph_light">Since light spreads out as it travels, the number of lux dwindles as you back away from a light source, even though the source is still emitting the same amount of light in lumens. An area that is tilted away from a light sources also receives less illumination, which happens to be why the equatorial regions here on Earth are so much warmer than the chilly poles. 
 
 By the way, the purpose of the light sensor in your phone is to control the light level of the screen, adjusting accordingly to dim and bright environments. Inside the light sensor, a tiny semiconductor responds to incoming light by producing a small but measurable electrical current, a phenomenon known as the photoelectric effect. Similar sensors are used in some street lights to turn them on when it gets dark outside.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Your phone contains a device designed to detect magnetic fields: a magnetometer. This tiny, three-axis sensor that uses electric currents to detect the magnetic field strength in the three dimensions of space. By combining data from all three axes we can create a total magnetic field strength sensor.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Your phone contains a device designed to detect magnetic fields: a magnetometer. This tiny, three-axis sensor that uses electric currents to detect the magnetic field strength in the three dimensions of space. By combining data from all three axes we can create a total magnetic field strength sensor. 
 
-Some magnetometers detect magnetic fields using the Hall effect – the tendency of magnetic fields to deflect moving charge as it flows. Newer magnetometers rely on magnetoresistors, metal alloys that change their resistance in response to magnetic fields.
+Some magnetometers detect magnetic fields using the Hall effect – the tendency of magnetic fields to deflect moving charge as it flows. Newer magnetometers rely on magnetoresistors, metal alloys that change their resistance in response to magnetic fields. 
 
 Why does a phone need a magnetometer? Knowing your orientation in space is useful for built-in compass and navigation apps, especially those that seek to give turn-by-turn directions.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magnets, electric currents and metal objects will easily steer your phone\'s magnetometer this way and that. But even in the middle of an empty field, the magnetometer in your phone always shows a low, non-zero reading: this is the Earth\'s magnetic field!</string>
-  <string name="sensor_desc_first_paragraph_acc">Objects have a tendency to stay put, or to keep moving if they\'re moving – we call this tendency inertia. Newton\'s First Law expresses this idea formally: An object continues in its state of motion or rest unless acted on by an unbalanced force.
+  <string name="sensor_desc_first_paragraph_acc">Objects have a tendency to stay put, or to keep moving if they\'re moving – we call this tendency inertia. Newton\'s First Law expresses this idea formally: An object continues in its state of motion or rest unless acted on by an unbalanced force. 
 
-When an unbalanced force does cause an object to budge, we say the object accelerates: its velocity, or speed, changes – either by speeding up, slowing down, or changing direction. Acceleration is measured as a change of velocity (metres per second) in time, or metres per second squared (m/s²).
+When an unbalanced force does cause an object to budge, we say the object accelerates: its velocity, or speed, changes – either by speeding up, slowing down, or changing direction. Acceleration is measured as a change of velocity (metres per second) in time, or metres per second squared (m/s²). 
 
 Your phone has a device to measure these changes in motion – an accelerometer. Inside an accelerometer, small suspended masses are free to move. Changes in motion cause these masses to shift, much as your own head tends to flop forward when you\'re in a car that stops suddenly. Measuring these subtle inertial shifts, an accelerometer in a phone can detect changes in motion and orientation, useful for switching the screen from landscape to portrait mode, for playing games on your phone and more.</string>
   <string name="sensor_desc_second_paragraph_acc">You probably noticed a persistent acceleration in the Z axis, even with the phone sitting still on a table. This is the acceleration we experience here at the Earth\'s surface due to the pull of gravity, approximately 9.8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Sounds are made by vibration. Your voice, for example, comes from vibrations in your throat\'s vocal cords. These vibrations create alternating zones of high and low air pressure that travel outward – much like the expanding circular ripple made by a pebble thrown into a pond.</string>
-  <string name="sensor_desc_second_paragraph_decibel">All sounds can be described in terms of their frequency and intensity.
+  <string name="sensor_desc_second_paragraph_decibel">All sounds can be described in terms of their frequency and intensity. 
 
-Intensity is what you measure here with the Science Journal sound intensity sensor, in units of decibels (dB). Intensity, or loudness, depends on the distance that a vibrating object moves each time it vibrates; we hear greater intensity as increased loudness.
+Intensity is what you measure here with the Science Journal sound intensity sensor, in units of decibels (dB). Intensity, or loudness, depends on the distance that a vibrating object moves each time it vibrates; we hear greater intensity as increased loudness. 
 
-The frequency (also, pitch or tone) of a sound wave is equivalent to its rate of vibration. The faster an object vibrates, the higher the pitch of the resulting sound. The Science Journal sound intensity sensor does not measure frequency, only loudness.
+The frequency (also, pitch or tone) of a sound wave is equivalent to its rate of vibration. The faster an object vibrates, the higher the pitch of the resulting sound. The Science Journal sound intensity sensor does not measure frequency, only loudness. 
 
-One important thing to know is that the microphone in your device is designed to be very sensitive to differences in sound waves over time, but not the absolute size of each wave. We have tried to choose code that is likely to produce numbers similar to the reference numbers shown below, but each device may give consistently higher or lower numbers. Scientists will usually calibrate a sensor like this to a known measurement. For now, Science Journal can tell you whether your next train ride is louder than your next rock concert, but only if you bring the same phone to both events.
+One important thing to know is that the microphone in your device is designed to be very sensitive to differences in sound waves over time, but not the absolute size of each wave. We have tried to choose code that is likely to produce numbers similar to the reference numbers shown below, but each device may give consistently higher or lower numbers. Scientists will usually calibrate a sensor like this to a known measurement. For now, Science Journal can tell you whether your next train ride is louder than your next rock concert, but only if you bring the same phone to both events. 
 
-Another thing to know is that there are important differences between \'sound intensity\', \'sound intensity level\' and \'sound pressure\'. We are treating them here as the same thing, but if you want to dig deeper, there are many online resources about the differences.
+Another thing to know is that there are important differences between \'sound intensity\', \'sound intensity level\' and \'sound pressure\'. We are treating them here as the same thing, but if you want to dig deeper, there are many online resources about the differences. 
 
-The quietest sound that the average human ear can detect is defined as 0 dB. Ordinary conversation corresponds to about 60 dB, and sounds above about 140 dB are painful to the human ear. But sounds don\'t have to be painful to be harmful. Continued exposure to sounds of 90 dB – about the loudness of a vacuum cleaner – can eventually cause hearing loss.
+The quietest sound that the average human ear can detect is defined as 0 dB. Ordinary conversation corresponds to about 60 dB, and sounds above about 140 dB are painful to the human ear. But sounds don\'t have to be painful to be harmful. Continued exposure to sounds of 90 dB – about the loudness of a vacuum cleaner – can eventually cause hearing loss. 
 
-The decibel scale is logarithmic, which makes for some trickiness: A sound source of 40 dB isn\'t twice as intense as one with 20 dB, it\'s 100 times more intense. Meanwhile, if one ringing alarm clock produces 70 dB, two ringing alarm clocks produce not 140 dB, but 73 dB. Like we said, it\'s a strange scale.
+The decibel scale is logarithmic, which makes for some trickiness: A sound source of 40 dB isn\'t twice as intense as one with 20 dB, it\'s 100 times more intense. Meanwhile, if one ringing alarm clock produces 70 dB, two ringing alarm clocks produce not 140 dB, but 73 dB. Like we said, it\'s a strange scale. 
 
-10 dB rustling leaves
-20 dB whispering at 1.5 metres
-30 dB soft whisper
-50 dB rainfall
-60 dB normal conversation
-90 dB blender
-100 dB car without silencer
-110 dB shouting in ear
-120 dB thunder
-130 dB pneumatic drill
+10 dB rustling leaves 
+20 dB whispering at 1.5 metres 
+30 dB soft whisper 
+50 dB rainfall 
+60 dB normal conversation 
+90 dB blender 
+100 dB car without silencer 
+110 dB shouting in ear 
+120 dB thunder 
+130 dB pneumatic drill 
 140 dB aeroplane taking off</string>
   <string name="sensor_desc_first_paragraph_pitch">Sounds are made by vibration. Your voice, for example, comes from vibrations in your throat\'s vocal cords. These vibrations create alternating zones of high and low air pressure that travel outwards – much like the expanding circular ripple made by a pebble thrown into a pond.</string>
-  <string name="sensor_desc_second_paragraph_pitch">All sounds can be described in terms of their frequency and intensity. The frequency (also, pitch or tone) of a sound wave is equivalent to its rate of vibration. The faster an object vibrates, the higher the pitch of the resulting sound. We measure these vibrations in Hertz (Hz) where 1 Hertz = 1 vibration/second.
+  <string name="sensor_desc_second_paragraph_pitch">All sounds can be described in terms of their frequency and intensity. The frequency (also, pitch or tone) of a sound wave is equivalent to its rate of vibration. The faster an object vibrates, the higher the pitch of the resulting sound. We measure these vibrations in Hertz (Hz) where 1 Hertz = 1 vibration/second. 
 
-Humans can hear sounds in the range of 20 to 20,000 Hz. The lowest key on a piano produces a sound with a frequency of 27.5 Hz and the highest key produces a sound with a frequency of 4186.01 Hz.
+Humans can hear sounds in the range of 20 to 20,000 Hz. The lowest key on a piano produces a sound with a frequency of 27.5 Hz and the highest key produces a sound with a frequency of 4186.01 Hz. 
 
 The red dot indicates how close the detected pitch is to the nearest musical note. If the pitch is lower or \'flatter\', the dot will appear to the left. If the pitch is higher or \'sharper\', then the red dot will appear to the right.</string>
   <string name="pitch_low_content_description">low pitch</string>
@@ -255,22 +255,22 @@ The red dot indicates how close the detected pitch is to the nearest musical not
   <string name="pitch_sharper_than_flat_note_content_description">%3$s half steps sharper than %1$s flat, octave %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s half steps sharper than %1$s sharp, octave %2$s</string>
   <string name="pitch_high_content_description">high pitch</string>
-  <string name="sensor_desc_first_paragraph_rotation">Rotations per minute (RPM) is a measure of the frequency of rotation around a fixed axis in one minute.
+  <string name="sensor_desc_first_paragraph_rotation">Rotations per minute (RPM) is a measure of the frequency of rotation around a fixed axis in one minute. 
 
 As your wind spinner turns, it rotates the encoder disc:</string>
   <string name="sensor_desc_second_paragraph_rotation">This creates periods of light and dark on the sensor that register in the Science Journal as a rotation.</string>
-  <string name="sensor_desc_first_paragraph_raw">The data displayed here is coming from an external sensor communication with your phone via Bluetooth.
+  <string name="sensor_desc_first_paragraph_raw">The data displayed here is coming from an external sensor communication with your phone via Bluetooth. 
 
 The value shows the percentage of the raw reading directly from your microcontroller. This is usually the percentage of a voltage drop across a sensor.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth is a wireless technology standard using radio waves to exchange data over short distances from fixed and mobile devices.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">The data displayed here is coming from an external sensor communication with your phone via Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth is a wireless technology standard using radio waves to exchange data over short distances from fixed and mobile devices.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Although we rarely notice it, all of us live at the bottom of a deep ocean of air: Earth\'s atmosphere, which extends upwards of 40 kilometres (130,000 feet) high. The weight of all that air pushing down on us from above us creates what\'s called atmospheric pressure.
+  <string name="sensor_desc_first_paragraph_barometer">Although we rarely notice it, all of us live at the bottom of a deep ocean of air: Earth\'s atmosphere, which extends upwards of 40 kilometres (130,000 feet) high. The weight of all that air pushing down on us from above us creates what\'s called atmospheric pressure. 
 
 At sea level, atmospheric pressure applies 10 newtons of force on every square centimetre – that\'s the equivalent of about 6320 newtons on an area the size of a standard A4 sheet of paper.</string>
-  <string name="sensor_desc_second_paragraph_barometer">We don\'t notice this crushing pressure because we\'re used to it – that is, until it changes, even slightly, as it does when we visit high altitudes or travel in aeroplanes. Atmospheric pressure also varies with weather conditions, dropping in the presence of stormy, unstable air, and rising when air stabilises and skies clear.
+  <string name="sensor_desc_second_paragraph_barometer">We don\'t notice this crushing pressure because we\'re used to it – that is, until it changes, even slightly, as it does when we visit high altitudes or travel in aeroplanes. Atmospheric pressure also varies with weather conditions, dropping in the presence of stormy, unstable air, and rising when air stabilises and skies clear. 
 
-The digital barometer in your phone measures atmospheric pressure in hectopascals. (A hectopascal is 100 pascals, where a pascal is one newton of force applied over a square metre of area.) You\'ve probably heard weather forecasters give atmospheric pressure in millibars – this friendlier-sounding unit is equivalent to hectopascals.
+The digital barometer in your phone measures atmospheric pressure in hectopascals. (A hectopascal is 100 pascals, where a pascal is one newton of force applied over a square metre of area.) You\'ve probably heard weather forecasters give atmospheric pressure in millibars – this friendlier-sounding unit is equivalent to hectopascals. 
 
 You might be wondering: Why would a phone measure pressure? Atmospheric pressure changes measurably with even slight changes in elevation – say, when you climb a flight of stairs. So a digital barometer in a phone can help detect location changes, for example, telling you what floor of a building you are on, or whether you are driving on the upper or lower deck of a bridge.</string>
   <string name="run_review_activity_label">Review</string>
@@ -482,9 +482,9 @@ Permissions notice:
   <string name="compass">Compass</string>
   <string name="compass_units">degrees</string>
   <string name="sensor_desc_short_compass">The orientation of the phone with respect to Earth\'s magnetic field.</string>
-  <string name="sensor_desc_first_paragraph_compass">You probably already knew that the Earth has a magnetic field. What you may not have realised is that your phone contains a device designed to detect magnetic fields: a magnetometer. By combining data from your phone\'s magnetometer with the phone\'s orientation in space, we can create a digital compass.
+  <string name="sensor_desc_first_paragraph_compass">You probably already knew that the Earth has a magnetic field. What you may not have realised is that your phone contains a device designed to detect magnetic fields: a magnetometer. By combining data from your phone\'s magnetometer with the phone\'s orientation in space, we can create a digital compass. 
 
-An old-fashioned compass is a low-tech magnetometer, with a magnetised needle that turns to align itself with the surrounding magnetic field. There\'s no tiny compass inside your phone, but instead a tiny three-axis sensor that uses electric currents to detect the magnetic field strength in the three dimensions of space. But this alone is not enough to create a compass!
+An old-fashioned compass is a low-tech magnetometer, with a magnetised needle that turns to align itself with the surrounding magnetic field. There\'s no tiny compass inside your phone, but instead a tiny three-axis sensor that uses electric currents to detect the magnetic field strength in the three dimensions of space. But this alone is not enough to create a compass! 
 
 Why does a compass need to combine the data from the magnetometer with the phones orientation? Knowing the phone\'s orientation allows us to compute the magnetic rotation even when the phone is not held flat in the same plane as the Earth\'s magnetic field. We know that gravity is perpendicular to Earth\'s magnetic field, so we can use the direction of gravity from the accelerometer sensors to determine how much of the magnetic field is in the same plane as the Earth\'s magnetic field.</string>
   <string name="sensor_desc_second_paragraph_compass">As you may have noticed, the compass responds not just to the Earth\'s magnetic field, but also to any and every magnetic field that happens to be around. Magnets, electric currents and metal objects will easily steer your phone\'s magnetometer this way and that, causing the compass reading to change. Stand in an open area – preferably outdoors and far from power lines – if you want to be sure that your compass\'s red tip is aligning with the Earth\'s magnetic field. It helps to move your phone in a figure-eight pattern to calibrate the magnetometer in your phone.</string>
@@ -497,9 +497,9 @@ Why does a compass need to combine the data from the magnetometer with the phone
   <string name="month_year_format">MMMM yyyy</string>
   <string name="linear_accelerometer">Linear accelerometer</string>
   <string name="sensor_desc_short_linear_acc">The total acceleration of the phone, excluding the force of gravity, in m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Objects have a tendency to stay put, or to keep moving if they\'re moving – we call this tendency inertia. Newton\'s First Law expresses this idea formally: an object continues in its state of motion or rest unless acted on by an unbalanced force.
+  <string name="sensor_desc_first_paragraph_linear_acc">Objects have a tendency to stay put, or to keep moving if they\'re moving – we call this tendency inertia. Newton\'s First Law expresses this idea formally: an object continues in its state of motion or rest unless acted on by an unbalanced force. 
 
-When an unbalanced force does cause an object to budge, we say that the object accelerates: its velocity, or speed, changes – either by speeding up, slowing down or changing direction. Acceleration is measured as a change of velocity (metres per second) in time, or metres per second squared (m/s²).
+When an unbalanced force does cause an object to budge, we say that the object accelerates: its velocity, or speed, changes – either by speeding up, slowing down or changing direction. Acceleration is measured as a change of velocity (metres per second) in time, or metres per second squared (m/s²). 
 
 Your phone has a device to measure these changes in motion – an accelerometer. Inside an accelerometer, small suspended masses are free to move. Changes in motion cause these masses to shift, much as your own head tends to flop forward when you\'re in a car that stops suddenly. Measuring these subtle inertial shifts, an accelerometer in a phone can detect changes in motion and orientation, useful for switching the screen from landscape to portrait mode, for playing games on your phone, and more.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">The combined linear accelerometer sensor records the total acceleration in all three axis of the phone, excluding gravity.</string>
@@ -522,7 +522,7 @@ Your phone has a device to measure these changes in motion – an accelerometer.
   <string name="first_experiment_title">Welcome to Science Journal</string>
   <string name="first_experiment_text_note">Try taking notes and recording data using the toolbar below!</string>
   <string name="first_experiment_picture_note_caption">Welcome to Science Journal!</string>
-  <string name="first_experiment_second_text_note">Find activities to try at
+  <string name="first_experiment_second_text_note">Find activities to try at 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Choose an experiment photo</string>
   <string name="btn_take_picture_content_description">Take picture</string>
@@ -694,6 +694,7 @@ If you have existing data on this device, once signed in, you can save your exis
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Science Journal by Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Claim past experiments</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -736,7 +737,7 @@ If you have existing data on this device, once signed in, you can save your exis
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -757,8 +758,8 @@ If you have existing data on this device, once signed in, you can save your exis
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -818,7 +819,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -851,7 +852,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -906,7 +907,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -920,4 +921,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

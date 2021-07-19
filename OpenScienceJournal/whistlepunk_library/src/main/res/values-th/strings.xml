@@ -192,23 +192,23 @@
   <string name="sensor_desc_short_rotation">จำนวนรอบที่หมุนต่อนาที</string>
   <string name="sensor_desc_short_raw">การอ่านข้อมูลดิบจากเซ็นเซอร์ภายนอกคิดเป็นเปอร์เซ็นต์</string>
   <string name="sensor_desc_short_barometer">ความดันบรรยากาศมีหน่วยเป็นเฮกโตพาสคาล (hPa)</string>
-  <string name="sensor_desc_first_paragraph_light">เซ็นเซอร์วัดแสงโดยรอบจะวัดความสว่างเป็นหน่วยลักซ์ ซึ่งเป็นการวัดความส่องสว่างที่ขึ้นอยู่กับปริมาณแสงที่สว่างออกมาและพื้นที่ที่แสงครอบคลุม
+  <string name="sensor_desc_first_paragraph_light">เซ็นเซอร์วัดแสงโดยรอบจะวัดความสว่างเป็นหน่วยลักซ์ ซึ่งเป็นการวัดความส่องสว่างที่ขึ้นอยู่กับปริมาณแสงที่สว่างออกมาและพื้นที่ที่แสงครอบคลุม 
 
-พระจันทร์เต็มดวงมีความส่องสว่างประมาณ 1 ลักซ์ ห้องปกติที่มีโคมไฟมีประมาณ 50 ลักซ์ แสงไฟในห้องเรียนและแสงอาทิตย์เมื่อขึ้นและตกมีประมาณ 400 ลักซ์ แสงตอนกลางวัน (แสงอาทิตย์ทางอ้อม) มีมากกว่า 10,000 ลักซ์ และแสงอาทิตย์ทางตรงมี 30,000 ลักซ์
+พระจันทร์เต็มดวงมีความส่องสว่างประมาณ 1 ลักซ์ ห้องปกติที่มีโคมไฟมีประมาณ 50 ลักซ์ แสงไฟในห้องเรียนและแสงอาทิตย์เมื่อขึ้นและตกมีประมาณ 400 ลักซ์ แสงตอนกลางวัน (แสงอาทิตย์ทางอ้อม) มีมากกว่า 10,000 ลักซ์ และแสงอาทิตย์ทางตรงมี 30,000 ลักซ์ 
 
 ลักซ์เป็นหน่วยที่คนส่วนมากไม่คุ้นเคย เมื่อซื้อหลอดไฟเราจะดูที่หน่วยวัตต์ แต่วัตต์ของหลอดไฟไม่ได้บอกว่าหลอดไฟจะสว่างแค่ไหน แต่จะบอกแค่เพียงพลังงานที่หลอดไฟใช้เท่านั้น หน่วยลูเมนเป็นการวัดที่ดีกว่าเมื่อจะซื้อหลอดไฟ เพราะลูเมนจะบอกว่าหลอดไฟนั้นสร้างแสงสว่างออกมามากเพียงใด ส่วนลักซ์จะบอกว่ามีแสงปริมาณเท่าใดที่เดินทางถึงพื้นที่หนึ่งๆ</string>
-  <string name="sensor_desc_second_paragraph_light">เนื่องจากแสงจะกระจายตัวออกเมื่อเดินทาง ปริมาณลักซ์จึงลดลงเมื่อคุณถอยห่างจากแหล่งกำเนิดแสงแม้ว่าแหล่งกำเนิดแสงดังกล่าวจะให้แสงในปริมาณลูเมนที่เท่ากัน พื้นที่ที่เอียงออกจากแหล่งกำเนิดแสงจะได้รับแสงสว่างน้อยลง ซึ่งเป็นสาเหตุที่บริเวณเส้นศูนย์สูตรของโลกอุ่นกว่าขั้วโลกที่เย็นยะเยือกมาก
+  <string name="sensor_desc_second_paragraph_light">เนื่องจากแสงจะกระจายตัวออกเมื่อเดินทาง ปริมาณลักซ์จึงลดลงเมื่อคุณถอยห่างจากแหล่งกำเนิดแสงแม้ว่าแหล่งกำเนิดแสงดังกล่าวจะให้แสงในปริมาณลูเมนที่เท่ากัน พื้นที่ที่เอียงออกจากแหล่งกำเนิดแสงจะได้รับแสงสว่างน้อยลง ซึ่งเป็นสาเหตุที่บริเวณเส้นศูนย์สูตรของโลกอุ่นกว่าขั้วโลกที่เย็นยะเยือกมาก 
 
 ทั้งนี้ จุดประสงค์ของเซ็นเซอร์แสงในโทรศัพท์ของคุณคือการควบคุมระดับความสว่างของหน้าจอและปรับตามสิ่งแวดล้อมที่มืดสลัวและสว่าง ภายในเซ็นเซอร์แสงจะมีสารกึ่งตัวนำขนาดเล็กคอยตอบสนองต่อแสงที่เข้ามาโดยผลิตกระแสไฟฟ้าอ่อนๆ แต่สามารถวัดได้ ปรากฏการณ์นี้เรียกว่าปรากฏการณ์โฟโตอิเล็กทริก เซ็นเซอร์ที่คล้ายกันนี้มีการใช้กับไฟถนนเพื่อให้ไฟเปิดขึ้นเมื่อท้องฟ้ามืด</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">โทรศัพท์ของคุณมีอุปกรณ์ที่ออกแบบมาเพื่อตรวจจับสนามแม่เหล็ก ซึ่งเป็นเซ็นเซอร์แบบ 3 แกนขนาดเล็กที่ใช้กระแสไฟฟ้าในการตรวจจับความเข้มของสนามแม่เหล็กในพื้นที่ว่าง 3 มิติ เราสร้างเซ็นเซอร์วัดความเข้มข้นของสนามแม่เหล็กที่สมบูรณ์โดยรวมข้อมูลจากแกนทั้ง 3 เข้าด้วยกัน
+  <string name="sensor_desc_first_paragraph_magnetic_strength">โทรศัพท์ของคุณมีอุปกรณ์ที่ออกแบบมาเพื่อตรวจจับสนามแม่เหล็ก ซึ่งเป็นเซ็นเซอร์แบบ 3 แกนขนาดเล็กที่ใช้กระแสไฟฟ้าในการตรวจจับความเข้มของสนามแม่เหล็กในพื้นที่ว่าง 3 มิติ เราสร้างเซ็นเซอร์วัดความเข้มข้นของสนามแม่เหล็กที่สมบูรณ์โดยรวมข้อมูลจากแกนทั้ง 3 เข้าด้วยกัน 
 
-เครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กบางชนิดจะตรวจจับสนามแม่เหล็กโดยใช้ฮอลล์เอฟเฟกต์ ซึ่งเป็นความโน้มเอียงของสนามแม่เหล็กเพื่อเบนประจุไฟฟ้าที่เคลื่อนที่ในขณะที่มีการไหลของประจุ เครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กรุ่นที่ใหม่กว่าจะใช้แมกนิโตรีซิสเตอร์ ซึ่งเป็นโลหะผสมที่จะเปลี่ยนแปลงความต้านทานเมื่ออยู่ภายใต้สนามแม่เหล็ก
+เครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กบางชนิดจะตรวจจับสนามแม่เหล็กโดยใช้ฮอลล์เอฟเฟกต์ ซึ่งเป็นความโน้มเอียงของสนามแม่เหล็กเพื่อเบนประจุไฟฟ้าที่เคลื่อนที่ในขณะที่มีการไหลของประจุ เครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กรุ่นที่ใหม่กว่าจะใช้แมกนิโตรีซิสเตอร์ ซึ่งเป็นโลหะผสมที่จะเปลี่ยนแปลงความต้านทานเมื่ออยู่ภายใต้สนามแม่เหล็ก 
 
 คุณทราบหรือไม่ว่าทำไมโทรศัพท์ต้องมีเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็ก นั่นก็เพื่อให้ระบบของโทรศัพท์มีข้อมูลเกี่ยวกับทิศทางซึ่งจะเป็นประโยชน์ต่อเข็มทิศในตัวและแอปนำทาง โดยเฉพาะอย่างยิ่งสำหรับแอปที่ค้นหาเส้นทางแบบเลี้ยวต่อเลี้ยว</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">แม่เหล็ก กระแสไฟฟ้า และวัตถุที่เป็นโลหะเบี่ยงเบนค่าเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กของโทรศัพท์ได้ง่าย แต่แม้จะอยู่กลางสนามที่เปิดโล่ง เครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กในโทรศัพท์จะแสดงค่าต่ำๆ ที่ไม่ใช่ศูนย์เสมอ ซึ่งค่านี้คือค่าสนามแม่เหล็กของโลกนั่นเอง</string>
-  <string name="sensor_desc_first_paragraph_acc">วัตถุมีแนวโน้มที่จะอยู่นิ่งหรือเคลื่อนที่ต่อไปหากกำลังเคลื่อนที่อยู่ แนวโน้มนี้เรียกว่าความเฉื่อย กฎข้อที่ 1 ของนิวตันกล่าวว่า วัตถุจะคงสถานะการเคลื่อนไหวหรืออยู่นิ่งจนกระทั่งได้รับผลกระทบจากแรงที่ไม่สมดุล
+  <string name="sensor_desc_first_paragraph_acc">วัตถุมีแนวโน้มที่จะอยู่นิ่งหรือเคลื่อนที่ต่อไปหากกำลังเคลื่อนที่อยู่ แนวโน้มนี้เรียกว่าความเฉื่อย กฎข้อที่ 1 ของนิวตันกล่าวว่า วัตถุจะคงสถานะการเคลื่อนไหวหรืออยู่นิ่งจนกระทั่งได้รับผลกระทบจากแรงที่ไม่สมดุล 
 
-เมื่อแรงที่ไม่สมดุลทำให้วัตถุเคลื่อนที่ เราเรียกว่าวัตถุมีความเร่ง นั่นคือ อัตราเร็วหรือความเร็วของวัตถุจะเปลี่ยนแปลงเป็นเร็วขึ้น ช้าลง หรือเปลี่ยนทิศทาง ความเร่งจะวัดจากการเปลี่ยนแปลงอัตราเร็ว (เมตรต่อวินาที) ในระยะเวลาหนึ่ง หรือเมตรต่อวินาทียกกำลังสอง (เมตร/วินาที²)
+เมื่อแรงที่ไม่สมดุลทำให้วัตถุเคลื่อนที่ เราเรียกว่าวัตถุมีความเร่ง นั่นคือ อัตราเร็วหรือความเร็วของวัตถุจะเปลี่ยนแปลงเป็นเร็วขึ้น ช้าลง หรือเปลี่ยนทิศทาง ความเร่งจะวัดจากการเปลี่ยนแปลงอัตราเร็ว (เมตรต่อวินาที) ในระยะเวลาหนึ่ง หรือเมตรต่อวินาทียกกำลังสอง (เมตร/วินาที²) 
 
 โทรศัพท์ของคุณมีอุปกรณ์วัดการเปลี่ยนแปลงความเคลื่อนไหวที่เรียกว่าตัววัดความเร่ง ภายในตัววัดความเร่งจะมีมวลสารเล็กๆ ลอยอยู่อย่างเป็นอิสระ การเคลื่อนไหวที่เปลี่ยนไปจะทำให้มวลสารเคลื่อนที่ เช่นเดียวกับตอนที่ศีรษะเหวี่ยงไปด้านหน้าเมื่อรถหยุดกระทันหัน การวัดการเปลี่ยนแปลงความเฉื่อยที่ซับซ้อนนี้ทำให้ตัววัดความเร่งในโทรศัพท์สามารถตรวจจับความเคลื่อนไหวและทิศทางที่เปลี่ยนไปได้ ซึ่งมีประโยชน์ในการสลับหน้าจอจากโหมดแนวนอนเป็นแนวตั้งสำหรับการเล่นเกมในโทรศัพท์และอื่นๆ</string>
   <string name="sensor_desc_second_paragraph_acc">คุณอาจสังเกตเห็นว่าในแกน Z มีการเพิ่มความเร็วอยู่ตลอดแม้ว่าโทรศัพท์จะวางนิ่งอยู่บนโต๊ะ นี่เป็นความเร่งที่เกิดขึ้นบนพื้นผิวโลกเนื่องจากแรงดึงของแรงดึงดูด ประมาณ 9.8 เมตร/วินาที²</string>
@@ -255,22 +255,22 @@
   <string name="pitch_sharper_than_flat_note_content_description">%3$s มีระดับเสียงสูงกว่า %1$s เสียงต่ำ, %2$s เสียงคู่แปดอยู่ครึ่งระดับ</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s มีระดับเสียงสูงกว่า %1$s ชาร์ป, เสียงคู่แปด %2$s อยู่ครึ่งระดับ</string>
   <string name="pitch_high_content_description">ระดับเสียงสูง</string>
-  <string name="sensor_desc_first_paragraph_rotation">รอบต่อนาที (RPM) คือการวัดความถี่ของการหมุนรอบแกนคงที่ใน 1 นาที
+  <string name="sensor_desc_first_paragraph_rotation">รอบต่อนาที (RPM) คือการวัดความถี่ของการหมุนรอบแกนคงที่ใน 1 นาที 
 
 เมื่อกังหันลมหมุน กังหันก็จะหมุนจานเข้ารหัส:</string>
   <string name="sensor_desc_second_paragraph_rotation">ซึ่งจะสร้างช่วงของความสว่างและความมืดบนเซ็นเซอร์ที่บันทึกไว้เป็นการหมุนในวารสารวิทยาศาสตร์</string>
-  <string name="sensor_desc_first_paragraph_raw">ข้อมูลที่แสดงที่นี่มาจากการสื่อสารของเซ็นเซอร์ภายนอกกับโทรศัพท์ของคุณผ่านบลูทูธ
+  <string name="sensor_desc_first_paragraph_raw">ข้อมูลที่แสดงที่นี่มาจากการสื่อสารของเซ็นเซอร์ภายนอกกับโทรศัพท์ของคุณผ่านบลูทูธ 
 
 ค่าดังกล่าวจะแสดงการอ่านข้อมูลดิบโดยตรงจากไมโครคอนโทรลเลอร์คิดเป็นเปอร์เซ็นต์ ซึ่งมักเป็นเปอร์เซ็นต์ของแรงดันไฟตกในเซ็นเซอร์</string>
   <string name="sensor_desc_second_paragraph_raw">บลูทูธเป็นเทคโนโลยีไร้สายที่ใช้คลื่นวิทยุในการแลกเปลี่ยนข้อมูลระยะใกล้จากอุปกรณ์ที่อยู่กับที่และอุปกรณ์เคลื่อนที่</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">ข้อมูลที่แสดงที่นี่มาจากการสื่อสารของเซ็นเซอร์ภายนอกกับโทรศัพท์ของคุณผ่านบลูทูธ</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">บลูทูธเป็นเทคโนโลยีไร้สายที่ใช้คลื่นวิทยุในการแลกเปลี่ยนข้อมูลระยะใกล้จากอุปกรณ์ที่อยู่กับที่และอุปกรณ์เคลื่อนที่</string>
-  <string name="sensor_desc_first_paragraph_barometer">เราแทบจะไม่ได้สังเกตกันเลยว่าเราอาศัยอยู่ใต้มหาสมุทรแห่งอากาศสุดลึก ซึ่งก็คือชั้นบรรยากาศของโลกที่สูงขึ้นไปบนท้องฟ้า 40 กิโลเมตร (130,000 ฟุต) น้ำหนักของอากาศทั้งหมดที่กดทับลงมาที่เราจากด้านบนทำให้เกิดสิ่งที่เรียกว่าความดันบรรยากาศ
+  <string name="sensor_desc_first_paragraph_barometer">เราแทบจะไม่ได้สังเกตกันเลยว่าเราอาศัยอยู่ใต้มหาสมุทรแห่งอากาศสุดลึก ซึ่งก็คือชั้นบรรยากาศของโลกที่สูงขึ้นไปบนท้องฟ้า 40 กิโลเมตร (130,000 ฟุต) น้ำหนักของอากาศทั้งหมดที่กดทับลงมาที่เราจากด้านบนทำให้เกิดสิ่งที่เรียกว่าความดันบรรยากาศ 
 
 ที่ระดับน้ำทะเล ความดันบรรยากาศจะมีแรงดัน 6.4 กิโลกรัม (14 ปอนด์) ต่อ 1 ตารางนิ้ว ซึ่งเท่ากับ 590 กิโลกรัม (1,300 ปอนด์) บนพื้นที่ขนาดเท่ากับแผ่นกระดาษ A4</string>
-  <string name="sensor_desc_second_paragraph_barometer">เราไม่รู้สึกถึงแรงกดที่มากมายเช่นนี้เพราะเราชินแล้ว แต่เราจะรู้สึกได้เมื่อความดันเปลี่ยนแปลงแม้จะแค่เล็กน้อยก็ตาม เช่น ตอนที่เราขึ้นไปบนพื้นที่สูงๆ หรือขึ้นเครื่องบิน ความดันบรรยากาศยังแตกต่างไปตามสภาพอากาศด้วย กล่าวคือจะลดลงเมื่อเกิดพายุและอากาศไม่มีเสถียรภาพ โดยความดันบรรยากาศจะเพิ่มขึ้นเมื่ออากาศมีเสถียรภาพและท้องฟ้าโปร่ง
+  <string name="sensor_desc_second_paragraph_barometer">เราไม่รู้สึกถึงแรงกดที่มากมายเช่นนี้เพราะเราชินแล้ว แต่เราจะรู้สึกได้เมื่อความดันเปลี่ยนแปลงแม้จะแค่เล็กน้อยก็ตาม เช่น ตอนที่เราขึ้นไปบนพื้นที่สูงๆ หรือขึ้นเครื่องบิน ความดันบรรยากาศยังแตกต่างไปตามสภาพอากาศด้วย กล่าวคือจะลดลงเมื่อเกิดพายุและอากาศไม่มีเสถียรภาพ โดยความดันบรรยากาศจะเพิ่มขึ้นเมื่ออากาศมีเสถียรภาพและท้องฟ้าโปร่ง 
 
-บาโรมิเตอร์แบบดิจิทัลในโทรศัพท์จะวัดความดันบรรยากาศในหน่วยเฮกโตปาสคาล (1 เฮกโตปาสคาลเท่ากับ 100 ปาสคาล และ 1 ปาสคาลมีแรงกด 1 นิวตันต่อพื้นที่ 1 ตารางเมตร) คุณอาจเคยได้ยินนักพยากรณ์อากาศพูดถึงความดันบรรยากาศในหน่วยมิลลิบาร์ ซึ่งหน่วยที่ฟังแล้วคุ้นเคยนี้ก็มีค่าเท่ากับเฮกโตปาสคาลนั่นเอง
+บาโรมิเตอร์แบบดิจิทัลในโทรศัพท์จะวัดความดันบรรยากาศในหน่วยเฮกโตปาสคาล (1 เฮกโตปาสคาลเท่ากับ 100 ปาสคาล และ 1 ปาสคาลมีแรงกด 1 นิวตันต่อพื้นที่ 1 ตารางเมตร) คุณอาจเคยได้ยินนักพยากรณ์อากาศพูดถึงความดันบรรยากาศในหน่วยมิลลิบาร์ ซึ่งหน่วยที่ฟังแล้วคุ้นเคยนี้ก็มีค่าเท่ากับเฮกโตปาสคาลนั่นเอง 
 
 คุณอาจกำลังสงสัยว่าโทรศัพท์จะวัดความดันไปทำไม การเปลี่ยนแปลงของความดันบรรยากาศนั้นสามารถวัดได้ แม้ระดับความสูงจะเปลี่ยนแปลงเพียงเล็กน้อยก็ตาม เช่น เมื่อคุณขึ้นบันได ดังนั้นบาโรมิเตอร์แบบดิจิทัลในโทรศัพท์จึงสามารถตรวจจับเมื่อตำแหน่งของคุณเปลี่ยนแปลง เช่น บอกชั้นอาคารที่คุณอยู่ หรือบอกได้ว่าคุณกำลังขับรถอยู่บนสะพานหรือใต้สะพาน</string>
   <string name="run_review_activity_label">รีวิว</string>
@@ -482,9 +482,9 @@
   <string name="compass">เข็มทิศ</string>
   <string name="compass_units">องศา</string>
   <string name="sensor_desc_short_compass">การวางแนวของโทรศัพท์เทียบกับสนามแม่เหล็กของโลก</string>
-  <string name="sensor_desc_first_paragraph_compass">คุณอาจทราบอยู่แล้วว่าโลกของเรานั้นมีสนามแม่เหล็ก แต่สิ่งที่คุณอาจไม่ทราบก็คือโทรศัพท์ของคุณมีอุปกรณ์ที่ออกแบบมาเพื่อตรวจจับสนามแม่เหล็กด้วย นั่นคือเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็ก เราสร้างเข็มทิศดิจิทัลได้ด้วยการรวมข้อมูลจากเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กของโทรศัพท์เข้ากับทิศทางของโทรศัพท์ในพื้นที่ว่าง
+  <string name="sensor_desc_first_paragraph_compass">คุณอาจทราบอยู่แล้วว่าโลกของเรานั้นมีสนามแม่เหล็ก แต่สิ่งที่คุณอาจไม่ทราบก็คือโทรศัพท์ของคุณมีอุปกรณ์ที่ออกแบบมาเพื่อตรวจจับสนามแม่เหล็กด้วย นั่นคือเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็ก เราสร้างเข็มทิศดิจิทัลได้ด้วยการรวมข้อมูลจากเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กของโทรศัพท์เข้ากับทิศทางของโทรศัพท์ในพื้นที่ว่าง 
 
-เข็มทิศในสมัยก่อนเป็นเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กที่ใช้เทคโนโลยีง่ายๆ โดยเข็มที่เป็นแม่เหล็กจะหมุนเพื่อให้อยู่ในแนวเดียวกันกับสนามแม่เหล็กที่อยู่ล้อมรอบ ทั้งนี้ไม่ได้มีเข็มทิศขนาดจิ๋วอยู่ในโทรศัพท์ของคุณแต่อย่างใด แต่มีเซ็นเซอร์แบบ 3 แกนขนาดเล็กอยู่ ซึ่งจะใช้กระแสไฟฟ้าในการตรวจจับความเข้มของสนามแม่เหล็กในพื้นที่ว่าง 3 มิติ แต่ลำพังแค่เซ็นเซอร์นี้ยังไม่พอที่จะสร้างเข็มทิศ
+เข็มทิศในสมัยก่อนเป็นเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กที่ใช้เทคโนโลยีง่ายๆ โดยเข็มที่เป็นแม่เหล็กจะหมุนเพื่อให้อยู่ในแนวเดียวกันกับสนามแม่เหล็กที่อยู่ล้อมรอบ ทั้งนี้ไม่ได้มีเข็มทิศขนาดจิ๋วอยู่ในโทรศัพท์ของคุณแต่อย่างใด แต่มีเซ็นเซอร์แบบ 3 แกนขนาดเล็กอยู่ ซึ่งจะใช้กระแสไฟฟ้าในการตรวจจับความเข้มของสนามแม่เหล็กในพื้นที่ว่าง 3 มิติ แต่ลำพังแค่เซ็นเซอร์นี้ยังไม่พอที่จะสร้างเข็มทิศ 
 
 สาเหตุที่เข็มทิศต้องรวบรวมข้อมูลจากเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กเข้ากับทิศทางของโทรศัพท์คือ การรู้ทิศทางของโทรศัพท์จะทำให้เราคำนวณการหมุนของแม่เหล็กได้แม้โทรศัพท์จะไม่ได้วางอยู่ในแนวราบเดียวกับสนามแม่เหล็กโลกก็ตาม เราทราบว่าแรงโน้มถ่วงตั้งฉากกับสนามแม่เหล็กของโลก เราจึงใช้ทิศทางของแรงโน้มถ่วงจากเซ็นเซอร์ตัวตรวจวัดความเร่งเพื่อหาความเข้มข้นของสนามแม่เหล็กในระนาบเดียวกับสนามแม่เหล็กของโลกนั่นเอง</string>
   <string name="sensor_desc_second_paragraph_compass">คุณอาจสังเกตเห็นแล้วว่าเข็มทิศนั้นตอบสนองต่อทั้งสนามแม่เหล็กของโลกและสนามแม่เหล็กต่างๆ ทั้งหมดที่มีอยู่โดยรอบ จึงทำให้แม่เหล็ก กระแสไฟฟ้า และวัตถุที่เป็นโลหะเบี่ยงเบนค่าเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กของโทรศัพท์ได้ง่ายและทำให้ค่าที่อ่านได้จากเข็มทิศเปลี่ยนไป หากต้องการให้ปลายสีแดงของเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กอยู่ในแนวขนานกับสนามแม่เหล็กโลก คุณควรยืนอยู่ในพื้นที่เปิด เช่น พื้นที่กลางแจ้งที่ไกลจากสายไฟฟ้า การหมุนโทรศัพท์เป็นรูปเลข 8 จะช่วยในการปรับเทียบเครื่องวัดค่าความเข้มข้นของสนามแม่เหล็กในโทรศัพท์ได้</string>
@@ -522,7 +522,7 @@
   <string name="first_experiment_title">ยินดีต้อนรับสู่วารสารวิทยาศาสตร์</string>
   <string name="first_experiment_text_note">ลองจดบันทึกและบันทึกข้อมูลโดยใช้แถบเครื่องมือด้านล่าง</string>
   <string name="first_experiment_picture_note_caption">ยินดีต้อนรับสู่วารสารวิทยาศาสตร์</string>
-  <string name="first_experiment_second_text_note">หากิจกรรมน่าลองที่
+  <string name="first_experiment_second_text_note">หากิจกรรมน่าลองที่ 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">เลือกรูปภาพการทดลอง</string>
   <string name="btn_take_picture_content_description">ถ่ายภาพ</string>
@@ -692,6 +692,7 @@ g.co/sciencejournalactivities</string>
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">วารสารวิทยาศาสตร์โดย Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">อ้างสิทธิ์การทดลองที่ผ่านมา</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -734,7 +735,7 @@ g.co/sciencejournalactivities</string>
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -755,8 +756,8 @@ g.co/sciencejournalactivities</string>
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -816,7 +817,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -849,7 +850,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -904,7 +905,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -918,4 +919,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

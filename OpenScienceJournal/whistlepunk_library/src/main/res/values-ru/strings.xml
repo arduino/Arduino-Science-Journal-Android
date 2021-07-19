@@ -192,23 +192,23 @@
   <string name="sensor_desc_short_rotation">Число оборотов в минуту</string>
   <string name="sensor_desc_short_raw">Показания внешнего датчика в процентах</string>
   <string name="sensor_desc_short_barometer">Атмосферное давление измеряется в гектопаскалях (гПа).</string>
-  <string name="sensor_desc_first_paragraph_light">Датчик освещенности измеряет степень освещения в люксах. Освещенность определяется как отношение света, падающего на участок поверхности, к его площади.
+  <string name="sensor_desc_first_paragraph_light">Датчик освещенности измеряет степень освещения в люксах. Освещенность определяется как отношение света, падающего на участок поверхности, к его площади. 
 
-Вот несколько примеров: полная луна дает 1 лк света, лампа в обычной комнате – 50 лк, освещение класса, закат или рассвет – 400 лк, дневной свет – 10 000 лк, а прямые лучи солнца – более 30 000 лк.
+Вот несколько примеров: полная луна дает 1 лк света, лампа в обычной комнате – 50 лк, освещение класса, закат или рассвет – 400 лк, дневной свет – 10 000 лк, а прямые лучи солнца – более 30 000 лк. 
 
 Для большинства из нас люкс – незнакомая единица измерения. Покупая лампочки, мы смотрим на ватты – меру мощности, а не световую величину. Чтобы выяснить, сколько света может дать лампа, нужно обращать внимание на люмены.</string>
   <string name="sensor_desc_second_paragraph_light">При постоянном световом потоке освещенность определенной области может изменяться в зависимости от ее расстояния до источника света. Угол падения световых лучей также играет роль. Хороший пример этого – неравномерное распределение света и тепла на Земле.
 
 Датчик освещенности в телефоне предназначен для того, чтобы регулировать подсветку экрана в зависимости от уровня внешнего освещения. Это возможно благодаря тому, что в датчике расположен небольшой полупроводник, который под воздействием света способен создавать электрический ток в небольшом количестве. Это явление называют фотоэлектрическим эффектом. Фотоэлектрические датчики также используются для автоматического освещения улиц в темное время суток.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">В вашем телефоне есть прибор, позволяющий обнаруживать магнитные поля. Он называется магнитометр и представляет собой маленький трехосный датчик, который с помощью электрического тока определяет силу магнитного поля в трех пространственных измерениях. Эти данные затем используются для расчета общей силы поля.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">В вашем телефоне есть прибор, позволяющий обнаруживать магнитные поля. Он называется магнитометр и представляет собой маленький трехосный датчик, который с помощью электрического тока определяет силу магнитного поля в трех пространственных измерениях. Эти данные затем используются для расчета общей силы поля. 
 
-Некоторые магнитометры работают на основе эффекта Холла, то есть свойства магнитного поля отклонять движущиеся заряды. В основе же современных магнитометров лежат магниторезисторы. Это резисторы из металлических сплавов, которые под действием магнитного поля изменяют свое сопротивление.
+Некоторые магнитометры работают на основе эффекта Холла, то есть свойства магнитного поля отклонять движущиеся заряды. В основе же современных магнитометров лежат магниторезисторы. Это резисторы из металлических сплавов, которые под действием магнитного поля изменяют свое сопротивление. 
 
 В современных телефонах магнитометры обеспечивают работу встроенных компасов и навигационных приложений.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Магнитометр реагирует на электромагнитные поля отдельных предметов. Это легко проверить: просто поднесите к устройству магнит или металлический предмет. Однако показания датчика не будут равны нулю, даже если вы окажетесь посередине пустого поля. Это объясняется тем, что на него все равно будет влиять магнитное поле Земли.</string>
-  <string name="sensor_desc_first_paragraph_acc">Как известно из первого закона Ньютона, объекты находятся в состоянии покоя или равномерного движения, если на них не действует сила других тел. Это свойство называется инерцией.
+  <string name="sensor_desc_first_paragraph_acc">Как известно из первого закона Ньютона, объекты находятся в состоянии покоя или равномерного движения, если на них не действует сила других тел. Это свойство называется инерцией. 
 
-Если же на объект действует другое тело, скорость его движения меняется. Величиной, которая характеризует быстроту изменения скорости, является ускорение. Оно измеряется в м/с или в м/с².
+Если же на объект действует другое тело, скорость его движения меняется. Величиной, которая характеризует быстроту изменения скорости, является ускорение. Оно измеряется в м/с или в м/с². 
 
 В современных смартфонах есть датчик, который отслеживает эти изменения. Он называется акселерометр. Внутри акселерометра есть подвижный груз, который перемещается при изменении положения телефона. Данные, которые акселерометр получает в результате этих передвижений, используются, например, для смены ориентации экрана.</string>
   <string name="sensor_desc_second_paragraph_acc">Возможно, вы заметили постоянное ускорение по оси Z, даже если телефон просто лежит на столе. Это ускорение силы тяжести, равное примерно 9,8 м/с².</string>
@@ -239,9 +239,9 @@
 отбойный молоток – 130 дБ;
 взлетающий самолет –140 дБ.</string>
   <string name="sensor_desc_first_paragraph_pitch">Любой звук образуется в результате колебаний, например голос – из-за колебаний голосовых связок. Благодаря колебаниям возникают чередующиеся области высокого и низкого давления воздуха. Это можно сравнить с тем, как расходятся круги от брошенного в воду камня.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Все звуки можно охарактеризовать двумя величинами: интенсивностью и частотой. Частота (или высота) звуковой волны равна периодичности ее колебаний. Чем чаще объект колеблется, тем выше частота производимого им звука. Она измеряется в герцах (один герц равен одному колебанию в секунду).
+  <string name="sensor_desc_second_paragraph_pitch">Все звуки можно охарактеризовать двумя величинами: интенсивностью и частотой. Частота (или высота) звуковой волны равна периодичности ее колебаний. Чем чаще объект колеблется, тем выше частота производимого им звука. Она измеряется в герцах (один герц равен одному колебанию в секунду). 
 
-Человек может слышать звуки с частотой от 20 до 20 000 Гц. Самая низкая частота звука на фортепиано составляет 27,5 Гц, а самая высокая – 4186,01 Гц.
+Человек может слышать звуки с частотой от 20 до 20 000 Гц. Самая низкая частота звука на фортепиано составляет 27,5 Гц, а самая высокая – 4186,01 Гц. 
 
 Красная точка указывает на то, как полученная датчиком частота соотносится с ближайшей к ней нотой. Если частота ниже ноты, точка отображается слева, а если выше – то справа.</string>
   <string name="pitch_low_content_description">низкая частота</string>
@@ -255,22 +255,22 @@
   <string name="pitch_sharper_than_flat_note_content_description">%3$s на полтона выше, чем %1$s-бемоль, %2$s октава</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s на полтона выше, чем %1$s-диез, %2$s октава</string>
   <string name="pitch_high_content_description">высокая частота</string>
-  <string name="sensor_desc_first_paragraph_rotation">Количество оборотов в минуту – это единица измерения частоты вращения объекта вокруг оси за одну минуту.
+  <string name="sensor_desc_first_paragraph_rotation">Количество оборотов в минуту – это единица измерения частоты вращения объекта вокруг оси за одну минуту. 
 
 Индикатор движется, и в соответствии с этим вращается диск датчика:</string>
   <string name="sensor_desc_second_paragraph_rotation">В результате движения диска на датчик периодически попадает свет. Благодаря этому регистрируется вращение.</string>
-  <string name="sensor_desc_first_paragraph_raw">Представленные здесь данные получены в результате подключения к вашему телефону внешнего датчика через Bluetooth.
+  <string name="sensor_desc_first_paragraph_raw">Представленные здесь данные получены в результате подключения к вашему телефону внешнего датчика через Bluetooth. 
 
 Значение представляет из себя процент необработанных данных, которые были считаны с вашего микроконтроллера. Обычно эти данные связаны с перепадами напряжения в датчике.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth – это беспроводная технология, позволяющая установить связь между устройствами, которые находятся на небольшом расстоянии друг от друга. Передача данных осуществляется по радиоканалам.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Представленные здесь данные получены в результате подключения к вашему телефону внешнего датчика через Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth – это беспроводная технология, позволяющая установить связь между устройствами, которые находятся на небольшом расстоянии друг от друга. Передача данных осуществляется по радиоканалам.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Мы редко ощущаем, что над нами находится огромное воздушное пространство – атмосфера. Она простирается более чем на 40 км ввысь. Сила, с которой воздух давит на поверхность Земли, называется атмосферным давлением.
+  <string name="sensor_desc_first_paragraph_barometer">Мы редко ощущаем, что над нами находится огромное воздушное пространство – атмосфера. Она простирается более чем на 40 км ввысь. Сила, с которой воздух давит на поверхность Земли, называется атмосферным давлением. 
 
 На уровне моря вес столба, расположенного над квадратным сантиметром поверхности, составляет приблизительно 1 кг. Таким образом, на участок, равный по площади листу А4, давит столб весом около 590 кг.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Мы не замечаем атмосферное давление, потому что привыкли к нему. Однако если оно хоть немного меняется, это сразу же ощущается. Например, так происходит, когда вы поднимаетесь на большую высоту или летите в самолете. Ещё давление зависит от погодных условий. Оно падает при циклонных ветрах и растет в ясную погоду.
+  <string name="sensor_desc_second_paragraph_barometer">Мы не замечаем атмосферное давление, потому что привыкли к нему. Однако если оно хоть немного меняется, это сразу же ощущается. Например, так происходит, когда вы поднимаетесь на большую высоту или летите в самолете. Ещё давление зависит от погодных условий. Оно падает при циклонных ветрах и растет в ясную погоду. 
 
-Цифровой датчик в телефоне измеряет атмосферное давление в гектопаскалях (гПа). В одном гектопаскале 100 паскалей, а один паскаль – это сила, равная одному ньютону на квадратный метр. В прогнозах погоды давление обычно указывают в миллиметрах ртутного столба и миллибарах. Миллибар равен одному гектопаскалю, а миллиметр ртутного столба – 1,3 гПа.
+Цифровой датчик в телефоне измеряет атмосферное давление в гектопаскалях (гПа). В одном гектопаскале 100 паскалей, а один паскаль – это сила, равная одному ньютону на квадратный метр. В прогнозах погоды давление обычно указывают в миллиметрах ртутного столба и миллибарах. Миллибар равен одному гектопаскалю, а миллиметр ртутного столба – 1,3 гПа. 
 
 Давление меняется даже при небольшом перемещении телефона в вертикальной плоскости, например, когда вы поднимаетесь по лестнице. Именно поэтому с помощью датчика можно узнать, на каком этаже вы находитесь.</string>
   <string name="run_review_activity_label">Информация о тестировании</string>
@@ -346,7 +346,7 @@
 \u2022 Экспортировать данные, зарегистрированные датчиками, в виде CSV-файлов.
 \u2022 Создавать триггеры для записи данных и комментариев.
 \u2022 Включать сонификацию: звуковое представление данных на графиках.
-
+ 
 Установить Научный журнал можно на устройства Android, совместимые ноутбуки Chromebook, а также на смартфоны iPhone и планшеты iPad.
 
 Эксперименты от наших партнеров: https://makingscience.withgoogle.com/science-journal/activities.
@@ -459,9 +459,9 @@
   <string name="compass">Компас</string>
   <string name="compass_units">градусы</string>
   <string name="sensor_desc_short_compass">Положение телефона в магнитном поле Земли.</string>
-  <string name="sensor_desc_first_paragraph_compass">Знаете ли вы, что у Земли есть магнитное поле? Обнаружить его можно с помощью устройства под названием магнитометр. Сейчас такой прибор есть и в вашем телефоне, а раньше вместо него использовали обычный компас с магнитной стрелкой, которая вращается и устанавливается в направлении поля.
+  <string name="sensor_desc_first_paragraph_compass">Знаете ли вы, что у Земли есть магнитное поле? Обнаружить его можно с помощью устройства под названием магнитометр. Сейчас такой прибор есть и в вашем телефоне, а раньше вместо него использовали обычный компас с магнитной стрелкой, которая вращается и устанавливается в направлении поля. 
 
-Устройство, которое встроено в ваш телефон, конечно, мало похоже на компас. Оно представляет собой маленький трехосный датчик, который с помощью электрического тока определяет силу магнитного поля в трех пространственных измерениях.
+Устройство, которое встроено в ваш телефон, конечно, мало похоже на компас. Оно представляет собой маленький трехосный датчик, который с помощью электрического тока определяет силу магнитного поля в трех пространственных измерениях. 
 
 Для работы цифрового компаса необходимы не только данные магнитометра, но и сведения о положении телефона в пространстве. Они позволяют вычислить магнитное вращение, даже если телефон находится не в той же плоскости, что и магнитное поле Земли. Известно, что сила тяжести перпендикулярна геомагнитному полю. Значит, взяв показания с датчиков акселерометра, можно определить направление этой силы и таким образом вычислить степень пересечения магнитных полей.</string>
   <string name="sensor_desc_second_paragraph_compass">Электромагнитные волны исходят не только от Земли в целом, но и от отдельных предметов на ней. На магнитные поля реагирует магнитометр. Он есть и в вашем телефоне. Это легко проверить: просто поднесите к устройству магнит или металлический предмет. Измерять магнитное поле Земли лучше всего на открытом пространстве вдали от линий электропередач, но сначала датчик нужно откалибровать. Для этого возьмите телефон и нарисуйте им в воздухе несколько восьмерок.</string>
@@ -474,9 +474,9 @@
   <string name="month_year_format">MMMM гггг</string>
   <string name="linear_accelerometer">Линейное ускорение</string>
   <string name="sensor_desc_short_linear_acc">Общее ускорение телефона без учета силы тяжести. Измеряется в м/с².</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Как известно из первого закона Ньютона, объекты находятся в состоянии покоя или равномерного движения, если на них не действует сила других тел. Это свойство называется инерцией.
+  <string name="sensor_desc_first_paragraph_linear_acc">Как известно из первого закона Ньютона, объекты находятся в состоянии покоя или равномерного движения, если на них не действует сила других тел. Это свойство называется инерцией. 
 
-Если же на объект действует другое тело, скорость его движения меняется. Величиной, которая характеризует быстроту изменения скорости, является ускорение. Оно измеряется в м/с или в м/с².
+Если же на объект действует другое тело, скорость его движения меняется. Величиной, которая характеризует быстроту изменения скорости, является ускорение. Оно измеряется в м/с или в м/с². 
 
 В современных смартфонах есть датчик, который отслеживает эти изменения. Он называется акселерометр. Внутри акселерометра есть подвижный груз, который перемещается при изменении положения телефона. Данные, которые акселерометр получает в результате этих передвижений, используются, например, для смены ориентации экрана.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Линейный акселерометр позволяет измерять общее ускорение телефона по всем трем осям без учета сила тяжести.</string>
@@ -499,7 +499,7 @@
   <string name="first_experiment_title">Добро пожаловать в приложение \"Научный журнал\"!</string>
   <string name="first_experiment_text_note">Записывайте тестирования и добавляйте комментарии: кнопки для этого выведены на панель инструментов ниже.</string>
   <string name="first_experiment_picture_note_caption">Добро пожаловать в приложение \"Научный журнал\"!</string>
-  <string name="first_experiment_second_text_note">Со списком занятий можно ознакомиться
+  <string name="first_experiment_second_text_note">Со списком занятий можно ознакомиться 
 на странице g.co/sciencejournalactivities.</string>
   <string name="experiment_cover_description">Выберите изображение для эксперимента</string>
   <string name="btn_take_picture_content_description">Сделать снимок</string>
@@ -678,6 +678,7 @@
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Научный журнал Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Ранее проведенные эксперименты</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -720,7 +721,7 @@
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -741,8 +742,8 @@
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -802,7 +803,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -835,7 +836,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -890,7 +891,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -904,4 +905,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

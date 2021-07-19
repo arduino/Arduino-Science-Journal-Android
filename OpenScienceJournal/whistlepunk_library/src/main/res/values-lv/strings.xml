@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Apgriezienu skaits minūtē</string>
   <string name="sensor_desc_short_raw">Neapstrādātā lasījuma procenti no ārēja sensora.</string>
   <string name="sensor_desc_short_barometer">Atmosfēras spiediens tiek mērīts hektopaskālos (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Apkārtējās gaismas sensors mēra gaismu luksos, apgaismojuma mērvienībā, kas ir atkarīga no krītošās gaismas plūsmas pret apgaismojamo laukumu.
+  <string name="sensor_desc_first_paragraph_light">Apkārtējās gaismas sensors mēra gaismu luksos, apgaismojuma mērvienībā, kas ir atkarīga no krītošās gaismas plūsmas pret apgaismojamo laukumu. 
 
-Pilnmēness rada 1 luksu apgaismojuma, parasti apgaismota dzīvojamā istaba apmēram 50 luksus, mācību telpa, saullēkts un saulriets apmēram 400 luksus, dienasgaisma (netieša saule) vairāk nekā 10 000 luksu un tieša saule vairāk nekā 30 000 luksu.
+Pilnmēness rada 1 luksu apgaismojuma, parasti apgaismota dzīvojamā istaba apmēram 50 luksus, mācību telpa, saullēkts un saulriets apmēram 400 luksus, dienasgaisma (netieša saule) vairāk nekā 10 000 luksu un tieša saule vairāk nekā 30 000 luksu. 
 
 Vairumam cilvēku lukss ir nepazīstama mērvienība. Iegādājoties gaismas spuldzes, bieži izvēlamies tās pēc vatiem, bet spuldzes vatu daudzums nenosaka spuldzes spožumu, tikai patērējamo elektroenerģiju. Lūmeni ir labāks rādītājs, pēc kura vadīties, kad iepērkamies; tas parāda spuldzes reālo gaismas atdevi. Turpretim luksi parāda, cik daudz gaismas sasniedz konkrēto teritoriju.</string>
-  <string name="sensor_desc_second_paragraph_light">Tā kā gaisma izplatās pārvietojoties, luksu skaits samazinās, atvirzoties no gaismas avota, lai gan tas izstaro tādu pašu lūmenu daudzumu. Teritorija, kas atrodas slīpi pret gaismas virsmām, arī saņem mazāk apgaismojuma, kas izskaidro to, kāpēc ekvatoriālie apgabali šeit uz Zemes ir daudz siltāki nekā vēsie poli.
+  <string name="sensor_desc_second_paragraph_light">Tā kā gaisma izplatās pārvietojoties, luksu skaits samazinās, atvirzoties no gaismas avota, lai gan tas izstaro tādu pašu lūmenu daudzumu. Teritorija, kas atrodas slīpi pret gaismas virsmām, arī saņem mazāk apgaismojuma, kas izskaidro to, kāpēc ekvatoriālie apgabali šeit uz Zemes ir daudz siltāki nekā vēsie poli. 
 
 Starp citu, gaismas sensora nolūks jūsu tālrunī ir kontrolēt ekrāna gaismas līmeni, atbilstoši pielāgojoties tumšākai vai gaišākai videi. Gaismas sensorā esošais pusvadītājs reaģē uz ienākošo gaismu, radot nelielu, taču izmērāmu elektrisko strāvu — parādību, kas zināma kā fotoelektriskais efekts. Līdzīgus sensorus izmanto ielas apgaismojumam, lai tas ieslēgtos, iestājoties tumsai.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Jūsu tālrunī ir ierīce, kas ir paredzēta magnētisko lauku noteikšanai: magnetometrs. Tas ir neliels trīs asu sensors, kas izmanto elektriskās strāvas, lai noteiktu magnētiskā lauka stiprumu telpā trīs dimensijās. Apvienojot datus no visām trim asīm, var izveidot kopējā magnētiskā lauka stipruma sensoru.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Jūsu tālrunī ir ierīce, kas ir paredzēta magnētisko lauku noteikšanai: magnetometrs. Tas ir neliels trīs asu sensors, kas izmanto elektriskās strāvas, lai noteiktu magnētiskā lauka stiprumu telpā trīs dimensijās. Apvienojot datus no visām trim asīm, var izveidot kopējā magnētiskā lauka stipruma sensoru. 
 
-Daži magnetometri nosaka magnētiskos laukus, izmantojot Holla efektu — magnētisko lauku īpašību novirzīt elektrisko lādiņu plūsmu. Jaunāki magnetometri paļaujas uz magnetorezistoriem, metāla sakausējumiem, kas maina pretestību, reaģējot uz magnētiskajiem laukiem.
+Daži magnetometri nosaka magnētiskos laukus, izmantojot Holla efektu — magnētisko lauku īpašību novirzīt elektrisko lādiņu plūsmu. Jaunāki magnetometri paļaujas uz magnetorezistoriem, metāla sakausējumiem, kas maina pretestību, reaģējot uz magnētiskajiem laukiem. 
 
 Kādēļ tālrunim ir nepieciešams magnetometrs? Iebūvētajām kompasu un navigācijas lietotnēm ir noderīgi zināt jūsu orientāciju telpā, jo īpaši tām lietotnēm, kuras piedāvā detalizētas navigācijas norādes.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magnēti, elektriskā strāva un metāla objekti liek tālruņa magnetometra bultiņai kustēties dažādos virzienos. Pat atrodoties atklātā laukā, tālruņa magnetometrs vienmēr rāda kādu nelielu vērtību, kas nav nulle: tas ir Zemes magnētiskais lauks.</string>
-  <string name="sensor_desc_first_paragraph_acc">Objektiem ir tendence palikt uz vietas vai turpināt kustēties, ja tie kustas, — mēs šo tendenci saucam par inerci. Ņūtona pirmais likums izsaka šo ideju formāli: katrs ķermenis paliek mierā vai turpina vienmērīgu taisnlīnijas kustību tikmēr, kamēr tam pieliktie spēki to neizmaina.
+  <string name="sensor_desc_first_paragraph_acc">Objektiem ir tendence palikt uz vietas vai turpināt kustēties, ja tie kustas, — mēs šo tendenci saucam par inerci. Ņūtona pirmais likums izsaka šo ideju formāli: katrs ķermenis paliek mierā vai turpina vienmērīgu taisnlīnijas kustību tikmēr, kamēr tam pieliktie spēki to neizmaina. 
 
-Kad mierā esošam ķermenim tiek pielikts ārējs spēks, apgalvojam, ka objekts paātrinās: tā ātrums vai attālums mainās — palielinoties, samazinoties vai mainot virzienu. Paātrinājumu mēra kā ātruma izmaiņas laikā (metri sekundē) vai metrus kvadrātsekundē (m/s²).
+Kad mierā esošam ķermenim tiek pielikts ārējs spēks, apgalvojam, ka objekts paātrinās: tā ātrums vai attālums mainās — palielinoties, samazinoties vai mainot virzienu. Paātrinājumu mēra kā ātruma izmaiņas laikā (metri sekundē) vai metrus kvadrātsekundē (m/s²). 
 
 Jūsu tālrunī ir iekārta, lai izmērītu šīs kustību izmaiņas, — akselerometrs. Akselerometrā mazās noteiktās masas var brīvi pārvietoties. Masas objekta novirze no sākotnējā stāvokļa liek šīm masām pārvietoties, tāpat kā jūsu galva smagi sasveras uz priekšu, mašīnai strauji apstājoties. Mērot šīs pēkšņās inerces svārstības, akselerometrs tālrunī var noteikt izmaiņas kustībā un orientācijā, kas noder, pārslēdzoties no ainavas režīma uz portreta režīmu vai spēlējot spēles tālrunī, kā arī citām funkcijām.</string>
   <string name="sensor_desc_second_paragraph_acc">Iespējams, esat ievērojis paātrinājumu Z asij pat tad, kad tālrunis atrodas uz galda. Tas ir paātrinājums, ko izjūtam uz Zemes virsmas tās gravitācijas dēļ, un tas ir apmēram 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Skaņas veido vibrācija. Piemēram, jūsu balss veidojas no rīkles balss saišu vibrācijām. Šīs vibrācijas rada augsta un zema gaisa spiediena zonu mainību, kas virzās uz āru — ļoti līdzīgi apļveida kustībai, ko rada dīķī iemests olis.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Visas skaņas var raksturot ar to frekvenci un intensitāti.
+  <string name="sensor_desc_second_paragraph_decibel">Visas skaņas var raksturot ar to frekvenci un intensitāti. 
 
-Intensitāte ir vērtība, ko nosakāt, izmantojot Science Journal skaņas intensitātes sensoru, tās mērvienība ir decibels (dB). Intensitāte jeb skaļums ir atkarīgs no attāluma, kādā atrodas vibrācijas objekts. Lielāku intensitāti mūsu ausis uztver kā lielāku skaļumu.
+Intensitāte ir vērtība, ko nosakāt, izmantojot Science Journal skaņas intensitātes sensoru, tās mērvienība ir decibels (dB). Intensitāte jeb skaļums ir atkarīgs no attāluma, kādā atrodas vibrācijas objekts. Lielāku intensitāti mūsu ausis uztver kā lielāku skaļumu. 
 
-Skaņas viļņa frekvence (jeb tonis) izsaka tā vibrēšanas biežumu. Jo ātrāk objekts vibrē, jo augstāks ir skaņas tonis. Science Journal skaņas intensitātes sensors nevar izmērīt frekvenci, var izmērīt tikai skaļumu.
+Skaņas viļņa frekvence (jeb tonis) izsaka tā vibrēšanas biežumu. Jo ātrāk objekts vibrē, jo augstāks ir skaņas tonis. Science Journal skaņas intensitātes sensors nevar izmērīt frekvenci, var izmērīt tikai skaļumu. 
 
-Svarīgi zināt, ka jūsu ierīces mikrofons ir izveidots tā, lai tas būtu ļoti jutīgs pret skaņas viļņu atšķirībām noteiktā laika posmā, bet ne pret katra viļņa absolūto lielumu. Mēs mēģinājām izvēlēties kodu, kas, visticamāk, sniegs rādītājus, kuri ir līdzīgi tālāk minētajiem atsauces rādītājiem, bet katra ierīce var sniegt konsekventi augstākus vai zemākus rādītājus. Zinātnieki parasti kalibrē šādu sensoru, izmantojot zināmu mērījumu. Pagaidām lietotnē Science Journal var noteikt, vai brauciens ar vilcienu ir skaļāks par rokmūzikas koncertu, bet tikai tad, ja abās situācijas tiek izmantots viens un tas pats tālrunis.
+Svarīgi zināt, ka jūsu ierīces mikrofons ir izveidots tā, lai tas būtu ļoti jutīgs pret skaņas viļņu atšķirībām noteiktā laika posmā, bet ne pret katra viļņa absolūto lielumu. Mēs mēģinājām izvēlēties kodu, kas, visticamāk, sniegs rādītājus, kuri ir līdzīgi tālāk minētajiem atsauces rādītājiem, bet katra ierīce var sniegt konsekventi augstākus vai zemākus rādītājus. Zinātnieki parasti kalibrē šādu sensoru, izmantojot zināmu mērījumu. Pagaidām lietotnē Science Journal var noteikt, vai brauciens ar vilcienu ir skaļāks par rokmūzikas koncertu, bet tikai tad, ja abās situācijas tiek izmantots viens un tas pats tālrunis. 
 
-Vērts iegaumēt arī to, ka pastāv nozīmīgas atšķirības starp “skaņas intensitāti”, “skaņas intensitātes līmeni” un “skaņas spiedienu”. Šeit mēs pieņemam, ka šīs vērtības ir viena un tā pati lieta, bet, ja vēlaties uzzināt detalizētāku informāciju, pieejami daudzi tiešsaistes resursi par šīm atšķirībām.
+Vērts iegaumēt arī to, ka pastāv nozīmīgas atšķirības starp “skaņas intensitāti”, “skaņas intensitātes līmeni” un “skaņas spiedienu”. Šeit mēs pieņemam, ka šīs vērtības ir viena un tā pati lieta, bet, ja vēlaties uzzināt detalizētāku informāciju, pieejami daudzi tiešsaistes resursi par šīm atšķirībām. 
 
-Klusākā skaņa, ko var uztvert vidusmēra cilvēka auss, tiek pielīdzināta 0 dB vērtībai. Parastas sarunas skaļums atbilst aptuveni 60 dB, savukārt skaņas virs aptuveni 140 dB izraisa cilvēka ausī sāpju sajūtas. Kaitīga ietekme var būt ne tikai tām skaņām, kas izraisa sāpes. Ilgstoša atrašanās pat 90 dB skaņas ietekmē — strādājoša putekļsūcēja troksnis — var izraisīt paliekošu dzirdes zudumu.
+Klusākā skaņa, ko var uztvert vidusmēra cilvēka auss, tiek pielīdzināta 0 dB vērtībai. Parastas sarunas skaļums atbilst aptuveni 60 dB, savukārt skaņas virs aptuveni 140 dB izraisa cilvēka ausī sāpju sajūtas. Kaitīga ietekme var būt ne tikai tām skaņām, kas izraisa sāpes. Ilgstoša atrašanās pat 90 dB skaņas ietekmē — strādājoša putekļsūcēja troksnis — var izraisīt paliekošu dzirdes zudumu. 
 
-Decibelu skala ir logaritmiska — tas nozīmē, ka 40 dB skaņas avots ir nevis divreiz intensīvāks par 20 dB skaņu, bet gan 100 reizes lielāks. Ja modinātājpulkstenis zvana, radot 70 dB troksni, divi modinātājpulksteņi radīs nevis 140 dB, bet gan 73 dB troksni. Dīvaina skala, vai ne?
+Decibelu skala ir logaritmiska — tas nozīmē, ka 40 dB skaņas avots ir nevis divreiz intensīvāks par 20 dB skaņu, bet gan 100 reizes lielāks. Ja modinātājpulkstenis zvana, radot 70 dB troksni, divi modinātājpulksteņi radīs nevis 140 dB, bet gan 73 dB troksni. Dīvaina skala, vai ne? 
 
-10 dB lapu šalkoņa
-20 dB čukstēšana no 1,5 metru attāluma
-30 dB kluss čuksts
+10 dB lapu šalkoņa 
+20 dB čukstēšana no 1,5 metru attāluma 
+30 dB kluss čuksts 
 50 dB lietus
-60 dB normāla saruna
-90 dB blenderis
-100 dB automašīna bez trokšņu slāpētāja
-110 dB kliegšana ausī
-120 dB pērkons
-130 dB elektriskais urbis
+60 dB normāla saruna 
+90 dB blenderis 
+100 dB automašīna bez trokšņu slāpētāja 
+110 dB kliegšana ausī 
+120 dB pērkons 
+130 dB elektriskais urbis 
 140 dB lidmašīnas pacelšanās</string>
   <string name="sensor_desc_first_paragraph_pitch">Skaņas veido vibrācija. Piemēram, jūsu balss veidojas no rīkles balss saišu vibrācijām. Šīs vibrācijas rada augsta un zema gaisa spiediena zonu mainību, kas virzās uz āru — ļoti līdzīgi apļveida kustībai, ko rada dīķī iemests olis.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Visas skaņas var raksturot ar to frekvenci un intensitāti. Skaņas viļņa frekvence (jeb tonis) izsaka tā vibrēšanas biežumu. Jo ātrāk objekts vibrē, jo augstāks ir skaņas tonis. Šīs vibrācijas tiek mērītas hercos (Hz), kur viens hercs ir viens vibrācija sekundē.
+  <string name="sensor_desc_second_paragraph_pitch">Visas skaņas var raksturot ar to frekvenci un intensitāti. Skaņas viļņa frekvence (jeb tonis) izsaka tā vibrēšanas biežumu. Jo ātrāk objekts vibrē, jo augstāks ir skaņas tonis. Šīs vibrācijas tiek mērītas hercos (Hz), kur viens hercs ir viens vibrācija sekundē. 
 
-Cilvēki spēj dzirdēt skaņas diapazonā no 20 līdz 20 000 Hz. Klusākais klavieru taustiņš rada skaņu ar frekvenci 27,5 Hz, un skaļākais klavieru taustiņš rada skaņu ar frekvenci 4186,01 Hz.
+Cilvēki spēj dzirdēt skaņas diapazonā no 20 līdz 20 000 Hz. Klusākais klavieru taustiņš rada skaņu ar frekvenci 27,5 Hz, un skaļākais klavieru taustiņš rada skaņu ar frekvenci 4186,01 Hz. 
 
 Sarkanais punktiņš norāda uz to, cik tuvu reģistrētais tonis ir tuvākajai mūzikas notij. Ja tonis ir zemāks, punktiņš tiks rādīts pa kreisi. Ja tonis ir augstāks, sarkanais punktiņš tiks rādīts pa labi.</string>
   <string name="pitch_low_content_description">zems tonis</string>
@@ -255,22 +255,22 @@ Sarkanais punktiņš norāda uz to, cik tuvu reģistrētais tonis ir tuvākajai 
   <string name="pitch_sharper_than_flat_note_content_description">Par %3$s pustoņiem augstāks nekā %1$s bemols, %2$s. oktāva</string>
   <string name="pitch_sharper_than_sharp_note_content_description">Par %3$s pustoņiem augstāks nekā %1$s diēzs, %2$s. oktāva</string>
   <string name="pitch_high_content_description">augsts tonis</string>
-  <string name="sensor_desc_first_paragraph_rotation">Apgriezieni minūtē (RPM) ir biežuma rādītājs rotācijai ap fiksētu asi vienā minūtē.
+  <string name="sensor_desc_first_paragraph_rotation">Apgriezieni minūtē (RPM) ir biežuma rādītājs rotācijai ap fiksētu asi vienā minūtē. 
 
 Kad vēja rādītājs pagriežas, tas pagriež arī kodēšanas disku:</string>
   <string name="sensor_desc_second_paragraph_rotation">Tas rada gaismas un tumsas periodus sensorā, kuri lietotnē Science Journal tiek reģistrēti kā rotācija.</string>
-  <string name="sensor_desc_first_paragraph_raw">Šeit redzamie dati nāk no ārējā sensora saziņas ar jūsu tālruni, izmantojot Bluetooth savienojumu.
+  <string name="sensor_desc_first_paragraph_raw">Šeit redzamie dati nāk no ārējā sensora saziņas ar jūsu tālruni, izmantojot Bluetooth savienojumu. 
 
 Vērtība rāda neapstrādātā lasījuma procentus no mikrokontrolera. Parasti tie ir procenti no sprieguma krituma visā sensorā.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth ir bezvadu tehnoloģija, kas standarta datu apmaiņai izmanto radioviļņus īsos attālumos no fiksētajām un mobilajām ierīcēm.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Šeit redzamie dati nāk no ārējā sensora saziņas ar jūsu tālruni, izmantojot Bluetooth savienojumu.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth ir bezvadu tehnoloģija, kas standarta datu apmaiņai izmanto radioviļņus īsos attālumos no fiksētajām un mobilajām ierīcēm.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Lai gan ikdienā to neievērojam, mēs dzīvojam dziļa gaisa okeāna dibenā: Zemes atmosfērā, kuras augstums ir 40 kilometru (130 000 pēdu). Svaru, ar kuru šī gaisa masa iedarbojas uz mums no augšas, dēvē par atmosfēras spiedienu.
+  <string name="sensor_desc_first_paragraph_barometer">Lai gan ikdienā to neievērojam, mēs dzīvojam dziļa gaisa okeāna dibenā: Zemes atmosfērā, kuras augstums ir 40 kilometru (130 000 pēdu). Svaru, ar kuru šī gaisa masa iedarbojas uz mums no augšas, dēvē par atmosfēras spiedienu. 
 
 Jūras līmenī atmosfēras spiediens ir aptuveni 1 kg uz kvadrātcentimetru jeb aptuveni 590 kg uz parastu A4 formāta lapu.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Mēs šo milzīgo spiedienu neievērojam, jo esam pie tā pieraduši, taču tikko tas kaut nedaudz izmainās, piemēram, kāpjot kalnos vai lidojot lidmašīnā, mēs uzreiz to sajūtam. Atmosfēras spiediens arī svārstās, mainoties laika apstākļiem — samazinās vētrainā laikā un pie nestabilām gaisa plūsmām, bet pieaug, kad gaisa masas stabilizējas un debesis ir skaidras.
+  <string name="sensor_desc_second_paragraph_barometer">Mēs šo milzīgo spiedienu neievērojam, jo esam pie tā pieraduši, taču tikko tas kaut nedaudz izmainās, piemēram, kāpjot kalnos vai lidojot lidmašīnā, mēs uzreiz to sajūtam. Atmosfēras spiediens arī svārstās, mainoties laika apstākļiem — samazinās vētrainā laikā un pie nestabilām gaisa plūsmām, bet pieaug, kad gaisa masas stabilizējas un debesis ir skaidras. 
 
-Digitālais barometrs jūsu tālrunī mēra atmosfēras spiedienu hektopaskālos. (Hektopaskālā ir 100 paskāli, un paskāls ir vienu ņūtonu liels spēks, kas darbojas uz vienu kvadrātmetru lielu laukumu.) Iespējams, esat dzirdējis, ka laika prognozēs izmanto arī atmosfēras spiediena mērvienību milibārus — šī mērvienība ir līdzvērtīga hektopaskāliem.
+Digitālais barometrs jūsu tālrunī mēra atmosfēras spiedienu hektopaskālos. (Hektopaskālā ir 100 paskāli, un paskāls ir vienu ņūtonu liels spēks, kas darbojas uz vienu kvadrātmetru lielu laukumu.) Iespējams, esat dzirdējis, ka laika prognozēs izmanto arī atmosfēras spiediena mērvienību milibārus — šī mērvienība ir līdzvērtīga hektopaskāliem. 
 
 Jums droši vien rodas jautājums: kā tālrunis var noteikt spiedienu? Atmosfēras spiediena izmaiņas ir izmērāmas pat pie nelielām augstuma izmaiņām, piemēram, kāpjot pa kāpnēm. Līdz ar to digitālais barometrs tālrunī var noteikt jūsu atrašanās vietas izmaiņas, piemēram, kurā ēkas stāvā atrodaties, vai arī parādīt, vai braucat pa tilta augšējo vai apakšējo klāju.</string>
   <string name="run_review_activity_label">Pārskatīt</string>
@@ -334,29 +334,29 @@ Jums droši vien rodas jautājums: kā tālrunis var noteikt spiedienu? Atmosfē
 • Eksperimentu eksportēšana uz failu un importēšana uz citām ierīcēm.</string>
   <string name="listing_h_feature_3">
 • Fotoattēlu eksportēšana no eksperimenta.</string>
-  <string name="listing__description">Lietotne Science Journal ir bezmaksas digitālais zinātnisko darbu bloknots, ko piedāvā Google.
+  <string name="listing__description">Lietotne Science Journal ir bezmaksas digitālais zinātnisko darbu bloknots, ko piedāvā Google. 
+ 
+Neatkarīgi no tā, vai esat dabaszinātņu skolotājs vai veicat eksperimentus mājās hobija līmenī, šeit varat vienuviet uzglabāt piezīmes, fotoattēlus un novērojumus. Izmantojiet sava tālruņa sensorus, lai mērītu dažādas parādības, piemēram, gaismu, skaņu un kustību, un veidotu diagrammas, vai pievienojiet ārējos sensorus, izmantojot Bluetooth savienojumu, lai veiktu eksperimentus apkārtējā pasaulē. 
+ 
+Ar lietotni Science Journal varat veikt tālāk norādītās darbības. 
+• Mērīt gaismu, skaņu, paātrinājumu, gaisa spiedienu un vēl citus lielumus, izmantojot tālrunī iebūvētos sensorus. 
+• Veikt piezīmes un uzņemt fotoattēlus, lai dokumentētu savus zinātniskos eksperimentus. Drīzumā būs pieejami jauni piezīmju veidi! 
+• Veidot savienojumu ar ārējiem sensoriem, izmantojot atsevišķas Arduino un Vernier ierīces, kurās ir iespējota Bluetooth funkcija. 
+• Piekļūt eksperimentiem ierīcēs, izmantojot Google disku. 
+• Eksportēt ierakstītos sensoru datus kā CSV failus. 
+• Izveidot automatizētus aktivizētājus, lai ierakstītu datus un veiktu piezīmes. 
+• Izmantot skaņas signālus, lai dzirdētu, kad diagrammā notiek izmaiņas. 
+ 
+Lietotne Science Journal bez maksas ir pieejama šādās ierīcēs: Android, iPhone, iPad, kā arī saderīgās Chromebook ierīcēs. 
+ 
+Izglītojošas aktivitātes no mūsu partneriem: https://makingscience.withgoogle.com/science-journal/activities 
+Atbalsts: https://productforums.google.com/forum/#!forum/sciencejournal 
+Pieejams atvērtais pirmkods: https://github.com/google/science-journal 
 
-Neatkarīgi no tā, vai esat dabaszinātņu skolotājs vai veicat eksperimentus mājās hobija līmenī, šeit varat vienuviet uzglabāt piezīmes, fotoattēlus un novērojumus. Izmantojiet sava tālruņa sensorus, lai mērītu dažādas parādības, piemēram, gaismu, skaņu un kustību, un veidotu diagrammas, vai pievienojiet ārējos sensorus, izmantojot Bluetooth savienojumu, lai veiktu eksperimentus apkārtējā pasaulē.
-
-Ar lietotni Science Journal varat veikt tālāk norādītās darbības.
-• Mērīt gaismu, skaņu, paātrinājumu, gaisa spiedienu un vēl citus lielumus, izmantojot tālrunī iebūvētos sensorus.
-• Veikt piezīmes un uzņemt fotoattēlus, lai dokumentētu savus zinātniskos eksperimentus. Drīzumā būs pieejami jauni piezīmju veidi!
-• Veidot savienojumu ar ārējiem sensoriem, izmantojot atsevišķas Arduino un Vernier ierīces, kurās ir iespējota Bluetooth funkcija.
-• Piekļūt eksperimentiem ierīcēs, izmantojot Google disku.
-• Eksportēt ierakstītos sensoru datus kā CSV failus.
-• Izveidot automatizētus aktivizētājus, lai ierakstītu datus un veiktu piezīmes.
-• Izmantot skaņas signālus, lai dzirdētu, kad diagrammā notiek izmaiņas.
-
-Lietotne Science Journal bez maksas ir pieejama šādās ierīcēs: Android, iPhone, iPad, kā arī saderīgās Chromebook ierīcēs.
-
-Izglītojošas aktivitātes no mūsu partneriem: https://makingscience.withgoogle.com/science-journal/activities
-Atbalsts: https://productforums.google.com/forum/#!forum/sciencejournal
-Pieejams atvērtais pirmkods: https://github.com/google/science-journal
-
- Paziņojums par atļaujām.
-\u2022 Atrašanās vieta: nepieciešama, lai meklētu sensoru ierīces, izmantojot Bluetooth.
-\u2022 Kamera: nepieciešama, lai uzņemtu fotoattēlus eksperimentu dokumentēšanai.
-\u2022 Mikrofons: nepieciešams skaņas intensitātes sensoram.
+ Paziņojums par atļaujām. 
+\u2022 Atrašanās vieta: nepieciešama, lai meklētu sensoru ierīces, izmantojot Bluetooth. 
+\u2022 Kamera: nepieciešama, lai uzņemtu fotoattēlus eksperimentu dokumentēšanai. 
+\u2022 Mikrofons: nepieciešams skaņas intensitātes sensoram. 
 \u2022 Krātuve: nepieciešama, lai piekļūtu fotoattēliem, ko pievienot eksperimentiem.</string>
   <string name="third_party_sensors_option_title">Atrodiet ārējos sensorus</string>
   <string name="third_party_sensors_option_summary">Atrodiet lietotnes, kas atbalsta ārējo sensoru API un ļauj pievienot šos sensorus eksperimentiem.</string>
@@ -459,9 +459,9 @@ Pieejams atvērtais pirmkods: https://github.com/google/science-journal
   <string name="compass">Kompass</string>
   <string name="compass_units">grādi</string>
   <string name="sensor_desc_short_compass">Tālruņa orientācija, ņemot vērā Zemes magnētisko lauku.</string>
-  <string name="sensor_desc_first_paragraph_compass">Iespējams, jau zinājāt, ka Zemei ir magnētiskais lauks. Bet varbūt nezinājāt, ka jūsu tālrunī ir ierīce, kas ir paredzēta magnētisko lauku noteikšanai: magnetometrs. Apvienojot datus no tālruņa magnetometra ar tālruņa orientāciju telpā, var izveidot digitālo kompasu.
+  <string name="sensor_desc_first_paragraph_compass">Iespējams, jau zinājāt, ka Zemei ir magnētiskais lauks. Bet varbūt nezinājāt, ka jūsu tālrunī ir ierīce, kas ir paredzēta magnētisko lauku noteikšanai: magnetometrs. Apvienojot datus no tālruņa magnetometra ar tālruņa orientāciju telpā, var izveidot digitālo kompasu. 
 
-Vecmodīgais kompass ir primitīvs magnetometrs ar magnetizētu adatu, kas griežas, lai pielāgotos apkārtējam magnētiskajam laukam. Jūsu tālrunī nav kompasa, bet ir neliels trīs asu sensors, kas izmanto elektriskās strāvas, lai noteiktu magnētiskā lauka stiprumu telpā trīs dimensijās. Bet ar to vien nepietiek, lai izveidotu kompasu.
+Vecmodīgais kompass ir primitīvs magnetometrs ar magnetizētu adatu, kas griežas, lai pielāgotos apkārtējam magnētiskajam laukam. Jūsu tālrunī nav kompasa, bet ir neliels trīs asu sensors, kas izmanto elektriskās strāvas, lai noteiktu magnētiskā lauka stiprumu telpā trīs dimensijās. Bet ar to vien nepietiek, lai izveidotu kompasu. 
 
 Kādēļ kompasam ir jāapvieno dati no magnetometra ar tālruņa orientāciju? Zinot tālruņa orientāciju, var aprēķināt magnētisko rotāciju, pat ja tālrunis netiek turēts līdzeni vienā plaknē ar Zemes magnētisko lauku. Mēs zinām, ka gravitācija ir perpendikulāra Zemes magnētiskajam laukam, tādēļ varam izmantot gravitācijas virzienu no akselerometra sensoriem, lai noteiktu magnētiskā lauka lielumu, kas ir vienā plaknē ar Zemes magnētisko lauku.</string>
   <string name="sensor_desc_second_paragraph_compass">Iespējams, esat pamanījis, ka kompass reaģē ne tikai uz Zemes magnētisko lauku, bet arī uz visiem pārējiem apkārt esošajiem magnētiskajiem laukiem. Magnēti, elektriskā strāva un metāla objekti liek tālruņa magnetometra bultiņai kustēties dažādos virzienos, mainot kompasa rādījumu. Nostājieties atklātā vietā (vēlams brīvā dabā un tālu no elektrolīnijām), ja vēlaties pārliecināties, ka kompasa sarkanā bultiņa pielāgojas Zemes magnētiskajam laukam. Lai kalibrētu tālruņa magnetometru, tālruni var kustināt pa iedomātu astoņnieka trajektoriju.</string>
@@ -474,9 +474,9 @@ Kādēļ kompasam ir jāapvieno dati no magnetometra ar tālruņa orientāciju? 
   <string name="month_year_format">MMMM gggg</string>
   <string name="linear_accelerometer">Lineārais akselerometrs</string>
   <string name="sensor_desc_short_linear_acc">Tālruņa kopējais paātrinājums, izslēdzot gravitācijas spēku (m/s²)</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Objektiem ir tendence palikt uz vietas vai turpināt kustību, ja tie kustas, — mēs šo tendenci saucam par inerci. Ņūtona pirmais likums formulē šo ideju: katrs ķermenis paliek miera stāvoklī vai turpina vienmērīgu taisnvirziena kustību tikmēr, kamēr citu spēku iedarbība to neizmaina.
+  <string name="sensor_desc_first_paragraph_linear_acc">Objektiem ir tendence palikt uz vietas vai turpināt kustību, ja tie kustas, — mēs šo tendenci saucam par inerci. Ņūtona pirmais likums formulē šo ideju: katrs ķermenis paliek miera stāvoklī vai turpina vienmērīgu taisnvirziena kustību tikmēr, kamēr citu spēku iedarbība to neizmaina. 
 
-Kad uz ķermeni miera stāvoklī iedarbojas ārējs spēks, mēs sakām, ka objekts tiek paātrināts: tā ātrums mainās — palielinoties, samazinoties vai mainot virzienu. Paātrinājumu mēra kā ātruma izmaiņas laikā (metri sekundē) vai metrus kvadrātsekundē (m/s²).
+Kad uz ķermeni miera stāvoklī iedarbojas ārējs spēks, mēs sakām, ka objekts tiek paātrināts: tā ātrums mainās — palielinoties, samazinoties vai mainot virzienu. Paātrinājumu mēra kā ātruma izmaiņas laikā (metri sekundē) vai metrus kvadrātsekundē (m/s²). 
 
 Jūsu tālrunī ir ierīce kustības izmaiņu mērīšanai — akselerometrs. Akselerometrā mazas atsperotas masas var brīvi pārvietoties. Kustības izmaiņas liek šīm masām novirzīties, tāpat kā jūsu galva smagi sasveras uz priekšu, mašīnai strauji apstājoties. Mērot šīs mazās inerces novirzes, akselerometrs tālrunī var noteikt kustības un orientācijas izmaiņas, kas noder, lai ekrānā mainītu ainavas un portreta režīmu, tālrunī spēlētu spēles, kā arī citām funkcijām.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Apvienotā lineārā akselerometra sensors reģistrē kopējo paātrinājumu visās trīs tālruņa asīs, izslēdzot gravitāciju.</string>
@@ -499,7 +499,7 @@ Jūsu tālrunī ir ierīce kustības izmaiņu mērīšanai — akselerometrs. A
   <string name="first_experiment_title">Laipni lūdzam lietotnē Science Journal</string>
   <string name="first_experiment_text_note">Pievienojiet piezīmes un reģistrējiet datus, izmantojot tālāk pieejamo rīkjoslu.</string>
   <string name="first_experiment_picture_note_caption">Laipni lūdzam lietotnē Science Journal!</string>
-  <string name="first_experiment_second_text_note">Šeit varat atrast aktivitātes, ko izmēģināt:
+  <string name="first_experiment_second_text_note">Šeit varat atrast aktivitātes, ko izmēģināt: 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Izvēlieties eksperimenta fotoattēlu</string>
   <string name="btn_take_picture_content_description">Uzņemt fotoattēlu</string>
@@ -675,6 +675,7 @@ Ja jums šajā ierīcē jau ir dati, pēc pierakstīšanās savus eksperimentus 
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Science Journal no Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Pieteikšanās — jau veiktie eksperimenti</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -717,7 +718,7 @@ Ja jums šajā ierīcē jau ir dati, pēc pierakstīšanās savus eksperimentus 
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -738,8 +739,8 @@ Ja jums šajā ierīcē jau ir dati, pēc pierakstīšanās savus eksperimentus 
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -799,7 +800,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -832,7 +833,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -887,7 +888,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -901,4 +902,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

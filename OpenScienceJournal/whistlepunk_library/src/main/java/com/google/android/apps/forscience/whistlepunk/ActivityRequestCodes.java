@@ -12,5 +12,7 @@ public final class ActivityRequestCodes {
 
   public static final int REQUEST_ARDUINO_SIGN_IN = 9;
 
+  public static final int REQUEST_NEW_TERMS_ACTIVITY = 10;
+
   private ActivityRequestCodes() {}
 }

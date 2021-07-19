@@ -192,23 +192,23 @@
   <string name="sensor_desc_short_rotation">Број ротација у минуту</string>
   <string name="sensor_desc_short_raw">Проценат необрађених података очитаних са спољног сензора.</string>
   <string name="sensor_desc_short_barometer">Атмосферски притисак у хектопаскалима (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Сензор осветљености окружења мери светлост у луксима – то је мера осветљености која зависи од количине светлосног флукса и површине по којој се то светло шири.
+  <string name="sensor_desc_first_paragraph_light">Сензор осветљености окружења мери светлост у луксима – то је мера осветљености која зависи од количине светлосног флукса и површине по којој се то светло шири. 
 
-Пун месец даје отприлике 1 лукс осветљености, типична соба осветљена лампом око 50 лукса, залазак сунца око 400 лукса, дневна светлост (индиректна осветљеност) преко 10.000 лукса, а директна сунчева светлост преко 30.000 лукса.
+Пун месец даје отприлике 1 лукс осветљености, типична соба осветљена лампом око 50 лукса, залазак сунца око 400 лукса, дневна светлост (индиректна осветљеност) преко 10.000 лукса, а директна сунчева светлост преко 30.000 лукса. 
 
 Лукс је већини људи мање позната величина. Када купујемо сијалице, купујемо их по ватажи, али снага сијалице у ватима не показује колико осветљење сијалица даје, него само колико енергије троши. Лумени су боља мера за куповање сијалица, пошто показују колико светлости сијалица стварно производи. При том, лукс показује колико те светлости прима одређена површина.</string>
-  <string name="sensor_desc_second_paragraph_light">Пошто се светлост шири док се удаљава од извора, број лукса опада што сте удаљенији од извора светлости, иако извор непрестано емитује исту количину светлости у луменима. Површина која стоји косо у односу на извор светлости је такође мање осветљена, што је и разлог зашто су екваторијална подручја на планети много топлија од полова.
+  <string name="sensor_desc_second_paragraph_light">Пошто се светлост шири док се удаљава од извора, број лукса опада што сте удаљенији од извора светлости, иако извор непрестано емитује исту количину светлости у луменима. Површина која стоји косо у односу на извор светлости је такође мање осветљена, што је и разлог зашто су екваторијална подручја на планети много топлија од полова. 
 
 Уз то, намена сензора за светлост у телефону је да управља осветљеношћу екрана, тј. да је коригује у складу са осветљеношћу (или замраченошћу) околине. Сићушни полупроводник у сензору за светлост реагује на пристижуће светло тако што производи малу, али мерљиву, количину електричне струје – појава позната као фотоелектрични ефект. Слични сензори се користе у неким уличним лампама, да би их укључиле када се напољу смрачи.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Ваш телефон има уређај чија је улога да открива магнетна поља: магнетометар. Тај сићушни сензор са три осе користи електричне струје за откривање јачине магнетног поља у три димензије простора. Када искомбинујемо податке са све три осе, можемо да добијемо сензор укупне јачине магнетног поља.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Ваш телефон има уређај чија је улога да открива магнетна поља: магнетометар. Тај сићушни сензор са три осе користи електричне струје за откривање јачине магнетног поља у три димензије простора. Када искомбинујемо податке са све три осе, можемо да добијемо сензор укупне јачине магнетног поља. 
 
-Неки магнетометри откривају магнетна поља помоћу Холовог ефекта – одлике магнетних поља да одбијају наелектрисане честице које протичу кроз струјно коло. Новији магнетометри користе магнетоотпорнике, легуре метала које мењају отпор сходно околним магнетним пољима.
+Неки магнетометри откривају магнетна поља помоћу Холовог ефекта – одлике магнетних поља да одбијају наелектрисане честице које протичу кроз струјно коло. Новији магнетометри користе магнетоотпорнике, легуре метала које мењају отпор сходно околним магнетним пољима. 
 
 Шта ће телефону магнетометар? Знати како сте усмерени у простору је корисно за уграђени компас и апликације за навигацију, нарочито за оне које дају смернице по систему „скретање по скретање“.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Магнети, електричне струје и метални предмети ће лако померити магнетометар телефона у једном или другом смеру. Али чак и усред празног поља, магнетометар телефона увек показује малу вредност која није нула: то је Земљино магнетно поље!</string>
-  <string name="sensor_desc_first_paragraph_acc">Тела настоје да мирују или да наставе да крећу ако се већ крећу. Та особина се назива инерција. Та појава је дефинисана првим Њутновим законом: Свако тело остаје у стању релативног мировања или равномерног праволинијског кретања све док га деловање или дејство другог тела не присили да то стање промени.
+  <string name="sensor_desc_first_paragraph_acc">Тела настоје да мирују или да наставе да крећу ако се већ крећу. Та особина се назива инерција. Та појава је дефинисана првим Њутновим законом: Свако тело остаје у стању релативног мировања или равномерног праволинијског кретања све док га деловање или дејство другог тела не присили да то стање промени. 
 
-Када се дејством неке силе утиче на то да се тело помери, каже се да тело убрзава: мења му се брзина, било да се смањује или повећава, или му се мења смер. Убрзање се дефинише као промена брзине (метри у секунди) у јединици времена, односно по метрима у секунди на квадрат (m/s²).
+Када се дејством неке силе утиче на то да се тело помери, каже се да тело убрзава: мења му се брзина, било да се смањује или повећава, или му се мења смер. Убрзање се дефинише као промена брзине (метри у секунди) у јединици времена, односно по метрима у секунди на квадрат (m/s²). 
 
 Ваш телефон има уређај за мерење таквих промена кретања – акцелерометар. Унутар акцелерометра се налазе суспендована тела мале масе, која могу да се слободно крећу. Промене у кретању доводе до промене положаја тих тела – као што вам глава климне у колима која нагло закоче. Мерењем тих суптилних померања које изазива инерција, акцелерометар у телефону може да открива промене у кретању и оријентацији, што је корисно при пребацивању екрана у вертикални или хоризонтални режим, игрању игара на телефону и другим ситуацијама.</string>
   <string name="sensor_desc_second_paragraph_acc">Вероватно сте приметили постојано убрзање по Z оси, чак и док телефон непомично лежи на столу. То је убрзање које се осети на површини Земље због дејства гравитационе силе од око 9,8 m/s².</string>
@@ -229,8 +229,8 @@
 
 10 dB шуштање лишћа
 20 dB шапутање на 1,5 метар
-30 dB тих шапат
-50 dB киша
+30 dB тих шапат 
+50 dB киша 
 60 dB нормалан разговор
 90 dB блендер
 100 dB аутомобил без ауспуха
@@ -241,7 +241,7 @@
   <string name="sensor_desc_first_paragraph_pitch">Звукови настају вибрацијом. Ваш глас, на пример, настаје вибрацијом гласних жица у грлу. Тим вибрацијама се стварају наизменичне зоне високог и ниског ваздушног притиска које се шире около – као таласићи од камичка баченог у воду.</string>
   <string name="sensor_desc_second_paragraph_pitch">Сви звукови се могу описати помоћу своје фреквенције и интензитета. Фреквенција (односно висина звука или тон) звучног таласа је брзина којом предмет који га производи вибрира. Што брже предмет вибрира, то је висина произведеног звука већа. Те вибрације меримо у херцима (Hz), при чему је 1 херц = 1 вибрација у секунди.
 
-Људи чују звуке у опсегу од 20 до 20.000 Hz. Најнижа дирка на клавиру даје звук фреквенције 27,5 Hz, а највиша 4186,01 Hz.
+Људи чују звуке у опсегу од 20 до 20.000 Hz. Најнижа дирка на клавиру даје звук фреквенције 27,5 Hz, а највиша 4186,01 Hz. 
 
 Црвена тачка показује колико је откривена висина звука близу најближе музичке ноте. Ако је висина нижа, тачка ће бити лево. Ако је виша, црвена тачка ће бити десно.</string>
   <string name="pitch_low_content_description">мала висина тона</string>
@@ -255,22 +255,22 @@
   <string name="pitch_sharper_than_flat_note_content_description">%3$s полустепена виши од %1$s са снизилицом, октава %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s полустепена виши од %1$s са повисилицом, октава %2$s</string>
   <string name="pitch_high_content_description">велика висина тона</string>
-  <string name="sensor_desc_first_paragraph_rotation">Број обртаја у минуту (о/мин) је мера учесталости ротирања око непомичне осе у минуту.
+  <string name="sensor_desc_first_paragraph_rotation">Број обртаја у минуту (о/мин) је мера учесталости ротирања око непомичне осе у минуту. 
 
 Пропелер вашег сензора својим окретањем ротира диск кодера:</string>
   <string name="sensor_desc_second_paragraph_rotation">То ствара периоде светлости и таме на сензору, који се у Научном дневнику региструју као ротација.</string>
-  <string name="sensor_desc_first_paragraph_raw">Овде приказани подаци потичу од комуникације спољног сензора са телефоном преко Bluetooth-а.
+  <string name="sensor_desc_first_paragraph_raw">Овде приказани подаци потичу од комуникације спољног сензора са телефоном преко Bluetooth-а. 
 
 Вредност показује проценат необрађених података очитаних директно са микроконтролера. То је обично проценат пада напона на целом сензору.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth је стандард бежичне технологије који користи радио-таласе за краткодометну размену података са фиксних и мобилних уређаја.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Овде приказани подаци потичу од комуникације спољног сензора са телефоном преко Bluetooth-а.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth је стандард бежичне технологије који користи радио-таласе за краткодометну размену података са фиксних и мобилних уређаја.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Иако то ретко примећујемо, сви живимо на дну дубоког океана ваздуха – Земљине атмосфере, која се уздиже до висине од 40 километара. Тежина свег тог ваздуха који нас притиска ствара оно што зовемо атмосферским притиском.
+  <string name="sensor_desc_first_paragraph_barometer">Иако то ретко примећујемо, сви живимо на дну дубоког океана ваздуха – Земљине атмосфере, која се уздиже до висине од 40 километара. Тежина свег тог ваздуха који нас притиска ствара оно што зовемо атмосферским притиском. 
 
 На нивоу мора, атмосферски притисак износи 0,984 килограма по центиметру квадратном, односно око 590 кг по површини величине листа папира формата А4.</string>
-  <string name="sensor_desc_second_paragraph_barometer">То је огроман притисак, али га не примећујемо јер смо навикнути на њега, односно, све док се не промени макар мало, као на великим висинама или при лету авионом. Атмосферски притисак варира и зависно од временских услова – пада у присуству олујног, нестабилног ваздуха, а расте при стабилизацији времена и небу без облака.
+  <string name="sensor_desc_second_paragraph_barometer">То је огроман притисак, али га не примећујемо јер смо навикнути на њега, односно, све док се не промени макар мало, као на великим висинама или при лету авионом. Атмосферски притисак варира и зависно од временских услова – пада у присуству олујног, нестабилног ваздуха, а расте при стабилизацији времена и небу без облака. 
 
-Дигитални барометар у вашем телефону мери атмосферски притисак у хектопаскалима. (Хектопаскал је 100 паскала, а паскал је сила од једног њутна која делује на површину од једног квадратног метра.) На временској прогнози сте вероватно чули да се атмосферски притисак изражава у милибарима – притисак од једног милибара је исти као притисак од једног хектопаскала.
+Дигитални барометар у вашем телефону мери атмосферски притисак у хектопаскалима. (Хектопаскал је 100 паскала, а паскал је сила од једног њутна која делује на површину од једног квадратног метра.) На временској прогнози сте вероватно чули да се атмосферски притисак изражава у милибарима – притисак од једног милибара је исти као притисак од једног хектопаскала. 
 
 Можда сте се запитали: Зашто телефон мери притисак? Атмосферски притисак се осетно мења чак и при малим променама висине, нпр. при пењању уз степенице. Дигитални барометар у телефону тако може да вам помогне да уочите промену локације, на пример да вам покаже на ком сте спрату или да ли возите по горњој или доњој платформи моста.</string>
   <string name="run_review_activity_label">Преглед</string>
@@ -364,8 +364,8 @@
 
 
 
-Образовне активности наших партнера: https://makingscience.withgoogle.com/science-journal/activities
-Подршка: https://productforums.google.com/forum/#!forum/sciencejournal
+Образовне активности наших партнера: https://makingscience.withgoogle.com/science-journal/activities 
+Подршка: https://productforums.google.com/forum/#!forum/sciencejournal 
 
 
 
@@ -483,9 +483,9 @@
   <string name="compass">Компас</string>
   <string name="compass_units">степени</string>
   <string name="sensor_desc_short_compass">Оријентација телефона у односу на Земљино магнетно поље.</string>
-  <string name="sensor_desc_first_paragraph_compass">Вероватно већ знате да Земља има магнетно поље, али можда нисте знали да ваш телефон има уређај чија је улога да открива магнетна поља: магнетометар. Када искомбинујемо податке из магнетометра телефона са оријентацијом телефона у простору, можемо да направимо дигитални компас.
+  <string name="sensor_desc_first_paragraph_compass">Вероватно већ знате да Земља има магнетно поље, али можда нисте знали да ваш телефон има уређај чија је улога да открива магнетна поља: магнетометар. Када искомбинујемо податке из магнетометра телефона са оријентацијом телефона у простору, можемо да направимо дигитални компас. 
 
-Обичан компас је старински магнетометар са намагнетисаном иглом која се окреће да би се поравнала са околним магнетним пољем. Унутар телефона се не налази сићушан компас, него сићушан сензор са три осе који користи електричне струје да би открио снагу магнетног поља у три димензије простора. Али само то није довољно да би се добио компас!
+Обичан компас је старински магнетометар са намагнетисаном иглом која се окреће да би се поравнала са околним магнетним пољем. Унутар телефона се не налази сићушан компас, него сићушан сензор са три осе који користи електричне струје да би открио снагу магнетног поља у три димензије простора. Али само то није довољно да би се добио компас! 
 
 Зашто компас мора да комбинује податке из магнетометра са оријентацијом телефона? Познавање оријентације телефона нам омогућава да израчунамо магнетну ротацију чак и када телефон не држите положен у истој равни у којој се налази магнетно поље Земље. Знамо да је гравитација управна на магнетно поље Земље, зато можемо да користимо смер гравитације из сензора акцелерометра да бисмо одредили колико се магнетног поља налази у истој равни као магнетно поље Земље.</string>
   <string name="sensor_desc_second_paragraph_compass">Као што сте можда приметили, компас не реагује само на Земљино магнетно поље, него и на свако магнетно поље које се задеси у близини. Магнети, електричне струје и метални предмети ће лако померити магнетометар телефона у једном или другом смеру, услед чега ће се податак приказан на компасу променити. Ако желите да будете сигурни да је црвени врх вашег компаса поравнат са Земљиним магнетним пољем, треба да стојите негде на отвореном, најбоље напољу и далеко од електричних проводника. Да бисте избаждарили магнетометар у телефону, можете да померате телефон у облику броја 8.</string>
@@ -498,9 +498,9 @@
   <string name="month_year_format">ММММ гггг</string>
   <string name="linear_accelerometer">Линеарни акцелерометар</string>
   <string name="sensor_desc_short_linear_acc">Укупно убрзање телефона, без силе гравитације, у m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Тела настоје да мирују или да наставе да крећу ако се већ крећу. Та особина се назива инерција. Та појава је дефинисана првим Њутновим законом: Свако тело остаје у стању релативног мировања или равномерног праволинијског кретања све док га деловање или дејство другог тела не присили да то стање промени.
+  <string name="sensor_desc_first_paragraph_linear_acc">Тела настоје да мирују или да наставе да крећу ако се већ крећу. Та особина се назива инерција. Та појава је дефинисана првим Њутновим законом: Свако тело остаје у стању релативног мировања или равномерног праволинијског кретања све док га деловање или дејство другог тела не присили да то стање промени. 
 
-Када се дејством неке силе утиче на то да се тело помери, каже се да тело убрзава: мења му се брзина, било да се смањује или повећава, или му се мења смер. Убрзање се дефинише као промена брзине (метри у секунди) у јединици времена, односно по метрима у секунди на квадрат (m/s²).
+Када се дејством неке силе утиче на то да се тело помери, каже се да тело убрзава: мења му се брзина, било да се смањује или повећава, или му се мења смер. Убрзање се дефинише као промена брзине (метри у секунди) у јединици времена, односно по метрима у секунди на квадрат (m/s²). 
 
 Ваш телефон има уређај за мерење таквих промена кретања – акцелерометар. Унутар акцелерометра се налазе суспендована тела мале масе, која могу да се слободно крећу. Промене у кретању доводе до промене положаја тих тела – као што вам глава климне у колима која нагло закоче. Мерењем тих финих померања које изазива инерција, акцелерометар у телефону може да открива промене у кретању и оријентацији, што је корисно при пребацивању екрана у вертикални или хоризонтални режим, игрању игара на телефону и другим ситуацијама.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Комбиновани сензор линеарног акцелерометра бележи укупно убрзање у све три осе телефона, без гравитације.</string>
@@ -523,7 +523,7 @@
   <string name="first_experiment_title">Добро дошли у Научни дневник</string>
   <string name="first_experiment_text_note">Пробајте да водите белешке и бележите податке помоћу траке са алаткама у наставку!</string>
   <string name="first_experiment_picture_note_caption">Добро дошли у Научни дневник!</string>
-  <string name="first_experiment_second_text_note">Пронађите активности које ћете испробати на
+  <string name="first_experiment_second_text_note">Пронађите активности које ћете испробати на 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Изаберите слику експеримента</string>
   <string name="btn_take_picture_content_description">Сликање</string>
@@ -699,6 +699,7 @@ g.co/sciencejournalactivities</string>
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Научни дневник, Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Преузмите прошле експерименте</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -741,7 +742,7 @@ g.co/sciencejournalactivities</string>
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -762,8 +763,8 @@ g.co/sciencejournalactivities</string>
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -823,7 +824,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -856,7 +857,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -911,7 +912,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -925,4 +926,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Nombre de rotacions per minut</string>
   <string name="sensor_desc_short_raw">Percentatge de lectura de dades sense processar d\'un sensor extern.</string>
   <string name="sensor_desc_short_barometer">Pressió atmosfèrica en hectopascals (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">El sensor de llum ambiental mesura la llum en lux, una mesura d\'il·luminació que depèn de la quantitat de llum d\'entrada i de l\'àrea sobre la qual s\'estén.
+  <string name="sensor_desc_first_paragraph_light">El sensor de llum ambiental mesura la llum en lux, una mesura d\'il·luminació que depèn de la quantitat de llum d\'entrada i de l\'àrea sobre la qual s\'estén. 
 
-La lluna plena proporciona aproximadament 1 lux d\'il·luminació; un saló il·luminat normal, uns 50 lux; una aula il·luminada, l\'alba i la posta de sol, uns 400 lux; la llum del dia (sol indirecte), més de 10.000 lux; i el sol directe, més de 30.000 lux.
+La lluna plena proporciona aproximadament 1 lux d\'il·luminació; un saló il·luminat normal, uns 50 lux; una aula il·luminada, l\'alba i la posta de sol, uns 400 lux; la llum del dia (sol indirecte), més de 10.000 lux; i el sol directe, més de 30.000 lux. 
 
 El lux és una unitat desconeguda per a la majoria de nosaltres. Quan comprem bombetes, sovint ho fem en funció dels watts, però la potència elèctrica d\'una bombeta no en determina la brillantor, sinó que només indica la quantitat d\'energia que utilitza. Els lúmens són una mesura que ens pot resultar més útil a l\'hora de comprar bombetes, ja que indiquen la quantitat de llum que produeix realment una bombeta. D\'altra banda, els lux indiquen la quantitat de llum que arriba a una àrea concreta.</string>
-  <string name="sensor_desc_second_paragraph_light">Com que la llum es dispersa a mesura que viatja, el nombre de lux disminueix quan t\'allunyes d\'una font de llum, encara que aquesta continuï emetent la mateixa quantitat de llum en lúmens. Una àrea que estigui inclinada respecte d\'una font de llum també rep menys il·luminació, motiu pel qual les regions equatorials de la Terra són molt més càlides que els pols.
+  <string name="sensor_desc_second_paragraph_light">Com que la llum es dispersa a mesura que viatja, el nombre de lux disminueix quan t\'allunyes d\'una font de llum, encara que aquesta continuï emetent la mateixa quantitat de llum en lúmens. Una àrea que estigui inclinada respecte d\'una font de llum també rep menys il·luminació, motiu pel qual les regions equatorials de la Terra són molt més càlides que els pols. 
 
 La finalitat del sensor de llum del teu telèfon és controlar el nivell de llum de la pantalla i ajustar-lo en funció de la llum ambiental. A l\'interior del sensor de llum hi ha un petit semiconductor que respon a la llum d\'entrada produint un corrent elèctric petit però mesurable, fenomen que es coneix com a efecte fotoelèctric. En alguns fanals s\'utilitzen sensors similars perquè s\'encenguin quan es fa fosc.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">El teu telèfon conté un dispositiu dissenyat per detectar camps magnètics: un magnetòmetre. Aquest petit sensor de tres eixos fa servir corrents elèctrics per detectar la força del camp magnètic en les tres dimensions espacials. En combinar les dades d\'aquests tres eixos, podem crear un sensor que detecti la força del camp magnètic total.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">El teu telèfon conté un dispositiu dissenyat per detectar camps magnètics: un magnetòmetre. Aquest petit sensor de tres eixos fa servir corrents elèctrics per detectar la força del camp magnètic en les tres dimensions espacials. En combinar les dades d\'aquests tres eixos, podem crear un sensor que detecti la força del camp magnètic total. 
 
-Alguns magnetòmetres detecten camps magnètics mitjançant l\'efecte Hall, és a dir, la tendència dels camps magnètics a desviar una càrrega en moviment mentre flueix. Els magnetòmetres més moderns fan servir magnetoresistències, aliatges metàl·lics que canvien la seva resistència en funció dels camps magnètics.
+Alguns magnetòmetres detecten camps magnètics mitjançant l\'efecte Hall, és a dir, la tendència dels camps magnètics a desviar una càrrega en moviment mentre flueix. Els magnetòmetres més moderns fan servir magnetoresistències, aliatges metàl·lics que canvien la seva resistència en funció dels camps magnètics. 
 
 Per què un telèfon necessita un magnetòmetre? Conèixer l\'orientació del dispositiu en l\'espai és útil per a les brúixoles integrades i les aplicacions de navegació, especialment per a aquelles persones que volen rebre indicacions pas a pas.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Els imants, els corrents elèctrics i els objectes metàl·lics poden provocar que el magnetòmetre del telèfon es desviï cap a una direcció o cap a una altra. Però fins i tot al mig d\'un camp sense res, el magnetòmetre del telèfon sempre mostra una lectura baixa que mai no arriba a zero: és el camp magnètic de la Terra.</string>
-  <string name="sensor_desc_first_paragraph_acc">Els objectes tenen tendència a quedar-se quiets o bé a continuar en moviment si s\'estan movent: és el que anomenem principi d\'inèrcia. La primera llei de Newton expressa aquesta idea formalment: un objecte manté el seu estat de moviment o de repòs llevat que hi actuï una força desequilibradora.
+  <string name="sensor_desc_first_paragraph_acc">Els objectes tenen tendència a quedar-se quiets o bé a continuar en moviment si s\'estan movent: és el que anomenem principi d\'inèrcia. La primera llei de Newton expressa aquesta idea formalment: un objecte manté el seu estat de moviment o de repòs llevat que hi actuï una força desequilibradora. 
 
-Quan una força desequilibradora provoca que un objecte es desplaci, diem que l\'objecte accelera: la seva velocitat (o rapidesa) canvia, ja sigui perquè accelera, desaccelera o perquè canvia de direcció. L\'acceleració es mesura com un canvi de la velocitat en el temps, en metres per segon o en metres per segon al quadrat (m/s²).
+Quan una força desequilibradora provoca que un objecte es desplaci, diem que l\'objecte accelera: la seva velocitat (o rapidesa) canvia, ja sigui perquè accelera, desaccelera o perquè canvia de direcció. L\'acceleració es mesura com un canvi de la velocitat en el temps, en metres per segon o en metres per segon al quadrat (m/s²). 
 
 El teu telèfon té un dispositiu per mesurar aquests canvis en el moviment: un acceleròmetre. Dins de l\'acceleròmetre hi ha petites masses suspeses que tenen llibertat per moure\'s. Els canvis en el moviment provoquen que aquestes masses es desplacin, de la mateixa manera que el teu cap té tendència a caure endavant quan vas en un cotxe que frena de cop. Mesurant aquests desplaçaments subtils causats per la inèrcia, l\'acceleròmetre d\'un telèfon pot detectar canvis en el moviment i en l\'orientació, fet que resulta útil per canviar la pantalla del mode horitzontal al vertical, per jugar a videojocs al telèfon i molt més.</string>
   <string name="sensor_desc_second_paragraph_acc">Probablement has notat una acceleració persistent en l\'eix Z, fins i tot amb el telèfon sobre una taula. Aquesta és l\'acceleració que experimentem a la superfície de la Terra a causa de la força de la gravetat, d\'aproximadament 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Els sons els produeixen les vibracions. La teva veu, per exemple, prové de les vibracions de les cordes vocals de la gola. Aquestes vibracions creen zones alternes de pressió d\'aire alta i baixa que es desplacen cap a l\'exterior, de la mateixa manera que s\'expandeixen les ones produïdes en llançar una pedra a l\'aigua.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Tots els sons es poden descriure en termes de freqüència i intensitat.
+  <string name="sensor_desc_second_paragraph_decibel">Tots els sons es poden descriure en termes de freqüència i intensitat. 
 
-La intensitat és el que mesures amb el sensor d\'intensitat del so de Science Journal, expressada en decibels (dB). La intensitat, o el volum, depèn de la distància que recorre un objecte cada cop que vibra; com més alt és el volum, més intensitat sentim.
+La intensitat és el que mesures amb el sensor d\'intensitat del so de Science Journal, expressada en decibels (dB). La intensitat, o el volum, depèn de la distància que recorre un objecte cada cop que vibra; com més alt és el volum, més intensitat sentim. 
 
-La freqüència (també altura tonal o to) d\'una ona sonora equival a la velocitat de la vibració. Com més ràpid vibri un objecte, més alta serà l\'altura tonal del so resultant. El sensor d\'intensitat del so de Science Journal només mesura el volum, no la freqüència.
+La freqüència (també altura tonal o to) d\'una ona sonora equival a la velocitat de la vibració. Com més ràpid vibri un objecte, més alta serà l\'altura tonal del so resultant. El sensor d\'intensitat del so de Science Journal només mesura el volum, no la freqüència. 
 
-És important que tinguis en compte que el micròfon del teu dispositiu és molt sensible a les diferències de les ones sonores al llarg del temps, però no a la mida absoluta de cada ona. Hem triat un codi capaç de produir uns resultats semblants als de referència, que es mostren més avall. Tot i això, és possible que cada dispositiu doni, de manera sistemàtica, uns resultats més alts o baixos. Els científics calibren els sensors d\'aquest tipus en funció d\'una mesura coneguda. Ara per ara, Science Journal només pot dir-te si el pròxim viatge en tren és més sorollós que el pròxim concert de rock si portes el mateix telèfon a tots dos llocs.
+És important que tinguis en compte que el micròfon del teu dispositiu és molt sensible a les diferències de les ones sonores al llarg del temps, però no a la mida absoluta de cada ona. Hem triat un codi capaç de produir uns resultats semblants als de referència, que es mostren més avall. Tot i això, és possible que cada dispositiu doni, de manera sistemàtica, uns resultats més alts o baixos. Els científics calibren els sensors d\'aquest tipus en funció d\'una mesura coneguda. Ara per ara, Science Journal només pot dir-te si el pròxim viatge en tren és més sorollós que el pròxim concert de rock si portes el mateix telèfon a tots dos llocs. 
 
-Una altra cosa que cal saber és que hi ha diferències importants entre \"intensitat del so\", \"nivell d\'intensitat del so\" i \"pressió acústica\". Els tractem com si fossin el mateix, però si vols saber-ne més, a Internet trobaràs molta informació sobre les diferències.
+Una altra cosa que cal saber és que hi ha diferències importants entre \"intensitat del so\", \"nivell d\'intensitat del so\" i \"pressió acústica\". Els tractem com si fossin el mateix, però si vols saber-ne més, a Internet trobaràs molta informació sobre les diferències. 
 
-El so més baix que pot detectar l\'oïda humana es defineix com a 0 dB. Una conversa normal correspon a 60 dB, i els sons que superen els 140 dB causen dolor a l\'orella humana. Tot i això, els sons poden ser perjudicials encara que no causin dolor. L\'exposició contínua a sons superiors als 90 dB (d\'un volum aproximat al d\'una aspiradora) pot acabar causant pèrdua d\'audició.
+El so més baix que pot detectar l\'oïda humana es defineix com a 0 dB. Una conversa normal correspon a 60 dB, i els sons que superen els 140 dB causen dolor a l\'orella humana. Tot i això, els sons poden ser perjudicials encara que no causin dolor. L\'exposició contínua a sons superiors als 90 dB (d\'un volum aproximat al d\'una aspiradora) pot acabar causant pèrdua d\'audició. 
 
-L\'escala de decibels és logarítmica, cosa que pot generar confusions: una font sonora de 40 dB no és el doble d\'intensa que una de 20 dB, sinó que és 100 vegades més intensa. D\'altra banda, si l\'alarma d\'un despertador produeix 70 dB, les alarmes de dos despertadors no produeixen 140 dB, sinó 73 dB. Com ja hem dit, es tracta d\'una escala peculiar.
+L\'escala de decibels és logarítmica, cosa que pot generar confusions: una font sonora de 40 dB no és el doble d\'intensa que una de 20 dB, sinó que és 100 vegades més intensa. D\'altra banda, si l\'alarma d\'un despertador produeix 70 dB, les alarmes de dos despertadors no produeixen 140 dB, sinó 73 dB. Com ja hem dit, es tracta d\'una escala peculiar. 
 
-Remor de fulles: 10 dB
-Xiuxiueig a 1,5 metres: 20 dB
-Xiuxiueig suau: 30 dB
-Pluja: 50 dB
-Conversa normal: 60 dB
-Batedora: 90 dB
-Cotxe sense silenciador: 100 dB
-Crit a l\'orella: 110 dB
-Tro: 120 dB
-Trepant amb percussor: 130 dB
+Remor de fulles: 10 dB 
+Xiuxiueig a 1,5 metres: 20 dB 
+Xiuxiueig suau: 30 dB 
+Pluja: 50 dB 
+Conversa normal: 60 dB 
+Batedora: 90 dB 
+Cotxe sense silenciador: 100 dB 
+Crit a l\'orella: 110 dB 
+Tro: 120 dB 
+Trepant amb percussor: 130 dB 
 Avió enlairant-se: 140 dB</string>
   <string name="sensor_desc_first_paragraph_pitch">Els sons els produeixen les vibracions. La teva veu, per exemple, prové de les vibracions de les cordes vocals de la gola. Aquestes vibracions creen zones alternes de pressió d\'aire alta i baixa que es desplacen cap a l\'exterior, de la mateixa manera que s\'expandeixen les ones produïdes en llançar una pedra a l\'aigua.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Tots els sons es poden descriure en termes de freqüència i intensitat. La freqüència (també altura tonal o to) d\'una ona sonora equival a la velocitat de la vibració. Com més ràpid vibri un objecte, més alta serà l\'altura tonal del so resultant. Mesurem aquestes vibracions en hertzs (Hz): 1 hertz = 1 vibració/segon.
+  <string name="sensor_desc_second_paragraph_pitch">Tots els sons es poden descriure en termes de freqüència i intensitat. La freqüència (també altura tonal o to) d\'una ona sonora equival a la velocitat de la vibració. Com més ràpid vibri un objecte, més alta serà l\'altura tonal del so resultant. Mesurem aquestes vibracions en hertzs (Hz): 1 hertz = 1 vibració/segon. 
 
-L\'oïda humana pot detectar sons d\'entre 20 i 20.000 Hz. La tecla més greu d\'un piano produeix un so amb una freqüència de 27,5 Hz i la tecla més aguda, un so de 4.186,01 Hz.
+L\'oïda humana pot detectar sons d\'entre 20 i 20.000 Hz. La tecla més greu d\'un piano produeix un so amb una freqüència de 27,5 Hz i la tecla més aguda, un so de 4.186,01 Hz. 
 
 El punt vermell indica la distància entre l\'altura tonal detectada i la nota musical més propera. Si l\'altura tonal detectada és més greu (bemoll), el punt es mostra a l\'esquerra. En canvi, si és més aguda (sostingut), el punt es mostra a la dreta.</string>
   <string name="pitch_low_content_description">greu</string>
@@ -255,22 +255,22 @@ El punt vermell indica la distància entre l\'altura tonal detectada i la nota m
   <string name="pitch_sharper_than_flat_note_content_description">%3$s semitons més agut que un %1$s bemoll, %2$sa octava</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s semitons més agut que un %1$s sostingut, %2$sa octava</string>
   <string name="pitch_high_content_description">agut</string>
-  <string name="sensor_desc_first_paragraph_rotation">Les rotacions per minut (RPM) indiquen la freqüència de rotació al voltant d\'un eix fix en un minut.
+  <string name="sensor_desc_first_paragraph_rotation">Les rotacions per minut (RPM) indiquen la freqüència de rotació al voltant d\'un eix fix en un minut. 
 
 A mesura que gira el molinet de vent, també ho fa el disc del codificador:</string>
   <string name="sensor_desc_second_paragraph_rotation">Això crea períodes de llum i de foscor en el sensor que es registren a Science Journal com una rotació.</string>
-  <string name="sensor_desc_first_paragraph_raw">Les dades que es mostren aquí provenen de la comunicació d\'un sensor extern amb el teu telèfon per Bluetooth.
+  <string name="sensor_desc_first_paragraph_raw">Les dades que es mostren aquí provenen de la comunicació d\'un sensor extern amb el teu telèfon per Bluetooth. 
 
 El valor mostra el percentatge de la lectura de dades sense processar directament des del microcontrolador. Aquest sol ser el percentatge d\'una caiguda de tensió en un sensor.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth és un estàndard de tecnologia sense fils que fa servir ones de ràdio per intercanviar dades de dispositius fixos i mòbils a través de distàncies curtes.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Les dades que es mostren aquí provenen de la comunicació d\'un sensor extern amb el teu telèfon per Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth és un estàndard de tecnologia sense fils que fa servir ones de ràdio per intercanviar dades de dispositius fixos i mòbils a través de distàncies curtes.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Tot i que poques vegades ho notem, vivim en el fons d\'un profund oceà d\'aire: l\'atmosfera de la Terra, que té una altura de 40 quilòmetres (130.000 peus). El pes de tot l\'aire que des de dalt ens empeny cap avall crea el que s\'anomena \"pressió atmosfèrica\".
+  <string name="sensor_desc_first_paragraph_barometer">Tot i que poques vegades ho notem, vivim en el fons d\'un profund oceà d\'aire: l\'atmosfera de la Terra, que té una altura de 40 quilòmetres (130.000 peus). El pes de tot l\'aire que des de dalt ens empeny cap avall crea el que s\'anomena \"pressió atmosfèrica\". 
 
 Al nivell del mar, la pressió atmosfèrica aplica una força de 6,35 kilograms en 6,45 centímetres quadrats, que equival aproximadament a 590 kilograms en una àrea de la mida d\'un full de paper.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Com que hi estem acostumats, no ens adonem d\'aquesta forta pressió fins que canvia, encara que sigui lleugerament, com quan anem a zones amb altituds elevades o quan viatgem amb avió. La pressió atmosfèrica també canvia segons les condicions climàtiques: disminueix amb l\'aire inestable d\'una tempesta i augmenta quan l\'aire s\'estabilitza i el cel s\'asserena.
+  <string name="sensor_desc_second_paragraph_barometer">Com que hi estem acostumats, no ens adonem d\'aquesta forta pressió fins que canvia, encara que sigui lleugerament, com quan anem a zones amb altituds elevades o quan viatgem amb avió. La pressió atmosfèrica també canvia segons les condicions climàtiques: disminueix amb l\'aire inestable d\'una tempesta i augmenta quan l\'aire s\'estabilitza i el cel s\'asserena. 
 
-El baròmetre digital del teu telèfon mesura la pressió atmosfèrica en hectopascals (un hectopascal equival a 100 pascals, i un pascal és un newton de força aplicat sobre una àrea d\'un metre quadrat). Probablement has sentit que els meteoròlegs donen la pressió atmosfèrica en mil·libars, una unitat més fàcil de pronunciar que equival als hectopascals.
+El baròmetre digital del teu telèfon mesura la pressió atmosfèrica en hectopascals (un hectopascal equival a 100 pascals, i un pascal és un newton de força aplicat sobre una àrea d\'un metre quadrat). Probablement has sentit que els meteoròlegs donen la pressió atmosfèrica en mil·libars, una unitat més fàcil de pronunciar que equival als hectopascals. 
 
 Potser et preguntes per què un telèfon mesura la pressió. La pressió atmosfèrica canvia considerablement, fins i tot amb petits canvis en l\'elevació, per exemple, quan puges un tram d\'escales. Per tant, el baròmetre digital del telèfon t\'ajuda a detectar canvis en la ubicació i et permet saber, per exemple, en quin pis de l\'edifici ets o si estàs passant per sobre o per sota d\'un pont.</string>
   <string name="run_review_activity_label">Revisió</string>
@@ -482,9 +482,9 @@ Avís de permisos:
   <string name="compass">Brúixola</string>
   <string name="compass_units">graus</string>
   <string name="sensor_desc_short_compass">L\'orientació del telèfon respecte al camp magnètic de la Terra.</string>
-  <string name="sensor_desc_first_paragraph_compass">Probablement ja sàpigues que la Terra té un camp magnètic. El que potser encara no saps és que el teu telèfon conté un dispositiu dissenyat per detectar camps magnètics: un magnetòmetre. Si es combinen les dades del magnetòmetre amb l\'orientació del telèfon en l\'espai, podem crear una brúixola digital.
+  <string name="sensor_desc_first_paragraph_compass">Probablement ja sàpigues que la Terra té un camp magnètic. El que potser encara no saps és que el teu telèfon conté un dispositiu dissenyat per detectar camps magnètics: un magnetòmetre. Si es combinen les dades del magnetòmetre amb l\'orientació del telèfon en l\'espai, podem crear una brúixola digital. 
 
-Una brúixola clàssica és un magnetòmetre de baixa tecnologia, amb una agulla magnetitzada que gira per alinear-se amb el camp magnètic que l\'envolta. Dins del teu telèfon no hi ha cap brúixola en miniatura, però sí que hi ha un petit sensor de tres eixos que fa servir corrents elèctrics per detectar la força del camp magnètic en les tres dimensions espacials. Però amb això no n\'hi ha prou per crear una brúixola!
+Una brúixola clàssica és un magnetòmetre de baixa tecnologia, amb una agulla magnetitzada que gira per alinear-se amb el camp magnètic que l\'envolta. Dins del teu telèfon no hi ha cap brúixola en miniatura, però sí que hi ha un petit sensor de tres eixos que fa servir corrents elèctrics per detectar la força del camp magnètic en les tres dimensions espacials. Però amb això no n\'hi ha prou per crear una brúixola! 
 
 Per què cal que la brúixola combini les dades del magnetòmetre amb l\'orientació del telèfon? Conèixer l\'orientació del telèfon ens permet calcular la rotació magnètica, encara que el telèfon no estigui pla respecte al camp magnètic de la Terra. Com que sabem que la gravetat és perpendicular al camp magnètic de la Terra, podem fer servir la direcció de la gravetat juntament amb els sensors de l\'acceleròmetre per determinar quina proporció del camp magnètic està en el mateix pla que el camp magnètic de la Terra.</string>
   <string name="sensor_desc_second_paragraph_compass">Com ja et deus haver adonat, la brúixola respon no només al camp magnètic de la Terra, sinó també a qualsevol camp magnètic que hi hagi a prop. Els imants, els corrents elèctrics i els objectes metàl·lics poden provocar que el magnetòmetre del telèfon es desviï cap a una direcció o cap a una altra i que la lectura de la brúixola variï. Per assegurar-te que la punta vermella de la teva brúixola estigui alineada amb el camp magnètic de la Terra, situa\'t en un espai obert (preferiblement a l\'exterior i lluny de les xarxes d\'alimentació). Per calibrar el magnetòmetre, et pot ajudar moure el telèfon en forma de 8.</string>
@@ -497,9 +497,9 @@ Per què cal que la brúixola combini les dades del magnetòmetre amb l\'orienta
   <string name="month_year_format">MMMM aaaa</string>
   <string name="linear_accelerometer">Acceleròmetre lineal</string>
   <string name="sensor_desc_short_linear_acc">L\'acceleració total del telèfon, exclosa la força de la gravetat, en m/s².</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Els objectes tenen tendència a quedar-se quiets o bé a continuar en moviment si s\'estan movent: és el que anomenem principi d\'inèrcia. La primera llei de Newton expressa aquesta idea formalment: un objecte manté el seu estat de moviment o de repòs llevat que hi actuï una força desequilibradora.
+  <string name="sensor_desc_first_paragraph_linear_acc">Els objectes tenen tendència a quedar-se quiets o bé a continuar en moviment si s\'estan movent: és el que anomenem principi d\'inèrcia. La primera llei de Newton expressa aquesta idea formalment: un objecte manté el seu estat de moviment o de repòs llevat que hi actuï una força desequilibradora. 
 
-Quan una força desequilibradora provoca que un objecte es desplaci, diem que l\'objecte accelera: la seva velocitat (o rapidesa) canvia, ja sigui perquè accelera, desaccelera o perquè canvia de direcció. L\'acceleració es mesura com un canvi de la velocitat en el temps, en metres per segon o en metres per segon al quadrat (m/s²).
+Quan una força desequilibradora provoca que un objecte es desplaci, diem que l\'objecte accelera: la seva velocitat (o rapidesa) canvia, ja sigui perquè accelera, desaccelera o perquè canvia de direcció. L\'acceleració es mesura com un canvi de la velocitat en el temps, en metres per segon o en metres per segon al quadrat (m/s²). 
 
 El teu telèfon té un dispositiu per mesurar aquests canvis en el moviment: un acceleròmetre. Dins de l\'acceleròmetre hi ha petites masses suspeses que tenen llibertat per moure\'s. Els canvis en el moviment provoquen que aquestes masses es desplacin, de la mateixa manera que el teu cap té tendència a caure endavant quan vas en un cotxe que frena de cop. Mesurant aquests desplaçaments subtils causats per la inèrcia, l\'acceleròmetre d\'un telèfon pot detectar canvis en el moviment i en l\'orientació, fet que resulta útil per canviar la pantalla del mode horitzontal al vertical, per jugar a videojocs al telèfon i molt més.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">El sensor de l\'acceleròmetre lineal combinat enregistra l\'acceleració total en els tres eixos del telèfon, exclosa la gravetat.</string>
@@ -522,7 +522,7 @@ El teu telèfon té un dispositiu per mesurar aquests canvis en el moviment: un 
   <string name="first_experiment_title">Et donem la benvinguda a Science Journal</string>
   <string name="first_experiment_text_note">Prova de prendre notes i gravar dades amb la barra d\'eines que hi ha a més avall.</string>
   <string name="first_experiment_picture_note_caption">Et donem la benvinguda a Science Journal!</string>
-  <string name="first_experiment_second_text_note">Troba activitats per fer a
+  <string name="first_experiment_second_text_note">Troba activitats per fer a 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Tria una foto de l\'experiment</string>
   <string name="btn_take_picture_content_description">Fes una foto</string>
@@ -694,6 +694,7 @@ Si tens dades en aquest dispositiu, inicia la sessió per desar els teus experim
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Science Journal de Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Reclama experiments anteriors</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -736,7 +737,7 @@ Si tens dades en aquest dispositiu, inicia la sessió per desar els teus experim
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -757,8 +758,8 @@ Si tens dades en aquest dispositiu, inicia la sessió per desar els teus experim
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -818,7 +819,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -851,7 +852,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -906,7 +907,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -920,4 +921,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

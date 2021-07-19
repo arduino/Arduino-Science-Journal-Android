@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Fordulatok száma percenként</string>
   <string name="sensor_desc_short_raw">Külső érzékelőből származó nyers mért adat százaléka.</string>
   <string name="sensor_desc_short_barometer">A légköri nyomás mértékegysége a hektopascal (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">A környezeti fény érzékelője luxban méri a fényt – ez a megvilágítás mértékegysége, amelynek értéke az egységnyi felületre beeső fény mennyiségének függvénye.
+  <string name="sensor_desc_first_paragraph_light">A környezeti fény érzékelője luxban méri a fényt – ez a megvilágítás mértékegysége, amelynek értéke az egységnyi felületre beeső fény mennyiségének függvénye. 
 
-A telihold nagyjából 1 lux, egy lámpával megvilágított átlagos nappali nagyjából 50 lux, egy tanterem világítása, a napfelkelte és a naplemente nagyjából 400 lux, a nappali (szórt) fény több mint 10 000 lux, a közvetlen napfény pedig több mint 30 000 lux megvilágítást biztosít.
+A telihold nagyjából 1 lux, egy lámpával megvilágított átlagos nappali nagyjából 50 lux, egy tanterem világítása, a napfelkelte és a naplemente nagyjából 400 lux, a nappali (szórt) fény több mint 10 000 lux, a közvetlen napfény pedig több mint 30 000 lux megvilágítást biztosít. 
 
 A luxot a mindennapi életben a legtöbben nem használjuk. Izzóvásárláskor legtöbbször a wattban megadott teljesítményt nézzük – pedig ez a jellemző nem ad tájékoztatást az izzó fényerejéről, csak arról, hogy mennyi energiát használ fel. A lumen már pontosabb képet ad, ha világítási beszerzésről van szó, azt adja meg ugyanis, hogy az izzó ténylegesen mennyi fényt bocsát ki. A lux ezzel szemben azt, hogy ebből a fényből mennyi érkezik be egy adott felületre.</string>
-  <string name="sensor_desc_second_paragraph_light">Mivel a fény, ahogy halad, egyre jobban szétoszlik, a luxban mért érték egyre kisebb, ahogy a fényforrástól távolodunk – annak ellenére, hogy a forrás lumenben mérve továbbra is ugyanazt a fénymennyiséget bocsátja ki. A fényforráshoz képest ferdén álló felületek szintén kisebb megvilágítást kapnak – ez az oka például annak is, hogy Földünkön az egyenlítői területek annyival melegebbek a fagyos pólusoknál.
+  <string name="sensor_desc_second_paragraph_light">Mivel a fény, ahogy halad, egyre jobban szétoszlik, a luxban mért érték egyre kisebb, ahogy a fényforrástól távolodunk – annak ellenére, hogy a forrás lumenben mérve továbbra is ugyanazt a fénymennyiséget bocsátja ki. A fényforráshoz képest ferdén álló felületek szintén kisebb megvilágítást kapnak – ez az oka például annak is, hogy Földünkön az egyenlítői területek annyival melegebbek a fagyos pólusoknál. 
 
 A telefonodban található fényérzékelő feladata egyébként az, hogy a képernyő fényerejét a automatikusan a sötétebb vagy világosabb környezeti fényviszonyokhoz igazítsa. A fényérzékelőben egy apró félvezető reagál a beeső fényre azáltal, hogy kicsiny, de mérhető elektromos áramot gerjeszt – ezt fotoelektromos hatásnak hívjuk. Hasonló érzékelők működnek egyes utcalámpákban is: ha odakint besötétedik, a lámpák felkapcsolódnak.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">A telefonodban működik egy olyan eszköz, amely észlelni tudja a mágneses mezőket: ezt magnetométernek hívjuk. Ez egy apró, háromtengelyű érzékelő, amely elektromos áramok segítségével észleli a mágneses mezők erejét a tér három dimenziójában. A három tengelyről származó adatok összegzésével a teljes mágneses mező erejét mérő érzékelő hozható létre.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">A telefonodban működik egy olyan eszköz, amely észlelni tudja a mágneses mezőket: ezt magnetométernek hívjuk. Ez egy apró, háromtengelyű érzékelő, amely elektromos áramok segítségével észleli a mágneses mezők erejét a tér három dimenziójában. A három tengelyről származó adatok összegzésével a teljes mágneses mező erejét mérő érzékelő hozható létre. 
 
-Egyes magnetométerek a mágneses tereket azáltal észlelik, hogy a mágneses terek eltérítik a mozgásban lévő töltéseket – ezt a jelenséget Hall-effektusnak hívjuk. Az újabb magnetométerek mágneses ellenállásokat használnak, vagyis olyan fémötvözeteket, amelyek mágneses mezők hatására megváltoztatják az ellenállásukat.
+Egyes magnetométerek a mágneses tereket azáltal észlelik, hogy a mágneses terek eltérítik a mozgásban lévő töltéseket – ezt a jelenséget Hall-effektusnak hívjuk. Az újabb magnetométerek mágneses ellenállásokat használnak, vagyis olyan fémötvözeteket, amelyek mágneses mezők hatására megváltoztatják az ellenállásukat. 
 
 Miért van szükség egy telefonban magnetométerre? A térben felvett irányunk ismerete hasznos a beépített iránytű- és navigációs alkalmazások számára, különösen azok esetében, amelyek célja, hogy részletes, kanyaronkénti útmutatást adjanak a felhasználónak.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">A mágnesek, az elektromos áram és a fémtárgyak könnyedén eltérítik telefonod magnetométerét. A telefonodban lévő magnetométer ugyanakkor még egy üres mező kellős közepén is mindig mutat egy alacsony, nullától különböző értéket: ez a Föld mágneses terének hatása!</string>
-  <string name="sensor_desc_first_paragraph_acc">A tárgyak egy helyben, vagy ha mozognak, mozgásban maradnak – ezt tehetetlenségnek hívjuk. Newton első törvénye formálisan is megfogalmazza ezt a tételt: minden test megmarad a mozgás állapotában, vagy megtartja nyugalmi állapotát, míg valamilyen kiegyenlítetlen erő nem hat rá.
+  <string name="sensor_desc_first_paragraph_acc">A tárgyak egy helyben, vagy ha mozognak, mozgásban maradnak – ezt tehetetlenségnek hívjuk. Newton első törvénye formálisan is megfogalmazza ezt a tételt: minden test megmarad a mozgás állapotában, vagy megtartja nyugalmi állapotát, míg valamilyen kiegyenlítetlen erő nem hat rá. 
 
-Ha valamilyen kiegyenlítetlen erő kimozdítja a testet ebből az állapotából, akkor a test gyorsulásáról beszélünk: a sebessége változik – vagy nagyobb, vagy kisebb lesz, vagy megváltozik az iránya. A gyorsulást a sebesség (méter per szekundum) időbeli változásaként, vagyis méter per szekundumnégyzet (m/s²) mértékegységben határozzuk meg.
+Ha valamilyen kiegyenlítetlen erő kimozdítja a testet ebből az állapotából, akkor a test gyorsulásáról beszélünk: a sebessége változik – vagy nagyobb, vagy kisebb lesz, vagy megváltozik az iránya. A gyorsulást a sebesség (méter per szekundum) időbeli változásaként, vagyis méter per szekundumnégyzet (m/s²) mértékegységben határozzuk meg. 
 
 A telefonodban működik egy olyan eszköz, amellyel a mozgásnak ezek a változásai mérhetők: ez a gyorsulásmérő. Ebben a szerkezetben kis felfüggesztett tömegek szabad mozgásra képesek. A mozgásban bekövetkező változások ezeket a tömegeket elmozdulásra késztetik, hasonlóképpen ahhoz, mint amikor a fejünk egy hirtelen fékező autóban előrebillen. Ezeknek a tehetetlenségből adódó apró kis elmozdulásoknak a mérésével a telefonban működő gyorsulásmérő képes a mozgás gyorsaságában és irányában bekövetkező változások észlelésére, amelynek segítségével például fekvőből állóra tudja állítani a képernyőt, vagy különféle telefonos játékokat tesz lehetővé.</string>
   <string name="sensor_desc_second_paragraph_acc">Valószínűleg neked is feltűnt, hogy a Z-tengely irányában egy állandó gyorsulás mutatkozik, még akkor is, ha a telefonod le van rakva az asztalra. Ez a Föld felszínén érzékelhető nehézségi gyorsulás, amit a gravitáció okoz, nagysága körülbelül 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">A hangokat rezgések okozzák. Az emberi hang például a torkunkban lévő hangszálak rezgése révén keletkezik. Ezek a rezgések váltakozóan nagyobb és kisebb nyomású rétegeket hoznak létre a levegőben, amely nyomáseltérés a forrástól távolodik – nagyon hasonlóan ahhoz, mint amikor a tóba dobott kavics egyre táguló körkörös hullámokat képez.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Minden hang leírható a frekvenciájával és az intenzitásával.
+  <string name="sensor_desc_second_paragraph_decibel">Minden hang leírható a frekvenciájával és az intenzitásával. 
 
-Az intenzitást a Science Journal hangintenzitás-érzékelőjével mérjük, mértékegysége a decibel (dB). Az intenzitás vagy hangosság a rezgő test által az egyes rezgések során megtett távolság függvénye – a nagyobb intenzitást hangosabbnak észleljük.
+Az intenzitást a Science Journal hangintenzitás-érzékelőjével mérjük, mértékegysége a decibel (dB). Az intenzitás vagy hangosság a rezgő test által az egyes rezgések során megtett távolság függvénye – a nagyobb intenzitást hangosabbnak észleljük. 
 
-A hanghullám frekvenciája (más néven hangmagassága) a rezgés gyorsaságának felel meg. Minél gyorsabban rezeg egy test, annál magasabb, vagyis nagyobb frekvenciájú hangot képez. A Science Journal hangintenzitás-érzékelője nem mér frekvenciát, csak hangosságot.
+A hanghullám frekvenciája (más néven hangmagassága) a rezgés gyorsaságának felel meg. Minél gyorsabban rezeg egy test, annál magasabb, vagyis nagyobb frekvenciájú hangot képez. A Science Journal hangintenzitás-érzékelője nem mér frekvenciát, csak hangosságot. 
 
-A készüléked mikrofonjával kapcsolatos egyik fontos tudnivaló, hogy a hanghullámok időbeli változására rendkívül érzékeny, viszont az egyes hullámok abszolút méretére nem. Próbáltunk olyan kódot választani, amely nagy valószínűséggel az alábbi referenciaértékekhez hasonló értékeket eredményez, de az egyes készülékek következetesen magasabb vagy alacsonyabb értékeket jelezhetnek. A tudósok általában egy ismert értékhez kalibrálják a hasonló szenzorokat. Jelenleg a Science Journal csak annak a megállapítására képes, hogy a következő vonatutad nagyobb hangerővel jár-e, mint a következő rockkoncerted, de csak akkor, ha mindkét helyzetben nálad van ugyanaz a telefon.
+A készüléked mikrofonjával kapcsolatos egyik fontos tudnivaló, hogy a hanghullámok időbeli változására rendkívül érzékeny, viszont az egyes hullámok abszolút méretére nem. Próbáltunk olyan kódot választani, amely nagy valószínűséggel az alábbi referenciaértékekhez hasonló értékeket eredményez, de az egyes készülékek következetesen magasabb vagy alacsonyabb értékeket jelezhetnek. A tudósok általában egy ismert értékhez kalibrálják a hasonló szenzorokat. Jelenleg a Science Journal csak annak a megállapítására képes, hogy a következő vonatutad nagyobb hangerővel jár-e, mint a következő rockkoncerted, de csak akkor, ha mindkét helyzetben nálad van ugyanaz a telefon. 
 
-Egy másik fontos tudnivaló, hogy a „hang intenzitása”, „a hangerősség szintje” és a „hangnyomás” számos fontos dologban különbözik egymástól. Itt úgy kezeljük őket, mintha ugyanarra vonatkoznának, de ha mélyrehatóbban szeretnéd tanulmányozni a kérdést, számos internetes forrásból tájékozódhatsz a különbségeket illetően.
+Egy másik fontos tudnivaló, hogy a „hang intenzitása”, „a hangerősség szintje” és a „hangnyomás” számos fontos dologban különbözik egymástól. Itt úgy kezeljük őket, mintha ugyanarra vonatkoznának, de ha mélyrehatóbban szeretnéd tanulmányozni a kérdést, számos internetes forrásból tájékozódhatsz a különbségeket illetően. 
 
-Az átlagos emberi fül által észlelhető leghalkabb hang meghatározás szerint 0 dB. A mindennapi beszélgetések nagyjából 60 dB-nek felelnek meg, és körülbelül 140 dB az a határ, amelynél erősebb hangok már fájdalmat okoznak az emberi fülnek. De nemcsak a fájdalmas hangok lehetnek károsak. Már az is halláskárosodást okozhat, ha valaki folyamatosan 90 dB-es – körülbelül egy porszívó hangosságának megfelelő – hangoknak van kitéve.
+Az átlagos emberi fül által észlelhető leghalkabb hang meghatározás szerint 0 dB. A mindennapi beszélgetések nagyjából 60 dB-nek felelnek meg, és körülbelül 140 dB az a határ, amelynél erősebb hangok már fájdalmat okoznak az emberi fülnek. De nemcsak a fájdalmas hangok lehetnek károsak. Már az is halláskárosodást okozhat, ha valaki folyamatosan 90 dB-es – körülbelül egy porszívó hangosságának megfelelő – hangoknak van kitéve. 
 
-A decibel-skála logaritmikus, ami egy kicsit megbonyolítja a dolgokat: egy 40 dB-es hangforrás nem kétszer olyan erős, mint egy 20 dB-es – hanem 100-szor olyan erős. Ugyanakkor, ha egy csörgő ébresztőóra intenzitása 70 dB, akkor két csörgő ébresztőóráé nem 140 dB, hanem 73 dB. Amint említettük, fura egy skála.
+A decibel-skála logaritmikus, ami egy kicsit megbonyolítja a dolgokat: egy 40 dB-es hangforrás nem kétszer olyan erős, mint egy 20 dB-es – hanem 100-szor olyan erős. Ugyanakkor, ha egy csörgő ébresztőóra intenzitása 70 dB, akkor két csörgő ébresztőóráé nem 140 dB, hanem 73 dB. Amint említettük, fura egy skála. 
 
-10 dB: zörgő avar
-20 dB: suttogás 1,5 méterről
-30 dB: halk suttogás
-50 dB: eső
-60 dB: átlagos beszélgetés
-90 dB: turmixgép
-100 dB: kipufogódob nélküli autó
-110 dB: fülbe kiabálás
-120 dB: mennydörgés
-130 dB: légkalapács
+10 dB: zörgő avar 
+20 dB: suttogás 1,5 méterről 
+30 dB: halk suttogás 
+50 dB: eső 
+60 dB: átlagos beszélgetés 
+90 dB: turmixgép 
+100 dB: kipufogódob nélküli autó 
+110 dB: fülbe kiabálás 
+120 dB: mennydörgés 
+130 dB: légkalapács 
 140 dB: felszálló repülőgép</string>
   <string name="sensor_desc_first_paragraph_pitch">A hangokat rezgések okozzák. Az emberi hang például a torkunkban lévő hangszálak rezgése révén keletkezik. Ezek a rezgések váltakozóan nagyobb és kisebb nyomású rétegeket hoznak létre a levegőben, amely nyomáseltérés a forrástól távolodik – nagyon hasonlóan ahhoz, mint amikor a tóba dobott kavics egyre táguló körkörös hullámokat képez.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Minden hang leírható a frekvenciájával és az intenzitásával. A hanghullám frekvenciája (más néven hangmagassága) a rezgés gyorsaságának felel meg. Minél gyorsabban rezeg egy test, annál magasabb, vagyis nagyobb frekvenciájú hangot képez. Ezeket a rezgéseket hertzben (Hz) mérjük, ahol 1 hertz = 1 rezgés/másodperc.
+  <string name="sensor_desc_second_paragraph_pitch">Minden hang leírható a frekvenciájával és az intenzitásával. A hanghullám frekvenciája (más néven hangmagassága) a rezgés gyorsaságának felel meg. Minél gyorsabban rezeg egy test, annál magasabb, vagyis nagyobb frekvenciájú hangot képez. Ezeket a rezgéseket hertzben (Hz) mérjük, ahol 1 hertz = 1 rezgés/másodperc. 
 
-Az emberi fül a 20–20 000 Hz-es tartományban hallja a hangokat. A zongora legmélyebb hangjának frekvenciája 27,5 Hz, a legmagasabbé pedig 4186,01 Hz.
+Az emberi fül a 20–20 000 Hz-es tartományban hallja a hangokat. A zongora legmélyebb hangjának frekvenciája 27,5 Hz, a legmagasabbé pedig 4186,01 Hz. 
 
 A piros pont mutatja, mennyire van közel az érzékelt hangmagasság a hozzá legközelebb eső hangjegyhez. Ha a hang alacsonyabb, a piros pont a bal oldalon jelenik meg, ha pedig magasabb, akkor a jobb oldalon.</string>
   <string name="pitch_low_content_description">lefelé módosított hang</string>
@@ -255,22 +255,22 @@ A piros pont mutatja, mennyire van közel az érzékelt hangmagasság a hozzá l
   <string name="pitch_sharper_than_flat_note_content_description">%3$s fél hanggal magasabb, mint %1$sb, %2$s. oktáv</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s fél hanggal magasabb, mint %1$s#, %2$s. oktáv</string>
   <string name="pitch_high_content_description">felfelé módosított hang</string>
-  <string name="sensor_desc_first_paragraph_rotation">A percenkénti fordulatszám (ford./perc) a fix tengely körüli forgások egy perc alatti gyakoriságának mértékegysége.
+  <string name="sensor_desc_first_paragraph_rotation">A percenkénti fordulatszám (ford./perc) a fix tengely körüli forgások egy perc alatti gyakoriságának mértékegysége. 
 
 A szélforgód a forgómozgásával megforgatja a kódolótárcsát:</string>
   <string name="sensor_desc_second_paragraph_rotation">Az érzékelő ezt fényes és sötét periódusok sorozataként észleli, amit a Science Journal forgásként rögzít.</string>
-  <string name="sensor_desc_first_paragraph_raw">Az itt megjelenített adatok egy olyan külső érzékelőtől érkeznek, amelyik Bluetooth-on keresztül kommunikál a telefonoddal.
+  <string name="sensor_desc_first_paragraph_raw">Az itt megjelenített adatok egy olyan külső érzékelőtől érkeznek, amelyik Bluetooth-on keresztül kommunikál a telefonoddal. 
 
 Az érték a mikrokontrolleredről származó nyers adat százalékos értékét mutatja. Ez általában az érzékelő feszültségesésének százalékát jelenti.</string>
   <string name="sensor_desc_second_paragraph_raw">A Bluetooth egy vezeték nélkül technológiai szabvány, amelynek révén rádióhullámok segítségével kis távolságban adatcsere bonyolítható le fix és mobileszközök között.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Az itt megjelenített adatok egy olyan külső érzékelőtől érkeznek, amelyik Bluetooth-on keresztül kommunikál a telefonoddal.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">A Bluetooth egy vezeték nélkül technológiai szabvány, amelynek révén rádióhullámok segítségével kis távolságban adatcsere bonyolítható le fix és mobileszközök között.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Habár ritkán gondolunk rá, mindannyian a levegő mély óceánjának alján élünk: ez a Föld légköre, amely 40 kilométer magas. A felülről ránk nehezedő összes levegő súlyát nevezzük légköri nyomásnak.
+  <string name="sensor_desc_first_paragraph_barometer">Habár ritkán gondolunk rá, mindannyian a levegő mély óceánjának alján élünk: ez a Föld légköre, amely 40 kilométer magas. A felülről ránk nehezedő összes levegő súlyát nevezzük légköri nyomásnak. 
 
 A légköri nyomás tengerszinten 96526,6 newton négyzetméterenként – ez körülbelül 5782,6 newtonnak felel meg egy normál méretű papírlapon.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Mivel megszoktuk, észre se vesszük ezt a hatalmas nyomást – egészen addig, amíg meg nem változik, akár kis mértékben is, mint amikor például magasan fekvő területre látogatunk, vagy repülőgépen utazunk. A légköri nyomás az időjárási körülményekkel is változik: viharos időben, légköri instabilitás mellett csökken, a felhőzet eltűnésével és a légkör stabilizálódásával pedig emelkedik.
+  <string name="sensor_desc_second_paragraph_barometer">Mivel megszoktuk, észre se vesszük ezt a hatalmas nyomást – egészen addig, amíg meg nem változik, akár kis mértékben is, mint amikor például magasan fekvő területre látogatunk, vagy repülőgépen utazunk. A légköri nyomás az időjárási körülményekkel is változik: viharos időben, légköri instabilitás mellett csökken, a felhőzet eltűnésével és a légkör stabilizálódásával pedig emelkedik. 
 
-A telefonodban lévő digitális barométer hektopascalban méri a légköri nyomást. (Egy hektopascal 100 pascalnak felel meg, ahol egy pascal egy newton nagyságú erő egy négyzetméter nagyságú területre kifejtve.) Biztosan hallottad már, amikor az időjárás-jelentésben millibarban adják meg a légköri nyomást – ez a barátságosabban hangzó mértékegység a hektopascal megfelelője.
+A telefonodban lévő digitális barométer hektopascalban méri a légköri nyomást. (Egy hektopascal 100 pascalnak felel meg, ahol egy pascal egy newton nagyságú erő egy négyzetméter nagyságú területre kifejtve.) Biztosan hallottad már, amikor az időjárás-jelentésben millibarban adják meg a légköri nyomást – ez a barátságosabban hangzó mértékegység a hektopascal megfelelője. 
 
 Felmerül a kérdés: mi értelme annak, hogy egy telefon mérje a nyomást? A légköri nyomás a magasság kis mértékű emelkedésekor is mérhetően változik, például olyankor is, ha felmegyünk a lépcsőn. Vagyis a telefonba helyezett digitális barométer segít a helyváltoztatás észlelésében: megtudhatod például, hogy egy épület melyik emeletén tartózkodsz, vagy hogy egy híd felső vagy alsó pályáján haladsz-e éppen.</string>
   <string name="run_review_activity_label">Ellenőrzés</string>
@@ -482,9 +482,9 @@ Szükséges engedélyek:
   <string name="compass">Iránytű</string>
   <string name="compass_units">fok</string>
   <string name="sensor_desc_short_compass">A telefon tájolása a Föld mágneses teréhez viszonyítva.</string>
-  <string name="sensor_desc_first_paragraph_compass">Valószínűleg nem újdonság a számodra, hogy a Földnek mágneses tere van. Azt viszont lehet, hogy még nem tudod, hogy a telefonodban működik egy olyan eszköz, amely észlelni tudja a mágneses mezőket: ezt magnetométernek hívjuk. A telefonod magnetométeréből származó adatoknak a telefon térbeli tájolásával való kombinációjával digitális iránytű hozható létre.
+  <string name="sensor_desc_first_paragraph_compass">Valószínűleg nem újdonság a számodra, hogy a Földnek mágneses tere van. Azt viszont lehet, hogy még nem tudod, hogy a telefonodban működik egy olyan eszköz, amely észlelni tudja a mágneses mezőket: ezt magnetométernek hívjuk. A telefonod magnetométeréből származó adatoknak a telefon térbeli tájolásával való kombinációjával digitális iránytű hozható létre. 
 
-A klasszikus iránytűk tulajdonképpen korai technológiát alkalmazó magnetométerek, amelyeknek mágnesezett tűje mindig úgy fordul, hogy felvegye a környező mágneses tér irányát. A telefonodban persze nem miniatűr iránytű van, hanem egy apró háromtengelyű érzékelő, amely elektromos áram segítségével észleli a mágneses mezők erejét a tér három dimenziójában. Ez azonban önmagában még nem elég ahhoz, hogy iránytűt hozzunk létre.
+A klasszikus iránytűk tulajdonképpen korai technológiát alkalmazó magnetométerek, amelyeknek mágnesezett tűje mindig úgy fordul, hogy felvegye a környező mágneses tér irányát. A telefonodban persze nem miniatűr iránytű van, hanem egy apró háromtengelyű érzékelő, amely elektromos áram segítségével észleli a mágneses mezők erejét a tér három dimenziójában. Ez azonban önmagában még nem elég ahhoz, hogy iránytűt hozzunk létre. 
 
 Miért kell az iránytűnek kombinálnia a magnetométerből származó adatokat a telefon tájolásával? A telefon tájolásának ismeretében még akkor is ki lehet számítani a mágneses forgás értékét, ha a telefon a Föld mágneses mezőjének síkjára nem vízszintesen helyezkedik el. Tudjuk, hogy a gravitáció merőlegesen hat a Föld mágneses mezőjére, így a gyorsulásmérő érzékelőiből származó és a gravitáció irányára vonatkozó információt felhasználhatjuk arra, hogy meghatározzuk, a mágneses mező milyen mértékben helyezkedik el a Föld mágneses mezőjével azonos síkban.</string>
   <string name="sensor_desc_second_paragraph_compass">Ahogy az már talán neked is feltűnt, a telefonodban lévő iránytű nem csupán a Föld mágneses terére reagál, hanem minden mágneses mezőre, amelybe belekerül. A mágnesek, az elektromos áram és a fémtárgyak könnyedén eltérítik telefonod magnetométerét, ami miatt megváltozik az iránytű állása. Ha azt szeretnéd, hogy a magnetométer piros hegye valóban a Föld mágneses mezőjének irányában helyezkedjen el, állj nyílt területre, lehetőleg a szabad ég alatt, de magasfeszültségű vezetékektől távol. Telefonod magnetométerének kalibrálásához mozgasd a telefonodat 8-as alakzatban.</string>
@@ -497,9 +497,9 @@ Miért kell az iránytűnek kombinálnia a magnetométerből származó adatokat
   <string name="month_year_format">ÉÉÉÉ hhhh</string>
   <string name="linear_accelerometer">Lineáris gyorsulásmérő</string>
   <string name="sensor_desc_short_linear_acc">A telefon teljes gyorsulása a gravitációs erő nélkül, m/s²-ben</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">A tárgyak egy helyben maradnak, vagy ha mozognak, mozgásban maradnak – ezt tehetetlenségnek hívjuk. Newton első törvénye formálisan is megfogalmazza ezt a tételt: minden test megmarad a mozgás állapotában, vagy megtartja nyugalmi állapotát, míg valamilyen kiegyenlítetlen erő nem hat rá.
+  <string name="sensor_desc_first_paragraph_linear_acc">A tárgyak egy helyben maradnak, vagy ha mozognak, mozgásban maradnak – ezt tehetetlenségnek hívjuk. Newton első törvénye formálisan is megfogalmazza ezt a tételt: minden test megmarad a mozgás állapotában, vagy megtartja nyugalmi állapotát, míg valamilyen kiegyenlítetlen erő nem hat rá. 
 
-Ha valamilyen kiegyenlítetlen erő kimozdítja a testet ebből az állapotából, akkor a test gyorsulásáról beszélünk: a sebessége változik – vagy nagyobb, vagy kisebb lesz, vagy megváltozik az iránya. A gyorsulást a sebesség (méter per szekundum) időbeli változásaként, vagyis méter per szekundumnégyzet (m/s²) mértékegységben határozzuk meg.
+Ha valamilyen kiegyenlítetlen erő kimozdítja a testet ebből az állapotából, akkor a test gyorsulásáról beszélünk: a sebessége változik – vagy nagyobb, vagy kisebb lesz, vagy megváltozik az iránya. A gyorsulást a sebesség (méter per szekundum) időbeli változásaként, vagyis méter per szekundumnégyzet (m/s²) mértékegységben határozzuk meg. 
 
 A telefonodban működik egy olyan eszköz, amellyel a mozgásnak ezek a változásai mérhetők: ez a gyorsulásmérő. Ebben a szerkezetben kis felfüggesztett tömegek szabad mozgásra képesek. A mozgásban bekövetkező változások ezeket a tömegeket elmozdulásra késztetik, hasonlóképpen ahhoz, mint amikor a fejünk egy hirtelen fékező autóban előrebillen. Ezeknek a tehetetlenségből adódó apró kis elmozdulásoknak a mérésével a telefonban működő gyorsulásmérő képes a mozgás gyorsaságában és irányában bekövetkező változások észlelésére, amelynek segítségével például fekvőből állóra tudja állítani a képernyőt, vagy különféle telefonos játékokat tesz lehetővé stb.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">A kombinált lineáris gyorsulásmérő érzékelő a telefon mindhárom tengelyén rögzíti a teljes gyorsulást (a gravitációs erő nélkül).</string>
@@ -522,7 +522,7 @@ A telefonodban működik egy olyan eszköz, amellyel a mozgásnak ezek a változ
   <string name="first_experiment_title">Üdvözlünk a Science Journal alkalmazásban</string>
   <string name="first_experiment_text_note">Próbáld ki jegyzetek készítését és az adatrögzítést az alábbi eszköztár segítségével!</string>
   <string name="first_experiment_picture_note_caption">Üdvözlünk a Science Journal alkalmazásban!</string>
-  <string name="first_experiment_second_text_note">Keress kipróbálható tevékenységeket itt:
+  <string name="first_experiment_second_text_note">Keress kipróbálható tevékenységeket itt: 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Fotó kiválasztása a kísérlethez</string>
   <string name="btn_take_picture_content_description">Fényképezés</string>
@@ -695,6 +695,7 @@ Ha már vannak adatok az eszközön, a bejelentkezést követően elmentheted a 
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Science Journal a Google-tól</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Múltbeli kísérletek követelése</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -737,7 +738,7 @@ Ha már vannak adatok az eszközön, a bejelentkezést követően elmentheted a 
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -758,8 +759,8 @@ Ha már vannak adatok az eszközön, a bejelentkezést követően elmentheted a 
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -819,7 +820,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -852,7 +853,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -907,7 +908,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -921,4 +922,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

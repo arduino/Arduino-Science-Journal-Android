@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">O número de rotações por minuto</string>
   <string name="sensor_desc_short_raw">A porcentagem da leitura bruta de um sensor externo.</string>
   <string name="sensor_desc_short_barometer">A pressão atmosférica medida em hectopascais (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">O sensor de luz do ambiente mede a luz em lux, uma medida que depende da quantidade de luz recebida e da área em que ela se expande.
+  <string name="sensor_desc_first_paragraph_light">O sensor de luz do ambiente mede a luz em lux, uma medida que depende da quantidade de luz recebida e da área em que ela se expande. 
 
-A lua cheia emite cerca de 1 lux de luz, uma lâmpada comum em uma sala emite cerca de 50 luxes, as lâmpadas em uma sala de aula, o pôr e o nascer do sol emitem cerca de 400 luxes, a luz do dia (luz solar indireta) emite mais de 10.000 luxes e a luz solar direta emite mais de 30.000 luxes.
+A lua cheia emite cerca de 1 lux de luz, uma lâmpada comum em uma sala emite cerca de 50 luxes, as lâmpadas em uma sala de aula, o pôr e o nascer do sol emitem cerca de 400 luxes, a luz do dia (luz solar indireta) emite mais de 10.000 luxes e a luz solar direta emite mais de 30.000 luxes. 
 
 Lux é uma unidade de medida desconhecida pela maioria das pessoas. Quando compramos lâmpadas, geralmente escolhemos por potência em watts. Essa potência revela somente quanta energia uma lâmpada usa e não o quão brilhante ela é. Lúmens são mais úteis na compra de lâmpadas, já que mostram quanta luz uma lâmpada realmente produz. Lux, no entanto, mostra quanto dessa luz alcança determinada área.</string>
-  <string name="sensor_desc_second_paragraph_light">Como a luz se propaga conforme ela se movimenta, o número de lux diminui conforme você se distancia da origem de luz, mesmo se ela ainda emitir a mesma quantidade de luz em lúmens. Uma área distante verticalmente de uma origem de luz também recebe menos luz. É por isso que as regiões equatoriais da Terra são mais quentes que os polos.
+  <string name="sensor_desc_second_paragraph_light">Como a luz se propaga conforme ela se movimenta, o número de lux diminui conforme você se distancia da origem de luz, mesmo se ela ainda emitir a mesma quantidade de luz em lúmens. Uma área distante verticalmente de uma origem de luz também recebe menos luz. É por isso que as regiões equatoriais da Terra são mais quentes que os polos. 
 
 Por sinal, o objetivo do sensor de luz em seu smartphone é controlar o nível de luz da tela, ajustando-o de acordo com os ambientes mais claros e mais escuros. Dentro do sensor de luz, um pequeno semicondutor responde à luz recebida ao produzir uma corrente elétrica pequena, mas mensurável: um fenômeno conhecido como efeito fotoelétrico. Sensores semelhantes são usados em algumas lâmpadas de rua para ativá-las quando escurece.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Seu smartphone contém um dispositivo capaz de detectar os campos magnéticos. O nome dele é magnetômetro, ou seja, um sensor de três eixos que usa correntes elétricas para detectar a força do campo magnético nas três dimensões do espaço. Ao combinar dados dos três eixos, é possível criar um sensor da força de todo o campo magnético.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Seu smartphone contém um dispositivo capaz de detectar os campos magnéticos. O nome dele é magnetômetro, ou seja, um sensor de três eixos que usa correntes elétricas para detectar a força do campo magnético nas três dimensões do espaço. Ao combinar dados dos três eixos, é possível criar um sensor da força de todo o campo magnético. 
 
-Alguns magnetômetros detectam campos magnéticos usando o efeito Hall, ou seja, a tendência que os campos magnéticos têm de desviar uma carga móvel à medida que ela flui. Os magnetômetros mais modernos contam com magnetorresistores, ligas de metal que alteram sua própria resistência como resposta aos campos magnéticos.
+Alguns magnetômetros detectam campos magnéticos usando o efeito Hall, ou seja, a tendência que os campos magnéticos têm de desviar uma carga móvel à medida que ela flui. Os magnetômetros mais modernos contam com magnetorresistores, ligas de metal que alteram sua própria resistência como resposta aos campos magnéticos. 
 
 Mas por que smartphones precisam de magnetômetros? Saber sua orientação no espaço é útil para apps de bússola integrada e de navegação, principalmente os que indicam trajetos passo a passo.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Ímãs, correntes elétricas e objetos de metal também influenciam o magnetômetro do seu smartphone, mas, mesmo em uma área aberta e longe de linhas de energia, ele mostra uma leitura de valor baixo e diferente de zero que representa o campo magnético da Terra.</string>
-  <string name="sensor_desc_first_paragraph_acc">Os objetos têm a tendência de permanecerem inertes ou de continuarem a se mover se já estiverem em movimento. Isso é chamado de inércia. A Primeira Lei de Newton expressa essa ideia formalmente: um objeto continua no estado de repouso ou de movimento a menos que seja forçado a mudar de estado por forças aplicadas a ele.
+  <string name="sensor_desc_first_paragraph_acc">Os objetos têm a tendência de permanecerem inertes ou de continuarem a se mover se já estiverem em movimento. Isso é chamado de inércia. A Primeira Lei de Newton expressa essa ideia formalmente: um objeto continua no estado de repouso ou de movimento a menos que seja forçado a mudar de estado por forças aplicadas a ele. 
 
-Quando uma força causa o movimento de um objeto, dizemos que o objeto acelera: a velocidade dele muda ao aumentar, diminuir ou mudar de direção. A aceleração é medida como uma mudança na velocidade (metros por segundo) durante um período ou metros por segundo ao quadrado (m/s²).
+Quando uma força causa o movimento de um objeto, dizemos que o objeto acelera: a velocidade dele muda ao aumentar, diminuir ou mudar de direção. A aceleração é medida como uma mudança na velocidade (metros por segundo) durante um período ou metros por segundo ao quadrado (m/s²). 
 
 Existe em seu smartphone um dispositivo para medir essas alterações de movimento: um acelerômetro. Dentro de um acelerômetro, pequenas massas suspensas se movem. Mudanças no movimento causam uma variação nessas massas, da mesma forma que sua cabeça se move quando você está dentro de um carro que freia inesperadamente. Por medir essas variações sutis de inércia, um acelerômetro em um smartphone pode detectar alterações no movimento e na orientação, o que é útil para alternar entre os modos retrato e paisagem da tela, para jogar em seu smartphone e muito mais.</string>
   <string name="sensor_desc_second_paragraph_acc">Você provavelmente notou uma aceleração permanente no eixo Z, mesmo com o smartphone parado sobre uma mesa. Essa é a aceleração que nós sentimos aqui na superfície da Terra por causa da tração da gravidade, que é de aproximadamente 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Sons são gerados por vibrações. Sua voz, por exemplo, vem de vibrações nas suas cordas vocais. Essas vibrações criam zonas de variação de pressão alta e baixa do ar que é expelido, da mesma forma que ocorre com as ondas circulares geradas quando uma pedra é jogada em um lago.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Todos os sons podem ser descritos de acordo com a frequência e a intensidade.
+  <string name="sensor_desc_second_paragraph_decibel">Todos os sons podem ser descritos de acordo com a frequência e a intensidade. 
 
-Intensidade é o que você mede com o sensor de intensidade sonora do Science Journal, usando a unidade decibéis (dB). A intensidade, ou volume, depende da distância percorrida por um objeto cada vez que ele vibra. Uma intensidade maior é ouvida como um volume maior.
+Intensidade é o que você mede com o sensor de intensidade sonora do Science Journal, usando a unidade decibéis (dB). A intensidade, ou volume, depende da distância percorrida por um objeto cada vez que ele vibra. Uma intensidade maior é ouvida como um volume maior. 
 
-A frequência (também conhecida como altura ou tom) de uma onda sonora equivale à taxa de vibração dela. Quanto mais rápido um objeto vibrar, maior será a frequência do som resultante. O sensor de intensidade sonora do Science Journal não mede a frequência, apenas o volume.
+A frequência (também conhecida como altura ou tom) de uma onda sonora equivale à taxa de vibração dela. Quanto mais rápido um objeto vibrar, maior será a frequência do som resultante. O sensor de intensidade sonora do Science Journal não mede a frequência, apenas o volume. 
 
-Um fator importante é que o microfone do seu dispositivo foi desenvolvido para ser sensível às diferenças nas ondas sonoras durante um período de tempo, mas não ao tamanho absoluto de cada onda. Tentamos escolher um código que pudesse produzir números similares aos de referência mostrados abaixo, mas cada dispositivo pode fornecer números maiores ou menores, de maneira consistente. Geralmente, os cientistas calibram um sensor como este de acordo com uma medição conhecida. No momento, o Science Journal pode dizer se o volume da sua próxima viagem de trem é mais alto do que seu próximo show de rock, mas isso só poderá ser medido se você levar o mesmo dispositivo aos dois eventos.
+Um fator importante é que o microfone do seu dispositivo foi desenvolvido para ser sensível às diferenças nas ondas sonoras durante um período de tempo, mas não ao tamanho absoluto de cada onda. Tentamos escolher um código que pudesse produzir números similares aos de referência mostrados abaixo, mas cada dispositivo pode fornecer números maiores ou menores, de maneira consistente. Geralmente, os cientistas calibram um sensor como este de acordo com uma medição conhecida. No momento, o Science Journal pode dizer se o volume da sua próxima viagem de trem é mais alto do que seu próximo show de rock, mas isso só poderá ser medido se você levar o mesmo dispositivo aos dois eventos. 
 
-Outro ponto importante é que existem diferenças relevantes entre “intensidade sonora”, “nível de intensidade sonora” e “pressão sonora”. Para simplificar, estamos tratando todos esses conceitos da mesma forma aqui. No entanto, se você quiser se aprofundar, basta pesquisar as diferenças on-line.
+Outro ponto importante é que existem diferenças relevantes entre “intensidade sonora”, “nível de intensidade sonora” e “pressão sonora”. Para simplificar, estamos tratando todos esses conceitos da mesma forma aqui. No entanto, se você quiser se aprofundar, basta pesquisar as diferenças on-line. 
 
-O som mais baixo que o ouvido humano comum pode detectar é definido como 0 dB. Uma conversa normal corresponde a cerca de 60 dB, e sons acima de cerca de 140 dB causam dor ao ouvido humano. No entanto, os sons não precisam causar dor para serem nocivos. A exposição contínua a sons de 90 dB (o volume de um aspirador de pó) pode causar perda de audição em longo prazo.
+O som mais baixo que o ouvido humano comum pode detectar é definido como 0 dB. Uma conversa normal corresponde a cerca de 60 dB, e sons acima de cerca de 140 dB causam dor ao ouvido humano. No entanto, os sons não precisam causar dor para serem nocivos. A exposição contínua a sons de 90 dB (o volume de um aspirador de pó) pode causar perda de audição em longo prazo. 
 
-A escala de decibéis é logarítmica, o que pode ser um pouco complicado: um som de 40 dB não é duas vezes mais intenso que um de 20 dB, e sim 100 vezes mais intenso. Se um alarme tocando produz 70 dB, dois alarmes não produzem 140 dB, e sim 73 dB. Como já dissemos, é uma escala estranha.
+A escala de decibéis é logarítmica, o que pode ser um pouco complicado: um som de 40 dB não é duas vezes mais intenso que um de 20 dB, e sim 100 vezes mais intenso. Se um alarme tocando produz 70 dB, dois alarmes não produzem 140 dB, e sim 73 dB. Como já dissemos, é uma escala estranha. 
 
-Folhas ao vento - 10 dB
-Sussurros a 1,5 m de distância - 20 dB
-Sussurros suaves - 30 dB
-Chuva - 50 dB
-Conversa normal - 60 dB
-Liquidificador - 90 dB
-Carro sem silenciador - 100 dB
-Gritos diretamente no ouvido - 110 dB
-Trovão - 120 dB
-Britadeira - 130 dB
+Folhas ao vento - 10 dB 
+Sussurros a 1,5 m de distância - 20 dB 
+Sussurros suaves - 30 dB 
+Chuva - 50 dB 
+Conversa normal - 60 dB 
+Liquidificador - 90 dB 
+Carro sem silenciador - 100 dB 
+Gritos diretamente no ouvido - 110 dB 
+Trovão - 120 dB 
+Britadeira - 130 dB 
 Avião decolando - 140 dB</string>
   <string name="sensor_desc_first_paragraph_pitch">Sons são gerados por vibrações. Sua voz, por exemplo, é gerada por vibrações nas suas cordas vocais. Essas vibrações criam zonas de variação de alta e baixa pressão do ar que é expelido, da mesma forma que ocorre com as ondas circulares geradas quando uma pedra é jogada em um lago.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Todos os sons podem ser descritos de acordo com a frequência e a intensidade. A frequência (também conhecida como altura ou tom) de uma onda sonora equivale à taxa de vibração dela. Quanto mais rápido um objeto vibrar, maior será a frequência do som resultante. Essas vibrações são medidas em Hertz (Hz), sendo que 1 Hertz equivale a 1 vibração/segundo.
+  <string name="sensor_desc_second_paragraph_pitch">Todos os sons podem ser descritos de acordo com a frequência e a intensidade. A frequência (também conhecida como altura ou tom) de uma onda sonora equivale à taxa de vibração dela. Quanto mais rápido um objeto vibrar, maior será a frequência do som resultante. Essas vibrações são medidas em Hertz (Hz), sendo que 1 Hertz equivale a 1 vibração/segundo. 
 
-Os seres humanos podem ouvir sons de 20 a 20.000 Hz. A nota mais grave de um piano produz uma frequência de 27,5 Hz, e a mais aguda produz um som com uma frequência de 4.186,01 Hz.
+Os seres humanos podem ouvir sons de 20 a 20.000 Hz. A nota mais grave de um piano produz uma frequência de 27,5 Hz, e a mais aguda produz um som com uma frequência de 4.186,01 Hz. 
 
 O ponto vermelho indica o quanto a frequência detectada está perto da nota musical mais próxima. Se a frequência for baixa ou um “bemol”, o ponto aparecerá à esquerda. Se a frequência for alta ou um “sustenido”, o ponto vermelho aparecerá à direita.</string>
   <string name="pitch_low_content_description">baixa frequência</string>
@@ -255,22 +255,22 @@ O ponto vermelho indica o quanto a frequência detectada está perto da nota mus
   <string name="pitch_sharper_than_flat_note_content_description">%3$s semitons acima de %1$s bemol, %2$sª oitava</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s semitons acima de %1$s sustenido, %2$sª oitava</string>
   <string name="pitch_high_content_description">alta frequência</string>
-  <string name="sensor_desc_first_paragraph_rotation">As rotações por minuto (RPM) são uma medida da frequência de rotação ao redor de um eixo fixo durante um minuto.
+  <string name="sensor_desc_first_paragraph_rotation">As rotações por minuto (RPM) são uma medida da frequência de rotação ao redor de um eixo fixo durante um minuto. 
 
 Conforme o rotor gira, ele faz o disco do codificador girar:</string>
   <string name="sensor_desc_second_paragraph_rotation">Isso cria períodos de luz e de sombra no sensor que aparecem no Science Journal como uma rotação.</string>
-  <string name="sensor_desc_first_paragraph_raw">Os dados exibidos aqui vêm da comunicação de um sensor externo com seu smartphone pelo Bluetooth.
+  <string name="sensor_desc_first_paragraph_raw">Os dados exibidos aqui vêm da comunicação de um sensor externo com seu smartphone pelo Bluetooth. 
 
 O valor mostra a porcentagem de leitura bruta diretamente de seu microcontrolador. Em geral, essa é a porcentagem de uma queda de tensão elétrica em um sensor.</string>
   <string name="sensor_desc_second_paragraph_raw">O Bluetooth é uma tecnologia sem fio padrão que usa ondas de rádio para transferir dados por distâncias curtas a partir de dispositivos fixos e móveis.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Os dados exibidos aqui vêm da comunicação de um sensor externo com seu smartphone pelo Bluetooth</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">O Bluetooth é uma tecnologia sem fio padrão que usa ondas de rádio para transferir dados por distâncias curtas a partir de dispositivos fixos e móveis.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Apesar de não notarmos, todos nós vivemos no fundo de um oceano profundo de ar: a atmosfera da Terra, que se estende por 40 quilômetros de altura. O peso de todo esse ar que nos empurra para baixo cria o que é chamado de pressão atmosférica.
+  <string name="sensor_desc_first_paragraph_barometer">Apesar de não notarmos, todos nós vivemos no fundo de um oceano profundo de ar: a atmosfera da Terra, que se estende por 40 quilômetros de altura. O peso de todo esse ar que nos empurra para baixo cria o que é chamado de pressão atmosférica. 
 
 No nível do mar, a pressão atmosférica é de quase 1 quilograma de força sobre cada centímetro quadrado: esse é o equivalente a cerca de 590 quilos em uma área do tamanho de uma folha de papel comum.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Nós não percebemos essa pressão esmagadora porque estamos acostumados a ela, mas notamos mudanças, ainda que pequenas, quando visitamos lugares em altitudes elevadas ou viajamos de avião. A pressão atmosférica também varia conforme as condições meteorológicas, diminuindo na presença de ar instável em tempestades e aumentando quando o ar se estabiliza e o céu clareia.
+  <string name="sensor_desc_second_paragraph_barometer">Nós não percebemos essa pressão esmagadora porque estamos acostumados a ela, mas notamos mudanças, ainda que pequenas, quando visitamos lugares em altitudes elevadas ou viajamos de avião. A pressão atmosférica também varia conforme as condições meteorológicas, diminuindo na presença de ar instável em tempestades e aumentando quando o ar se estabiliza e o céu clareia. 
 
-O barômetro digital do seu smartphone mede a pressão atmosférica em hectopascais. Um hectopascal equivale a 100 pascais, e um pascal equivale a um newton de força aplicado a um metro quadrado de área. Você já deve ter ouvido os meteorologistas informarem a pressão atmosférica em milibar, que é uma unidade equivalente aos hectopascais, mas mais fácil de falar.
+O barômetro digital do seu smartphone mede a pressão atmosférica em hectopascais. Um hectopascal equivale a 100 pascais, e um pascal equivale a um newton de força aplicado a um metro quadrado de área. Você já deve ter ouvido os meteorologistas informarem a pressão atmosférica em milibar, que é uma unidade equivalente aos hectopascais, mas mais fácil de falar. 
 
 Você deve estar se perguntando por que um smartphone mede a pressão. A pressão atmosférica muda de maneira mensurável mesmo com pequenas alterações na elevação, como quando você sobe um lance de escadas. Por isso, um barômetro digital em um smartphone pode ajudar a detectar mudanças de local, informando, por exemplo, o andar em que você está em um edifício ou se você está na parte de cima ou de baixo de uma ponte.</string>
   <string name="run_review_activity_label">Analisar</string>
@@ -482,9 +482,9 @@ Aviso de permissões:
   <string name="compass">Bússola</string>
   <string name="compass_units">graus</string>
   <string name="sensor_desc_short_compass">A orientação do smartphone em relação ao campo magnético da Terra.</string>
-  <string name="sensor_desc_first_paragraph_compass">Você já deve saber que a Terra tem um campo magnético. Mas você sabia que seu smartphone contém um dispositivo capaz de detectar os campos magnéticos? O nome dele é magnetômetro. Você pode criar uma bússola ao combinar dados do magnetômetro com a orientação do seu smartphone no espaço.
+  <string name="sensor_desc_first_paragraph_compass">Você já deve saber que a Terra tem um campo magnético. Mas você sabia que seu smartphone contém um dispositivo capaz de detectar os campos magnéticos? O nome dele é magnetômetro. Você pode criar uma bússola ao combinar dados do magnetômetro com a orientação do seu smartphone no espaço. 
 
-Uma bússola é um magnetômetro de baixa tecnologia com uma agulha imantada que gira para se alinhar ao campo magnético circundante. Seu smartphone não tem uma bússola, mas sim um sensor de três eixos que usa correntes elétricas para detectar a força do campo magnético nas três dimensões do espaço. Mas só isso não é suficiente para criar uma bússola.
+Uma bússola é um magnetômetro de baixa tecnologia com uma agulha imantada que gira para se alinhar ao campo magnético circundante. Seu smartphone não tem uma bússola, mas sim um sensor de três eixos que usa correntes elétricas para detectar a força do campo magnético nas três dimensões do espaço. Mas só isso não é suficiente para criar uma bússola. 
 
 Por que uma bússola precisa combinar os dados do magnetômetro com a orientação do smartphone? Saber a orientação do dispositivo permite calcular a rotação magnética mesmo quando ele não está paralelo ao campo magnético da Terra. Sabemos que a gravidade é perpendicular ao campo magnético do planeta, então podemos usar a direção da gravidade registrada pelos sensores do acelerômetro para determinar se o campo magnético está no mesmo plano que o campo magnético da Terra.</string>
   <string name="sensor_desc_second_paragraph_compass">Como você deve ter notado, a bússola responde não apenas ao campo magnético da Terra, mas também a qualquer campo magnético ao redor. Ímãs, correntes elétricas e objetos de metal também influenciam o magnetômetro do seu smartphone, o que altera a leitura da bússola. Se você quiser ter certeza de que a ponta vermelha da bússola se alinha ao campo magnético da Terra, vá para uma área aberta, de preferência ao ar livre e longe de linhas de energia, e mova seu dispositivo no formato do número 8 para calibrar o magnetômetro.</string>
@@ -497,9 +497,9 @@ Por que uma bússola precisa combinar os dados do magnetômetro com a orientaç�
   <string name="month_year_format">MMMM aaaa</string>
   <string name="linear_accelerometer">Acelerômetro linear</string>
   <string name="sensor_desc_short_linear_acc">A aceleração total do smartphone em m/s², excluindo a força da gravidade</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Os objetos têm a tendência de permanecer inertes ou de continuar a se mover se já estiverem em movimento. Isso é chamado de inércia. A Primeira Lei de Newton expressa essa ideia formalmente: um objeto continua no estado de repouso ou de movimento a menos que forças sejam aplicadas a ele.
+  <string name="sensor_desc_first_paragraph_linear_acc">Os objetos têm a tendência de permanecer inertes ou de continuar a se mover se já estiverem em movimento. Isso é chamado de inércia. A Primeira Lei de Newton expressa essa ideia formalmente: um objeto continua no estado de repouso ou de movimento a menos que forças sejam aplicadas a ele. 
 
-Quando uma força causa o movimento de um objeto, dizemos que ele acelera, ou seja, a velocidade aumenta, diminui ou muda de direção. A aceleração é medida como uma mudança na velocidade (metros por segundo) ao longo do tempo, ou metros por segundo ao quadrado (m/s²).
+Quando uma força causa o movimento de um objeto, dizemos que ele acelera, ou seja, a velocidade aumenta, diminui ou muda de direção. A aceleração é medida como uma mudança na velocidade (metros por segundo) ao longo do tempo, ou metros por segundo ao quadrado (m/s²). 
 
 Existe no seu smartphone um dispositivo para medir essas alterações de movimento: um acelerômetro. Dentro dele, pequenas massas suspensas se movem. Mudanças no movimento causam uma variação nessas massas, da mesma forma que sua cabeça se move quando você está dentro de um carro que freia inesperadamente. Ao medir essas variações sutis de inércia, um acelerômetro em um smartphone pode detectar alterações no movimento e na orientação, o que é útil para alternar entre os modos retrato e paisagem da tela ao jogar no seu smartphone e muito mais.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">O sensor de acelerômetro linear combinado registra a aceleração total nos três eixos do smartphone, excluindo a gravidade.</string>
@@ -522,7 +522,7 @@ Existe no seu smartphone um dispositivo para medir essas alterações de movimen
   <string name="first_experiment_title">Olá! Este é o Science Journal.</string>
   <string name="first_experiment_text_note">Faça observações e grave dados usando a barra de ferramentas abaixo.</string>
   <string name="first_experiment_picture_note_caption">Olá! Este é o Science Journal!</string>
-  <string name="first_experiment_second_text_note">Encontre atividades para testar em
+  <string name="first_experiment_second_text_note">Encontre atividades para testar em 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Escolha uma foto do experimento</string>
   <string name="btn_take_picture_content_description">Tirar foto</string>
@@ -693,6 +693,7 @@ experimentos no mundo ao seu redor</string>
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Science Journal do Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Reivindicar experimentos antigos</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -735,7 +736,7 @@ experimentos no mundo ao seu redor</string>
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -756,8 +757,8 @@ experimentos no mundo ao seu redor</string>
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -817,7 +818,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -850,7 +851,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -905,7 +906,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -919,4 +920,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By tapping here you indicate that you have read and agree to the new Terms presented in the agreement</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>
