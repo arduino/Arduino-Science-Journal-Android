@@ -334,9 +334,9 @@
   <string name="listing_h_feature_3">
 • 从实验中导出照片。</string>
   <string name="listing__description">科学日志是 Google 提供的免费数字科学笔记本。
-
+ 
 无论你是科学教育工作者还是自己在家进行科学实验的爱好者，你都可以将笔记、照片和观察结果全部保存在一个方便的地方。你可以使用手机中的传感器来测量诸如光、声音和运动之类的现象并生成相关图表，也可以通过蓝牙连接外部传感器，开始尽情探索周围的世界。
-
+ 
 借助科学日志应用，你可以：
 \u2022 使用手机的内置传感器测量光、声音、加速度、气压等。
 \u2022 做笔记和拍照片，以记录你的科学实验。我们将很快推出更多笔记类型！
@@ -345,12 +345,12 @@
 \u2022 将所记录的传感器数据导出为 CSV 文件。
 \u2022 创建可自动记录数据和做笔记的触发器。
 \u2022 使用可听化功能来倾听你的图表的变动。
-
+ 
 科学日志可在 Android、iPhone、iPad 及兼容的 Chromebook 设备上免费使用。
-
-我们的合作伙伴提供的教育活动：https://makingscience.withgoogle.com/science-journal/activities
-技术支持：https://productforums.google.com/forum/#!forum/sciencejournal
-可供使用的开源代码：https://github.com/google/science-journal
+ 
+我们的合作伙伴提供的教育活动：https://makingscience.withgoogle.com/science-journal/activities 
+技术支持：https://productforums.google.com/forum/#!forum/sciencejournal 
+可供使用的开源代码：https://github.com/google/science-journal 
 
  权限声明：
 \u2022 位置信息：需要位置信息以便扫描寻找蓝牙传感器设备。
@@ -498,7 +498,7 @@
   <string name="first_experiment_title">欢迎使用科学日志</string>
   <string name="first_experiment_text_note">试试利用下方工具栏做备注以及收集记录数据！</string>
   <string name="first_experiment_picture_note_caption">欢迎使用科学日志！</string>
-  <string name="first_experiment_second_text_note">访问
+  <string name="first_experiment_second_text_note">访问 
 g.co/sciencejournalactivities，查找你可以尝试的活动</string>
   <string name="experiment_cover_description">选择一张实验照片</string>
   <string name="btn_take_picture_content_description">拍照</string>
@@ -668,6 +668,7 @@ g.co/sciencejournalactivities，查找你可以尝试的活动</string>
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">科学日志（Google 出品）</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">申领之前的实验</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -710,7 +711,7 @@ g.co/sciencejournalactivities，查找你可以尝试的活动</string>
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -731,8 +732,8 @@ g.co/sciencejournalactivities，查找你可以尝试的活动</string>
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -792,7 +793,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -825,7 +826,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -880,7 +881,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -894,4 +895,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By accepting them you indicate that you have read and agree to the new Terms presented in the agreement.</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

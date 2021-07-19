@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Antalet varv per minut</string>
   <string name="sensor_desc_short_raw">Procentandelen obearbetad avläsning från en extern sensor.</string>
   <string name="sensor_desc_short_barometer">Atmosfärstrycket mätt i hektopascal (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Sensorn för omgivningsljus mäter ljuset i lux. Det här måttet baseras på den ljusmängd som når sensorn och vilken yta det sprids över.
+  <string name="sensor_desc_first_paragraph_light">Sensorn för omgivningsljus mäter ljuset i lux. Det här måttet baseras på den ljusmängd som når sensorn och vilken yta det sprids över. 
 
-Vid fullmåne är ljusmängden ungefär 1 lux, i ett vanligt rum upplyst med lampor är ljusmängden ungefär 50 lux, klassrumsbelysning, soluppgång och solnedgång mäter ungefär 400 lux, dagsljus (indirekt solljus) mäter över 10 000 lux, och direkt solljus över 30 000 lux.
+Vid fullmåne är ljusmängden ungefär 1 lux, i ett vanligt rum upplyst med lampor är ljusmängden ungefär 50 lux, klassrumsbelysning, soluppgång och solnedgång mäter ungefär 400 lux, dagsljus (indirekt solljus) mäter över 10 000 lux, och direkt solljus över 30 000 lux. 
 
 Lux är ett mått som de flesta av oss inte känner till. När vi köper glödlampor väljer vi lampa efter watt. Men en glödlampas watt säger inget om hur ljusstark den är, bara hur mycket energi den förbrukar. Lumen är ett bättre mått att titta på för glödlampor eftersom det indikerar hur mycket ljus en glödlampa genererar. Lux visar däremot hur mycket av det ljuset som når ett visst område.</string>
-  <string name="sensor_desc_second_paragraph_light">Ljus sprids ut när det färdas och luxtalet minskar också i takt med att du befinner dig längre från ljuskällan, även om ljuskällans styrka håller samma lumen. Områden som finns i en vinklad position från ljuskällan får också mindre ljus. Tänk bara på hur mycket varmare det är runt ekvatorn än vid polerna.
+  <string name="sensor_desc_second_paragraph_light">Ljus sprids ut när det färdas och luxtalet minskar också i takt med att du befinner dig längre från ljuskällan, även om ljuskällans styrka håller samma lumen. Områden som finns i en vinklad position från ljuskällan får också mindre ljus. Tänk bara på hur mycket varmare det är runt ekvatorn än vid polerna. 
 
 Syftet med ljussensorn i din telefon är att kontrollera skärmens ljusstyrka, som justeras efter omgivningens svagare och starkare ljus. Inuti ljussensorn finns en liten halvledare som reagerar på inkommande ljus genom att generera en liten mätbar elektrisk ström. Detta kallas fotoelektrisk effekt. Liknande sensorer används till exempel i gatubelysning så att lamporna tänds när det blir mörkt ute.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">I din mobil ingår en så kallad magnetometer. Den identifierar magnetfält. Den här lilla treaxlade sensorn identifierar magnetfältets tredimensionella styrka i omgivningen med elektrisk ström. Genom att data kombineras från alla tre axlar får du en komplett sensor för magnetfältets styrka.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">I din mobil ingår en så kallad magnetometer. Den identifierar magnetfält. Den här lilla treaxlade sensorn identifierar magnetfältets tredimensionella styrka i omgivningen med elektrisk ström. Genom att data kombineras från alla tre axlar får du en komplett sensor för magnetfältets styrka. 
 
-Vissa magnetometrar identifierar magnetfält med Halleffekten, det vill säga magnetfältens tendens att avleda rörliga laddningar som flödar. Nyare magnetometrar har metallegeringar som ändrar motstånd efter magnetfält.
+Vissa magnetometrar identifierar magnetfält med Halleffekten, det vill säga magnetfältens tendens att avleda rörliga laddningar som flödar. Nyare magnetometrar har metallegeringar som ändrar motstånd efter magnetfält. 
 
 Varför finns det då en magnetometer i mobilen? För att de inbyggda kompass- och navigeringsapparna har nytta av att veta var du befinner dig – särskilt appar med färdbeskrivningar.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magneter, elektriska strömmar och metallföremål får mobilens magnetometer att snurra åt olika håll. Även om du till exempel står mitt ute på en tom åker visar mobilens magnetometer alltid ett lågt icke-nollvärde. Det är jordens magnetfält.</string>
-  <string name="sensor_desc_first_paragraph_acc">Föremål förblir i vila eller så fortsätter de att röra på sig om de har satts i rörelse. Vi kallar detta tröghetslagen. I Newtons första lag uttrycks det så här: Varje kropp förblir i sitt tillstånd av vila eller likformig och rätlinjig rörelse, om den inte påverkas av någon kraft.
+  <string name="sensor_desc_first_paragraph_acc">Föremål förblir i vila eller så fortsätter de att röra på sig om de har satts i rörelse. Vi kallar detta tröghetslagen. I Newtons första lag uttrycks det så här: Varje kropp förblir i sitt tillstånd av vila eller likformig och rätlinjig rörelse, om den inte påverkas av någon kraft. 
 
-När en kraft påverkar ett föremål så att det rör sig säger vi att det accelererar. Dess hastighet ändras antingen genom att öka eller minska, eller ändra riktning. Acceleration mäts som hastighetsändring (meter per sekund) över tid, eller meter per sekundkvadrat (m/s²).
+När en kraft påverkar ett föremål så att det rör sig säger vi att det accelererar. Dess hastighet ändras antingen genom att öka eller minska, eller ändra riktning. Acceleration mäts som hastighetsändring (meter per sekund) över tid, eller meter per sekundkvadrat (m/s²). 
 
 I din telefon ingår en så kallad accelerometer för att mäta de här rörelseändringarna. Inuti en accelerometer finns små tyngder som rör sig fritt. Vid rörelseändringar rör sig även dessa tyngder, ungefär som när ditt huvud rör sig framåt om du sitter i en bil som plötsligt bromsar in. Genom att mäta sådana subtila rörelseändringar, känner telefonens accelerometer av ändringar i rörelse och riktning. Detta är viktigt för att du ska kunna växla skärmen från liggande till stående visning, spela spel på telefonen och mycket mer.</string>
   <string name="sensor_desc_second_paragraph_acc">Du har förmodligen upptäckt den ihållande accelerationen för Z-axeln även när telefonen ligger på bordet. Det är jordens acceleration som orsakas av tyngdkraften – ungefär 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Vibration genererar ljud. Din röst genereras till exempel av vibrationer i stämbanden. De här vibrationerna genererar alternerande zoner med högt och lågt lufttryck som förs ut, ungefär som ringarna på vattnet som sprids efter att man kastat i en sten.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Alla ljud kan beskrivas utifrån frekvens och styrka.
+  <string name="sensor_desc_second_paragraph_decibel">Alla ljud kan beskrivas utifrån frekvens och styrka. 
 
-Styrkan kan du mäta med sensorn för ljudstyrka i Science Journal. Ljudstyrkan mäts i decibel (dB). Ljudets styrka beror på avståndet som ett vibrerande objekt rör sig varje gång det vibrerar. Större intensitet hör vi som starkare ljud.
+Styrkan kan du mäta med sensorn för ljudstyrka i Science Journal. Ljudstyrkan mäts i decibel (dB). Ljudets styrka beror på avståndet som ett vibrerande objekt rör sig varje gång det vibrerar. Större intensitet hör vi som starkare ljud. 
 
-En ljudvågs frekvens (och ton) motsvarar dess vibrationshastighet. Ju snabbare ett föremål vibrerar, desto högre tonljud. Sensorn för ljudstyrka i Science Journal mäter inte frekvensen, bara styrkan.
+En ljudvågs frekvens (och ton) motsvarar dess vibrationshastighet. Ju snabbare ett föremål vibrerar, desto högre tonljud. Sensorn för ljudstyrka i Science Journal mäter inte frekvensen, bara styrkan. 
 
-Det är viktigt att veta att mikrofonen i din enhet har utformats för att vara väldigt känslig för skillnader i ljudvågor över tid, men inte för varje vågs absoluta storlek. Vi har försökt välja kod som sannolikt genererar siffror som liknar de referenssiffror som visas nedan, men varje enhet kan ge konsekvent högre eller lägre siffror. Forskarna kalibrerar vanligtvis en sensor som denna efter ett känt mått. Just nu kan Science Journal tala om ifall din nästa tågresa innebär en högre ljudstyrka än din nästa rockkonsert, men bara om du tar med samma mobil till båda evenemangen.
+Det är viktigt att veta att mikrofonen i din enhet har utformats för att vara väldigt känslig för skillnader i ljudvågor över tid, men inte för varje vågs absoluta storlek. Vi har försökt välja kod som sannolikt genererar siffror som liknar de referenssiffror som visas nedan, men varje enhet kan ge konsekvent högre eller lägre siffror. Forskarna kalibrerar vanligtvis en sensor som denna efter ett känt mått. Just nu kan Science Journal tala om ifall din nästa tågresa innebär en högre ljudstyrka än din nästa rockkonsert, men bara om du tar med samma mobil till båda evenemangen. 
 
-En annan sak som är viktigt att veta är att det finns viktiga skillnader mellan ”ljudstyrka”, ”ljudstyrkans nivå” och ”ljudtryck”. Vi ser dem som samma sak, men om du letar vidare finns det många onlineresurser som beskriver skillnaderna.
+En annan sak som är viktigt att veta är att det finns viktiga skillnader mellan ”ljudstyrka”, ”ljudstyrkans nivå” och ”ljudtryck”. Vi ser dem som samma sak, men om du letar vidare finns det många onlineresurser som beskriver skillnaderna. 
 
-Det svagaste ljud en människa kan höra är 0 dB. Ett vanligt samtal motsvarar ungefär 60 dB och ljud över 140 dB är smärtsamma för en människas öra. Men ljud behöver inte vara smärtsamt för att orsaka skada. Att ständigt vistas i ljudmiljöer på 90 dB kan så småningom leda till nedsatt hörsel. Det är ungefär så högt en dammsugare låter.
+Det svagaste ljud en människa kan höra är 0 dB. Ett vanligt samtal motsvarar ungefär 60 dB och ljud över 140 dB är smärtsamma för en människas öra. Men ljud behöver inte vara smärtsamt för att orsaka skada. Att ständigt vistas i ljudmiljöer på 90 dB kan så småningom leda till nedsatt hörsel. Det är ungefär så högt en dammsugare låter. 
 
-Decibelskalan är logaritmisk, vilket gör det hela lite krångligt. En ljudkälla på 40 dB är inte dubbelt så stark som en på 20 dB – den är 100 gånger så stark. Om en väckarklocka till exempel genererar ett larm på 70 dB, genererar två sådana väckarklockor ett larm på 73 dB – inte 140 dB. Det är som sagt en annorlunda skala.
+Decibelskalan är logaritmisk, vilket gör det hela lite krångligt. En ljudkälla på 40 dB är inte dubbelt så stark som en på 20 dB – den är 100 gånger så stark. Om en väckarklocka till exempel genererar ett larm på 70 dB, genererar två sådana väckarklockor ett larm på 73 dB – inte 140 dB. Det är som sagt en annorlunda skala. 
 
-10 dB löv som rasslar
-20 dB någon som viskar på 1,5 meters avstånd
-30 dB svagt viskande
-50 dB regn
-60 dB normal konversation
-90 dB mixer
-100 dB bil utan ljuddämpare
-110 dB rop direkt i örat
-120 dB åska
-130 dB tryckluftsborr
+10 dB löv som rasslar 
+20 dB någon som viskar på 1,5 meters avstånd 
+30 dB svagt viskande 
+50 dB regn 
+60 dB normal konversation 
+90 dB mixer 
+100 dB bil utan ljuddämpare 
+110 dB rop direkt i örat 
+120 dB åska 
+130 dB tryckluftsborr 
 140 dB flygplan som lyfter</string>
   <string name="sensor_desc_first_paragraph_pitch">Vibration genererar ljud. Din röst genereras till exempel av vibrationer i stämbanden. De här vibrationerna genererar alternerande zoner med högt och lågt lufttryck som förs ut, ungefär som ringarna på vattnet som sprids efter att man kastat i en sten.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Alla ljud kan beskrivas utifrån frekvens och styrka. En ljudvågs frekvens (och ton) motsvarar dess vibrationshastighet. Ju snabbare ett föremål vibrerar, desto högre är ljudets ton. De här vibrationerna mäts i hertz (Hz) där 1 hertz = 1 vibration/sekund.
+  <string name="sensor_desc_second_paragraph_pitch">Alla ljud kan beskrivas utifrån frekvens och styrka. En ljudvågs frekvens (och ton) motsvarar dess vibrationshastighet. Ju snabbare ett föremål vibrerar, desto högre är ljudets ton. De här vibrationerna mäts i hertz (Hz) där 1 hertz = 1 vibration/sekund. 
 
-Människor kan höra ljud mellan 20 till 20 000 Hz. Den lägsta tonen på ett piano producerar ett ljud med en frekvens på 27,5 Hz och den högsta tonen producerar ett ljud med en frekvens på 4186,01 Hz.
+Människor kan höra ljud mellan 20 till 20 000 Hz. Den lägsta tonen på ett piano producerar ett ljud med en frekvens på 27,5 Hz och den högsta tonen producerar ett ljud med en frekvens på 4186,01 Hz. 
 
 Den röda pricken visar vilken not som den uppmätta tonen ligger närmast. Om tonen är lägre än noten ser du pricken till vänster. Om tonen är högre än noten ser du pricken till höger.</string>
   <string name="pitch_low_content_description">låg tonhöjd</string>
@@ -255,22 +255,22 @@ Den röda pricken visar vilken not som den uppmätta tonen ligger närmast. Om t
   <string name="pitch_sharper_than_flat_note_content_description">%3$s halva tonsteg högre än %1$s♭, oktav %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s halva tonsteg högre än %1$s#, oktav %2$s</string>
   <string name="pitch_high_content_description">hög tonhöjd</string>
-  <string name="sensor_desc_first_paragraph_rotation">Varv per minut (r/min) är antalet varv per minut runt en fast axel.
+  <string name="sensor_desc_first_paragraph_rotation">Varv per minut (r/min) är antalet varv per minut runt en fast axel. 
 
 När vindspelet roterar, roteras även omkodarens skiva:</string>
   <string name="sensor_desc_second_paragraph_rotation">Detta genererar ljusa och mörka perioder på sensorn som registreras som en rotation i Science Journal.</string>
-  <string name="sensor_desc_first_paragraph_raw">Den data som visas här kommer från Bluetooth-kommunikation mellan en extern sensor och din telefon.
+  <string name="sensor_desc_first_paragraph_raw">Den data som visas här kommer från Bluetooth-kommunikation mellan en extern sensor och din telefon. 
 
 Värdet visar procentandelen obearbetad avläsning direkt från din mikrokontroller. Detta brukar vara procentandelen för en sensors spänningsfall.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth är en trådlös standardteknik som utväxlar data via radiovågor över korta avstånd för fasta och mobila enheter.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Den data som visas här kommer från Bluetooth-kommunikation mellan en extern sensor och din telefon.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth är en trådlös standardteknik som utväxlar data via radiovågor över korta avstånd för fasta och mobila enheter.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Vi märker det knappt, men vi lever på botten av ett djupt hav av luft: Jordens atmosfär, som sträcker sig 40 kilometer uppåt. Vikten av all den luft som trycker ned på oss ovanifrån skapar vad som kallas för atmosfärstryck.
+  <string name="sensor_desc_first_paragraph_barometer">Vi märker det knappt, men vi lever på botten av ett djupt hav av luft: Jordens atmosfär, som sträcker sig 40 kilometer uppåt. Vikten av all den luft som trycker ned på oss ovanifrån skapar vad som kallas för atmosfärstryck. 
 
 Vid havsnivå motsvarar atmosfärstrycket 7 kg kraft per kvadrattum, vilket motsvarar cirka 600 kg på en yta lika stor som ett vanligt pappersark.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Vi lägger inte märke till det stora trycket eftersom vi är vana vid det – åtminstone inte förrän det ändras lite, som det gör på höga höjder eller när vi flyger. Atmosfärstrycket varierar också efter väder. Det sjunker när storm och ostadig luft drar in, och ökar när luften blir stabilare vid klar himmel.
+  <string name="sensor_desc_second_paragraph_barometer">Vi lägger inte märke till det stora trycket eftersom vi är vana vid det – åtminstone inte förrän det ändras lite, som det gör på höga höjder eller när vi flyger. Atmosfärstrycket varierar också efter väder. Det sjunker när storm och ostadig luft drar in, och ökar när luften blir stabilare vid klar himmel. 
 
-Den digitala barometern i telefonen mäter atmosfärstrycket i hektopascal (en hektopascal är 100 pascal, och en pascal är en kraft på en newton över en kvadratmeter). Du har säkert hört meteorologer prata om atmosfärstryck i millibar. Det är en annan enhet som motsvarar hektopascal.
+Den digitala barometern i telefonen mäter atmosfärstrycket i hektopascal (en hektopascal är 100 pascal, och en pascal är en kraft på en newton över en kvadratmeter). Du har säkert hört meteorologer prata om atmosfärstryck i millibar. Det är en annan enhet som motsvarar hektopascal. 
 
 Du kanske undrar: Varför behöver en telefon mäta tryck? Atmosfärstrycket ändras mätbart även med små förändringar i höjd, till exempel när du går upp för en trappa. En digital barometer i telefonen kan därför hjälpa till att upptäcka din position och till exempel avgöra vilken våning i en byggnad du är på, eller om du kör på det övre eller nedre planet på en bro.</string>
   <string name="run_review_activity_label">Granska</string>
@@ -482,9 +482,9 @@ Meddelande om behörighet:
   <string name="compass">Kompass</string>
   <string name="compass_units">grader</string>
   <string name="sensor_desc_short_compass">Mobilens position i förhållande till jordens magnetfält.</string>
-  <string name="sensor_desc_first_paragraph_compass">Du känner säkert redan till att jorden har ett magnetfält. Men visste du att din mobil identifierar magnetfält med en så kallad magnetometer? Genom att kombinera data från mobilens magnetometer med mobilens position får du en digital kompass.
+  <string name="sensor_desc_first_paragraph_compass">Du känner säkert redan till att jorden har ett magnetfält. Men visste du att din mobil identifierar magnetfält med en så kallad magnetometer? Genom att kombinera data från mobilens magnetometer med mobilens position får du en digital kompass. 
 
-En gammaldags kompass är en förenklad variant av en magnetometer. Den har en magnetiserad nål som justerar sig efter omgivningens magnetfält. Mobilen identifierar magnetfältets tredimensionella styrka med en treaxlad sensor med elektrisk ström. Men det krävs lite mer för att få en komplett kompass.
+En gammaldags kompass är en förenklad variant av en magnetometer. Den har en magnetiserad nål som justerar sig efter omgivningens magnetfält. Mobilen identifierar magnetfältets tredimensionella styrka med en treaxlad sensor med elektrisk ström. Men det krävs lite mer för att få en komplett kompass. 
 
 Data från magnetometern behöver kombineras med mobilens position. Med hjälp av mobilens position kan den magnetiska rotationen beräknas, även om mobilen inte hålls parallellt med jordens magnetfält. Vi vet att tyngdkraften är vinkelrät mot jordens magnetfält, och vi kan därför använda tyngdkraftens riktning från accelerometerns sensorer för att avgöra hur mycket av magnetfältet som är parallellt med jordens magnetfält.</string>
   <string name="sensor_desc_second_paragraph_compass">Som du kanske har märkt reagerar kompassen inte bara på jordens magnetfält, utan på alla magnetfält omkring dig. Magneter, elektriska strömmar och metallföremål får mobilens magnetometer att snurra åt olika håll. Om du vill vara säker på att magnetometerns röda pil rättar sig efter jordens magnetfält ska du helst stå utomhus och långt ifrån elledningar. Gör en åtta i luften med mobilen för att kalibrera magnetometern.</string>
@@ -497,9 +497,9 @@ Data från magnetometern behöver kombineras med mobilens position. Med hjälp a
   <string name="month_year_format">MMMM åååå</string>
   <string name="linear_accelerometer">Linjär accelerometer</string>
   <string name="sensor_desc_short_linear_acc">Mobilens totala acceleration, med undantag av tyngdkraften, i m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Föremål förblir i vila eller så fortsätter de att röra på sig om de har satts i rörelse. Vi kallar detta tröghetslagen. I Newtons första lag uttrycks det så här: Varje kropp förblir i sitt tillstånd av vila eller likformig och rätlinjig rörelse, om den inte påverkas av någon kraft.
+  <string name="sensor_desc_first_paragraph_linear_acc">Föremål förblir i vila eller så fortsätter de att röra på sig om de har satts i rörelse. Vi kallar detta tröghetslagen. I Newtons första lag uttrycks det så här: Varje kropp förblir i sitt tillstånd av vila eller likformig och rätlinjig rörelse, om den inte påverkas av någon kraft. 
 
-När en kraft påverkar ett föremål så att det rör sig säger vi att det accelererar. Dess hastighet ändras antingen genom att öka eller minska, eller ändra riktning. Acceleration mäts som hastighetsändring (meter per sekund) över tid, eller meter per sekundkvadrat (m/s²).
+När en kraft påverkar ett föremål så att det rör sig säger vi att det accelererar. Dess hastighet ändras antingen genom att öka eller minska, eller ändra riktning. Acceleration mäts som hastighetsändring (meter per sekund) över tid, eller meter per sekundkvadrat (m/s²). 
 
 I din mobil ingår en så kallad accelerometer för att mäta de här rörelseändringarna. Inuti en accelerometer finns små tyngder som rör sig fritt. Vid rörelseändringar rör sig även dessa tyngder, ungefär som när ditt huvud rör sig framåt om du sitter i en bil som plötsligt bromsar in. Genom att mäta sådana subtila rörelseändringar, känner mobilens accelerometer av ändringar i rörelse och riktning. Detta är viktigt för att du ska kunna växla skärmen från liggande till stående visning, spela spel på mobilen och mycket annat.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Den kombinerade linjära sensorn i accelerometern registrerar den totala accelerationen i mobilens alla tre axlar, med undantag av tyngdkraften.</string>
@@ -522,7 +522,7 @@ I din mobil ingår en så kallad accelerometer för att mäta de här rörelseä
   <string name="first_experiment_title">Välkommen till Science Journal</string>
   <string name="first_experiment_text_note">Prova att göra anteckningar och spela in data med hjälp av verktygsfältet nedan.</string>
   <string name="first_experiment_picture_note_caption">Välkommen till Science Journal!</string>
-  <string name="first_experiment_second_text_note">Hitta spännande aktiviteter på
+  <string name="first_experiment_second_text_note">Hitta spännande aktiviteter på 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Välj en experimentbild</string>
   <string name="btn_take_picture_content_description">Ta bild</string>
@@ -694,6 +694,7 @@ Om du har befintlig data på den här enheten kan du, när du är inloggad, spar
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Science Journal från Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Gör anspråk på tidigare experiment</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -736,7 +737,7 @@ Om du har befintlig data på den här enheten kan du, när du är inloggad, spar
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -757,8 +758,8 @@ Om du har befintlig data på den här enheten kan du, när du är inloggad, spar
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -818,7 +819,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -851,7 +852,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -906,7 +907,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -920,4 +921,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By accepting them you indicate that you have read and agree to the new Terms presented in the agreement.</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

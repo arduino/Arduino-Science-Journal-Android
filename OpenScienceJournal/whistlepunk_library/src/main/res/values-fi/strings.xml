@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Kierroksia minuutissa</string>
   <string name="sensor_desc_short_raw">Ulkoisen anturin raakalukeman prosentti</string>
   <string name="sensor_desc_short_barometer">Ilmanpaine hectopascaleina (hPa)</string>
-  <string name="sensor_desc_first_paragraph_light">Ympäristön valoa mittaava anturi mittaa valoa lukseissa (lx). Luksi on mittayksikkö, joka kuvaa valolähteen voimakkuutta valaistavalla pinnalla.
+  <string name="sensor_desc_first_paragraph_light">Ympäristön valoa mittaava anturi mittaa valoa lukseissa (lx). Luksi on mittayksikkö, joka kuvaa valolähteen voimakkuutta valaistavalla pinnalla. 
 
-Täysikuun valo on noin 1 lx, tyypillinen olohuoneen valaistus noin 50 lx, auringon nousu ja lasku ja luokkavalaistus noin 400 lx, epäsuora auringonvalo yli 10 000 lx ja suora auringonvalo yli 30 000 lx.
+Täysikuun valo on noin 1 lx, tyypillinen olohuoneen valaistus noin 50 lx, auringon nousu ja lasku ja luokkavalaistus noin 400 lx, epäsuora auringonvalo yli 10 000 lx ja suora auringonvalo yli 30 000 lx. 
 
 Luksi on useimmille meistä vieraampi mittayksikkö kuin esimerkiksi watti, jota käytetään usein lamppujen valinnassa. Watti ei kuitenkaan kerro lampun valaisutehosta vaan sen kuluttamasta energiasta. Luumenit ovat watteja parempi apu lamppukaupassa, sillä luumenit kertovat, kuinka paljon valoa lamppu tuottaa. Luksit puolestaan kertovat, kuinka paljon tästä valosta yltää tietylle alueelle.</string>
-  <string name="sensor_desc_second_paragraph_light">Koska valo hajaantuu kulkiessaan eteenpäin, luksien määrä pienenee sitä mukaa, mitä kauemmas valonlähteestä mennään. Valonlähteen luumenien määrä ei kuitenkaan muutu. Suoraan kohti valonlähdettä olevat alueet saavat enemmän valoa kuin siihen nähden vinossa olevat – tästä syystä esimerkiksi päiväntasaajalla on paljon lämpimämpää kuin napa-alueilla.
+  <string name="sensor_desc_second_paragraph_light">Koska valo hajaantuu kulkiessaan eteenpäin, luksien määrä pienenee sitä mukaa, mitä kauemmas valonlähteestä mennään. Valonlähteen luumenien määrä ei kuitenkaan muutu. Suoraan kohti valonlähdettä olevat alueet saavat enemmän valoa kuin siihen nähden vinossa olevat – tästä syystä esimerkiksi päiväntasaajalla on paljon lämpimämpää kuin napa-alueilla. 
 
 Puhelimesi valoanturin tarkoituksena on säätää näytön kirkkautta ympäristön mukaan. Anturin sisällä on pienenpieni puolijohde, joka reagoi siihen osuvaan valoon tuottamalla pienen, mitattavissa olevan sähkövirran – tätä kutsutaan valosähköilmiöksi. Vastaavia antureita käytetään esimerkiksi katuvaloissa, jotka syttyvät itsestään pimeän tullen.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Puhelimessasi on laite nimeltä magnetometri, jolla voi havaita magneettikenttiä. Tämä pikkuruinen kolmeakselinen anturi mittaa magneettikenttien vahvuuksia kolmiulotteisesti sähkövirtojen avulla. Yhdistämällä kaikkien kolmen akselin tiedot saadaan aikaan magneettikenttien kokonaisvoimakkuutta mittaava anturi.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Puhelimessasi on laite nimeltä magnetometri, jolla voi havaita magneettikenttiä. Tämä pikkuruinen kolmeakselinen anturi mittaa magneettikenttien vahvuuksia kolmiulotteisesti sähkövirtojen avulla. Yhdistämällä kaikkien kolmen akselin tiedot saadaan aikaan magneettikenttien kokonaisvoimakkuutta mittaava anturi. 
 
-Jotkin magnetometrit havaitsevat magneettikenttiä niin kutsutun Hall-ilmiön avulla, joka perustuu magneettikenttien taipumukseen muuttaa elektronien kulkusuuntaa sähkövirrassa. Uudemmissa magnetometreissä hyödynnetään magnetovastuksia eli metalliseoksia, joiden resistanssi muuttuu magneettikenttien mukaan.
+Jotkin magnetometrit havaitsevat magneettikenttiä niin kutsutun Hall-ilmiön avulla, joka perustuu magneettikenttien taipumukseen muuttaa elektronien kulkusuuntaa sähkövirrassa. Uudemmissa magnetometreissä hyödynnetään magnetovastuksia eli metalliseoksia, joiden resistanssi muuttuu magneettikenttien mukaan. 
 
 Miksi puhelimissa sitten on magnetometri? Se kertoo kompassi- ja navigointisovelluksille, miten päin käyttäjä on tilassa. Tästä on hyötyä etenkin sovelluksille, jotka antavat yksityiskohtaisia reittiohjeita.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magneetit, sähkövirrat ja metalliesineet pyörittävät helposti magnetometriä edestakaisin. Puhelimesi magnetometri näyttää kuitenkin aina alhaista lukemaa, joka ei ole nolla, vaikka olisit ulkona keskellä aukeaa aluetta. Se on Maapallon magneettikenttä!</string>
-  <string name="sensor_desc_first_paragraph_acc">Paikallaan olevalla kappaleella on taipumus pysyä paikallaan ja liikkuvalla kappaleella taipumus jatkaa liikettään tasaisesti. Tätä kutsutaan jatkavuudeksi, ja se on määritelty virallisesti Newtonin I laissa eli mekaniikan I peruslaissa: Kappale säilyttää liiketilansa, ellei mikään ulkoinen voima muuta sitä.
+  <string name="sensor_desc_first_paragraph_acc">Paikallaan olevalla kappaleella on taipumus pysyä paikallaan ja liikkuvalla kappaleella taipumus jatkaa liikettään tasaisesti. Tätä kutsutaan jatkavuudeksi, ja se on määritelty virallisesti Newtonin I laissa eli mekaniikan I peruslaissa: Kappale säilyttää liiketilansa, ellei mikään ulkoinen voima muuta sitä. 
 
-Kun jokin ulkoinen voima vaikuttaa kappaleen liiketilaan, sanotaan, että kappaleen vauhti kiihtyy eli sen nopeus muuttuu: kappaleen vauhti joko nopeutuu tai hidastuu tai kappale vaihtaa suuntaa. Kiihtyvyyttä mitataan nopeuden muutoksena tietyssä ajassa (metriä sekunnissa) tai metreinä neliösekunnissa (m/s²).
+Kun jokin ulkoinen voima vaikuttaa kappaleen liiketilaan, sanotaan, että kappaleen vauhti kiihtyy eli sen nopeus muuttuu: kappaleen vauhti joko nopeutuu tai hidastuu tai kappale vaihtaa suuntaa. Kiihtyvyyttä mitataan nopeuden muutoksena tietyssä ajassa (metriä sekunnissa) tai metreinä neliösekunnissa (m/s²). 
 
 Puhelimessasi on kiihtyvyysmittari, jolla voi mitata nopeuden muutoksia. Kiihtyvyysmittarin sisällä on pieniä painoja, jotka liikkuvat vapaasti nopeuden muutosten mukaan – vähän samaan tapaan kuin matkustajan pää heilahtaa eteenpäin, kun auto jarruttaa äkillisesti. Puhelimen kiihtyvyysmittari tunnistaa pienetkin liikkeet ja puhelimen asennon, mitä hyödynnetään esimerkiksi ruudun kääntämisessä vaakasuunnasta pystysuuntaan ja takaisin sekä mobiilipelien pelaamisessa.</string>
   <string name="sensor_desc_second_paragraph_acc">Huomasit varmaankin, että anturi rekisteröi kiihtyvyyttä Z-akselilla, vaikka puhelin olisi liikkumatta pöydällä. Kyseessä on Maapallon painovoiman aiheuttama vetokiihtyvyys, joka on noin 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Ääni muodostuu värähdysliikkeistä. Esimerkiksi oma puheesi syntyy kurkussa sijaitsevien äänihuulien värähtelystä, joka synnyttää vuorotellen korkeita ja matalia paineaaltoja. Nämä paineaallot leviävät ympäristöön kuin järveen heitetyn kiven aiheuttamat renkaat.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Kaikilla äänillä on taajuus ja intensiteetti.
+  <string name="sensor_desc_second_paragraph_decibel">Kaikilla äänillä on taajuus ja intensiteetti. 
 
-Science Journalin tunnistimella voidaan mitata äänen intensiteettiä desibeleinä (dB). Äänen intensiteetti eli voimakkuus riippuu etäisyydestä, jonka värisevä kappale liikkuu väristessään; mitä suurempi intensiteetti, sitä kovempi ääni.
+Science Journalin tunnistimella voidaan mitata äänen intensiteettiä desibeleinä (dB). Äänen intensiteetti eli voimakkuus riippuu etäisyydestä, jonka värisevä kappale liikkuu väristessään; mitä suurempi intensiteetti, sitä kovempi ääni. 
 
-Ääniaallon taajuus (eli sävelkorkeus tai nuotti) vastaa sen synnyttävän värinän tiheyttä. Mitä nopeammin kappale värisee, sitä korkeampi ääni siitä syntyy. Science Journalin äänen intensiteettitunnistin ei mittaa äänen taajuutta vaan vain sen voimakkuutta.
+Ääniaallon taajuus (eli sävelkorkeus tai nuotti) vastaa sen synnyttävän värinän tiheyttä. Mitä nopeammin kappale värisee, sitä korkeampi ääni siitä syntyy. Science Journalin äänen intensiteettitunnistin ei mittaa äänen taajuutta vaan vain sen voimakkuutta. 
 
-On tärkeää huomata, että laitteesi mikrofoni tunnistaa erittäin herkästi ääniaaltojen muutokset ajassa mutta ei kunkin aallon absoluuttista kokoa. Olemme pyrkineet valitsemaan koodin, joka todennäköisesti tuottaa alla olevien viitelukemien kaltaisia lukemia, mutta eri laitteet voivat antaa suurempia tai pienempiä lukemia. Yleensä tutkijat kalibroivat tällaisen tunnistimen jonkin tunnetun mitan mukaan. Tällä hetkellä Science Journal pystyy kertomaan, onko äänenvoimakkuus suurempi junamatkalla vai rock-konsertissa, mutta vain jos käytät mittaamiseen samaa puhelinta.
+On tärkeää huomata, että laitteesi mikrofoni tunnistaa erittäin herkästi ääniaaltojen muutokset ajassa mutta ei kunkin aallon absoluuttista kokoa. Olemme pyrkineet valitsemaan koodin, joka todennäköisesti tuottaa alla olevien viitelukemien kaltaisia lukemia, mutta eri laitteet voivat antaa suurempia tai pienempiä lukemia. Yleensä tutkijat kalibroivat tällaisen tunnistimen jonkin tunnetun mitan mukaan. Tällä hetkellä Science Journal pystyy kertomaan, onko äänenvoimakkuus suurempi junamatkalla vai rock-konsertissa, mutta vain jos käytät mittaamiseen samaa puhelinta. 
 
-On myös hyvä tietää, että äänen intensiteetillä, äänen intensiteettitasolla ja äänenpaineella on merkittäviä eroja. Tässä käsittelemme niitä samana asiana, mutta netistä löytyy paljon tietoa eroista.
+On myös hyvä tietää, että äänen intensiteetillä, äänen intensiteettitasolla ja äänenpaineella on merkittäviä eroja. Tässä käsittelemme niitä samana asiana, mutta netistä löytyy paljon tietoa eroista. 
 
-Hiljaisimman tavallisen ihmiskorvan kuuleman äänen voimakkuudeksi on määritetty 0 dB. Normaalin keskustelun äänenvoimakkuus on noin 60 dB, ja voimakkuudeltaan yli noin 140 desibelin äänet sattuvat ihmiskorvaan. Haitalliset äänet eivät kuitenkaan aina aiheuta kipua. Jatkuva altistuminen 90 desibelin äänille – eli voimakkuudeltaan suurin piirtein imurin äänille – voi aiheuttaa kuulon heikkenemistä pitkällä aikavälillä.
+Hiljaisimman tavallisen ihmiskorvan kuuleman äänen voimakkuudeksi on määritetty 0 dB. Normaalin keskustelun äänenvoimakkuus on noin 60 dB, ja voimakkuudeltaan yli noin 140 desibelin äänet sattuvat ihmiskorvaan. Haitalliset äänet eivät kuitenkaan aina aiheuta kipua. Jatkuva altistuminen 90 desibelin äänille – eli voimakkuudeltaan suurin piirtein imurin äänille – voi aiheuttaa kuulon heikkenemistä pitkällä aikavälillä. 
 
-Desibeliasteikko on logaritminen, mikä hankaloittaa asioita hieman. Jos äänilähteen intensiteetti on 40 dB, sen äänenvoimakkuus ei ole kaksinkertainen 20 desibelin äänilähteeseen verrattuna vaan satakertainen. Yhtä lailla yksi herätyskello tuottaa 70 desibelin äänen, mutta kaksi herätyskelloa tuottaa 140 desibelin sijaan 73 desibelin äänen. Kuten sanottu, asteikko on siis erikoinen.
+Desibeliasteikko on logaritminen, mikä hankaloittaa asioita hieman. Jos äänilähteen intensiteetti on 40 dB, sen äänenvoimakkuus ei ole kaksinkertainen 20 desibelin äänilähteeseen verrattuna vaan satakertainen. Yhtä lailla yksi herätyskello tuottaa 70 desibelin äänen, mutta kaksi herätyskelloa tuottaa 140 desibelin sijaan 73 desibelin äänen. Kuten sanottu, asteikko on siis erikoinen. 
 
-10 dB – lehtien havina
-20 dB – kuiskaus 1,5 metrin etäisyydeltä
-30 dB – hiljainen kuiskaus
-50 dB – sateen ropina
-60 dB – normaali keskustelu
-90 dB – tehosekoitin
-100 dB – auto ilman äänenvaimenninta
-110 dB – korvaan huutaminen
-120 dB – ukkonen
-130 dB – porakone
+10 dB – lehtien havina 
+20 dB – kuiskaus 1,5 metrin etäisyydeltä 
+30 dB – hiljainen kuiskaus 
+50 dB – sateen ropina 
+60 dB – normaali keskustelu 
+90 dB – tehosekoitin 
+100 dB – auto ilman äänenvaimenninta 
+110 dB – korvaan huutaminen 
+120 dB – ukkonen 
+130 dB – porakone 
 140 dB – lentokoneen nousukiito</string>
   <string name="sensor_desc_first_paragraph_pitch">Ääni muodostuu värähdysliikkeistä. Esimerkiksi oma puheesi syntyy kurkussa sijaitsevien äänihuulien värähtelystä, joka synnyttää vuorotellen korkeita ja matalia paineaaltoja. Nämä paineaallot leviävät ympäristöön kuin järveen heitetyn kiven aiheuttamat renkaat.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Kaikilla äänillä on taajuus ja intensiteetti. Ääniaallon taajuus (eli sävelkorkeus tai nuotti) vastaa sen synnyttävän värinän tiheyttä. Mitä nopeammin kappale värisee, sitä korkeampi ääni siitä syntyy. Tätä värinää mitataan hertseinä (Hz): 1 hertsi = 1 värähdys sekunnissa.
+  <string name="sensor_desc_second_paragraph_pitch">Kaikilla äänillä on taajuus ja intensiteetti. Ääniaallon taajuus (eli sävelkorkeus tai nuotti) vastaa sen synnyttävän värinän tiheyttä. Mitä nopeammin kappale värisee, sitä korkeampi ääni siitä syntyy. Tätä värinää mitataan hertseinä (Hz): 1 hertsi = 1 värähdys sekunnissa. 
 
-Ihmiskorva kuulee äänet, joiden taajuus on 20–20 000 Hz. Pianon matalimman sävelen taajuus on 27,5 Hz ja korkeimman 4 186,01 Hz.
+Ihmiskorva kuulee äänet, joiden taajuus on 20–20 000 Hz. Pianon matalimman sävelen taajuus on 27,5 Hz ja korkeimman 4 186,01 Hz. 
 
 Punainen piste osoittaa, miten lähellä lähintä säveltä havaittu ääni on. Jos ääni on matalampi, se näkyy sävelen vasemmalla puolella. Jos ääni on korkeampi, se näkyy sävelen oikealla puolella.</string>
   <string name="pitch_low_content_description">matala ääni</string>
@@ -255,22 +255,22 @@ Punainen piste osoittaa, miten lähellä lähintä säveltä havaittu ääni on.
   <string name="pitch_sharper_than_flat_note_content_description">%3$s puolisävelaskelta korkeampi kuin alennettu %1$s, oktaavi %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s puolisävelaskelta korkeampi kuin korotettu %1$s, oktaavi %2$s</string>
   <string name="pitch_high_content_description">korkea ääni</string>
-  <string name="sensor_desc_first_paragraph_rotation">Kierr./min on pyörimisnopeuden yksikkö, joka kertoo, kuinka monta kierrosta kappale pyörähtää akselinsa ympäri minuutissa
+  <string name="sensor_desc_first_paragraph_rotation">Kierr./min on pyörimisnopeuden yksikkö, joka kertoo, kuinka monta kierrosta kappale pyörähtää akselinsa ympäri minuutissa 
 
 Kun hyrrä pyörii, se pyörittää enkooderilevyä:</string>
   <string name="sensor_desc_second_paragraph_rotation">Näin valo ja varjo vuorottelevat joka kierroksella, ja anturi muuttaa tämän tiedon kierr./min-arvoksi Science Journalissa.</string>
-  <string name="sensor_desc_first_paragraph_raw">Tässä näkyvät tiedot ovat peräisin ulkoisesta anturista, joka on yhteydessä puhelimeen Bluetoothin kautta.
+  <string name="sensor_desc_first_paragraph_raw">Tässä näkyvät tiedot ovat peräisin ulkoisesta anturista, joka on yhteydessä puhelimeen Bluetoothin kautta. 
 
 Arvo kertoo suoraan mikro-ohjaimesta saadun raakalukeman prosenttiluvun. Tämä on yleensä anturin jännitehäviön prosenttiosuus.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth on radioaaltoja käyttävä langaton yhteysstandardi lähietäisyyden tiedonsiirtoon johdollisten laitteiden ja mobiililaitteiden välillä.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Tässä näkyvät tiedot ovat peräisin ulkoisesta anturista, joka on yhteydessä puhelimeen Bluetoothin kautta.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth on radioaaltoja käyttävä langaton yhteysstandardi lähietäisyyden tiedonsiirtoon johdollisten laitteiden ja mobiililaitteiden välillä.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Vaikka emme usein tule ajatelleeksi sitä, elämme valtavan ilmamassan alla. Maapallon ilmakehä ulottuu 40 kilometrin päähän maan pinnasta. Tuon ilmamassan paino saa aikaan Maan ilmanpaineen.
+  <string name="sensor_desc_first_paragraph_barometer">Vaikka emme usein tule ajatelleeksi sitä, elämme valtavan ilmamassan alla. Maapallon ilmakehä ulottuu 40 kilometrin päähän maan pinnasta. Tuon ilmamassan paino saa aikaan Maan ilmanpaineen. 
 
 Merenpinnan tasolla ilmanpaine tuottaa noin 1 kilogramman paineen neliösenttimetriä kohden – tämä vastaa noin 600 kilogrammaa tavallisen paperiarkin kokoisella alueella.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Emme huomaa tätä valtavaa painoa, koska olemme tottuneet siihen. Huomaamme kuitenkin helposti pienetkin muutokset ilmanpaineessa – kuten noustessamme vuorelle tai matkustaessamme lentokoneessa. Ilmanpaine vaihtelee myös säätilojen mukaan: epävakaalla säällä ilmanpaine on matala ja selkeällä korkea.
+  <string name="sensor_desc_second_paragraph_barometer">Emme huomaa tätä valtavaa painoa, koska olemme tottuneet siihen. Huomaamme kuitenkin helposti pienetkin muutokset ilmanpaineessa – kuten noustessamme vuorelle tai matkustaessamme lentokoneessa. Ilmanpaine vaihtelee myös säätilojen mukaan: epävakaalla säällä ilmanpaine on matala ja selkeällä korkea. 
 
-Puhelimesi digitaalinen barometri eli ilmapuntari mittaa ilmanpainetta hehtopascaleissa. (Yksi hehtopascal on 100 pascalia. Yksi pascal vastaa painetta, jonka yhden newtonin voima aiheuttaa kohdistuessaan neliömetrin alueelle.) Säätiedotuksissa ilmanpaine kerrotaan usein millibaareina – tämä tutumman kuuloinen yksikkö tarkoittaa samaa kuin hehtopascal.
+Puhelimesi digitaalinen barometri eli ilmapuntari mittaa ilmanpainetta hehtopascaleissa. (Yksi hehtopascal on 100 pascalia. Yksi pascal vastaa painetta, jonka yhden newtonin voima aiheuttaa kohdistuessaan neliömetrin alueelle.) Säätiedotuksissa ilmanpaine kerrotaan usein millibaareina – tämä tutumman kuuloinen yksikkö tarkoittaa samaa kuin hehtopascal. 
 
 Ihmettelet ehkä, mitä hyötyä ilmanpaineen mittaamisesta on puhelimelle. Koska pienikin korkeusero – kuten portaiden kiipeäminen – muuttaa havaittavasti ilmanpainetta, puhelin käyttää sitä hyväkseen sijaintisi määrittämisessä. Digitaalisen barometrin avulla se pystyy esimerkiksi kertomaan, missä rakennuksen kerroksessa tai millä moottoritien liittymän tasolla olet.</string>
   <string name="run_review_activity_label">Tiedot</string>
@@ -482,9 +482,9 @@ u2022 Tallennustila: Tarvitaan kokeisiin lisättävien kuvien käyttöön.</stri
   <string name="compass">Kompassi</string>
   <string name="compass_units">astetta</string>
   <string name="sensor_desc_short_compass">Puhelimen asento suhteessa Maapallon magneettikenttään.</string>
-  <string name="sensor_desc_first_paragraph_compass">Olet varmaankin kuullut, että Maapallolla on magneettikenttä. Et kuitenkaan ehkä tiennyt, että puhelimessasi on laite nimeltä magnetometri, jolla voi havaita magneettikenttiä. Yhdistämällä puhelimesi magnetometrin tiedot tietoihin puhelimen asennosta saadaan aikaan digitaalinen kompassi.
+  <string name="sensor_desc_first_paragraph_compass">Olet varmaankin kuullut, että Maapallolla on magneettikenttä. Et kuitenkaan ehkä tiennyt, että puhelimessasi on laite nimeltä magnetometri, jolla voi havaita magneettikenttiä. Yhdistämällä puhelimesi magnetometrin tiedot tietoihin puhelimen asennosta saadaan aikaan digitaalinen kompassi. 
 
-Perinteinen kompassi on yksi ensimmäisistä magnetometreistä: siinä on magneettinen neula, joka kääntyy aina ympäröivän magneettikentän suuntaiseksi. Puhelimesi sisällä ei ole pientä kompassia vaan pikkuruinen kolmeakselinen anturi, joka mittaa magneettikenttien vahvuuksia kolmiulotteisesti sähkövirtojen avulla. Kompassiin tarvitaan kuitenkin muutakin.
+Perinteinen kompassi on yksi ensimmäisistä magnetometreistä: siinä on magneettinen neula, joka kääntyy aina ympäröivän magneettikentän suuntaiseksi. Puhelimesi sisällä ei ole pientä kompassia vaan pikkuruinen kolmeakselinen anturi, joka mittaa magneettikenttien vahvuuksia kolmiulotteisesti sähkövirtojen avulla. Kompassiin tarvitaan kuitenkin muutakin. 
 
 Miksi kompassia varten tarvitaan magnetometrin tiedot ja tiedot puhelimen asennosta? Puhelimen asentotietojen perusteella voidaan laskea magneettinen pyöriminen, vaikka puhelinta ei pidettäisi samassa tasossa Maapallon magneettikentän kanssa. Painovoima suuntautuu kohtisuoraan Maapallon magneettikenttään nähden, joten kiihtyvyysmittarin avulla voidaan määrittää painovoiman suunta ja selvittää, kuinka suurelta osin magneettikenttä on samassa tasossa Maapallon magneettikentän kanssa.</string>
   <string name="sensor_desc_second_paragraph_compass">Kuten olet ehkä huomannut, puhelimesi kompassi reagoi Maan magneettikentän lisäksi myös kaikkiin muihin lähellä oleviin magneettikenttiin. Magneetit, sähkövirrat ja metalliesineet pyörittävät helposti magnetometriä edestakaisin ja saavat kompassin näyttämään omiaan. Jos haluat varmistaa, että kompassin punainen kärki asettuu juuri Maan magneettikentän mukaisesti, mene seisomaan keskelle avointa aluetta kauas sähkölinjoista. Voit myös kalibroida puhelimen magnetometrin liikuttamalla puhelinta kahdeksikon muotoisesti.</string>
@@ -497,9 +497,9 @@ Miksi kompassia varten tarvitaan magnetometrin tiedot ja tiedot puhelimen asenno
   <string name="month_year_format">KKKK vvvv</string>
   <string name="linear_accelerometer">Lineaarinen kiihtyvyysmittari</string>
   <string name="sensor_desc_short_linear_acc">Puhelimen kokonaiskiihtyvyys painovoima pois luettuna, m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Paikallaan olevalla kappaleella on taipumus pysyä paikallaan ja liikkuvalla kappaleella taipumus jatkaa liikettään tasaisesti. Tätä kutsutaan jatkavuudeksi, ja se on määritelty virallisesti Newtonin I laissa eli mekaniikan I peruslaissa: Kappale säilyttää liiketilansa, ellei mikään ulkoinen voima muuta sitä.
+  <string name="sensor_desc_first_paragraph_linear_acc">Paikallaan olevalla kappaleella on taipumus pysyä paikallaan ja liikkuvalla kappaleella taipumus jatkaa liikettään tasaisesti. Tätä kutsutaan jatkavuudeksi, ja se on määritelty virallisesti Newtonin I laissa eli mekaniikan I peruslaissa: Kappale säilyttää liiketilansa, ellei mikään ulkoinen voima muuta sitä. 
 
-Kun jokin ulkoinen voima vaikuttaa kappaleen liiketilaan, sanotaan, että kappaleen vauhti kiihtyy eli sen nopeus muuttuu: kappaleen vauhti joko nopeutuu tai hidastuu tai kappale vaihtaa suuntaa. Kiihtyvyyttä mitataan nopeuden muutoksena tietyssä ajassa (metriä sekunnissa) tai metreinä neliösekunnissa (m/s²).
+Kun jokin ulkoinen voima vaikuttaa kappaleen liiketilaan, sanotaan, että kappaleen vauhti kiihtyy eli sen nopeus muuttuu: kappaleen vauhti joko nopeutuu tai hidastuu tai kappale vaihtaa suuntaa. Kiihtyvyyttä mitataan nopeuden muutoksena tietyssä ajassa (metriä sekunnissa) tai metreinä neliösekunnissa (m/s²). 
 
 Puhelimessasi on kiihtyvyysmittari, jolla voi mitata nopeuden muutoksia. Kiihtyvyysmittarin sisällä on pieniä painoja, jotka liikkuvat vapaasti nopeuden muutosten mukaan – vähän samaan tapaan kuin matkustajan pää heilahtaa eteenpäin, kun auto jarruttaa äkillisesti. Puhelimen kiihtyvyysmittari tunnistaa pienetkin liikkeet ja puhelimen asennon, mitä hyödynnetään esimerkiksi ruudun kääntämisessä vaakasuunnasta pystysuuntaan ja takaisin sekä mobiilipelien pelaamisessa.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Yhdistetty lineaarinen kiihtyvyysmittari mittaa kokonaiskiihtyvyyden puhelimen kaikilta kolmelta akselilta painovoima pois lukien.</string>
@@ -522,7 +522,7 @@ Puhelimessasi on kiihtyvyysmittari, jolla voi mitata nopeuden muutoksia. Kiihtyv
   <string name="first_experiment_title">Tervetuloa Science Journaliin</string>
   <string name="first_experiment_text_note">Tee muistiinpanoja ja tallenna tietoja käyttämällä alla olevaa työkalupalkkia.</string>
   <string name="first_experiment_picture_note_caption">Tervetuloa Science Journaliin!</string>
-  <string name="first_experiment_second_text_note">Osoitteessa
+  <string name="first_experiment_second_text_note">Osoitteessa 
 g.co/sciencejournalactivities on valmiita kokeita.</string>
   <string name="experiment_cover_description">Valitse kokeelle kuva.</string>
   <string name="btn_take_picture_content_description">Ota kuva</string>
@@ -695,6 +695,7 @@ Jos tällä laitteella on aiemmin tekemiesi kokeiden dataa, voit tallentaa kokee
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Googlen Science Journal</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Ota aiemmat kokeet itsellesi</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -737,7 +738,7 @@ Jos tällä laitteella on aiemmin tekemiesi kokeiden dataa, voit tallentaa kokee
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -758,8 +759,8 @@ Jos tällä laitteella on aiemmin tekemiesi kokeiden dataa, voit tallentaa kokee
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -819,7 +820,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -852,7 +853,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -907,7 +908,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -921,4 +922,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By accepting them you indicate that you have read and agree to the new Terms presented in the agreement.</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

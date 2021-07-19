@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Кількість обертів за хвилину</string>
   <string name="sensor_desc_short_raw">Відсоток необроблених даних, зчитаних із зовнішнього датчика.</string>
   <string name="sensor_desc_short_barometer">Атмосферний тиск вимірюється в гектопаскалях (гПа).</string>
-  <string name="sensor_desc_first_paragraph_light">Датчик освітленості вимірює світловий потік у люксах (лк). Ця одиниця вимірювання залежить від кількості світла та площі поверхні, на яку воно потрапляє.
+  <string name="sensor_desc_first_paragraph_light">Датчик освітленості вимірює світловий потік у люксах (лк). Ця одиниця вимірювання залежить від кількості світла та площі поверхні, на яку воно потрапляє. 
 
-Повний місяць дає освітленість у приблизно 1 люкс, а звичайна люстра у вітальні – близько 50 люксів. Освітленість класу або під час сходу й заходу сонця становить біля 400 люксів, денне світло (непрямі сонячні промені) дає понад 10 000 люксів, а прямі сонячні промені – більше 30 000 люксів.
+Повний місяць дає освітленість у приблизно 1 люкс, а звичайна люстра у вітальні – близько 50 люксів. Освітленість класу або під час сходу й заходу сонця становить біля 400 люксів, денне світло (непрямі сонячні промені) дає понад 10 000 люксів, а прямі сонячні промені – більше 30 000 люксів. 
 
 Люкс – одиниця вимірювання, невідома більшості з нас. Купуючи лампочку, ми зазвичай дивимося на її потужність, що вимірюється у ватах. Проте ця цифра вказує лише на кількість спожитої енергії, а не на яскравість лампочки. Тому під час вибору лампочки варто звертати увагу на величину в люменах, адже вона вказує, скільки світла дає лампочка. А кількість люксів показує, скільки світла потрапляє на певну поверхню.</string>
-  <string name="sensor_desc_second_paragraph_light">Світло розсіюється під час переміщення, тому під час віддалення від джерела світла значення в люксах зменшується, навіть якщо джерело продовжує випромінювати таку ж кількість світла в люменах. Площина, нахилена від джерела світла, також отримує менше освітлення. Саме тому в екваторіальному поясі Землі набагато тепліше, ніж на полюсах.
+  <string name="sensor_desc_second_paragraph_light">Світло розсіюється під час переміщення, тому під час віддалення від джерела світла значення в люксах зменшується, навіть якщо джерело продовжує випромінювати таку ж кількість світла в люменах. Площина, нахилена від джерела світла, також отримує менше освітлення. Саме тому в екваторіальному поясі Землі набагато тепліше, ніж на полюсах. 
 
 До речі, датчик освітленості в телефоні призначений контролювати рівень освітленості екрана та пристосовувати його до яскравого або тьмяного оточення. Усередині цього датчика є маленький напівпровідник, що реагує на світло й виробляє незначний електричний струм, який можна виміряти. Таке явище називається фотоефектом. Подібні датчики використовуються в деяких вуличних ліхтарях, що автоматично вмикаються, коли надворі сутеніє.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">У вашому телефоні є магнітометр – пристрій, який дає змогу виявляти магнітні поля. Цей крихітний просторовий датчик використовує електричний струм для визначення сили магнітного поля в тривимірному просторі. Поєднуючи дані з усіх трьох осей, ми можемо створити датчик сили магнітного поля.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">У вашому телефоні є магнітометр – пристрій, який дає змогу виявляти магнітні поля. Цей крихітний просторовий датчик використовує електричний струм для визначення сили магнітного поля в тривимірному просторі. Поєднуючи дані з усіх трьох осей, ми можемо створити датчик сили магнітного поля. 
 
-В основі роботи деяких магнітометрів лежить ефект Холла, тобто здатність магнітного поля зміщувати потік рухомих зарядів. У новіших магнітометрах використовуються магніторезистори – сплави металів, які змінюють свій опір під дією магнітного поля.
+В основі роботи деяких магнітометрів лежить ефект Холла, тобто здатність магнітного поля зміщувати потік рухомих зарядів. У новіших магнітометрах використовуються магніторезистори – сплави металів, які змінюють свій опір під дією магнітного поля. 
 
 Навіщо в телефоні магнітометр? Інформацію про ваше місцезнаходження в просторі використовують вбудований компас і навігаційні додатки, зокрема ті, що пропонують покрокову навігацію.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Магніти, дроти, по яких протікає електричний струм, і металеві предмети легко скеровують стрілку магнітометра в телефоні в різних напрямках. Але навіть посеред чистого поля магнітометр вашого телефона завжди показуватиме хоч і низьке, але відмінне від нуля значення. Це і є магнітне поле Землі!</string>
-  <string name="sensor_desc_first_paragraph_acc">Об’єкти мають властивість залишатись нерухомими або продовжувати пересуватися – ця властивість називається інерцією. Перший закон Ньютона так формулює цю думку: об’єкт зберігає стан спокою або руху, допоки діюча на нього неврівноважена сила не виведе його з цього стану.
+  <string name="sensor_desc_first_paragraph_acc">Об’єкти мають властивість залишатись нерухомими або продовжувати пересуватися – ця властивість називається інерцією. Перший закон Ньютона так формулює цю думку: об’єкт зберігає стан спокою або руху, допоки діюча на нього неврівноважена сила не виведе його з цього стану. 
 
-Коли неврівноважена сила змушує об’єкт рухатися, ми говоримо, що він прискорюється: його швидкість змінюється за рахунок прискорення, уповільнення або зміни напрямку. Прискорення – це зміна швидкості (виражається в метрах за секунду) у часі, тому вона вимірюється в метрах за секунду у квадраті (м/с²).
+Коли неврівноважена сила змушує об’єкт рухатися, ми говоримо, що він прискорюється: його швидкість змінюється за рахунок прискорення, уповільнення або зміни напрямку. Прискорення – це зміна швидкості (виражається в метрах за секунду) у часі, тому вона вимірюється в метрах за секунду у квадраті (м/с²). 
 
 Ваш телефон має акселерометр – пристрій для вимірювання таких змін руху. Усередині акселерометра є малі підвішені маси, що можуть вільно переміщуватися. Зміни руху призводять до переміщення цих мас так само, як голова нахиляється вперед під час різкого гальмування авто. Вимірюючи ці майже непомітні інерційні переміщення, акселерометр телефона може фіксувати зміни руху й напрямку. Це потрібно для перемикання екрана з альбомної в книжкову орієнтацію, під час ігор тощо.</string>
   <string name="sensor_desc_second_paragraph_acc">Ви, напевно, помітили постійне прискорення по осі Z, навіть коли телефон нерухомо лежить на столі. Таке прискорення ми відчуваємо на поверхні Землі через силу тяжіння. Воно становить приблизно 9,8 м/с².</string>
   <string name="sensor_desc_first_paragraph_decibel">Звуки утворюються в результаті вібрації. Наприклад, голос виникає під час вібрації голосових зв’язок. Ці вібрації створюють перемінні зони високого й низького тиску повітря, що спрямовані назовні – подібно до того, як по поверхні води розходяться кола, якщо у воду кинути камінець.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Усі звуки можна охарактеризувати за їх частотою й інтенсивністю.
+  <string name="sensor_desc_second_paragraph_decibel">Усі звуки можна охарактеризувати за їх частотою й інтенсивністю. 
 
-У додатку \"Науковий журнал\" інтенсивність можна вимірювати в децибелах (дБ) за допомогою датчика інтенсивності звуку. Інтенсивність, або гучність, залежить від відстані, на яку під час кожного коливання зрушується об’єкт, що коливається. Більшу інтенсивність звуку ми чуємо як вищу гучність.
+У додатку \"Науковий журнал\" інтенсивність можна вимірювати в децибелах (дБ) за допомогою датчика інтенсивності звуку. Інтенсивність, або гучність, залежить від відстані, на яку під час кожного коливання зрушується об’єкт, що коливається. Більшу інтенсивність звуку ми чуємо як вищу гучність. 
 
-Частота (висота або тон) звукової хвилі дорівнює швидкості її коливань. Що швидше коливається об’єкт, то більша висота кінцевого звуку. За допомогою датчика інтенсивності звуку в Науковому журналі можна вимірювати лише гучність, а не частоту звуку.
+Частота (висота або тон) звукової хвилі дорівнює швидкості її коливань. Що швидше коливається об’єкт, то більша висота кінцевого звуку. За допомогою датчика інтенсивності звуку в Науковому журналі можна вимірювати лише гучність, а не частоту звуку. 
 
-Важливо знати, що мікрофон у вашому пристрої дуже чутливий до змін звукових хвиль у часі, але не до абсолютної величини кожної хвилі. Ми намагалися підібрати алгоритм, який давав би значення, подібні до показаних нижче контрольних значень, але кожен пристрій може постійно давати вищі або нижчі значення. Учені зазвичай калібрують такий датчик за відомим вимірюванням. Додаток \"Науковий журнал\" може визначити, чи буде поїздка поїздом гучніша за рок-концерт, але лише якщо на обидві події ви візьмете той самий телефон.
+Важливо знати, що мікрофон у вашому пристрої дуже чутливий до змін звукових хвиль у часі, але не до абсолютної величини кожної хвилі. Ми намагалися підібрати алгоритм, який давав би значення, подібні до показаних нижче контрольних значень, але кожен пристрій може постійно давати вищі або нижчі значення. Учені зазвичай калібрують такий датчик за відомим вимірюванням. Додаток \"Науковий журнал\" може визначити, чи буде поїздка поїздом гучніша за рок-концерт, але лише якщо на обидві події ви візьмете той самий телефон. 
 
-Також треба знати, що між поняттями \"інтенсивність звуку\", \"рівень інтенсивності звуку\" та \"звуковий тиск\" є важливі відмінності. У цьому додатку ми їх не розрізняємо, але якщо ви захочете дізнатися більше, в Інтернеті можна знайти чимало ресурсів.
+Також треба знати, що між поняттями \"інтенсивність звуку\", \"рівень інтенсивності звуку\" та \"звуковий тиск\" є важливі відмінності. У цьому додатку ми їх не розрізняємо, але якщо ви захочете дізнатися більше, в Інтернеті можна знайти чимало ресурсів. 
 
-Найтихіший звук, який може вловити вухо людини, відповідає 0 дБ. Рівень гучності звичайної розмови становить приблизно 60 дБ, а за гучності більше 140 дБ звуки спричиняють біль для людського вуха. Проте звуки можуть завдавати шкоди не лише через біль. Тривалий вплив звуків гучністю 90 дБ (це приблизно як гучність пилососа) може з часом призвести до втрати слуху.
+Найтихіший звук, який може вловити вухо людини, відповідає 0 дБ. Рівень гучності звичайної розмови становить приблизно 60 дБ, а за гучності більше 140 дБ звуки спричиняють біль для людського вуха. Проте звуки можуть завдавати шкоди не лише через біль. Тривалий вплив звуків гучністю 90 дБ (це приблизно як гучність пилососа) може з часом призвести до втрати слуху. 
 
-Шкала гучності в децибелах є логарифмічною, тому іноді може вводити в оману: гучність у 40 дБ перевищує гучність у 20 дБ не у два, а в 100 разів. Водночас якщо один будильник видає сигнал гучністю 70 дБ, то гучність сигналу двох таких будильників становить не 140 дБ, а лише 73 дБ. Ось така дивна шкала.
+Шкала гучності в децибелах є логарифмічною, тому іноді може вводити в оману: гучність у 40 дБ перевищує гучність у 20 дБ не у два, а в 100 разів. Водночас якщо один будильник видає сигнал гучністю 70 дБ, то гучність сигналу двох таких будильників становить не 140 дБ, а лише 73 дБ. Ось така дивна шкала. 
 
-10 дБ – шелест листя
+10 дБ – шелест листя 
 20 дБ – шепіт на відстані 5 футів (1,524 м)
-30 дБ – тиха розмова
-50 дБ – шум дощу
-60 дБ – звичайна розмова
-90 дБ – блендер
-100 дБ – автомобіль без глушника
-110 дБ – крик у вухо
-120 дБ – грім
-130 дБ – відбійний молоток
+30 дБ – тиха розмова 
+50 дБ – шум дощу 
+60 дБ – звичайна розмова 
+90 дБ – блендер 
+100 дБ – автомобіль без глушника 
+110 дБ – крик у вухо 
+120 дБ – грім 
+130 дБ – відбійний молоток 
 140 дБ – літак на злеті</string>
   <string name="sensor_desc_first_paragraph_pitch">Звуки утворюються в результаті вібрації. Наприклад, голос виникає під час вібрації голосових зв’язок. Ці вібрації створюють перемінні зони високого й низького тиску повітря, що спрямовані назовні – подібно до того, як по поверхні води розходяться кола, якщо у воду кинути камінець.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Усі звуки можна охарактеризувати за їх частотою й інтенсивністю. Частота (висота або тон) звукової хвилі дорівнює швидкості її коливань. Що швидше коливається об’єкт, то більша висота кінцевого звуку. Частота коливання вимірюється в герцах (Гц). 1 герц – це одне коливання за секунду.
+  <string name="sensor_desc_second_paragraph_pitch">Усі звуки можна охарактеризувати за їх частотою й інтенсивністю. Частота (висота або тон) звукової хвилі дорівнює швидкості її коливань. Що швидше коливається об’єкт, то більша висота кінцевого звуку. Частота коливання вимірюється в герцах (Гц). 1 герц – це одне коливання за секунду. 
 
-Людське вухо сприймає коливання в діапазоні від 20 до 20 000 Гц. Крайня ліва клавіша фортепіано видає найнижчий звук із частотою коливання 27,5 Гц, а крайня клавіша справа – найвищий (4186,01 Гц).
+Людське вухо сприймає коливання в діапазоні від 20 до 20 000 Гц. Крайня ліва клавіша фортепіано видає найнижчий звук із частотою коливання 27,5 Гц, а крайня клавіша справа – найвищий (4186,01 Гц). 
 
 Червона крапка вказує, наскільки виявлена висота звуку близька до найбільш схожої музичної ноти. Якщо висота нижча, крапка з’явиться зліва, якщо вища – справа.</string>
   <string name="pitch_low_content_description">низький тон</string>
@@ -255,22 +255,22 @@
   <string name="pitch_sharper_than_flat_note_content_description">%3$s на півтону вище, %1$s бемоль, октава %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s на півтону вище, ніж %1$s дієз, октава %2$s</string>
   <string name="pitch_high_content_description">високий тон</string>
-  <string name="sensor_desc_first_paragraph_rotation">Оберт за хвилину (об/хв) – це одиниця вимірювання частоти обертів, здійснених тілом навколо нерухомої осі за одну хвилину.
+  <string name="sensor_desc_first_paragraph_rotation">Оберт за хвилину (об/хв) – це одиниця вимірювання частоти обертів, здійснених тілом навколо нерухомої осі за одну хвилину. 
 
 Під час обертання флюгер обертає диск датчика розташування:</string>
   <string name="sensor_desc_second_paragraph_rotation">Це створює світлі й темні проміжки на датчику, що реєструються в додатку Науковий журнал як обертання.</string>
-  <string name="sensor_desc_first_paragraph_raw">Показані тут дані надходять із зовнішнього датчика, під’єднаного до вашого телефона через Bluetooth.
+  <string name="sensor_desc_first_paragraph_raw">Показані тут дані надходять із зовнішнього датчика, під’єднаного до вашого телефона через Bluetooth. 
 
 Значення вказує на відсоток необроблених даних, зчитаних безпосередньо з вашого мікроконтролера. Зазвичай це відсоток падіння напруги в датчику.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth – це стандарт бездротової технології, що використовує радіохвилі для обміну даними між стаціонарними й мобільними пристроями на невеликих відстанях.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Показані тут дані надходять із зовнішнього датчика, під’єднаного до вашого телефона через Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth – це стандарт бездротової технології, що використовує радіохвилі для обміну даними між стаціонарними й мобільними пристроями на невеликих відстанях.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Хоча це майже непомітно, усі ми живемо на дні глибокого повітряного океану – атмосфери Землі, яка простягається вгору на 40 кілометрів (130 000 футів) над земною поверхнею. Вага цього повітря тисне на нас згори, формуючи те, що ми називаємо атмосферним тиском.
+  <string name="sensor_desc_first_paragraph_barometer">Хоча це майже непомітно, усі ми живемо на дні глибокого повітряного океану – атмосфери Землі, яка простягається вгору на 40 кілометрів (130 000 футів) над земною поверхнею. Вага цього повітря тисне на нас згори, формуючи те, що ми називаємо атмосферним тиском. 
 
 На рівні моря атмосфера тисне із силою 14 фунтів на кожний квадратний дюйм, що становить 1300 фунтів на ділянку розміром зі звичайний аркуш паперу.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Ми не помічаємо цього сильного тиску, оскільки звикли до нього, і не зважаємо на нього, поки він не зміниться хоч на трохи, наприклад, коли ми піднімаємося високо в гори або летимо в літаку. Атмосферний тиск також коливається залежно від погодних умов: знижується в грозу, коли повітря неспокійне, і зростає в тиху погоду за ясного неба.
+  <string name="sensor_desc_second_paragraph_barometer">Ми не помічаємо цього сильного тиску, оскільки звикли до нього, і не зважаємо на нього, поки він не зміниться хоч на трохи, наприклад, коли ми піднімаємося високо в гори або летимо в літаку. Атмосферний тиск також коливається залежно від погодних умов: знижується в грозу, коли повітря неспокійне, і зростає в тиху погоду за ясного неба. 
 
-Цифровий барометр у вашому телефоні вимірює атмосферний тиск у гектопаскалях (1 гектопаскаль дорівнює 100 паскалям, а 1 паскаль – це сила в один ньютон, розподілена по поверхні площею один квадратний метр). Можливо, ви чули, що в прогнозі погоди атмосферний тиск указують у мілібарах. Ця одиниця вимірювання еквівалентна гектопаскалю.
+Цифровий барометр у вашому телефоні вимірює атмосферний тиск у гектопаскалях (1 гектопаскаль дорівнює 100 паскалям, а 1 паскаль – це сила в один ньютон, розподілена по поверхні площею один квадратний метр). Можливо, ви чули, що в прогнозі погоди атмосферний тиск указують у мілібарах. Ця одиниця вимірювання еквівалентна гектопаскалю. 
 
 Можливо, ви думаєте: \"Навіщо вимірювати тиск телефоном?\" Атмосферний тиск помітно змінюється навіть за незначних коливань висоти над поверхнею моря, наприклад, коли ви піднімаєтеся сходами. Тому цифровий барометр у телефоні допоможе вам визначити зміну місцезнаходження. Скажімо, можна дізнатися, на якому поверсі будинку ви перебуваєте або яким ярусом мосту їдете – верхнім чи нижнім.</string>
   <string name="run_review_activity_label">Переглянути</string>
@@ -482,9 +482,9 @@
   <string name="compass">Компас</string>
   <string name="compass_units">градуси</string>
   <string name="sensor_desc_short_compass">Орієнтація телефона відносно магнітного поля Землі.</string>
-  <string name="sensor_desc_first_paragraph_compass">Ви, мабуть, уже знаєте, що Земля має магнітне поле. Проте ви могли й не здогадуватися, що у вашому телефоні є магнітометр – пристрій, який дає змогу виявляти магнітні поля. Поєднавши дані магнітометра та відомості про орієнтацію телефона в просторі, ми можемо створити цифровий компас.
+  <string name="sensor_desc_first_paragraph_compass">Ви, мабуть, уже знаєте, що Земля має магнітне поле. Проте ви могли й не здогадуватися, що у вашому телефоні є магнітометр – пристрій, який дає змогу виявляти магнітні поля. Поєднавши дані магнітометра та відомості про орієнтацію телефона в просторі, ми можемо створити цифровий компас. 
 
-Спрощена версія магнітометра – звичайний компас із намагніченою голкою, яка обертається за напрямом навколишнього магнітного поля. Звісно, усередині вашого телефона маленького компаса немає, але замість нього вбудовано крихітний просторовий датчик, який використовує електричний струм для визначення сили магнітного поля в тривимірному просторі. Але цього недостатньо для створення компаса.
+Спрощена версія магнітометра – звичайний компас із намагніченою голкою, яка обертається за напрямом навколишнього магнітного поля. Звісно, усередині вашого телефона маленького компаса немає, але замість нього вбудовано крихітний просторовий датчик, який використовує електричний струм для визначення сили магнітного поля в тривимірному просторі. Але цього недостатньо для створення компаса. 
 
 Навіщо поєднувати дані магнітометра та відомості про орієнтацію телефона? Знаючи положення телефона, ми можемо визначити магнітне обертання, навіть якщо телефон не в одній площині з магнітним полем Землі. Оскільки гравітація перпендикулярна до магнітного поля Землі, на основі даних акселерометра пристрою про напрям гравітації ми можемо визначити, яка частина магнітного поля перебуває в одній площині з магнітним полем Землі.</string>
   <string name="sensor_desc_second_paragraph_compass">Як ви, мабуть, помітили, компас у телефоні реагує не тільки на магнітне поле Землі, а й на будь-яке магнітне поле навколо. Магніти, дроти, по яких протікає електричний струм, і металеві предмети легко скеровують стрілку магнітометра в телефоні в різних напрямках, у результаті чого покази компаса змінюються. Вийдіть на відкритий простір, бажано просто неба й подалі від ліній електропередачі, якщо хочете, щоб червона стрілка вашого компаса показувала напрям магнітного поля Землі. Ви також зможете відкалібрувати магнітометр на телефоні, описавши ним уявну вісімку.</string>
@@ -497,9 +497,9 @@
   <string name="month_year_format">ММММ рррр</string>
   <string name="linear_accelerometer">Лінійний акселерометр</string>
   <string name="sensor_desc_short_linear_acc">Загальне прискорення телефона без урахування сили тяжіння, у м/с²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Об’єкти мають властивість залишатися нерухомими або продовжувати пересуватися – ця властивість називається інерцією. Перший закон Ньютона так формулює цю ідею: об’єкт зберігає стан спокою або руху, допоки діюча на нього незбалансована сила не виведе його з цього стану.
+  <string name="sensor_desc_first_paragraph_linear_acc">Об’єкти мають властивість залишатися нерухомими або продовжувати пересуватися – ця властивість називається інерцією. Перший закон Ньютона так формулює цю ідею: об’єкт зберігає стан спокою або руху, допоки діюча на нього незбалансована сила не виведе його з цього стану. 
 
-Коли незбалансована сила змушує об’єкт рухатися, ми кажемо, що він прискорюється: його швидкість змінюється за рахунок прискорення, уповільнення або зміни напрямку. Прискорення – це зміна швидкості (виражається в метрах за секунду) у часі, тому вона вимірюється в метрах за секунду у квадраті (м/с²).
+Коли незбалансована сила змушує об’єкт рухатися, ми кажемо, що він прискорюється: його швидкість змінюється за рахунок прискорення, уповільнення або зміни напрямку. Прискорення – це зміна швидкості (виражається в метрах за секунду) у часі, тому вона вимірюється в метрах за секунду у квадраті (м/с²). 
 
 Ваш телефон обладнано акселерометром – пристроєм для вимірювання таких змін руху. Усередині акселерометра є малі підвішені маси, що можуть вільно переміщуватися. Зміни руху призводять до переміщення цих мас так само, як голова нахиляється вперед під час різкого гальмування авто. Вимірюючи ці майже непомітні інерційні переміщення, акселерометр телефона може фіксувати зміни руху й напрямку. Це потрібно для перемикання екрана з альбомної в книжкову орієнтацію, під час ігор тощо.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Комбінований датчик лінійного акселерометра фіксує загальне прискорення відносно всіх трьох осей телефона, ігноруючи силу тяжіння.</string>
@@ -522,7 +522,7 @@
   <string name="first_experiment_title">Вітаємо в Науковому журналі</string>
   <string name="first_experiment_text_note">Робіть нотатки й записуйте дані за допомогою панелі інструментів унизу.</string>
   <string name="first_experiment_picture_note_caption">Вітаємо в Науковому журналі!</string>
-  <string name="first_experiment_second_text_note">Спробуйте провести дослідження зі сторінки
+  <string name="first_experiment_second_text_note">Спробуйте провести дослідження зі сторінки 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Виберіть фото для експерименту</string>
   <string name="btn_take_picture_content_description">Зробити фото</string>
@@ -701,6 +701,7 @@ g.co/sciencejournalactivities</string>
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Науковий журнал від Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Заявити права на колишні експерименти</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -743,7 +744,7 @@ g.co/sciencejournalactivities</string>
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -764,8 +765,8 @@ g.co/sciencejournalactivities</string>
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -825,7 +826,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -858,7 +859,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -913,7 +914,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -927,4 +928,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By accepting them you indicate that you have read and agree to the new Terms presented in the agreement.</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

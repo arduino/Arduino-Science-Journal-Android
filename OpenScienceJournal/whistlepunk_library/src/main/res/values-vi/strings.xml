@@ -192,56 +192,56 @@
   <string name="sensor_desc_short_rotation">Số vòng quay trên phút</string>
   <string name="sensor_desc_short_raw">Phần trăm chỉ số đọc thô từ cảm biến bên ngoài.</string>
   <string name="sensor_desc_short_barometer">Áp suất khí quyển được đo bằng hectopascal (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Cảm biến ánh sáng môi trường xung quanh đo ánh sáng theo đơn vị lux, một số đo chiếu sáng phụ thuộc vào lượng ánh sáng đi vào và vùng trải sáng.
+  <string name="sensor_desc_first_paragraph_light">Cảm biến ánh sáng môi trường xung quanh đo ánh sáng theo đơn vị lux, một số đo chiếu sáng phụ thuộc vào lượng ánh sáng đi vào và vùng trải sáng. 
 
-Một tuần trăng tròn cung cấp khoảng 1 lux ánh sáng, một phòng khách thông thường được chiếu đèn khoảng 50 lux, chiếu sáng lớp học, bình minh và hoàng hôn khoảng 400 lux, ánh sáng hàng ngày (ánh sáng gián tiếp) trên 10.000 lux và ánh sáng trực tiếp trên 30.000 lux.
+Một tuần trăng tròn cung cấp khoảng 1 lux ánh sáng, một phòng khách thông thường được chiếu đèn khoảng 50 lux, chiếu sáng lớp học, bình minh và hoàng hôn khoảng 400 lux, ánh sáng hàng ngày (ánh sáng gián tiếp) trên 10.000 lux và ánh sáng trực tiếp trên 30.000 lux. 
 
 Lux là đơn vị mà hầu hết chúng ta đều không quen. Khi chúng ta mua bóng đèn, chúng ta thường mua theo watt—nhưng công suất của bóng đèn không cho biết độ sáng của bóng đèn mà chỉ cho biết mức năng lượng mà bóng đèn sử dụng. Lumen là đơn vị đo ánh sáng tốt hơn giúp chúng ta khi mua bóng đèn; đơn vị này sẽ cho bạn biết bóng đèn thực sự tạo ra mức sáng là bao nhiêu. Trong khi đó, lux cho bạn biết lượng ánh sáng đến một vùng cụ thể.</string>
-  <string name="sensor_desc_second_paragraph_light">Vì ánh sáng khuếch tán khi di chuyển nên số lux giảm xuống khi bạn tránh xa nguồn sáng, mặc dù nguồn sáng đó vẫn phát ra cùng một lượng ánh sáng theo đơn vị lumen. Một vùng nghiêng khỏi nguồn sáng cũng nhận được ít ánh sáng hơn—đây là lý do các vùng xích đạo lại ấm hơn nhiều so với các cực lạnh giá.
+  <string name="sensor_desc_second_paragraph_light">Vì ánh sáng khuếch tán khi di chuyển nên số lux giảm xuống khi bạn tránh xa nguồn sáng, mặc dù nguồn sáng đó vẫn phát ra cùng một lượng ánh sáng theo đơn vị lumen. Một vùng nghiêng khỏi nguồn sáng cũng nhận được ít ánh sáng hơn—đây là lý do các vùng xích đạo lại ấm hơn nhiều so với các cực lạnh giá. 
 
 Theo cách này, mục đích của cảm biến ánh sáng trong điện thoại là kiểm soát mức sáng của màn hình, điều chỉnh thích hợp với môi trường tối và sáng. Bên trong cảm biến ánh sáng, một bán dẫn nhỏ phản hồi ánh sáng đi vào bằng cách tạo ra một dòng điện nhỏ nhưng có thể đo được—một hiện tượng được biết đến là hiệu ứng điện quang. Các cảm biến tương tự được dùng trong một số đèn đường để bật chúng khi trời tối.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Điện thoại có một thiết bị được thiết kế để phát hiện từ trường: đó là từ kế. Cảm biến ba trục rất nhỏ này sử dụng dòng điện để phát hiện cường độ từ trường trong ba chiều của không gian. Khi kết hợp dữ liệu từ tất cả ba trục, chúng ta có thể tạo ra cảm biến cường độ từ trường tổng thể.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Điện thoại có một thiết bị được thiết kế để phát hiện từ trường: đó là từ kế. Cảm biến ba trục rất nhỏ này sử dụng dòng điện để phát hiện cường độ từ trường trong ba chiều của không gian. Khi kết hợp dữ liệu từ tất cả ba trục, chúng ta có thể tạo ra cảm biến cường độ từ trường tổng thể. 
 
-Một số từ kế phát hiện từ trường bằng hiệu ứng Hall — các từ trường có xu hướng làm chệch hướng điện tích chuyển động khi điện tích chạy qua. Các từ kế mới hơn dựa vào từ điện trở, hợp kim kim loại thay đổi điện trở để phản hồi từ trường.
+Một số từ kế phát hiện từ trường bằng hiệu ứng Hall — các từ trường có xu hướng làm chệch hướng điện tích chuyển động khi điện tích chạy qua. Các từ kế mới hơn dựa vào từ điện trở, hợp kim kim loại thay đổi điện trở để phản hồi từ trường. 
 
 Vì sao điện thoại cần từ kế? Biết được hướng trong không gian sẽ hữu ích cho la bàn và ứng dụng dẫn đường tích hợp, đặc biệt là những ứng dụng tìm kiếm thông tin để đưa ra hướng dẫn chỉ đường theo từng bước rẽ.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Nam châm, dòng điện và các vật thể kim loại sẽ dễ dàng dẫn hướng từ kế của điện thoại theo nhiều hướng khác nhau. Nhưng ngay cả ở giữa một khu vực trống thì từ kế trong điện thoại của bạn sẽ luôn hiển thị giá trị thấp không bao giờ bằng 0: đó chính là từ trường Trái Đất!</string>
-  <string name="sensor_desc_first_paragraph_acc">Các đối tượng có xu hướng đứng yên hay tiếp tục di chuyển nếu chúng đang di chuyển—chúng tôi gọi xu hướng này là quán tính. Định luật thứ nhất của Newton chính thức thể hiện ý tưởng này: Một đối tượng tiếp tục trạng thái chuyển động hoặc đứng yên của mình trừ khi có lực không cân bằng tác động lên.
+  <string name="sensor_desc_first_paragraph_acc">Các đối tượng có xu hướng đứng yên hay tiếp tục di chuyển nếu chúng đang di chuyển—chúng tôi gọi xu hướng này là quán tính. Định luật thứ nhất của Newton chính thức thể hiện ý tưởng này: Một đối tượng tiếp tục trạng thái chuyển động hoặc đứng yên của mình trừ khi có lực không cân bằng tác động lên. 
 
-Khi một lực không cân bằng khiến đối tượng chuyển động, chúng ta nói đối tượng đó có gia tốc: vận tốc hay tốc độ thay đổi—bằng cách tăng tốc, giảm tốc hay thay đổi hướng. Gia tốc được đo dưới dạng thay đổi vận tốc (m/s) theo thời gian hoặc mét trên giây bình phương (m/s²).
+Khi một lực không cân bằng khiến đối tượng chuyển động, chúng ta nói đối tượng đó có gia tốc: vận tốc hay tốc độ thay đổi—bằng cách tăng tốc, giảm tốc hay thay đổi hướng. Gia tốc được đo dưới dạng thay đổi vận tốc (m/s) theo thời gian hoặc mét trên giây bình phương (m/s²). 
 
 Điện thoại của bạn có thiết bị để đo những thay đổi về chuyển động này—gọi là gia tốc kế. Bên trong một gia tốc kế, các khối lượng treo nhỏ chuyển động tự do. Thay đổi về chuyển động khiến những khối lượng này thay đổi mặc dù đầu bạn luôn có xu hướng gập về phía trước khi ngồi trong một chiếc xe dừng đột ngột. Khi đo những thay đổi quán tính tinh tế này, một gia tốc kế trong điện thoại có thể phát hiện thay đổi về chuyển động và hướng, hữu ích để chuyển màn hình từ chế độ ngang sang chế độ dọc để phát trò chơi trên điện thoại của bạn và hơn thế nữa.</string>
   <string name="sensor_desc_second_paragraph_acc">Bạn có thể nhận thấy gia tốc liên tục ở trục Z, ngay cả khi điện thoại nằm yên trên bàn. Đây là gia tốc chúng ta gặp ở bề mặt trái đất do sức hút của trọng lực, khoảng 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">Âm thanh do sự rung động tạo ra. Chẳng hạn, giọng nói của bạn là do các dây thanh âm của cổ họng rung lên. Những rung động này tạo nên các vùng áp lực không khí cao và thấp thay thế di chuyển ra bên ngoài — gần giống với việc mở rộng gợn sóng hình tròn do ném một viên sỏi vào ao.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Tất cả âm thanh đều có thể diễn tả được về mặt tần số và cường độ.
+  <string name="sensor_desc_second_paragraph_decibel">Tất cả âm thanh đều có thể diễn tả được về mặt tần số và cường độ. 
 
-Cường độ là chỉ số bạn đo được ở đây bằng cảm biến cường độ âm thanh của Science Journal theo đơn vị deciben (dB). Cường độ (hay âm lượng) phụ thuộc vào khoảng cách mà vật thể rung di chuyển mỗi lần rung. Chúng ta nghe thấy cường độ lớn hơn khi âm lượng tăng lên.
+Cường độ là chỉ số bạn đo được ở đây bằng cảm biến cường độ âm thanh của Science Journal theo đơn vị deciben (dB). Cường độ (hay âm lượng) phụ thuộc vào khoảng cách mà vật thể rung di chuyển mỗi lần rung. Chúng ta nghe thấy cường độ lớn hơn khi âm lượng tăng lên. 
 
-Tần số (còn gọi là cao độ hoặc tông) của sóng âm thanh tương đương với tốc độ rung của nó. Vật thể rung càng nhanh thì cao độ của âm thanh thu được càng cao. Cảm biến cường độ âm thanh của Science Journal không đo tần số mà chỉ đo âm lượng.
+Tần số (còn gọi là cao độ hoặc tông) của sóng âm thanh tương đương với tốc độ rung của nó. Vật thể rung càng nhanh thì cao độ của âm thanh thu được càng cao. Cảm biến cường độ âm thanh của Science Journal không đo tần số mà chỉ đo âm lượng. 
 
-Một điều quan trọng cần biết là micrô trong thiết bị của bạn được thiết kế để phản ứng rất nhạy với sự khác biệt về sóng âm theo thời gian chứ không phải theo kích thước tuyệt đối của mỗi sóng âm. Chúng tôi đã thử chọn mã có khả năng tạo ra trị số giống như các giá trị tham chiếu minh họa bên dưới nhưng mỗi thiết bị có thể cho kết quả luôn là giá trị cao hơn hoặc thấp hơn. Thông thường, các nhà khoa học sẽ hiệu chuẩn loại cảm biến như vậy đến giá trj đã xác định. Hiện tại, ứng dụng Science Journal có thể cho bạn biết liệu chuyến đi tàu sắp tới của bạn có âm lượng to hơn buổi hòa nhạc rock sắp tới không nhưng với điều kiện là bạn phải mang cùng một chiếc điện thoại đến cả hai sự kiện này.
+Một điều quan trọng cần biết là micrô trong thiết bị của bạn được thiết kế để phản ứng rất nhạy với sự khác biệt về sóng âm theo thời gian chứ không phải theo kích thước tuyệt đối của mỗi sóng âm. Chúng tôi đã thử chọn mã có khả năng tạo ra trị số giống như các giá trị tham chiếu minh họa bên dưới nhưng mỗi thiết bị có thể cho kết quả luôn là giá trị cao hơn hoặc thấp hơn. Thông thường, các nhà khoa học sẽ hiệu chuẩn loại cảm biến như vậy đến giá trj đã xác định. Hiện tại, ứng dụng Science Journal có thể cho bạn biết liệu chuyến đi tàu sắp tới của bạn có âm lượng to hơn buổi hòa nhạc rock sắp tới không nhưng với điều kiện là bạn phải mang cùng một chiếc điện thoại đến cả hai sự kiện này. 
 
-Một điều nữa cần biết là “cường độ âm thanh”, “mức cường độ âm thanh” và “áp suất âm thanh” có nhiều điểm khác biệt quan trọng. Ở đây, chúng tôi coi cả ba khái niệm này là một nhưng nếu bạn muốn tìm hiểu sâu hơn thì vẫn có nhiều tài nguyên trực tuyến giải thích về các điểm khác nhau này.
+Một điều nữa cần biết là “cường độ âm thanh”, “mức cường độ âm thanh” và “áp suất âm thanh” có nhiều điểm khác biệt quan trọng. Ở đây, chúng tôi coi cả ba khái niệm này là một nhưng nếu bạn muốn tìm hiểu sâu hơn thì vẫn có nhiều tài nguyên trực tuyến giải thích về các điểm khác nhau này. 
 
-Âm thanh yên tĩnh nhất mà tai của một người bình thường có thể phát hiện được xác định ở mức 0 dB. Một cuộc trò chuyện bình thường tương ứng với khoảng 60 dB và âm thanh trên mức 140 dB sẽ gây đau cho tai người. Tuy nhiên, không chỉ âm thanh gây đau mới là âm thanh có hại. Liên tục tiếp xúc với âm thanh 90 dB (xấp xỉ âm lượng của máy hút bụi) dần dần có thể làm giảm thính lực.
+Âm thanh yên tĩnh nhất mà tai của một người bình thường có thể phát hiện được xác định ở mức 0 dB. Một cuộc trò chuyện bình thường tương ứng với khoảng 60 dB và âm thanh trên mức 140 dB sẽ gây đau cho tai người. Tuy nhiên, không chỉ âm thanh gây đau mới là âm thanh có hại. Liên tục tiếp xúc với âm thanh 90 dB (xấp xỉ âm lượng của máy hút bụi) dần dần có thể làm giảm thính lực. 
 
-Thang đo decibel là thang đo lôgarít nên sẽ có một số điểm phức tạp: Nguồn âm thanh 40 dB không mạnh gấp hai lần nguồn âm thanh 20 dB mà mạnh hơn gấp 100 lần. Trong khi đó, nếu một chiếc đồng hồ báo thức đang reo tạo ra 70 dB thì hai chiếc đồng hồ báo thức đang reo không tạo ra 140 dB mà tạo ra 73 dB. Như chúng tôi đã nói, đây không phải thang đo thông thường.
+Thang đo decibel là thang đo lôgarít nên sẽ có một số điểm phức tạp: Nguồn âm thanh 40 dB không mạnh gấp hai lần nguồn âm thanh 20 dB mà mạnh hơn gấp 100 lần. Trong khi đó, nếu một chiếc đồng hồ báo thức đang reo tạo ra 70 dB thì hai chiếc đồng hồ báo thức đang reo không tạo ra 140 dB mà tạo ra 73 dB. Như chúng tôi đã nói, đây không phải thang đo thông thường. 
 
-10 dB tương ứng với tiếng lá rơi xào xạc
-20 dB là tiếng thầm thì cách 5 feet (1,5 mét)
-30 dB là tiếng thì thầm khe khẽ
-50 dB là tiếng mưa rơi
-60 dB là tiếng nói chuyện bình thường
-90 dB là tiếng máy xay sinh tố
-100 dB là tiếng xe hơi không có bộ giảm thanh
-110 dB là tiếng hét vào tai
-120 dB là tiếng sấm
-130 dB là tiếng búa khoan
+10 dB tương ứng với tiếng lá rơi xào xạc 
+20 dB là tiếng thầm thì cách 5 feet (1,5 mét) 
+30 dB là tiếng thì thầm khe khẽ 
+50 dB là tiếng mưa rơi 
+60 dB là tiếng nói chuyện bình thường 
+90 dB là tiếng máy xay sinh tố 
+100 dB là tiếng xe hơi không có bộ giảm thanh 
+110 dB là tiếng hét vào tai 
+120 dB là tiếng sấm 
+130 dB là tiếng búa khoan 
 140 dB là tiếng máy bay cất cánh</string>
   <string name="sensor_desc_first_paragraph_pitch">Âm thanh là do sự rung động tạo ra. Chẳng hạn, giọng nói của bạn là do các dây thanh âm của cổ họng rung lên. Những rung động này tạo nên các vùng áp suất không khí cao và thấp xen kẽ di chuyển ra bên ngoài — gần giống với hiện tượng gợn sóng thành những vòng tròn lan rộng khi ném một viên sỏi vào ao.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Tất cả âm thanh đều có thể diễn tả được về mặt tần số và cường độ. Tần số (còn gọi là cao độ hoặc tông) của sóng âm thanh tương đương với tốc độ rung của nó. Vật thể rung càng nhanh thì cao độ của âm thanh thu được càng cao. Chúng tôi đo những rung động này bằng Hertz (Hz) trong đó 1 Hertz = 1 rung động/giây.
+  <string name="sensor_desc_second_paragraph_pitch">Tất cả âm thanh đều có thể diễn tả được về mặt tần số và cường độ. Tần số (còn gọi là cao độ hoặc tông) của sóng âm thanh tương đương với tốc độ rung của nó. Vật thể rung càng nhanh thì cao độ của âm thanh thu được càng cao. Chúng tôi đo những rung động này bằng Hertz (Hz) trong đó 1 Hertz = 1 rung động/giây. 
 
-Con người có thể nghe âm thanh trong phạm vi từ 20 đến 20.000 Hz. Phím trầm nhất trên đàn dương cầm sinh ra âm thanh có tần số 27,5 Hz và phím bổng nhất sinh ra âm thanh có tần số 4186,01 Hz.
+Con người có thể nghe âm thanh trong phạm vi từ 20 đến 20.000 Hz. Phím trầm nhất trên đàn dương cầm sinh ra âm thanh có tần số 27,5 Hz và phím bổng nhất sinh ra âm thanh có tần số 4186,01 Hz. 
 
 Dấu chấm màu đỏ biểu thị cao độ được phát hiện cách nốt nhạc gần nhất bao nhiêu. Nếu cao độ nhỏ hơn/thấp hơn, thì dấu chấm sẽ xuất hiện ở bên trái. Nếu cao độ lớn hơn/cao hơn, thì dấu chấm sẽ xuất hiện ở bên phải.</string>
   <string name="pitch_low_content_description">âm thấp</string>
@@ -255,22 +255,22 @@ Dấu chấm màu đỏ biểu thị cao độ được phát hiện cách nốt
   <string name="pitch_sharper_than_flat_note_content_description">%3$s cao hơn nửa cung so với %1$s giáng, quãng tám %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s cao hơn nửa cung so với %1$s thăng, quãng tám %2$s</string>
   <string name="pitch_high_content_description">âm cao</string>
-  <string name="sensor_desc_first_paragraph_rotation">Số vòng trên phút (RPM) là đơn vị đo tần suất quay xung quanh một trục cố định trong một phút.
+  <string name="sensor_desc_first_paragraph_rotation">Số vòng trên phút (RPM) là đơn vị đo tần suất quay xung quanh một trục cố định trong một phút. 
 
 Khi máy quay gió xoay, nó sẽ xoay quanh đĩa bộ mã hóa:</string>
   <string name="sensor_desc_second_paragraph_rotation">Điều này tạo ra các kỳ sáng tối trên cảm biến đăng ký trong Science Journal dưới dạng chuyển động quay.</string>
-  <string name="sensor_desc_first_paragraph_raw">Dữ liệu hiển thị ở đây là từ cảm biến bên ngoài giao tiếp với điện thoại thông qua Bluetooth.
+  <string name="sensor_desc_first_paragraph_raw">Dữ liệu hiển thị ở đây là từ cảm biến bên ngoài giao tiếp với điện thoại thông qua Bluetooth. 
 
 Giá trị này cho biết phần trăm chỉ số đọc thô ngay từ bộ vi điều khiển. Đây thường là phần trăm sụt áp trên cảm biến.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth là chuẩn công nghệ không dây dùng sóng radio để trao đổi dữ liệu qua khoảng cách ngắn từ thiết bị cố định và thiết bị di động.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">Dữ liệu hiển thị ở đây là từ cảm biến bên ngoài giao tiếp với điện thoại thông qua Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth là chuẩn công nghệ không dây dùng sóng radio để trao đổi dữ liệu qua khoảng cách ngắn từ thiết bị cố định và thiết bị di động.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Mặc dù ít khi chúng ta chú ý đến điều này nhưng tất cả chúng ta đang sống ở dưới đáy sâu của một đại dương không khí: Khí quyển của Trái đất kéo dài lên phía trên với độ cao khoảng 40 km (130.000 feet). Trọng lượng của toàn bộ lượng khí đó đẩy xuống chúng ta và tạo ra cái gọi là áp suất khí quyển.
+  <string name="sensor_desc_first_paragraph_barometer">Mặc dù ít khi chúng ta chú ý đến điều này nhưng tất cả chúng ta đang sống ở dưới đáy sâu của một đại dương không khí: Khí quyển của Trái đất kéo dài lên phía trên với độ cao khoảng 40 km (130.000 feet). Trọng lượng của toàn bộ lượng khí đó đẩy xuống chúng ta và tạo ra cái gọi là áp suất khí quyển. 
 
 Ở mực nước biển, áp suất khí quyển tác dụng một lực khoảng 14 pound lên mỗi inch vuông, tương đương khoảng 1.300 pound lên một vùng có kích thước bằng tờ giấy thông thường.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Chúng ta không cảm nhận được áp suất nén này vì chúng ta đã quen với nó — tức là, cho đến khi áp suất thay đổi, thậm chí chỉ là một chút khi chúng ta đến độ cao hoặc ngồi trên máy bay. Áp suất khí quyển cũng thay đổi theo điều kiện thời tiết. Áp suất giảm xuống khi không khí không ổn định hoặc khi trời có bão và tăng lên khi không khí ổn định và bầu trời quang đãng.
+  <string name="sensor_desc_second_paragraph_barometer">Chúng ta không cảm nhận được áp suất nén này vì chúng ta đã quen với nó — tức là, cho đến khi áp suất thay đổi, thậm chí chỉ là một chút khi chúng ta đến độ cao hoặc ngồi trên máy bay. Áp suất khí quyển cũng thay đổi theo điều kiện thời tiết. Áp suất giảm xuống khi không khí không ổn định hoặc khi trời có bão và tăng lên khi không khí ổn định và bầu trời quang đãng. 
 
-Khí áp kế kỹ thuật số trong điện thoại của bạn đo áp suất khí quyển theo hectopascal. (Một hectopascal bằng 100 pascal, trong đó pascal là một newton lực tác dụng lên một mét vuông diện tích). Có thể bạn đã nghe các đài dự báo thời tiết nói đến áp suất khí quyển theo mili bar — đơn vị nghe có vẻ thân thiện hơn này tương đương với hectopascal.
+Khí áp kế kỹ thuật số trong điện thoại của bạn đo áp suất khí quyển theo hectopascal. (Một hectopascal bằng 100 pascal, trong đó pascal là một newton lực tác dụng lên một mét vuông diện tích). Có thể bạn đã nghe các đài dự báo thời tiết nói đến áp suất khí quyển theo mili bar — đơn vị nghe có vẻ thân thiện hơn này tương đương với hectopascal. 
 
 Bạn có thể tự hỏi: Tại sao một chiếc điện thoại có thể đo áp suất? Áp suất khí quyển thay đổi ở mức có thể đo được ngay cả khi có thay đổi rất nhỏ về độ cao, chẳng hạn khi bạn leo cầu thang. Vì vậy, khí áp kế kỹ thuật số trong một chiếc điện thoại có thể giúp phát hiện thay đổi về địa điểm, chẳng hạn như cho biết bạn đang ở tầng nào của một tòa nhà hoặc bạn đang lái xe ở sàn trên hay sàn dưới của một cây cầu.</string>
   <string name="run_review_activity_label">Đánh giá</string>
@@ -497,9 +497,9 @@ Vì sao la bàn cần kết hợp dữ liệu từ từ kế với hướng đi�
   <string name="month_year_format">MMMM yyyy</string>
   <string name="linear_accelerometer">Gia tốc kế tuyến tính</string>
   <string name="sensor_desc_short_linear_acc">Tổng gia tốc của điện thoại không bao gồm trọng lực theo m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">Các vật thể có xu hướng đứng yên hay tiếp tục chuyển động nếu chúng đang chuyển động—chúng ta gọi xu hướng này là quán tính. Định luật thứ nhất của Newton chính thức thể hiện ý tưởng này như sau: Một vật thể sẽ tiếp tục duy trì trạng thái chuyển động hoặc đứng yên trừ khi có lực không cân bằng tác động lên vật thể đó.
+  <string name="sensor_desc_first_paragraph_linear_acc">Các vật thể có xu hướng đứng yên hay tiếp tục chuyển động nếu chúng đang chuyển động—chúng ta gọi xu hướng này là quán tính. Định luật thứ nhất của Newton chính thức thể hiện ý tưởng này như sau: Một vật thể sẽ tiếp tục duy trì trạng thái chuyển động hoặc đứng yên trừ khi có lực không cân bằng tác động lên vật thể đó. 
 
-Khi một lực không cân bằng khiến đối tượng chuyển động, chúng ta nói vật thể đó có gia tốc: vận tốc hay tốc độ thay đổi bằng cách tăng tốc, giảm tốc hay đổi hướng. Gia tốc được đo dưới dạng thay đổi vận tốc (m/giây) theo thời gian hoặc mét trên giây bình phương (m/s²).
+Khi một lực không cân bằng khiến đối tượng chuyển động, chúng ta nói vật thể đó có gia tốc: vận tốc hay tốc độ thay đổi bằng cách tăng tốc, giảm tốc hay đổi hướng. Gia tốc được đo dưới dạng thay đổi vận tốc (m/giây) theo thời gian hoặc mét trên giây bình phương (m/s²). 
 
 Điện thoại của bạn có thiết bị để đo những thay đổi về chuyển động này gọi là gia tốc kế. Bên trong gia tốc kế, các con lắc treo nhỏ chuyển động tự do. Thay đổi về chuyển động khiến những con lắc này thay đổi, gần giống như khi đầu bạn luôn có xu hướng gập về phía trước khi ngồi trong chiếc xe dừng đột ngột. Khi đo những thay đổi quán tính rất nhỏ này, gia tốc kế trong điện thoại có thể phát hiện thay đổi về chuyển động và hướng. Khả năng này rất hữu ích trong việc chuyển màn hình từ chế độ ngang sang chế độ dọc để chơi trò chơi trên điện thoại và nhiều tiện ích khác.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Cảm biến gia tốc tuyến tính kết hợp ghi lại tổng gia tốc trong tất cả ba trục của điện thoại trừ trọng lực.</string>
@@ -522,7 +522,7 @@ Khi một lực không cân bằng khiến đối tượng chuyển động, ch�
   <string name="first_experiment_title">Chào mừng bạn đến với Science Journal</string>
   <string name="first_experiment_text_note">Hãy thử ghi chép và ghi lại dữ liệu bằng thanh công cụ bên dưới!</string>
   <string name="first_experiment_picture_note_caption">Chào mừng bạn đến với Science Journal!</string>
-  <string name="first_experiment_second_text_note">Hãy tìm các hoạt động để thử nghiệm tại
+  <string name="first_experiment_second_text_note">Hãy tìm các hoạt động để thử nghiệm tại 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Hãy chọn một ảnh cho thí nghiệm</string>
   <string name="btn_take_picture_content_description">Chụp ảnh</string>
@@ -692,6 +692,7 @@ Nếu bạn đang có dữ liệu trên thiết bị này thì sau khi đã đă
   <string name="sensor_desc_short_mkrsci_magnetometer">An instrument used to measure the intensity and direction of a magnetic field</string>
   <string name="sensor_desc_short_mkrsci_resistance">The measure of the difficulty of current flow through an object or material</string>
   <string name="sensor_desc_short_mkrsci_voltage">The difference in electric potential between two places that allows a current to flow</string>
+  <string name="app_store_name">Science Journal của Google</string>
   <string name="claim_experiments_confirm_one">Collect experiment</string>
   <string name="claim_experiments_title">Xác nhận thử nghiệm trước đó</string>
   <string name="color_ambient_light">Ambient Light</string>
@@ -734,7 +735,7 @@ Nếu bạn đang có dữ liệu trên thiết bị này thì sau khi đã đă
   <string name="onboarding_04_text_02">Take a new photo</string>
   <string name="onboarding_04_text_03">Make a sensor recording</string>
   <string name="onboarding_04_text_04">Add a picture from your gallery</string>
-  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment  or create a sensor recording.</string>
+  <string name="onboarding_04_text_05">Document different types of observations through the <b>observation toolbar</b>. You can add a text note or photo to your experiment or create a sensor recording.</string>
   <string name="onboarding_05_title">Select a Sensor</string>
   <string name="onboarding_05_text_01">Pick a built-in phone sensor or connect an Arduino board to see live sensor data.</string>
   <string name="onboarding_05_quick_tip">You can add multiple sensors to your experiment to observe them simultaneously.</string>
@@ -755,8 +756,8 @@ Nếu bạn đang có dữ liệu trên thiết bị này thì sau khi đã đă
   <string name="drive_sync_intro_skip">SKIP</string>
   <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
 You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
+If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first. 
+If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders. 
 If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
   <string name="drive_sync_folder_picker_title">Select a folder</string>
   <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
@@ -816,7 +817,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
   <string name="drive_setup_step_1_title">Cloud Sync</string>
   <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
+  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are stored in a folder of your choice in Google Drive.</string>
   <string name="drive_learn_more">Learn More</string>
   <string name="drive_skip">Skip</string>
   <string name="drive_select">Sync Here</string>
@@ -849,7 +850,7 @@ If you have any doubts or questions about Google\'s policies, permissions and pr
   <string name="arduino_auth_invalid_email">Invalid email</string>
   <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
   <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
+  <string name="arduino_auth_username_info">Only letters, numbers, hyphen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
   <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
@@ -904,7 +905,7 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_account_settings">Account Settings</string>
   <string name="navigation_item_privacy_policy">Privacy Policy</string>
   <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
+  <string name="arduino_auth_settings_section_sync_description">Sign in with your Google account to start using drive sync</string>
   <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
   <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
   <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
@@ -918,4 +919,18 @@ You will use this username to log in to Arduino, and other users will see it whe
   <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
   <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
   <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Agree</string>
+  <string name="arduino_terms_agreement_title">Terms &amp; Conditions</string>
+  <string name="arduino_terms_agreement">We have updated the app Terms and Conditions. By accepting them you indicate that you have read and agree to the new Terms presented in the agreement.</string>
+  <string name="arduino_terms_agreement__link_label">Terms and Conditions</string>
 </resources>

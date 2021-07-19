@@ -193,56 +193,56 @@ Se condividi una copia ora, mancheranno anche questi dati.</string>
   <string name="sensor_desc_short_rotation">Il numero di rotazioni al minuto</string>
   <string name="sensor_desc_short_raw">La percentuale di rilevamento dei dati grezzi da un sensore esterno.</string>
   <string name="sensor_desc_short_barometer">La pressione atmosferica misurata in ettopascal (hPa).</string>
-  <string name="sensor_desc_first_paragraph_light">Il sensore di luce ambientale misura la luce in lux, l\'unità di misura dell\'illuminazione che dipende dalla quantità di luce in ingresso e dall\'area su cui si diffonde.
+  <string name="sensor_desc_first_paragraph_light">Il sensore di luce ambientale misura la luce in lux, l\'unità di misura dell\'illuminazione che dipende dalla quantità di luce in ingresso e dall\'area su cui si diffonde. 
 
- La luna piena fornisce circa 1 lux di illuminazione, un soggiorno illuminato con una lampada tradizionale circa 50 lux, l\'illuminazione di un\'aula o dell\'alba e del tramonto circa 400 lux, la luce indiretta del sole oltre 10.000 lux mentre quella diretta oltre 30.000 lux.
+ La luna piena fornisce circa 1 lux di illuminazione, un soggiorno illuminato con una lampada tradizionale circa 50 lux, l\'illuminazione di un\'aula o dell\'alba e del tramonto circa 400 lux, la luce indiretta del sole oltre 10.000 lux mentre quella diretta oltre 30.000 lux. 
 
 Il lux è un\'unità di misura sconosciuta per molti di noi. Quando acquistiamo le lampadine, spesso decidiamo in base ai watt, ma la potenza di una lampadina non ne indica la luminosità, ma solo la quantità di energia che utilizza. I lumen sono un\'unità di misura migliore su cui basarsi al momento dell\'acquisto, in quanto indicano quanta luce viene effettivamente prodotta da una lampadina. I lux, invece indicano quanta di questa luce giunge su una determinata area.</string>
-  <string name="sensor_desc_second_paragraph_light">Poiché la luce si irradia mentre viaggia, il numero di lux diminuisce man mano che ci si allontana dalla sorgente luminosa, anche se quest\'ultima continua a emettere la stessa quantità di luce in lumen. Se una zona è inclinata rispetto alla sorgente luminosa, riceve meno illuminazione e questo è anche il motivo per cui le regioni equatoriali sulla Terra sono molto più calde rispetto ai gelidi poli.
+  <string name="sensor_desc_second_paragraph_light">Poiché la luce si irradia mentre viaggia, il numero di lux diminuisce man mano che ci si allontana dalla sorgente luminosa, anche se quest\'ultima continua a emettere la stessa quantità di luce in lumen. Se una zona è inclinata rispetto alla sorgente luminosa, riceve meno illuminazione e questo è anche il motivo per cui le regioni equatoriali sulla Terra sono molto più calde rispetto ai gelidi poli. 
 
 A proposito, lo scopo del sensore di luminosità del tuo telefono è quello di controllare il livello di luminosità dello schermo, regolandolo di conseguenza in base agli ambienti scuri o luminosi. All\'interno del sensore di luminosità, un minuscolo semiconduttore reagisce alla luce in ingresso producendo una piccola (ma misurabile) corrente elettrica: questo fenomeno è noto come effetto fotoelettrico. Sensori simili sono utilizzati anche in alcuni tipi di lampioni, che si accendono quando inizia a fare buio.</string>
-  <string name="sensor_desc_first_paragraph_magnetic_strength">Il tuo telefono contiene un dispositivo progettato per rilevare i campi magnetici: il magnetometro. Questo piccolo sensore a tre assi utilizza le correnti elettriche per rilevare la forza del campo magnetico nelle tre dimensioni dello spazio. Unendo i dati dei tre assi possiamo creare un sensore per rilevare la forza totale del campo magnetico.
+  <string name="sensor_desc_first_paragraph_magnetic_strength">Il tuo telefono contiene un dispositivo progettato per rilevare i campi magnetici: il magnetometro. Questo piccolo sensore a tre assi utilizza le correnti elettriche per rilevare la forza del campo magnetico nelle tre dimensioni dello spazio. Unendo i dati dei tre assi possiamo creare un sensore per rilevare la forza totale del campo magnetico. 
 
-Alcuni magnetometri rilevano i campi magnetici avvalendosi dell\'effetto Hall, ossia la tendenza dei campi magnetici a deflettere le cariche in movimento. I nuovi magnetometri si basano sui magnetoresistori, leghe metalliche la cui resistenza varia in risposta ai campi magnetici.
+Alcuni magnetometri rilevano i campi magnetici avvalendosi dell\'effetto Hall, ossia la tendenza dei campi magnetici a deflettere le cariche in movimento. I nuovi magnetometri si basano sui magnetoresistori, leghe metalliche la cui resistenza varia in risposta ai campi magnetici. 
 
 Perché i telefoni devono avere un magnetometro? Conoscere la propria posizione nello spazio è utile per le bussole integrate e le app di navigazione, specialmente per quelle progettate per fornire indicazioni stradali dettagliate.</string>
   <string name="sensor_desc_second_paragraph_magnetic_strength">Magneti, correnti elettriche e oggetti metallici riusciranno a orientare facilmente il magnetometro del telefono in una direzione o nell\'altra. Anche nel bel mezzo di un campo vuoto, il magnetometro del telefono mostrerà sempre un valore basso diverso da zero; si tratta del campo magnetico terrestre.</string>
-  <string name="sensor_desc_first_paragraph_acc">La tendenza degli oggetti a rimanere nel loro stato di quiete o di moto viene detta inerzia. La prima legge di Newton esprime questo principio formalmente: un oggetto permane nel suo stato di quiete o di moto a meno che non intervenga una forza esterna non bilanciata a modificare tale stato.
+  <string name="sensor_desc_first_paragraph_acc">La tendenza degli oggetti a rimanere nel loro stato di quiete o di moto viene detta inerzia. La prima legge di Newton esprime questo principio formalmente: un oggetto permane nel suo stato di quiete o di moto a meno che non intervenga una forza esterna non bilanciata a modificare tale stato. 
 
-Quando una forza esterna non bilanciata causa lo spostamento dell\'oggetto, si dice che l\'oggetto accelera: la sua velocità cambia, aumentando, diminuendo o cambiando direzione. L\'accelerazione viene misurata come cambiamento della velocità (espressa in metri al secondo) nel tempo ed è calcolata in metri al secondo quadrato (m/s²).
+Quando una forza esterna non bilanciata causa lo spostamento dell\'oggetto, si dice che l\'oggetto accelera: la sua velocità cambia, aumentando, diminuendo o cambiando direzione. L\'accelerazione viene misurata come cambiamento della velocità (espressa in metri al secondo) nel tempo ed è calcolata in metri al secondo quadrato (m/s²). 
 
 Il tuo telefono è dotato di un dispositivo che misura questi cambiamenti di movimento: l\'accelerometro. All\'interno di un accelerometro sono presenti piccole masse sospese libere di muoversi. I cambiamenti di movimento provocano lo spostamento di queste masse, un po\' come quando la tua testa si flette in avanti quando ti trovi in un\'auto che si arresta bruscamente. Misurando questi sottili spostamenti inerziali, l\'accelerometro del telefono è in grado di rilevare i cambiamenti di movimento e orientamento, utili per esempio per passare dalla schermata in modalità orizzontale a quella verticale, per quando usi app di giochi sul telefono e altro ancora.</string>
   <string name="sensor_desc_second_paragraph_acc">Probabilmente avrai notato un\'accelerazione permanente sull\'asse Z, anche con il telefono ancora sul tavolo. Questa è l\'accelerazione registrata sulla superficie terrestre dovuta alla forza di gravità, pari a circa 9,8 m/s².</string>
   <string name="sensor_desc_first_paragraph_decibel">I suoni sono composti da vibrazioni. La tua voce, ad esempio, proviene dalla vibrazione delle corde vocali. Queste vibrazioni creano zone alternate di alta e bassa pressione dell\'aria che si muovono verso l\'esterno, all\'incirca come le onde circolari create da un sasso lanciato in uno specchio d\'acqua.</string>
-  <string name="sensor_desc_second_paragraph_decibel">Tutti i suoni possono essere descritti in termini di frequenza e intensità.
+  <string name="sensor_desc_second_paragraph_decibel">Tutti i suoni possono essere descritti in termini di frequenza e intensità. 
 
-L\'intensità è l\'elemento che il sensore di intensità del suono di Science Journal misura in decibel (dB). L\'intensità, o volume, dipende dalla distanza che un oggetto vibrante riesce a coprire ogni volta che vibra; noi percepiamo la maggiore intensità come maggiore volume.
+L\'intensità è l\'elemento che il sensore di intensità del suono di Science Journal misura in decibel (dB). L\'intensità, o volume, dipende dalla distanza che un oggetto vibrante riesce a coprire ogni volta che vibra; noi percepiamo la maggiore intensità come maggiore volume. 
 
-La frequenza (o tonalità) di un\'onda sonora equivale alla sua velocità di vibrazione: più velocemente un oggetto vibra, più alta sarà la tonalità del suono che ne risulta. Il sensore dell\'intensità del suono di Science Journal non misura la frequenza, solo il volume.
+La frequenza (o tonalità) di un\'onda sonora equivale alla sua velocità di vibrazione: più velocemente un oggetto vibra, più alta sarà la tonalità del suono che ne risulta. Il sensore dell\'intensità del suono di Science Journal non misura la frequenza, solo il volume. 
 
-Una cosa importante da sapere è che il microfono del tuo dispositivo è progettato per essere molto sensibile alle differenze delle onde sonore nel tempo, ma non alla dimensione assoluta di ogni onda. Abbiamo cercato di selezionare un codice che probabilmente produrrà numeri simili a quelli di riferimento indicati sotto, ma ogni dispositivo potrebbe generare costantemente numeri più alti o più bassi. Gli scienziati solitamente calibrano un sensore come questo su una misura conosciuta. Per ora, Science Journal può dirti se il volume prodotto dal treno in cui hai viaggiato è più forte di quello di un concerto rock a cui hai assistito, ma solo se usi lo stesso telefono in entrambe le situazioni.
+Una cosa importante da sapere è che il microfono del tuo dispositivo è progettato per essere molto sensibile alle differenze delle onde sonore nel tempo, ma non alla dimensione assoluta di ogni onda. Abbiamo cercato di selezionare un codice che probabilmente produrrà numeri simili a quelli di riferimento indicati sotto, ma ogni dispositivo potrebbe generare costantemente numeri più alti o più bassi. Gli scienziati solitamente calibrano un sensore come questo su una misura conosciuta. Per ora, Science Journal può dirti se il volume prodotto dal treno in cui hai viaggiato è più forte di quello di un concerto rock a cui hai assistito, ma solo se usi lo stesso telefono in entrambe le situazioni. 
 
-Un altro aspetto da considerare sono le importanti differenze tra \"intensità del suono\", \"livello di intensità del suono\" e \"pressione del suono\": qui li consideriamo come una sola cosa, ma se vuoi saperne di più, ci sono molte risorse online che spiegano queste differenze.
+Un altro aspetto da considerare sono le importanti differenze tra \"intensità del suono\", \"livello di intensità del suono\" e \"pressione del suono\": qui li consideriamo come una sola cosa, ma se vuoi saperne di più, ci sono molte risorse online che spiegano queste differenze. 
 
-Il suono più basso percepibile dall\'orecchio umano corrisponde a 0 dB. Una normale conversazione corrisponde a circa 60 dB e i suoni superiori a 140 dB sono dolorosi per l\'orecchio. Ma i suoni non devono necessariamente essere dolorosi per essere dannosi. L\'esposizione continua a suoni di 90 dB, all\'incirca il volume di un aspirapolvere, potrebbe causare la perdita dell\'udito.
+Il suono più basso percepibile dall\'orecchio umano corrisponde a 0 dB. Una normale conversazione corrisponde a circa 60 dB e i suoni superiori a 140 dB sono dolorosi per l\'orecchio. Ma i suoni non devono necessariamente essere dolorosi per essere dannosi. L\'esposizione continua a suoni di 90 dB, all\'incirca il volume di un aspirapolvere, potrebbe causare la perdita dell\'udito. 
 
-La scala decibel è logaritmica, il che comporta alcune difficoltà: l\'intensità di un suono di 40 dB non è doppia rispetto a quella di un suono di 20 dB, ma è 100 volte più intensa. Allo stesso tempo, se una sveglia che suona genera 70 dB, due sveglie producono non 140 dB, ma 73 dB. Come abbiamo detto, è una scala particolare.
+La scala decibel è logaritmica, il che comporta alcune difficoltà: l\'intensità di un suono di 40 dB non è doppia rispetto a quella di un suono di 20 dB, ma è 100 volte più intensa. Allo stesso tempo, se una sveglia che suona genera 70 dB, due sveglie producono non 140 dB, ma 73 dB. Come abbiamo detto, è una scala particolare. 
 
-10 dB fruscio delle foglie
-20 dB sussurro a 1,5 m
-30 dB sussurro
+10 dB fruscio delle foglie 
+20 dB sussurro a 1,5 m 
+30 dB sussurro 
 50 dB pioggia
-60 dB normale conversazione
-90 dB frullatore
-100 dB auto senza marmitta
-110 dB urlare in un orecchio
-120 dB tuono
-130 dB martello pneumatico
+60 dB normale conversazione 
+90 dB frullatore 
+100 dB auto senza marmitta 
+110 dB urlare in un orecchio 
+120 dB tuono 
+130 dB martello pneumatico 
 140 dB aeroplano che decolla</string>
   <string name="sensor_desc_first_paragraph_pitch">I suoni sono composti da vibrazioni. La tua voce, ad esempio, proviene dalla vibrazione delle corde vocali. Queste vibrazioni creano zone alternate di alta e bassa pressione dell\'aria che si muovono verso l\'esterno, all\'incirca come le onde circolari create da un sasso lanciato in uno specchio d\'acqua.</string>
-  <string name="sensor_desc_second_paragraph_pitch">Tutti i suoni possono essere descritti in termini di frequenza e intensità. La frequenza (o tonalità) di un\'onda sonora equivale alla sua velocità di vibrazione: più velocemente un oggetto vibra, più alta sarà la tonalità del suono che ne risulta. Queste vibrazioni sono misurate in Hertz (Hz) laddove 1 Hertz = 1 vibrazione/secondo.
+  <string name="sensor_desc_second_paragraph_pitch">Tutti i suoni possono essere descritti in termini di frequenza e intensità. La frequenza (o tonalità) di un\'onda sonora equivale alla sua velocità di vibrazione: più velocemente un oggetto vibra, più alta sarà la tonalità del suono che ne risulta. Queste vibrazioni sono misurate in Hertz (Hz) laddove 1 Hertz = 1 vibrazione/secondo. 
 
-Gli esseri umani riescono a udire suoni che vanno da 20 a 20.000 Hz. Il primo tasto di un pianoforte produce un suono con frequenza di 27,5 Hz, mentre l\'ultimo produce un suono con frequenza 4186,01 Hz.
+Gli esseri umani riescono a udire suoni che vanno da 20 a 20.000 Hz. Il primo tasto di un pianoforte produce un suono con frequenza di 27,5 Hz, mentre l\'ultimo produce un suono con frequenza 4186,01 Hz. 
 
 Il puntino rosso indica quanto la tonalità rilevata è prossima alla più vicina nota musicale. Se la tonalità è più bassa, o calante, il puntino sarà visualizzato a sinistra; se la tonalità è più alta, o crescente, il puntino rosso sarà visualizzato a destra.</string>
   <string name="pitch_low_content_description">tonalità bassa</string>
@@ -256,22 +256,22 @@ Il puntino rosso indica quanto la tonalità rilevata è prossima alla più vicin
   <string name="pitch_sharper_than_flat_note_content_description">%3$s semitoni più alta di %1$s bemolle, ottava %2$s</string>
   <string name="pitch_sharper_than_sharp_note_content_description">%3$s semitoni più alta di %1$s diesis, ottava %2$s</string>
   <string name="pitch_high_content_description">tonalità alta</string>
-  <string name="sensor_desc_first_paragraph_rotation">I giri al minuto (RPM) sono l\'unità di misura della frequenza di rotazione attorno a un asse fisso in un minuto.
+  <string name="sensor_desc_first_paragraph_rotation">I giri al minuto (RPM) sono l\'unità di misura della frequenza di rotazione attorno a un asse fisso in un minuto. 
 
 Girando, la tua girandola fa ruotare il disco dell\'encoder:</string>
   <string name="sensor_desc_second_paragraph_rotation">Ciò produce dei periodi di luce e oscurità sul sensore che vengono registrati in Science Journal come una rotazione.</string>
-  <string name="sensor_desc_first_paragraph_raw">I dati visualizzati qui provengono da un sensore esterno che comunica con il tuo telefono tramite Bluetooth.
+  <string name="sensor_desc_first_paragraph_raw">I dati visualizzati qui provengono da un sensore esterno che comunica con il tuo telefono tramite Bluetooth. 
 
 Il valore indica la percentuale di dati grezzi letti direttamente dal tuo microcontroller. Solitamente si tratta della percentuale di un calo di voltaggio di un sensore.</string>
   <string name="sensor_desc_second_paragraph_raw">Bluetooth è uno standard di tecnologia wireless che utilizza onde radio per lo scambio di dati a brevi distanze da dispositivi fissi e mobili.</string>
   <string name="sensor_desc_first_paragraph_unknown_bluetooth">I dati visualizzati qui provengono da un sensore esterno che comunica con il tuo telefono tramite Bluetooth.</string>
   <string name="sensor_desc_second_paragraph_unknown_bluetooth">Bluetooth è uno standard di tecnologia wireless che utilizza onde radio per lo scambio di dati a brevi distanze da dispositivi fissi e mobili.</string>
-  <string name="sensor_desc_first_paragraph_barometer">Anche se spesso non ce ne rendiamo conto, viviamo sul fondale di un oceano d\'aria: l\'atmosfera terrestre, che si estende per 40 km di quota. Il peso di tutta quest\'aria che preme dall\'alto su di noi è la cosiddetta \"pressione atmosferica\".
+  <string name="sensor_desc_first_paragraph_barometer">Anche se spesso non ce ne rendiamo conto, viviamo sul fondale di un oceano d\'aria: l\'atmosfera terrestre, che si estende per 40 km di quota. Il peso di tutta quest\'aria che preme dall\'alto su di noi è la cosiddetta \"pressione atmosferica\". 
 
 Al livello del mare, la pressione atmosferica grava con una forza pari a 6,3 kg su 6,4 cm quadrati, che equivale a circa 589 kg su una superficie pari a un foglio A4.</string>
-  <string name="sensor_desc_second_paragraph_barometer">Non ci accorgiamo di questa enorme pressione perché ci siamo abituati. O meglio, non ce ne accorgiamo finché non cambia, anche di poco, come capita quando andiamo in alta quota o viaggiamo in aereo. La pressione atmosferica varia anche a seconda delle condizioni meteo: diminuisce in presenza di aria instabile e turbolenta, aumenta quando l\'aria diventa stabile e il cielo si rasserena.
+  <string name="sensor_desc_second_paragraph_barometer">Non ci accorgiamo di questa enorme pressione perché ci siamo abituati. O meglio, non ce ne accorgiamo finché non cambia, anche di poco, come capita quando andiamo in alta quota o viaggiamo in aereo. La pressione atmosferica varia anche a seconda delle condizioni meteo: diminuisce in presenza di aria instabile e turbolenta, aumenta quando l\'aria diventa stabile e il cielo si rasserena. 
 
-Il barometro digitale del telefono misura la pressione atmosferica in ettopascal. Un ettopascal corrisponde a 100 pascal, mentre un pascal equivale a un newton di forza applicato su un metro quadrato di superficie. Come ti è capitato probabilmente di sentire, nelle previsioni meteo la pressione atmosferica viene indicata in millibar, un\'unità di misura più familiare che equivale all\'ettopascal.
+Il barometro digitale del telefono misura la pressione atmosferica in ettopascal. Un ettopascal corrisponde a 100 pascal, mentre un pascal equivale a un newton di forza applicato su un metro quadrato di superficie. Come ti è capitato probabilmente di sentire, nelle previsioni meteo la pressione atmosferica viene indicata in millibar, un\'unità di misura più familiare che equivale all\'ettopascal. 
 
 Ti starai forse chiedendo perché un telefono dovrebbe misurare la pressione atmosferica. Quest\'ultima cambia in modo quantificabile anche in presenza di piccole variazioni dell\'altezza, come ad esempio quando sali una rampa di scale. La presenza di un barometro digitale in un telefono consente quindi di rilevare i cambiamenti della tua posizione, ad esempio indica a quale piano ti trovi in un edificio o se percorri in auto la corsia superiore o inferiore di un ponte a più livelli.</string>
   <string name="run_review_activity_label">Riepilogo</string>
@@ -335,29 +335,29 @@ Ti starai forse chiedendo perché un telefono dovrebbe misurare la pressione atm
 • Esporta esperimenti su un file e importali su altri dispositivi.</string>
   <string name="listing_h_feature_3">
 • Esporta foto da un esperimento.</string>
-  <string name="listing__description">Science Journal è il quaderno scientifico digitale gratuito offerto da Google.
+  <string name="listing__description">Science Journal è il quaderno scientifico digitale gratuito offerto da Google. 
+ 
+Che tu sia un insegnante di scienze o un appassionato che coltiva la sua passione per la scienza a casa, potrai conservare appunti, foto e osservazioni in un unico posto facilmente consultabile. Puoi utilizzare i sensori del tuo telefono per misurare e raffigurare graficamente fenomeni come luce, suono e movimento oppure collegare il dispositivo a sensori esterni tramite Bluetooth per condurre esperimenti nell\'ambiente che ti circonda. 
+ 
+L\'app Science Journal ti permette di: 
+• Misurare la luce, il suono, l\'accelerazione, la pressione dell\'aria e molto altro tramite i sensori integrati del telefono. 
+• Prendere appunti e scattare foto per documentare i tuoi esperimenti scientifici. A breve saranno disponibili altri tipi di note. 
+• Collegare il dispositivo a sensori esterni tramite dispositivi Arduino e Vernier compatibili con Bluetooth. 
+• Accedere ai tuoi esperimenti da tutti i tuoi dispositivi grazie a Google Drive. 
+• Esportare i dati dei sensori registrati come file CSV. 
+• Creare trigger automatici per registrare i dati e prendere appunti. 
+• Utilizzare la sonificazione per percepire il suono del movimento dei grafici. 
+ 
+Science Journal è disponibile gratuitamente su Android, iPhone, iPad e sui dispositivi Chromebook compatibili. 
+ 
+Attività didattiche dei nostri partner: https://makingscience.withgoogle.com/science-journal/activities 
+Per assistenza: https://productforums.google.com/forum/#!forum/sciencejournal 
+Codice open source disponibile: https://github.com/google/science-journal 
 
-Che tu sia un insegnante di scienze o un appassionato che coltiva la sua passione per la scienza a casa, potrai conservare appunti, foto e osservazioni in un unico posto facilmente consultabile. Puoi utilizzare i sensori del tuo telefono per misurare e raffigurare graficamente fenomeni come luce, suono e movimento oppure collegare il dispositivo a sensori esterni tramite Bluetooth per condurre esperimenti nell\'ambiente che ti circonda.
-
-L\'app Science Journal ti permette di:
-• Misurare la luce, il suono, l\'accelerazione, la pressione dell\'aria e molto altro tramite i sensori integrati del telefono.
-• Prendere appunti e scattare foto per documentare i tuoi esperimenti scientifici. A breve saranno disponibili altri tipi di note.
-• Collegare il dispositivo a sensori esterni tramite dispositivi Arduino e Vernier compatibili con Bluetooth.
-• Accedere ai tuoi esperimenti da tutti i tuoi dispositivi grazie a Google Drive.
-• Esportare i dati dei sensori registrati come file CSV.
-• Creare trigger automatici per registrare i dati e prendere appunti.
-• Utilizzare la sonificazione per percepire il suono del movimento dei grafici.
-
-Science Journal è disponibile gratuitamente su Android, iPhone, iPad e sui dispositivi Chromebook compatibili.
-
-Attività didattiche dei nostri partner: https://makingscience.withgoogle.com/science-journal/activities
-Per assistenza: https://productforums.google.com/forum/#!forum/sciencejournal
-Codice open source disponibile: https://github.com/google/science-journal
-
- Notifica di autorizzazione:
-• Posizione: necessaria per rilevare dispositivi con sensore Bluetooth.
-• Fotocamera: necessaria per scattare foto per documentare gli esperimenti.
-• Microfono: necessaria per i sensori di intensità del suono.
+ Notifica di autorizzazione: 
+• Posizione: necessaria per rilevare dispositivi con sensore Bluetooth. 
+• Fotocamera: necessaria per scattare foto per documentare gli esperimenti. 
+• Microfono: necessaria per i sensori d\'intensità del suono. 
 • Spazio di archiviazione: necessaria per accedere alle foto da inserire negli esperimenti.</string>
   <string name="third_party_sensors_option_title">Cerca sensori di terze parti</string>
   <string name="third_party_sensors_option_summary">Consente di cercare app che supportano l\'API dei sensori di terze parti permettendo di aggiungerli agli esperimenti.</string>
@@ -460,9 +460,9 @@ Codice open source disponibile: https://github.com/google/science-journal
   <string name="compass">Bussola</string>
   <string name="compass_units">gradi</string>
   <string name="sensor_desc_short_compass">L\'orientamento del telefono rispetto al campo magnetico terrestre.</string>
-  <string name="sensor_desc_first_paragraph_compass">Forse sapevi già che la Terra è dotata di un campo magnetico. Quello che forse non sai è che il tuo telefono contiene un dispositivo progettato per rilevare questi campi magnetici: il magnetometro. Unendo i dati rilevati dal magnetometro del telefono e quelli sull\'orientamento del telefono nello spazio possiamo creare una bussola digitale.
+  <string name="sensor_desc_first_paragraph_compass">Forse sapevi già che la Terra è dotata di un campo magnetico. Quello che forse non sai è che il tuo telefono contiene un dispositivo progettato per rilevare questi campi magnetici: il magnetometro. Unendo i dati rilevati dal magnetometro del telefono e quelli sull\'orientamento del telefono nello spazio possiamo creare una bussola digitale. 
 
-La bussola tradizionale altro non è che un magnetometro low-tech con un ago magnetizzato che ruota per allinearsi al campo magnetico circostante. Nel tuo telefono non troverai una piccola bussola, ma un sensore a tre assi che utilizza le correnti elettriche per rilevare la forza del campo magnetico nelle tre dimensioni dello spazio. Questo però non basta per creare una bussola.
+La bussola tradizionale altro non è che un magnetometro low-tech con un ago magnetizzato che ruota per allinearsi al campo magnetico circostante. Nel tuo telefono non troverai una piccola bussola, ma un sensore a tre assi che utilizza le correnti elettriche per rilevare la forza del campo magnetico nelle tre dimensioni dello spazio. Questo però non basta per creare una bussola. 
 
 Perché la bussola ha bisogno di utilizzare i dati del magnetometro e quelli sull\'orientamento del telefono? La conoscenza di quest\'ultimo parametro ci permette di calcolare la rotazione magnetica anche quando il telefono non è tenuto in orizzontale sullo stesso piano del campo magnetico terrestre. Sappiamo che la gravità agisce perpendicolarmente rispetto al campo magnetico terrestre, perciò possiamo utilizzare la direzione della forza di gravità rispetto ai sensori dell\'accelerometro per determinare la parte di campo magnetico che si trova sullo stesso piano del campo magnetico terrestre.</string>
   <string name="sensor_desc_second_paragraph_compass">Come forse avrai notato, la bussola risente non solo del campo magnetico terrestre, ma di qualsiasi campo magnetico nelle vicinanze. I magneti, le correnti elettriche e gli oggetti metallici orienteranno facilmente il magnetometro del telefono in una direzione o nell\'altra, modificando i valori della bussola. Se vuoi essere certo che la punta rossa dell\'ago della tua bussola sia allineata al campo magnetico terrestre, esegui la prova in uno spazio ampio, preferibilmente all\'aperto e lontano da cavi elettrici. Per calibrare il magnetometro del telefono, muovilo formando un \"8\".</string>
@@ -475,9 +475,9 @@ Perché la bussola ha bisogno di utilizzare i dati del magnetometro e quelli sul
   <string name="month_year_format">MMMM yyyy</string>
   <string name="linear_accelerometer">Accelerometro lineare</string>
   <string name="sensor_desc_short_linear_acc">L\'accelerazione totale del telefono, esclusa la forza di gravità, espressa in m/s²</string>
-  <string name="sensor_desc_first_paragraph_linear_acc">La tendenza degli oggetti a rimanere nel loro stato di quiete o di moto viene detta inerzia. La prima legge di Newton esprime questo principio formalmente: un oggetto permane nel suo stato di quiete o di moto a meno che non intervenga una forza esterna non bilanciata a modificare tale stato.
+  <string name="sensor_desc_first_paragraph_linear_acc">La tendenza degli oggetti a rimanere nel loro stato di quiete o di moto viene detta inerzia. La prima legge di Newton esprime questo principio formalmente: un oggetto permane nel suo stato di quiete o di moto a meno che non intervenga una forza esterna non bilanciata a modificare tale stato. 
 
-Quando una forza esterna non bilanciata causa lo spostamento dell\'oggetto, si dice che l\'oggetto accelera: la sua velocità muta aumentando, diminuendo o cambiando direzione. L\'accelerazione viene misurata in termini di variazione della velocità (espressa in metri al secondo) nel tempo ed è calcolata in metri al secondo quadrato (m/s²).
+Quando una forza esterna non bilanciata causa lo spostamento dell\'oggetto, si dice che l\'oggetto accelera: la sua velocità muta aumentando, diminuendo o cambiando direzione. L\'accelerazione viene misurata in termini di variazione della velocità (espressa in metri al secondo) nel tempo ed è calcolata in metri al secondo quadrato (m/s²). 
 
 Il tuo telefono è dotato di un dispositivo che misura queste variazioni di movimento: l\'accelerometro. All\'interno di un accelerometro sono presenti piccole masse sospese libere di muoversi. Le variazioni di movimento provocano lo spostamento di queste masse, come accade quando ti trovi in un\'auto che si arresta bruscamente e la testa si flette in avanti. Misurando questi lievi spostamenti inerziali, l\'accelerometro del telefono è in grado di rilevare le variazioni di movimento e orientamento, utili ad esempio per passare dalla schermata in modalità orizzontale a quella verticale, quando usi app di giochi sul telefono e altro ancora.</string>
   <string name="sensor_desc_second_paragraph_linear_acc">Il sensore dell\'accelerometro lineare combinato registra l\'accelerazione totale del telefono sui tre assi escludendo la gravità.</string>
@@ -500,7 +500,7 @@ Il tuo telefono è dotato di un dispositivo che misura queste variazioni di movi
   <string name="first_experiment_title">Benvenuto in Science Journal</string>
   <string name="first_experiment_text_note">Prova a prendere appunti e a registrare i dati utilizzando la barra degli strumenti qui sotto.</string>
   <string name="first_experiment_picture_note_caption">Benvenuto in Science Journal.</string>
-  <string name="first_experiment_second_text_note">Scopri le attività da provare alla pagina
+  <string name="first_experiment_second_text_note">Scopri le attività da provare alla pagina 
 g.co/sciencejournalactivities</string>
   <string name="experiment_cover_description">Scegli una foto per l\'esperimento</string>
   <string name="btn_take_picture_content_description">Scatta una foto</string>
@@ -673,7 +673,8 @@ Se sono presenti dati su questo dispositivo, una volta effettuato l\'accesso pot
   <string name="sensor_desc_short_mkrsci_magnetometer">Uno strumento utilizzato per misurare l\'intensità e la direzione di un campo magnetico</string>
   <string name="sensor_desc_short_mkrsci_resistance">La misura della difficoltà del flusso di corrente attraverso un oggetto o un materiale</string>
   <string name="sensor_desc_short_mkrsci_voltage">La differenza di potenziale elettrico tra due luoghi che consente a una corrente di fluire</string>
-  <string name="claim_experiments_confirm_one">Collect experiment</string>
+  <string name="app_store_name">Science Journal di Google</string>
+  <string name="claim_experiments_confirm_one">Aggiungi esperimento</string>
   <string name="claim_experiments_title">Rivendica esperimenti completati</string>
   <string name="color_ambient_light">Luce ambientale</string>
   <string name="color_ambient_light_units">lux</string>
@@ -693,11 +694,11 @@ Se sono presenti dati su questo dispositivo, una volta effettuato l\'accesso pot
   <string name="get_started_header_done">Questo è tutto!</string>
   <string name="get_started_message_done">Ci siamo. Il controllo delle autorizzazioni è terminato. Se in futuro avrai bisogno di modificare queste autorizzazioni, potrai farlo in qualsiasi momento nelle impostazioni Science Journal del tuo dispositivo Android.</string>
   <string name="get_started_action_done">Continua</string>
-  <string name="first_experiment_note_1">Welcome to Science Journal!</string>
-  <string name="first_experiment_note_2">Start taking notes and record data using the observation toolbar.</string>
-  <string name="first_experiment_note_3">Find activities and inspiration at science-journal.arduino.cc and start exploring the world around you.</string>
-  <string name="first_experiment_note_4">If you missed the Getting Started guide or you want to go back to it, you can find it in the sidebar menu.</string>
-  <string name="onboarding_navigation_title">GETTING STARTED</string>
+  <string name="first_experiment_note_1">Benvenuto su Science Journal!</string>
+  <string name="first_experiment_note_2">Inizia a prendere appunti e registrare i dati utilizzando la barra degli strumenti di osservazione.</string>
+  <string name="first_experiment_note_3">Trova attività e ispirazione su science-journal.arduino.cc e inizia a esplorare il mondo che ti circonda.</string>
+  <string name="first_experiment_note_4">Se ti sei perso la guida introduttiva o vuoi tornare indietro, puoi trovarla nel menu della barra laterale.</string>
+  <string name="onboarding_navigation_title">INIZIARE</string>
   <string name="onboarding_01_title">Benvenuti su Science Journal!</string>
   <string name="onboarding_01_text_01">Questa introduzione ti guiderà attraverso le funzioni più importanti di Science Journal e ti mostrerà come trasformare il tuo dispositivo in un laboratorio di scienze tascabile. Scorri verso sinistra per iniziare.</string>
   <string name="onboarding_01_quick_tip">Puoi sempre tornare a questa introduzione dal menu della barra laterale.</string>
@@ -726,177 +727,190 @@ Se sono presenti dati su questo dispositivo, una volta effettuato l\'accesso pot
   <string name="onboarding_07_title">Trasforma in suono</string>
   <string name="onboarding_07_text_01">Può essere difficile guardare il display mentre si fa un esperimento. Tocca \"Abilita audio\" per trasformare i valori del sensore in un <b>suono</b> udibile.</string>
   <string name="onboarding_finish_button">INIZIA LA SPERIMENTAZIONE</string>
-  <string name="navigation_getting_started">Getting Started</string>
+  <string name="navigation_getting_started">Come iniziare</string>
   <string name="onboarding_navigation_title_tablet">INTRODUZIONE A SCIENCE JOURNAL</string>
-  <string name="navigation_activities">SJ Activities</string>
-  <string name="drive_sync_intro_title">Cloud Sync</string>
-  <string name="drive_sync_intro_text">All your experiments can now be saved and accessed from anywhere with the Cloud Sync feature.  By tapping on the \"Google Drive\" button you are agreeing to Google’s permission and privacy policy to enable the backup, and sync of your experiments in a Google Drive folder of your choice, in accordance with Google T&amp;Cs and privacy policy. You will be redirected to Google’s authentication page to complete your Cloud Sync.</string>
-  <string name="drive_sync_intro_more">LEARN MORE</string>
+  <string name="navigation_activities">Attività di SJ</string>
+  <string name="drive_sync_intro_title">Sincronizzazione cloud</string>
+  <string name="drive_sync_intro_text">Tutti i tuoi esperimenti possono ora essere salvati e accessibili da qualsiasi luogo con la funzione Cloud Sync. Toccando il pulsante \"Google Drive\" accetti l\'autorizzazione e l\'informativa sulla privacy di Google per abilitare il backup e la sincronizzazione dei tuoi esperimenti in una cartella di Google Drive a tua scelta, in conformità con i Termini e condizioni di Google e l\'informativa sulla privacy. Verrai reindirizzato alla pagina di autenticazione di Google per completare la sincronizzazione cloud.</string>
+  <string name="drive_sync_intro_more">PER SAPERNE DI PIÙ</string>
   <string name="drive_sync_intro_google_action">Google Drive</string>
-  <string name="drive_sync_intro_skip">SKIP</string>
-  <string name="drive_sync_intro_more_text">The Arduino Science Journal app and Arduino never access your experiments created in the App, as they are only saved locally, nor do they access your documents in Google Drive, under any circumstances, even when Cloud Sync is active. The Arduino Science Journal app will ask for your permission to see, create and delete files with the sole purpose of saving and backing up your experiments in a Google Drive’s folder of your choice.
-You can change your preferences at any time straight from your Google account, or you can decide to revoke Cloud Sync’s access directly from the App.
-If you use a Google Account through your organization or school, you may not be able to back up your files. Check with your administrator first.
-If you have any doubt about Google Drive policies and/or if you have any problems related to the updates of Google Drive, please contact directly Google, as only the latter can help you deal with problems on your Google Drive account and folders.
-If you have any doubts or questions about Google\'s policies, permissions and privacy policies, please read Google’s T&amp;Cs and privacy policy.</string>
-  <string name="drive_sync_folder_picker_title">Select a folder</string>
-  <string name="drive_sync_folder_picker_text">Choose where you would like to save your experiments</string>
-  <string name="drive_sync_folder_picker_select">SYNC HERE</string>
-  <string name="drive_sync_folder_picker_empty">This folder is empty.</string>
-  <string name="drive_sync_root_folder_label">My Drive</string>
-  <string name="drive_sync_create_folder_title">Create New Folder</string>
+  <string name="drive_sync_intro_skip">SALTA</string>
+  <string name="drive_sync_intro_more_text">L\'app Arduino Science Journal e Arduino non accedono mai ai tuoi esperimenti creati nell\'app, poiché vengono salvati solo localmente, né accedono ai tuoi documenti su Google Drive, in nessun caso, anche quando Cloud Sync è attivo. L\'app Arduino Science Journal ti chiederà il permesso di vedere, creare ed eliminare file con l\'unico scopo di salvare ed eseguire il backup dei tuoi esperimenti in una cartella di Google Drive a tua scelta.
+Puoi modificare le tue preferenze in qualsiasi momento direttamente dal tuo account Google, oppure puoi decidere di revocare l\'accesso a Cloud Sync direttamente dall\'App.
+Se utilizzi un Account Google tramite la tua organizzazione o scuola, potresti non essere in grado di eseguire il backup dei tuoi file. Verifica prima con il tuo amministratore.
+In caso di dubbi sulle policy di Google Drive e/o in caso di problemi relativi agli aggiornamenti di Google Drive, contatta direttamente Google, poiché solo quest\'ultimo può aiutarti a risolvere i problemi relativi al tuo account e alle cartelle di Google Drive.
+In caso di dubbi o domande sulle politiche, le autorizzazioni e le politiche sulla privacy di Google, leggere i Termini e condizioni e l\'informativa sulla privacy di Google.</string>
+  <string name="drive_sync_folder_picker_title">Seleziona una cartella</string>
+  <string name="drive_sync_folder_picker_text">Scegli dove vuoi salvare i tuoi esperimenti</string>
+  <string name="drive_sync_folder_picker_select">SINCRONIZZA QUI</string>
+  <string name="drive_sync_folder_picker_empty">Questa cartella è vuota.</string>
+  <string name="drive_sync_root_folder_label">Il mio Drive</string>
+  <string name="drive_sync_create_folder_title">Crea una nuova cartella</string>
   <string name="drive_sync_create_folder_default">Science Journal</string>
-  <string name="drive_sync_create_folder_button">CREATE</string>
+  <string name="drive_sync_create_folder_button">CREA</string>
   <string name="drive_sync_summary_title">Google Drive</string>
-  <string name="drive_sync_summary_text">Your experiments will be automatically synced in the folder “%s” on your Drive.</string>
-  <string name="drive_sync_summary_button">SYNC NOW</string>
-  <string name="mkrsci_input_sensor_resistance_1kohm">1 kΩ Resistor</string>
-  <string name="mkrsci_input_sensor_resistance_10kohm">10 kΩ Resistor</string>
-  <string name="mkrsci_input_sensor_resistance_1mohm">1 MΩ Resistor</string>
-  <string name="arduino_auth_title_sign_in">Sign in to Arduino</string>
-  <string name="arduino_auth_cta_create_2">Create one now</string>
-  <string name="arduino_auth_username">Username</string>
+  <string name="drive_sync_summary_text">I tuoi esperimenti verranno sincronizzati automaticamente nella cartella \" %s \" sul tuo Drive.</string>
+  <string name="drive_sync_summary_button">SINCRONIZZA ORA</string>
+  <string name="mkrsci_input_sensor_resistance_1kohm">Resistore da 1 kΩ</string>
+  <string name="mkrsci_input_sensor_resistance_10kohm">Resistore da 10 kΩ</string>
+  <string name="mkrsci_input_sensor_resistance_1mohm">Resistore da 1 MΩ</string>
+  <string name="arduino_auth_title_sign_in">Accedi ad Arduino</string>
+  <string name="arduino_auth_cta_create_2">Creane uno ora</string>
+  <string name="arduino_auth_username">Nome utente</string>
   <string name="arduino_auth_password">Password</string>
-  <string name="arduino_auth_password_reset_cta">Forgot your password?</string>
-  <string name="arduino_auth_sign_up_tp_alternative">Or sign in with</string>
-  <string name="arduino_auth_password_reset_1_adult_text_1">Enter the email address associated with your account below.</string>
-  <string name="arduino_auth_password_reset_1_field_email">Insert your email</string>
-  <string name="arduino_auth_password_reset_completed_adult_text_1">Check your email, we just sent you a link to complete the reset of your password.</string>
-  <string name="arduino_auth_title_sign_up">Sign up to Arduino</string>
-  <string name="arduino_auth_sign_up_field_birthday">Birthday</string>
-  <string name="arduino_auth_sign_up_field_birthday_info">We need to know this in order to create the right account type for you.</string>
-  <string name="arduino_auth_sign_up_field_password">Choose a password</string>
-  <string name="arduino_auth_sign_up_field_username">Choose a username</string>
-  <string name="arduino_auth_sign_up_field_email">Enter your email</string>
-  <string name="arduino_auth_invalid_password">Minimum 8 characters</string>
-  <string name="arduino_auth_sign_up_option_marketing">I would like to receive emails about special deals and commercial offers from Arduino.</string>
-  <string name="arduino_auth_sign_up_option_newsletter">I would like to receive the Arduino newsletter.</string>
-  <string name="arduino_auth_title_sign_up_adult_completed">Confirm your email</string>
-  <string name="arduino_auth_sign_up_adult_completed_text_1">We sent you an email to finalize your registration. In order to continue, please follow the instructions and activate your account. Once your account is activated, you can login to Science Journal.</string>
-  <string name="arduino_auth_title_sign_in_junior">Sign in with a Junior account</string>
-  <string name="arduino_auth_sign_in_failure">Wrong email/username or password</string>
-  <string name="arduino_auth_sign_in_field_username">Username or email</string>
-  <string name="arduino_auth_title_mfa">2-Step Verification</string>
-  <string name="arduino_auth_mfa_text_2">This extra step shows that it’s really you trying to sign in. Get a verification code from the Authenticator app.</string>
-  <string name="arduino_auth_mfa_field_otp">Enter code</string>
-  <string name="arduino_auth_sign_up_junior_step_2_field_email">Parent’s email address</string>
-  <string name="arduino_auth_sign_up_junior_step_2_field_email_confirm">Confirm email address</string>
-  <string name="arduino_auth_title_sign_up_junior_step_2">Parent email address</string>
-  <string name="arduino_auth_title_sign_up_junior_completed">Account confirmation</string>
-  <string name="arduino_auth_password_reset_1_field_username">Your username</string>
-  <string name="arduino_auth_password_reset_1_field_username_info">The username is the word you used to sign in to your account. If you do not remember your username, ask your parent to restore your account from their Arduino profile page.</string>
-  <string name="arduino_auth_password_reset_completed_junior_text_1">Ask your parent to check their email inbox to reset your account’s password.</string>
-  <string name="arduino_auth_title_sign_up_junior_step_1">Create a Junior account</string>
-  <string name="arduino_auth_sign_up_junior_step_2_text">A parent needs to help you create the account. Enter their email address below and we will send instructions on how to proceed.</string>
-  <string name="claim_experiments_info_2">You may use the following actions to collect, export or discard those experiments:</string>
-  <string name="claim_experiments_info_4">Export or download an experiment</string>
-  <string name="claim_experiments_info_5">Delete an experiment from the device</string>
-  <string name="arduino_auth_terms">Terms Of Service</string>
-  <string name="arduino_auth_privacy">Privacy Policy</string>
+  <string name="arduino_auth_password_reset_cta">Hai dimenticato la password?</string>
+  <string name="arduino_auth_sign_up_tp_alternative">Oppure accedi con</string>
+  <string name="arduino_auth_password_reset_1_adult_text_1">Inserisci l\'indirizzo email associato al tuo account qui sotto.</string>
+  <string name="arduino_auth_password_reset_1_field_email">Inserisci la tua email</string>
+  <string name="arduino_auth_password_reset_completed_adult_text_1">Controlla la tua email, ti abbiamo appena inviato un link per completare il reset della tua password.</string>
+  <string name="arduino_auth_title_sign_up">Iscriviti ad Arduino</string>
+  <string name="arduino_auth_sign_up_field_birthday">Data di nascita</string>
+  <string name="arduino_auth_sign_up_field_birthday_info">Abbiamo bisogno di questa informazione per creare il tipo di account giusto per te.</string>
+  <string name="arduino_auth_sign_up_field_password">Scegli una password</string>
+  <string name="arduino_auth_sign_up_field_username">Scegli un nome utente</string>
+  <string name="arduino_auth_sign_up_field_email">Inserisci la tua email</string>
+  <string name="arduino_auth_invalid_password">Minimo 8 caratteri</string>
+  <string name="arduino_auth_sign_up_option_marketing">Vorrei ricevere email su offerte speciali e commerciali di Arduino.</string>
+  <string name="arduino_auth_sign_up_option_newsletter">Vorrei ricevere la newsletter di Arduino.</string>
+  <string name="arduino_auth_title_sign_up_adult_completed">Conferma la tua email</string>
+  <string name="arduino_auth_sign_up_adult_completed_text_1">Ti abbiamo inviato un\'email per finalizzare la registrazione. Per continuare, segui le istruzioni e attiva il tuo account. Una volta attivato il tuo account, puoi accedere a Science Journal.</string>
+  <string name="arduino_auth_title_sign_in_junior">Accedi con un account Junior</string>
+  <string name="arduino_auth_sign_in_failure">Email/nome utente o password errati</string>
+  <string name="arduino_auth_sign_in_field_username">Nome utente o email</string>
+  <string name="arduino_auth_title_mfa">Verifica in 2 passaggi</string>
+  <string name="arduino_auth_mfa_text_2">Questo passo in più dimostra che sei davvero tu che cerchi di accedere. Ottieni un codice di verifica dall\'app Authenticator.</string>
+  <string name="arduino_auth_mfa_field_otp">Inserisci il codice</string>
+  <string name="arduino_auth_sign_up_junior_step_2_field_email">Indirizzo email del genitore</string>
+  <string name="arduino_auth_sign_up_junior_step_2_field_email_confirm">Conferma l\'indirizzo email</string>
+  <string name="arduino_auth_title_sign_up_junior_step_2">Indirizzo email del genitore</string>
+  <string name="arduino_auth_title_sign_up_junior_completed">Conferma dell\'account</string>
+  <string name="arduino_auth_password_reset_1_field_username">Il tuo nome utente</string>
+  <string name="arduino_auth_password_reset_1_field_username_info">Il nome utente è la parola che hai usato per accedere al tuo account. Se non ricordi il tuo nome utente, chiedi ai tuoi genitori di ripristinare il tuo account dalla loro pagina del profilo Arduino.</string>
+  <string name="arduino_auth_password_reset_completed_junior_text_1">Chiedi al tuo genitore di controllare la sua casella di posta elettronica per reimpostare la password del tuo account.</string>
+  <string name="arduino_auth_title_sign_up_junior_step_1">Crea un account Junior</string>
+  <string name="arduino_auth_sign_up_junior_step_2_text">Un genitore deve aiutarti a creare l\'account. Inserisci il loro indirizzo email qui sotto. Ti invieremo le istruzioni su come procedere.</string>
+  <string name="claim_experiments_info_2">Puoi utilizzare le seguenti azioni per selezionare, esportare o eliminare tali esperimenti:</string>
+  <string name="claim_experiments_info_4">Esporta o scarica un esperimento</string>
+  <string name="claim_experiments_info_5">Elimina un esperimento dal dispositivo</string>
+  <string name="arduino_auth_terms">Termini di servizio</string>
+  <string name="arduino_auth_privacy">Informativa sulla privacy</string>
   <string name="config_auth_privacy">https://www.arduino.cc/en/privacy-policy/?embed</string>
   <string name="config_auth_terms">https://www.arduino.cc/en/sj-terms-conditions/?embed</string>
-  <string name="drive_setup_step_1_title">Cloud Sync</string>
-  <string name="drive_setup_step_1_description">Experiment data for Science Journal can be saved and made available across devices using Google Drive which requires signing in with a Google Account.</string>
-  <string name="drive_setup_step_1_popup">If you have existing data on this device, once signed in, you can save your existing experiments to Google Drive. Your experiments are sotred in a folder of your choice in Google Drive.</string>
-  <string name="drive_learn_more">Learn More</string>
-  <string name="drive_skip">Skip</string>
-  <string name="drive_select">Sync Here</string>
+  <string name="drive_setup_step_1_title">Sincronizzazione cloud</string>
+  <string name="drive_setup_step_1_description">I dati degli esperimenti per Science Journal possono essere salvati e resi disponibili su tutti i dispositivi utilizzando Google Drive che richiede l\'accesso con un Account Google.</string>
+  <string name="drive_setup_step_1_popup">Se disponi di dati esistenti su questo dispositivo, una volta effettuato l\'accesso, puoi salvare i tuoi esperimenti esistenti su Google Drive. I tuoi esperimenti sono archiviati in una cartella a tua scelta in Google Drive.</string>
+  <string name="drive_learn_more">Per saperne di più</string>
+  <string name="drive_skip">Salta</string>
+  <string name="drive_select">Sincronizza qui</string>
   <string name="gdrive_name">Google Drive</string>
-  <string name="gdrive_root">My Drive</string>
-  <string name="gdrive_error">Error connecting to Google Drive. Please try again.</string>
-  <string name="drive_setup_step_2_title">Select a folder</string>
-  <string name="drive_setup_step_2_description">Choose where you would like to save your experiments</string>
+  <string name="gdrive_root">Il mio Drive</string>
+  <string name="gdrive_error">Errore durante la connessione a Google Drive. Per favore riprova.</string>
+  <string name="drive_setup_step_2_title">Seleziona una cartella</string>
+  <string name="drive_setup_step_2_description">Scegli dove vuoi salvare i tuoi esperimenti</string>
   <string name="drive_setup_step_3_title">Google Drive</string>
-  <string name="drive_setup_step_3_description">Your experiments will be automatically synced in the folder “%1$s” on your Drive.</string>
-  <string name="drive_setup_step_3_action">Sync now</string>
-  <string name="drive_create_folder_title">Create New Folder</string>
-  <string name="drive_create_folder_action">Create</string>
+  <string name="drive_setup_step_3_description">I tuoi esperimenti verranno sincronizzati automaticamente nella cartella \" %1$s \" sul tuo Drive.</string>
+  <string name="drive_setup_step_3_action">Sincronizza ora</string>
+  <string name="drive_create_folder_title">Crea una nuova cartella</string>
+  <string name="drive_create_folder_action">Crea</string>
   <string name="drive_create_folder_def_name">Science Journal</string>
-  <string name="drive_sync_conflict">The experiment has been modified from another device</string>
-  <string name="drive_sync_conflict_remote">Keep remote</string>
-  <string name="drive_sync_conflict_local">Keep local</string>
-  <string name="error_network">A network error occurred, please check your connection and try again.</string>
-  <string name="error_generic">An error occurred. Please try again.</string>
-  <string name="retry">Retry</string>
-  <string name="arduino_auth_next">Next</string>
-  <string name="arduino_auth_sign_in_action">Sign in</string>
-  <string name="arduino_auth_junior_account">Junior Account</string>
-  <string name="arduino_auth_adult_account">Adult Account</string>
-  <string name="arduino_auth_cta_create_1">Don’t have an account?</string>
-  <string name="arduino_auth_sign_up_birth_date">Enter your birth date below to continue and ensure the data is correct: it will determine the type of account created for you.</string>
-  <string name="arduino_auth_missing_username">Username is required</string>
-  <string name="arduino_auth_invalid_username">Invalid username</string>
-  <string name="arduino_auth_missing_email">Email is required</string>
-  <string name="arduino_auth_invalid_email">Invalid email</string>
-  <string name="arduino_auth_invalid_email_confirm">Email and confirmation do not match</string>
-  <string name="arduino_auth_missing_password">Password is required</string>
-  <string name="arduino_auth_username_info">Only letters, numbers, hypen (-) and underscore (_) are allowed. Your username must start with a letter or number and be at least 3 characters long.</string>
-  <string name="arduino_auth_sign_up_option_privacy_and_terms">I have read the Privacy Policy and accept the Terms of Service. * </string>
-  <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Privacy Policy</string>
-  <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Terms of Service</string>
-  <string name="arduino_auth_sign_up_option_tracking">I want to see personalised commercial offers from Arduino based on my browsing and purchasing behaviour.</string>
-  <string name="arduino_auth_sign_up_action">Sign up</string>
-  <string name="arduino_auth_sign_up_user_exists">Username or email already registered. Please go back and check.</string>
-  <string name="arduino_auth_sign_up_adult_completed_action">Back to Login</string>
-  <string name="arduino_auth_title_password_reset_1">Recover your account</string>
-  <string name="arduino_auth_password_reset_1_junior_text_1">Enter your username and the parent’s email associated with your account below.</string>
-  <string name="arduino_auth_password_reset_1_field_parent_mail">Parent’s email</string>
-  <string name="arduino_auth_password_reset_1_action">Recover</string>
-  <string name="arduino_auth_password_reset_1_not_found">User not found. Please check and try again.</string>
-  <string name="arduino_auth_title_password_reset_completed">Email sent</string>
-  <string name="arduino_auth_password_reset_completed_action">Back to Login</string>
-  <string name="arduino_auth_mfa_text_1">Authenticator App</string>
-  <string name="arduino_auth_mfa_failure">Invalid code, please try again</string>
-  <string name="arduino_auth_mfa_cta">Verify</string>
-  <string name="arduino_auth_sign_up_junior_step_1_username_info">The username is created for you automatically, but you can generate new ones until you find the best one.
-You will use this username to log in to Arduino, and other users will see it when you post projects.</string>
-  <string name="arduino_auth_sign_up_junior_step_1_dialog_avatar">Choose an avatar</string>
-  <string name="arduino_auth_sign_up_junior_step_2_action">Send Email</string>
-  <string name="arduino_auth_sign_up_junior_completed_text">We sent an email with instructions to your parent’s email %1$s. You will be able to sign in once they finalize your account.</string>
-  <string name="arduino_auth_sign_up_junior_completed_action">Back to Science Journal</string>
-  <string name="arduino_auth_settings">Settings</string>
-  <string name="arduino_auth_settings_section_account">Arduino Account</string>
-  <string name="arduino_auth_settings_section_sync">Google Drive Sync</string>
-  <string name="arduino_auth_settings_section_sync_enable">Enable Drive Sync</string>
-  <string name="arduino_auth_settings_section_sync_change">Change</string>
+  <string name="drive_sync_conflict">L\'esperimento è stato modificato da un altro dispositivo</string>
+  <string name="drive_sync_conflict_remote">Mantieni la versione sul cloud</string>
+  <string name="drive_sync_conflict_local">Mantieni la versione locale</string>
+  <string name="error_network">Si è verificato un errore di rete, controlla la connessione e riprova.</string>
+  <string name="error_generic">Si è verificato un errore. Per favore riprova.</string>
+  <string name="retry">Riprova</string>
+  <string name="arduino_auth_next">Prossimo</string>
+  <string name="arduino_auth_sign_in_action">Accedi</string>
+  <string name="arduino_auth_junior_account">Account junior</string>
+  <string name="arduino_auth_adult_account">Account adulti</string>
+  <string name="arduino_auth_cta_create_1">Non hai un account?</string>
+  <string name="arduino_auth_sign_up_birth_date">Inserisci la tua data di nascita qui sotto per continuare e assicurati che i dati siano corretti: determinerà il tipo di account creato per te.</string>
+  <string name="arduino_auth_missing_username">Il nome utente è obbligatorio</string>
+  <string name="arduino_auth_invalid_username">Nome utente non valido</string>
+  <string name="arduino_auth_missing_email">L\'email è obbligatoria</string>
+  <string name="arduino_auth_invalid_email">Email non valida</string>
+  <string name="arduino_auth_invalid_email_confirm">Email e conferma non corrispondono</string>
+  <string name="arduino_auth_missing_password">La password è obbligatoria</string>
+  <string name="arduino_auth_username_info">Sono consentiti solo lettere, numeri, trattino (-) e trattino basso (_). Il tuo nome utente deve iniziare con una lettera o un numero ed essere lungo almeno 3 caratteri.</string>
+  <string name="arduino_auth_sign_up_option_privacy_and_terms">Ho letto l\'Informativa sulla privacy e accetto i Termini di servizio. *</string>
+  <string name="arduino_auth_sign_up_option_privacy_and_terms__privacy_label">Informativa sulla privacy</string>
+  <string name="arduino_auth_sign_up_option_privacy_and_terms__terms_label">Termini di servizio</string>
+  <string name="arduino_auth_sign_up_option_tracking">Voglio vedere offerte commerciali personalizzate da Arduino in base al mio comportamento di navigazione e di acquisto.</string>
+  <string name="arduino_auth_sign_up_action">Registrati</string>
+  <string name="arduino_auth_sign_up_user_exists">Nome utente o email già registrati. Per favore torna indietro e controlla.</string>
+  <string name="arduino_auth_sign_up_adult_completed_action">Torna al login</string>
+  <string name="arduino_auth_title_password_reset_1">Recupera il tuo account</string>
+  <string name="arduino_auth_password_reset_1_junior_text_1">Inserisci il tuo nome utente e l\'email del genitore associato al tuo account qui sotto.</string>
+  <string name="arduino_auth_password_reset_1_field_parent_mail">Email del genitore</string>
+  <string name="arduino_auth_password_reset_1_action">Recupera</string>
+  <string name="arduino_auth_password_reset_1_not_found">Utente non trovato. Si prega di controllare e riprovare.</string>
+  <string name="arduino_auth_title_password_reset_completed">Email inviata</string>
+  <string name="arduino_auth_password_reset_completed_action">Torna al login</string>
+  <string name="arduino_auth_mfa_text_1">App Authenticator</string>
+  <string name="arduino_auth_mfa_failure">Codice non valido, riprova per favore</string>
+  <string name="arduino_auth_mfa_cta">Verifica</string>
+  <string name="arduino_auth_sign_up_junior_step_1_username_info">Il nome utente viene creato automaticamente per te, ma puoi generarne di nuovi finché non trovi quello migliore. Utilizzerai questo nome utente per accedere ad Arduino e gli altri utenti lo vedranno quando pubblichi progetti.</string>
+  <string name="arduino_auth_sign_up_junior_step_1_dialog_avatar">Scegli un avatar</string>
+  <string name="arduino_auth_sign_up_junior_step_2_action">Invia una email</string>
+  <string name="arduino_auth_sign_up_junior_completed_text">Abbiamo inviato un\'email con le istruzioni all\'indirizzo email dei tuoi genitori %1$s . Sarai in grado di accedere una volta finalizzato il tuo account.</string>
+  <string name="arduino_auth_sign_up_junior_completed_action">Torna a Science Journal</string>
+  <string name="arduino_auth_settings">Impostazioni</string>
+  <string name="arduino_auth_settings_section_account">Account Arduino</string>
+  <string name="arduino_auth_settings_section_sync">Sincronizzazione Google Drive</string>
+  <string name="arduino_auth_settings_section_sync_enable">Abilita Google Drive</string>
+  <string name="arduino_auth_settings_section_sync_change">Cambia</string>
   <string name="arduino_auth_settings_section_sync_account">Account</string>
-  <string name="arduino_auth_settings_section_sync_folder">Sync Folder</string>
-  <string name="arduino_auth_settings_sign_out">Sign Out</string>
-  <string name="arduino_auth_settings_sign_out_confirm">Are you sure you want to Sign Out?</string>
-  <string name="claim_experiments_notice_one"><![CDATA[There is <strong>one experiment</strong> on the device which don’t belong to anyone. Tap “Collect” to assign yours to your virtual lab.]]></string>
-  <string name="claim_experiments_notice_other"><![CDATA[There are <strong>%1$d experiments</strong> on the device which don’t belong to anyone. Tap “Collect” to assign yours to your virtual lab.]]></string>
-  <string name="claim_experiments_action">Collect</string>
-  <string name="claim_experiments_action_all">Collect all</string>
-  <string name="claim_experiments_info_1"><![CDATA[If you would like to assign previous experiments to <strong>%1$s’s Lab</strong> you can collect them here.]]></string>
-  <string name="claim_experiments_info_3"><![CDATA[Add an experiment to <strong>%1$s’s Lab</strong>]]></string>
-  <string name="claim_experiments_info_action">Start collecting</string>
-  <string name="claim_experiments_done">Experiment “%1$s” collected</string>
-  <string name="claim_experiments_confirm_all_title">Collect all Experiments</string>
-  <string name="claim_experiments_confirm_all_message">Are you sure to collect all experiments and add them to your account’s lab: %1$s’s Lab?</string>
-  <string name="empty_experiment_lab_signed_in">There are no experiments in %1$s’s Lab</string>
-  <string name="empty_experiment_lab_anonymous">There are no experiments</string>
+  <string name="arduino_auth_settings_section_sync_folder">Sincronizza cartella</string>
+  <string name="arduino_auth_settings_sign_out">Esci</string>
+  <string name="arduino_auth_settings_sign_out_confirm">Sei sicuro di voler uscire?</string>
+  <string name="claim_experiments_notice_one"><![CDATA[C\'è <strong> un esperimento </strong> sul dispositivo che non appartiene a nessuno. Tocca \"Aggiungi\" per assegnare il tuo esperimento al laboratorio virtuale.]]></string>
+  <string name="claim_experiments_notice_other"><![CDATA[Ci sono <strong> %1$d esperimenti </strong> sul dispositivo che non appartengono a nessuno. Tocca \"Aggiungi\" per assegnare il tuo al tuo laboratorio virtuale.]]></string>
+  <string name="claim_experiments_action">Aggiungi</string>
+  <string name="claim_experiments_action_all">AGGIUNGI TUTTI</string>
+  <string name="claim_experiments_info_1"><![CDATA[Se desideri assegnare esperimenti precedenti al Lab <strong> %1$s </strong> puoi selezionarli qui.]]></string>
+  <string name="claim_experiments_info_3"><![CDATA[Aggiungi un esperimento al laboratorio di <strong> %1$s </strong>]]></string>
+  <string name="claim_experiments_info_action">Inizia ad aggiungere gli esperimenti</string>
+  <string name="claim_experiments_done">Esperimento “ %1$s ” aggiunto</string>
+  <string name="claim_experiments_confirm_all_title">Aggiungi tutti gli esperimenti</string>
+  <string name="claim_experiments_confirm_all_message">Sei sicuro di voler selezionare tutti gli esperimenti e aggiungerli al lab del tuo account: Laboratorio di %s ?</string>
+  <string name="empty_experiment_lab_signed_in">Non ci sono esperimenti nel laboratorio di %1$s</string>
+  <string name="empty_experiment_lab_anonymous">Non ci sono esperimenti</string>
   <string name="navigation_activities_link">https://science-journal.arduino.cc/</string>
-  <string name="navigation_get_science_kit">Get Science Kit</string>
+  <string name="navigation_get_science_kit">Acquista Science Kit</string>
   <string name="navigation_get_science_kit_link">https://www.arduino.cc/education/science-kit</string>
-  <string name="navigation_get_help">Get Help</string>
+  <string name="navigation_get_help">Ottieni assistenza</string>
   <string name="navigation_get_help_link">https://support.arduino.cc/hc/en-us/sections/360004584459-Science-Journal-App</string>
-  <string name="navigation_item_account_settings">Account Settings</string>
-  <string name="claim_experiments_confirm_one_message">Are you sure to collect this experiment and add it to your account’s lab: %1$s’s Lab?</string>
-  <string name="arduino_auth_account_settings">Account Settings</string>
-  <string name="navigation_item_privacy_policy">Privacy Policy</string>
-  <string name="arduino_auth_settings_advanced_settings_button">Advanced Settings</string>
-  <string name="arduino_auth_settings_section_sync_description">Sign in with your google account to start using drive sync</string>
-  <string name="arduino_auth_settings_disable_sync_title">Disable Google Drive Sync</string>
-  <string name="arduino_auth_settings_disable_sync_message">Are you sure you wish to disable your Google Drive Sync? If you confirm, your experiments will no longer be saved, and backed up to your Google Drive.</string>
-  <string name="arduino_auth_settings_disable_sync_confirm">Confirm</string>
-  <string name="arduino_auth_settings_disable_sync_cancel">Cancel</string>
-  <string name="arduino_auth_settings_drive_privacy_policy">Privacy Policy</string>
-  <string name="arduino_auth_settings_drive_terms_of_service">Terms of Service</string>
-  <string name="arduino_auth_settings_drive_start_button">Sync now</string>
+  <string name="navigation_item_account_settings">Impostazioni dell\'account</string>
+  <string name="claim_experiments_confirm_one_message">Sei sicuro di voler selezionare tutti gli esperimenti e aggiungerli al lab del tuo account: Laboratorio di %s ?</string>
+  <string name="arduino_auth_account_settings">Impostazioni account</string>
+  <string name="navigation_item_privacy_policy">Politica sulla privacy</string>
+  <string name="arduino_auth_settings_advanced_settings_button">Impostazioni avanzate</string>
+  <string name="arduino_auth_settings_section_sync_description">Accedi con il tuo account Google per iniziare a utilizzare la sincronizzazione con Google Drive</string>
+  <string name="arduino_auth_settings_disable_sync_title">Disattiva sincronizzazione con Google Drive </string>
+  <string name="arduino_auth_settings_disable_sync_message">Sei sicuro di voler disattivare Google Drive Sync? Se confermi, i tuoi esperimenti non verranno più salvati ed il backup su Google Drive sarà disabilitato.</string>
+  <string name="arduino_auth_settings_disable_sync_confirm">Conferma</string>
+  <string name="arduino_auth_settings_disable_sync_cancel">Annulla</string>
+  <string name="arduino_auth_settings_drive_privacy_policy">Informativa sulla privacy</string>
+  <string name="arduino_auth_settings_drive_terms_of_service">Termini di servizio</string>
+  <string name="arduino_auth_settings_drive_start_button">Sincronizza ora</string>
   <string name="arduino_auth_settings_drive_start_title">Google Drive</string>
-  <string name="arduino_auth_settings_drive_start_text">Congrats! Your Google Drive Account has been successfully set up. All your experiments will now be saved and backed up in the folder below.</string>
-  <string name="arduino_auth_settings_drive_start_notice">The Cloud Sync will start shortly. It may take some minutes to complete.</string>
-  <string name="arduino_auth_settings_drive_confirm_button">Confirm</string>
-  <string name="arduino_auth_settings_drive_loading_indicator_text">Syncing</string>
-  <string name="arduino_auth_sign_up_privacy_and_terms_notice">By signing up you are agreeing to Arduino Terms of Service, and Privacy Policy</string>
+  <string name="arduino_auth_settings_drive_start_text">Congratulazioni! Il tuo account Google Drive è stato configurato correttamente. Tutti i tuoi esperimenti verranno ora salvati e sottoposti a backup nella cartella sottostante.</string>
+  <string name="arduino_auth_settings_drive_start_notice">La sincronizzazione cloud verrà avviata a breve. Potrebbero essere necessari alcuni minuti per il completamento.</string>
+  <string name="arduino_auth_settings_drive_confirm_button">Conferma</string>
+  <string name="arduino_auth_settings_drive_loading_indicator_text">Sincronizzazione in corso</string>
+  <string name="arduino_auth_sign_up_privacy_and_terms_notice">Iscrivendoti accetti i Termini di servizio di Arduino e l\'Informativa sulla privacy</string>
+  <string name="app_store_screenshots">The official companion app for Arduino Science Kit
+
+Record your experiments and break them down</string>
+  <string name="spp_store_screenshots">Understand physical properties using sensors
+
+Observe how sensor values change over time
+
+Snap pictures to document your process
+
+Take notes of your experiment findings</string>
+  <string name="arduino_terms_agreement_cta">Accetto</string>
+  <string name="arduino_terms_agreement_title">Termini di servizio</string>
+  <string name="arduino_terms_agreement" formatted="false"><![CDATA[Ho letto la <a href=\"[%1]\" style=\"text-decoration: none\"> Informativa sulla privacy </a> e accetto i <a href=\"[%2]\" style=\"text-decoration: none\"> Termini di servizio </a> .]]></string>
+  <string name="arduino_terms_agreement__link_label" formatted="false"><![CDATA[Ho letto la <a href=\"[%1]\" style=\"text-decoration: none\"> Informativa sulla privacy </a> e accetto i <a href=\"[%2]\" style=\"text-decoration: none\"> Termini di servizio </a> .]]></string>
 </resources>
