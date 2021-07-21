@@ -911,6 +911,6 @@ Snap pictures to document your process
 Take notes of your experiment findings</string>
   <string name="arduino_terms_agreement_cta">Accetto</string>
   <string name="arduino_terms_agreement_title">Termini di servizio</string>
-  <string name="arduino_terms_agreement" formatted="false"><![CDATA[Ho letto la <a href=\"[%1]\" style=\"text-decoration: none\"> Informativa sulla privacy </a> e accetto i <a href=\"[%2]\" style=\"text-decoration: none\"> Termini di servizio </a> .]]></string>
-  <string name="arduino_terms_agreement__link_label" formatted="false"><![CDATA[Ho letto la <a href=\"[%1]\" style=\"text-decoration: none\"> Informativa sulla privacy </a> e accetto i <a href=\"[%2]\" style=\"text-decoration: none\"> Termini di servizio </a> .]]></string>
+  <string name="arduino_terms_agreement">Abbiamo aggiornato i Termini e condizioni dell\'app. Accettandoli dichiari di aver letto e accettato i nuovi Termini presentati nel contratto.</string>
+  <string name="arduino_terms_agreement__link_label">Termini e condizioni</string>
 </resources>
