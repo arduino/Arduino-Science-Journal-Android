@@ -2,11 +2,18 @@ package com.google.android.apps.forscience.whistlepunk.gdrivesync;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import androidx.security.crypto.EncryptedSharedPreferences;
-import androidx.security.crypto.MasterKeys;
+import androidx.security.crypto.MasterKey;
+
+import java.io.File;
+import java.io.IOException;
+import java.security.GeneralSecurityException;
+import java.security.KeyStore;
 
 public class GDriveShared {
+    private static final String LOG_TAG = "GDriveShared";
 
     private static boolean mAccountLoaded = false;
 
@@ -54,23 +61,62 @@ public class GDriveShared {
         return mAccount;
     }
 
-    private static SharedPreferences getSharedPreferences(final Context context) {
+    private static SharedPreferences getBrandNewSharedPreferences(Context context) {
+        MasterKey masterKey = null;
+
         try {
-            final String masterKeyAlias = MasterKeys.getOrCreate(MasterKeys.AES256_GCM_SPEC);
+            File sharedPrefsFile = new File(context.getFilesDir().getParent() + "/shared_prefs/" + SHARED_PREFS_FILENAME + ".xml");
+            boolean deleted = sharedPrefsFile.delete();
+
+            Log.d(LOG_TAG, String.format("Shared prefs file deleted: %s", deleted));
+
+            // delete MasterKey
+            KeyStore keyStore = KeyStore.getInstance("AndroidKeyStore");
+            keyStore.load(null);
+            keyStore.deleteEntry(MasterKey.DEFAULT_MASTER_KEY_ALIAS);
+
+            // build MasterKey
+            masterKey = new MasterKey.Builder(context, MasterKey.DEFAULT_MASTER_KEY_ALIAS)
+                    .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
+                    .build();
+
+            // create shared preferences
             return EncryptedSharedPreferences.create(
-                    PREFS_NAME,
-                    masterKeyAlias,
                     context,
+                    SHARED_PREFS_FILENAME,
+                    masterKey,
                     EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
                     EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
             );
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        } catch (GeneralSecurityException | IOException e) {
+            Log.e(LOG_TAG, "Unable to retrieve encrypted shared preferences", e);
+            throw new RuntimeException("Unable to retrieve encrypted shared preferences", e);
         }
     }
 
-    private static final String PREFS_NAME = "GoogleDriveSync";
+    private static SharedPreferences getSharedPreferences(final Context context) {
+        MasterKey masterKey = null;
+        try {
+            // build MasterKey
+            masterKey = new MasterKey.Builder(context, MasterKey.DEFAULT_MASTER_KEY_ALIAS)
+                    .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
+                    .build();
 
+            // get or create shared preferences
+            return EncryptedSharedPreferences.create(
+                    context,
+                    SHARED_PREFS_FILENAME,
+                    masterKey,
+                    EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
+                    EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
+            );
+        } catch (GeneralSecurityException | IOException e) {
+            Log.e(LOG_TAG, "Unable to retrieve encrypted shared preferences, regenerating master key.", e);
+            return getBrandNewSharedPreferences(context);
+        }
+    }
+
+    private static final String SHARED_PREFS_FILENAME = "GoogleDriveSync";
     private static final String KEY_ACCOUNT_ID = "account_id";
     private static final String KEY_EMAIL = "email";
     private static final String KEY_TOKEN = "token";

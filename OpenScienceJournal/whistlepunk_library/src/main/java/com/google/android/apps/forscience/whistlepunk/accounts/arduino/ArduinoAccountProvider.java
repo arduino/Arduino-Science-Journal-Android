@@ -16,17 +16,21 @@ import com.google.android.apps.forscience.whistlepunk.accounts.AbstractAccountsP
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
 import com.google.android.apps.forscience.whistlepunk.remote.StringUtils;
 
+import java.io.File;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
+import java.security.KeyStore;
 
 public class ArduinoAccountProvider extends AbstractAccountsProvider {
 
     private static final String LOG_TAG = "ArduinoAccountProvider";
+    private static final String SHARED_PREFS_FILENAME = "ArduinoSharedPreferences";
 
     private ArduinoAccount arduinoAccount;
 
     public ArduinoAccountProvider(final Context context) {
         super(context);
+
         final SharedPreferences prefs = getSharedPreferences();
         final String jsonToken = prefs.getString("token", null);
         if (!StringUtils.isEmpty(jsonToken)) {
@@ -100,26 +104,58 @@ public class ArduinoAccountProvider extends AbstractAccountsProvider {
     public void showAccountSwitcherDialog(Fragment fragment, int requestCode) {
     }
 
-    private SharedPreferences getSharedPreferences() {
+    private SharedPreferences getBrandNewSharedPreferences() {
         MasterKey masterKey = null;
+
         try {
+            File sharedPrefsFile = new File(applicationContext.getFilesDir().getParent() + "/shared_prefs/" + SHARED_PREFS_FILENAME + ".xml");
+            boolean deleted = sharedPrefsFile.delete();
+
+            Log.d(LOG_TAG, String.format("Shared prefs file deleted: %s", deleted));
+
+            // delete MasterKey
+            KeyStore keyStore = KeyStore.getInstance("AndroidKeyStore");
+            keyStore.load(null);
+            keyStore.deleteEntry(MasterKey.DEFAULT_MASTER_KEY_ALIAS);
+
+            // build MasterKey
             masterKey = new MasterKey.Builder(applicationContext, MasterKey.DEFAULT_MASTER_KEY_ALIAS)
                     .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
                     .build();
 
+            // create shared preferences
             return EncryptedSharedPreferences.create(
                     applicationContext,
-                    "ArduinoSharedPreferences",
+                    SHARED_PREFS_FILENAME,
                     masterKey,
                     EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
                     EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
             );
-        } catch (GeneralSecurityException e) {
+        } catch (GeneralSecurityException | IOException e) {
             Log.e(LOG_TAG, "Unable to retrieve encrypted shared preferences", e);
             throw new RuntimeException("Unable to retrieve encrypted shared preferences", e);
-        } catch (IOException e) {
-            Log.e(LOG_TAG, "Unable to retrieve encrypted shared preferences", e);
-            throw new RuntimeException("Unable to retrieve encrypted shared preferences", e);
+        }
+    }
+
+    private SharedPreferences getSharedPreferences() {
+        MasterKey masterKey = null;
+        try {
+            // build MasterKey
+            masterKey = new MasterKey.Builder(applicationContext, MasterKey.DEFAULT_MASTER_KEY_ALIAS)
+                    .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
+                    .build();
+
+            // get or create shared preferences
+            return EncryptedSharedPreferences.create(
+                    applicationContext,
+                    SHARED_PREFS_FILENAME,
+                    masterKey,
+                    EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
+                    EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
+            );
+        } catch (GeneralSecurityException | IOException e) {
+            Log.e(LOG_TAG, "Unable to retrieve encrypted shared preferences, regenerating master key.", e);
+            return this.getBrandNewSharedPreferences();
         }
     }
 
