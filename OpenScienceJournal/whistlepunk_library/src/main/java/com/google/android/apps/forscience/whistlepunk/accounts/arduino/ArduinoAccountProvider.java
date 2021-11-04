@@ -12,6 +12,7 @@ import androidx.security.crypto.MasterKey;
 
 import com.google.android.apps.forscience.auth0.Auth0Token;
 import com.google.android.apps.forscience.whistlepunk.ActivityWithNavigationView;
+import com.google.android.apps.forscience.whistlepunk.MainActivity;
 import com.google.android.apps.forscience.whistlepunk.accounts.AbstractAccountsProvider;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
 import com.google.android.apps.forscience.whistlepunk.remote.StringUtils;
@@ -20,11 +21,16 @@ import java.io.File;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.CertificateException;
 
 public class ArduinoAccountProvider extends AbstractAccountsProvider {
 
     private static final String LOG_TAG = "ArduinoAccountProvider";
     private static final String SHARED_PREFS_FILENAME = "ArduinoSharedPreferences";
+    private static final String UNENCRYPTED_SHARED_PREFS_FILENAME = "ArduinoSharedPreferencesSafe";
+    private static final String KEY_KEYSTORE_RESET = "keystore_reset";
 
     private ArduinoAccount arduinoAccount;
 
@@ -104,37 +110,51 @@ public class ArduinoAccountProvider extends AbstractAccountsProvider {
     public void showAccountSwitcherDialog(Fragment fragment, int requestCode) {
     }
 
-    private SharedPreferences getBrandNewSharedPreferences() {
-        MasterKey masterKey = null;
+    private Boolean getKeystoreResetState() {
+        SharedPreferences prefs = applicationContext.getSharedPreferences(UNENCRYPTED_SHARED_PREFS_FILENAME, Context.MODE_PRIVATE);
+        return prefs.getBoolean(KEY_KEYSTORE_RESET, false);
+    }
+    private void setKeystoreResetState(Boolean state) {
+        SharedPreferences prefs = applicationContext.getSharedPreferences(UNENCRYPTED_SHARED_PREFS_FILENAME, Context.MODE_PRIVATE);
+        prefs.edit().putBoolean(KEY_KEYSTORE_RESET, state).apply();
+    }
 
+    private void resetKeystoreAndRestart() {
+        // delete shared preferences file
+        File sharedPrefsFile = new File(applicationContext.getFilesDir().getParent() + "/shared_prefs/" + SHARED_PREFS_FILENAME + ".xml");
+        if (sharedPrefsFile.exists()) {
+            Boolean deleted = sharedPrefsFile.delete();
+            Log.i(LOG_TAG, String.format("Shared prefs file \"%s\" deleted: %s", sharedPrefsFile.getAbsolutePath(), deleted));
+        } else {
+            Log.i(LOG_TAG, String.format("Shared prefs file \"%s\" non-existent", sharedPrefsFile.getAbsolutePath()));
+        }
+
+        // delete master key
         try {
-            File sharedPrefsFile = new File(applicationContext.getFilesDir().getParent() + "/shared_prefs/" + SHARED_PREFS_FILENAME + ".xml");
-            boolean deleted = sharedPrefsFile.delete();
-
-            Log.d(LOG_TAG, String.format("Shared prefs file deleted: %s", deleted));
-
-            // delete MasterKey
             KeyStore keyStore = KeyStore.getInstance("AndroidKeyStore");
             keyStore.load(null);
             keyStore.deleteEntry(MasterKey.DEFAULT_MASTER_KEY_ALIAS);
 
-            // build MasterKey
-            masterKey = new MasterKey.Builder(applicationContext, MasterKey.DEFAULT_MASTER_KEY_ALIAS)
-                    .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
-                    .build();
-
-            // create shared preferences
-            return EncryptedSharedPreferences.create(
-                    applicationContext,
-                    SHARED_PREFS_FILENAME,
-                    masterKey,
-                    EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
-                    EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
-            );
-        } catch (GeneralSecurityException | IOException e) {
-            Log.e(LOG_TAG, "Unable to retrieve encrypted shared preferences", e);
-            throw new RuntimeException("Unable to retrieve encrypted shared preferences", e);
+            Log.i(LOG_TAG, "Master key deleted");
+        } catch (KeyStoreException | CertificateException | NoSuchAlgorithmException | IOException e) {
+            Log.i(LOG_TAG, "Unable to delete master key");
+            throw new RuntimeException("Unable to delete master key", e);
         }
+
+        // save on (non-encrypted) shared preferences the reset state to avoid loops
+        setKeystoreResetState(true);
+        Log.i(LOG_TAG, "Set keystore reset state to TRUE.");
+
+        // restart app
+        Intent intent = new Intent(applicationContext, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        Log.i(LOG_TAG, "Restarting application...");
+        applicationContext.startActivity(intent);
+        if (applicationContext instanceof Activity) {
+            ((Activity) applicationContext).finish();
+        }
+
+        Runtime.getRuntime().exit(0);
     }
 
     private SharedPreferences getSharedPreferences() {
@@ -146,17 +166,30 @@ public class ArduinoAccountProvider extends AbstractAccountsProvider {
                     .build();
 
             // get or create shared preferences
-            return EncryptedSharedPreferences.create(
+            SharedPreferences prefs = EncryptedSharedPreferences.create(
                     applicationContext,
                     SHARED_PREFS_FILENAME,
                     masterKey,
                     EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
                     EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
             );
+
+            // set keystore reset to false to enable future resets
+            setKeystoreResetState(false);
+            Log.i(LOG_TAG, "Set keystore reset state to FALSE.");
+
+            return prefs;
         } catch (GeneralSecurityException | IOException e) {
-            Log.e(LOG_TAG, "Unable to retrieve encrypted shared preferences, regenerating master key.", e);
-            return this.getBrandNewSharedPreferences();
+            Boolean keystoreReset = getKeystoreResetState();
+            if (keystoreReset) {
+                // a keystore reset just occurred, interrupt execution.
+                throw new RuntimeException("Unable to retrieve encrypted shared preferences", e);
+            } else {
+                Log.i(LOG_TAG, "Unable to retrieve encrypted shared preferences, regenerating master key.", e);
+                resetKeystoreAndRestart();
+            }
+
+            return null;
         }
     }
-
 }
