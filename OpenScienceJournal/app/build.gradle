@@ -3,12 +3,12 @@ apply plugin: 'com.android.application'
 apply from: project(':whistlepunk_library').projectDir.absolutePath + '/dependencyVersions.gradle'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     defaultConfig {
         applicationId "cc.arduino.sciencejournal"
         minSdkVersion 19
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 10
         versionName "1.3.4"
         multiDexEnabled true
