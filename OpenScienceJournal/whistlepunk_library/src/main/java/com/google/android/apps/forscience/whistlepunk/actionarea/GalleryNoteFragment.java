@@ -22,12 +22,6 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import androidx.annotation.Nullable;
-import androidx.loader.app.LoaderManager;
-import androidx.loader.content.Loader;
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import android.text.format.DateUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -35,17 +29,25 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.loader.app.LoaderManager;
+import androidx.loader.content.Loader;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.google.android.apps.forscience.whistlepunk.GlideApp;
 import com.google.android.apps.forscience.whistlepunk.NoteTakingActivity;
-import com.google.android.apps.forscience.whistlepunk.actionarea.PhotoAsyncLoader.Image;
 import com.google.android.apps.forscience.whistlepunk.PictureUtils;
 import com.google.android.apps.forscience.whistlepunk.R;
 import com.google.android.apps.forscience.whistlepunk.RxEvent;
 import com.google.android.apps.forscience.whistlepunk.accounts.AppAccount;
+import com.google.android.apps.forscience.whistlepunk.actionarea.PhotoAsyncLoader.Image;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.FileMetadataUtil;
 import com.google.android.apps.forscience.whistlepunk.filemetadata.Label;
 import com.google.android.apps.forscience.whistlepunk.metadata.GoosciLabel;
@@ -55,13 +57,15 @@ import com.google.android.apps.forscience.whistlepunk.review.RunReviewActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.jakewharton.rxbinding2.view.RxView;
 import com.tbruyelle.rxpermissions2.RxPermissions;
-import io.reactivex.subjects.BehaviorSubject;
-import io.reactivex.subjects.SingleSubject;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+
+import io.reactivex.subjects.BehaviorSubject;
+import io.reactivex.subjects.SingleSubject;
 
 /**
  * Fragment controlling adding picture notes from the gallery in the ExperimentActivity.
@@ -401,16 +405,23 @@ public class GalleryNoteFragment extends ActionFragment
 
       holder.image.setOnClickListener(
           view -> {
-            boolean newlySelected = !selectedIndices.contains(holder.getAdapterPosition());
+            final int adapterPosition = holder.getAdapterPosition();
+            // Ignore invalid clicks that happened between layouts.
+            if (adapterPosition == RecyclerView.NO_POSITION) return;
+            boolean newlySelected = !selectedIndices.contains(adapterPosition);
             if (newlySelected) {
               // It was clicked for the first time.
-              setSelectedIndex(holder.getAdapterPosition());
+              setSelectedIndex(adapterPosition);
             } else {
               // A second click on the same image is a deselect.
-              selectedIndices.remove(selectedIndices.indexOf(holder.getAdapterPosition()));
+              selectedIndices.remove(selectedIndices.indexOf(adapterPosition));
+              // Update other selected items labels.
+              for (int i = 0; i < selectedIndices.size(); ++i) {
+                notifyItemChanged(selectedIndices.get(i));
+              }
+              // Update current selection
+              notifyItemChanged(adapterPosition);
             }
-            holder.selectedIndicator.setSelected(newlySelected);
-            notifyDataSetChanged();
 
             listener.onImageClicked();
           });
